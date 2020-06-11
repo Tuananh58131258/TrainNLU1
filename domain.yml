@@ -4,6 +4,10 @@ entities:
   - interest_rate
   - product_name
   - prepay_percent
+  - installment_payment_period
+  - rom
+  - hardware
+
 intents:
   -  greet
   -  goodbye
