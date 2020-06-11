@@ -1,0 +1,55 @@
+entities:
+  - price
+  - student
+  - interest_rate
+  - product_name
+  - prepay_percent
+intents:
+  -  greet
+  -  goodbye
+  -  ask_ability
+  -  thankyou
+  -  praise
+  -  decry
+  -  what_license
+  -  can_buy_with_installment_with_license
+  -  can_buy_with_installment_without_license
+  -  replace_GPLX_with_SHK_and_opposite
+  -  can_installment
+  -  how_to_buy_on_installment
+  -  how_old_can_buy_on_installment
+  -  how_many_per_month
+  -  case_how_many_per_month
+  -  age_installment
+  -  is_product_can_buy_on_installment
+  -  ask_hardware_info
+
+responses:
+
+  utter_greet:
+  - text: "Chào bạn!"
+
+  utter_replace_GPLX_with_SHK_and_opposite:
+  - text: "đc nha bạn"
+
+  utter_what_license:
+  - text: "cần cái này với cái kia nhé"
+
+  utter_decry:
+  - text: "chê cc gì"
+  utter_praise:
+  - text: "khen nữa đi cưng"
+  utter_goodbye:
+  - text: "Tạm biệt"
+  utter_ask_ability:
+  - text: "đéo thích trả lời đó"
+  utter_can_installment:
+  - text: "đủ tuổi và giấy tờ là trả góp được"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_custom_fallback
+  - action_test_st

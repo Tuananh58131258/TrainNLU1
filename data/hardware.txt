@@ -1,0 +1,65 @@
+chíp
+chip
+cpu
+chíp xử lý
+chip xử lý
+CPU
+chíp đồ họa
+card đồ họa
+chíp đồ họa
+card
+gpu
+GPU
+Công nghệ màn hình
+Màu màn hình
+Chuẩn màn hình       
+Độ phân giải màn hình
+Màn hình
+Mặt kính màn hình    
+Độ phân giải
+Thông tin khác       
+Độ phân giải
+Quay phim
+Đèn Flash
+Chụp ảnh nâng cao
+Tốc độ CPU
+Số nhân
+Chipset
+RAM
+Chip đồ họa (GPU)
+Cảm biến
+Danh bạ lưu trữ
+ROM
+Bộ nhớ còn lại
+Thẻ nhớ ngoài
+Hỗ trợ thẻ nhớ tối đa
+Kiểu dáng
+Chất liệu
+Kích thước
+Trọng lượng 
+Khả năng chống nước
+Loại pin
+Dung lượng pin
+Pin có thể tháo rời
+Chế độ sạc nhanh 
+Loại SIM
+Khe cắm sim
+Wifi
+GPS
+Bluetooth
+GPRS
+EDGE
+NFC
+Cổng sạc
+Jack (Input & Output)
+Xem phim
+Nghe nhạc
+Ghi âm
+FM radio
+Đèn pin
+Chức năng khác
+Thời gian bảo hành
+Xuất xứ
+Năm sản xuất
+Model Series
+Hệ điều hành
