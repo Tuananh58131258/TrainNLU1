@@ -64,7 +64,6 @@
 - ui giỏi thế
 - bot thông minh
 - đẹp trai đấy
-- Ênm đệnp léăm
 
 ## intent: decry
 - quá tệ
@@ -1352,24 +1351,24 @@
 
 ## intent: what_license
 - cho em hỏi là hộ khẩu để làm thủ tục trả góp là bản chính hay là bản sao có công chứng ạ ?
-- [oppo f1s](product_name) 2017 .mình muốn mua trả góp 0% .cần giấy tờ gì QTV
+- [oppo f1s](product_name) 2017 .mình muốn mua trả góp [0 %](interest_rate) .cần giấy tờ gì QTV
 - Có giấy chứng minh với bằng lái xe đăng kí được không ạ
-- cho m hỏi trả góp [0%](interest_rate) cần những giấy tờ gì và thủ tục làm như thế nào ak
+- cho m hỏi trả góp [0 %](interest_rate) cần những giấy tờ gì và thủ tục làm như thế nào ak
 - [oppo f1s](product_name) lấy trả góp giấy tờ . hộ khẩu chứng minh nhân dân có được không ạ
 - Hóa đơn điện nước có thể lấy chỗ mk đang tạm trú đc k ạ, hay phải lấy hóa đơn gia đình?
 - ChAo ban minh muon mua tr gop nhung minh chi co ho khau Voi cmt thoi nhung minh can cmt de di lam vay co the trs gop dc ko
 - cho hỏi giờ mình mua trả góp là cần giấy tờ gì ạ
-- Mình có cmnd bản gốc và hộ khẩu phổi công chứng có đc mua trả góp 0% k ad?
+- Mình có cmnd bản gốc và hộ khẩu phổi công chứng có đc mua trả góp [0 %](interest_rate) k ad?
 - Fpt cho em hỏi là sinh viên muốn mua sản phẩm đt trả góp cần những giấy tờ gì ah.em có chứng minh thư vs thẻ sinh viên có đc ko
 - trả góp chỉ cần chứng minh thư và bằng lái xe là đc hả bạn.mình ở nội thành hải phòng
-- Em là sv nam nay [20 tuoi muốn mua trả góp trả trc [30%](prepay_percent) trả trong [10thang](installment_payment_period). Khi đi mua cần đem theo gì ạ
+- Em là sv nam nay 20 tuoi muốn mua trả góp trả trc [30 %](prepay_percent) trả trong [10 thang](installment_payment_period). Khi đi mua cần đem theo gì ạ
 - giay to gi de tra gop
-- Cho em hỏi em muốn mua trả góp trả trước khoảng [30](prepay_percent) hoặc [40%](prepay_percent) trả trong vòng [8](installment_payment_period) đến [9 tháng](installment_payment_period) e cần những loại giấy tờ nào
+- Cho em hỏi em muốn mua trả góp trả trước khoảng [30](prepay_percent) hoặc [40 %](prepay_percent) trả trong vòng [8](installment_payment_period) đến [9 tháng](installment_payment_period) e cần những loại giấy tờ nào
 - mình muốn mua trả góp thì cần thủ tục thế nào. cmnd + bằng lái xe thôi có đc ko
 - E đang đi bộ đội hiện giờ e có giấy phép lái xe chứng minh nhân dân và thẻ bảo hiểm y tế của quân đội cấp thì có đủ điều kiện để trả góp không vậy
-- gói trả góp [0%](interest_rate) lãi suất cần những gì bn
+- gói trả góp [0 %](interest_rate) lãi suất cần những gì bn
 - chào ad, mình là sinh viên muốn mua trả góp máy thì cần những lưu ý gì ạ?
-- Trả góp lãi suất [0%](interest_rate) cần giấy tờ gì vậy
+- Trả góp lãi suất [0 %](interest_rate) cần giấy tờ gì vậy
 - Cho mình hỏi trả góp 0% cần bằng lái xe và cmtnd có phải cung cấp thêm bao nhiu số điện thoại người thân nữa để làm thủ tục ạ
 - Mua tra gop ko co ho khau co duoc khong ạ
 - có trả góp được không mà không thấy sohop trả lời vậy.
@@ -1382,17 +1381,17 @@
 - [oppo A71](product_name) góp giấy chung minh góc ho khau ban sao duoc không a
 - sổ hộ khẩu photo thì có dc k hả shop
 - Em là sinh viên muốn mua trả góp đt [oppo f1s](product_name) . do học xa nhà nên không có sẳn giấy CMND có công chứng của cha hoặc mẹ thì có mua được kh?
-- Minh muon mua tra gop [0%](interest_rate) co can ho khau khong vay?
+- Minh muon mua tra gop [0 %](interest_rate) co can ho khau khong vay?
 - Mua tra góp bang ho chieu đuoc ko a
 - Trả góp bằng cmnd và bằng lái xe dkd k ạ.
 - Cmnd voi bang lai kon co ho khau duọc ko shop
 - Nếu e có cmnd.+bằng lái xe có thê mua trả góp 0đ hai không
 - Em là sinh viên đủ 20 tuổi có thể áp dụng trả góp cho sinh viên được không ạ? Và cần giấy tờ như thế nào? Thủ tục nhanh ko ạ
 - E 19t chỉ có chứng minh và hộ khẩu photo đc ko admin
-- Có cmnd và blx có trả góp 0 lãi suất có duoc ko fpt sop
+- Có cmnd và blx có trả góp [0 lãi suất](interest_rate) có duoc ko fpt sop
 - Cho e hỏi , e 20́t có làm thủ tục trả góp đc k , có cần chứng minh j k , hay chỉ cần đầy đủ - giấy tờ như cmnd+ bằng lái là đc r , tks ạ
-- Trả góp 10% cần giấy tờ j z ad . Tây ninh có hàng chưa z
-- Mình muốn mua trả góp lãi suất 0% , trả trước 10% .giấy tờ cần là bằng lái và cmnd đc k shop
+- Trả góp [10 %](prepay_percent) cần giấy tờ j z ad . Tây ninh có hàng chưa z
+- Mình muốn mua trả góp lãi suất [0 %](interest_rate) , trả trước [10 %](prepay_percent) .giấy tờ cần là bằng lái và cmnd đc k shop
 - Mìng dùng sổ hộ khẩu photo công chứng đuoc k
 - cho e hoi là muốn mua trả góp thì chỉ cần chứng minh thư có được k ạ
 - E có blx voi cmnd nua dc hk
@@ -1400,17 +1399,17 @@
 - Em có giấy chứng minh nhân dân. Do e làm xa. quê Nha Trang vô Tp.HCM . E có thể góp được không ad.
 - sv cần những giấy tờ gì ad
 - em muốn muốn mua trả cóp em có chứng minh thư vs shk phô tô công chứng có đc ko
-- Ad ơi cho e hỏi trả trước [0đ]{"entity":"price","role":"prepay"}  bên mình hồ sơ cần những gì vậy ạ?
-- Cho mình hỏi mình muốn mua máy này trả góp [0đ]{"entity":"price","role":"prepay"} thì cần những giấy tờ gì ak.
+- Ad ơi cho e hỏi trả trước [0 đ]{"entity":"price","role":"prepay"}  bên mình hồ sơ cần những gì vậy ạ?
+- Cho mình hỏi mình muốn mua máy này trả góp [0 đ]{"entity":"price","role":"prepay"} thì cần những giấy tờ gì ak.
 - Cho mình hỏi chỉ cần lên fpt shop chỉ cần mang theo bằmg lái và cmnn là đủ đk góp r pải k ạ. Có cần bắt buộc thêm sdt ng thân k ạ
-- Hien tai e lam c.ty e dung [20t e can mag theo gi de mua tra gop the shop
+- Hien tai e lam c.ty e dung 20t e can mag theo gi de mua tra gop the shop
 - Dùng Bản photo được không ạ (có cần công chứng không)
 - Mình mất bằng lái xe. Hộ khẩu lại ở bắc ninh mình dùng sổ tạm trú ở bắc giang để mua trả góp ở bắc giang dk k shop
-- ad ơi cho e hỏi , thủ tục trả góp [0%](interest_rate) là cmnd+hộ khẩu được k ạ?
+- ad ơi cho e hỏi , thủ tục trả góp [0 %](interest_rate) là cmnd+hộ khẩu được k ạ?
 - Trả trước 0đ mà mình chỉ có cmnd và gplx đc kh vậy ad
-- Máy này hỗ trợ gói [0%](interest_rate) mình có cmnd và gplxe
+- Máy này hỗ trợ gói [0 %](interest_rate) mình có cmnd và gplxe
 - Anh ơi em có giấy CMND với họ khẩu thôi có mưa trả góp đc khong
-- chị ơi cho e hỏi là bây giờ e mua dt này trả trước [10%](prepay_percent) e có HK photo công chứng soi y bản chính + cmnd thì có thể mua đc k ạ??
+- chị ơi cho e hỏi là bây giờ e mua dt này trả trước [10 %](prepay_percent) e có HK photo công chứng soi y bản chính + cmnd thì có thể mua đc k ạ??
 - K co bang lai mua duoc k
 - em muon mua tra gop ma chi co chung minh thu co duoc khong ad
 - Shop ơi cho e hỏi e muốn mua [oppo f1s](product_name) trả góp gói [0 đồng]{"entity":"price","role":"prepay"} ,nhưng e lại không có sổ hộ khẩu ở đây vậy e có thể dùng bằng lái xe thay cho sổ hộ khẩu được không ạ
@@ -1419,11 +1418,11 @@
 - sổ hộ khẩu thay bằng lái được không ạ
 - Dạ em là sv mà tạm thoi chua co the sv vậy mua trả góp dc ko ak
 - sinh viên mua trả góp dc ko ak
-- chung minh thu quân đội có duoc mua tra gop [0%](interest_rate) k b ?
-- Cmnd vs bằng lái tham gia trả góp [0đ]{"entity":"price","role":"prepay"} đc k
-- Mình có bằng lái xe + cmtnd có tham gia đk gói trả góp [0%](interest_rate) k qtv?
-- Toi co chung minh voi bang lai xe co duoc tra gop [0%](interest_rate) khong
-- chào ad. e có CMND, bằng lái xe có trả góp đc k ạ. trả trước [0%](prepay_percent)
+- chung minh thu quân đội có duoc mua tra gop [0 %](interest_rate) k b ?
+- Cmnd vs bằng lái tham gia trả góp [0 đ]{"entity":"price","role":"prepay"} đc k
+- Mình có bằng lái xe + cmtnd có tham gia đk gói trả góp [0 %](interest_rate) k qtv?
+- Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
+- chào ad. e có CMND, bằng lái xe có trả góp đc k ạ. trả trước [0 %](prepay_percent)
 
 ## intent: two_or_more_file
 <!-- 2 hay nhiều hồ sơ -->
@@ -1431,86 +1430,86 @@
 - mình đang trả góp bên ngân hàng fe kỳ hạn là 4 tháng nhưng mình trả dc hai tháng rồi vậy có dc mua trả góp 0% sản phẩm này ko vậy.
 - Chào bạn..hiện tai mình đang có hồ sơ vay bên FE thì có được mua trả góp nữa không vậy
 - Cho e hỏi e muốn mua trả góp trả trc 0đ đc k ạ.. hiện tại e đang trả góp bên fe credit..
-- E muon tra gop djen thoai nay dk k?tai vj e dag gop dt oppo A39 dk 2 thang ui o fptshop ak
+- E muon tra gop djen thoai nay dk k?tai vj e dag gop dt [oppo A39](product_name) dk 2 thang ui o fptshop ak
 - Em đang vay trả góp của home edit. Vậy có thể mua trả góp được tiếp không ad?
 - Mua góp 2 cái một lần. Có dk ko ad oi
 - em vừa hoàn thành hồ sơ trả góp thì có cần làm lại hồ sơ mới không
 
 ## intent: how_many_per_month
-- Cho minh hoi neu minh mua may tra gop ma minh tra truoc [2tr]{"entity":"price","role":"prepay"} z moi thang minh tra gop khoang bao nhieu z shop
-- Em có [1tr500](price) cho em hỏi trả góp trong [9 tháng](installment_payment_period) thì phải trả trước bao nhiêu là mỗi tháng trả bao nhiu vâyj ạ
-- m trả góp [0%](interest_rate) trong vòng [12 tháng](installment_payment_period) vậy mỗi tháng m phải trả bao nhiêu ak.
-- Tư vấn giúp mình [OPPO F1s 2017](product_name) ([64GB](rom)) trả trước [50%](prepay_percent), còn lại góp [6 tháng](installment_payment_period), mỗi tháng trả bao nhiêu?
+- Cho minh hoi neu minh mua may tra gop ma minh tra truoc [2 tr]{"entity":"price","role":"prepay"} z moi thang minh tra gop khoang bao nhieu z shop
+- Em có [1 tr 500](price) cho em hỏi trả góp trong [9 tháng](installment_payment_period) thì phải trả trước bao nhiêu là mỗi tháng trả bao nhiu vâyj ạ
+- m trả góp [0 %](interest_rate) trong vòng [12 tháng](installment_payment_period) vậy mỗi tháng m phải trả bao nhiêu ak.
+- Tư vấn giúp mình [OPPO F1s 2017](product_name) ([64 GB](rom)) trả trước [50 %](prepay_percent), còn lại góp [6 tháng](installment_payment_period), mỗi tháng trả bao nhiêu?
 - Trả góp [6 tháng](installment_payment_period) thì bao nhiêu 1 tháng ạ
-- E trả trước máy này [1500000]{"entity":"price","role":"prepay"} thì mỗi tháng e góp bao nhiêu với lãi xuất [0%](interest_rate)
+- E trả trước máy này [1500000]{"entity":"price","role":"prepay"} thì mỗi tháng e góp bao nhiêu với lãi xuất [0 %](interest_rate)
 - Không cần trả trước thì mỗi tháng e góp bao nhiu ạ
 - Cho em hỏi mún mua máy trả trc [2 triệu]{"entity":"price","role":"prepay"} thì mỗi tháng góp bao nhêu ạ
 - Em muốn mua trả góp , nhung em k trả trước vậy mỗi tháng em phải góp giá thấp nhất bao nhieu vay
 - Cha chuoc [20 %](prepay_percent) cha [15 thag](installment_payment_period) la thag dog nhiu z shop
-- Cho em hoi goi tra truoc [0d]{"entity":"price","role":"prepay"} lai suat bao nhieu? Gop moi thang bao nhieu vay?
-- Nếu mua trả góp [OPPO F1S](product_name) mà trả trước [2.000.00[0đ]{"entity":"price","role":"prepay"}]{"entity":"price","role":"prepay"} và góp trong [9 tháng](installment_payment_period) thì lãi suất và số tiền phải trả mỗi tháng là bao nhiêu ạ
+- Cho em hoi goi tra truoc [0 d]{"entity":"price","role":"prepay"} lai suat bao nhieu? Gop moi thang bao nhieu vay?
+- Nếu mua trả góp [OPPO F1S](product_name) mà trả trước [2.000.00[0 đ]{"entity":"price","role":"prepay"}]{"entity":"price","role":"prepay"} và góp trong [9 tháng](installment_payment_period) thì lãi suất và số tiền phải trả mỗi tháng là bao nhiêu ạ
 - Cho mình hỏi nếu mình muốn mua trả góp [f1s 2017](product_name) mà trả trước [5 triệu]{"entity":"price","role":"prepay"} thì mình sẽ phải góp trong bao lâu với số tiền bao nhiêu?
-- Cho mình hỏi, mình trả góp gói [0đ]{"entity":"price","role":"prepay"} trong [8thang](installment_payment_period) thi mỗi tháng phải trả la bao nhiêu va cần những giấy tờ gi
-- Nếu mình trả trước [30%](prepay_percent) thì góp 12t thi moi tháng bn?
-- fpt cho hỏi thế em mua trả góp mà trả trước [30%](prepay_percent)  thì mỗi tháng trả bao nhiêu và trong vòng mấy thang
-- FPT đt [oppo f1s2017](product_name). Tra truoc [ođ]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
-- e mua trả góp mà có bằng lái xe, CMND, hộ khẩu mà trả trước [60%](prepay_percent)  trả trong [4 tháng](installment_payment_period) thì mỗi tháng trả khoảng bao nhiu ạ
-- Tra gop truoc [10%](prepay_percent) . . Moi thang dong bao nhieu vay
-- E muốn mua trả góp [0%](interest_rate) trả trước [10%](prepay_percent) góp trong [6t](installment_payment_period), nếu k đóng phí bảo hiểm thì 1 tháng góp bao nhiêu vậy ad
-- Trả trước [10%](prepay_percent)  và ko mua bảo hiểm thì mỗi tháng góp bao nhiu vậy ad
-- Trả góp [0đ]{"entity":"price","role":"prepay"}.ko mua bảo hiểm vay.đóng [6tháng](installment_payment_period) nhiêu vay.
-- Ad oi minh muon mua [nova 2i](product_name) tra truoc [20%](prepay_percent) gop [12 thang](installment_payment_period) vay thang la minh gop bao nhieu
-- Trả [30%](prepay_percent) góp trong [6 tháng](installment_payment_period) hêt bn vay
-- Trả góp [10%](prepay_percent) .lãi suất [0%](interest_rate).[6 thang](installment_payment_period). Vay mỗi tháng góp bao nhieu
-- Trả góp [10%](prepay_percent) trong vòng [6 tháng](installment_payment_period) của FE k mua phí bảo hiểm thì mỗi tháng góp bao nhiêu tiền?
-- trả góp [0%](interest_rate) vậy mỗi tháng góp bao nhiêu?
-- QTV cho hỏi là mua trả góp trả trước [10%](prepay_percent) góp [12 tháng](installment_payment_period). thì mỗi tháng góp bao nhiêu tiền vậy.thank!
-- [Mi A1](product_name) trả góp. mình trả trước [50%](prepay_percent) thì còn bao nhiêu
-- [Oppoa71](product_name) trả trước [3000]{"entity":"price","role":"prepay"} còn lại trả trong [4 tháng](installment_payment_period) thì moi tháng trả bn vậy
+- Cho mình hỏi, mình trả góp gói [0 đ]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi mỗi tháng phải trả la bao nhiêu va cần những giấy tờ gi
+- Nếu mình trả trước [30 %](prepay_percent) thì góp 12t thi moi tháng bn?
+- fpt cho hỏi thế em mua trả góp mà trả trước [30 %](prepay_percent)  thì mỗi tháng trả bao nhiêu và trong vòng mấy thang
+- FPT đt [oppo f1s 2017](product_name). Tra truoc [o đ]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
+- e mua trả góp mà có bằng lái xe, CMND, hộ khẩu mà trả trước [60 %](prepay_percent)  trả trong [4 tháng](installment_payment_period) thì mỗi tháng trả khoảng bao nhiu ạ
+- Tra gop truoc [10 %](prepay_percent) . . Moi thang dong bao nhieu vay
+- E muốn mua trả góp [0 %](interest_rate) trả trước [10 %](prepay_percent) góp trong [6 t](installment_payment_period), nếu k đóng phí bảo hiểm thì 1 tháng góp bao nhiêu vậy ad
+- Trả trước [10 %](prepay_percent)  và ko mua bảo hiểm thì mỗi tháng góp bao nhiu vậy ad
+- Trả góp [0 đ]{"entity":"price","role":"prepay"}.ko mua bảo hiểm vay.đóng [6 tháng](installment_payment_period) nhiêu vay.
+- Ad oi minh muon mua [nova 2i](product_name) tra truoc [20 %](prepay_percent) gop [12 thang](installment_payment_period) vay thang la minh gop bao nhieu
+- Trả [30 %](prepay_percent) góp trong [6 tháng](installment_payment_period) hêt bn vay
+- Trả góp [10 %](prepay_percent) .lãi suất [0 %](interest_rate).[6 thang](installment_payment_period). Vay mỗi tháng góp bao nhieu
+- Trả góp [10 %](prepay_percent) trong vòng [6 tháng](installment_payment_period) của FE k mua phí bảo hiểm thì mỗi tháng góp bao nhiêu tiền?
+- trả góp [0 %](interest_rate) vậy mỗi tháng góp bao nhiêu?
+- QTV cho hỏi là mua trả góp trả trước [10 %](prepay_percent) góp [12 tháng](installment_payment_period). thì mỗi tháng góp bao nhiêu tiền vậy.thank!
+- [Mi A1](product_name) trả góp. mình trả trước [50 %](prepay_percent) thì còn bao nhiêu
+- [Oppo a71](product_name) trả trước [3000]{"entity":"price","role":"prepay"} còn lại trả trong [4 tháng](installment_payment_period) thì moi tháng trả bn vậy
 - mua tra gop oppo a71 co CMND +HK+hdon dien nuoc tra truoc 10% tra 12thag moi thag tra bao nhieu fpt
-- trả góp [0%](interest_rate) thì trong mấy tháng và trả trước bao nhiêu % mỗi tháng góp bao nhiêu
-- Trả trước [10%](prepay_percent) trả [12 tháng](installment_payment_period) 1 tháng trả bao nhiêu
-- tra trc [20%](prepay_percent) trong [12 thang](installment_payment_period) jz can tra bao nhju va moi thang nhju jz 
+- trả góp [0 %](interest_rate) thì trong mấy tháng và trả trước bao nhiêu % mỗi tháng góp bao nhiêu
+- Trả trước [10 %](prepay_percent) trả [12 tháng](installment_payment_period) 1 tháng trả bao nhiêu
+- tra trc [20 %](prepay_percent) trong [12 thang](installment_payment_period) jz can tra bao nhju va moi thang nhju jz 
 
 ## intent: case_how_many_per_month
 - - muốn trả góp trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [1 thang]{"entity":"installment_payment_period","role":"case2"} thì tháng đóng bao nhiêu
-- muốn mua trả góp trong [10 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [4t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
+- muốn mua trả góp trong [10 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [4 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
 - trả góp trong [12 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [2 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
-- trả góp trong [3 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [8t]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
-- muốn trả góp trong [11t]{"entity":"installment_payment_period","role":"case1"} hoặc [7 thang]{"entity":"installment_payment_period","role":"case2"} thì mỗi tháng trả bao nhiêu
-- muốn mua trả góp trong [5 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [9t]{"entity":"installment_payment_period","role":"case2"} thì tháng đóng bao nhiêu
-- mua trả góp trong [10 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [7t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
+- trả góp trong [3 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [8 t]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
+- muốn trả góp trong [11 t]{"entity":"installment_payment_period","role":"case1"} hoặc [7 thang]{"entity":"installment_payment_period","role":"case2"} thì mỗi tháng trả bao nhiêu
+- muốn mua trả góp trong [5 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [9 t]{"entity":"installment_payment_period","role":"case2"} thì tháng đóng bao nhiêu
+- mua trả góp trong [10 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [7 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
 - trả góp trong [7 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [10 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng đóng bao nhiêu
-- mua trả góp trong [10 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [7t]{"entity":"installment_payment_period","role":"case2"} thì mỗi tháng trả bao nhiêu
-- trả góp trong [6t]{"entity":"installment_payment_period","role":"case1"} hoặc [2 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
+- mua trả góp trong [10 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [7 t]{"entity":"installment_payment_period","role":"case2"} thì mỗi tháng trả bao nhiêu
+- trả góp trong [6 t]{"entity":"installment_payment_period","role":"case1"} hoặc [2 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
 - muốn trả góp trong [10 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [7 tháng]{"entity":"installment_payment_period","role":"case2"} mỗi tháng đóng bao nhiêu
-- trả góp trong [2t]{"entity":"installment_payment_period","role":"case1"} hoặc [10t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng đóng bao nhiêu
-- muốn mua trả góp trong [7 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [3t]{"entity":"installment_payment_period","role":"case2"} thì mỗi tháng trả bao nhiêu
+- trả góp trong [2 t]{"entity":"installment_payment_period","role":"case1"} hoặc [10 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng đóng bao nhiêu
+- muốn mua trả góp trong [7 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [3 t]{"entity":"installment_payment_period","role":"case2"} thì mỗi tháng trả bao nhiêu
 - mua trả góp trong [8 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [12 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
-- trả góp trong [3 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [7t]{"entity":"installment_payment_period","role":"case2"} tháng đóng nhiêu
-- mua trả góp trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [10t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
-- trả góp trong [11t]{"entity":"installment_payment_period","role":"case1"} hoặc [6t]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
-- mua trả góp trong [12t]{"entity":"installment_payment_period","role":"case1"} hoặc [6t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
-- muốn mua trả góp trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [7t]{"entity":"installment_payment_period","role":"case2"} tháng đóng nhiêu
-- mua trả góp trong [2t]{"entity":"installment_payment_period","role":"case1"} hay [9t]{"entity":"installment_payment_period","role":"case2"} tháng phải trả nhiêu
+- trả góp trong [3 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [7 t]{"entity":"installment_payment_period","role":"case2"} tháng đóng nhiêu
+- mua trả góp trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [10 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
+- trả góp trong [11 t]{"entity":"installment_payment_period","role":"case1"} hoặc [6 t]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
+- mua trả góp trong [12 t]{"entity":"installment_payment_period","role":"case1"} hoặc [6 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
+- muốn mua trả góp trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [7 t]{"entity":"installment_payment_period","role":"case2"} tháng đóng nhiêu
+- mua trả góp trong [2 t]{"entity":"installment_payment_period","role":"case1"} hay [9 t]{"entity":"installment_payment_period","role":"case2"} tháng phải trả nhiêu
 - muốn trả góp trong [8 tháng]{"entity":"installment_payment_period","role":"case1"} hay [12 thang]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
 - muốn trả góp trong [5 tháng]{"entity":"installment_payment_period","role":"case1"} hay [12 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
 - muốn trả góp trong [2 thang]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
 - muốn trả góp trong [9 tháng]{"entity":"installment_payment_period","role":"case1"} hay [3 tháng]{"entity":"installment_payment_period","role":"case2"} tháng phải trả nhiêu
-- muốn trả góp trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hay [10t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
-- mua trả góp trong [3t]{"entity":"installment_payment_period","role":"case1"} hay [8 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
+- muốn trả góp trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hay [10 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
+- mua trả góp trong [3 t]{"entity":"installment_payment_period","role":"case1"} hay [8 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
 - trả góp trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [5 tháng]{"entity":"installment_payment_period","role":"case2"} thì mỗi tháng trả bao nhiêu
 - trả góp trong [6 thang]{"entity":"installment_payment_period","role":"case1"} hay [1 thang]{"entity":"installment_payment_period","role":"case2"} tháng đóng nhiêu
 - mua trả góp trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
 - mua trả góp trong [3 tháng]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
 - muốn mua trả góp trong [2 thang]{"entity":"installment_payment_period","role":"case1"} hay [11 thang]{"entity":"installment_payment_period","role":"case2"} thì tháng đóng bao nhiêu
-- trả góp trong [9t]{"entity":"installment_payment_period","role":"case1"} hay [1 thang]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
-- muốn trả góp trong [10t]{"entity":"installment_payment_period","role":"case1"} hay [11t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
+- trả góp trong [9 t]{"entity":"installment_payment_period","role":"case1"} hay [1 thang]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
+- muốn trả góp trong [10 t]{"entity":"installment_payment_period","role":"case1"} hay [11 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
 - muốn mua trả góp trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hay [2 thang]{"entity":"installment_payment_period","role":"case2"} thì tháng đóng bao nhiêu
 - trả góp trong [6 thang]{"entity":"installment_payment_period","role":"case1"} hay [8 thang]{"entity":"installment_payment_period","role":"case2"} tháng phải trả nhiêu
-- mua trả góp trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hay [5t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
+- mua trả góp trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hay [5 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
 - mua trả góp trong [1 tháng]{"entity":"installment_payment_period","role":"case1"} hay [2 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng đóng bao nhiêu
-- mua trả góp trong [7t]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
+- mua trả góp trong [7 t]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
 - cho mình hỏi mình muốn mua trả góp trong [12 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [6 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
 - cho mình hỏi mình muốn mua trả góp trong [4 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [6 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
 - cho mình hỏi mình muốn mua trả góp trong [8 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [8 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
@@ -1592,35 +1591,35 @@
 - Ko hỗ trợ trả góp ak shop
 - máy này có bán trả góp không bạn?
 - cho em hoi [samsung a10](product_name) CO BAN TRA GOP KO ?
-- sản phẩm này có trả góp [0%](interest_rate) không shop?
-- Cho e hỏi [f1s](product_name) còn gói lãi suất [0%](interest_rate) k ạ,
+- sản phẩm này có trả góp [0 %](interest_rate) không shop?
+- Cho e hỏi [f1s](product_name) còn gói lãi suất [0 %](interest_rate) k ạ
 - ản phẩm này có trả góp ko ạ.
 - Có bán trả góp k v
 - [Oppof1s 2016](product_name) co dc tra gop ko ak
-- Minh muon mua oppo [f1s 2017](product_name) tra truoc [0đ]{"entity":"price","role":"prepay"}  co dc ko ak
-- Mình muốn mua oppo [f1s(2017)](product_name), sản phẩm có hổ trợ trả góp [0%](interest_rate) không vậy bạn. Mình ở Long An ak.
-- may [oppo f1s](product_name) nay co tra trc [od]{"entity":"price","role":"prepay"} khong ak
+- Minh muon mua oppo [f1s 2017](product_name) tra truoc [0 đ]{"entity":"price","role":"prepay"}  co dc ko ak
+- Mình muốn mua oppo [f1s(2017)](product_name), sản phẩm có hổ trợ trả góp [0 %](interest_rate) không vậy bạn
+- may [oppo f1s](product_name) nay co tra trc [o d]{"entity":"price","role":"prepay"} khong ak
 - E mun mua dt oppo tra gop dc k ak
-- e muon mua mot cai dt [samsung j2](product_name) tra truoc [od]{"entity":"price","role":"prepay"} co dc ko z
-- Acs co cho trả trước [0d]{"entity":"price","role":"prepay"}  vs san Phẩm [Oppo f1s](product_name) k v ad
-- Em sinh viên năm nhất muốn mua [nova 2i](product_name) thì được trả góp [0%](interest_rate) không ạ ?
-- Máy này có trả góp trả trước [0đ]{"entity":"price","role":"prepay"} k vây
-- máy này trả trước [od]{"entity":"price","role":"prepay"} dk k ad
-- Máy hỗ trợ trả góp [0%](interest_rate) không shop
-- máy có trả góp lãi suất [0%](interest_rate) trả trước [10%](prepay_percent) không ad
-- máy có trả góp lãi suất [0%](interest_rate) trả trước [10%](prepay_percent) không vậy ad
+- e muon mua mot cai dt [samsung j2](product_name) tra truoc [o d]{"entity":"price","role":"prepay"} co dc ko z
+- Acs co cho trả trước [0 d]{"entity":"price","role":"prepay"}  vs san Phẩm [Oppo f1s](product_name) k v ad
+- Em sinh viên năm nhất muốn mua [nova 2i](product_name) thì được trả góp [0 %](interest_rate) không ạ ?
+- Máy này có trả góp trả trước [0 đ]{"entity":"price","role":"prepay"} k vây
+- máy này trả trước [o d]{"entity":"price","role":"prepay"} dk k ad
+- Máy hỗ trợ trả góp [0 %](interest_rate) không shop
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [10%](prepay_percent) không ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [10%](prepay_percent) không vậy ad
 - Mi4x có cho trả trước [0 đồng]{"entity":"price","role":"prepay"} ko
 - Oppo co tra gop [A 71](product_name) kova
-- máy này có trả góp [0%](interest_rate) k vậy
+- máy này có trả góp [0 %](interest_rate) k vậy
 - Dạ cho em hỏi máy này có trả góp không ạ
-- [a71](product_name) có trả trước [0%](prepay_percent)  ko ạ
-- Sp này có trả góp [0%](interest_rate) k
+- [a71](product_name) có trả trước [0 %](prepay_percent)  ko ạ
+- Sp này có trả góp [0 %](interest_rate) k
 - Cho em hỏi [Oppo A71](product_name) có trả góp cho sinh viên không ạ?
 - Cái này có trả góp ko ad
-- máy có trả góp [0%](interest_rate) ko vậy
+- máy có trả góp [0 %](interest_rate) ko vậy
 - Mình muốn mua trả góp máy này thì thế nào
-- [HTC 10 evo](product_name) có hỗ trợ trả góp không ạ !?
-- Cho mình hỏi con [htc10 evo](product_name) này đang có chương trình khuyến mãi trả góp [0%](interest_rate) lãi xuất à
+- [HTC 10 evo](product_name) có hỗ trợ trả góp không ạ !
+- Cho mình hỏi con [htc10 evo](product_name) này đang có chương trình khuyến mãi trả góp [0 %](interest_rate) lãi xuất à
 - [HTC 10evo](product_name) co tra góp lải xuất [0 phần trăm](interest_rate) không
 - San pham co tra gop ko
 - Con này không có trả góp sao ạ
@@ -1668,23 +1667,23 @@
 - [ss s10 lite](product_name) xài được [edge]{"entity":"hardware","role":"YorN"} không
 - [Samsung Galaxy M10s](product_name) có [bluetooth]{"entity":"hardware","role":"YorN"} không        
 - [Masstel Fami S2](product_name) xài được [đèn flash]{"entity":"hardware","role":"YorN"} không      
-- [Nokia 1.3](product_name) có [4g]{"entity":"hardware","role":"YorN"} không
-- [Xiaomi Redmi Note 8 Pro](product_name) dùng được [3g]{"entity":"hardware","role":"YorN"} không    
+- [Nokia 1.3](product_name) có [3 g]{"entity":"hardware","role":"YorN"} không
+- [Xiaomi Redmi Note 8 Pro](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không    
 - [Vivo Y50](product_name) có [đèn flash]{"entity":"hardware","role":"YorN"} không
 - [ss 10 lite](product_name) xài được [bluetooth]{"entity":"hardware","role":"YorN"} không
 - [realme 5s](product_name) dùng được [nfc]{"entity":"hardware","role":"YorN"} không
-- [Xiaomi Redmi K30 5G Tracing](product_name) dùng được [3g]{"entity":"hardware","role":"YorN"} không
+- [Xiaomi Redmi K30 5G Tracing](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không
 - [Nokia 150 DS](product_name) dùng được [đèn flash]{"entity":"hardware","role":"YorN"} không        
 - [Nokia 105 SS](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
 - [Realme XT](product_name) có [đèn flash]{"entity":"hardware","role":"YorN"} không
 - [ss s20](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
-- [realme 6 pro](product_name) có [4g]{"entity":"hardware","role":"YorN"} không
+- [realme 6 pro](product_name) có [3 g]{"entity":"hardware","role":"YorN"} không
 - [Vivo Y3](product_name) xài được [bluetooth]{"entity":"hardware","role":"YorN"} không
 - [Huawei Y7 Pro](product_name) có [đèn flash]{"entity":"hardware","role":"YorN"} không
 - [Huawei P40](product_name) dùng được [đèn pin]{"entity":"hardware","role":"YorN"} không
 - [Masstel Fami 9](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
 - [Realme C2 ](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
-- [Itel It2163](product_name) dùng được [3g]{"entity":"hardware","role":"YorN"} không
+- [Itel It2163](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không
 - [Samsung Galaxy Note 10+](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
 - [Itel It2170](product_name) có [edge]{"entity":"hardware","role":"YorN"} không
 - [OPPO A1k](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
@@ -1725,11 +1724,11 @@
 - máy dùng [GPU]{"entity":"hardware","role":"WHQ"} nào vậy
 - điện thoại này có [bluetooth]{"entity":"hardware","role":"YorN"} không ad
 - máy này có [gps]{"entity":"hardware","role":"YorN"} không ạ
-- sản phẩm này có [4g]{"entity":"hardware","role":"YorN"} không
+- sản phẩm này có [4 g]{"entity":"hardware","role":"YorN"} không
 - sản phẩm này có [bluetooth]{"entity":"hardware","role":"YorN"} không ad
 - có [đèn flash]{"entity":"hardware","role":"YorN"} không
-- máy này có [4g]{"entity":"hardware","role":"YorN"} không vậy
-- máy này có [3g]{"entity":"hardware","role":"YorN"} không
+- máy này có [4 g]{"entity":"hardware","role":"YorN"} không vậy
+- máy này có [3 g]{"entity":"hardware","role":"YorN"} không
 - máy có [đèn flash]{"entity":"hardware","role":"YorN"} không
 - máy có [bluetooth]{"entity":"hardware","role":"YorN"} không ad
 - máy này có [bluetooth]{"entity":"hardware","role":"YorN"} không ạ      
@@ -1741,13 +1740,13 @@
 - máy này có [gprs]{"entity":"hardware","role":"YorN"} không ạ
 - dùng được [wifi]{"entity":"hardware","role":"YorN"} không ad
 - dùng được [gps]{"entity":"hardware","role":"YorN"} không vậy
-- có [3g]{"entity":"hardware","role":"YorN"} không ad
+- có [3 g]{"entity":"hardware","role":"YorN"} không ad
 - máy có [đèn flash]{"entity":"hardware","role":"YorN"} không ad
 - dùng được [wifi]{"entity":"hardware","role":"YorN"} không ad
 - điện thoại này có [bluetooth]{"entity":"hardware","role":"YorN"} không ad
-- máy này có [3g]{"entity":"hardware","role":"YorN"} không ad
+- máy này có [3 g]{"entity":"hardware","role":"YorN"} không ad
 - có [đèn flash]{"entity":"hardware","role":"YorN"} không ạ
-- điện thoại này có [3g]{"entity":"hardware","role":"YorN"} không ạ
+- điện thoại này có [3 g]{"entity":"hardware","role":"YorN"} không ạ
 - điện thoại này có [bluetooth]{"entity":"hardware","role":"YorN"} không ạ
 - điện thoại này có [đèn flash]{"entity":"hardware","role":"YorN"} không ad
 - máy có [edge]{"entity":"hardware","role":"YorN"} không ạ
@@ -1918,6 +1917,7 @@
 - cam trước
 - camera trước
 - camera phía trước
+
 ## synonym: camera sau
 - cam sau
 - camera sau
@@ -1934,3 +1934,18 @@ data/rom.txt
 data/price.txt
 ## lookup:installment_payment_period
 data/thoigian.txt
+
+## intent: out_of_scope
+- lồn
+- lồn mẹ mày
+- con cặc
+- có cc
+- địt mẹ mày
+- sủa cái gì v
+- cục cứt
+- địt con mẹ mày
+- trả lời như lồn v
+- óc chó
+- occho
+- thứ ngu lồn
+- ngu vcc
