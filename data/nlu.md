@@ -1934,7 +1934,8 @@ data/rom.txt
 data/price.txt
 ## lookup:installment_payment_period
 data/thoigian.txt
-
+## lookup: prepay_percent
+data/prepay_percent.txt
 ## intent: out_of_scope
 - lồn
 - lồn mẹ mày
