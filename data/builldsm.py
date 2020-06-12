@@ -11,28 +11,43 @@ import random
 
 # print(printresult('màn hình+','không',"wifi"))
 # data = ['wifi','vào mạng được','3G','4G']
-# for i in range(1,30):
-#     TR = truoc[random.randint(0,len(truoc)-1)]
-#     S = sau[random.randint(0,len(sau)-1)]
-#     mid = data[random.randint(0,len(data)-1)].strip('\n')
-#     res = "- {} [{}](hardware) {}".format(TR,mid,S)
-#     print(res)
 
-# begin = ['sản phẩm này có','máy này có','điện thoại này có','máy có','có','dùng được']
-# data =['wifi','gprs','3g','4g','edge','nfc','bluetooth','gps','đèn pin','đèn flash']
-# end = ["không","không ạ","không vậy","không ad"]
-# for i in range(1,30):
-#     I = begin[random.randint(0,len(begin)-1)]
-#     II = data[random.randint(0,len(data)-1)]
-#     III = end[random.randint(0,len(end)-1)]
-#     IV = '{"entity":"hardware","role":"YorN"}'
-#     result = '- {} [{}]{} {}'.format(I,II,IV,III)
-#     print(result)
+# for i in range(1,13):
+#     res = "\n{0} tháng\n{0}t\n{0} thang".format(i)
+#     fobj.write(res)
+# fobj.close()
+fobj = open('data/product_name.txt',encoding='utf-8')
+# begin = ['của điện thoại','của máy','của sản phẩm','']
+data = fobj.readlines()
+ka = ['chíp','chip','cpu','chíp xử lý','chip xử lý','CPU','chíp đồ họa','card đồ họa','chíp đồ họa','card','gpu','GPU']
+end = ["có","xài ","dùng"]
+for i in range(1,30):
+    # first = begin[random.randint(0,len(begin)-1)]
+    last = end[random.randint(0,len(end)-1)]
+    ten = data[random.randint(0,len(data))].strip('\n')
+    KAA= ka[random.randint(0,len(ka)-1)]
+    # entity1 = '{"entity":"camera","role":"front"}'
+    # entity2 = '{"entity":"camera","role":"behind"}'
+    entity = '{"entity":"hardware","role":"WHQ"}'
+    result = '- [{}](product_name) {} [{}]{} gì'.format(ten,last,KAA,entity)
+    # n = random.randint(1,4)
+    # if n == 1:
+    #     result = '- [cam trước](camera) {} [{}](product_name) {}'.format(first,ten,last)
+    # if n == 2:
+    #     result = '- [camera trước](camera) {} [{}](product_name) {}'.format(first,ten,last)
+    # if n == 3:
+    #     result = '- [cam sau](camera) {} [{}](product_name) {}'.format(first,ten,last)
+    # if n == 4:
+    #     result = '- [camera sau](camera) {} [{}](product_name) {}'.format(first,ten,last)
+    print(result.replace("  "," "))
+fobj.close()
+# count = 0
+# data = open('data/nlu.md',encoding='utf-8').readlines()
+# for item in data:
+#     if item.find("intent") > -1:
+#         count = count +1
+#         intent = item.split(":")
+#         res = "- {}".format(intent[1])
+#         print(res.strip('\n'))
 
-data = open('data/nlu.md',encoding='utf-8').readlines()
-for item in data:
-    if item.find("intent") > -1:
-        intent = item.split(":")
-        res = "- {}".format(intent[1])
-        print(res.strip('\n'))
-
+# print(count)

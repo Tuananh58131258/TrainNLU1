@@ -1,0 +1,396 @@
+1 triệu
+2 triệu
+3 triệu
+4 triệu
+5 triệu
+6 triệu
+7 triệu
+8 triệu
+9 triệu
+một triệu
+hai triệu
+ba triệu
+bốn triệu
+năm triệu
+sáu triệu
+bảy triệu
+tám triệu
+chín triệu
+mười một triệu
+mười hai triệu
+mười ba triệu
+mười bốn triệu
+mười lăm triệu
+mười sáu triệu
+mười bảy triệu
+mười tám triệu
+mười chín triệu
+hai mươi một triệu
+hai mươi hai triệu
+hai mươi ba triệu
+hai mươi bốn triệu
+hai mươi lăm triệu
+hai mươi sáu triệu
+hai mươi bảy triệu
+hai mươi tám triệu
+hai mươi chín triệu
+hâm mốt triệu
+hâm hai triệu
+hâm ba triệu
+hâm bốn triệu
+hâm lăm triệu
+hâm sáu triệu
+hâm bảy triệu
+hâm tám triệu
+hâm chín triệu
+một triệu mốt
+một triệu hai
+một triệu ba
+một triệu bốn
+một triệu năm
+một triệu sáu
+một triệu bảy
+một triệu tám
+một triệu chín
+hai triệu mốt
+hai triệu hai
+hai triệu ba
+hai triệu bốn
+hai triệu năm
+hai triệu sáu
+hai triệu bảy
+hai triệu tám
+hai triệu chín
+ba triệu mốt
+ba triệu hai
+ba triệu ba
+ba triệu bốn
+ba triệu năm
+ba triệu sáu
+ba triệu bảy
+ba triệu tám
+ba triệu chín
+bốn triệu mốt
+bốn triệu hai
+bốn triệu ba
+bốn triệu bốn
+bốn triệu năm
+bốn triệu sáu
+bốn triệu bảy
+bốn triệu tám
+bốn triệu chín
+năm triệu mốt
+năm triệu hai
+năm triệu ba
+năm triệu bốn
+năm triệu năm
+năm triệu sáu
+năm triệu bảy
+năm triệu tám
+năm triệu chín
+sáu triệu mốt
+sáu triệu hai
+sáu triệu ba
+sáu triệu bốn
+sáu triệu năm
+sáu triệu sáu
+sáu triệu bảy
+sáu triệu tám
+sáu triệu chín
+bảy triệu mốt
+bảy triệu hai
+bảy triệu ba
+bảy triệu bốn
+bảy triệu năm
+bảy triệu sáu
+bảy triệu bảy
+bảy triệu tám
+bảy triệu chín
+tám triệu mốt
+tám triệu hai
+tám triệu ba
+tám triệu bốn
+tám triệu năm
+tám triệu sáu
+tám triệu bảy
+tám triệu tám
+tám triệu chín
+chín triệu mốt
+chín triệu hai
+chín triệu ba
+chín triệu bốn
+chín triệu năm
+chín triệu sáu
+chín triệu bảy
+chín triệu tám
+chín triệu chín
+1 triệu 1
+2 triệu 2
+3 triệu 3
+4 triệu 4
+5 triệu 5
+6 triệu 6
+7 triệu 7
+8 triệu 8
+9 triệu 9
+1,1 triệu
+1,2 triệu
+1,3 triệu
+1,4 triệu
+1,5 triệu
+1,6 triệu
+1,7 triệu
+1,8 triệu
+1,9 triệu
+2,1 triệu
+2,2 triệu
+2,3 triệu
+2,4 triệu
+2,5 triệu
+2,6 triệu
+2,7 triệu
+2,8 triệu
+2,9 triệu
+3,1 triệu
+3,2 triệu
+3,3 triệu
+3,4 triệu
+3,5 triệu
+3,6 triệu
+3,7 triệu
+3,8 triệu
+3,9 triệu
+4,1 triệu
+4,2 triệu
+4,3 triệu
+4,4 triệu
+4,5 triệu
+4,6 triệu
+4,7 triệu
+4,8 triệu
+4,9 triệu
+5,1 triệu
+5,2 triệu
+5,3 triệu
+5,4 triệu
+5,5 triệu
+5,6 triệu
+5,7 triệu
+5,8 triệu
+5,9 triệu
+6,1 triệu
+6,2 triệu
+6,3 triệu
+6,4 triệu
+6,5 triệu
+6,6 triệu
+6,7 triệu
+6,8 triệu
+6,9 triệu
+7,1 triệu
+7,2 triệu
+7,3 triệu
+7,4 triệu
+7,5 triệu
+7,6 triệu
+7,7 triệu
+7,8 triệu
+7,9 triệu
+8,1 triệu
+8,2 triệu
+8,3 triệu
+8,4 triệu
+8,5 triệu
+8,6 triệu
+8,7 triệu
+8,8 triệu
+8,9 triệu
+9,1 triệu
+9,2 triệu
+9,3 triệu
+9,4 triệu
+9,5 triệu
+9,6 triệu
+9,7 triệu
+9,8 triệu
+9,9 triệu
+1 triệu rưởi
+2 triệu rưởi
+3 triệu rưởi
+4 triệu rưởi
+5 triệu rưởi
+6 triệu rưởi
+7 triệu rưởi
+8 triệu rưởi
+9 triệu rưởi
+một triệu rưởi
+hai triệu rưởi
+ba triệu rưởi
+bốn triệu rưởi
+năm triệu rưởi
+sáu triệu rưởi
+bảy triệu rưởi
+tám triệu rưởi
+chín triệu rưởi
+1.1 triệu
+1.2 triệu
+1.3 triệu
+1.4 triệu
+1.5 triệu
+1.6 triệu
+1.7 triệu
+1.8 triệu
+1.9 triệu
+2.1 triệu
+2.2 triệu
+2.3 triệu
+2.4 triệu
+2.5 triệu
+2.6 triệu
+2.7 triệu
+2.8 triệu
+2.9 triệu
+3.1 triệu
+3.2 triệu
+3.3 triệu
+3.4 triệu
+3.5 triệu
+3.6 triệu
+3.7 triệu
+3.8 triệu
+3.9 triệu
+4.1 triệu
+4.2 triệu
+4.3 triệu
+4.4 triệu
+4.5 triệu
+4.6 triệu
+4.7 triệu
+4.8 triệu
+4.9 triệu
+5.1 triệu
+5.2 triệu
+5.3 triệu
+5.4 triệu
+5.5 triệu
+5.6 triệu
+5.7 triệu
+5.8 triệu
+5.9 triệu
+6.1 triệu
+6.2 triệu
+6.3 triệu
+6.4 triệu
+6.5 triệu
+6.6 triệu
+6.7 triệu
+6.8 triệu
+6.9 triệu
+7.1 triệu
+7.2 triệu
+7.3 triệu
+7.4 triệu
+7.5 triệu
+7.6 triệu
+7.7 triệu
+7.8 triệu
+7.9 triệu
+8.1 triệu
+8.2 triệu
+8.3 triệu
+8.4 triệu
+8.5 triệu
+8.6 triệu
+8.7 triệu
+8.8 triệu
+8.9 triệu
+9.1 triệu
+9.2 triệu
+9.3 triệu
+9.4 triệu
+9.5 triệu
+9.6 triệu
+9.7 triệu
+9.8 triệu
+9.9 triệu
+1 m 1
+1 m 2
+1 m 3
+1 m 4
+1 m 5
+1 m 6
+1 m 7
+1 m 8
+1 m 9
+2 m 1
+2 m 2
+2 m 3
+2 m 4
+2 m 5
+2 m 6
+2 m 7
+2 m 8
+2 m 9
+3 m 1
+3 m 2
+3 m 3
+3 m 4
+3 m 5
+3 m 6
+3 m 7
+3 m 8
+3 m 9
+4 m 1
+4 m 2
+4 m 3
+4 m 4
+4 m 5
+4 m 6
+4 m 7
+4 m 8
+4 m 9
+5 m 1
+5 m 2
+5 m 3
+5 m 4
+5 m 5
+5 m 6
+5 m 7
+5 m 8
+5 m 9
+6 m 1
+6 m 2
+6 m 3
+6 m 4
+6 m 5
+6 m 6
+6 m 7
+6 m 8
+6 m 9
+7 m 1
+7 m 2
+7 m 3
+7 m 4
+7 m 5
+7 m 6
+7 m 7
+7 m 8
+7 m 9
+8 m 1
+8 m 2
+8 m 3
+8 m 4
+8 m 5
+8 m 6
+8 m 7
+8 m 8
+8 m 9
+9 m 1
+9 m 2
+9 m 3
+9 m 4
+9 m 5
+9 m 6
+9 m 7
+9 m 8
+9 m 9

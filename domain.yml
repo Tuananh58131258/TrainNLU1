@@ -1,6 +1,5 @@
 entities:
   - price
-  - student
   - interest_rate
   - product_name
   - prepay_percent
@@ -9,24 +8,43 @@ entities:
   - hardware
 
 intents:
-  -  greet
-  -  goodbye
-  -  ask_ability
-  -  thankyou
-  -  praise
-  -  decry
-  -  what_license
-  -  can_buy_with_installment_with_license
-  -  can_buy_with_installment_without_license
-  -  replace_GPLX_with_SHK_and_opposite
-  -  can_installment
-  -  how_to_buy_on_installment
-  -  how_old_can_buy_on_installment
-  -  how_many_per_month
-  -  case_how_many_per_month
-  -  age_installment
-  -  is_product_can_buy_on_installment
-  -  ask_hardware_info
+  - greet
+  - goodbye
+  - ask_ability
+  - thankyou
+  - praise
+  - decry
+  - product_price        
+  - online_price
+  - old_product_price    
+  - product_configuration
+  - type_of_product
+  - need_help
+  - list_product
+  - order
+  - check_price
+  - find_product_in_range_price
+  - find_product_lower_price
+  - find_product_upper_price
+  - find_product_around_price
+  - screen_info
+  - pin_info
+  - buy_olf_product
+  - what_license
+  - two_or_more_file
+  - how_many_per_month
+  - case_how_many_per_month
+  - age_installment
+  - is_product_can_buy_on_installment
+  - installment_registration_period
+  - ask_hardware_info
+  - ask_main_camera
+  - ask_selfie_camera
+  - resolution_selfie_camera
+  - resolution_main_camera
+  - Guarantee
+  - delivery
+  - Promotions_and_gifts
 
 responses:
 
