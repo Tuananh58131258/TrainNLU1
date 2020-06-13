@@ -3,6 +3,7 @@
 language: vi
 pipeline:
   - name: WhitespaceTokenizer
+  - name: "CRFEntityExtractor"
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
