@@ -1,4 +1,5 @@
 ## intent: greet
+<!-- chào hỏi -->
 - chào em
 - hello em
 - hi em
@@ -17,6 +18,7 @@
 - merci
 
 ## intent: goodbye
+<!-- tạm biệt -->
 - good bye
 - bye bye
 - tạm biệt em
@@ -31,6 +33,7 @@
 - đi đây
 
 ## intent: ask_ability
+<!-- hỏi khả năng của bot -->
 - em có thể làm những gì nhỉ
 - em có chức năng gì?
 - em giúp gì được anh không?
@@ -43,6 +46,7 @@
 - cho anh xem các chức năng của em
 
 ## intent: thankyou
+<!-- cảm ơn bot -->
 - cảm ơn em nhá
 - thanks em nha
 - cảm ơn nha
@@ -57,6 +61,7 @@
 - great! Thanks
 
 ## intent: praise
+<!-- khen bot -->
 - bot giỏi quá
 - great
 - awsome
@@ -66,6 +71,7 @@
 - đẹp trai đấy
 
 ## intent: decry
+<!-- chê bot -->
 - quá tệ
 - ngu ngốc
 - chả biết gì cả
@@ -76,6 +82,7 @@
 - sai rồi, chán ghê
 
 ## intent: product_price
+<!-- Hỏi giá của sản phẩm -->
 - sản phẩm [Realme 5 Pro](product_name) mua mới bao nhiêu tiền
 - điện thoại [Nokia 150 DS](product_name) giá mua mới là bao nhiêu
 - [realme x50 5g](product_name) giá khi mua mới
@@ -373,6 +380,7 @@
 
 
 ## intent: online_price
+<!-- hỏi giá sản phẩm khi mua online -->
 - sản phẩm [ss z flip 5g](product_name) [16gb](rom)có giá bao nhiêu khi mua online
 - điện thoại [Xiaomi Black Shark 3](product_name) [8 GB](ram) [256 GB](rom) mua online hiện nay có giá bao nhiêu
 - [realme 6](product_name) [1 GB](ram) [32 gb](rom) giá mua online là bao nhiêu
@@ -522,6 +530,7 @@
 - [Energizer P20](product_name) giá online như thế nào
 
 ## intent: old_product_price
+<!-- hỏi giá sản phẩm cũ -->
 - [Huawei Y8p](product_name) giá cũ là bao nhiêu
 - [ss m01](product_name) giá cũ là bao nhiêu
 - điện thoại [Xiaomi Redmi K30i](product_name) giá cũ là bao nhiêu
@@ -720,6 +729,7 @@
 - sản phẩm [ss m51](product_name) mua cũ hiện nay có giá bao nhiêu
 
 ## intent: product_configuration
+<!-- hỏi cấu hình sản phẩm -->
 - cấu hình [Realme X50 5G](product_name) như thế nào
 - [Realme C3i 2GB-32GB](product_name) có mạnh không
 - thông tin của [OPPO F15](product_name) có mạnh không
@@ -741,17 +751,20 @@
 - cấu hình của [Realme 6 4GB-128GB](product_name) có ổn không
 
 ## intent: type_of_product
+<!-- hỏi có những hãng điện thoại nào -->
 - shop có những sản phẩm nào
 - có bao nhiêu loại sản phẩm
 - shop có điện thoại của những hãng nào
 - có bao nhiêu hãng điện thoại
 
 ## intent: need_help
+<!-- cần tư vấn -->
 - tôi muốn mua điện thoại
 - có thể tư vấn cho tôi được không
 - tôi cần một chiếc điện thoại
 
 ## intent: list_product
+<!-- danh sách sản phẩm của 1 hãng -->
 - Danh sách sản phẩm của [Iphone](product_company)
 - Danh sách sản phẩm của [Realme](product_company)
 - Danh sách sản phẩm của [Huawei](product_company)
@@ -760,6 +773,7 @@
 - Danh sách sản phẩm của [Huawei](product_company)
 
 ## intent: order
+<!-- đặt mua sản phẩm -->
 - Đặt mua [Huawei P30 Lite New Edition](product_name)
 - Đặt mua [OPPO F15](product_name)
 - Đặt mua [iPhone 11 Pro 512GB](product_name)
@@ -781,6 +795,7 @@
 - Đặt mua [OPPO A92](product_name)
 
 ## intent:check_price
+<!-- kiểm tra giá của sản phẩm -->
 - giá của [ss m01](product_name) [4,2 triệu](price) phải không ạ
 - gia điện thoại [Huawei Nova 7 5G](product_name) là [1,4 triệu](price) đúng không
 - gia điện thoại [Masstel Fami P25](product_name) [hâm chín triệu](price) đúng không
@@ -929,6 +944,7 @@
 - [Xiaomi Redmi 7](product_name) giá [9 m 8](price) phải không ạ
 
 ## intent:find_product_in_range_price
+<!-- tìm sản phẩm trong một khoảng giá -->
 - có điện thoại nào trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"} 
 - có điện thoại nào trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - tôi muốn một chiếc điện thoại trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
@@ -980,6 +996,7 @@
 - tôi muốn một chiếc điện thoại trong khoảng [bảy triệu tám]{"entity":"price","role":"from_price"} đến [hâm lăm triệu]{"entity":"price","role":"to_price"}
 
 ## intent: find_product_lower_price
+<!-- tìm sản phẩm dưới 1 mức giá -->
 - có sản phẩm nào dưới [9,1 triệu](price) không
 - có điện thoại nào giá dưới [6.5 triệu](price) không
 - có sản phẩm nào dưới [8 m 7](price) không
@@ -1080,6 +1097,7 @@
 - có điện thoại nào có giá khoảng [7,2 triệu](price) quay đầu không
 
 ## intent: find_product_upper_price
+<!-- tìm sản phẩm trên một mức giá -->
 - có điện thoại nào có giá khoảng [6 triệu](price) trở lên không
 - có điện thoại nào có giá khoảng [bốn triệu mốt](price) trở lên không
 - có điện thoại nào có giá khoảng [5,4 triệu](price) trở lên không
@@ -1180,6 +1198,7 @@
 - có cái nào trên [7 m 1](price) không
 
 ## intent: find_product_around_price
+<!-- tìm sản phẩm có giá xung quanh 1 mức -->
 <!-- chênh lệch trên dưới 1 triệu đồng -->
 - có điện thoại nào tầm [7,7 triệu](price) không
 - có điện thoại nào trên dưới [8,9 triệu](price) không ạ
@@ -1252,6 +1271,7 @@
 - có điện thoại nào trên dưới [mười ba triệu](price) không giới thiệu cho em với
 
 ## intent: screen_info
+<!-- thông tin màn hình -->
 - màn hình của [Masstel Play 30](product_name) là màn hình gì?
 - màn hình của [Nokia 105 Single Sim (2017)](product_name) là màn hình gì?
 - [Masstel Fami P25](product_name) sử dụng màn hình gì?
@@ -1273,6 +1293,7 @@
 - [Xiaomi Mi 9T](product_name) sử dụng màn hình gì?
 
 ## intent:pin_info
+<!-- thông tin về pin -->
 - pin của [Huawei Enjoy 10e](product_name) có dung lượng bao nhiêu?
 - [Vivo Y30](product_name) sử dụng loại pin nào?
 - thời gian sử dụng pin của [realme c3](product_name) là bao lâu?
@@ -1300,6 +1321,7 @@
 - pin dùng được lâu không
 
 ## intent: buy_olf_product
+<!-- có thu mua lại sản phẩm cũ không -->
 - shop thu mua [Huawei Mate 30 Pro 5G](product_name) cũ lại với giá bao nhiêu
 - [Vivo Y50](product_name) cũ bán được bao nhiêu?
 - shop thu mua [Xiaomi Mi Note 10 Pro](product_name) cũ lại với giá bao nhiêu
@@ -1350,6 +1372,7 @@
 - [ss a10](product_name) cũ shop mua lại với giá bao nhiêu?
 
 ## intent: what_license
+<!-- mua trả góp cần giấy tờ gì -->
 - cho em hỏi là hộ khẩu để làm thủ tục trả góp là bản chính hay là bản sao có công chứng ạ ?
 - [oppo f1s](product_name) 2017 .mình muốn mua trả góp [0 %](interest_rate) .cần giấy tờ gì QTV
 - Có giấy chứng minh với bằng lái xe đăng kí được không ạ
@@ -1436,6 +1459,7 @@
 - em vừa hoàn thành hồ sơ trả góp thì có cần làm lại hồ sơ mới không
 
 ## intent: how_many_per_month
+<!-- cần phải trả bao nhiêu tiền / 1 tháng -->
 - Cho minh hoi neu minh mua may tra gop ma minh tra truoc [2 tr]{"entity":"price","role":"prepay"} z moi thang minh tra gop khoang bao nhieu z shop
 - Em có [1 tr 500](price) cho em hỏi trả góp trong [9 tháng](installment_payment_period) thì phải trả trước bao nhiêu là mỗi tháng trả bao nhiu vâyj ạ
 - m trả góp [0 %](interest_rate) trong vòng [12 tháng](installment_payment_period) vậy mỗi tháng m phải trả bao nhiêu ak.
@@ -1472,7 +1496,8 @@
 - tra trc [20 %](prepay_percent) trong [12 thang](installment_payment_period) jz can tra bao nhju va moi thang nhju jz 
 
 ## intent: case_how_many_per_month
-- - muốn trả góp trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [1 thang]{"entity":"installment_payment_period","role":"case2"} thì tháng đóng bao nhiêu
+<!-- cần phải trả bao nhiêu tiền trên 1 tháng trong 2 trường hợp -->
+- muốn trả góp trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [1 thang]{"entity":"installment_payment_period","role":"case2"} thì tháng đóng bao nhiêu
 - muốn mua trả góp trong [10 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [4 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
 - trả góp trong [12 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [2 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
 - trả góp trong [3 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [8 t]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
@@ -1518,6 +1543,7 @@
 - cho mình hỏi mình muốn mua trả góp trong [6 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [9 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
 
 ## intent: age_installment
+<!-- độ tuổi được trả góp -->
 - Cho em hỏi em là em sinh 30/1/1998 mua trả góp được không vậy
 - Cho em hỏi 16 tuổi có được mua trả góp không ạ
 - Cho e hỏi là e sinh 1/5/1997 e có giấy chứng minh và bằng lái xe e mua trả trước 20% vậy có đc k ạ
@@ -1571,6 +1597,7 @@
 - Mình mới 17t thế có mua trả góp đc không
 
 ## intent: is_product_can_buy_on_installment
+<!-- sản phẩm có được trả góp hay không -->
 - cho hỏi [Nokia 110 DS](product_name) được trả góp không
 - điện thoại [Samsung Galaxy A51](product_name) có được mua trả góp hay không
 - cho hỏi [ss xcover pro](product_name) có được trả góp không
@@ -1633,6 +1660,7 @@
 - Con này không có trả góp sao ạ
 
 ## intent: installment_registration_period
+<!-- thời gian đăng ký làm hồ sơ trả góp -->
 - cho hỏi đăng ký trả góp có lâu không
 - mua trả góp làm hồ sơ có nhanh không
 - đăng ký trả góp mất nhiều thời gian không
@@ -1643,6 +1671,7 @@
 - Cho m hỏi thủ tục trả góp nhanh không ạ! Trong ngày m có thể lấy máy k
 
 ## intent: ask_hardware_info
+<!-- hỏi thông tin các bộ phận của máy -->
 - [OPPO A92s](product_name) xài [chip xử lý]{"entity":"hardware","role":"WHQ"} gì
 - [realme 6](product_name) dùng [card]{"entity":"hardware","role":"WHQ"} gì
 - [Samsung Galaxy A21](product_name) dùng [card đồ họa]{"entity":"hardware","role":"WHQ"} gì
@@ -1762,6 +1791,7 @@
 
 
 ## intent: ask_main_camera
+<!-- hỏi về camera chính -->
 - có chụp xóa phông không
 - cam sau chụp đẹp không
 - camera sau có tính năng gì hay
@@ -1770,6 +1800,7 @@
 - cam sau như thế nào
 
 ## intent: ask_selfie_camera
+<!-- hỏi về camera sau -->
 - cam trước chụp đẹp không
 - camera trước chụp đẹp không
 - selfie đẹp không
@@ -1778,6 +1809,7 @@
 - cam trước có tính năng gì
 
 ## intent: resolution_camera
+<!-- hỏi về độ phân giải của camera -->
 - [camera sau](camera) của điện thoại [Nokia 1.3](product_name) có độ phân giải như thế nào
 - [cam sau](camera) của điện thoại [Xiaomi Redmi Note 8](product_name) có độ phân giải như thế nào
 - [camera trước](camera) [Vivo Z6 5G](product_name) mấy MP
@@ -1813,6 +1845,7 @@
 - camera sau mấy mp
 
 ## intent:Guarantee
+<!-- chính sách bảo hành -->
 - máy [Vsmart Star](product_name) được bảo hành trong bao lâu
 - [Xiaomi Mi CC9 Pro](product_name) có bảo hành không
 - máy [Masstel Lux Mini](product_name) có được bảo hành không
@@ -1858,6 +1891,7 @@
 - bảo hành thì như nào
 
 ## intent: delivery
+<!-- giao hàng -->
 - giao hàng như nào
 - có giao hàng toàn quốc không
 - nghe nói giao hàng trong 60phút phải không
@@ -1867,6 +1901,7 @@
 - mua online có giao hàng tận nhà không
 
 ## intent: Promotions_and_gifts
+<!-- khuyến mãi -->
 - mua online có quà gì không
 - mua trả góp có quà gì không
 - có khuyến mãi gì không
@@ -1891,7 +1926,8 @@
 - mua [realme 6 pro](product_name) có tặng kèm gì không
 - mua [Realme X50 Youth Edition](product_name) có được quà gì không
 
-## intent: is_have_product
+## intent: find_product
+<!-- tìm kiếm sản phẩm -->
 - ở đây có [Samsung Galaxy A21s](product_name) không nhỉ
 - ad ơi có [Nokia 210 DS](product_name) không nhỉ
 - shop có [Huawei P40 Lite 5G](product_name) không
@@ -1952,6 +1988,7 @@
 - có bản [Huawei Enjoy 10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không vậy
 
 ## intent: another_product
+<!-- hỏi các phiên bản khác -->
 - có bản ram [6 GB](ram) không
 - có bản ram [3 gb](ram) không
 - có bản ram [4mb](ram) không
@@ -1997,6 +2034,7 @@
 - có bản rom [256gb](rom) ram [2 GB](ram) không vậy
 - có bản rom [16gb](rom) ram [3 gb](ram) không vậy
 - có bản rom [16 gb](rom) ram [3 gb](ram) không vậy
+
 ## synonym:CPU
 - chíp
 - chip
@@ -2049,7 +2087,9 @@ data/price.txt
 data/thoigian.txt
 ## lookup: prepay_percent
 data/prepay_percent.txt
+
 ## intent: out_of_scope
+<!-- từ cấm -->
 - lồn
 - lồn mẹ mày
 - con cặc

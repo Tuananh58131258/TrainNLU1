@@ -1,45 +1,78 @@
-bản ram [6 GB](ram) không
-bản ram [3 gb](ram) không
-bản ram [4mb](ram) không
-bản ram [8 gb](ram) không nhỉ
-bản ram [2 GB](ram) không
-bản ram [4 GB](ram) không nhỉ
-bản ram [2 GB](ram) không vậy
-bản ram [8 MB](ram) không vậy
-bản ram [4 gb](ram) không vậy
-bản rom [128 GB](rom) không nhỉ
-bản rom [64gb](rom) không vậy
-bản rom [512 gb](rom) không
-bản rom [512gb](rom) không nhỉ
-bản rom [16GB](rom) không
-bản rom [32gb](rom) không nhỉ
-bản rom [8gb](rom) không vậy
-bản rom [256GB](rom) không
-bản rom [64 gb](rom) không vậy
-bản [12 GB](ram) - [128gb](rom) không nhỉ
-bản [4 gb](ram) - [256 GB](rom) không vậy
-bản [32 MB](ram) - [64 GB](rom) không vậy
-bản [2 GB](ram) - [32 gb](rom) không vậy
-bản [2 GB](ram) - [64 GB](rom) không nhỉ
-bản [8 GB](ram) - [16 gb](rom) không vậy
-bản [8 mb](ram) - [32 gb](rom) không nhỉ
-bản [12 gb](ram) - [128 gb](rom) không nhỉ
-bản [3 gb](ram) - [8gb](rom) không vậy
-bản ram [512 MB](ram) rom [32GB](rom) không
-bản ram [4MB](ram) rom [16gb](rom) không vậy
-bản ram [32 mb](ram) rom [8gb](rom) không nhỉ
-bản ram [3 GB](ram) rom [256gb](rom) không
-bản ram [3 gb](ram) rom [8GB](rom) không nhỉ
-bản ram [3 gb](ram) rom [512GB](rom) không nhỉ
-bản ram [512 MB](ram) rom [128 gb](rom) không
-bản ram [512 MB](ram) rom [16GB](rom) không nhỉ
-bản ram [4MB](ram) rom [128 gb](rom) không nhỉ
-bản rom [16GB](rom) ram [4mb](ram) không
-bản rom [128 gb](rom) ram [3 GB](ram) không vậy
-bản rom [128gb](rom) ram [6 GB](ram) không vậy
-bản rom [256gb](rom) ram [3 gb](ram) không nhỉ
-bản rom [64 GB](rom) ram [8 MB](ram) không nhỉ
-bản rom [16GB](rom) ram [2 gb](ram) không vậy
-bản rom [256gb](rom) ram [2 GB](ram) không vậy
-bản rom [16gb](rom) ram [3 gb](ram) không vậy
-bản rom [16 gb](rom) ram [3 gb](ram) không vậy
+- greet
+  #  chào hỏi 
+  - goodbye
+  #  tạm biệt 
+  - ask_ability
+  #  hỏi khả năng của bot 
+  - thankyou
+  #  cảm ơn bot 
+  - praise
+  #  khen bot 
+  - decry
+  #  chê bot
+  - product_price
+  #  Hỏi giá của sản phẩm
+  - online_price
+  #  hỏi giá sản phẩm khi mua online
+  - old_product_price
+  #  hỏi giá sản phẩm cũ
+  - product_configuration
+  #  hỏi cấu hình sản phẩm
+  - type_of_product
+  #  hỏi các hãng điện thoại sẵn có
+  - need_help
+  #  cần tư vấn
+  - list_product
+  #  danh sách sản phẩm của 1 hãng
+  - order
+  #  đặt mua sản phẩm
+  - check_price
+  #  kiểm tra giá của sản phẩm
+  - find_product_in_range_price
+  #  tìm sản phẩm trong một khoảng giá 
+  - find_product_lower_price
+  #  tìm sản phẩm dưới 1 mức giá
+  - find_product_upper_price
+  #  tìm sản phẩm trên một mức giá
+  - find_product_around_price
+  #  tìm sản phẩm có giá xung quanh 1 mức
+  - screen_info
+  #  thông tin màn hình
+  - pin_info
+  #  thông tin về pin
+  - buy_olf_product
+  #  có thu mua lại sản phẩm cũ không
+  - what_license
+  #  mua trả góp cần giấy tờ gì 
+  - two_or_more_file
+  #  2 hay nhiều hồ sơ
+  - how_many_per_month
+  #  cần phải trả bao nhiêu tiền / 1 tháng
+  - case_how_many_per_month
+  #  cần phải trả bao nhiêu tiền trên 1 tháng trong 2 trường hợp
+  - age_installment
+  #  độ tuổi được trả góp 
+  - is_product_can_buy_on_installment
+  #  sản phẩm có được trả góp hay không
+  - installment_registration_period
+  #  thời gian đăng ký làm hồ sơ trả góp
+  - ask_hardware_info
+  #  hỏi thông tin các bộ phận của máy
+  - ask_main_camera
+  #  hỏi về camera chính
+  - ask_selfie_camera
+  #  hỏi về camera sau
+  - resolution_camera
+  #  hỏi về độ phân giải của camera
+  - Guarantee
+  #  chính sách bảo hành
+  - delivery
+  #  giao hàng
+  - Promotions_and_gifts
+  #  khuyến mãi
+  - find_product
+  #  tìm kiếm sản phẩm
+  - another_product
+  #  hỏi các phiên bản khác
+  - out_of_scope
+  #  từ cấm

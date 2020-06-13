@@ -10,72 +10,159 @@ entities:
 
 intents:
   - greet
+  #  chào hỏi 
   - goodbye
+  #  tạm biệt 
   - ask_ability
+  #  hỏi khả năng của bot 
   - thankyou
+  #  cảm ơn bot 
   - praise
+  #  khen bot 
   - decry
-  - product_price        
+  #  chê bot
+  - product_price
+  #  Hỏi giá của sản phẩm
   - online_price
-  - old_product_price    
+  #  hỏi giá sản phẩm khi mua online
+  - old_product_price
+  #  hỏi giá sản phẩm cũ
   - product_configuration
+  #  hỏi cấu hình sản phẩm
   - type_of_product
+  #  hỏi các hãng điện thoại sẵn có
   - need_help
+  #  cần tư vấn
   - list_product
+  #  danh sách sản phẩm của 1 hãng
   - order
+  #  đặt mua sản phẩm
   - check_price
+  #  kiểm tra giá của sản phẩm
   - find_product_in_range_price
+  #  tìm sản phẩm trong một khoảng giá 
   - find_product_lower_price
+  #  tìm sản phẩm dưới 1 mức giá
   - find_product_upper_price
+  #  tìm sản phẩm trên một mức giá
   - find_product_around_price
+  #  tìm sản phẩm có giá xung quanh 1 mức
   - screen_info
+  #  thông tin màn hình
   - pin_info
+  #  thông tin về pin
   - buy_olf_product
+  #  có thu mua lại sản phẩm cũ không
   - what_license
+  #  mua trả góp cần giấy tờ gì 
   - two_or_more_file
+  #  2 hay nhiều hồ sơ
   - how_many_per_month
+  #  cần phải trả bao nhiêu tiền / 1 tháng
   - case_how_many_per_month
+  #  cần phải trả bao nhiêu tiền trên 1 tháng trong 2 trường hợp
   - age_installment
+  #  độ tuổi được trả góp 
   - is_product_can_buy_on_installment
+  #  sản phẩm có được trả góp hay không
   - installment_registration_period
+  #  thời gian đăng ký làm hồ sơ trả góp
   - ask_hardware_info
+  #  hỏi thông tin các bộ phận của máy
   - ask_main_camera
+  #  hỏi về camera chính
   - ask_selfie_camera
-  - resolution_selfie_camera
-  - resolution_main_camera
+  #  hỏi về camera sau
+  - resolution_camera
+  #  hỏi về độ phân giải của camera
   - Guarantee
+  #  chính sách bảo hành
   - delivery
+  #  giao hàng
   - Promotions_and_gifts
-  - is_have_product
+  #  khuyến mãi
+  - find_product
+  #  tìm kiếm sản phẩm
   - another_product
+  #  hỏi các phiên bản khác
+  - out_of_scope
+  #  từ cấm
 
 responses:
-
   utter_greet:
+  # trả lời intent:greet
   - text: "Chào bạn!"
   - text: "Rất vui được gặp bạn!"
   - text: "Chào mừng bạn đến với chúng tôi"
   utter_goodbye:
-
+  # trả lời intent:goodbye
+  - text: "Tạm biệt và hẹn gặp lại"
   utter_ask_ability:
+  # trả lời intent:ask_ability
   - text: "Mình làm được nhiều thứ lắm. Nhưng hôm nay chỉ hỗ trợ về điện thoại thôi!"
   - text: "Mình có thể tư vấn hay trả lời thắc mắc của bạn về điện thoại."
   utter_thankyou:
+  # trả lời intent:thankyou
   - text: "Không có gì!"
   - text: "Đây là trách nhiệm của mình!"
   utter_praise:
+  # trả lời intent:praise
   - text: "Bạn quá khen rồi."
   utter_decry:
+  # trả lời intent:decry
   - text: "Mình sẽ cố gắng cải thiện bản thân hơn!"
   utter_replace_GPLX_with_SHK_and_opposite:
   - text: "Được ạ"
 
   utter_auto_reply:
+  # tin nhắn kèm theo
   - text: "Mời bạn để lại Tên và SDT hoặc liên hệ trực tiếp tổng đài miễn phí 18006601 để được nhân viên tư vấn và hỗ trợ đặt hàng nhanh nhất bạn nhé!"
 
   utter_can_installment:
   - text: "đủ tuổi và giấy tờ là trả góp được"
+  utter_what_license:
+    # cần giấy tờ gì khi mua trả góp
+  - text: "Giấy tờ yêu cầu cung cấp:
+            Chứng minh nhân dân còn hạn sử dụng (15 năm tính từ ngày cấp).
+            Hộ khẩu (người mua hàng phải có tên trong hộ khẩu). Nếu khoản vay dưới 8 triệu có thể dung GPLX thay thế Hộ khẩu.
+            Một số trường hợp còn cần thêm Hóa đơn điện(nước,net,cáp).
+           Nếu bạn là SINH VIÊN thì phải:
+            Có chứng minh nhân dân.
+            Thẻ sinh viên và biên lai đóng học phí học kỳ gần nhất.
+            Hộ khẩu có tên bạn.
+            Bản sao chứng minh nhân dân của Bố hoặc Mẹ có công chứng trong vòng 6 tháng.
+           Lưu ý: Đơn vị trả góp sẽ yêu cầu mang giấy tờ bản gốc để đối chiếu khi ký hợp đồng."
+  
+  utter_two_or_more_file:
+    # trả góp 2 hồ sơ
+    - text: "Bạn có thể đăng ký mua trả góp với công ty tài chính khác"
+  
+  utter_installment_registration_period:
+    # thời gian làm hồ sơ trả góp có nhanh hay không
+    - text: "Tùy vào hồ sơ của bạn mà thời gian xét duyệt có thể nhanh hay chậm. Nếu hồ sơ của bạn đạt tiêu chuẩn thì sẽ được xét duyệt ngay trong ngày và bạn có thể mang sản phẩm về."
 
+  utter_age_installment:
+  # Độ tuổi trả góp
+  - text: "Độ tuổi:
+            Khách hàng từ 20 tuổi trở lên
+            Với sinh viên: yêu cầu 18 tuổi.
+           Nếu chưa đủ tuổi quy định, bạn có thể nhờ người thân đã đủ tuổi để đăng ký trả góp."
+  utter_out_of_scope:
+  # trả lời khi khách hàng chat từ cấm
+  - text: "Con người văn minh không sử dụng những câu từ như thế này! Mong bạn không lặp lại."
+  - text: "Tin nhắn của bạn vi phạm những quy chuẩn về đạo đức của chúng tôi, mong bạn không lặp lại nữa. Cảm ơn"
+  utter_delivery:
+    # giao hàng
+    - text: "Cửa hàng có hỗ trợ giao hàng toàn quốc ạ.
+    Nếu trong vòng bán kính 10KM từ địa chỉ nhận hàng của bản có chi nhanh của cửa hàng có sẵn hàng thì bạn sẽ nhận được hàng trong vòng 1 tiếng từ khi đặt hàng.
+    Nếu không thời gian giao hàng có thể lâu hơn tùy vào khoảng cách từ chi nhánh gần nhất có hàng để địa chỉ của bạn."
+
+  utter_need_help:
+    # hỗ trợ tư vấn
+    - text: "Bạn muốn 1 chiếc điện thoại như thế nào ạ. Có thể cung cấp thêm thông tin như: giá như thế nào, của hãng nào,..."
+  utter_order:
+    # đặt mua
+    - text: "Cảm ơn bạn đã đặt mua sản phấm!"
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
