@@ -1,0 +1,45 @@
+bản ram [6 GB](ram) không
+bản ram [3 gb](ram) không
+bản ram [4mb](ram) không
+bản ram [8 gb](ram) không nhỉ
+bản ram [2 GB](ram) không
+bản ram [4 GB](ram) không nhỉ
+bản ram [2 GB](ram) không vậy
+bản ram [8 MB](ram) không vậy
+bản ram [4 gb](ram) không vậy
+bản rom [128 GB](rom) không nhỉ
+bản rom [64gb](rom) không vậy
+bản rom [512 gb](rom) không
+bản rom [512gb](rom) không nhỉ
+bản rom [16GB](rom) không
+bản rom [32gb](rom) không nhỉ
+bản rom [8gb](rom) không vậy
+bản rom [256GB](rom) không
+bản rom [64 gb](rom) không vậy
+bản [12 GB](ram) - [128gb](rom) không nhỉ
+bản [4 gb](ram) - [256 GB](rom) không vậy
+bản [32 MB](ram) - [64 GB](rom) không vậy
+bản [2 GB](ram) - [32 gb](rom) không vậy
+bản [2 GB](ram) - [64 GB](rom) không nhỉ
+bản [8 GB](ram) - [16 gb](rom) không vậy
+bản [8 mb](ram) - [32 gb](rom) không nhỉ
+bản [12 gb](ram) - [128 gb](rom) không nhỉ
+bản [3 gb](ram) - [8gb](rom) không vậy
+bản ram [512 MB](ram) rom [32GB](rom) không
+bản ram [4MB](ram) rom [16gb](rom) không vậy
+bản ram [32 mb](ram) rom [8gb](rom) không nhỉ
+bản ram [3 GB](ram) rom [256gb](rom) không
+bản ram [3 gb](ram) rom [8GB](rom) không nhỉ
+bản ram [3 gb](ram) rom [512GB](rom) không nhỉ
+bản ram [512 MB](ram) rom [128 gb](rom) không
+bản ram [512 MB](ram) rom [16GB](rom) không nhỉ
+bản ram [4MB](ram) rom [128 gb](rom) không nhỉ
+bản rom [16GB](rom) ram [4mb](ram) không
+bản rom [128 gb](rom) ram [3 GB](ram) không vậy
+bản rom [128gb](rom) ram [6 GB](ram) không vậy
+bản rom [256gb](rom) ram [3 gb](ram) không nhỉ
+bản rom [64 GB](rom) ram [8 MB](ram) không nhỉ
+bản rom [16GB](rom) ram [2 gb](ram) không vậy
+bản rom [256gb](rom) ram [2 GB](ram) không vậy
+bản rom [16gb](rom) ram [3 gb](ram) không vậy
+bản rom [16 gb](rom) ram [3 gb](ram) không vậy

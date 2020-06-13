@@ -17,19 +17,23 @@ import random
 #     fobj.write(res)
 # fobj.close()
 fobj = open('data/product_name.txt',encoding='utf-8')
-# begin = ['của điện thoại','của máy','của sản phẩm','']
+ram = open('data/temp.txt',encoding='utf-8').readlines()
+# rom = open('data/rom.txt',encoding='utf-8').readlines()
+begin = ['có','có bản','ở đây có','ad ơi có']
 data = fobj.readlines()
-ka = ['chíp','chip','cpu','chíp xử lý','chip xử lý','CPU','chíp đồ họa','card đồ họa','chíp đồ họa','card','gpu','GPU']
-end = ["có","xài ","dùng"]
+# ka = ['chíp','chip','cpu','chíp xử lý','chip xử lý','CPU','chíp đồ họa','card đồ họa','chíp đồ họa','card','gpu','GPU']
+end = ["không","không vậy","không nhỉ"]
 for i in range(1,30):
-    # first = begin[random.randint(0,len(begin)-1)]
+    first = begin[random.randint(0,len(begin)-1)]
+    ra = ram[random.randint(0,len(ram)-1)].strip('\n')
+    # ro = rom[random.randint(0,len(rom)-1)].strip('\n')
     last = end[random.randint(0,len(end)-1)]
     ten = data[random.randint(0,len(data))].strip('\n')
-    KAA= ka[random.randint(0,len(ka)-1)]
+    # KAA= ka[random.randint(0,len(ka)-1)]
     # entity1 = '{"entity":"camera","role":"front"}'
     # entity2 = '{"entity":"camera","role":"behind"}'
-    entity = '{"entity":"hardware","role":"WHQ"}'
-    result = '- [{}](product_name) {} [{}]{} gì'.format(ten,last,KAA,entity)
+    # entity = '{"entity":"hardware","role":"WHQ"}'
+    result = '- {} [{}](product_name) {} {}'.format(first,ten,ra,last)
     # n = random.randint(1,4)
     # if n == 1:
     #     result = '- [cam trước](camera) {} [{}](product_name) {}'.format(first,ten,last)

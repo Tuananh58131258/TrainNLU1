@@ -1607,7 +1607,15 @@
 - máy này trả trước [o d]{"entity":"price","role":"prepay"} dk k ad
 - Máy hỗ trợ trả góp [0 %](interest_rate) không shop
 - máy có trả góp lãi suất [0 %](interest_rate) trả trước [10%](prepay_percent) không ad
-- máy có trả góp lãi suất [0 %](interest_rate) trả trước [10%](prepay_percent) không vậy ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [10 %](prepay_percent) không vậy ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [20%](prepay_percent) không ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [30 %](prepay_percent) không vậy ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [40%](prepay_percent) không ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [50 %](prepay_percent) không vậy ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [60%](prepay_percent) không ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [80 %](prepay_percent) không vậy ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [70%](prepay_percent) không ad
+- máy có trả góp lãi suất [0 %](interest_rate) trả trước [10 %](prepay_percent) không vậy ad
 - Mi4x có cho trả trước [0 đồng]{"entity":"price","role":"prepay"} ko
 - Oppo co tra gop [A 71](product_name) kova
 - máy này có trả góp [0 %](interest_rate) k vậy
@@ -1804,7 +1812,6 @@
 - camera sau bao nhiêu mp vậy
 - camera sau mấy mp
 
-
 ## intent:Guarantee
 - máy [Vsmart Star](product_name) được bảo hành trong bao lâu
 - [Xiaomi Mi CC9 Pro](product_name) có bảo hành không
@@ -1884,6 +1891,112 @@
 - mua [realme 6 pro](product_name) có tặng kèm gì không
 - mua [Realme X50 Youth Edition](product_name) có được quà gì không
 
+## intent: is_have_product
+- ở đây có [Samsung Galaxy A21s](product_name) không nhỉ
+- ad ơi có [Nokia 210 DS](product_name) không nhỉ
+- shop có [Huawei P40 Lite 5G](product_name) không
+- ad ơi có [Xiaomi Redmi Note 9 Pro Max](product_name) không nhỉ
+- ad ơi có [OPPO A11](product_name) không nhỉ
+- ad ơi có [Vivo Y70s 5G](product_name) không nhỉ
+- ở đây có [Xiaomi Mi Note 10 Lite](product_name) không nhỉ     
+- có [Samsung Galaxy A71](product_name) không
+- shop có [Realme Narzo 10](product_name) không nhỉ
+- ở đây có [Samsung Galaxy A60](product_name) không vậy
+- shop có [Realme C2 ](product_name) không
+- shop có [Huawei P40 Lite](product_name) không nhỉ
+- có [Realme 6 Pro](product_name) không vậy
+- ad ơi có [Samsung Galaxy A80](product_name) không
+- ở đây có [Realme 3](product_name) không vậy
+- ad ơi có [Samsung Galaxy J8+](product_name) không vậy
+- có [Nokia 9.3 PureView](product_name) không vậy
+- shop có [iPhone 11 Pro Max](product_name) không nhỉ
+- có [Realme C3i ](product_name) không nhỉ
+- ở đây có [ss a20s](product_name) không vậy
+- ad ơi có [OPPO A91](product_name) không vậy
+- ở đây có [OPPO F15](product_name) không nhỉ
+- shop có [ss m40](product_name) không
+- có [Samsung Galaxy M10s](product_name) không vậy
+- shop có [Samsung Galaxy M40](product_name) không vậy
+- ad ơi có [ss a51](product_name) không
+- shop có [Huawei P40 Lite](product_name) không vậy
+- ad ơi có [Huawei P40 Lite](product_name) không
+- ở đây có [Huawei Mate 30 RS Porsche Design](product_name) không nhỉ
+- có bản [ss a21s](product_name) bản rom [256gb](rom) ram [3 gb](ram) không nhỉ không nhỉ
+- có [realme 6i](product_name) bản rom [32gb](rom) không nhỉ không nhỉ
+- ở đây có [Vivo S6](product_name) bản rom [128gb](rom) ram [6 GB](ram) không vậy không vậy
+- có [Xiaomi Redmi Note 8](product_name) bản [12 gb](ram) - [128 gb](rom) không nhỉ không nhỉ
+- ad ơi có [Nokia 9.3 PureView](product_name) bản [4 gb](ram) - [256 GB](rom) không vậy không nhỉ
+- ở đây có [Huawei Nova 5T](product_name) bản [12 GB](ram) - [128gb](rom) không nhỉ không nhỉ
+- có bản [Itel It2170](product_name) bản rom [128gb](rom) ram [6 GB](ram) không vậy không nhỉ
+- có bản [Samsung Galaxy A51 5G](product_name) bản ram [4 GB](ram) không nhỉ không
+- có [Huawei Mate 40](product_name) bản ram [4mb](ram) không không vậy
+- ở đây có [Realme 6](product_name) bản rom [16gb](rom) ram [3 gb](ram) không vậy không nhỉ
+- ở đây có [Huawei Y9s](product_name) bản ram [512 MB](ram) rom [32GB](rom) không không vậy
+- ở đây có [ss s10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không nhỉ
+- ở đây có [Realme C3](product_name) bản [8 mb](ram) - [32 gb](rom) không nhỉ không vậy
+- ở đây có [Nokia 150 ](product_name) bản [12 gb](ram) - [128 gb](rom) không nhỉ không vậy
+- ở đây có [realme 6](product_name) bản rom [64 GB](rom) ram [8 MB](ram) không nhỉ không vậy
+- ở đây có [Vivo Y19](product_name) bản rom [16gb](rom) ram [3 gb](ram) không vậy không nhỉ
+- ad ơi có [ss a71 5g](product_name) bản rom [64gb](rom) không vậy không vậy
+- có bản [Nokia 3.2](product_name) bản ram [2 GB](ram) không vậy không nhỉ
+- có bản [Samsung Galaxy A11](product_name) bản rom [512 gb](rom) không không
+- ở đây có [Xiaomi Black Shark 2 Pro](product_name) bản rom [512gb](rom) không nhỉ không
+- ở đây có [Nokia 110 DS](product_name) bản ram [2 GB](ram) không không vậy
+- ở đây có [OPPO Reno Ace 2](product_name) bản ram [4 GB](ram) không nhỉ không vậy
+- có [Huawei P40 Lite](product_name) bản ram [3 GB](ram) rom [256gb](rom) không không nhỉ
+- ở đây có [Huawei Nova 7](product_name) bản [3 gb](ram) - [8gb](rom) không vậy không
+- ở đây có [Vivo Z5i](product_name) bản rom [16GB](rom) không không vậy
+- ad ơi có [Vsmart Joy 3](product_name) bản ram [3 GB](ram) rom [256gb](rom) không không
+- có bản [ss watch active](product_name) bản rom [16GB](rom) ram [2 gb](ram) không vậy không
+- ở đây có [Realme X50 Pro Player Edition](product_name) bản ram [512 MB](ram) rom [128 gb](rom) không không vậy
+- có bản [Huawei Enjoy 10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không vậy
+
+## intent: another_product
+- có bản ram [6 GB](ram) không
+- có bản ram [3 gb](ram) không
+- có bản ram [4mb](ram) không
+- có bản ram [8 gb](ram) không nhỉ
+- có bản ram [2 GB](ram) không
+- có bản ram [4 GB](ram) không nhỉ
+- có bản ram [2 GB](ram) không vậy
+- có bản ram [8 MB](ram) không vậy
+- có bản ram [4 gb](ram) không vậy
+- có bản rom [128 GB](rom) không nhỉ
+- có bản rom [64gb](rom) không vậy
+- có bản rom [512 gb](rom) không
+- có bản rom [512gb](rom) không nhỉ
+- có bản rom [16GB](rom) không
+- có bản rom [32gb](rom) không nhỉ
+- có bản rom [8gb](rom) không vậy
+- có bản rom [256GB](rom) không
+- có bản rom [64 gb](rom) không vậy
+- có bản [12 GB](ram) - [128gb](rom) không nhỉ
+- có bản [4 gb](ram) - [256 GB](rom) không vậy
+- có bản [32 MB](ram) - [64 GB](rom) không vậy
+- có bản [2 GB](ram) - [32 gb](rom) không vậy
+- có bản [2 GB](ram) - [64 GB](rom) không nhỉ
+- có bản [8 GB](ram) - [16 gb](rom) không vậy
+- có bản [8 mb](ram) - [32 gb](rom) không nhỉ
+- có bản [12 gb](ram) - [128 gb](rom) không nhỉ
+- có bản [3 gb](ram) - [8gb](rom) không vậy
+- có bản ram [512 MB](ram) rom [32GB](rom) không
+- có bản ram [4MB](ram) rom [16gb](rom) không vậy
+- có bản ram [32 mb](ram) rom [8gb](rom) không nhỉ
+- có bản ram [3 GB](ram) rom [256gb](rom) không
+- có bản ram [3 gb](ram) rom [8GB](rom) không nhỉ
+- có bản ram [3 gb](ram) rom [512GB](rom) không nhỉ
+- có bản ram [512 MB](ram) rom [128 gb](rom) không
+- có bản ram [512 MB](ram) rom [16GB](rom) không nhỉ
+- có bản ram [4MB](ram) rom [128 gb](rom) không nhỉ
+- có bản rom [16GB](rom) ram [4mb](ram) không
+- có bản rom [128 gb](rom) ram [3 GB](ram) không vậy
+- có bản rom [128gb](rom) ram [6 GB](ram) không vậy
+- có bản rom [256gb](rom) ram [3 gb](ram) không nhỉ
+- có bản rom [64 GB](rom) ram [8 MB](ram) không nhỉ
+- có bản rom [16GB](rom) ram [2 gb](ram) không vậy
+- có bản rom [256gb](rom) ram [2 GB](ram) không vậy
+- có bản rom [16gb](rom) ram [3 gb](ram) không vậy
+- có bản rom [16 gb](rom) ram [3 gb](ram) không vậy
 ## synonym:CPU
 - chíp
 - chip

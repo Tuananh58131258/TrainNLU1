@@ -5,6 +5,7 @@ entities:
   - prepay_percent
   - installment_payment_period
   - rom
+  - ram
   - hardware
 
 intents:
@@ -45,26 +46,33 @@ intents:
   - Guarantee
   - delivery
   - Promotions_and_gifts
+  - is_have_product
+  - another_product
 
 responses:
 
   utter_greet:
   - text: "Chào bạn!"
-
-  utter_replace_GPLX_with_SHK_and_opposite:
-  - text: "đc nha bạn"
-
-  utter_what_license:
-  - text: "cần cái này với cái kia nhé"
-
-  utter_decry:
-  - text: "chê cc gì"
-  utter_praise:
-  - text: "khen nữa đi cưng"
+  - text: "Rất vui được gặp bạn!"
+  - text: "Chào mừng bạn đến với chúng tôi"
   utter_goodbye:
-  - text: "Tạm biệt"
+
   utter_ask_ability:
-  - text: "đéo thích trả lời đó"
+  - text: "Mình làm được nhiều thứ lắm. Nhưng hôm nay chỉ hỗ trợ về điện thoại thôi!"
+  - text: "Mình có thể tư vấn hay trả lời thắc mắc của bạn về điện thoại."
+  utter_thankyou:
+  - text: "Không có gì!"
+  - text: "Đây là trách nhiệm của mình!"
+  utter_praise:
+  - text: "Bạn quá khen rồi."
+  utter_decry:
+  - text: "Mình sẽ cố gắng cải thiện bản thân hơn!"
+  utter_replace_GPLX_with_SHK_and_opposite:
+  - text: "Được ạ"
+
+  utter_auto_reply:
+  - text: "Mời bạn để lại Tên và SDT hoặc liên hệ trực tiếp tổng đài miễn phí 18006601 để được nhân viên tư vấn và hỗ trợ đặt hàng nhanh nhất bạn nhé!"
+
   utter_can_installment:
   - text: "đủ tuổi và giấy tờ là trả góp được"
 
