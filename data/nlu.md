@@ -771,6 +771,7 @@
 - Danh sách sản phẩm của [Realmi](product_company)
 - Danh sách sản phẩm của [Oppo](product_company)
 - Danh sách sản phẩm của [Huawei](product_company)
+- Danh sách sản phẩm của [Samsung](product_company)
 
 ## intent: order
 <!-- đặt mua sản phẩm -->
@@ -945,6 +946,27 @@
 
 ## intent:find_product_in_range_price
 <!-- tìm sản phẩm trong một khoảng giá -->
+- có [Realme](product_company) trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"} 
+- có [Vsmart](product_company) trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
+- có [Itel](product_company) trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
+- có điện thoại [ip](product_company) trong khoảng [hai triệu tám]{"entity":"price","role":"from_price"} đến [6 m 1]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
+- tôi muốn một chiếc [Energizer](product_company) trong khoảng [sáu triệu rưởi]{"entity":"price","role":"from_price"} đến [sáu triệu hai]{"entity":"price","role":"to_price"} không ạ
+- có điện thoại [ip](product_company) trong khoảng [tám triệu]{"entity":"price","role":"from_price"} đến [7 m 9]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
+- có [Itel](product_company) trong khoảng [ba triệu rưởi]{"entity":"price","role":"from_price"} đến [4 m 3]{"entity":"price","role":"to_price"}   
+- có [ss](product_company) trong khoảng [1 m 4]{"entity":"price","role":"from_price"} đến [6 m 2]{"entity":"price","role":"to_price"} không ạ     
+- có [Vsmart](product_company) trong khoảng [năm triệu ba]{"entity":"price","role":"from_price"} đến [bảy triệu bảy]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
+- có [Vivo](product_company) trong khoảng [8 m 9]{"entity":"price","role":"from_price"} đến [hai triệu tám]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
+- có [Itel](product_company) trong khoảng [6 m 9]{"entity":"price","role":"from_price"} đến [8 m 9]{"entity":"price","role":"to_price"}
+- có [ss](product_company) trong khoảng [4 triệu]{"entity":"price","role":"from_price"} đến [sáu triệu rưởi]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
+- có [Vivo](product_company) trong khoảng [chín triệu ba]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"}   
+- có điện thoại [Xiaomi](product_company) trong khoảng [4 m 5]{"entity":"price","role":"from_price"} đến [4,6 triệu]{"entity":"price","role":"to_price"} không ạ
+- tôi muốn một chiếc [ip](product_company) trong khoảng [9 m 5]{"entity":"price","role":"from_price"} đến [5 m 1]{"entity":"price","role":"to_price"} tư vấn giúp em
+- có điện thoại [Realme](product_company) trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [8 triệu 8]{"entity":"price","role":"to_price"} không ạ
+- có điện thoại [Vsmart](product_company) trong khoảng [2,2 triệu]{"entity":"price","role":"from_price"} đến [3 m 5]{"entity":"price","role":"to_price"} tư vấn giúp em
+- có điện thoại [Iphone](product_company) trong tầm giá từ [1 m 8]{"entity":"price","role":"from_price"} đến [chín triệu năm]{"entity":"price","role":"to_price"} không ạ
+- có [Xiaomi](product_company) trong tầm giá từ [2,1 triệu]{"entity":"price","role":"from_price"} đến [9,4 triệu]{"entity":"price","role":"to_price"}
+- có [Iphone](product_company) trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [1,4 triệu]{"entity":"price","role":"to_price"} không ạ
+- có điện thoại [Sanmsung](product_company) trong khoảng [5 m 6]{"entity":"price","role":"from_price"} đến [năm triệu mốt]{"entity":"price","role":"to_price"}
 - có điện thoại nào trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"} 
 - có điện thoại nào trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - tôi muốn một chiếc điện thoại trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
@@ -997,6 +1019,33 @@
 
 ## intent: find_product_lower_price
 <!-- tìm sản phẩm dưới 1 mức giá -->
+- có [Vsmart](product_company) nào dưới [9,1 triệu](price) không
+- có điện thoại [ip](product_company) nào giá dưới [6.5 triệu](price) không    
+- có [Iphone](product_company) nào dưới [8 m 7](price) không
+- có [ip](product_company) nào giá dưới [bảy triệu tám](price) không
+- có điện thoại [Nokia](product_company) nào giá dưới [7,2 triệu](price) không 
+- có [Realme](product_company) nào dưới [3.7 triệu](price) không
+- có cái [Realme](product_company) nào dưới [7.2 triệu](price) không
+- có điện thoại [Vsmart](product_company) nào dưới [hai triệu tám](price) không
+- có cái [Iphone](product_company) nào dưới [3.6 triệu](price) không
+- có điện thoại [Xiaomi](product_company) nào dưới [ba triệu sáu](price) không 
+- có [Oppo](product_company) nào dưới [6 m 1](price) không
+- có [Masstel](product_company) nào dưới [1.8 triệu](price) không
+- có cái [Vsmart](product_company) nào dưới [5,5 triệu](price) không
+- có [Itel](product_company) nào dưới [5 m 6](price) không
+- có cái [Energizer](product_company) nào giá dưới [2 m 5](price) không
+- có cái [Energizer](product_company) nào giá dưới [1,1 triệu](price) không
+- có điện thoại [Realme](product_company) nào dưới [6 m 9](price) không
+- có [Oppo](product_company) nào giá dưới [một triệu rưởi](price) không
+- có cái [Vivo](product_company) nào dưới [tám triệu sáu](price) không
+- có [Sanmsung](product_company) nào giá dưới [2.4 triệu](price) không
+- có cái [Energizer](product_company) nào giá dưới [4.3 triệu](price) không
+- có điện thoại [Iphone](product_company) nào giá dưới [3,1 triệu](price) không
+- có điện thoại [Vsmart](product_company) nào dưới [4.8 triệu](price) không
+- có điện thoại [Xiaomi](product_company) nào dưới [4 m 5](price) không
+- có [Itel](product_company) nào giá dưới [bốn triệu ba](price) không
+- có cái [Oppo](product_company) nào giá dưới [chín triệu sáu](price) không
+- có điện thoại [Realme](product_company) nào dưới [3 m 6](price) không
 - có sản phẩm nào dưới [9,1 triệu](price) không
 - có điện thoại nào giá dưới [6.5 triệu](price) không
 - có sản phẩm nào dưới [8 m 7](price) không
@@ -1098,6 +1147,41 @@
 
 ## intent: find_product_upper_price
 <!-- tìm sản phẩm trên một mức giá -->
+- có [Vsmart](product_company) nào có giá khoảng [6 triệu](price) trở lên không
+- có điện thoại [ss](product_company) nào khoảng [1 triệu](price) trở lên không
+- có điện thoại [Energizer](product_company) nào có giá từ [một triệu tám](price) trở lên không
+- có [Vsmart](product_company) nào khoảng [6 triệu](price) trở lên không
+- có [ss](product_company) nào có giá khoảng [tám triệu ba](price) trở lên không
+- có điện thoại [Iphone](product_company) nào khoảng [tám triệu rưởi](price) trở lên không     
+- có [Itel](product_company) nào khoảng [hâm mốt triệu](price) trở lên không
+- có điện thoại [Iphone](product_company) nào khoảng [1 m 8](price) trở lên không
+- có [Vsmart](product_company) nào có giá khoảng [5.1 triệu](price) trở lên không
+- có điện thoại [Realme](product_company) nào có giá từ [1 triệu](price) trở lên không
+- có cái [Huawei](product_company) nào có giá khoảng [sáu triệu bảy](price) trở lên không
+- có [Xiaomi](product_company) nào có giá khoảng [4,6 triệu](price) trở lên không
+- có cái [Itel](product_company) nào có giá từ [1 m 6](price) trở lên không
+- có [Nokia](product_company) nào có giá từ [bảy triệu bảy](price) trở lên không
+- có [Realme](product_company) nào có giá từ [4 m 5](price) trở lên không
+- có điện thoại [Energizer](product_company) nào có giá từ [hai triệu bốn](price) trở lên không
+- có [Huawei](product_company) nào có giá từ [hâm tám triệu](price) trở lên không
+- có điện thoại [Vsmart](product_company) nào có giá từ [6,4 triệu](price) trở lên không
+- có điện thoại [Iphone](product_company) nào có giá từ [bốn triệu rưởi](price) trở lên không
+- có cái [Itel](product_company) nào có giá từ [7.5 triệu](price) trở lên không
+- có điện thoại [ss](product_company) nào có giá khoảng [9,6 triệu](price) trở lên không
+- có điện thoại [Realme](product_company) nào có giá từ [6,1 triệu](price) trở lên không
+- có cái [Sanmsung](product_company) nào khoảng [8,8 triệu](price) trở lên không
+- có cái [Nokia](product_company) nào có giá khoảng [1,1 triệu](price) trở lên không
+- có [Huawei](product_company) nào khoảng [2 m 6](price) trở lên không
+- có [ss](product_company) nào giá trên [hai triệu tư](price) không
+- có cái [Sanmsung](product_company) nào giá trên [5 m 8](price) không
+- có [ip](product_company) nào có giá hơn [ba triệu bốn](price) không
+- có [Itel](product_company) nào có giá trên [hai triệu tư](price) không
+- có điện thoại [Oppo](product_company) nào có giá hơn [3.3 triệu](price) không
+- có cái [Realme](product_company) nào giá trên [mười sáu triệu](price) không
+- có điện thoại [Realme](product_company) nào có giá hơn [3.2 triệu](price) không
+- có [Itel](product_company) nào giá trên [9,2 triệu](price) không
+- có cái [Sanmsung](product_company) nào có giá hơn [4 m 9](price) không
+- có điện thoại [Vivo](product_company) nào có giá hơn [6 m 8](price) không
 - có điện thoại nào có giá khoảng [6 triệu](price) trở lên không
 - có điện thoại nào có giá khoảng [bốn triệu mốt](price) trở lên không
 - có điện thoại nào có giá khoảng [5,4 triệu](price) trở lên không
@@ -1200,6 +1284,24 @@
 ## intent: find_product_around_price
 <!-- tìm sản phẩm có giá xung quanh 1 mức -->
 <!-- chênh lệch trên dưới 1 triệu đồng -->
+- có cái [Nokia](product_company) nào tầm [7,7 triệu](price) không
+- có cái [Vsmart](product_company) nào trên dưới [8,9 triệu](price) không ạ
+- có [Itel](product_company) nào khoảng [3,1 triệu](price) không giới thiệu cho em với
+- có cái [ss](product_company) nào khoảng [bốn triệu chín](price) gì đó tư vấn giúp em
+- có [ip](product_company) nào trên dưới [ba triệu tám](price) gì đó không
+- có cái [Vsmart](product_company) nào khoảng [7,6 triệu](price) gì đó không
+- có [ss](product_company) nào khoảng [4,8 triệu](price) gì đó không
+- có [Oppo](product_company) nào khoảng [8 m 5](price) không ạ
+- có [Iphone](product_company) nào tầm [5,6 triệu](price) không
+- có điện thoại [Masstel](product_company) nào tầm [6,6 triệu](price) không
+- có điện thoại [Energizer](product_company) nào trên dưới [một triệu rưởi](price) không
+- có [Vsmart](product_company) nào trên dưới [6 m 6](price) gì đó tư vấn giúp em
+- có cái [Iphone](product_company) nào tầm [5 triệu](price) không giới thiệu cho em với
+- có điện thoại [Huawei](product_company) nào khoảng [sáu triệu ba](price) không giới thiệu cho em với
+- có điện thoại [Vsmart](product_company) nào khoảng [9,3 triệu](price) không
+- có [Vsmart](product_company) nào trên dưới [5 m 9](price) không giới thiệu cho em với
+- có điện thoại [Vivo](product_company) nào khoảng [7 m 8](price) không giới thiệu cho em với
+- có [Realme](product_company) nào tầm [4 triệu 4](price) không giới thiệu cho em với
 - có điện thoại nào tầm [7,7 triệu](price) không
 - có điện thoại nào trên dưới [8,9 triệu](price) không ạ
 - có điện thoại nào khoảng [3,1 triệu](price) không giới thiệu cho em với
@@ -1272,6 +1374,11 @@
 
 ## intent: screen_info
 <!-- thông tin màn hình -->
+- máy này dùng màn hình gì vậy
+- dùng màn hình gì vậy ạ
+- màn hình của máy này loại gì vậy
+- máy này xài màn hình gì vậy
+- thông tin màn hình của máy này
 - màn hình của [Masstel Play 30](product_name) là màn hình gì?
 - màn hình của [Nokia 105 Single Sim (2017)](product_name) là màn hình gì?
 - [Masstel Fami P25](product_name) sử dụng màn hình gì?
@@ -1471,7 +1578,7 @@
 - Em muốn mua trả góp , nhung em k trả trước vậy mỗi tháng em phải góp giá thấp nhất bao nhieu vay
 - Cha chuoc [20 %](prepay_percent) cha [15 thag](installment_payment_period) la thag dog nhiu z shop
 - Cho em hoi goi tra truoc [0 d]{"entity":"price","role":"prepay"} lai suat bao nhieu? Gop moi thang bao nhieu vay?
-- Nếu mua trả góp [OPPO F1S](product_name) mà trả trước [2.000.00[0 đ]{"entity":"price","role":"prepay"}]{"entity":"price","role":"prepay"} và góp trong [9 tháng](installment_payment_period) thì lãi suất và số tiền phải trả mỗi tháng là bao nhiêu ạ
+- Nếu mua trả góp [OPPO F1S](product_name) mà trả trước [2.000.000]{"entity":"price","role":"prepay"} và góp trong [9 tháng](installment_payment_period) thì lãi suất và số tiền phải trả mỗi tháng là bao nhiêu ạ
 - Cho mình hỏi nếu mình muốn mua trả góp [f1s 2017](product_name) mà trả trước [5 triệu]{"entity":"price","role":"prepay"} thì mình sẽ phải góp trong bao lâu với số tiền bao nhiêu?
 - Cho mình hỏi, mình trả góp gói [0 đ]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi mỗi tháng phải trả la bao nhiêu va cần những giấy tờ gi
 - Nếu mình trả trước [30 %](prepay_percent) thì góp 12t thi moi tháng bn?
@@ -2087,7 +2194,9 @@ data/price.txt
 data/thoigian.txt
 ## lookup: prepay_percent
 data/prepay_percent.txt
-
+## rregex:product_name
+- .+\(+\w+\)
+- .+[+]
 ## intent: out_of_scope
 <!-- từ cấm -->
 - lồn

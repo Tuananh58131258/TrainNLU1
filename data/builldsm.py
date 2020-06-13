@@ -46,14 +46,21 @@ import random
     # print(result.replace("  "," "))
 # fobj.close()
 # count = 0
-data = open('data/nlu.md',encoding='utf-8').readlines()
+pc = ['Iphone','Sanmsung','Oppo','Huawei','Xiaomi','Realme','Nokia','Vsmart','Vivo','Masstel','Itel','Energizer','ss','ip']
+data = open('data/temp.txt',encoding='utf-8').readlines()
+p1 = ['có điện thoại','có','có cái']
+# for item in data:
+#     if item.find("intent") > -1:
+#         i = data.index(item)
+#         intent = item.split(":")
+#         res = "- {}".format(intent[1])
+#         note = data[i+1].replace("<!--","# ").replace("-->","")
+#         print(res.strip('\n'))
+#         print(note.strip('\n'))
 for item in data:
-    if item.find("intent") > -1:
-        i = data.index(item)
-        intent = item.split(":")
-        res = "- {}".format(intent[1])
-        note = data[i+1].replace("<!--","# ").replace("-->","")
-        print(res.strip('\n'))
-        print(note.strip('\n'))
-
+    sss = p1[random.randint(0,2)]
+    psc = pc[random.randint(0,len(pc)-1)]
+    # end = data[random.randint(0,len(data)-1)]
+    res = "- {} [{}](product_company) {}".format(sss,psc,item.strip('\n'))
+    print(res)
 # print(count)

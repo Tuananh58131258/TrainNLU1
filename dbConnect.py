@@ -46,4 +46,10 @@ def getData(query:str):
             return []
 
 # test the file before integrating with the bot by uncommenting the below line.
-# obj = getData("SELECT * FROM fptshop.dienthoai where ten like '%iphone 8%';")
+obj = getData("SELECT ten FROM fptshop.dienthoai;")
+fobi = open('data/temp.txt','a',encoding='utf-8')
+for item in obj:
+    # print(obj[i]['ten'])
+    fobi.write(item['ten']+'\n')
+
+# print(stri)
