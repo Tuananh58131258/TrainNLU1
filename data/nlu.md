@@ -2194,7 +2194,7 @@ data/price.txt
 data/thoigian.txt
 ## lookup: prepay_percent
 data/prepay_percent.txt
-## rregex:product_name
+## regex:product_name
 - .+\(+\w+\)
 - .+[+]
 ## intent: out_of_scope
