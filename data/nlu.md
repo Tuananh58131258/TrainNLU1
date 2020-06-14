@@ -2114,15 +2114,15 @@
 - có bản rom [8gb](rom) không vậy
 - có bản rom [256GB](rom) không
 - có bản rom [64 gb](rom) không vậy
-- có bản [12 GB](ram) - [128gb](rom) không nhỉ
-- có bản [4 gb](ram) - [256 GB](rom) không vậy
-- có bản [32 MB](ram) - [64 GB](rom) không vậy
-- có bản [2 GB](ram) - [32 gb](rom) không vậy
-- có bản [2 GB](ram) - [64 GB](rom) không nhỉ
-- có bản [8 GB](ram) - [16 gb](rom) không vậy
-- có bản [8 mb](ram) - [32 gb](rom) không nhỉ
-- có bản [12 gb](ram) - [128 gb](rom) không nhỉ
-- có bản [3 gb](ram) - [8gb](rom) không vậy
+- có bản [12 GB](ram)-[128gb](rom) không nhỉ
+- có bản [4 gb](ram)-[256 GB](rom) không vậy
+- có bản [32 MB](ram)-[64 GB](rom) không vậy
+- có bản [2 GB](ram)-[32 gb](rom) không vậy
+- có bản [2 GB](ram)-[64 GB](rom) không nhỉ
+- có bản [8 GB](ram)-[16 gb](rom) không vậy
+- có bản [8 mb](ram)-[32 gb](rom) không nhỉ
+- có bản [12 gb](ram)-[128 gb](rom) không nhỉ
+- có bản [3 gb](ram)-[8gb](rom) không vậy
 - có bản ram [512 MB](ram) rom [32GB](rom) không
 - có bản ram [4MB](ram) rom [16gb](rom) không vậy
 - có bản ram [32 mb](ram) rom [8gb](rom) không nhỉ

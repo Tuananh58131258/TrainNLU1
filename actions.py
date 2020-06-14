@@ -14,6 +14,7 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted
 from inputAnalysis import priceAnalysis
 from inputAnalysis import productNameAnalysis
+from inputAnalysis import romramAnalysis
 from dbConnect import getData
 from makemessage import GenericTemplate
 from makemessage import ButtonTemplate
@@ -77,23 +78,37 @@ class ActionProductPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        productName = productNameAnalysis(tracker.get_latest_entity_values(entity_type='product_name'))
+        productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
         sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
         try:
-            ram = tracker.get_latest_entity_values(entity_type='ram')
+            ram = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='ram')))
             sqlQuery =  sqlQuery + "and ram like '%{}%'".format(ram)
         except:
             pass
         try:
-            rom = tracker.get_latest_entity_values(entity_type='rom')
+            rom = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='rom')))
             sqlQuery =  sqlQuery + "and rom like '%{}%'".format(rom)
         except:
             pass
+        sqlQuery = sqlQuery + "limit 9;"
         result = getData(sqlQuery)
-        mess = ""
         if result:
-            mess = "asas"
-        dispatcher.utter_message(mess)
+            list_item = []
+            for item in result:
+                list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                gia = ""
+                if item['gia']:
+                    gia  = "Giá: {}".format(item['gia'])
+                else:
+                    gia = "Đang cập nhật"
+                mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                list_item.append(mess_item)
+
+            message_str = GenericTemplate(list_item)
+            dispatcher.utter_message(text="Giá nè", json_message=message_str)
+        else:
+            dispatcher.utter_message("Không tìm thấy sản phẩm. Vui lòng thử lại")
+        print(sqlQuery)
         return
 
 class ActionOnlinePrice(Action):
@@ -104,7 +119,7 @@ class ActionOnlinePrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        dispatcher.utter_message('asasas')
         return
 
 class ActionOldProduct(Action):
