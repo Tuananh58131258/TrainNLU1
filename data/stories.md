@@ -18,18 +18,6 @@
 * ask_ability
   - utter_ask_ability
 
-## storie 11
-* can_installment
-  - utter_can_installment
-
-## storie 11
-* can_buy_with_installment_with_license
-  - utter_can_installment
-
-## storie 12
-* replace_GPLX_with_SHK_and_opposite
-  - utter_replace_GPLX_with_SHK_and_opposite
-
 ## storie 12
 * what_license
   - utter_what_license
@@ -49,3 +37,7 @@
 ## storie 12
 * ask_hardware_info
   - action_test_st
+
+## storie 13
+* product_price
+  - action_product_price

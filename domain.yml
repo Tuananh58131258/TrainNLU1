@@ -170,3 +170,77 @@ session_config:
 actions:
   - action_custom_fallback
   - action_test_st
+  - action_product_price
+  # action trả lời giá sản phẩm
+
+  - action_online_price
+  # action trả lời giá online
+
+  - action_old_product
+  # action trả lời giá của sản phẩm cũ
+
+  - action_product_configuration
+  # action trả lời cấu hình của sản phẩm
+
+  - action_type_of_product
+  # action trả lời các hãng điện thoại sẵn có
+
+  - action_list_product
+  # action trả lời danh sách các sản phẩm của 1 hãng
+
+  - action_check_price
+  # action kiểm tra giá sản phẩm
+
+  - action_find_product_in_range_price
+  # action tìm kiếm sản phẩm trong 1 khoảng giá
+
+  - action_find_product_lower_price
+  # action tìm sản phấm dưới 1 mức giá
+
+  - action_find_product_upper_price
+  # action tìm sản phẩm trên 1 mức giá
+
+  - action_find_product_around_price
+  # action tìm sản phẩm quanh 1 mức giá
+
+  - action_scree_info
+  # action thông tin màn hình
+
+  - action_pin_info
+  # action thông tin về pin
+
+  - action_buy_old_product
+  # action thu mua lại sản phẩm cũ
+
+  - action_how_many_per_month
+  # action cần trả bao nhiêu tiền 1 tháng
+
+  - action_case_how_many_per_month
+  # action cần trả bao nhiêu tiền 1 tháng trong 2 trường hợp
+
+  - action_is_product_can_buy_on_installment
+  # action sản phẩm có được mua trả góp hay không
+
+  - action_hardware_info
+  # action thông tin chi tiết phần cứng
+
+  - action_main_camera
+  # action thông tin về camera sau
+
+  - action_selfie_camera
+  # action thông tin camera trước
+
+  - action_resolution_camrea
+  # action thông tin độ phân giải của cả camera trước và sau
+
+  - action_guarantee
+  # action thông tin bảo hành
+
+  - action_promotions_and_gift
+  # action thông tin khuyến mãi và quà tặng
+
+  - action_find_product
+  # action tìm kiếm 1 sản phẩm
+
+  - action_find_another_product
+  # action tìm kiếm 1 bản khác

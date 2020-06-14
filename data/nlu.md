@@ -2194,10 +2194,6 @@ data/price.txt
 data/thoigian.txt
 ## lookup: prepay_percent
 data/prepay_percent.txt
-## synonym: [0-9]+[+]
-- [0-9]\splus
-## regex: ram
-- [0-9]{1,3}\s?gb?
 ## regex:prepay_percent
 - [0-9]{1,2}\s?%
 <!-- ## regex:product_name

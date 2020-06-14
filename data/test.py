@@ -1,9 +1,7 @@
-from underthesea import sent_tokenize
-from underthesea import word_tokenize
-data = open('data/thoigian.txt',encoding='utf-8').readlines()
+
+data = open('data/temp.txt',encoding='utf-8').readlines()
 for item in data:
-    try:
-        sent_tokenize(item)
-        word_tokenize(item)
-    except:
-        print(data.index(item))
+    if item.find("return \"") >-1:
+        dat = item.strip(' ').split(" ")
+        res = dat[1].replace("\"","").strip('\n')
+        print("- {}\n{}".format(res,data[data.index(item)-2]))

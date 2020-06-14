@@ -12,6 +12,12 @@ import time
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted
+from inputAnalysis import priceAnalysis
+from inputAnalysis import productNameAnalysis
+from dbConnect import getData
+from makemessage import GenericTemplate
+from makemessage import ButtonTemplate
+from makemessage import TemplateItems
 #
 #
 class ActionCustomFallback(Action):
@@ -71,7 +77,23 @@ class ActionProductPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+        productName = productNameAnalysis(tracker.get_latest_entity_values(entity_type='product_name'))
+        sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+        try:
+            ram = tracker.get_latest_entity_values(entity_type='ram')
+            sqlQuery =  sqlQuery + "and ram like '%{}%'".format(ram)
+        except:
+            pass
+        try:
+            rom = tracker.get_latest_entity_values(entity_type='rom')
+            sqlQuery =  sqlQuery + "and rom like '%{}%'".format(rom)
+        except:
+            pass
+        result = getData(sqlQuery)
+        mess = ""
+        if result:
+            mess = "asas"
+        dispatcher.utter_message(mess)
         return
 
 class ActionOnlinePrice(Action):
@@ -82,7 +104,7 @@ class ActionOnlinePrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+        dispatcher.utter_message("this is test")
         return
 
 class ActionOldProduct(Action):
@@ -93,6 +115,7 @@ class ActionOldProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -104,6 +127,7 @@ class ActionProductConfiguration(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -115,6 +139,7 @@ class ActionTypeOfProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -126,6 +151,7 @@ class ActionListProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -137,6 +163,7 @@ class ActionCheckPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -148,6 +175,7 @@ class ActionFindProductInRangePrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -159,6 +187,7 @@ class ActionFindProductLowerPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -170,6 +199,7 @@ class ActionFindProductUpperPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -181,6 +211,7 @@ class ActionFindProductAroundPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -192,6 +223,7 @@ class ActionScreenInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -203,6 +235,7 @@ class ActionPinInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -214,6 +247,7 @@ class ActionBuyOldProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -225,6 +259,7 @@ class ActionHowManyPerMonth(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -236,6 +271,7 @@ class ActionCaseHowManyPerMonth(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -247,6 +283,7 @@ class ActionIsProductCanBuyOnInstallment(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -258,6 +295,7 @@ class ActionHarwareInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -269,6 +307,7 @@ class ActionMainCamera(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -280,6 +319,7 @@ class ActionSelfieCamera(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 class ActionResolutionCamera(Action):
@@ -290,6 +330,7 @@ class ActionResolutionCamera(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -301,6 +342,7 @@ class ActionGuarantee(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -312,6 +354,7 @@ class ActionPromotionsAndGift(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -323,6 +366,7 @@ class ActionFindProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
 
@@ -334,5 +378,6 @@ class ActionFindAnotherProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
 
         return
