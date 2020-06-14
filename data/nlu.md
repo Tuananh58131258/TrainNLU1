@@ -328,11 +328,11 @@
 - sản phẩm [iPhone 11 Pro Max](product_name) bao nhiêu tiền
 - điện thoại [Huawei Enjoy 10 Plus](product_name) có giá bao nhiêu
 - điện thoại [realme x50 youth edition](product_name) bao nhiêu tiền
-- sản phẩm [Oppo Reno3 Pro](product_name) [256 GB](rom)hiện nay có giá bao nhiêu
+- sản phẩm [Oppo Reno3 Pro](product_name) [256 GB](rom) hiện nay có giá bao nhiêu
 - sản phẩm [Nokia 9.2](product_name) [8gb](rom) [4 gb](ram) có giá bao nhiêu
-- điện thoại [Huawei Nova 7 Pro 5G](product_name) [3 gb](ram)hiện nay có giá bao nhiêu
+- điện thoại [Huawei Nova 7 Pro 5G](product_name) [3 gb](ram) hiện nay có giá bao nhiêu
 - điện thoại [Realme 6i](product_name) [8 GB](ram)bao nhiêu tiền
-- điện thoại [Samsung Galaxy A21s](product_name) [16gb](rom)hiện nay có giá bao nhiêu
+- điện thoại [Samsung Galaxy A21s](product_name) [16gb](rom) hiện nay có giá bao nhiêu
 - điện thoại [Realme 6](product_name) [8gb](rom) [8 gb](ram) có giá bao nhiêu
 - sản phẩm [iPhone 11 Pro](product_name) [256GB](rom) [512 mb](ram) hiện nay có giá bao nhiêu
 - điện thoại [ss 10 lite](product_name) [256 gb](rom)có giá bao nhiêu
@@ -347,33 +347,33 @@
 - sản phẩm [Vivo X30 Pro](product_name) [3 gb](ram)có giá bao nhiêu
 - sản phẩm [Nokia N150](product_name) [1 GB](ram) [256GB](rom) có giá bao nhiêu
 - điện thoại [realme narzo 10a](product_name) [4 GB](ram) [256 GB](rom) bao nhiêu tiền
-- điện thoại [Huawei Nova 5 Pro](product_name) [16 gb](rom)hiện nay có giá bao nhiêu
+- điện thoại [Huawei Nova 5 Pro](product_name) [16 gb](rom) hiện nay có giá bao nhiêu
 - điện thoại [Energizer E241s](product_name) [8gb](rom)bao nhiêu tiền
 - sản phẩm [Huawei Y7s](product_name) [8 mb](ram) [16GB](rom) bao nhiêu tiền
 - [ss 10](product_name) [12 gb](ram) [32gb](rom) hiện nay có giá bao nhiêu
-- sản phẩm [Vivo X50e 5G](product_name) [4 mb](ram)hiện nay có giá bao nhiêu
+- sản phẩm [Vivo X50e 5G](product_name) [4 mb](ram) hiện nay có giá bao nhiêu
 - sản phẩm [Huawei Mate 30 RS Porsche Design](product_name) [8gb](rom) [512 mb](ram) có giá bao nhiêu
 - điện thoại [Huawei Y8s](product_name) [6 GB](ram) [512GB](rom) có giá bao nhiêu
 - [Nokia 800 Tough](product_name) [8GB](rom)có giá bao nhiêu
 - [Huawei Nova 7 5G](product_name) [512 MB](ram) [32GB](rom) có giá bao nhiêu
 - điện thoại [Samsung Galaxy Xcover Pro](product_name) [6 gb](ram) [512 gb](rom) có giá bao nhiêu
-- [Huawei Y9s](product_name) [256 GB](rom)hiện nay có giá bao nhiêu
+- [Huawei Y9s](product_name) [256 GB](rom) hiện nay có giá bao nhiêu
 - điện thoại [ss a20](product_name) [32gb](rom)có giá bao nhiêu
 - điện thoại [Xiaomi Mi 10 Youth Edition](product_name) [256 gb](rom) [12 GB](ram) hiện nay có giá bao nhiêu
 - [OPPO A72](product_name) [64GB](rom) [8 MB](ram) hiện nay có giá bao nhiêu
-- [Xiaomi Mi 9 Pro 5G](product_name) [8 MB](ram)hiện nay có giá bao nhiêu
-- [realme 6](product_name) [16gb](rom)hiện nay có giá bao nhiêu
-- sản phẩm [Xiaomi Mi Note 10 Pro](product_name) [12 GB](ram)hiện nay có giá bao nhiêu
+- [Xiaomi Mi 9 Pro 5G](product_name) [8 MB](ram) hiện nay có giá bao nhiêu
+- [realme 6](product_name) [16gb](rom) hiện nay có giá bao nhiêu
+- sản phẩm [Xiaomi Mi Note 10 Pro](product_name) [12 GB](ram) hiện nay có giá bao nhiêu
 - điện thoại [realme x50 youth edition](product_name) [8gb](rom)có giá bao nhiêu
 - [Vivo X50 Lite](product_name) [128 gb](rom) [3 GB](ram) hiện nay có giá bao nhiêu
-- điện thoại [Itel It5092](product_name) [32 mb](ram)hiện nay có giá bao nhiêu
+- điện thoại [Itel It5092](product_name) [32 mb](ram) hiện nay có giá bao nhiêu
 - sản phẩm [Realme X2 Pro](product_name) [512gb](rom) [32 MB](ram) hiện nay có giá bao nhiêu
-- sản phẩm [Samsung Galaxy Z Flip 5G](product_name) [256GB](rom)hiện nay có giá bao nhiêu
+- sản phẩm [Samsung Galaxy Z Flip 5G](product_name) [256GB](rom) hiện nay có giá bao nhiêu
 - [Vivo X30 Pro](product_name) [8 GB](ram) [16GB](rom) bao nhiêu tiền
 - điện thoại [Samsung Galaxy A10](product_name) [8GB](rom) [8 MB](ram) hiện nay có giá bao nhiêu
 - [Huawei Enjoy 10s](product_name) [256 gb](rom)có giá bao nhiêu
 - điện thoại [Vivo X30](product_name) [256 gb](rom) [8 GB](ram) bao nhiêu tiền
-- [Nokia 2.2](product_name) [4MB](ram)hiện nay có giá bao nhiêu
+- [Nokia 2.2](product_name) [4MB](ram) hiện nay có giá bao nhiêu
 - [Realme X50 Youth Edition](product_name) [64 gb](rom)có giá bao nhiêu
 - sản phẩm [Huawei Y6s](product_name) [4 gb](ram) [256GB](rom) bao nhiêu tiền
 - [ss m21](product_name) [8 mb](ram) [128gb](rom) có giá bao nhiêu
@@ -388,44 +388,44 @@
 - [Samsung Galaxy S20 Ultra](product_name) [256 GB](rom) [8 mb](ram) mua online có giá bao nhiêu
 - điện thoại [ss 10 lite](product_name) [256GB](rom) [512 MB](ram) mua online có giá bao nhiêu
 - [Masstel izi 120](product_name) [4MB](ram) [32 gb](rom) giá mua online là bao nhiêu
-- sản phẩm [ss a01](product_name) [16 GB](rom)mua online bao nhiêu tiền
+- sản phẩm [ss a01](product_name) [16 GB](rom) mua online bao nhiêu tiền
 - điện thoại [Samsung Galaxy Note 10 Lite](product_name) [16GB](rom) [4 gb](ram) giá mua online là bao nhiêu
 - điện thoại [Huawei Y7p](product_name) [1 GB](ram)có giá bao nhiêu khi mua online
 - điện thoại [Vivo Y50](product_name) [32 MB](ram) [8gb](rom) giá mua online là bao nhiêu
-- [Oppo Find X2 Pro](product_name) [8 gb](ram)mua online hiện nay có giá bao nhiêu
+- [Oppo Find X2 Pro](product_name) [8 gb](ram) mua online hiện nay có giá bao nhiêu
 - [ss a51 5g](product_name) [512gb](rom)có giá bao nhiêu khi mua online
 - điện thoại [Vsmart Star](product_name) [4 MB](ram) [256 GB](rom) giá khi mua online
 - [Vsmart Joy 3](product_name) [16gb](rom)có giá bao nhiêu khi mua online
-- sản phẩm [ss a71 5g](product_name) [512GB](rom)mua online hiện nay có giá bao nhiêu
-- sản phẩm [Xiaomi Mi 10 S](product_name) [512 mb](ram)mua online bao nhiêu tiền
+- sản phẩm [ss a71 5g](product_name) [512GB](rom) mua online hiện nay có giá bao nhiêu
+- sản phẩm [Xiaomi Mi 10 S](product_name) [512 mb](ram) mua online bao nhiêu tiền
 - sản phẩm [Huawei Mate 30 RS Porsche Design](product_name) [8 gb](ram) [128gb](rom) mua online có giá bao nhiêu
-- [ss a41](product_name) [1 gb](ram)mua online có giá bao nhiêu
+- [ss a41](product_name) [1 gb](ram) mua online có giá bao nhiêu
 - sản phẩm [Oppo A12](product_name) [12 gb](ram) [8gb](rom) mua online hiện nay có giá bao nhiêu
 - điện thoại [Vivo X50 Lite](product_name) [32 mb](ram) [32GB](rom) giá mua online là bao nhiêu
-- điện thoại [Realme 5 Pro](product_name) [128 gb](rom)mua online hiện nay có giá bao nhiêu
+- điện thoại [Realme 5 Pro](product_name) [128 gb](rom) mua online hiện nay có giá bao nhiêu
 - điện thoại [Huawei Nova 7 5G](product_name) [64gb](rom) [8 mb](ram) mua online có giá bao nhiêu
 - [Nokia 150 DS](product_name) [16gb](rom) [32 mb](ram) mua online hiện nay có giá bao nhiêu
-- sản phẩm [Masstel Max R1](product_name) [3 gb](ram)mua online bao nhiêu tiền
+- sản phẩm [Masstel Max R1](product_name) [3 gb](ram) mua online bao nhiêu tiền
 - điện thoại [OPPO K5](product_name) [8GB](rom) [6 gb](ram) mua online có giá bao nhiêu
-- [Samsung Galaxy Note 20+](product_name) [256gb](rom)mua online hiện nay có giá bao nhiêu
-- [Samsung Galaxy A21s](product_name) [16GB](rom)giá mua online là bao nhiêu
-- điện thoại [Samsung Galaxy M01](product_name) [4 MB](ram)giá khi mua online
+- [Samsung Galaxy Note 20+](product_name) [256gb](rom) mua online hiện nay có giá bao nhiêu
+- [Samsung Galaxy A21s](product_name) [16GB](rom) giá mua online là bao nhiêu
+- điện thoại [Samsung Galaxy M01](product_name) [4 MB](ram) giá khi mua online
 - [Huawei P40 Lite 5G](product_name) [128 gb](rom)có giá bao nhiêu khi mua online
 - [ss m40](product_name) [6 GB](ram)có giá bao nhiêu khi mua online
 - sản phẩm [realme c3](product_name) [64GB](rom)có giá bao nhiêu khi mua online
-- [Itel It2170](product_name) [32GB](rom)giá khi mua online
+- [Itel It2170](product_name) [32GB](rom) giá khi mua online
 - sản phẩm [Huawei P40](product_name) [128gb](rom) [8 mb](ram) mua online bao nhiêu tiền
 - sản phẩm [OPPO F15](product_name) [3 gb](ram) [128 GB](rom) mua online hiện nay có giá bao nhiêu
 - [Huawei Nova 5](product_name) [3 GB](ram)có giá bao nhiêu khi mua online
 - điện thoại [Oppo Reno](product_name) [32 GB](rom) [2 gb](ram) mua online bao nhiêu tiền
 - sản phẩm [Oppo A31](product_name) [1 GB](ram) [256gb](rom) mua online bao nhiêu tiền
-- điện thoại [Masstel Izi 250](product_name) [3 GB](ram)mua online có giá bao nhiêu
-- [Energizer E241s](product_name) [3 gb](ram)mua online hiện nay có giá bao nhiêu
-- điện thoại [ss m31](product_name) [8gb](rom)giá mua online là bao nhiêu
+- điện thoại [Masstel Izi 250](product_name) [3 GB](ram) mua online có giá bao nhiêu
+- [Energizer E241s](product_name) [3 gb](ram) mua online hiện nay có giá bao nhiêu
+- điện thoại [ss m31](product_name) [8gb](rom) giá mua online là bao nhiêu
 - [Vsmart Star](product_name) [16 GB](rom) [3 GB](ram) giá khi mua online
-- điện thoại [OPPO A92s](product_name) [512gb](rom)giá khi mua online
+- điện thoại [OPPO A92s](product_name) [512gb](rom) giá khi mua online
 - sản phẩm [Samsung Galaxy M51](product_name) [64GB](rom) [12 gb](ram) giá mua online là bao nhiêu
-- điện thoại [Vivo V19 Pro](product_name) [64 gb](rom)mua online hiện nay có giá bao nhiêu
+- điện thoại [Vivo V19 Pro](product_name) [64 gb](rom) mua online hiện nay có giá bao nhiêu
 - [Huawei Y6s](product_name) [256gb](rom) [6 GB](ram) mua online hiện nay có giá bao nhiêu
 - sản phẩm [ss s10e](product_name) [3 GB](ram) [16GB](rom) mua online bao nhiêu tiền
 - điện thoại [realme 5 pro](product_name) [4mb](ram) [16gb](rom) mua online bao nhiêu tiền
@@ -580,51 +580,51 @@
 - [Xiaomi Redmi K30i](product_name) giá cũ là bao nhiêu
 - sản phẩm [Oppo A31](product_name) giá cũ như thế nào
 - điện thoại [Energizer E100](product_name) giá cũ như thế nào
-- sản phẩm [Samsung Galaxy A21s](product_name) [8 gb](ram)giá cũ như thế nào
-- sản phẩm [ss m51](product_name) [8 mb](ram)giá cũ như thế nào
+- sản phẩm [Samsung Galaxy A21s](product_name) [8 gb](ram) giá cũ như thế nào
+- sản phẩm [ss m51](product_name) [8 mb](ram) giá cũ như thế nào
 - điện thoại [Huawei P40 Lite E](product_name) [16 GB](rom) [512 mb](ram) giá cũ là bao nhiêu
 - sản phẩm [realme x3](product_name) [512GB](rom) [8 MB](ram) giá cũ như thế nào
 - điện thoại [ss a11](product_name) [256 GB](rom) [4 mb](ram) giá cũ là bao nhiêu
-- sản phẩm [Huawei Y8p](product_name) [64 gb](rom)giá cũ như thế nào
+- sản phẩm [Huawei Y8p](product_name) [64 gb](rom) giá cũ như thế nào
 - điện thoại [Samsung Galaxy M20](product_name) [128GB](rom) [8 gb](ram) giá cũ như thế nào
 - [Samsung Galaxy A71](product_name) [16 gb](rom) [8 mb](ram) giá cũ là bao nhiêu
 - sản phẩm [Masstel Max R1](product_name) [4mb](ram) [16gb](rom) giá cũ là bao nhiêu
 - điện thoại [realme 6 pro](product_name) [2 gb](ram) [128GB](rom) giá cũ là bao nhiêu
-- [ss s20](product_name) [256gb](rom)giá cũ là bao nhiêu
-- sản phẩm [OPPO Reno Ace](product_name) [512GB](rom)giá cũ là bao nhiêu
-- [Nokia 105 SS](product_name) [512gb](rom)giá cũ như thế nào
-- điện thoại [Masstel iZi 206](product_name) [8gb](rom)giá cũ là bao nhiêu
-- [Huawei Enjoy 10](product_name) [32 MB](ram)giá cũ là bao nhiêu
-- sản phẩm [realme x2 pro](product_name) [4 GB](ram)giá cũ như thế nào
-- [ss watch active](product_name) [16 GB](rom)giá cũ là bao nhiêu
-- điện thoại [Nokia 150 DS](product_name) [3 GB](ram)giá cũ như thế nào
+- [ss s20](product_name) [256gb](rom) giá cũ là bao nhiêu
+- sản phẩm [OPPO Reno Ace](product_name) [512GB](rom) giá cũ là bao nhiêu
+- [Nokia 105 SS](product_name) [512gb](rom) giá cũ như thế nào
+- điện thoại [Masstel iZi 206](product_name) [8gb](rom) giá cũ là bao nhiêu
+- [Huawei Enjoy 10](product_name) [32 MB](ram) giá cũ là bao nhiêu
+- sản phẩm [realme x2 pro](product_name) [4 GB](ram) giá cũ như thế nào
+- [ss watch active](product_name) [16 GB](rom) giá cũ là bao nhiêu
+- điện thoại [Nokia 150 DS](product_name) [3 GB](ram) giá cũ như thế nào
 - [Realme C2](product_name) [64GB](rom) [1 GB](ram) giá cũ như thế nào
-- điện thoại [Huawei Y6p](product_name) [4MB](ram)giá cũ như thế nào
-- [Realme 6 Pro](product_name) [3 gb](ram)giá cũ như thế nào
-- sản phẩm [Samsung Galaxy A10](product_name) [6 gb](ram)giá cũ là bao nhiêu
-- [Samsung Galaxy A60](product_name) [2 GB](ram)giá cũ như thế nào
-- sản phẩm [Nokia 5.3](product_name) [64 GB](rom)giá cũ như thế nào
-- [Energizer E12](product_name) [1 GB](ram)giá cũ như thế nào
-- điện thoại [Samsung Galaxy A51 5G](product_name) [32gb](rom)giá cũ là bao nhiêu
-- điện thoại [Nokia 110 DS](product_name) [6 gb](ram)giá cũ là bao nhiêu
+- điện thoại [Huawei Y6p](product_name) [4MB](ram) giá cũ như thế nào
+- [Realme 6 Pro](product_name) [3 gb](ram) giá cũ như thế nào
+- sản phẩm [Samsung Galaxy A10](product_name) [6 gb](ram) giá cũ là bao nhiêu
+- [Samsung Galaxy A60](product_name) [2 GB](ram) giá cũ như thế nào
+- sản phẩm [Nokia 5.3](product_name) [64 GB](rom) giá cũ như thế nào
+- [Energizer E12](product_name) [1 GB](ram) giá cũ như thế nào
+- điện thoại [Samsung Galaxy A51 5G](product_name) [32gb](rom) giá cũ là bao nhiêu
+- điện thoại [Nokia 110 DS](product_name) [6 gb](ram) giá cũ là bao nhiêu
 - điện thoại [Samsung Galaxy A10e](product_name) [8 mb](ram) [256 gb](rom) giá cũ là bao nhiêu
-- [ss a01](product_name) [16gb](rom)giá cũ như thế nào
+- [ss a01](product_name) [16gb](rom) giá cũ như thế nào
 - [Vsmart Star 3](product_name) [512gb](rom) [2 gb](ram) giá cũ như thế nào
 - [Xiaomi Redmi Note 8](product_name) [8 GB](ram) [256 GB](rom) giá cũ như thế nào
 - [Huawei Nova 7 5G](product_name) [32 MB](ram) [128GB](rom) giá cũ như thế nào
-- [OPPO Find X2 Lite](product_name) [1 GB](ram)giá cũ như thế nào
-- sản phẩm [Vivo Y91C](product_name) [12 gb](ram)giá cũ là bao nhiêu
-- sản phẩm [ss 10](product_name) [512gb](rom)giá cũ như thế nào
+- [OPPO Find X2 Lite](product_name) [1 GB](ram) giá cũ như thế nào
+- sản phẩm [Vivo Y91C](product_name) [12 gb](ram) giá cũ là bao nhiêu
+- sản phẩm [ss 10](product_name) [512gb](rom) giá cũ như thế nào
 - sản phẩm [ss z flip](product_name) [64 gb](rom) [8 gb](ram) giá cũ như thế nào
-- [Samsung Galaxy A51](product_name) [3 GB](ram)giá cũ là bao nhiêu
+- [Samsung Galaxy A51](product_name) [3 GB](ram) giá cũ là bao nhiêu
 - sản phẩm [ss a21s](product_name) [8GB](rom) [1 gb](ram) giá cũ như thế nào
 - sản phẩm [Masstel Lux Mini](product_name) [64GB](rom) [3 GB](ram) giá cũ là bao nhiêu
 - [OPPO A72](product_name) [4 MB](ram) [64GB](rom) giá cũ là bao nhiêu
 - sản phẩm [Realme X50 Pro 5G](product_name) [3 gb](ram) [8gb](rom) giá cũ như thế nào
 - điện thoại [Huawei nova 5z](product_name) [8 mb](ram) [512 GB](rom) giá cũ như thế nào
-- điện thoại [OPPO A11](product_name) [8 gb](ram)giá cũ là bao nhiêu
-- [Samsung Galaxy M51](product_name) [1 GB](ram)giá cũ như thế nào
-- điện thoại [Samsung Galaxy Note 10](product_name) [16GB](rom)giá cũ là bao nhiêu
+- điện thoại [OPPO A11](product_name) [8 gb](ram) giá cũ là bao nhiêu
+- [Samsung Galaxy M51](product_name) [1 GB](ram) giá cũ như thế nào
+- điện thoại [Samsung Galaxy Note 10](product_name) [16GB](rom) giá cũ là bao nhiêu
 - điện thoại [Masstel Hapi 10 Fami](product_name) [4MB](ram) [256 GB](rom) giá cũ là bao nhiêu
 - [ss j8+](product_name) [128gb](rom) [8 GB](ram) giá cũ như thế nào
 - [Masstel Fami P25](product_name) [1 GB](ram) [32 gb](rom) giá cũ như thế nào
@@ -844,8 +844,8 @@
 - gia điện thoại [realme x50 pro player edition](product_name) là [hai mươi một triệu](price) phải không
 - giá của [ss s10 lite](product_name) [4,1 triệu](price) đúng không
 - giá của [Samsung Galaxy A10e](product_name) [sáu triệu năm](price) phải không ạ
-- gia điện thoại [Vivo Y91C ](product_name) là [sáu triệu ba](price) phải không ạ
-- giá sản phẩm [Nokia 150 ](product_name) là [8,1 triệu](price) phải không
+- gia điện thoại [Vivo Y91C](product_name) là [sáu triệu ba](price) phải không ạ
+- giá sản phẩm [Nokia 150](product_name) là [8,1 triệu](price) phải không
 - điện thoại [iPhone 11](product_name) giá là [sáu triệu sáu](price) đúng không
 - điện thoại [Samsung Galaxy A50s](product_name) có giá [7 triệu rưởi](price) phải không
 - điện thoại [Nokia 9.2](product_name) có giá [ba triệu sáu](price) phải không ạ
@@ -918,7 +918,7 @@
 - [Realme 5s](product_name) có giá [một triệu rưởi](price) phải không ạ
 - sản phẩm [Vivo Y50](product_name) giá [4 m 5](price) đúng không
 - sản phẩm [Samsung Galaxy A51 5G](product_name) có giá [2 m 1](price) đúng không
-- [Vivo Y91C ](product_name) có giá [5 m 7](price) phải không
+- [Vivo Y91C](product_name) có giá [5 m 7](price) phải không
 - sản phẩm [Huawei Enjoy 10](product_name) giá [3 m 4](price) phải không ạ
 - [Xiaomi Mi 9 Pro](product_name) giá là [9 m 3](price) đúng không
 - điện thoại [Masstel Fami S2](product_name) giá [5 m 7](price) đúng không
@@ -929,7 +929,7 @@
 - điện thoại [ss 10+](product_name) giá [4 m 3](price) đúng không
 - [Samsung Galaxy Note 20+](product_name) có giá [3 m 2](price) phải không
 - [Samsung Galaxy M21](product_name) giá là [9 m 4](price) đúng không
-- [Nokia 5310 ](product_name) giá là [3 m 4](price) phải không ạ
+- [Nokia 5310](product_name) giá là [3 m 4](price) phải không ạ
 - sản phẩm [realme 5](product_name) giá là [7 m 1](price) phải không
 - điện thoại [ss a30](product_name) giá [8,4 triệu](price) đúng không
 - sản phẩm [Vivo Y70s 5G](product_name) giá [1 m 9](price) phải không
@@ -1417,7 +1417,7 @@
 - pin của [Nokia 5.3](product_name) dùng được lâu không?
 - pin của [realme x3](product_name) dùng được lâu không?
 - thời gian sử dụng pin của [iPhone 11 Pro](product_name) là bao lâu?
-- [Realme C3i ](product_name) sử dụng pin gì?
+- [Realme C3i](product_name) sử dụng pin gì?
 - pin của [ss m40](product_name) dùng được lâu không?
 - pin của [Realme X3](product_name) có dung lượng bao nhiêu?
 - điện thoại này sử dụng pin nào
@@ -1443,7 +1443,7 @@
 - điện thoại [realme x50 youth edition](product_name) cũ shop thu lại bao nhiêu tiền vậy?
 - [Realme Narzo 10A](product_name) cũ bán được bao nhiêu?
 - điện thoại [Vsmart Joy 3](product_name) cũ shop thu lại bao nhiêu tiền vậy?
-- điện thoại [Nokia 5310 ](product_name) cũ shop thu lại bao nhiêu tiền vậy?
+- điện thoại [Nokia 5310](product_name) cũ shop thu lại bao nhiêu tiền vậy?
 - [ss a90 5g](product_name) cũ shop mua lại với giá bao nhiêu?
 - [Nokia 8.3 5G](product_name) cũ shop mua lại với giá bao nhiêu?
 - [Huawei Y9s](product_name) cũ shop mua lại với giá bao nhiêu?
@@ -1472,7 +1472,7 @@
 - [iPhone 11 Pro](product_name) cũ bán được bao nhiêu?
 - điện thoại [Huawei P30 Pro New Edition](product_name) cũ shop thu lại bao nhiêu tiền vậy?
 - shop thu mua [Xiaomi Redmi K30i](product_name) cũ lại với giá bao nhiêu
-- shop thu mua [Nokia 5310 ](product_name) cũ lại với giá bao nhiêu
+- shop thu mua [Nokia 5310](product_name) cũ lại với giá bao nhiêu
 - điện thoại [Samsung Galaxy M31s](product_name) cũ shop thu lại bao nhiêu tiền vậy?
 - [Realme X2 Pro](product_name) cũ shop mua lại với giá bao nhiêu?
 - [ss a50s](product_name) cũ shop mua lại với giá bao nhiêu?
@@ -1798,7 +1798,7 @@
 - [Samsung Galaxy J8+](product_name) dùng [card đồ họa]{"entity":"hardware","role":"WHQ"} gì
 - [Xiaomi Redmi K30 Pro Zoom Edition](product_name) dùng [chíp]{"entity":"hardware","role":"WHQ"} gì
 - [Huawei Y7 Pro](product_name) xài [card đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [Realme C2 ](product_name) có [gpu]{"entity":"hardware","role":"WHQ"} gì
+- [Realme C2](product_name) có [gpu]{"entity":"hardware","role":"WHQ"} gì
 - [Samsung Galaxy M20](product_name) xài [chip]{"entity":"hardware","role":"WHQ"} gì
 - [Itel It5092](product_name) dùng [chíp đồ họa]{"entity":"hardware","role":"WHQ"} gì
 - [Realme XT](product_name) có [GPU]{"entity":"hardware","role":"WHQ"} gì
@@ -1826,7 +1826,7 @@
 - [Huawei Y7 Pro](product_name) có [đèn flash]{"entity":"hardware","role":"YorN"} không
 - [Huawei P40](product_name) dùng được [đèn pin]{"entity":"hardware","role":"YorN"} không
 - [Masstel Fami 9](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
-- [Realme C2 ](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
+- [Realme C2](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
 - [Itel It2163](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không
 - [Samsung Galaxy Note 10+](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
 - [Itel It2170](product_name) có [edge]{"entity":"hardware","role":"YorN"} không
@@ -1961,8 +1961,8 @@
 - điện thoại [ss a71](product_name) có chính sách bảo hành như thế nào
 - máy [ss a21s](product_name) có chính sách bảo hành như thế nào
 - máy [Masstel X1](product_name) có chính sách bảo hành như thế nào
-- điện thoại [Nokia 3.2 ](product_name) có bảo hành không
-- sản phẩm [Huawei Y6s ](product_name) có được bảo hành không
+- điện thoại [Nokia 3.2](product_name) có bảo hành không
+- sản phẩm [Huawei Y6s](product_name) có được bảo hành không
 - điện thoại [Nokia 6.2](product_name) có chính sách bảo hành như thế nào
 - máy [OPPO Reno A](product_name) có được bảo hành không
 - sản phẩm [Samsung Galaxy Z Flip 5G](product_name) có chính sách bảo hành như thế nào
@@ -2045,7 +2045,7 @@
 - có [Samsung Galaxy A71](product_name) không
 - shop có [Realme Narzo 10](product_name) không nhỉ
 - ở đây có [Samsung Galaxy A60](product_name) không vậy
-- shop có [Realme C2 ](product_name) không
+- shop có [Realme C2](product_name) không
 - shop có [Huawei P40 Lite](product_name) không nhỉ
 - có [Realme 6 Pro](product_name) không vậy
 - ad ơi có [Samsung Galaxy A80](product_name) không
@@ -2053,7 +2053,7 @@
 - ad ơi có [Samsung Galaxy J8+](product_name) không vậy
 - có [Nokia 9.3 PureView](product_name) không vậy
 - shop có [iPhone 11 Pro Max](product_name) không nhỉ
-- có [Realme C3i ](product_name) không nhỉ
+- có [Realme C3i](product_name) không nhỉ
 - ở đây có [ss a20s](product_name) không vậy
 - ad ơi có [OPPO A91](product_name) không vậy
 - ở đây có [OPPO F15](product_name) không nhỉ
@@ -2077,7 +2077,7 @@
 - ở đây có [Huawei Y9s](product_name) bản ram [512 MB](ram) rom [32GB](rom) không không vậy
 - ở đây có [ss s10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không nhỉ
 - ở đây có [Realme C3](product_name) bản [8 mb](ram) - [32 gb](rom) không nhỉ không vậy
-- ở đây có [Nokia 150 ](product_name) bản [12 gb](ram) - [128 gb](rom) không nhỉ không vậy
+- ở đây có [Nokia 150](product_name) bản [12 gb](ram) - [128 gb](rom) không nhỉ không vậy
 - ở đây có [realme 6](product_name) bản rom [64 GB](rom) ram [8 MB](ram) không nhỉ không vậy
 - ở đây có [Vivo Y19](product_name) bản rom [16gb](rom) ram [3 gb](ram) không vậy không nhỉ
 - ad ơi có [ss a71 5g](product_name) bản rom [64gb](rom) không vậy không vậy

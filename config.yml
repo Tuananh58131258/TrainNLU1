@@ -3,11 +3,11 @@
 language: vi
 pipeline:
   - name: WhitespaceTokenizer
-  - name: "CRFEntityExtractor"
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
+  - name: rasam.RegexEntityExtractor
     analyzer: "char_wb"
     min_ngram: 1
     max_ngram: 4
