@@ -135,56 +135,56 @@
 - [Masstel Fami P25](product_name) [32GB](rom) [1 gb](ram) như thế nào
 - [Vivo Z5i](product_name) [32GB](rom) [12 gb](ram) như thế nào
 - giá sản phẩm [Nokia 9.3 PureView](product_name) [4 MB](ram) [256gb](rom) là bao nhiêu
-- giá điện thoại [Xiaomi Redmi Note 8 Pro](product_name) [4 mb](ram)như thế nào
+- giá điện thoại [Xiaomi Redmi Note 8 Pro](product_name) [4 mb](ram) như thế nào
 - [realme 6](product_name) [8GB](rom) [4 mb](ram) là bao nhiêu
 - giá sản phẩm [OPPO A12e](product_name) [256gb](rom) [3 gb](ram) là bao nhiêu
-- [Samsung Galaxy A60](product_name) [12 GB](ram)như thế nào
+- [Samsung Galaxy A60](product_name) [12 GB](ram) như thế nào
 - giá điện thoại [Huawei Mate 30 Pro 5G](product_name) [12 gb](ram) [512 gb](rom) là bao nhiêu
 - giá của điện thoại [OPPO Find X2](product_name) [256gb](rom) là bao nhiêu
 - giá của điện thoại [ss fold](product_name) [512 MB](ram) là bao nhiêu
 - giá của điện thoại [Xiaomi Mi Mix Alpha](product_name) [32GB](rom) là bao nhiêu
 - giá của điện thoại [realme 3](product_name) [4 MB](ram) [128gb](rom) là bao nhiêu
-- giá của sản phẩm [Vivo V19 Pro](product_name) [256 GB](rom)như thế nào
+- giá của sản phẩm [Vivo V19 Pro](product_name) [256 GB](rom) như thế nào
 - [OPPO Reno Ace 2](product_name) [128gb](rom) [6 gb](ram) là bao nhiêu
 - giá của điện thoại [Itel It5092](product_name) [8 GB](ram) là bao nhiêu
 - giá sản phẩm [realme x50m 5g](product_name) [32GB](rom) [8 GB](ram) là bao nhiêu
-- giá điện thoại [Samsung Galaxy S10 Lite](product_name) [128gb](rom)như thế nào
+- giá điện thoại [Samsung Galaxy S10 Lite](product_name) [128gb](rom) như thế nào
 - giá sản phẩm [ss m20](product_name) [16 gb](rom) là bao nhiêu
-- giá của điện thoại [Vsmart Bee 3](product_name) [64gb](rom)như thế nào
+- giá của điện thoại [Vsmart Bee 3](product_name) [64gb](rom) như thế nào
 - giá điện thoại [Huawei Mate 30 RS Porsche Design](product_name) [128gb](rom) [4 gb](ram) như thế nào
 - giá của điện thoại [ss a50s](product_name) [8 gb](ram) là bao nhiêu
 - giá của điện thoại [ss a70](product_name) [32 GB](rom) là bao nhiêu
-- giá của điện thoại [ss a60](product_name) [8GB](rom)như thế nào
+- giá của điện thoại [ss a60](product_name) [8GB](rom) như thế nào
 - giá của điện thoại [Vivo Nex 3](product_name) [16 gb](rom) [4mb](ram) là bao nhiêu
 - giá của điện thoại [ss watch active](product_name) [256 gb](rom) là bao nhiêu
 - giá của sản phẩm [Vivo Y9s](product_name) [4 mb](ram) [64 GB](rom) là bao nhiêu
 - giá điện thoại [Samsung Galaxy M51](product_name) [128gb](rom) là bao nhiêu
-- giá của sản phẩm [Huawei P40 Lite](product_name) [8gb](rom)như thế nào
+- giá của sản phẩm [Huawei P40 Lite](product_name) [8gb](rom) như thế nào
 - giá của điện thoại [ss a21](product_name) [16 gb](rom) [1 gb](ram) là bao nhiêu
-- giá của điện thoại [ss 20+](product_name) [2 GB](ram)như thế nào
+- giá của điện thoại [ss 20+](product_name) [2 GB](ram) như thế nào
 - [ss a30](product_name) [4 gb](ram) là bao nhiêu
 - giá sản phẩm [Vivo Z5i](product_name) [8 mb](ram) là bao nhiêu
 - giá sản phẩm [Realme C3](product_name) [3 GB](ram) [8gb](rom) là bao nhiêu
-- giá điện thoại [Samsung Galaxy A01](product_name) [256 GB](rom)như thế nào
+- giá điện thoại [Samsung Galaxy A01](product_name) [256 GB](rom) như thế nào
 - giá sản phẩm [ss s20+](product_name) [512 mb](ram) là bao nhiêu
 - giá điện thoại [Nokia 800 Tough](product_name) [32 GB](rom) [32 mb](ram) là bao nhiêu
-- giá của sản phẩm [Samsung Galaxy A20](product_name) [3 GB](ram)như thế nào
+- giá của sản phẩm [Samsung Galaxy A20](product_name) [3 GB](ram) như thế nào
 - giá điện thoại [Masstel Izi 112](product_name) [16 gb](rom) là bao nhiêu
 - giá điện thoại [Xiaomi Mi 9 Pro 5G](product_name) [256 gb](rom) [1 GB](ram) như thế nào
 - giá của điện thoại [Vivo iQOO Neo 3](product_name) [8GB](rom) là bao nhiêu
 - [Huawei Y5p](product_name) [12 GB](ram) [512GB](rom) là bao nhiêu
 - giá của điện thoại [Masstel Play Max](product_name) [32 mb](ram) là bao nhiêu
 - giá sản phẩm [ss 10](product_name) [8gb](rom) là bao nhiêu
-- giá của điện thoại [Huawei Y7p](product_name) [1 GB](ram)như thế nào
+- giá của điện thoại [Huawei Y7p](product_name) [1 GB](ram) như thế nào
 - giá sản phẩm [Nokia N150](product_name) [512 gb](rom) [3 GB](ram) như thế nào
 - giá của sản phẩm [OPPO A11](product_name) [8gb](rom) [32 mb](ram) là bao nhiêu
-- giá điện thoại [Energizer E12](product_name) [2 GB](ram)như thế nào
-- giá của sản phẩm [Vivo S6](product_name) [8 gb](ram)như thế nào
-- giá sản phẩm [Nokia 3.2](product_name) [256gb](rom)như thế nào
-- giá của điện thoại [Realme 6i](product_name) [3 gb](ram)như thế nào
+- giá điện thoại [Energizer E12](product_name) [2 GB](ram) như thế nào
+- giá của sản phẩm [Vivo S6](product_name) [8 gb](ram) như thế nào
+- giá sản phẩm [Nokia 3.2](product_name) [256gb](rom) như thế nào
+- giá của điện thoại [Realme 6i](product_name) [3 gb](ram) như thế nào
 - giá của điện thoại [Xiaomi Mi 9 Pro 5G](product_name) [2 GB](ram) [16 gb](rom) như thế nào
 - giá sản phẩm [Xiaomi Mi 9 Pro 5G](product_name) [3 gb](ram) [32 gb](rom) như thế nào
-- giá điện thoại [ss a60](product_name) [3 GB](ram)như thế nào
+- giá điện thoại [ss a60](product_name) [3 GB](ram) như thế nào
 - giá điện thoại [Oppo Find X2 Pro](product_name) [16 GB](rom) là bao nhiêu
 - giá của sản phẩm [Vsmart Joy 3](product_name) [8 GB](ram) là bao nhiêu
 - giá của điện thoại [Samsung Galaxy A70s](product_name) [128gb](rom) [2 gb](ram) là bao nhiêu
@@ -195,19 +195,19 @@
 - giá của điện thoại [Samsung Galaxy M01](product_name) [64gb](rom) [4 gb](ram) là bao nhiêu
 - giá của điện thoại [Vivo X50e 5G](product_name) [32 GB](rom) là bao nhiêu
 - giá của sản phẩm [ss a20e](product_name) [3 gb](ram) là bao nhiêu
-- giá điện thoại [iPhone 11 Pro](product_name) [4mb](ram)như thế nào
+- giá điện thoại [iPhone 11 Pro](product_name) [4mb](ram) như thế nào
 - giá sản phẩm [ss a30](product_name) [256 GB](rom) [4 mb](ram) như thế nào
-- giá của sản phẩm [Masstel Izi 280](product_name) [4 mb](ram)như thế nào
+- giá của sản phẩm [Masstel Izi 280](product_name) [4 mb](ram) như thế nào
 - giá của điện thoại [Vivo Y9s](product_name) [16GB](rom) [3 gb](ram) như thế nào
 - giá điện thoại [ss a71](product_name) [16 GB](rom) là bao nhiêu
-- giá điện thoại [Samsung Galaxy S10e](product_name) [1 GB](ram)như thế nào
+- giá điện thoại [Samsung Galaxy S10e](product_name) [1 GB](ram) như thế nào
 - giá sản phẩm [Masstel Hapi 10 Fami](product_name) [8 MB](ram) [32gb](rom) như thế nào
-- giá của sản phẩm [Masstel X1](product_name) [16gb](rom)như thế nào
+- giá của sản phẩm [Masstel X1](product_name) [16gb](rom) như thế nào
 - giá của điện thoại [Samsung Galaxy S20 Ultra](product_name) [64 gb](rom) [12 gb](ram) là bao nhiêu
 - giá điện thoại [realme 6](product_name) [3 gb](ram) [64 GB](rom) là bao nhiêu
 - giá sản phẩm [Samsung Galaxy S10e](product_name) [12 GB](ram) là bao nhiêu
 - giá của điện thoại [Vivo Apex](product_name) [32gb](rom) [6 GB](ram) như thế nào
-- giá điện thoại [Itel it2171](product_name) [32gb](rom)như thế nào
+- giá điện thoại [Itel it2171](product_name) [32gb](rom) như thế nào
 - giá của sản phẩm [Masstel Play Music](product_name) [8gb](rom) là bao nhiêu
 - giá của sản phẩm [ss m01](product_name) [4MB](ram) là bao nhiêu
 - giá điện thoại [ss 10+](product_name) [2 gb](ram) [8gb](rom) là bao nhiêu
@@ -218,9 +218,9 @@
 - giá của điện thoại [Samsung Galaxy A60](product_name) [256gb](rom) [3 gb](ram) là bao nhiêu
 - giá điện thoại [Nokia 9.2](product_name) [512 GB](rom) là bao nhiêu
 - giá điện thoại [Samsung Galaxy M21](product_name) [512 GB](rom) [4 gb](ram) như thế nào
-- giá của điện thoại [Realme 6 Pro](product_name) [512gb](rom)như thế nào
+- giá của điện thoại [Realme 6 Pro](product_name) [512gb](rom) như thế nào
 - giá điện thoại [Samsung Galaxy A51](product_name) [32gb](rom) [4 MB](ram) là bao nhiêu
-- giá điện thoại [Xiaomi Mi 10 Se](product_name) [256 gb](rom)như thế nào
+- giá điện thoại [Xiaomi Mi 10 Se](product_name) [256 gb](rom) như thế nào
 - giá của điện thoại [Huawei P30 Lite New Edition](product_name) [8gb](rom) là bao nhiêu
 - giá của sản phẩm [Vivo X50](product_name) [128 GB](rom) là bao nhiêu
 - giá điện thoại [OPPO A1k](product_name) [4 mb](ram) [64 gb](rom) như thế nào
@@ -1556,10 +1556,10 @@
 
 ## intent: two_or_more_file
 <!-- 2 hay nhiều hồ sơ -->
-- QTV cho nếu e dùng 1sổ hộ khẩu+CMND mua trả góp 2 sp chung đc k ạ
+- QTV cho nếu e dùng 1sổ hộ khẩu + CMND mua trả góp 2 sp chung đc k ạ
 - mình đang trả góp bên ngân hàng fe kỳ hạn là 4 tháng nhưng mình trả dc hai tháng rồi vậy có dc mua trả góp 0% sản phẩm này ko vậy.
 - Chào bạn..hiện tai mình đang có hồ sơ vay bên FE thì có được mua trả góp nữa không vậy
-- Cho e hỏi e muốn mua trả góp trả trc 0đ đc k ạ.. hiện tại e đang trả góp bên fe credit..
+- Cho e hỏi e muốn mua trả góp trả trc 0đ đc k ạ. hiện tại e đang trả góp bên fe credit.
 - E muon tra gop djen thoai nay dk k?tai vj e dag gop dt [oppo A39](product_name) dk 2 thang ui o fptshop ak
 - Em đang vay trả góp của home edit. Vậy có thể mua trả góp được tiếp không ad?
 - Mua góp 2 cái một lần. Có dk ko ad oi
@@ -1585,10 +1585,10 @@
 - fpt cho hỏi thế em mua trả góp mà trả trước [30 %](prepay_percent)  thì mỗi tháng trả bao nhiêu và trong vòng mấy thang
 - FPT đt [oppo f1s 2017](product_name). Tra truoc [o đ]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
 - e mua trả góp mà có bằng lái xe, CMND, hộ khẩu mà trả trước [60 %](prepay_percent)  trả trong [4 tháng](installment_payment_period) thì mỗi tháng trả khoảng bao nhiu ạ
-- Tra gop truoc [10 %](prepay_percent) . . Moi thang dong bao nhieu vay
+- Tra gop truoc [10 %](prepay_percent) .Moi thang dong bao nhieu vay
 - E muốn mua trả góp [0 %](interest_rate) trả trước [10 %](prepay_percent) góp trong [6 t](installment_payment_period), nếu k đóng phí bảo hiểm thì 1 tháng góp bao nhiêu vậy ad
 - Trả trước [10 %](prepay_percent)  và ko mua bảo hiểm thì mỗi tháng góp bao nhiu vậy ad
-- Trả góp [0 đ]{"entity":"price","role":"prepay"}.ko mua bảo hiểm vay.đóng [6 tháng](installment_payment_period) nhiêu vay.
+- Trả góp [0 đ]{"entity":"price","role":"prepay"}.ko mua bảo hiểm vay đóng [6 tháng](installment_payment_period) nhiêu vay.
 - Ad oi minh muon mua [nova 2i](product_name) tra truoc [20 %](prepay_percent) gop [12 thang](installment_payment_period) vay thang la minh gop bao nhieu
 - Trả [30 %](prepay_percent) góp trong [6 tháng](installment_payment_period) hêt bn vay
 - Trả góp [10 %](prepay_percent) .lãi suất [0 %](interest_rate).[6 thang](installment_payment_period). Vay mỗi tháng góp bao nhieu
@@ -1597,7 +1597,7 @@
 - QTV cho hỏi là mua trả góp trả trước [10 %](prepay_percent) góp [12 tháng](installment_payment_period). thì mỗi tháng góp bao nhiêu tiền vậy.thank!
 - [Mi A1](product_name) trả góp. mình trả trước [50 %](prepay_percent) thì còn bao nhiêu
 - [Oppo a71](product_name) trả trước [3000]{"entity":"price","role":"prepay"} còn lại trả trong [4 tháng](installment_payment_period) thì moi tháng trả bn vậy
-- mua tra gop oppo a71 co CMND +HK+hdon dien nuoc tra truoc 10% tra 12thag moi thag tra bao nhieu fpt
+- mua tra gop oppo a71 co CMND + HK + hdon dien nuoc tra truoc 10% tra 12thag moi thag tra bao nhieu fpt
 - trả góp [0 %](interest_rate) thì trong mấy tháng và trả trước bao nhiêu % mỗi tháng góp bao nhiêu
 - Trả trước [10 %](prepay_percent) trả [12 tháng](installment_payment_period) 1 tháng trả bao nhiêu
 - tra trc [20 %](prepay_percent) trong [12 thang](installment_payment_period) jz can tra bao nhju va moi thang nhju jz 
@@ -2195,10 +2195,10 @@ data/thoigian.txt
 ## lookup: prepay_percent
 data/prepay_percent.txt
 ## regex:prepay_percent
-- [0-9]{2}.|%
-## regex:product_name
+- [0-9]{1,2}\s?%
+<!-- ## regex:product_name
 - .+\(+\w+\)
-- .+[+]
+- .+[+] -->
 ## intent: out_of_scope
 <!-- từ cấm -->
 - lồn
