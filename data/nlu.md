@@ -699,7 +699,7 @@
 - sản phẩm [ss a20e](product_name) có giá bao nhiêu khi mua cũ
 - điện thoại [Masstel Izi 250](product_name) mua cũ bao nhiêu tiền
 - [realme narzo 10](product_name) có giá bao nhiêu khi mua cũ
-- sản phẩm [ss s20+](product_name) giá khi mua cũ
+- sản phẩm [ss s20 plus](product_name) giá khi mua cũ
 - [Masstel F50](product_name) mua cũ bao nhiêu tiền
 - điện thoại [Masstel Fami 9](product_name) giá mua cũ là bao nhiêu
 - sản phẩm [Masstel Play Max](product_name) mua cũ hiện nay có giá bao nhiêu
@@ -716,7 +716,7 @@
 - điện thoại [ss m40](product_name) mua cũ hiện nay có giá bao nhiêu
 - [Masstel Lux Mini](product_name) mua cũ bao nhiêu tiền
 - [Huawei Y8s](product_name) giá mua cũ là bao nhiêu
-- sản phẩm [ss 10+](product_name) giá mua cũ là bao nhiêu
+- sản phẩm [ss 10 plus](product_name) giá mua cũ là bao nhiêu
 - điện thoại [Xiaomi Redmi K30i](product_name) mua cũ có giá bao nhiêu
 - sản phẩm [Realme X50 Pro Player Edition](product_name) có giá bao nhiêu khi mua cũ
 - điện thoại [Nokia 800 Tough](product_name) giá khi mua cũ
@@ -806,7 +806,7 @@
 - giá sản phẩm [realme 5s](product_name) [mười ba triệu](price) phải không ạ
 - giá sản phẩm [Huawei P40](product_name) là [mười sáu triệu](price) phải không
 - giá của [Energizer P20](product_name) [chín triệu](price) phải không ạ
-- giá của [Samsung Galaxy J8+](product_name) là [ba triệu mốt](price) phải không
+- giá của [Samsung Galaxy J8 plus](product_name) là [ba triệu mốt](price) phải không
 - gia điện thoại [Itel It6120](product_name) là [6,3 triệu](price) phải không ạ
 - giá của [Vivo X30](product_name) là [9,6 triệu](price) phải không
 - giá sản phẩm [ss m40](product_name) là [sáu triệu mốt](price) phải không ạ
@@ -2194,6 +2194,10 @@ data/price.txt
 data/thoigian.txt
 ## lookup: prepay_percent
 data/prepay_percent.txt
+## synonym: [0-9]+[+]
+- [0-9]\splus
+## regex: ram
+- [0-9]{1,3}\s?gb?
 ## regex:prepay_percent
 - [0-9]{1,2}\s?%
 <!-- ## regex:product_name

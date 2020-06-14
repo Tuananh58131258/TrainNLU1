@@ -1,6 +1,6 @@
 Vsmart Bee 3
 Vsmart Star
-Vsmart Joy 2+
+Vsmart Joy 2
 Vsmart Joy 3
 Itel It6120
 Vsmart BEE
@@ -84,7 +84,7 @@ Realme X50 5G
 Nokia 5310 
 Realme 5i
 Realme 5s
-Samsung Galaxy Note 10+
+Samsung Galaxy Note 10 plus
 Realme 5
 Realme 6i
 Realme 6
@@ -99,7 +99,7 @@ Samsung Galaxy Note 10 Lite
 Samsung Galaxy Z Flip
 Realme 6 Pro
 Samsung Galaxy S20 Ultra
-Samsung Galaxy S20+
+Samsung Galaxy S20 plus
 Samsung Galaxy S20
 Nokia 105 DS
 Nokia 110 DS
@@ -161,13 +161,13 @@ Samsung Galaxy A10
 Samsung Galaxy A10s
 Energizer E12
 Samsung Galaxy M20
-Samsung Galaxy J8+
+Samsung Galaxy J8 plus
 Samsung Galaxy A20
 Samsung Galaxy A30
 Samsung Galaxy A20s
 Samsung Gear Fit E
 Samsung Galaxy A10e
-Samsung Galaxy Note 20+
+Samsung Galaxy Note 20 plus
 Samsung Galaxy A30
 Samsung Galaxy M31s
 Samsung Galaxy A51 5G
@@ -306,12 +306,12 @@ ss s10e
 ss a50s
 ss  10
 ss a51
-ss  10+
+ss  10 plus
 ss m31
 ss  10 lite
 ss z flip
 ss s20 ultra
-ss s20+
+ss s20 plus
 ss s20
 ss m21
 ss a31
@@ -324,12 +324,12 @@ ss s10 lite
 ss a10
 ss a10s
 ss m20
-ss j8+
+ss j8 plus
 ss a20
 ss a30
 ss a20s
 ss a10e
-ss 20+
+ss 20 plus
 ss a30
 ss m31s
 ss a51 5g
