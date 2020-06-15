@@ -76,15 +76,15 @@ intents:
   #  hỏi về camera sau
   - resolution_camera
   #  hỏi về độ phân giải của camera
-  - Guarantee
+  - guarantee
   #  chính sách bảo hành
   - delivery
   #  giao hàng
-  - Promotions_and_gifts
+  - promotions_and_gifts
   #  khuyến mãi
   - find_product
   #  tìm kiếm sản phẩm
-  - another_product
+  - find_another_product
   #  hỏi các phiên bản khác
   - out_of_scope
   #  từ cấm

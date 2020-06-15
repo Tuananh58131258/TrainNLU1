@@ -1951,7 +1951,7 @@
 - camera sau bao nhiêu mp vậy
 - camera sau mấy mp
 
-## intent:Guarantee
+## intent:guarantee
 <!-- chính sách bảo hành -->
 - máy [Vsmart Star](product_name) được bảo hành trong bao lâu
 - [Xiaomi Mi CC9 Pro](product_name) có bảo hành không
@@ -2007,7 +2007,7 @@
 - có hỗ trợ giao hàng khi mua online không
 - mua online có giao hàng tận nhà không
 
-## intent: Promotions_and_gifts
+## intent: promotions_and_gifts
 <!-- khuyến mãi -->
 - mua online có quà gì không
 - mua trả góp có quà gì không
@@ -2094,7 +2094,7 @@
 - ở đây có [Realme X50 Pro Player Edition](product_name) bản ram [512 MB](ram) rom [128 gb](rom) không không vậy
 - có bản [Huawei Enjoy 10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không vậy
 
-## intent: another_product
+## intent: find_another_product
 <!-- hỏi các phiên bản khác -->
 - có bản ram [6 GB](ram) không
 - có bản ram [3 gb](ram) không
