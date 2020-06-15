@@ -127,7 +127,7 @@
   - action_resolution_camrea
 
 ## storie Guarantee
-* Guarantee
+* guarantee
   - action_guarantee
 
 ## storie promotions_and_gifts
