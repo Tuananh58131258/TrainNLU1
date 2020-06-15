@@ -52,7 +52,7 @@
 
 ## storie old_product_price
 * old_product_price
-  - action_old_product_price
+  - action_old_product
 
 ## storie product_configuration
 * product_configuration
