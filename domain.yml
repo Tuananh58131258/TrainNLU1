@@ -1,4 +1,5 @@
 entities:
+  - product_company
   - price
   - interest_rate
   - product_name

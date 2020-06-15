@@ -731,24 +731,24 @@
 ## intent: product_configuration
 <!-- hỏi cấu hình sản phẩm -->
 - cấu hình [Realme X50 5G](product_name) như thế nào
-- [Realme C3i 2GB-32GB](product_name) có mạnh không
+- [Realme C3i](product_name) có mạnh không
 - thông tin của [OPPO F15](product_name) có mạnh không
-- thông tin của [iPhone 11 Pro Max 256GB](product_name) như thế nào
-- cho hỏi cấu hình của [iPhone 11 64GB](product_name) ra sao
-- [Realme 6 4GB-128GB](product_name) như thế nào
+- thông tin của [iPhone 11 Pro Max](product_name) như thế nào
+- cho hỏi cấu hình của [iPhone 11](product_name) ra sao
+- [Realme 6](product_name) như thế nào
 - cấu hình [OPPO A5s](product_name) ra sao
-- cho hỏi cấu hình của [iPhone 11 Pro 64GB](product_name) như thế nào
-- cấu hình [Realme C3i 2GB-32GB](product_name) ra sao
+- cho hỏi cấu hình của [iPhone 11 Pro](product_name) như thế nào
+- cấu hình [Realme C3i](product_name) ra sao
 - cấu hình của [OPPO F15](product_name) có ổn không
 - cấu hình của [Oppo Find X2 Pro](product_name) như thế nào
 - cho hỏi cấu hình của [OPPO F15](product_name) ra sao
-- [Realme C3i 2GB-32GB](product_name) 
+- [Realme C3i](product_name) 
 - cho hỏi cấu hình của [OPPO A5s](product_name) 
 - cho hỏi cấu hình của [OPPO A11](product_name) có ổn không
-- [Realme C2 2GB-32GB](product_name) ra sao
+- [Realme C2](product_name) ra sao
 - thông tin của [OPPO A1k](product_name) ra sao
 - cho hỏi cấu hình của [OPPO A91](product_name) có ổn không
-- cấu hình của [Realme 6 4GB-128GB](product_name) có ổn không
+- cấu hình của [Realme 6](product_name) có ổn không
 
 ## intent: type_of_product
 <!-- hỏi có những hãng điện thoại nào -->
@@ -777,22 +777,22 @@
 <!-- đặt mua sản phẩm -->
 - Đặt mua [Huawei P30 Lite New Edition](product_name)
 - Đặt mua [OPPO F15](product_name)
-- Đặt mua [iPhone 11 Pro 512GB](product_name)
-- Đặt mua [Realme C2 3GB-32GB](product_name)
-- Đặt mua [iPhone 11 Pro Max 256GB](product_name)
+- Đặt mua [iPhone 11 Pro](product_name)
+- Đặt mua [Realme C2](product_name)
+- Đặt mua [iPhone 11 Pro Max](product_name)
 - Đặt mua [OPPO A11](product_name)
-- Đặt mua [Realme 6 4GB-128GB](product_name)
+- Đặt mua [Realme 6](product_name)
 - Đặt mua [OPPO F15](product_name)
 - Đặt mua [OPPO A91](product_name)
 - Đặt mua [OPPO A92s](product_name)
-- Đặt mua [iPhone 11 Pro 64GB](product_name)
+- Đặt mua [iPhone 11 Pro](product_name)
 - Đặt mua [OPPO A91](product_name)
 - Đặt mua [Huawei P40 Lite](product_name)
 - Đặt mua [Huawei Mate Xs](product_name)
 - Đặt mua [OPPO A92](product_name)
 - Đặt mua [Huawei Y7p](product_name)
-- Đặt mua [iPhone 11 Pro 256GB](product_name)
-- Đặt mua [Realme 6 4GB-128GB](product_name)
+- Đặt mua [iPhone 11 Pro](product_name)
+- Đặt mua [Realme 6](product_name)
 - Đặt mua [OPPO A92](product_name)
 
 ## intent:check_price

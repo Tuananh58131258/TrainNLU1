@@ -1,27 +1,74 @@
-- action_custom_fallback
-- action_test_st
-- action_product_price
-- action_online_price
-- action_old_product
-- action_product_configuration
-- action_type_of_product
-- action_list_product
-- action_check_price
-- action_find_product_in_range_price
-- action_find_product_lower_price
-- action_find_product_upper_price
-- action_find_product_around_price
-- action_scree_info
-- action_pin_info
-- action_buy_old_product
-- action_how_many_per_month
-- action_case_how_many_per_month
-- action_is_product_can_buy_on_installment
-- action_hardware_info
-- action_main_camera
-- action_selfie_camera
-- action_resolution_camrea
-- action_guarantee
-- action_promotions_and_gift
-- action_find_product
-- action_find_another_product
+product_price
+action_product_price
+
+online_price
+action_online_price
+
+old_product_price
+action_old_product_price
+
+product_configuration
+action_product_configuration
+
+type_of_product
+action_type_of_product
+
+list_product
+action_list_product
+
+check_price
+action_check_price
+
+find_product_in_range_price
+action_find_product_in_range_price
+
+find_product_lower_price
+action_find_product_lower_price
+
+find_product_upper_price
+action_find_product_upper_price
+
+find_product_around_price
+action_find_product_around_price
+
+screen_info
+action_scree_info
+
+pin_info
+action_pin_info
+
+buy_olf_product
+action_buy_old_product
+
+how_many_per_month
+action_how_many_per_month
+
+case_how_many_per_month
+action_case_how_many_per_month
+
+is_product_can_buy_on_installment
+action_is_product_can_buy_on_installment
+
+ask_hardware_info
+action_hardware_info
+
+ask_main_camera
+action_main_camera
+
+ask_selfie_camera
+action_selfie_camera
+
+resolution_camera
+action_resolution_camrea
+
+Guarantee
+action_guarantee
+
+promotions_and_gifts
+action_promotions_and_gift
+
+find_product
+action_find_product
+
+find_another_product
+action_find_another_product

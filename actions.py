@@ -126,7 +126,44 @@ class ActionOnlinePrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message('asasas')
+        productName =""
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            pass
+        if productName:
+            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+            try:
+                ram = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='ram')))
+                sqlQuery =  sqlQuery + "and ram like '%{}%'".format(ram)
+            except:
+                pass
+            try:
+                rom = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='rom')))
+                sqlQuery =  sqlQuery + "and rom like '%{}%'".format(rom)
+            except:
+                pass
+            sqlQuery = sqlQuery + "limit 9;"
+            result = getData(sqlQuery)
+            if result:
+                list_item = []
+                for item in result:
+                    list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                    gia = ""
+                    if item['gia_online']:
+                        gia  = "Giá online: {}".format(item['gia_online'])
+                    else:
+                        gia = "Giá online: Đang cập nhật"
+                    mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                    list_item.append(mess_item)
+
+                message_str = GenericTemplate(list_item)
+                dispatcher.utter_message(text="Giá nè", json_message=message_str)
+            else:
+                dispatcher.utter_message("Không tìm thấy sản phẩm. Vui lòng thử lại")
+            print(sqlQuery)
+        else:
+            dispatcher.utter_message("Không tìm thấy sản phẩm vui lòng thử lại sau")
         return
 
 class ActionOldProduct(Action):
@@ -137,8 +174,44 @@ class ActionOldProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        productName =""
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            pass
+        if productName:
+            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+            try:
+                ram = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='ram')))
+                sqlQuery =  sqlQuery + "and ram like '%{}%'".format(ram)
+            except:
+                pass
+            try:
+                rom = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='rom')))
+                sqlQuery =  sqlQuery + "and rom like '%{}%'".format(rom)
+            except:
+                pass
+            sqlQuery = sqlQuery + "limit 9;"
+            result = getData(sqlQuery)
+            if result:
+                list_item = []
+                for item in result:
+                    list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                    gia = ""
+                    if item['gia_cu']:
+                        gia  = "Giá cũ: {}".format(item['gia_cu'])
+                    else:
+                        gia = "Giá cũ: Đang cập nhật"
+                    mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                    list_item.append(mess_item)
 
+                message_str = GenericTemplate(list_item)
+                dispatcher.utter_message(text="Giá nè", json_message=message_str)
+            else:
+                dispatcher.utter_message("Không tìm thấy sản phẩm. Vui lòng thử lại")
+            print(sqlQuery)
+        else:
+            dispatcher.utter_message("Không tìm thấy sản phẩm vui lòng thử lại sau")
         return
 
 class ActionProductConfiguration(Action):
@@ -161,8 +234,18 @@ class ActionTypeOfProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-
+        sqlQuery = "select * from fptshop.hangdienthoai limit 9;"
+        data = getData(sqlQuery)
+        try:
+            list_item = []
+            for item in data:
+                list_btn = [ButtonTemplate("Danh sách điện thoại của {}".format(item['ten']),"Danh sách điện thoại của {}".format(item['ten']))]
+                template_item = TemplateItems(item['ten'],item['url_logo'],item['ten'],list_btn)
+                list_item.append(template_item)
+            message_str = GenericTemplate(list_item)
+            dispatcher.utter_message(json_message=message_str)
+        except:
+            dispatcher.utter_message("Không có danh sách hãng điện thoại để hiển thị!")
         return
 
 class ActionListProduct(Action):
@@ -174,7 +257,33 @@ class ActionListProduct(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message("this is test")
+        product_company = ""
+        try:
+            product_company = next(tracker.get_latest_entity_values(entity_type="product_company"))
+        except:
+            pass
+        if product_company:
+            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%' limit 9;".format(product_company)
+            try:
+                data = getData(sqlQuery)
+                list_item = []
+                for item in data:
+                    list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                    gia = ""
+                    if item['gia']:
+                        gia  = "Giá: {}".format(item['gia'])
+                    else:
+                        gia = "Đang cập nhật"
+                    mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                    list_item.append(mess_item)
 
+                message_str = GenericTemplate(list_item)
+                dispatcher.utter_message(text="Danh sách điện thoại của {}".format(product_company), json_message=message_str)
+            except:
+                print(sqlQuery)
+                pass
+        else:
+            dispatcher.utter_message("Không tìm thấy hãng điện thoại bạn vừa nhập, vui lòng thử lại")
         return
 
 class ActionCheckPrice(Action):
@@ -185,9 +294,41 @@ class ActionCheckPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-
-        return
+        price = 0
+        try:
+            price = priceAnalysis(next(tracker.get_latest_entity_values(entity_type='price')))
+        except:
+            pass
+        if price != 0:
+            productName =""
+            try:
+                productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+            except:
+                pass
+            if productName:
+                sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+                try:
+                    ram = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='ram')))
+                    sqlQuery =  sqlQuery + "and ram like '%{}%'".format(ram)
+                except:
+                    pass
+                try:
+                    rom = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='rom')))
+                    sqlQuery =  sqlQuery + "and rom like '%{}%'".format(rom)
+                except:
+                    pass
+                sqlQuery = sqlQuery + "limit 9;"
+                data = getData(sqlQuery)
+                for item in data:
+                    if item['gia'] == price:
+                        dispatcher.utter_message("Dạ đúng rồi ạ. Giá của sản phẩm {} là {} ạ.".format(item['ten'],item['gia']))
+                    else:
+                        dispatcher.utter_message("Dạ không phải ạ. Giá của sản phẩm {} là {} ạ.".format(item['ten'],item['gia']))
+            else:
+                dispatcher.utter_message("Không tìm thấy sản phẩm yêu cầu")
+            
+            return
+                
 
 class ActionFindProductInRangePrice(Action):
 # action tìm kiếm sản phẩm trong 1 khoảng giá
@@ -197,8 +338,37 @@ class ActionFindProductInRangePrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        try:
+            from_price = priceAnalysis(tracker.get_latest_entity_values(entity_type='price',entity_role='from_price'))
+        except:
+            pass
+        try:
+            to_price = priceAnalysis(tracker.get_latest_entity_values(entity_type='price',entity_role='to_price'))
+        except:
+            pass
+        if from_price and to_price and from_price != to_price: 
+            if from_price > to_price:
+                text = "Danh sách sản phẩm có giá từ {} đến {}".format(to_price,from_price)
+                sqlQuery = "select * from fptshop.dienthoai where gia between {} and {} limit 9".format(to_price,from_price)
+            else:
+                text = "Danh sách sản phẩm có giá từ {} đến {}".format(from_price,to_price)
+                sqlQuery = "select * from fptshop.dienthoai where gia between {} and {} limit 9".format(from_price,to_price)
+            data = getData(sqlQuery)
+            list_item = []
+            for item in data:
+                list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                gia = ""
+                if item['gia']:
+                    gia  = "Giá: {}".format(item['gia'])
+                else:
+                    gia = "Đang cập nhật"
+                mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                list_item.append(mess_item)
 
+            message_str = GenericTemplate(list_item)
+            dispatcher.utter_message(text=text, json_message=message_str)
+        else:
+            dispatcher.utter_message("Nothing here to display")
         return
 
 class ActionFindProductLowerPrice(Action):
@@ -209,8 +379,32 @@ class ActionFindProductLowerPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        try:
+            price = priceAnalysis(next(tracker.get_latest_entity_values(entity_type='price')))
+        except:
+            pass
+        if price:
+            sqlQuery = "select * from fptshop.dienthoai where gia <= {} order by gia desc limit 9".format(price)
+            try:
+                data = getData(sqlQuery)
+                list_item = []
+                for item in data:
+                    list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                    gia = ""
+                    if item['gia']:
+                        gia  = "Giá: {}".format(item['gia'])
+                    else:
+                        gia = "Đang cập nhật"
+                    mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                    list_item.append(mess_item)
 
+                message_str = GenericTemplate(list_item)
+                dispatcher.utter_message(json_message=message_str)
+            except:
+                print(sqlQuery)
+                pass
+        else:
+            dispatcher.utter_message("Nothing here")
         return
 
 class ActionFindProductUpperPrice(Action):
@@ -221,8 +415,32 @@ class ActionFindProductUpperPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        try:
+            price = priceAnalysis(next(tracker.get_latest_entity_values(entity_type='price')))
+        except:
+            pass
+        if price:
+            sqlQuery = "select * from fptshop.dienthoai where gia >= {} order by gia asc limit 9".format(price)
+            try:
+                data = getData(sqlQuery)
+                list_item = []
+                for item in data:
+                    list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                    gia = ""
+                    if item['gia']:
+                        gia  = "Giá: {}".format(item['gia'])
+                    else:
+                        gia = "Đang cập nhật"
+                    mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                    list_item.append(mess_item)
 
+                message_str = GenericTemplate(list_item)
+                dispatcher.utter_message(json_message=message_str)
+            except:
+                print(sqlQuery)
+                pass
+        else:
+            dispatcher.utter_message("Nothing here")
         return
 
 class ActionFindProductAroundPrice(Action):
@@ -233,8 +451,34 @@ class ActionFindProductAroundPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        try:
+            price = priceAnalysis(next(tracker.get_latest_entity_values(entity_type='price')))
+        except:
+            pass
+        if price:
+            p1 = price - 500000
+            p2 = price + 1000000
+            sqlQuery = "select * from fptshop.dienthoai where gia between {} and {} order by gia asc limit 9".format(p1,p2)
+            try:
+                data = getData(sqlQuery)
+                list_item = []
+                for item in data:
+                    list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                    gia = ""
+                    if item['gia']:
+                        gia  = "Giá: {}".format(item['gia'])
+                    else:
+                        gia = "Đang cập nhật"
+                    mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                    list_item.append(mess_item)
 
+                message_str = GenericTemplate(list_item)
+                dispatcher.utter_message(json_message=message_str)
+            except:
+                print(sqlQuery)
+                pass
+        else:
+            dispatcher.utter_message("Nothing here")
         return
 
 class ActionScreenInfo(Action):
