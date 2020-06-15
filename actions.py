@@ -489,7 +489,20 @@ class ActionScreenInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+            sqlQuery = "Select * from fptshop.dienthoai where ten like %{}%".format(productName)
+            data = getData(sqlQuery)
+            hardware_lable = data[0]['lable'].split('/')
+            hardware_data = data[0]['data'].split('/')
+            for item in hardware_lable:
+                if item.find('Công nghệ màn hình') >-1:
+                    temp = hardware_lable.index(item)
+
+            message_str = "Điện thoại {} sử dụng công ngệ màn hình: {}".format(productName,hardware_data[temp])
+            dispatcher.utter_message(message_str)
+        except:
+            dispatcher.utter_message("không có tên sản phẩm")
 
         return
 
@@ -501,7 +514,20 @@ class ActionPinInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+            sqlQuery = "Select * from fptshop.dienthoai where ten like %{}%".format(productName)
+            data = getData(sqlQuery)
+            hardware_lable = data[0]['lable'].split('/')
+            hardware_data = data[0]['data'].split('/')
+            for item in hardware_lable:
+                if item.find('Loại pin') >-1:
+                    temp = hardware_lable.index(item)
+
+            message_str = "Điện thoại {} sử dụng pin: {}".format(productName,hardware_data[temp])
+            dispatcher.utter_message(message_str)
+        except:
+            dispatcher.utter_message("không có tên sản phẩm")
 
         return
 
@@ -632,7 +658,44 @@ class ActionFindProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        productName =""
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            pass
+        if productName:
+            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+            try:
+                ram = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='ram')))
+                sqlQuery =  sqlQuery + "and ram like '%{}%'".format(ram)
+            except:
+                pass
+            try:
+                rom = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='rom')))
+                sqlQuery =  sqlQuery + "and rom like '%{}%'".format(rom)
+            except:
+                pass
+            sqlQuery = sqlQuery + "limit 9;"
+            result = getData(sqlQuery)
+            if result:
+                list_item = []
+                for item in result:
+                    list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                    gia = ""
+                    if item['gia']:
+                        gia  = "Giá: {}".format(item['gia'])
+                    else:
+                        gia = "Đang cập nhật"
+                    mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                    list_item.append(mess_item)
+
+                message_str = GenericTemplate(list_item)
+                dispatcher.utter_message(text="Giá nè", json_message=message_str)
+            else:
+                dispatcher.utter_message("Không tìm thấy sản phẩm. Vui lòng thử lại")
+            print(sqlQuery)
+        else:
+            dispatcher.utter_message("Không tìm thấy sản phẩm vui lòng thử lại sau")
 
         return
 
@@ -644,6 +707,43 @@ class ActionFindAnotherProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        productName =""
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            pass
+        if productName:
+            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+            try:
+                ram = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='ram')))
+                sqlQuery =  sqlQuery + "and ram like '%{}%'".format(ram)
+            except:
+                pass
+            try:
+                rom = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='rom')))
+                sqlQuery =  sqlQuery + "and rom like '%{}%'".format(rom)
+            except:
+                pass
+            sqlQuery = sqlQuery + "limit 9;"
+            result = getData(sqlQuery)
+            if result:
+                list_item = []
+                for item in result:
+                    list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                    gia = ""
+                    if item['gia']:
+                        gia  = "Giá: {}".format(item['gia'])
+                    else:
+                        gia = "Đang cập nhật"
+                    mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                    list_item.append(mess_item)
+
+                message_str = GenericTemplate(list_item)
+                dispatcher.utter_message(text="Giá nè", json_message=message_str)
+            else:
+                dispatcher.utter_message("Không tìm thấy sản phẩm. Vui lòng thử lại")
+            print(sqlQuery)
+        else:
+            dispatcher.utter_message("Không tìm thấy sản phẩm vui lòng thử lại sau")
 
         return
