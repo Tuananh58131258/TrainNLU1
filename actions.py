@@ -78,37 +78,44 @@ class ActionProductPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
-        sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+        productName =""
         try:
-            ram = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='ram')))
-            sqlQuery =  sqlQuery + "and ram like '%{}%'".format(ram)
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             pass
-        try:
-            rom = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='rom')))
-            sqlQuery =  sqlQuery + "and rom like '%{}%'".format(rom)
-        except:
-            pass
-        sqlQuery = sqlQuery + "limit 9;"
-        result = getData(sqlQuery)
-        if result:
-            list_item = []
-            for item in result:
-                list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
-                gia = ""
-                if item['gia']:
-                    gia  = "Giá: {}".format(item['gia'])
-                else:
-                    gia = "Đang cập nhật"
-                mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
-                list_item.append(mess_item)
+        if productName:
+            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+            try:
+                ram = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='ram')))
+                sqlQuery =  sqlQuery + "and ram like '%{}%'".format(ram)
+            except:
+                pass
+            try:
+                rom = romramAnalysis(next(tracker.get_latest_entity_values(entity_type='rom')))
+                sqlQuery =  sqlQuery + "and rom like '%{}%'".format(rom)
+            except:
+                pass
+            sqlQuery = sqlQuery + "limit 9;"
+            result = getData(sqlQuery)
+            if result:
+                list_item = []
+                for item in result:
+                    list_btn = [ButtonTemplate("Xem chi tiết","Cấu hình của {} như thế nào".format(item['ten'])),ButtonTemplate("Đặt mua",'Đặt mua {}'.format(item['ten']))]
+                    gia = ""
+                    if item['gia']:
+                        gia  = "Giá: {}".format(item['gia'])
+                    else:
+                        gia = "Đang cập nhật"
+                    mess_item = TemplateItems(item['ten'],item['url_img'],gia,list_btn)
+                    list_item.append(mess_item)
 
-            message_str = GenericTemplate(list_item)
-            dispatcher.utter_message(text="Giá nè", json_message=message_str)
+                message_str = GenericTemplate(list_item)
+                dispatcher.utter_message(text="Giá nè", json_message=message_str)
+            else:
+                dispatcher.utter_message("Không tìm thấy sản phẩm. Vui lòng thử lại")
+            print(sqlQuery)
         else:
-            dispatcher.utter_message("Không tìm thấy sản phẩm. Vui lòng thử lại")
-        print(sqlQuery)
+            dispatcher.utter_message("Không tìm thấy sản phẩm vui lòng thử lại sau")
         return
 
 class ActionOnlinePrice(Action):
