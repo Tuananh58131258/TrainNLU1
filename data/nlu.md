@@ -2194,8 +2194,8 @@ data/price.txt
 data/thoigian.txt
 ## lookup: prepay_percent
 data/prepay_percent.txt
-## regex:prepay_percent
-- [0-9]{1,2}\s?%
+<!-- ## regex:prepay_percent
+- [0-9]{1,2}\s?% -->
 <!-- ## regex:product_name
 - .+\(+\w+\)
 - .+[+] -->

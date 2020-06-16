@@ -46,10 +46,16 @@ def getData(query:str):
             return []
 
 # test the file before integrating with the bot by uncommenting the below line.
-obj = getData("SELECT ten FROM fptshop.dienthoai;")
-fobi = open('data/temp.txt','a',encoding='utf-8')
-for item in obj:
-    # print(obj[i]['ten'])
-    fobi.write(item['ten']+'\n')
+# obj = getData("SELECT * FROM fptshop.dienthoai;")
+# count = 0
+# total = len(obj)
+# for item in obj:
+#     if item['khuyen_mai'].find("bảo hành") > -1 and item['label'].find("bảo hành") > -1:
+#         count = count + 1
+# print("có {} sản phẩm có bảo hành tên {} sản phẩm".format(count,total))
+# fobi = open('data/temp.txt','a',encoding='utf-8')
+# for item in obj:
+#     # print(obj[i]['ten'])
+#     fobi.write(item['ten']+'\n')
 
 # print(stri)

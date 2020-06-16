@@ -15,10 +15,13 @@ from rasa_sdk.events import UserUtteranceReverted
 from inputAnalysis import priceAnalysis
 from inputAnalysis import productNameAnalysis
 from inputAnalysis import romramAnalysis
+from inputAnalysis import PrepayPercent
+from inputAnalysis import InstallmentPaymentPeriod
 from dbConnect import getData
 from makemessage import GenericTemplate
 from makemessage import ButtonTemplate
 from makemessage import TemplateItems
+from makemessage import Hardware
 #
 #
 class ActionCustomFallback(Action):
@@ -491,7 +494,7 @@ class ActionScreenInfo(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         try:
             productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
-            sqlQuery = "Select * from fptshop.dienthoai where ten like %{}%".format(productName)
+            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
             data = getData(sqlQuery)
             hardware_lable = data[0]['lable'].split('/')
             hardware_data = data[0]['data'].split('/')
@@ -516,7 +519,7 @@ class ActionPinInfo(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         try:
             productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
-            sqlQuery = "Select * from fptshop.dienthoai where ten like %{}%".format(productName)
+            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
             data = getData(sqlQuery)
             hardware_lable = data[0]['lable'].split('/')
             hardware_data = data[0]['data'].split('/')
@@ -539,7 +542,7 @@ class ActionBuyOldProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        dispatcher.utter_message("thu mua lại sản phẩm cũ")
 
         return
 
@@ -551,8 +554,56 @@ class ActionHowManyPerMonth(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-
+        productName = ""
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type="product_name")))
+        except:
+            pass
+        if productName:
+            sqlQuery = "select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+            laisuat = ''
+            prepay_percent = 0
+            tgian_tragop = 0
+            try:
+                tgian_tragop = InstallmentPaymentPeriod(next(tracker.get_latest_entity_values(entity_type='installment_payment_period')))
+            except:
+                pass
+            try:
+                tratruoc = priceAnalysis(next(tracker.get_latest_entity_values(entity_type='price',entity_role='prepay')))
+            except:
+                pass
+            try:
+                prepay_percent = PrepayPercent(next(tracker.get_latest_entity_values(entity_type='prepay_percent')))
+            except:
+                pass
+            try:
+                laisuat = next(tracker.get_latest_entity_values(entity_type='interest_rate'))
+            except:
+                pass
+            data = getData(sqlQuery)
+            gia_goc = int(data[0]['gia'])
+            tienno = 0
+            tienthang = 0
+            prepay = 0
+            if laisuat:
+                pass
+            else:
+                laisuat = 1.66/100
+            # if tratruoc:
+            #     tienno = gia_goc - tratruoc
+            #     prepay = tratruoc
+            if prepay_percent:
+                tienno = gia_goc*(100 - prepay_percent)/100
+                prepay = prepay_percent
+            if tgian_tragop == 0:
+                tgian_tragop = 4
+            tienthang = tienno/tgian_tragop + tienno*laisuat
+            message_str = "Trả góp trả trước {}\nTrả trong {} tháng\nThì mỗi tháng phải trả {}".format(prepay,tgian_tragop,tienthang)
+            print(gia_goc)
+            print(tratruoc)
+            dispatcher.utter_message(message_str)
+        else:
+            dispatcher.utter_message('action_how_many_per_month')
         return
 
 class ActionCaseHowManyPerMonth(Action):
@@ -575,7 +626,22 @@ class ActionIsProductCanBuyOnInstallment(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        productName = ""
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            pass
+        if productName:
+            sqlQuery = "select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+            data = getData(sqlQuery)
+            if data[0]['url_installment']:
+                gia = int(data[0]['gia'])
+                tienno = gia*70/100
+                tienthang = tienno/4 + tienno*1.66/100
+                message_str ="Sản phẩm {} có hỗ trợ trả góp. Bạn có thể tham khảo gói trả góp sau.\n  Trả trước 30%.\nTrả góp trong 4 tháng.\nMỗi tháng trả {}.\n*Lưu ý: Số liệu trên đây chỉ mang tính chất tham khảo.\nĐể biết thêm chi tiết về các gói trả góp của {} bạn có thể truy cập trang web sau. {}".format(data[0]['ten'],tienthang,data[0]['ten'],data[0]['url_installment'])
+                dispatcher.utter_message(message_str)
+        else:
+            dispatcher.utter_message('message_str')
 
         return
 
@@ -587,8 +653,37 @@ class ActionHarwareInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            pass
+        try:
+            hardware_name = next(tracker.get_latest_entity_values(entity_type='hardware',entity_role='WHQ'))
+            role = "WHQ"
+        except StopIteration:
+            pass
+        try:
+            hardware_name = next(tracker.get_latest_entity_values(entity_type='hardware',entity_role='YorN'))
+            role = "YorN"
+        except StopIteration:
+            pass
+        sqlQuery='select * from fptshop.dienthoai where ten like "%{}%"'.format(productName)
+        data = getData(sqlQuery)
+        if data:
+            hardware_label = data[0]['label'].split('/')
+            hardware_data = data[0]['data'].split('/')
+            for item in hardware_label:
+                if item.find(hardware_name) >-1:
+                    temp = hardware_label.index(item)
+                    break
+            if hardware_data[temp] == "không" or hardware_data[temp] is None:
+                message_str = Hardware(hardware_name,role,'no')
+            else:
+                message_str = Hardware(hardware_name,role,'yes')
+        else:
+            message_str = "Không tìm thấy sản phẩm!"
 
+        dispatcher.utter_message(message_str)
         return
 
 class ActionMainCamera(Action):
@@ -634,8 +729,27 @@ class ActionGuarantee(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            pass
+        sqlQuery = 'select * from fptshop.dienthoai where ten like "%{}%"'.format(productName)
+        data = getData(sqlQuery)
+        if data:
+            i = -1
+            temp = data[0]['label'].split('/')
+            value = data[0]['data'].split('/')
+            for item in temp:
+                if item.find('bảo hành') >-1:
+                    i = temp.index(item)
+                    break
+            if value[i]:
+                message_str = "Thời gian bảo hành của sản phẩm là: {}.\nTrong thời gian bảo hành nếu sản phẩm có phát sinh lỗi thì bạn có thể mang sản phẩm đến cửa hàng để được sửa chữa miễn phí ngoại trừ các trường hợp sau: Sản phẩm bị rơi vỡ, ngấm dung dịch chất lỏng(nước,vv),cấn, móp do va đập.".format(value[i])
+            else:
+                message_str = "Sản phẩm này hiện không có thông tin bảo hành."
+        else:
+            message_str ="Không tim thấy thông tin sản phẩm"
+        dispatcher.utter_message(message_str)
         return
 
 class ActionPromotionsAndGift(Action):
@@ -646,8 +760,20 @@ class ActionPromotionsAndGift(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
+        productName = ""
+        try:
+            productName = productNameAnalysis(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            pass
+        if productName:
+            sqlQuery = "select * from fptshop.dienthoai where ten like '%{}%'".format(productName)
+            data = getData(sqlQuery)
+            if data:
+                ten = data[0]['ten']
+                khuyen_mai  = data[0]['khuyen_mai']
+                message_str = "Các khuyến mãi của sản phẩm {} là:\n{}".format(ten,khuyen_mai)
 
+        dispatcher.utter_message(message_str)
         return
 
 class ActionFindProduct(Action):
