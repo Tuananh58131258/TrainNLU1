@@ -489,7 +489,6 @@
 <!-- hỏi giá sản phẩm cũ -->
 - [Huawei Y8p](product_name) giá cũ là bao nhiêu
 - [ss m01](product_name) giá cũ là bao nhiêu
-- điện thoại [Xiaomi Redmi K30i](product_name) giá cũ là bao nhiêu
 - điện thoại [ss a20s](product_name) giá cũ như thế nào
 - [Huawei Nova 5i Pro](product_name) giá cũ như thế nào
 - [realme x2 pro](product_name) giá cũ như thế nào
@@ -499,7 +498,6 @@
 - điện thoại [OPPO Reno Ace 2](product_name) giá cũ là bao nhiêu
 - sản phẩm [Vivo X50e 5G](product_name) giá cũ là bao nhiêu
 - [OPPO Reno 3A](product_name) giá cũ như thế nào
-- điện thoại [OPPO K5](product_name) giá cũ là bao nhiêu
 - [Huawei Nova 5 Pro](product_name) giá cũ là bao nhiêu
 - sản phẩm [Xiaomi Redmi Note 8T](product_name) giá cũ là bao nhiêu
 - điện thoại [Huawei P Smart S](product_name) giá cũ là bao nhiêu
@@ -512,7 +510,6 @@
 - [Xiaomi Black Shark 2](product_name) giá cũ là bao nhiêu
 - sản phẩm [realme 6](product_name) giá cũ như thế nào
 - sản phẩm [realme c2](product_name) giá cũ là bao nhiêu
-- sản phẩm [Samsung Galaxy Fold](product_name) giá cũ là bao nhiêu
 - điện thoại [Masstel Hapi 10 Fami](product_name) giá cũ như thế nào
 - điện thoại [Nokia 1.3](product_name) giá cũ là bao nhiêu
 - sản phẩm [ss a10s](product_name) giá cũ như thế nào
@@ -1972,9 +1969,7 @@
 - ở đây có [Huawei Mate 30 RS Porsche Design](product_name) không nhỉ
 - có bản [ss a21s](product_name) bản rom [256gb](rom) ram [3 gb](ram) không nhỉ không nhỉ
 - có [realme 6i](product_name) bản rom [32gb](rom) không nhỉ không nhỉ
-- ở đây có [Vivo S6](product_name) bản rom [128gb](rom) ram [6 GB](ram) không vậy không vậy
 - có [Xiaomi Redmi Note 8](product_name) bản [12 gb](ram) - [128 gb](rom) không nhỉ không nhỉ
-- ad ơi có [Nokia 9.3 PureView](product_name) bản [4 gb](ram) - [256 GB](rom) không vậy không nhỉ
 - ở đây có [Huawei Nova 5T](product_name) bản [12 GB](ram) - [128gb](rom) không nhỉ không nhỉ
 - có bản [Samsung Galaxy A51 5G](product_name) bản ram [4 GB](ram) không nhỉ không
 - có [Huawei Mate 40](product_name) bản ram [4mb](ram) không không vậy
@@ -1988,7 +1983,6 @@
 - ở đây có [Xiaomi Black Shark 2 Pro](product_name) bản rom [512gb](rom) không nhỉ không
 - ở đây có [Nokia 110 DS](product_name) bản ram [2 GB](ram) không không vậy
 - ở đây có [OPPO Reno Ace 2](product_name) bản ram [4 GB](ram) không nhỉ không vậy
-- có [Huawei P40 Lite](product_name) bản ram [3 GB](ram) rom [256gb](rom) không không nhỉ
 - ở đây có [Huawei Nova 7](product_name) bản [3 gb](ram) - [8gb](rom) không vậy không
 - ad ơi có [Vsmart Joy 3](product_name) bản ram [3 GB](ram) rom [256gb](rom) không không
 - có bản [ss watch active](product_name) bản rom [16GB](rom) ram [2 gb](ram) không vậy không
