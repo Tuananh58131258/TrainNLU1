@@ -1512,22 +1512,15 @@
 - sổ hộ khẩu photo thì có dc k hả shop
 - Em là sinh viên muốn mua trả góp đt [oppo f1s](product_name) . do học xa nhà nên không có sẳn giấy CMND có công chứng của cha hoặc mẹ thì có mua được kh?
 - Minh muon mua tra gop [0 %](interest_rate) co can ho khau khong vay?
-- Mua tra góp bang ho chieu đuoc ko a
-- Trả góp bằng cmnd và bằng lái xe dkd k ạ.
 - Cmnd voi bang lai kon co ho khau duọc ko shop
 - Nếu e có cmnd.+bằng lái xe có thê mua trả góp 0đ hai không
 - Em là sinh viên đủ 20 tuổi có thể áp dụng trả góp cho sinh viên được không ạ? Và cần giấy tờ như thế nào? Thủ tục nhanh ko ạ
 - E 19t chỉ có chứng minh và hộ khẩu photo đc ko admin
 - Có cmnd và blx có trả góp [0 lãi suất](interest_rate) có duoc ko fpt sop
-- Cho e hỏi , e 20́t có làm thủ tục trả góp đc k , có cần chứng minh j k , hay chỉ cần đầy đủ - giấy tờ như cmnd+ bằng lái là đc r , tks ạ
 - Trả góp [10 %](prepay_percent) cần giấy tờ j z ad . Tây ninh có hàng chưa z
 - Mình muốn mua trả góp lãi suất [0 %](interest_rate) , trả trước [10 %](prepay_percent) .giấy tờ cần là bằng lái và cmnd đc k shop
 - Mìng dùng sổ hộ khẩu photo công chứng đuoc k
-- cho e hoi là muốn mua trả góp thì chỉ cần chứng minh thư có được k ạ
-- E có blx voi cmnd nua dc hk
 - Chứng minh nhân dân thôi dc k vay
-- Em có giấy chứng minh nhân dân. Do e làm xa. quê Nha Trang vô Tp.HCM . E có thể góp được không ad.
-- sv cần những giấy tờ gì ad
 - em muốn muốn mua trả cóp em có chứng minh thư vs shk phô tô công chứng có đc ko
 - Ad ơi cho e hỏi trả trước [0 đ]{"entity":"price","role":"prepay"}  bên mình hồ sơ cần những gì vậy ạ?
 - Cho mình hỏi mình muốn mua máy này trả góp [0 đ]{"entity":"price","role":"prepay"} thì cần những giấy tờ gì ak.
@@ -1570,11 +1563,9 @@
 - Cho minh hoi neu minh mua may tra gop ma minh tra truoc [2 tr]{"entity":"price","role":"prepay"} z moi thang minh tra gop khoang bao nhieu z shop
 - Em có [1 tr 500](price) cho em hỏi trả góp trong [9 tháng](installment_payment_period) thì phải trả trước bao nhiêu là mỗi tháng trả bao nhiu vâyj ạ
 - m trả góp [0 %](interest_rate) trong vòng [12 tháng](installment_payment_period) vậy mỗi tháng m phải trả bao nhiêu ak.
-- Tư vấn giúp mình [OPPO F1s 2017](product_name) ([64 GB](rom)) trả trước [50 %](prepay_percent), còn lại góp [6 tháng](installment_payment_period), mỗi tháng trả bao nhiêu?
 - Trả góp [6 tháng](installment_payment_period) thì bao nhiêu 1 tháng ạ
 - E trả trước máy này [1500000]{"entity":"price","role":"prepay"} thì mỗi tháng e góp bao nhiêu với lãi xuất [0 %](interest_rate)
 - Không cần trả trước thì mỗi tháng e góp bao nhiu ạ
-- Cho em hỏi mún mua máy trả trc [2 triệu]{"entity":"price","role":"prepay"} thì mỗi tháng góp bao nhêu ạ
 - Em muốn mua trả góp , nhung em k trả trước vậy mỗi tháng em phải góp giá thấp nhất bao nhieu vay
 - Cha chuoc [20 %](prepay_percent) cha [15 thag](installment_payment_period) la thag dog nhiu z shop
 - Cho em hoi goi tra truoc [0 d]{"entity":"price","role":"prepay"} lai suat bao nhieu? Gop moi thang bao nhieu vay?
@@ -1590,7 +1581,6 @@
 - Trả trước [10 %](prepay_percent)  và ko mua bảo hiểm thì mỗi tháng góp bao nhiu vậy ad
 - Trả góp [0 đ]{"entity":"price","role":"prepay"}.ko mua bảo hiểm vay đóng [6 tháng](installment_payment_period) nhiêu vay.
 - Ad oi minh muon mua [nova 2i](product_name) tra truoc [20 %](prepay_percent) gop [12 thang](installment_payment_period) vay thang la minh gop bao nhieu
-- Trả [30 %](prepay_percent) góp trong [6 tháng](installment_payment_period) hêt bn vay
 - Trả góp [10 %](prepay_percent) .lãi suất [0 %](interest_rate).[6 thang](installment_payment_period). Vay mỗi tháng góp bao nhieu
 - Trả góp [10 %](prepay_percent) trong vòng [6 tháng](installment_payment_period) của FE k mua phí bảo hiểm thì mỗi tháng góp bao nhiêu tiền?
 - trả góp [0 %](interest_rate) vậy mỗi tháng góp bao nhiêu?
@@ -1655,13 +1645,11 @@
 - Cho em hỏi 16 tuổi có được mua trả góp không ạ
 - Cho e hỏi là e sinh 1/5/1997 e có giấy chứng minh và bằng lái xe e mua trả trước 20% vậy có đc k ạ
 - em sn 98 có cho trả góp k z
-- Em sinh nam 1999 có thể mua trả góp đươc chưa vay
 - E có cmnd + hk, trên 20t, muốn mua trả góp trả trước 0đ đc ko ạ
 - em sinh 18.11.1997 thì góp được chưa ạ
 - Em 20 tuổi, có cmnd có vay trả góp được không QTV ?
 - Em sinh năm 98 đã đủ tuổi mua trả góp chưa ạ
 - E 19 tuổi liệu co mua trã gop bằng cmnd vơi bang lai xe đc ko ạ
-- ad cho em hỏi em sn1998 có trả góp được không , đang làm cty đc 1năm rồi
 - 1 ngày nữa mình đủ 20 tuổi, bh mình qua shop làm trả góp luôn đc k, hóng quá :v
 - Mình năm nay 19 tuổi thì đã đăng kí trả góp được gói trả trước 30% của oppo f1s 2017 chưa ạ?
 - P cho mk hỏi bn tuổi vs đk mua trả góp ag
@@ -1682,11 +1670,9 @@
 - E sinh Viên mà chưa có thẻ sinh Viên mua trả góp dc ko ak
 - Bao nhiêu tuỗi mởi trả góp được admin
 - Em sinh ngày 29/10/1998 và cũng đang là sinh viên thì em có thể trả góp được không ạ?
-- Hỗ trợ trả góp cho đối tượng từ bao nhiêu tuổi trở lên
 - 19 tuổi tự mua trả góp không cần người bảo lãnh được không
 - Với máy mới thì 18 tuổi có trả góp được không Quản Trị Viên
 - Em sinh 9/8/1998 hiện là sinh viên em đã có CMND và bằng lái xe rồi. Em muốn trả góp được không ?
-- có tmnd và bằng lái 19 tuổi có trả góp 0% được không ạ
 - Shop cho em hỏi em còn sinh viên chưa đủ 20t mua trả gop đc k ạ
 - Ad cho e hoi e sn 98 co the mua tra gop dx kg vay
 - em là sinh viên năm nhất đủ 18 tuổi có mua trả góp tại fpt shop được không ạ
@@ -1721,7 +1707,6 @@
 - điện thoại [realme 5 pro](product_name) trả góp được không
 - [Nokia 3](product_name) co tra gop qua the tin dung ko shop
 - Máy mobiistar x1 có trả góp 0đ không shop
-- Máy này có bán trả góp không
 - Ko hỗ trợ trả góp ak shop
 - máy này có bán trả góp không bạn?
 - cho em hoi [samsung a10](product_name) CO BAN TRA GOP KO ?
@@ -1775,7 +1760,6 @@
 - việc trả góp mất nhiều thời gian không
 - trả góp mất bao lâu để làm hồ sơ
 - xét duyệt hồ sơ trả góp lâu không
-- Cho m hỏi thủ tục trả góp nhanh không ạ! Trong ngày m có thể lấy máy k
 
 ## intent: ask_hardware_info
 <!-- hỏi thông tin các bộ phận của máy -->
