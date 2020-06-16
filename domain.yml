@@ -123,16 +123,16 @@ responses:
   - text: "đủ tuổi và giấy tờ là trả góp được"
   utter_what_license:
     # cần giấy tờ gì khi mua trả góp
-  - text: "Giấy tờ yêu cầu cung cấp:"\n
-            "Chứng minh nhân dân còn hạn sử dụng (15 năm tính từ ngày cấp)."\n
-            "Hộ khẩu (người mua hàng phải có tên trong hộ khẩu). Nếu khoản vay dưới 8 triệu có thể dung GPLX thay thế Hộ khẩu."\n
-            "Một số trường hợp còn cần thêm Hóa đơn điện(nước,net,cáp)."\n
-           "Nếu bạn là SINH VIÊN thì phải:"\n
-            "Có chứng minh nhân dân."\n
-            "Thẻ sinh viên và biên lai đóng học phí học kỳ gần nhất."\n
-            "Hộ khẩu có tên bạn."\n
-            "Bản sao chứng minh nhân dân của Bố hoặc Mẹ có công chứng trong vòng 6 tháng."\n
-           "Lưu ý: Đơn vị trả góp sẽ yêu cầu mang giấy tờ bản gốc để đối chiếu khi ký hợp đồng."
+  - text: "Giấy tờ yêu cầu cung cấp:\n
+            Chứng minh nhân dân còn hạn sử dụng (15 năm tính từ ngày cấp).\n
+            Hộ khẩu (người mua hàng phải có tên trong hộ khẩu). Nếu khoản vay dưới 8 triệu có thể dung GPLX thay thế Hộ khẩu.\n
+            Một số trường hợp còn cần thêm Hóa đơn điện(nước,net,cáp).\n
+           Nếu bạn là SINH VIÊN thì phải:\n
+            Có chứng minh nhân dân.\n
+            Thẻ sinh viên và biên lai đóng học phí học kỳ gần nhất.\n
+            Hộ khẩu có tên bạn.\n
+            Bản sao chứng minh nhân dân của Bố hoặc Mẹ có công chứng trong vòng 6 tháng.\n
+           Lưu ý: Đơn vị trả góp sẽ yêu cầu mang giấy tờ bản gốc để đối chiếu khi ký hợp đồng."
   
   utter_two_or_more_file:
     # trả góp 2 hồ sơ
