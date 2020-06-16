@@ -90,4 +90,9 @@ def PrepayPercent(temp:str):
 def InstallmentPaymentPeriod(temp:str):
     res = int(temp.isdigit())
     return res
+
+def RoundNum(temp:int):
+    res = round(temp/10000)*10000
+    return res
 # print("{:,}".format(priceAnalysis("0 mươi  2 triệu")))
+# print(RoundNum(809216))

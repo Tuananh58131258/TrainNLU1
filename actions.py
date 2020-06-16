@@ -17,6 +17,7 @@ from inputAnalysis import productNameAnalysis
 from inputAnalysis import romramAnalysis
 from inputAnalysis import PrepayPercent
 from inputAnalysis import InstallmentPaymentPeriod
+from inputAnalysis import RoundNum
 from dbConnect import getData
 from makemessage import GenericTemplate
 from makemessage import ButtonTemplate
@@ -564,6 +565,7 @@ class ActionHowManyPerMonth(Action):
             laisuat = ''
             prepay_percent = 0
             tgian_tragop = 0
+            tratruoc = 0
             try:
                 tgian_tragop = InstallmentPaymentPeriod(next(tracker.get_latest_entity_values(entity_type='installment_payment_period')))
             except:
@@ -589,15 +591,16 @@ class ActionHowManyPerMonth(Action):
                 pass
             else:
                 laisuat = 1.66/100
-            # if tratruoc:
-            #     tienno = gia_goc - tratruoc
-            #     prepay = tratruoc
+            if tratruoc:
+                tienno = gia_goc - tratruoc
+                prepay = tratruoc
             if prepay_percent:
                 tienno = gia_goc*(100 - prepay_percent)/100
                 prepay = prepay_percent
             if tgian_tragop == 0:
                 tgian_tragop = 4
             tienthang = tienno/tgian_tragop + tienno*laisuat
+            tienthang = RoundNum(int(tienthang))
             message_str = "Trả góp trả trước {}\nTrả trong {} tháng\nThì mỗi tháng phải trả {}".format(prepay,tgian_tragop,tienthang)
             print(gia_goc)
             print(tratruoc)
@@ -615,7 +618,6 @@ class ActionCaseHowManyPerMonth(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message("this is test")
-
         return
 
 class ActionIsProductCanBuyOnInstallment(Action):
@@ -672,6 +674,7 @@ class ActionHarwareInfo(Action):
         if data:
             hardware_label = data[0]['label'].split('/')
             hardware_data = data[0]['data'].split('/')
+            temp = -1
             for item in hardware_label:
                 if item.find(hardware_name) >-1:
                     temp = hardware_label.index(item)
@@ -771,7 +774,7 @@ class ActionPromotionsAndGift(Action):
             if data:
                 ten = data[0]['ten']
                 khuyen_mai  = data[0]['khuyen_mai']
-                message_str = "Các khuyến mãi của sản phẩm {} là:\n{}".format(ten,khuyen_mai)
+                message_str = "Các khuyến mãi của sản phẩm {} là:\n{}".format(ten,khuyen_mai.replace("Xem chi tiết",""))
 
         dispatcher.utter_message(message_str)
         return

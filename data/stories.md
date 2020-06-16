@@ -126,8 +126,20 @@
 * resolution_camera
   - action_resolution_camrea
 
-## storie Guarantee
-* guarantee
+## storie Guarantee 1
+* guarantee{"product_name":"iphone 8"}
+  - action_guarantee
+
+## storie Guarantee 2
+* guarantee{"product_name":"iphone xs max"}
+  - action_guarantee
+
+## storie Guarantee 1
+* guarantee{"product_name":"samsung j8+"}
+  - action_guarantee
+
+## storie Guarantee 1
+* guarantee{"product_name":"Samsung Galaxy A10e"}
   - action_guarantee
 
 ## storie promotions_and_gifts
