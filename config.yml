@@ -4,6 +4,7 @@ language: vi
 pipeline:
   - name: VietnameseTokenizer
   - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
     analyzer: "char_wb"
@@ -21,7 +22,7 @@ policies:
   - name: MemoizationPolicy
   - name: TEDPolicy
     max_history: 5
-    epochs: 100
+    epochs: 200
   - name: MappingPolicy
   - name: "FallbackPolicy"
     nlu_threshold: 0.4

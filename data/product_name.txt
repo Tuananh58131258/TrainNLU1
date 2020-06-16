@@ -52,7 +52,7 @@ Huawei P40 Lite E
 OPPO Reno Ace 2
 OPPO K5
 OPPO A72
-Huawei Y6s 
+Huawei Y6s
 Samsung Galaxy A30s
 OPPO A92s
 Samsung Galaxy S10
@@ -67,8 +67,8 @@ Xiaomi Black Shark 2
 Xiaomi Redmi K30i
 Xiaomi Mi 10 Youth Edition
 Samsung Galaxy A51
-Realme C2 
-Realme C3i 
+Realme C2
+Realme C3i
 Realme C3
 Realme 3
 Nokia 6.2
@@ -81,7 +81,7 @@ Nokia 9.3 PureView
 Nokia 125
 Nokia 8.3 5G
 Realme X50 5G
-Nokia 5310 
+Nokia 5310
 Realme 5i
 Realme 5s
 Samsung Galaxy Note 10 plus
@@ -93,7 +93,7 @@ Nokia 1.3
 Realme 5 Pro
 Realme XT
 Realme 6
-Nokia 150 
+Nokia 150
 Samsung Galaxy M31
 Samsung Galaxy Note 10 Lite
 Samsung Galaxy Z Flip
@@ -114,7 +114,7 @@ Nokia 210 DS
 Nokia 3310
 Nokia 2720 Flip 4G
 Nokia 230
-Nokia 3.2 
+Nokia 3.2
 Nokia 5.3
 Nokia 2.2
 Nokia 2.3
@@ -229,7 +229,7 @@ Vivo S6
 Oppo A12
 Oppo A31
 Vivo X50 Lite
-Oppo A5 
+Oppo A5
 Oppo A31
 Vivo U20
 Oppo A12
@@ -257,7 +257,7 @@ Masstel Izi 112
 Vsmart Joy 3
 Masstel Play 30
 Xiaomi Redmi 8A
-Xiaomi Redmi 7 
+Xiaomi Redmi 7
 Xiaomi Redmi 8
 Xiaomi Redmi 7
 Vsmart Active 3
@@ -304,11 +304,11 @@ ss s10
 ss fold
 ss s10e
 ss a50s
-ss  10
+ss 10
 ss a51
-ss  10 plus
+ss 10 plus
 ss m31
-ss  10 lite
+ss 10 lite
 ss z flip
 ss s20 ultra
 ss s20 plus
