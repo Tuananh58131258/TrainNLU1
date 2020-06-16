@@ -1,74 +1,112 @@
-product_price
-action_product_price
+'sản phẩm Samsung Galaxy M51 
+64GB 12 gb giá mua online là bao nhiêu' with intent 'online_price'
 
-online_price
-action_online_price
+'iPhone 8 Plus giá khi mua online' with intent 'online_price'
 
-old_product_price
-action_old_product_price
+'điện thoại Realme X50 Pro Player Edition giá khi mua online' with intent 'online_price'
 
-product_configuration
-action_product_configuration
+'điện thoại Vivo Y50 giá khi 
+mua online' with intent 'online_price'
 
-type_of_product
-action_type_of_product
+'Huawei Y7 Pro giá khi mua online' with intent 'online_price'
 
-list_product
-action_list_product
+'điện thoại Xiaomi Redmi K30i giá cũ là bao nhiêu' with intent 'old_product_price'
 
-check_price
-action_check_price
+'Samsung Galaxy A50s giá cũ là bao nhiêu' with intent 'old_product_price'
 
-find_product_in_range_price
-action_find_product_in_range_price
+'điện thoại Oppo A5 giá cũ như thế nào' with intent 'old_product_price'
 
-find_product_lower_price
-action_find_product_lower_price
+'Samsung Galaxy A10s giá cũ là bao nhiêu' with intent 'old_product_price'
 
-find_product_upper_price
-action_find_product_upper_price
+'điện thoại Samsung Galaxy Z Flip giá cũ như thế nào' with intent 'old_product_price'
 
-find_product_around_price
-action_find_product_around_price
+'điện thoại OPPO K5 giá cũ là bao nhiêu' with intent 'old_product_price'
 
-screen_info
-action_scree_info
+'sản phẩm Samsung Galaxy M31s giá cũ là bao nhiêu' with intent 'old_product_price'
 
-pin_info
-action_pin_info
+'điện thoại Huawei Y6s giá cũ như thế nào' with intent 'old_product_price'
 
-buy_olf_product
-action_buy_old_product
+'Huawei P40 Lite giá cũ là bao nhiêu' with intent 'old_product_price'
 
-how_many_per_month
-action_how_many_per_month
+'sản phẩm OPPO Find X2 giá cũ như thế nào' with intent 'old_product_price'
 
-case_how_many_per_month
-action_case_how_many_per_month
+'sản phẩm Realme C2 giá cũ là bao nhiêu' with intent 'old_product_price'
 
-is_product_can_buy_on_installment
-action_is_product_can_buy_on_installment
+'sản phẩm Samsung Galaxy Fold giá cũ là bao nhiêu' with intent 'old_product_price'
 
-ask_hardware_info
-action_hardware_info
+'sản phẩm Energizer P20 giá cũ là bao nhiêu' with intent 'old_product_price'
 
-ask_main_camera
-action_main_camera
+'sản phẩm Itel It5025 giá cũ 
+là bao nhiêu' with intent 'old_product_price'
 
-ask_selfie_camera
-action_selfie_camera
+'Xiaomi Redmi K30i giá cũ là 
+bao nhiêu' with intent 'old_product_price'
 
-resolution_camera
-action_resolution_camrea
+'sản phẩm Oppo A31 giá cũ như thế nào' with intent 'old_product_price'
 
-Guarantee
-action_guarantee
+'điện thoại Energizer E100 giá cũ như thế nào' with intent 'old_product_price'
 
-promotions_and_gifts
-action_promotions_and_gift
+'sản phẩm realme x3 512GB 8 MB giá cũ như thế nào' with intent 'old_product_price'
 
-find_product
-action_find_product
+'sản phẩm Masstel Max R1 4mb 
+16gb giá cũ là bao nhiêu' with intent 'old_product_price'
 
-find_another_product
-action_find_another_product
+'ss j8+ 128gb 8 GB giá cũ như thế nào' with intent 'old_product_price'
+
+'sản phẩm Samsung Galaxy M21 
+giá khi mua cũ' with intent 'old_product_price'
+
+'điện thoại OPPO A91 giá khi 
+mua cũ' with intent 'old_product_price'
+
+'OPPO Reno A giá 4 triệu 4 phải không' with intent 'check_price'
+
+'sản phẩm Samsung Galaxy S20 
+Ultra giá hai mươi hai triệu đúng không' with intent 'check_price'
+
+'Samsung Galaxy A10s giá là 6 triệu rưởi phải không ạ' with intent 'check_price'
+
+'sản phẩm Samsung Galaxy A71 
+giá là 2 triệu rưởi đúng không' with intent 'check_price'
+
+'sản phẩm Xiaomi Redmi K20 Pro Premium giá là 9 m 7 phải không' with intent 'check_price'
+
+'sản phẩm Vivo Y50 giá 4 m 5 
+đúng không' with intent 'check_price'
+
+'Samsung Galaxy M21 giá là 9 
+m 4 đúng không' with intent 'check_price'
+
+'sản phẩm Vivo Y50 giá 6 m 1 
+đúng không' with intent 'check_price'
+
+'sản phẩm Samsung Galaxy A10e giá là 9,3 triệu đúng không' with intent 'check_price'
+
+'Samsung Galaxy M51 giá là 9 
+m 4 phải không ạ' with intent 'check_price'
+
+'Tr trc o dong.cmt bang lai xe co dk ko?' with intent 'what_license'
+
+'Acs co cho trả trước 0 d  vs san Phẩm Oppo f1s k v ad' with intent 'is_product_can_buy_on_installment'
+
+'Masstel Fami S2 xài được đèn flash không' with intent 'ask_hardware_info'
+
+'ở đây có Vivo S6 bản rom 128gb ram 6 GB không vậy không vậy' with intent 'find_product'
+
+'ad ơi có Nokia 9.3 PureView 
+bản 4 gb - 256 GB không vậy không nhỉ' with intent 'find_product'
+
+'có bản Itel It2170 bản rom 128gb ram 6 GB không vậy không nhỉ' with intent 'find_product'
+
+'ở đây có Huawei Y9s bản ram 
+512 MB rom 32GB không không vậy' with intent 'find_product'
+
+'ở đây có Vivo Y19 bản rom 16gb ram 3 gb không vậy không nhỉ' with intent 'find_product'
+
+'có bản Samsung Galaxy A11 bản rom 512 gb không không' with intent 'find_product'
+
+'có Huawei P40 Lite bản ram 3 GB rom 256gb không không nhỉ' with intent 'find_product'
+
+'ở đây có Vivo Z5i bản rom 16GB không không vậy' with intent 'find_product'
+
+'ở đây có Realme X50 Pro Player Edition bản ram 512 MB rom 128 gb không không vậy' with intent 'find_product'
