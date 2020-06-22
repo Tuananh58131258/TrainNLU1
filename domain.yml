@@ -1,10 +1,11 @@
 slots:
-  name: product_name
+  product_name:
     type: text
-  name: first_name
+  first_name:
     type: text
-  name: last_name
+  last_name:
     type: text
+
 entities:
   - product_company
   - price
@@ -96,6 +97,8 @@ intents:
   #  hỏi các phiên bản khác
   - out_of_scope
   #  từ cấm
+  - can_play_game
+  # điện thoại có thể chơi game được không
 
 responses:
   utter_goodbye:
