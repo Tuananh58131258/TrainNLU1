@@ -159,3 +159,20 @@
   - action_greet
 * product_price
   - action_product_price
+
+
+## storie get name then number
+* full_name
+  - action_get_customer_name
+* phone_number
+  - action_get_phone_number
+
+## storie get number then name
+* phone_number
+  - action_get_phone_number
+* full_name
+  - action_get_customer_name
+
+## get contact
+* contact
+  - action_get_contact

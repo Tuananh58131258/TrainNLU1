@@ -5,6 +5,10 @@ slots:
     type: text
   last_name:
     type: text
+  phone_num:
+    type: text
+  customer_name:
+    type: text
 
 entities:
   - product_company
@@ -17,6 +21,8 @@ entities:
   - ram
   - hardware
   - option
+  - customer_name
+  - phone_num
 
 intents:
   - greet
@@ -99,14 +105,20 @@ intents:
   #  từ cấm
   - can_play_game
   # điện thoại có thể chơi game được không
+  - full_name
+  # họ tên khách hàng
+  - phone_number
+  # số điện thoại
+  - contact
+  # họ tên + sdt
 
 responses:
   utter_goodbye:
   # trả lời intent:goodbye
-  - text: "Tạm biệt và hẹn gặp lại"
+  - text: "Tạm biệt và hẹn gặp lại!"
   utter_ask_ability:
   # trả lời intent:ask_ability
-  - text: "Mình làm được nhiều thứ lắm. Nhưng hôm nay chỉ hỗ trợ về điện thoại thôi!"
+  - text: "Mình làm được nhiều thứ lắm. Nhưng hôm nay chỉ hỗ trợ các câu hỏi về điện thoại thôi!"
   - text: "Mình có thể tư vấn hay trả lời thắc mắc của bạn về điện thoại."
   utter_thankyou:
   # trả lời intent:thankyou
@@ -119,8 +131,9 @@ responses:
   # trả lời intent:decry
   - text: "Mình sẽ cố gắng cải thiện bản thân hơn!"
   utter_replace_GPLX_with_SHK_and_opposite:
-  - text: "Được ạ"
-
+  - text: "Được ạ."
+  utter_help:
+  - text: "Bạn muốn một chiếc điện thoại như thế nào? Có thể cho mình biết mức giá hay một số thông tin chi tiết hơn được không ạ."
   utter_auto_reply:
   # tin nhắn kèm theo
   - text: "Mời bạn để lại Tên và SDT hoặc liên hệ trực tiếp tổng đài miễn phí 18006601 để được nhân viên tư vấn và hỗ trợ đặt hàng nhanh nhất bạn nhé!"
@@ -142,7 +155,7 @@ responses:
   
   utter_two_or_more_file:
     # trả góp 2 hồ sơ
-    - text: "Bạn có thể đăng ký mua trả góp với công ty tài chính khác"
+    - text: "Bạn có thể đăng ký mua trả góp với công ty tài chính khác."
   
   utter_installment_registration_period:
     # thời gian làm hồ sơ trả góp có nhanh hay không
@@ -253,4 +266,13 @@ actions:
   # action tìm kiếm 1 bản khác
 
   - action_greet
-  # action chào khách hàng
+  # action chào khách hàng bằng tên facebook
+
+  - action_get_customer_name
+  # action lưu tên khách hàng
+
+  - action_get_phone_number
+  # action lưu số điện thoại
+
+  - action_get_contact
+  # action lưu thông tin

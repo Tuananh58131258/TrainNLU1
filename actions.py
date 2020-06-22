@@ -11,6 +11,7 @@ from typing import Any, Text, Dict, List
 import time
 import requests
 from rasa_sdk import Action, Tracker
+from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted
 from inputAnalysis import priceAnalysis
@@ -138,6 +139,8 @@ class ActionProductPrice(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau")
+
+        
         return
 
 
@@ -196,6 +199,7 @@ class ActionOnlinePrice(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau")
+        
         return
 
 
@@ -254,6 +258,7 @@ class ActionOldProduct(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau")
+        
         return
 
 
@@ -265,8 +270,39 @@ class ActionProductConfiguration(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        productName = ""
+        try:
+            productName = productNameAnalysis(
+                next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            productName = tracker.get_slot('product_name')
+            pass
+        sqlQuery = 'select * from fptshop.dienthoai where ten like "%{}%"'.format(productName)
+        try:
+            ram = romramAnalysis(
+                next(tracker.get_latest_entity_values(entity_type='ram')))
+            sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
+        except:
+            pass
+        try:
+            rom = romramAnalysis(
+                next(tracker.get_latest_entity_values(entity_type='rom')))
+            sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
+        except:
+            pass
+        data = getData(sqlQuery)
+        man_hinh = "{},{},{}.".format(data[0]['chuan_man_hinh'], data[0]['cong_nghe_man_hinh'], data[0]['do_phan_giai'])
+        camera_truoc = data[0]['do_phan_giai_cam_truoc']
+        camera_sau = data[0]['do_phan_giai_cam_sau']
+        ram = data[0]['ram']
+        rom = data[0]['rom']
+        cpu = "{},{},{}.".format(data[0]['chipset'], data[0]['so_nhan'], data[0]['toc_do_cpu'])
+        gpu = data[0]['gpu']
+        pin = data[0]['dung_luong_pin']
         dispatcher.utter_message("this is test")
-
+        message_str = "Màn hình :{}\nCamera trước:{}\nCamera sau:{}\nRam:{}\nBộ nhớ trong:{} \nCPU: {}\nGPU:{} \nDung lượng pin:{}".format(man_hinh,camera_truoc,camera_sau,ram,rom,cpu,gpu,pin)
+        
+        dispatcher.utter_message(message_str)
         return
 
 
@@ -856,21 +892,11 @@ class ActionGuarantee(Action):
             productName)
         data = getData(sqlQuery)
         if data:
-            i = -1
-            temp = data[0]['label'].split('/')
-            value = data[0]['data'].split('/')
-            for item in temp:
-                if item.find('bảo hành') > -1:
-                    i = temp.index(item)
-                    break
-            if value[i]:
-                message_str = "Thời gian bảo hành của sản phẩm là: {}.\nTrong thời gian bảo hành nếu sản phẩm có phát sinh lỗi thì bạn có thể mang sản phẩm đến cửa hàng để được sửa chữa miễn phí ngoại trừ các trường hợp sau: Sản phẩm bị rơi vỡ, ngấm dung dịch chất lỏng(nước,vv),cấn, móp do va đập.".format(
-                    value[i])
-            else:
-                message_str = "Sản phẩm này hiện không có thông tin bảo hành."
+            message_str = "Thời gian bảo hành của {} là: {}".format(productName,data[0]['thoi_gian_bao_hanh'])
         else:
-            message_str = "Không tim thấy thông tin sản phẩm"
+            message_str = "không có bảo hành"
         dispatcher.utter_message(message_str)
+        print(tracker.latest_message.get('text'))
         return
 
 
@@ -1034,8 +1060,44 @@ class ActionGreet(Action):
         r = requests.get('https://graph.facebook.com/{}?fields=first_name,last_name,profile_pic&access_token={}'.format(sender_id,page_acess_token)).json()
         first_name = r['first_name']
         last_name = r['last_name']
-        tracker.SlotSet('first_name', first_name)
-        tracker.SlotSet('last_name', last_name)
         message_str = "Xin chào bạn {} {}. Mình có thể giúp gì cho bạn?".format(last_name,first_name)
         dispatcher.utter_message(message_str)
+        SlotSet('first_name',first_name)
+        SlotSet('last_name',last_name)
+        return[]
+
+class ActionGetCustName(Action):
+    # action thông tin độ phân giải của cả camera trước và sau
+    def name(self) -> Text:
+        return "action_get_customer_name"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
+
+        return
+
+class ActionGetPhoneNum(Action):
+    # action thông tin độ phân giải của cả camera trước và sau
+    def name(self) -> Text:
+        return "action_get_phone_number"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
+
+        return
+
+class ActionGetContact(Action):
+    # action thông tin độ phân giải của cả camera trước và sau
+    def name(self) -> Text:
+        return "action_get_contact"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
+
         return
