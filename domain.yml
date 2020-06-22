@@ -1,3 +1,10 @@
+slots:
+  name: product_name
+    type: text
+  name: first_name
+    type: text
+  name: last_name
+    type: text
 entities:
   - product_company
   - price
@@ -8,6 +15,7 @@ entities:
   - rom
   - ram
   - hardware
+  - option
 
 intents:
   - greet
@@ -90,11 +98,6 @@ intents:
   #  từ cấm
 
 responses:
-  utter_greet:
-  # trả lời intent:greet
-  - text: "Chào bạn!"
-  - text: "Rất vui được gặp bạn!"
-  - text: "Chào mừng bạn đến với chúng tôi!"
   utter_goodbye:
   # trả lời intent:goodbye
   - text: "Tạm biệt và hẹn gặp lại"
@@ -245,3 +248,6 @@ actions:
 
   - action_find_another_product
   # action tìm kiếm 1 bản khác
+
+  - action_greet
+  # action chào khách hàng

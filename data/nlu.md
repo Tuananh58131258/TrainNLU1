@@ -81,6 +81,36 @@
 - kém cỏi
 - sai rồi, chán ghê
 
+## intent: positive_answer
+<!-- câu trả lời mang ý khẳng định -->
+- dạ vâng ạ
+- đúng rồi ạ
+- đúng rồi
+- phải rồi
+- chuẩn rồi
+- chuẩn
+- phải
+- đúng
+- không sai vào đâu được
+- đúng rồi đó
+- vâng, đúng rồi
+- chuẩn luôn
+
+## intent: negative_answer
+<!-- câu trả lời mang tính phủ định -->
+- sai rồi
+- không phải cái này
+- không phải
+- cái khác cơ
+- không
+- không đúng
+- không phải nhé
+- sai rồi nhé
+- cái khác mà
+- không phải đâu
+- sai rồi nha
+- không phải nha
+
 ## intent: product_price
 <!-- Hỏi giá của sản phẩm -->
 - sản phẩm [Realme 5 Pro](product_name) mua mới bao nhiêu tiền
@@ -688,12 +718,17 @@
 - có bao nhiêu loại sản phẩm
 - shop có điện thoại của những hãng nào
 - có bao nhiêu hãng điện thoại
+- ad ơi có điện thoại của những hãng nào vậy
 
 ## intent: need_help
 <!-- cần tư vấn -->
 - tôi muốn mua điện thoại
 - có thể tư vấn cho tôi được không
 - tôi cần một chiếc điện thoại
+- ad có thể giúp em chọn một chiếc điện thoại được không
+- em muốn mua một chiếc điện thoại mà không biết chọn cái nào
+- em muốn mua điện thoại
+- ad giới thiệu cho em một vài chiếc điện thoại được không
 
 ## intent: list_product
 <!-- danh sách sản phẩm của 1 hãng -->
@@ -1799,7 +1834,6 @@
 - máy có [edge]{"entity":"hardware","role":"YorN"} không ạ
 - dùng được [nfc]{"entity":"hardware","role":"YorN"} không ạ
 
-
 ## intent: ask_main_camera
 <!-- hỏi về camera chính -->
 - có chụp xóa phông không
@@ -1936,6 +1970,23 @@
 - mua [realme 6 pro](product_name) có tặng kèm gì không
 - mua [Realme X50 Youth Edition](product_name) có được quà gì không
 
+## intent: option_in_box
+<!-- các phụ kiện trong hộp -->
+- mua máy có được tặng [tai nghe](option) không
+- trong hộp có những gì
+- khi mua máy thì trong hộp có những gì
+- mua máy thì có được tặng kèm [thẻ nhớ](option) không
+- có được tặng kèm [tai nghe](option) khi mua máy không
+- mua máy [realme xt](product_name) có tặng kèm gì không
+- khi mua [Huawei Mate 30 5G](product_name) trong hộp có những gì
+- mua máy [Samsung Galaxy A11](product_name) có tặng kèm không
+- mua máy [ss a51 5g](product_name) có tặng kèm gì không
+- mua máy [realme x3](product_name) trong hộp có những gì
+- mua [Vsmart BEE](product_name) trong hộp có những gì
+- mua máy [Oppo Reno3 Pro](product_name) có tặng kèm gì không
+- mua [Samsung Galaxy S20 Ultra](product_name) có tặng kèm gì không
+- mua [Masstel Play Music](product_name) có tặng kèm gì không
+
 ## intent: find_product
 <!-- tìm kiếm sản phẩm -->
 - ở đây có [Samsung Galaxy A21s](product_name) không nhỉ
@@ -2035,6 +2086,37 @@
 - có bản rom [256gb](rom) ram [2 GB](ram) không vậy
 - có bản rom [16gb](rom) ram [3 gb](ram) không vậy
 - có bản rom [16 gb](rom) ram [3 gb](ram) không vậy
+
+## intent: can_play_game
+- máy này chơi được liên quân không
+- máy chơi liên quân mượt không
+- máy chơi pubg ổn không
+- máy chơi được pubg mobile không
+- máy chơi liên quân mượt không
+- máy chơi được liên quân hay pubg mobile không
+- mua máy [realme xt](product_name) có tặng kèm gì không
+- khi mua [Huawei Mate 30 5G](product_name) trong hộp có những gì
+- mua máy [Samsung Galaxy A11](product_name) có tặng kèm không
+- mua máy [ss a51 5g](product_name) có tặng kèm gì không
+- mua máy [realme x3](product_name) trong hộp có những gì
+- mua [Vsmart BEE](product_name) trong hộp có những gì
+- mua máy [Oppo Reno3 Pro](product_name) có tặng kèm gì không
+- mua [Samsung Galaxy S20 Ultra](product_name) có tặng kèm gì không
+- mua [Masstel Play Music](product_name) có tặng kèm gì không
+- máy [ss xcover pro](product_name) chơi được liên quân không
+- máy [OPPO A11](product_name) chơi liên quân mượt không
+- máy [Realme 5i](product_name) chơi được pubg mobile không
+- [Samsung Galaxy Z Flip](product_name) chơi liên quân mượt không
+- [Xiaomi Redmi Note 8](product_name) chơi liên quân mượt không
+- [Nokia 5310](product_name) chơi được liên quân không
+- [Masstel Lux Mini](product_name) chơi pubg ổn không
+- máy [ss a10](product_name) chơi pubg ổn không
+- điện thoại [OPPO A52](product_name) chơi pubg ổn không
+- điện thoại [Samsung Galaxy A70s](product_name) chơi liên quân mượt không
+- [ss a20e](product_name) chơi liên quân mượt không
+- điện thoại [Nokia 800 Tough](product_name) chơi được pubg mobile không
+- [iPhone 11 Pro](product_name) chơi liên quân mượt không
+- máy [Vivo V15 Pro](product_name) chơi liên quân mượt không
 
 ## synonym:CPU
 - chíp

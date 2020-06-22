@@ -1,112 +1,124 @@
-'sản phẩm Samsung Galaxy M51 
-64GB 12 gb giá mua online là bao nhiêu' with intent 'online_price'
-
-'iPhone 8 Plus giá khi mua online' with intent 'online_price'
-
-'điện thoại Realme X50 Pro Player Edition giá khi mua online' with intent 'online_price'
-
-'điện thoại Vivo Y50 giá khi 
-mua online' with intent 'online_price'
-
-'Huawei Y7 Pro giá khi mua online' with intent 'online_price'
-
-'điện thoại Xiaomi Redmi K30i giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'Samsung Galaxy A50s giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'điện thoại Oppo A5 giá cũ như thế nào' with intent 'old_product_price'
-
-'Samsung Galaxy A10s giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'điện thoại Samsung Galaxy Z Flip giá cũ như thế nào' with intent 'old_product_price'
-
-'điện thoại OPPO K5 giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'sản phẩm Samsung Galaxy M31s giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'điện thoại Huawei Y6s giá cũ như thế nào' with intent 'old_product_price'
-
-'Huawei P40 Lite giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'sản phẩm OPPO Find X2 giá cũ như thế nào' with intent 'old_product_price'
-
-'sản phẩm Realme C2 giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'sản phẩm Samsung Galaxy Fold giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'sản phẩm Energizer P20 giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'sản phẩm Itel It5025 giá cũ 
-là bao nhiêu' with intent 'old_product_price'
-
-'Xiaomi Redmi K30i giá cũ là 
-bao nhiêu' with intent 'old_product_price'
-
-'sản phẩm Oppo A31 giá cũ như thế nào' with intent 'old_product_price'
-
-'điện thoại Energizer E100 giá cũ như thế nào' with intent 'old_product_price'
-
-'sản phẩm realme x3 512GB 8 MB giá cũ như thế nào' with intent 'old_product_price'
-
-'sản phẩm Masstel Max R1 4mb 
-16gb giá cũ là bao nhiêu' with intent 'old_product_price'
-
-'ss j8+ 128gb 8 GB giá cũ như thế nào' with intent 'old_product_price'
-
-'sản phẩm Samsung Galaxy M21 
-giá khi mua cũ' with intent 'old_product_price'
-
-'điện thoại OPPO A91 giá khi 
-mua cũ' with intent 'old_product_price'
-
-'OPPO Reno A giá 4 triệu 4 phải không' with intent 'check_price'
-
-'sản phẩm Samsung Galaxy S20 
-Ultra giá hai mươi hai triệu đúng không' with intent 'check_price'
-
-'Samsung Galaxy A10s giá là 6 triệu rưởi phải không ạ' with intent 'check_price'
-
-'sản phẩm Samsung Galaxy A71 
-giá là 2 triệu rưởi đúng không' with intent 'check_price'
-
-'sản phẩm Xiaomi Redmi K20 Pro Premium giá là 9 m 7 phải không' with intent 'check_price'
-
-'sản phẩm Vivo Y50 giá 4 m 5 
-đúng không' with intent 'check_price'
-
-'Samsung Galaxy M21 giá là 9 
-m 4 đúng không' with intent 'check_price'
-
-'sản phẩm Vivo Y50 giá 6 m 1 
-đúng không' with intent 'check_price'
-
-'sản phẩm Samsung Galaxy A10e giá là 9,3 triệu đúng không' with intent 'check_price'
-
-'Samsung Galaxy M51 giá là 9 
-m 4 phải không ạ' with intent 'check_price'
-
-'Tr trc o dong.cmt bang lai xe co dk ko?' with intent 'what_license'
-
-'Acs co cho trả trước 0 d  vs san Phẩm Oppo f1s k v ad' with intent 'is_product_can_buy_on_installment'
-
-'Masstel Fami S2 xài được đèn flash không' with intent 'ask_hardware_info'
-
-'ở đây có Vivo S6 bản rom 128gb ram 6 GB không vậy không vậy' with intent 'find_product'
-
-'ad ơi có Nokia 9.3 PureView 
-bản 4 gb - 256 GB không vậy không nhỉ' with intent 'find_product'
-
-'có bản Itel It2170 bản rom 128gb ram 6 GB không vậy không nhỉ' with intent 'find_product'
-
-'ở đây có Huawei Y9s bản ram 
-512 MB rom 32GB không không vậy' with intent 'find_product'
-
-'ở đây có Vivo Y19 bản rom 16gb ram 3 gb không vậy không nhỉ' with intent 'find_product'
-
-'có bản Samsung Galaxy A11 bản rom 512 gb không không' with intent 'find_product'
-
-'có Huawei P40 Lite bản ram 3 GB rom 256gb không không nhỉ' with intent 'find_product'
-
-'ở đây có Vivo Z5i bản rom 16GB không không vậy' with intent 'find_product'
-
-'ở đây có Realme X50 Pro Player Edition bản ram 512 MB rom 128 gb không không vậy' with intent 'find_product'
+Công nghệ màn hình:cong_nghe_man_hinh
+Độ phân giải màn hình:do_phan_giai
+Màu màn hình:mau_man_hinh
+Chuẩn màn hình:chuan_man_hinh
+Công nghệ cảm ứng:cong_nghe_cam_ung
+Màn hình:man_hinh
+Mặt kính màn hình:mat_kinh_man_hinh
+RAM:ram
+Tốc độ CPU:toc_do_cpu
+Số nhân:so_nhan
+Chipset:chipset
+Chip đồ họa (GPU):gpu
+Cảm biến:cam_bien
+Thẻ nhớ ngoài:the_nho_ngoai
+Hỗ trợ thẻ nhớ tối đa:dung_luong_the_nho_toi_da
+Danh bạ lưu trữ:dung_luong_danh_ba
+ROM:rom
+Bộ nhớ còn lại:bo_nho_con_lai
+Kích thước:kich_thuoc
+Trọng lượng:trong_luong
+Kiểu dáng:kieu_dang
+Chất liệu:chat_lieu
+Khả năng chống nước:chong_nuoc
+Loại pin:loai_pin
+Dung lượng pin:dung_luong_pin
+Pin có thể tháo rời:thao_roi_pin
+Thời gian chờ:thoi_gian_cho
+Thời gian đàm thoại:thoi_gian_dam_thoai
+Thời gian sạc đầy:thoi_gian_sac
+Chế độ sạc nhanh:sac_nhanh
+Kết nối USB:ket_noi_usb
+Cổng kết nối khác:cong_ket_noi_khac
+Cổng sạc:cong_sac
+Jack (Input & Output):jack_in_out
+Wifi:wifi
+GPS:gps
+Bluetooth:bluetooth
+GPRS:gprs
+EDGE:edge
+Loại SIM:loai_sim
+Băng tần 2G:mang_2g
+Băng tần 3G:mang_3g
+Băng tần 4G:mang_4g
+Khe cắm sim:khe_cam_sim
+NFC:nfc
+Model Series:model_series
+Hệ điều hành:he_dieu_hanh
+Xem phim:xem_phim
+Nghe nhạc:nghe_nhac
+Ghi âm:ghi_am
+FM radio:fm_radio
+Đèn pin:den_pin
+Chức năng khác:chuc_nang_khac
+Thời gian bảo hành:thoi_gian_bao_hanh
+Xuất xứ:xuat_xu
+Năm sản xuất:nam_san_xuat
+Độ phân giải cam sau:do_phan_giai
+Độ phân giải cam trước:do_phan_giai
+Thông tin khác:thong_tin_khac
+Quay phim:quay_phim
+Đèn Flash:den_flash
+Chụp ảnh nâng cao:chup_anh_nang_cao
+video call:video_call
+cong_nghe_man_hinh VARCHAR(250),
+        do_phan_giai VARCHAR(250),
+        mau_man_hinh VARCHAR(250),
+        chuan_man_hinh VARCHAR(250),
+        cong_nghe_cam_ung VARCHAR(250),
+        man_hinh VARCHAR(250),
+        mat_kinh_man_hinh VARCHAR(250),
+        toc_do_cpu VARCHAR(250),
+        so_nhan VARCHAR(250),
+        chipset VARCHAR(250),
+        gpu VARCHAR(250),
+        cam_bien VARCHAR(250),
+        the_nho_ngoai VARCHAR(250),
+        dung_luong_the_nho_toi_da VARCHAR(250),
+        dung_luong_danh_ba VARCHAR(250),
+        bo_nho_con_lai VARCHAR(250),
+        kich_thuoc VARCHAR(250),
+        trong_luong VARCHAR(250),
+        kieu_dang VARCHAR(250),
+        chat_lieu VARCHAR(250),
+        chong_nuoc VARCHAR(250),
+        loai_pin VARCHAR(250),
+        dung_luong_pin VARCHAR(250),
+        thao_roi_pin VARCHAR(250),
+        thoi_gian_cho VARCHAR(250),
+        thoi_gian_dam_thoai VARCHAR(250),
+        thoi_gian_sac VARCHAR(250),
+        sac_nhanh VARCHAR(250),
+        ket_noi_usb VARCHAR(250),
+        cong_ket_noi_khac VARCHAR(250),
+        cong_sac VARCHAR(250),
+        jack_in_out VARCHAR(250),
+        wifi VARCHAR(250),
+        gps VARCHAR(250),
+        bluetooth VARCHAR(250),
+        gprs VARCHAR(250),
+        edge VARCHAR(250),
+        loai_sim VARCHAR(250),
+        mang_2g VARCHAR(250),
+        mang_3g VARCHAR(250),
+        mang_4g VARCHAR(250),
+        khe_cam_sim VARCHAR(250),
+        nfc VARCHAR(250),
+        model_series VARCHAR(250),
+        he_dieu_hanh VARCHAR(250),
+        xem_phim VARCHAR(250),
+        nghe_nhac VARCHAR(250),
+        ghi_am VARCHAR(250),
+        fm_radio VARCHAR(250),
+        den_pin VARCHAR(250),
+        chuc_nang_khac VARCHAR(250),
+        thoi_gian_bao_hanh VARCHAR(250),
+        xuat_xu VARCHAR(250),
+        nam_san_xuat VARCHAR(250),
+        do_phan_giai_cam_truoc VARCHAR(250),
+        do_phan_giai_cam_sau VARCHAR(250),
+        thong_tin_khac VARCHAR(250),
+        quay_phim VARCHAR(250),
+        den_flash VARCHAR(250),
+        chup_anh_nang_cao VARCHAR(250),
+        video_call VARCHAR(250)

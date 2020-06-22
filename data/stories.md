@@ -1,14 +1,6 @@
-## happy path
+## storie greet
 * greet
-  - utter_greet
-
-## sad path 1
-* greet
-  - utter_greet
-
-## sad path 2
-* greet
-  - utter_greet
+  - action_greet
 
 ## say goodbye
 * goodbye
@@ -153,3 +145,17 @@
 ## storie find_another_product
 * find_another_product
   - action_find_another_product
+
+## storie 01
+* greet
+  - action_greet
+* find_product
+  - action_find_product
+* find_another_product
+  - action_find_another_product
+
+## strie 02
+* greet
+  - action_greet
+* product_price
+  - action_product_price

@@ -26,3 +26,4 @@ for item in answer:
             break       
 
 result.close()
+print(len("Cấu hình của iphone 11 pro max 64 GB"))

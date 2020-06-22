@@ -16,24 +16,24 @@ import random
 #     res = "\n{0} tháng\n{0}t\n{0} thang".format(i)
 #     fobj.write(res)
 # fobj.close()
-# fobj = open('data/product_name.txt',encoding='utf-8')
+fobj = open('data/product_name.txt',encoding='utf-8')
 # ram = open('data/temp.txt',encoding='utf-8').readlines()
 # rom = open('data/rom.txt',encoding='utf-8').readlines()
-# begin = ['có','có bản','ở đây có','ad ơi có']
-# data = fobj.readlines()
+begin = ['điện thoại','máy','']
+data = fobj.readlines()
 # ka = ['chíp','chip','cpu','chíp xử lý','chip xử lý','CPU','chíp đồ họa','card đồ họa','chíp đồ họa','card','gpu','GPU']
-# end = ["không","không vậy","không nhỉ"]
-# for i in range(1,30):
-    # first = begin[random.randint(0,len(begin)-1)]
+end = ["chơi được liên quân không","chơi được pubg mobile không","chơi pubg ổn không","chơi liên quân mượt không"]
+for i in range(1,15):
+    first = begin[random.randint(0,len(begin)-1)]
     # ra = ram[random.randint(0,len(ram)-1)].strip('\n')
     # ro = rom[random.randint(0,len(rom)-1)].strip('\n')
-    # last = end[random.randint(0,len(end)-1)]
-    # ten = data[random.randint(0,len(data))].strip('\n')
+    last = end[random.randint(0,len(end)-1)]
+    ten = data[random.randint(0,len(data))].strip('\n')
     # KAA= ka[random.randint(0,len(ka)-1)]
     # entity1 = '{"entity":"camera","role":"front"}'
     # entity2 = '{"entity":"camera","role":"behind"}'
     # entity = '{"entity":"hardware","role":"WHQ"}'
-    # result = '- {} [{}](product_name) {} {}'.format(first,ten,ra,last)
+    result = '- {} [{}](product_name) {}'.format(first,ten,last)
     # n = random.randint(1,4)
     # if n == 1:
     #     result = '- [cam trước](camera) {} [{}](product_name) {}'.format(first,ten,last)
@@ -43,12 +43,12 @@ import random
     #     result = '- [cam sau](camera) {} [{}](product_name) {}'.format(first,ten,last)
     # if n == 4:
     #     result = '- [camera sau](camera) {} [{}](product_name) {}'.format(first,ten,last)
-    # print(result.replace("  "," "))
+    print(result.replace("  "," "))
 # fobj.close()
 # count = 0
-pc = ['Iphone','Sanmsung','Oppo','Huawei','Xiaomi','Realme','Nokia','Vsmart','Vivo','Masstel','Itel','Energizer','ss','ip']
+# pc = ['Iphone','Sanmsung','Oppo','Huawei','Xiaomi','Realme','Nokia','Vsmart','Vivo','Masstel','Itel','Energizer','ss','ip']
 data = open('data/temp.txt',encoding='utf-8').readlines()
-p1 = ['có điện thoại','có','có cái']
+# p1 = ['có điện thoại','có','có cái']
 # for item in data:
 #     if item.find("intent") > -1:
 #         i = data.index(item)
@@ -57,10 +57,19 @@ p1 = ['có điện thoại','có','có cái']
 #         note = data[i+1].replace("<!--","# ").replace("-->","")
 #         print(res.strip('\n'))
 #         print(note.strip('\n'))
-for item in data:
-    sss = p1[random.randint(0,2)]
-    psc = pc[random.randint(0,len(pc)-1)]
+# for item in data:
+    # sss = p1[random.randint(0,2)]
+    # psc = pc[random.randint(0,len(pc)-1)]
     # end = data[random.randint(0,len(data)-1)]
-    res = "- {} [{}](product_company) {}".format(sss,psc,item.strip('\n'))
-    print(res)
+    # res = "- {} [{}](product_company) {}".format(sss,psc,item.strip('\n'))
+    # print(res)
 # print(count)
+# res = ''
+# obj = open('data/stmm.txt','a',encoding='utf-8')
+# for item in data:
+    # temp = item.strip('\n').split(":")
+    # res = res + '{} = scrapy.Field()\n'.format(temp[1])
+    # obj.write(res.strip('\n'))
+
+# obj.close()
+# print(res)
