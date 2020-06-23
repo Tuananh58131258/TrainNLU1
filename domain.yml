@@ -9,6 +9,8 @@ slots:
     type: text
   customer_name:
     type: text
+  latest_action:
+    type: text
 
 entities:
   - product_company
