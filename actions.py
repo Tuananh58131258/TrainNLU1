@@ -39,7 +39,7 @@ class ActionCustomFallback(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         time_temp = time.localtime()
         tgian = time.strftime("%d/%m/%Y, %H:%M:%S", time_temp)
-        dispatcher.utter_message(text="Fallback fallback")
+        dispatcher.utter_message(text="Hiện tại mình chưa có khả năng trả lời câu này. Mình sẽ cập nhật thêm kiến thức để trả lời cho bạn vào lần tới.")
 
         temp = tracker.latest_message.get('text')
         log = ""
@@ -97,9 +97,10 @@ class ActionProductPrice(Action):
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
+            productName = tracker.get_slot('product_name')
             pass
         if productName:
-            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(
+            sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
             try:
                 ram = romramAnalysis(
@@ -114,10 +115,11 @@ class ActionProductPrice(Action):
             except:
                 pass
             sqlQuery = sqlQuery + "limit 9;"
-            result = getData(sqlQuery)
-            if result:
+            data = getData(sqlQuery)
+            if data:
+                SlotSet('product_name',data[0]['ten'])
                 list_item = []
-                for item in result:
+                for item in data:
                     list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
@@ -157,9 +159,10 @@ class ActionOnlinePrice(Action):
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
+            productName = tracker.get_slot('product_name')
             pass
         if productName:
-            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(
+            sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
             try:
                 ram = romramAnalysis(
@@ -174,10 +177,11 @@ class ActionOnlinePrice(Action):
             except:
                 pass
             sqlQuery = sqlQuery + "limit 9;"
-            result = getData(sqlQuery)
-            if result:
+            data = getData(sqlQuery)
+            if data:
+                SlotSet('product_name',data[0]['ten'])
                 list_item = []
-                for item in result:
+                for item in data:
                     list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
@@ -216,9 +220,10 @@ class ActionOldProduct(Action):
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
+            productName = tracker.get_slot('product_name')
             pass
         if productName:
-            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(
+            sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
             try:
                 ram = romramAnalysis(
@@ -233,10 +238,11 @@ class ActionOldProduct(Action):
             except:
                 pass
             sqlQuery = sqlQuery + "limit 9;"
-            result = getData(sqlQuery)
-            if result:
+            data = getData(sqlQuery)
+            SlotSet('product_name',data[0]['ten'])
+            if data:
                 list_item = []
-                for item in result:
+                for item in data:
                     list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
@@ -277,7 +283,7 @@ class ActionProductConfiguration(Action):
         except:
             productName = tracker.get_slot('product_name')
             pass
-        sqlQuery = 'select * from fptshop.dienthoai where ten like "%{}%"'.format(productName)
+        sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(productName)
         try:
             ram = romramAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='ram')))
@@ -290,18 +296,21 @@ class ActionProductConfiguration(Action):
             sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
         except:
             pass
-        data = getData(sqlQuery)
-        man_hinh = "{},{},{}.".format(data[0]['chuan_man_hinh'], data[0]['cong_nghe_man_hinh'], data[0]['do_phan_giai'])
-        camera_truoc = data[0]['do_phan_giai_cam_truoc']
-        camera_sau = data[0]['do_phan_giai_cam_sau']
-        ram = data[0]['ram']
-        rom = data[0]['rom']
-        cpu = "{},{},{}.".format(data[0]['chipset'], data[0]['so_nhan'], data[0]['toc_do_cpu'])
-        gpu = data[0]['gpu']
-        pin = data[0]['dung_luong_pin']
-        dispatcher.utter_message("this is test")
-        message_str = "Màn hình :{}\nCamera trước:{}\nCamera sau:{}\nRam:{}\nBộ nhớ trong:{} \nCPU: {}\nGPU:{} \nDung lượng pin:{}".format(man_hinh,camera_truoc,camera_sau,ram,rom,cpu,gpu,pin)
-        
+        try:
+            data = getData(sqlQuery)
+            SlotSet('product_name',data[0]['ten'])
+            man_hinh = "{},{},{}.".format(data[0]['chuan_man_hinh'], data[0]['cong_nghe_man_hinh'], data[0]['do_phan_giai'])
+            camera_truoc = data[0]['do_phan_giai_cam_truoc']
+            camera_sau = data[0]['do_phan_giai_cam_sau']
+            ram = data[0]['ram']
+            rom = data[0]['rom']
+            cpu = "{},{},{}.".format(data[0]['chipset'], data[0]['so_nhan'], data[0]['toc_do_cpu'])
+            gpu = data[0]['gpu']
+            pin = data[0]['dung_luong_pin']
+            dispatcher.utter_message("this is test")
+            message_str = "Màn hình :{}\nCamera trước:{}\nCamera sau:{}\nRam:{}\nBộ nhớ trong:{} \nCPU: {}\nGPU:{} \nDung lượng pin:{}".format(man_hinh,camera_truoc,camera_sau,ram,rom,cpu,gpu,pin)
+        except:
+            message_str = "Thông tin sai lệch, vui lòng kiểm tra lại!"
         dispatcher.utter_message(message_str)
         return
 
@@ -314,7 +323,7 @@ class ActionTypeOfProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        sqlQuery = "select * from fptshop.hangdienthoai limit 9;"
+        sqlQuery = "select * from hangdienthoai limit 9;"
         data = getData(sqlQuery)
         try:
             list_item = []
@@ -348,7 +357,7 @@ class ActionListProduct(Action):
         except:
             pass
         if product_company:
-            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%' limit 9;".format(
+            sqlQuery = "Select * from dienthoai where ten like '%{}%' limit 9;".format(
                 product_company)
             try:
                 data = getData(sqlQuery)
@@ -397,9 +406,10 @@ class ActionCheckPrice(Action):
                 productName = productNameAnalysis(
                     next(tracker.get_latest_entity_values(entity_type='product_name')))
             except:
+                productName = tracker.get_slot('product_name')
                 pass
             if productName:
-                sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(
+                sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                     productName)
                 try:
                     ram = romramAnalysis(
@@ -415,6 +425,7 @@ class ActionCheckPrice(Action):
                     pass
                 sqlQuery = sqlQuery + "limit 9;"
                 data = getData(sqlQuery)
+                SlotSet('product_name',data[0]['ten'])
                 for item in data:
                     if item['gia'] == price:
                         dispatcher.utter_message(
@@ -450,12 +461,12 @@ class ActionFindProductInRangePrice(Action):
             if from_price > to_price:
                 text = "Danh sách sản phẩm có giá từ {} đến {}".format(
                     to_price, from_price)
-                sqlQuery = "select * from fptshop.dienthoai where gia between {} and {} limit 9".format(
+                sqlQuery = "select * from dienthoai where gia between {} and {} limit 9".format(
                     to_price, from_price)
             else:
                 text = "Danh sách sản phẩm có giá từ {} đến {}".format(
                     from_price, to_price)
-                sqlQuery = "select * from fptshop.dienthoai where gia between {} and {} limit 9".format(
+                sqlQuery = "select * from dienthoai where gia between {} and {} limit 9".format(
                     from_price, to_price)
             data = getData(sqlQuery)
             list_item = []
@@ -492,7 +503,7 @@ class ActionFindProductLowerPrice(Action):
         except:
             pass
         if price:
-            sqlQuery = "select * from fptshop.dienthoai where gia <= {} order by gia desc limit 9".format(
+            sqlQuery = "select * from dienthoai where gia <= {} order by gia desc limit 9".format(
                 price)
             try:
                 data = getData(sqlQuery)
@@ -515,7 +526,7 @@ class ActionFindProductLowerPrice(Action):
                 print(sqlQuery)
                 pass
         else:
-            dispatcher.utter_message("Nothing here")
+            dispatcher.utter_message("Mức giá bạn đưa ra không có, vui lòng thử lại!")
         return
 
 
@@ -527,36 +538,45 @@ class ActionFindProductUpperPrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        price = 0
+        product_company = ''
+        try:
+            product_company = next(tracker.get_latest_entity_values(entity_type='price'))
+        except:
+            pass
         try:
             price = priceAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='price')))
         except:
             pass
         if price:
-            sqlQuery = "select * from fptshop.dienthoai where gia >= {} order by gia asc limit 9".format(
+            sqlQuery = "select * from dienthoai,hangdienthoai where dienthoai.idhangdienthoai=hangdienthoai.idHangDienThoai and gia >= {}".format(
                 price)
-            try:
-                data = getData(sqlQuery)
-                list_item = []
-                for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
-                    gia = ""
-                    if item['gia']:
-                        gia = "Giá: {}".format(item['gia'])
-                    else:
-                        gia = "Đang cập nhật"
-                    mess_item = TemplateItems(
-                        item['ten'], item['url_img'], gia, list_btn)
-                    list_item.append(mess_item)
+        if product_company:
+            sqlQuery = sqlQuery + "and hangdienthoai.ten like '%{}%'".format(product_company)
 
-                message_str = GenericTemplate(list_item)
-                dispatcher.utter_message(json_message=message_str)
-            except:
-                print(sqlQuery)
-                pass
-        else:
-            dispatcher.utter_message("Nothing here")
+        sqlQuery = sqlQuery + "order by gia asc limit 9"
+        try:
+            data = getData(sqlQuery)
+            list_item = []
+            for item in data:
+                list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                gia = ""
+                if item['gia']:
+                    gia = "Giá: {}".format(item['gia'])
+                else:
+                    gia = "Đang cập nhật"
+                mess_item = TemplateItems(
+                    item['ten'], item['url_img'], gia, list_btn)
+                list_item.append(mess_item)
+
+            message_str = GenericTemplate(list_item)
+            dispatcher.utter_message(json_message=message_str)
+        except:
+            print(sqlQuery)
+            dispatcher.utter_message("Mức giá bạn đưa ra không chính xác, vui lòng tử lại!")
+            pass
         return
 
 
@@ -573,33 +593,41 @@ class ActionFindProductAroundPrice(Action):
                 next(tracker.get_latest_entity_values(entity_type='price')))
         except:
             pass
+        product_company = ''
+        try:
+            product_company = next(tracker.get_latest_entity_values(entity_type='price'))
+        except:
+            pass        
         if price:
-            p1 = price - 500000
-            p2 = price + 1000000
-            sqlQuery = "select * from fptshop.dienthoai where gia between {} and {} order by gia asc limit 9".format(
+            p1 = price - 300000
+            p2 = price + 700000
+            sqlQuery = "select * from dienthoai,hangdienthoai where gia between {} and {} order by gia asc limit 9".format(
                 p1, p2)
-            try:
-                data = getData(sqlQuery)
-                list_item = []
-                for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
-                    gia = ""
-                    if item['gia']:
-                        gia = "Giá: {}".format(item['gia'])
-                    else:
-                        gia = "Đang cập nhật"
-                    mess_item = TemplateItems(
-                        item['ten'], item['url_img'], gia, list_btn)
-                    list_item.append(mess_item)
+            if product_company:
+                sqlQuery = sqlQuery + "and hangdienthoai.ten like '%{}%'".format(product_company)
 
-                message_str = GenericTemplate(list_item)
-                dispatcher.utter_message(json_message=message_str)
-            except:
-                print(sqlQuery)
-                pass
-        else:
-            dispatcher.utter_message("Nothing here")
+            sqlQuery = sqlQuery + "order by gia asc limit 9"
+        try:
+            data = getData(sqlQuery)
+            list_item = []
+            for item in data:
+                list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                gia = ""
+                if item['gia']:
+                    gia = "Giá: {}".format(item['gia'])
+                else:
+                    gia = "Đang cập nhật"
+                mess_item = TemplateItems(
+                    item['ten'], item['url_img'], gia, list_btn)
+                list_item.append(mess_item)
+
+            message_str = GenericTemplate(list_item)
+            dispatcher.utter_message(json_message=message_str)
+        except:
+            print(sqlQuery)
+            dispatcher.utter_message("Thông tin bạn yêu cầu chưa chính xác, vui lòng kiểm tra lại!")
+            pass
         return
 
 
@@ -611,24 +639,21 @@ class ActionScreenInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        productName = ""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
-            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(
-                productName)
-            data = getData(sqlQuery)
-            hardware_lable = data[0]['lable'].split('/')
-            hardware_data = data[0]['data'].split('/')
-            for item in hardware_lable:
-                if item.find('Công nghệ màn hình') > -1:
-                    temp = hardware_lable.index(item)
-
-            message_str = "Điện thoại {} sử dụng công ngệ màn hình: {}".format(
-                productName, hardware_data[temp])
-            dispatcher.utter_message(message_str)
         except:
-            dispatcher.utter_message("không có tên sản phẩm")
-
+            productName = tracker.get_slot('product_name')
+            pass
+        if productName:
+            sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(productName)
+            data = getData(sqlQuery)
+            SlotSet('product_name',data[0]['ten'])
+            message_str = "Sản phẩm {} sử dụng màn hình: {} {} với độ phân giải {}".format(data[0]['ten'],data[0]['cong_nghe_man_hinh'],data[0]['chuan_man_hinh'],data[0]['do_phan_giai'])
+        else:
+            message_str = "Bạn đang hỏi thông tin của sản phẩm nào vậy ạ?"
+        dispatcher.utter_message(message_str)
         return
 
 
@@ -640,24 +665,25 @@ class ActionPinInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        productName = ""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
-            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(
+        except:
+            productName = tracker.get_slot('product_name')
+            pass
+        if productName:
+            sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
             data = getData(sqlQuery)
-            hardware_lable = data[0]['lable'].split('/')
-            hardware_data = data[0]['data'].split('/')
-            for item in hardware_lable:
-                if item.find('Loại pin') > -1:
-                    temp = hardware_lable.index(item)
-
-            message_str = "Điện thoại {} sử dụng pin: {}".format(
-                productName, hardware_data[temp])
-            dispatcher.utter_message(message_str)
-        except:
-            dispatcher.utter_message("không có tên sản phẩm")
-
+            SlotSet('product_name',data[0]['ten'])
+            loai_pin = data[0]['loai_pin']
+            dung_luong_pin = data[0]['dung_luong_pin']
+            thoi_gian_dam_thoai = data[0]['thoi_gian_dam_thoai']
+            message_str = "Sản phẩm {} sử dụng pin: {} , có dung lượng: {} cho thời gian đàm thoại lên tới {}".format(productName,loai_pin,dung_luong_pin,thoi_gian_dam_thoai)
+        else:
+            message_str = "Bạn đang hỏi thông tin cho sản phẩm nào ạ?"
+        dispatcher.utter_message(message_str)
         return
 
 
@@ -669,8 +695,23 @@ class ActionBuyOldProduct(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("thu mua lại sản phẩm cũ")
-
+        productName = ""
+        try:
+            productName = productNameAnalysis(
+                next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            productName = tracker.get_slot('product_name')
+            pass
+        if productName:
+            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
+            data = getData(sqlQuery)
+            SlotSet('product_name',data[0]['ten'])
+            gia = int(data[0]['gia'])
+            temp = gia*75/100
+            message_str = "Đối với sản phẩm {} còn trong thời gian bảo hành, không bị rơi vỡ, cấn móp do va đập hay ngấm các dung dịch chất lỏng như nước v.v thì bên cửa hàng sẽ mua lại sản phẩm với giá khoảng 75% giá bán ra tứ là khoảng {:,} vnđ ạ.".format(data[0]['ten'],temp)
+        else:
+            message_str = "Bạn đang hỏi thông tin cho sản phẩm nào ạ?"
+        dispatcher.utter_message(message_str)
         return
 
 
@@ -689,7 +730,7 @@ class ActionHowManyPerMonth(Action):
         except:
             pass
         if productName:
-            sqlQuery = "select * from fptshop.dienthoai where ten like '%{}%'".format(
+            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(
                 productName)
             laisuat = ''
             prepay_percent = 0
@@ -771,14 +812,14 @@ class ActionIsProductCanBuyOnInstallment(Action):
         except:
             pass
         if productName:
-            sqlQuery = "select * from fptshop.dienthoai where ten like '%{}%'".format(
+            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(
                 productName)
             data = getData(sqlQuery)
             if data[0]['url_installment']:
                 gia = int(data[0]['gia'])
                 tienno = gia*70/100
                 tienthang = tienno/4 + tienno*1.66/100
-                message_str = "Sản phẩm {} có hỗ trợ trả góp. Bạn có thể tham khảo gói trả góp sau.\n  Trả trước 30%.\nTrả góp trong 4 tháng.\nMỗi tháng trả {}.\n*Lưu ý: Số liệu trên đây chỉ mang tính chất tham khảo.\nĐể biết thêm chi tiết về các gói trả góp của {} bạn có thể truy cập trang web sau. {}".format(
+                message_str = "Sản phẩm {} có hỗ trợ trả góp. Bạn có thể tham khảo gói trả góp sau:  \n  Trả trước 30%.  \nTrả góp trong 4 tháng.  \nMỗi tháng trả {:,} vnđ.  \n*Lưu ý: Số liệu trên đây chỉ mang tính chất tham khảo.  \nĐể biết thêm chi tiết về các gói trả góp của {} bạn có thể truy cập trang web sau. {}".format(
                     data[0]['ten'], tienthang, data[0]['ten'], data[0]['url_installment'])
                 dispatcher.utter_message(message_str)
         else:
@@ -812,7 +853,7 @@ class ActionHarwareInfo(Action):
             role = "YorN"
         except StopIteration:
             pass
-        sqlQuery = 'select * from fptshop.dienthoai where ten like "%{}%"'.format(
+        sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(
             productName)
         data = getData(sqlQuery)
         if data:
@@ -888,7 +929,7 @@ class ActionGuarantee(Action):
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             pass
-        sqlQuery = 'select * from fptshop.dienthoai where ten like "%{}%"'.format(
+        sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(
             productName)
         data = getData(sqlQuery)
         if data:
@@ -915,7 +956,7 @@ class ActionPromotionsAndGift(Action):
         except:
             pass
         if productName:
-            sqlQuery = "select * from fptshop.dienthoai where ten like '%{}%'".format(
+            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(
                 productName)
             data = getData(sqlQuery)
             if data:
@@ -943,7 +984,7 @@ class ActionFindProduct(Action):
         except:
             pass
         if productName:
-            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(
+            sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
             try:
                 ram = romramAnalysis(
@@ -1002,7 +1043,7 @@ class ActionFindAnotherProduct(Action):
         except:
             pass
         if productName:
-            sqlQuery = "Select * from fptshop.dienthoai where ten like '%{}%'".format(
+            sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
             try:
                 ram = romramAnalysis(
@@ -1094,6 +1135,18 @@ class ActionGetContact(Action):
     # action thông tin độ phân giải của cả camera trước và sau
     def name(self) -> Text:
         return "action_get_contact"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        dispatcher.utter_message("this is test")
+
+        return
+
+class ActionFollow(Action):
+    # action thông tin độ phân giải của cả camera trước và sau
+    def name(self) -> Text:
+        return "action_follow"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,

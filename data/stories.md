@@ -176,3 +176,7 @@
 ## get contact
 * contact
   - action_get_contact
+
+## follow action
+* productName
+  - action_follow

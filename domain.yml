@@ -111,6 +111,7 @@ intents:
   # số điện thoại
   - contact
   # họ tên + sdt
+  - productName
 
 responses:
   utter_goodbye:
@@ -276,3 +277,5 @@ actions:
 
   - action_get_contact
   # action lưu thông tin
+
+  - action_follow

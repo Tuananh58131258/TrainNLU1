@@ -2019,20 +2019,6 @@
 
 ## intent: find_product
 <!-- tìm kiếm sản phẩm -->
-- [Vivo Nex 3](product_name)
-- [ss a41](product_name)
-- [ss a10s](product_name)        
-- [realme 6 pro](product_name)   
-- [Vsmart Joy 3](product_name)   
-- [Huawei P30 Lite](product_name)
-- [Realme 3](product_name)
-- [iPhone 7 Plus](product_name)
-- [realme xt](product_name)
-- [ss a11](product_name)
-- [Realme 5i](product_name)
-- [Nokia 8.3 5G](product_name)
-- [Vivo Y11](product_name)
-- [Vivo Y70s 5G](product_name)
 - ở đây có [Samsung Galaxy A21s](product_name) không nhỉ
 - ad ơi có [Nokia 210 DS](product_name) không nhỉ
 - shop có [Huawei P40 Lite 5G](product_name) không
@@ -2454,6 +2440,24 @@
 - tên: [Nguyễn Phạm Mai Huyền](customer_name) sdt: [0923994495](phone_num)
 - tên: [Nguyễn Lê Bảo Phúc](customer_name) điện thoại: [0561656908](phone_num)
 - tên: [Nguyễn Yến Ngọc](customer_name) số điện thoại: [0567626460](phone_num)
+
+## intent: productName
+- của [Vivo Nex 3](product_name)
+- [Vivo Nex 3](product_name) ạ
+- [Vivo Nex 3](product_name)
+- của [ss a41](product_name)
+- [ss a10s](product_name)        
+- [realme 6 pro](product_name)   
+- [Vsmart Joy 3](product_name)   
+- [Huawei P30 Lite](product_name)
+- [Realme 3](product_name)
+- [iPhone 7 Plus](product_name)
+- của [realme xt](product_name)
+- [ss a11](product_name)
+- [Realme 5i](product_name) ạ
+- [Nokia 8.3 5G](product_name) ạ
+- [Vivo Y11](product_name)
+- [Vivo Y70s 5G](product_name)
 
 ## synonym:CPU
 - chíp

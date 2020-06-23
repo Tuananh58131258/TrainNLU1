@@ -94,5 +94,5 @@ def InstallmentPaymentPeriod(temp:str):
 def RoundNum(temp:int):
     res = round(temp/10000)*10000
     return res
-# print("{:,}".format(priceAnalysis("0 mươi  2 triệu")))
+# print("{:,}".format(priceAnalysis("2 củ")))
 # print(RoundNum(809216))
