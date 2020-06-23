@@ -141,25 +141,25 @@
   - slot{"product_name":"iphone xs max"}
 
 ## storie Guarantee 1
-* guarantee{"product_name":""iphone 8""}
+* guarantee{"product_name":"iphone 8"}
   - action_guarantee
   - slot{"product_name":"iphone 8"}
   - slot{"latest_action":"action_guarantee"}
 
 ## storie Guarantee 2
-* guarantee{"product_name":""iphone xs max""}
+* guarantee{"product_name":"iphone xs max"}
   - action_guarantee
   - slot{"product_name":"iphone xs max"}
   - slot{"latest_action":"action_guarantee"}
 
 ## storie Guarantee 1
-* guarantee{"product_name":""samsung j8+""}
+* guarantee{"product_name":"samsung j8+"}
   - action_guarantee
   - slot{"product_name":"samsung j8+"}
   - slot{"latest_action":"action_guarantee"}
 
 ## storie Guarantee 1
-* guarantee{"product_name":""Samsung Galaxy A10e""}
+* guarantee{"product_name":"Samsung Galaxy A10e"}
   - action_guarantee
   - slot{"product_name":"Samsung Galaxy A10e"}
   - slot{"latest_action":"action_guarantee"}
