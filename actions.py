@@ -12,8 +12,10 @@ import time
 import requests
 from rasa_sdk import Action, Tracker
 from rasa_sdk.events import SlotSet
+from rasa_sdk.events import FollowupAction
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted
+from rasa.core.trackers import DialogueStateTracker
 from inputAnalysis import priceAnalysis
 from inputAnalysis import productNameAnalysis
 from inputAnalysis import romramAnalysis
@@ -142,7 +144,7 @@ class ActionProductPrice(Action):
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau")
 
-        
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -203,7 +205,7 @@ class ActionOnlinePrice(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau")
-        
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -264,7 +266,7 @@ class ActionOldProduct(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau")
-        
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -312,6 +314,7 @@ class ActionProductConfiguration(Action):
         except:
             message_str = "Thông tin sai lệch, vui lòng kiểm tra lại!"
         dispatcher.utter_message(message_str)
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -435,7 +438,7 @@ class ActionCheckPrice(Action):
                             "Dạ không phải ạ. Giá của sản phẩm {} là {} ạ.".format(item['ten'], item['gia']))
             else:
                 dispatcher.utter_message("Không tìm thấy sản phẩm yêu cầu")
-
+            SlotSet('latest_action',self.name())
             return
 
 
@@ -652,9 +655,10 @@ class ActionScreenInfo(Action):
             SlotSet('product_name',data[0]['ten'])
             message_str = "Sản phẩm {} sử dụng màn hình: {} {} với độ phân giải {}".format(data[0]['ten'],data[0]['cong_nghe_man_hinh'],data[0]['chuan_man_hinh'],data[0]['do_phan_giai'])
         else:
-            message_str = "Bạn đang hỏi thông tin của sản phẩm nào vậy ạ?"
+            message_str = "Bạn đang hỏi thông tin màn hình của sản phẩm nào vậy ạ?"
         dispatcher.utter_message(message_str)
-        return
+        
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',data[0]['ten'])]
 
 
 class ActionPinInfo(Action):
@@ -682,8 +686,9 @@ class ActionPinInfo(Action):
             thoi_gian_dam_thoai = data[0]['thoi_gian_dam_thoai']
             message_str = "Sản phẩm {} sử dụng pin: {} , có dung lượng: {} cho thời gian đàm thoại lên tới {}".format(productName,loai_pin,dung_luong_pin,thoi_gian_dam_thoai)
         else:
-            message_str = "Bạn đang hỏi thông tin cho sản phẩm nào ạ?"
+            message_str = "Bạn đang hỏi thông tin về pin của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -710,8 +715,9 @@ class ActionBuyOldProduct(Action):
             temp = gia*75/100
             message_str = "Đối với sản phẩm {} còn trong thời gian bảo hành, không bị rơi vỡ, cấn móp do va đập hay ngấm các dung dịch chất lỏng như nước v.v thì bên cửa hàng sẽ mua lại sản phẩm với giá khoảng 75% giá bán ra tứ là khoảng {:,} vnđ ạ.".format(data[0]['ten'],temp)
         else:
-            message_str = "Bạn đang hỏi thông tin cho sản phẩm nào ạ?"
+            message_str = "Bạn đang hỏi thông tin thu mua cũ cho sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -782,6 +788,8 @@ class ActionHowManyPerMonth(Action):
             dispatcher.utter_message(message_str)
         else:
             dispatcher.utter_message('action_how_many_per_month')
+            
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -794,6 +802,7 @@ class ActionCaseHowManyPerMonth(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message("this is test")
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -823,8 +832,8 @@ class ActionIsProductCanBuyOnInstallment(Action):
                     data[0]['ten'], tienthang, data[0]['ten'], data[0]['url_installment'])
                 dispatcher.utter_message(message_str)
         else:
-            dispatcher.utter_message('message_str')
-
+            dispatcher.utter_message('có được trả góp không!')
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -869,9 +878,10 @@ class ActionHarwareInfo(Action):
             else:
                 message_str = Hardware(hardware_name, role, 'yes')
         else:
-            message_str = "Không tìm thấy sản phẩm!"
+            message_str = "Không tìm thấy sản phẩm! thông tin phần cứng"
 
         dispatcher.utter_message(message_str)
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -886,7 +896,7 @@ class ActionMainCamera(Action):
         most_recent_state = tracker.current_state()
         print(most_recent_state)
         dispatcher.utter_message('demo')
-
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -898,8 +908,8 @@ class ActionSelfieCamera(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-
+        dispatcher.utter_message("cam trước")
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -911,8 +921,8 @@ class ActionResolutionCamera(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-
+        dispatcher.utter_message("action_resolution_camrea")
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -938,6 +948,7 @@ class ActionGuarantee(Action):
             message_str = "không có bảo hành"
         dispatcher.utter_message(message_str)
         print(tracker.latest_message.get('text'))
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -964,8 +975,12 @@ class ActionPromotionsAndGift(Action):
                 khuyen_mai = data[0]['khuyen_mai']
                 message_str = "Các khuyến mãi của sản phẩm {} là:\n{}".format(
                     ten, khuyen_mai.replace("Xem chi tiết", ""))
-
+            else:
+                message_str = "Sản phẩm này hiện không có khuyến mãi"
+        else:
+            message_str = "khuyến mãi của sản phẩm nào"
         dispatcher.utter_message(message_str)
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -1024,7 +1039,6 @@ class ActionFindProduct(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau")
-
         return
 
 
@@ -1083,7 +1097,7 @@ class ActionFindAnotherProduct(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau")
-
+        SlotSet('latest_action',self.name())
         return
 
 
@@ -1149,8 +1163,25 @@ class ActionFollow(Action):
         return "action_follow"
 
     def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
+            tracker: DialogueStateTracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-
-        return
+        # dispatcher.utter_message("this is test")
+        previus_action = tracker.get_slot('latest_action')
+        productName = ""
+        try:
+            productName = productNameAnalysis(
+                next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            pass 
+        sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
+        data = getData(sqlQuery)
+        print(productName + " " + str(previus_action))
+        if data:
+            SlotSet('product_name',data[0]['ten'])
+            if previus_action:
+                return[FollowupAction(name=previus_action)]
+            else:
+                return[FollowupAction("action_find_product")]
+        else:
+            dispatcher.utter_message('Vui lòng nhập tên sản phẩm bạn muốn tìm hiểu thông tin!')
+            return
