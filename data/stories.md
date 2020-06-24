@@ -35,26 +35,26 @@
 ## storie 12
 * ask_hardware_info
   - action_hardware_info
-  - slot{"lastest_action":"action_hardware_info"}
+  - slot{"latest_action":"action_hardware_info"}
   - slot{"product_name":"oppo reno 3"}
 
 ## storie 13
 * product_price
   - action_product_price
-  - slot{"lastest_action":"action_product_price"}
-  - slot{"product_name":"oppo reno 3"}
+  - slot{"latest_action":"action_product_price"}
+  - slot{"product_name":"oppo reno x"}
 
 ## storie product_price
 * product_price
   - action_product_price
-  - slot{"lastest_action":"action_product_price"}
-  - slot{"product_name":"oppo reno 3"}
+  - slot{"latest_action":"action_product_price"}
+  - slot{"product_name":"oppo reno 2"}
 
 
 ## storie online_price
 * online_price
   - action_online_price
-  - slot{"lastest_action":"action_online_price"}
+  - slot{"latest_action":"action_online_price"}
   - slot{"product_name":"oppo reno 3"}
 
 ## storie old_product_price
@@ -190,7 +190,7 @@
 ## storie find_product
 * find_product
   - action_find_product
-  - slot{"lastest_action":"action_find_product"}
+  - slot{"latest_action":"action_find_product"}
   - slot{"product_name":"oppo reno 3"}
 
 
@@ -205,12 +205,12 @@
   - slot{"last_name":"Nguyễn Tuấn"}
 * find_product
   - action_find_product
-  - slot{"lastest_action":"action_find_product"}
+  - slot{"latest_action":"action_find_product"}
   - slot{"product_name":"oppo reno 3"}
 
 * find_another_product
   - action_find_another_product
-  - slot{"lastest_action":"action_find_product"}
+  - slot{"latest_action":"action_find_product"}
   - slot{"product_name":"oppo reno 3"}
 
 
@@ -221,7 +221,7 @@
   - slot{"last_name":"Nguyễn Tuấn"}
 * product_price
   - action_product_price
-  - slot{"lastest_action":"action_product_price"}
+  - slot{"latest_action":"action_product_price"}
   - slot{"product_name":"oppo reno 3"}
 
 
