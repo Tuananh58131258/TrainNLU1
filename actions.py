@@ -16,17 +16,17 @@ from rasa_sdk.events import FollowupAction
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted
 from rasa.core.trackers import DialogueStateTracker
-from inputAnalysis import priceAnalysis
-from inputAnalysis import productNameAnalysis
-from inputAnalysis import romramAnalysis
-from inputAnalysis import PrepayPercent
-from inputAnalysis import InstallmentPaymentPeriod
-from inputAnalysis import RoundNum
+from InputModify import priceModify
+from InputModify import productNameModify
+from InputModify import romRamModify
+from InputModify import PrepayPercentModify
+from InputModify import InstallmentPaymentPeriod
+from InputModify import RoundNum
 from dbConnect import getData
-from makemessage import GenericTemplate
-from makemessage import ButtonTemplate
-from makemessage import TemplateItems
-from makemessage import Hardware
+from CreateJsonMessageTemplate import GenericTemplate
+from CreateJsonMessageTemplate import ButtonTemplate
+from CreateJsonMessageTemplate import ItemsTemplate
+from CreateJsonMessageTemplate import HardwareAnswer
 #
 #
 
@@ -99,7 +99,7 @@ class ActionProductPrice(Action):
         productName = ""
         Pname_temp = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = tracker.get_slot('product_name')
@@ -109,13 +109,13 @@ class ActionProductPrice(Action):
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
             try:
-                ram = romramAnalysis(
+                ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
                 sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
             except:
                 pass
             try:
-                rom = romramAnalysis(
+                rom = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='rom')))
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
@@ -133,7 +133,7 @@ class ActionProductPrice(Action):
                         gia = "Giá: {:,} vnđ".format(item['gia'])
                     else:
                         gia = "Sản phẩm tin đồn"
-                    mess_item = TemplateItems(
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
 
@@ -162,7 +162,7 @@ class ActionOnlinePrice(Action):
         Pname_temp = ""
         sqlQuery =""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = tracker.get_slot('product_name')
@@ -171,13 +171,13 @@ class ActionOnlinePrice(Action):
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
             try:
-                ram = romramAnalysis(
+                ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
                 sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
             except:
                 pass
             try:
-                rom = romramAnalysis(
+                rom = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='rom')))
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
@@ -192,22 +192,22 @@ class ActionOnlinePrice(Action):
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia_online']:
-                        gia = "Giá online: {}".format(item['gia_online'])
+                        gia = "Giá online: {:,} vnđ".format(item['gia_online'])
                     else:
-                        gia = "Sản phẩm tin đồn"
-                    mess_item = TemplateItems(
+                        gia = "Giá online: Đang cập nhật"
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
 
                 message_str = GenericTemplate(list_item)
                 dispatcher.utter_message(
-                    text="Giá nè", json_message=message_str)
+                    text="Giá bán online của sản phẩm {} và các sản phẩm có tên tương tự".format(productName), json_message=message_str)
             else:
                 dispatcher.utter_message(
                     "Hiện tại của hàng không có thông tin về sản phẩm {} hay các sản phẩm có tên tương tự. Mong bạn thông cảm và thử tìm kiếm sản phẩm khác.".format(productName))
         else:
             dispatcher.utter_message(
-                "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
+                "Bạn đang hỏi thông tin về giá bán online của sản phẩm nào ạ?")
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -224,7 +224,7 @@ class ActionOldProduct(Action):
         Pname_temp = ""
         sqlQuery =""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = tracker.get_slot('product_name')
@@ -233,13 +233,13 @@ class ActionOldProduct(Action):
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
             try:
-                ram = romramAnalysis(
+                ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
                 sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
             except:
                 pass
             try:
-                rom = romramAnalysis(
+                rom = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='rom')))
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
@@ -254,16 +254,16 @@ class ActionOldProduct(Action):
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia_cu']:
-                        gia = "Giá cũ: {}".format(item['gia_cu'])
+                        gia = "Giá cũ: {:,} vnđ".format(item['gia_cu'])
                     else:
                         gia = "Giá cũ: Đang cập nhật"
-                    mess_item = TemplateItems(
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
 
                 message_str = GenericTemplate(list_item)
                 dispatcher.utter_message(
-                    text="Giá nè", json_message=message_str)
+                    text="Giá của sản phẩm {} đã qua sử dụng hoặc các sản phẩm có tên tương tự.".format(productName), json_message=message_str)
             else:
                 dispatcher.utter_message(
                     "Hiện tại của hàng không có thông tin về sản phẩm {} hay các sản phẩm có tên tương tự. Mong bạn thông cảm và thử tìm kiếm sản phẩm khác.".format(productName))
@@ -286,7 +286,7 @@ class ActionProductConfiguration(Action):
         Pname_temp = ""
         sqlQuery =""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = tracker.get_slot('product_name')
@@ -294,13 +294,13 @@ class ActionProductConfiguration(Action):
         if productName:
             sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(productName)
             try:
-                ram = romramAnalysis(
+                ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
                 sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
             except:
                 pass
             try:
-                rom = romramAnalysis(
+                rom = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='rom')))
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
@@ -344,7 +344,7 @@ class ActionTypeOfProduct(Action):
             for item in data:
                 list_btn = [ButtonTemplate("Danh sách điện thoại của {}".format(
                     item['ten']), "Danh sách điện thoại của {}".format(item['ten']))]
-                template_item = TemplateItems(
+                template_item = ItemsTemplate(
                     item['ten'], item['url_logo'], item['ten'], list_btn)
                 list_item.append(template_item)
             message_str = GenericTemplate(list_item)
@@ -386,7 +386,7 @@ class ActionListProduct(Action):
                         gia = "Giá: {}".format(item['gia'])
                     else:
                         gia = "Đang cập nhật"
-                    mess_item = TemplateItems(
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
 
@@ -414,14 +414,14 @@ class ActionCheckPrice(Action):
         price = 0
         sqlQuery =""
         try:
-            price = priceAnalysis(
+            price = priceModify(
                 next(tracker.get_latest_entity_values(entity_type='price')))
         except:
             pass
         if price != 0:
             productName = ""
             try:
-                productName = productNameAnalysis(
+                productName = productNameModify(
                     next(tracker.get_latest_entity_values(entity_type='product_name')))
             except:
                 productName = tracker.get_slot('product_name')
@@ -430,13 +430,13 @@ class ActionCheckPrice(Action):
                 sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                     productName)
                 try:
-                    ram = romramAnalysis(
+                    ram = romRamModify(
                         next(tracker.get_latest_entity_values(entity_type='ram')))
                     sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
                 except:
                     pass
                 try:
-                    rom = romramAnalysis(
+                    rom = romRamModify(
                         next(tracker.get_latest_entity_values(entity_type='rom')))
                     sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
                 except:
@@ -470,12 +470,12 @@ class ActionFindProductInRangePrice(Action):
         from_price = 0
         to_price = 0
         try:
-            from_price = priceAnalysis(tracker.get_latest_entity_values(
+            from_price = priceModify(tracker.get_latest_entity_values(
                 entity_type='price', entity_role='from_price'))
         except:
             pass
         try:
-            to_price = priceAnalysis(tracker.get_latest_entity_values(
+            to_price = priceModify(tracker.get_latest_entity_values(
                 entity_type='price', entity_role='to_price'))
         except:
             pass
@@ -502,7 +502,7 @@ class ActionFindProductInRangePrice(Action):
                         gia = "Giá: {}".format(item['gia'])
                     else:
                         gia = "Đang cập nhật"
-                    mess_item = TemplateItems(
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
                 message_str = GenericTemplate(list_item)
@@ -525,7 +525,7 @@ class ActionFindProductLowerPrice(Action):
         product_company =""
         sqlQuery = ""
         try:
-            price = priceAnalysis(
+            price = priceModify(
                 next(tracker.get_latest_entity_values(entity_type='price')))
         except:
             pass
@@ -547,7 +547,7 @@ class ActionFindProductLowerPrice(Action):
                     list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = "Giá: {:,} vnđ".format(item['gia'])
-                    mess_item = TemplateItems(
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
 
@@ -578,7 +578,7 @@ class ActionFindProductUpperPrice(Action):
         except:
             pass
         try:
-            price = priceAnalysis(
+            price = priceModify(
                 next(tracker.get_latest_entity_values(entity_type='price')))
         except:
             pass
@@ -596,7 +596,7 @@ class ActionFindProductUpperPrice(Action):
                     list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = "Giá: {:,} vnđ".format(item['gia'])
-                    mess_item = TemplateItems(
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
 
@@ -622,7 +622,7 @@ class ActionFindProductAroundPrice(Action):
         price = 0
         sqlQuery =""
         try:
-            price = priceAnalysis(
+            price = priceModify(
                 next(tracker.get_latest_entity_values(entity_type='price')))
         except:
             pass
@@ -651,7 +651,7 @@ class ActionFindProductAroundPrice(Action):
                         gia = "Giá: {:,} vnđ".format(item['gia'])
                     else:
                         gia = "Đang cập nhật"
-                    mess_item = TemplateItems(
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
 
@@ -675,7 +675,7 @@ class ActionScreenInfo(Action):
         sqlQuery = ""
         Pname_temp = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = tracker.get_slot('product_name')
@@ -705,7 +705,7 @@ class ActionPinInfo(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = tracker.get_slot('product_name')
@@ -744,7 +744,7 @@ class ActionBuyOldProduct(Action):
         productName = ""
         sqlQuery =""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = tracker.get_slot('product_name')
@@ -781,7 +781,7 @@ class ActionHowManyPerMonth(Action):
         #region try-catch entity
         productName = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type="product_name")))
         except:
             pass
@@ -802,12 +802,12 @@ class ActionHowManyPerMonth(Action):
             except:
                 pass
             try:
-                tratruoc = priceAnalysis(next(tracker.get_latest_entity_values(
+                tratruoc = priceModify(next(tracker.get_latest_entity_values(
                     entity_type='price', entity_role='prepay')))
             except:
                 pass
             try:
-                prepay_percent = PrepayPercent(
+                prepay_percent = PrepayPercentModify(
                     next(tracker.get_latest_entity_values(entity_type='prepay_percent')))
             except:
                 pass
@@ -874,7 +874,7 @@ class ActionIsProductCanBuyOnInstallment(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             pass
@@ -915,7 +915,7 @@ class ActionHarwareInfo(Action):
         productName = ""
         sqlQuery = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             tracker.get_slot('product_name')
@@ -944,9 +944,9 @@ class ActionHarwareInfo(Action):
                     temp = hardware_label.index(item)
                     break
             if hardware_data[temp] == "không" or hardware_data[temp] is None:
-                message_str = Hardware(hardware_name, role, 'no')
+                message_str = HardwareAnswer(hardware_name, role, 'no')
             else:
-                message_str = Hardware(hardware_name, role, 'yes')
+                message_str = HardwareAnswer(hardware_name, role, 'yes')
         else:
             message_str = "Không tìm thấy sản phẩm! thông tin phần cứng"
 
@@ -1012,7 +1012,7 @@ class ActionGuarantee(Action):
         #region try-catch entity
         productName = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = tracker.get_slot('product_name')
@@ -1047,8 +1047,9 @@ class ActionPromotionsAndGift(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         sqlQuery = ""
+        Pname_temp =""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = tracker.get_slot('product_name')
@@ -1084,7 +1085,7 @@ class ActionFindProduct(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             pass
@@ -1093,13 +1094,13 @@ class ActionFindProduct(Action):
                 productName)
             #region try-catch enity
             try:
-                ram = romramAnalysis(
+                ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
                 sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
             except:
                 pass
             try:
-                rom = romramAnalysis(
+                rom = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='rom')))
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
@@ -1117,7 +1118,7 @@ class ActionFindProduct(Action):
                         gia = "Giá: {:,} vnđ".format(item['gia'])
                     else:
                         gia = "Sản phẩm tin đồn"
-                    mess_item = TemplateItems(
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
 
@@ -1144,7 +1145,7 @@ class ActionFindAnotherProduct(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             pass
@@ -1153,13 +1154,13 @@ class ActionFindAnotherProduct(Action):
                 productName)
             #region try-catch entity
             try:
-                ram = romramAnalysis(
+                ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
                 sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
             except:
                 pass
             try:
-                rom = romramAnalysis(
+                rom = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='rom')))
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
@@ -1177,7 +1178,7 @@ class ActionFindAnotherProduct(Action):
                         gia = "Giá: {}".format(item['gia'])
                     else:
                         gia = "Đang cập nhật"
-                    mess_item = TemplateItems(
+                    mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
 
@@ -1265,7 +1266,7 @@ class ActionFollow(Action):
         sqlQuery = ""
         productName = ""
         try:
-            productName = productNameAnalysis(
+            productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             pass 

@@ -2537,14 +2537,14 @@
 - GPU
 
 ## synonym: 0 đ
-- [0d
-- [0đ
+- 0d
+- 0đ
 - od
 - ođ
-- [0 đ
-- [0 d
-- [0 đồng
-- [0 dong
+- 0 đ
+- 0 d
+- 0 đồng
+- 0 dong
 - o dong
 - o đồng
 - không đồng
