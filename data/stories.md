@@ -1,6 +1,8 @@
 ## storie greet
 * greet
   - action_greet
+  - slot{"first_name":"Anh"}
+  - slot{"last_name":"Nguyễn Tuấn"}
 
 ## say goodbye
 * goodbye
@@ -32,19 +34,28 @@
 
 ## storie 12
 * ask_hardware_info
-  - action_test_st
+  - action_hardware_info
+  - slot{"lastest_action":"action_hardware_info"}
+  - slot{"product_name":"oppo reno 3"}
 
 ## storie 13
 * product_price
   - action_product_price
+  - slot{"lastest_action":"action_product_price"}
+  - slot{"product_name":"oppo reno 3"}
 
 ## storie product_price
 * product_price
   - action_product_price
+  - slot{"lastest_action":"action_product_price"}
+  - slot{"product_name":"oppo reno 3"}
+
 
 ## storie online_price
 * online_price
   - action_online_price
+  - slot{"lastest_action":"action_online_price"}
+  - slot{"product_name":"oppo reno 3"}
 
 ## storie old_product_price
 * old_product_price
@@ -55,6 +66,7 @@
 * product_configuration
   - action_product_configuration
   - slot{"latest_action":"action_product_configuration"}
+  - slot{"product_name": "iphone 8"}
 
 ## storie type_of_product
 * type_of_product
@@ -68,6 +80,7 @@
 * check_price
   - action_check_price
   - slot{"latest_action":"action_check_price"}
+  - slot{"product_name":"oppo reno 3"}
 
 ## storie find_product_in_range_price
 * find_product_in_range_price
@@ -177,6 +190,9 @@
 ## storie find_product
 * find_product
   - action_find_product
+  - slot{"lastest_action":"action_find_product"}
+  - slot{"product_name":"oppo reno 3"}
+
 
 ## storie find_another_product
 * find_another_product
@@ -185,16 +201,29 @@
 ## storie 01
 * greet
   - action_greet
+  - slot{"first_name":"Anh"}
+  - slot{"last_name":"Nguyễn Tuấn"}
 * find_product
   - action_find_product
+  - slot{"lastest_action":"action_find_product"}
+  - slot{"product_name":"oppo reno 3"}
+
 * find_another_product
   - action_find_another_product
+  - slot{"lastest_action":"action_find_product"}
+  - slot{"product_name":"oppo reno 3"}
+
 
 ## strie 02
 * greet
   - action_greet
+  - slot{"first_name":"Anh"}
+  - slot{"last_name":"Nguyễn Tuấn"}
 * product_price
   - action_product_price
+  - slot{"lastest_action":"action_product_price"}
+  - slot{"product_name":"oppo reno 3"}
+
 
 
 ## storie get name then number

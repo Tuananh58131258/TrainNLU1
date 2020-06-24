@@ -82,7 +82,9 @@ class ActionTestST(Action):
         except StopIteration:
             pass
         res = "entity value : {}, role: {}".format(des, role)
+        sqlQuery =""
         dispatcher.utter_message(res)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 
@@ -204,7 +206,7 @@ class ActionOnlinePrice(Action):
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
-        print(sqlQuery)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -265,7 +267,7 @@ class ActionOldProduct(Action):
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
-        print(sqlQuery)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -319,7 +321,7 @@ class ActionProductConfiguration(Action):
         else:
             message_str = "Bạn đang hỏi thông tin cấu hình của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
-        print(sqlQuery)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -346,6 +348,7 @@ class ActionTypeOfProduct(Action):
         else:
             dispatcher.utter_message(
                 "Không có danh sách hãng điện thoại để hiển thị!")
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 
@@ -365,7 +368,7 @@ class ActionListProduct(Action):
         except:
             pass
         if product_company:
-            sqlQuery = "Select * from dienthoai where ten like '%{}%' limit 9;".format(
+            sqlQuery = "Select dienthoai.ten,dienthoai.gia from dienthoai,hangdienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and  hangdienthoai.ten like '%{}%' limit 9;".format(
                 product_company)
             data = getData(sqlQuery)
             if data:
@@ -391,6 +394,7 @@ class ActionListProduct(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy hãng điện thoại bạn vừa nhập, vui lòng thử lại")
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 
@@ -445,7 +449,7 @@ class ActionCheckPrice(Action):
             else:
                 message_str = "Bạn đang hỏi hỏi giá của sản phẩm nào ạ?"
             dispatcher.utter_message(message_str)
-            print(sqlQuery)
+            print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
             return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -496,6 +500,7 @@ class ActionFindProductInRangePrice(Action):
                 dispatcher.utter_message(text=text, json_message=message_str)
         else:
             dispatcher.utter_message("Hiện tại chúng tôi không có sản phẩm nào trong mức giá mà bạn đưa ra. Vui lòng thử một mức giá khác.")
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 
@@ -508,6 +513,7 @@ class ActionFindProductLowerPrice(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         price = 0
+        product_company =""
         try:
             price = priceAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='price')))
@@ -518,10 +524,10 @@ class ActionFindProductLowerPrice(Action):
         except:
             pass
         if price != 0:
-            sqlQuery = "select * from dienthoai,hangdienthoai where dienthoai.idhangdienthoai=hangdienthoai.idHangDienThoai and gia <= {}".format(
+            sqlQuery = "select dienthoai.ten,dienthoai.gia,dienthoai.url_img from dienthoai,hangdienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and gia <= {}".format(
                 price)
             if product_company:
-                sqlQuery = sqlQuery + "and hangdienthoai.ten like '%{}%'".format(product_company)
+                sqlQuery = sqlQuery + " and hangdienthoai.ten like '%{}%'".format(product_company)
 
             sqlQuery = sqlQuery + " order by gia asc limit 9"
             data = getData(sqlQuery)
@@ -542,6 +548,7 @@ class ActionFindProductLowerPrice(Action):
                 dispatcher.utter_message("Hiện tại cửa hàng không có sản phẩm nào dưới {:,} vnđ bạn vui lòng thử lại với mức giá khác. Xin cảm ơn".format(price))
         else:
             dispatcher.utter_message("Mức giá bạn đưa ra không có, vui lòng thử lại!")
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 
@@ -565,10 +572,10 @@ class ActionFindProductUpperPrice(Action):
         except:
             pass
         if price != 0:
-            sqlQuery = "select * from dienthoai,hangdienthoai where dienthoai.idhangdienthoai=hangdienthoai.idHangDienThoai and gia >= {}".format(
+            sqlQuery = "select dienthoai.ten,dienthoai.gia,dienthoai.url_img from dienthoai,hangdienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and gia >= {} ".format(
                 price)
             if product_company:
-                sqlQuery = sqlQuery + "and hangdienthoai.ten like '%{}%'".format(product_company)
+                sqlQuery = sqlQuery + "and hangdienthoai.ten like '%{}%' ".format(product_company)
 
             sqlQuery = sqlQuery + " order by gia asc limit 9"
             data = getData(sqlQuery)
@@ -589,7 +596,7 @@ class ActionFindProductUpperPrice(Action):
                 dispatcher.utter_message("Hiện tại cửa hàng không có sản phẩm nào dưới {:,} vnđ bạn vui lòng thử lại với mức giá khác. Xin cảm ơn".format(price))
         else:
             dispatcher.utter_message("Mức giá bạn đưa ra không chính xác, vui lòng thử lại.")
-        print(sqlQuery)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 
@@ -615,12 +622,12 @@ class ActionFindProductAroundPrice(Action):
         if price != 0:
             p1 = price - 300000
             p2 = price + 700000
-            sqlQuery = "select * from dienthoai,hangdienthoai where gia between {} and {} order by gia asc limit 9".format(
+            sqlQuery = "select dienthoai.ten,dienthoai.gia,dienthoai.url_img from dienthoai,hangdienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and gia between {} and {}".format(
                 p1, p2)
             if product_company:
-                sqlQuery = sqlQuery + "and hangdienthoai.ten like '%{}%'".format(product_company)
+                sqlQuery = sqlQuery + " and hangdienthoai.ten like '%{}%'".format(product_company)
 
-            sqlQuery = sqlQuery + "order by gia asc limit 9"
+            sqlQuery = sqlQuery + " order by gia asc limit 9"
             data = getData(sqlQuery)
             if data:
                 list_item = []
@@ -640,7 +647,7 @@ class ActionFindProductAroundPrice(Action):
                 dispatcher.utter_message(json_message=message_str)
             else:
                 dispatcher.utter_message("Thông tin bạn yêu cầu chưa chính xác, vui lòng kiểm tra lại!")
-        print(sqlQuery)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 
@@ -671,6 +678,7 @@ class ActionScreenInfo(Action):
             Pname_temp = ""
             message_str = "Bạn đang hỏi thông tin màn hình của sản phẩm nào vậy ạ?"
         dispatcher.utter_message(message_str)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -707,7 +715,7 @@ class ActionPinInfo(Action):
                 return
         else:
             message_str = "Bạn đang hỏi thông tin về pin của sản phẩm nào ạ?"
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         dispatcher.utter_message(message_str)
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -743,7 +751,7 @@ class ActionBuyOldProduct(Action):
                 message_str = "Hiện cửa hàng không cung cấp dịch vụ cho sản phẩm {} nữa ạ. Mong bạn thông cảm.".format(productName)    
         else:
             message_str = "Bạn đang hỏi thông tin thu mua cũ cho sản phẩm nào ạ?"
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         dispatcher.utter_message(message_str)
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -822,7 +830,7 @@ class ActionHowManyPerMonth(Action):
                         prepay, tgian_tragop, tienthang)
         else:
             message_str = 'Bạn đang hỏi thông tin số tiền góp hàng tháng cho sản phẩm nào ạ!'
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         dispatcher.utter_message(message_str)
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -835,8 +843,9 @@ class ActionCaseHowManyPerMonth(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        sqlQuery =""
         dispatcher.utter_message("this is test")
-        SlotSet('latest_action',self.name())
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 
@@ -875,7 +884,7 @@ class ActionIsProductCanBuyOnInstallment(Action):
         else:
             message_str ='Bạn đang hỏi thông tin trả góp của sản phẩm nào ạ?'
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -887,10 +896,12 @@ class ActionHarwareInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        productName = ""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
+            tracker.get_slot('product_name')
             pass
         try:
             hardware_name = next(tracker.get_latest_entity_values(
@@ -923,7 +934,7 @@ class ActionHarwareInfo(Action):
             message_str = "Không tìm thấy sản phẩm! thông tin phần cứng"
 
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         # return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]\
         return
 
@@ -939,7 +950,7 @@ class ActionMainCamera(Action):
         sqlQuery = ""
         Pname_temp = ""
         dispatcher.utter_message('thông tin camera sau')
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -954,7 +965,7 @@ class ActionSelfieCamera(Action):
         sqlQuery = ""
         Pname_temp = ""
         dispatcher.utter_message('thông tin camera sau')
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -969,7 +980,7 @@ class ActionResolutionCamera(Action):
         sqlQuery = ""
         Pname_temp = ""
         dispatcher.utter_message('thông tin camera sau')
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -982,6 +993,7 @@ class ActionGuarantee(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         #region try-catch entity
+        productName = ""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -997,7 +1009,7 @@ class ActionGuarantee(Action):
         else:
             message_str = "không có bảo hành"
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -1029,7 +1041,7 @@ class ActionPromotionsAndGift(Action):
         else:
             message_str = "Bản đang hỏi thông tin khuyến mãi của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -1089,7 +1101,7 @@ class ActionFindProduct(Action):
         else:
             dispatcher.utter_message(
                 "Bạn đang tìm kiếm sản phẩm nào ạ?")
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',productName)]
 
 
@@ -1150,7 +1162,7 @@ class ActionFindAnotherProduct(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau")
-        print("--------------\n{}\n{}\n-----------".format(self.name(),sqlQuery))
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',productName)]
 
 
@@ -1182,7 +1194,8 @@ class ActionGetCustName(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message("this is test")
-
+        sqlQuery=""
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 class ActionGetPhoneNum(Action):
@@ -1194,7 +1207,8 @@ class ActionGetPhoneNum(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message("this is test")
-
+        sqlQuery = ""
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 class ActionGetContact(Action):
@@ -1206,7 +1220,8 @@ class ActionGetContact(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message("this is test")
-
+        sqlQuery = ""
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
 class ActionFollow(Action):
@@ -1218,12 +1233,14 @@ class ActionFollow(Action):
             tracker: DialogueStateTracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         previus_action = tracker.get_slot('latest_action')
+        sqlQuery = ""
         productName = ""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             pass 
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         if productName:
             sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
             data = getData(sqlQuery)

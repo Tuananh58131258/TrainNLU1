@@ -9,8 +9,8 @@
 - chào bạn nha
 - chào bot
 - hello
-- xin chào 
-- hôm nay bạn thế nào 
+- xin chào
+- hôm nay bạn thế nào
 - hey
 - chào bạn
 - alo alo
@@ -692,6 +692,36 @@
 
 ## intent: product_configuration
 <!-- hỏi cấu hình sản phẩm -->
+- Cấu hình của [Realme Narzo 10](product_name) [8GB](ram) [8GB](rom) như thế nào
+- Cấu hình của [OPPO A92](product_name) [64GB](rom) như thế nào
+- Cấu hình của [realme narzo 10](product_name) [2GB](ram) [256gb](rom) như thế nào
+- Cấu hình của [OPPO A52](product_name) [32 mb](ram) như thế nào
+- Cấu hình của [Xiaomi Black Shark 3](product_name) [8 mb](ram) [16gb](rom) như thế nào
+- Cấu hình của [Nokia 110 DS](product_name) [4gb](ram) [128gb](rom) như thế nào
+- Cấu hình của [Masstel Max R1](product_name) [3gb](ram) như thế nào
+- Cấu hình của [OPPO Find X2 Neo](product_name) [2GB](ram) như thế nào
+- Cấu hình của [Realme XT](product_name) [512 GB](rom) như thế nào
+- Cấu hình của [Huawei P40 Lite 5G](product_name) [4GB](ram) như thế nào
+- Cấu hình của [ss a51](product_name) [32GB](rom) như thế nào
+- Cấu hình của [Nokia 230](product_name) [16GB](rom) như thế nào
+- Cấu hình của [Xiaomi Black Shark 3](product_name) [6gb](ram) [64 GB](rom) như thế nào
+- Cấu hình của [realme x2 pro](product_name) [512gb](rom) như thế nào
+- Cấu hình của [Masstel Fami P25](product_name) [1 GB](ram) như thế nào
+- Cấu hình của [Nokia 5.3](product_name) [8mb](ram) [128 GB](rom) như thế nào
+- Cấu hình của [Realme 6 Pro](product_name) [512 GB](rom) như thế nào
+- Cấu hình của [Oppo Reno3 Pro](product_name) [8 mb](ram) [16GB](rom) như thế nào
+- Cấu hình của [Xiaomi Redmi 8A](product_name) [512mb](ram) như thế nào
+- Cấu hình của [Oppo A31](product_name) [1gb](ram) [64GB](rom) như thế nào
+- Cấu hình của [ss 10 plus](product_name) [6GB](ram) [64GB](rom) như thế nào
+- Cấu hình của [Masstel iZi 206](product_name) [2GB](ram) như thế nào
+- Cấu hình của [Xiaomi Mi CC9 Pro](product_name) [16 GB](rom) như thế nào
+- Cấu hình của [Xiaomi Redmi K30 5G Tracing](product_name) [4MB](ram) [512gb](rom) như thế nào
+- Cấu hình của [iPhone 7](product_name) [3GB](ram) như thế nào
+- Cấu hình của [Huawei P30 Lite](product_name) [512gb](rom) như thế nào
+- Cấu hình của [OPPO A52](product_name) [32MB](ram) [64gb](rom) như thế nào
+- Cấu hình của [ss fold](product_name) [8gb](ram) [512GB](rom) như thế nào
+- Cấu hình của [Samsung Galaxy A30](product_name) [8 MB](ram) như thế nào
+- Cấu hình của [Huawei Y6p](product_name) [16gb](rom) như thế nào
 - cấu hình [Realme X50 5G](product_name) như thế nào
 - [Realme C3i](product_name) có mạnh không
 - thông tin của [OPPO F15](product_name) có mạnh không
@@ -704,13 +734,14 @@
 - cấu hình của [OPPO F15](product_name) có ổn không
 - cấu hình của [Oppo Find X2 Pro](product_name) như thế nào
 - cho hỏi cấu hình của [OPPO F15](product_name) ra sao
-- [Realme C3i](product_name) 
-- cho hỏi cấu hình của [OPPO A5s](product_name) 
+- cho hỏi cấu hình của [OPPO A5s](product_name)
 - cho hỏi cấu hình của [OPPO A11](product_name) có ổn không
 - [Realme C2](product_name) ra sao
 - thông tin của [OPPO A1k](product_name) ra sao
 - cho hỏi cấu hình của [OPPO A91](product_name) có ổn không
 - cấu hình của [Realme 6](product_name) có ổn không
+- Cấu hình của [iPhone 7](product_name) [32GB](rom) như thế nào
+- Cấu hình của [iPhone 6s Plus](product_name) [32GB](rom) như thế nào
 
 ## intent: type_of_product
 <!-- hỏi có những hãng điện thoại nào -->
@@ -742,6 +773,36 @@
 
 ## intent: order
 <!-- đặt mua sản phẩm -->
+- đặt mua [Oppo Reno3 Pro](product_name) [8 GB](ram) [32 gb](rom)
+- đặt mua [ss a01](product_name) [256gb](rom)
+- đặt mua [Xiaomi Mi 10 S](product_name) [2 GB](ram)
+- đặt mua [iPhone 7](product_name) [2 GB](ram)
+- đặt mua [Huawei P40 Lite E](product_name) [12 GB](ram)
+- đặt mua [Samsung Galaxy S20 plus](product_name) [4 mb](ram)
+- đặt mua [Samsung Galaxy A70](product_name) [12gb](ram) [16 gb](rom)
+- đặt mua [OPPO F15](product_name) [12GB](ram)
+- đặt mua [OPPO A1k](product_name) [6 GB](ram)
+- đặt mua [Realme C3](product_name) [256 gb](rom)
+- đặt mua [Huawei P40 Lite 5G](product_name) [256GB](rom)
+- đặt mua [Masstel Fami P25](product_name) [8MB](ram) [8gb](rom)
+- đặt mua [Vsmart Active 3](product_name) [2gb](ram)
+- đặt mua [Xiaomi Mi Note 10](product_name) [8 gb](ram)
+- đặt mua [Nokia 125](product_name) [64gb](rom)
+- đặt mua [Realme XT](product_name) [1 gb](ram)
+- đặt mua [ss a20s](product_name) [32MB](ram)
+- đặt mua [Huawei Mate 30](product_name) [3gb](ram)
+- đặt mua [Nokia 9.3 PureView](product_name) [1 gb](ram)
+- đặt mua [OPPO Reno 3 Vitality](product_name) [512 gb](rom)
+- đặt mua [Samsung Galaxy A31](product_name) [3GB](ram)
+- đặt mua [ss m31](product_name) [16 GB](rom)
+- đặt mua [ss a21s](product_name) [512 MB](ram) [512 gb](rom)
+- đặt mua [Realme 6i](product_name) [1 gb](ram) [8GB](rom)
+- đặt mua [Samsung Galaxy A60](product_name) [64GB](rom)
+- đặt mua [Samsung Galaxy M51](product_name) [6 GB](ram) [8GB](rom)
+- đặt mua [ss 10 lite](product_name) [2gb](ram)
+- đặt mua [Huawei Mate 30 Pro 5G](product_name) [32MB](ram)
+- đặt mua [iPhone XR](product_name) [32 gb](rom)
+- đặt mua [Vivo X50 Lite](product_name) [512mb](ram)
 - Đặt mua [Huawei P30 Lite New Edition](product_name)
 - Đặt mua [OPPO F15](product_name)
 - Đặt mua [iPhone 11 Pro](product_name)
@@ -1007,15 +1068,15 @@
 ## intent: find_product_lower_price
 <!-- tìm sản phẩm dưới 1 mức giá -->
 - có [Vsmart](product_company) nào dưới [9,1 triệu](price) không
-- có điện thoại [ip](product_company) nào giá dưới [6.5 triệu](price) không    
+- có điện thoại [ip](product_company) nào giá dưới [6.5 triệu](price) không
 - có [Iphone](product_company) nào dưới [8 m 7](price) không
 - có [ip](product_company) nào giá dưới [bảy triệu tám](price) không
-- có điện thoại [Nokia](product_company) nào giá dưới [7,2 triệu](price) không 
+- có điện thoại [Nokia](product_company) nào giá dưới [7,2 triệu](price) không
 - có [Realme](product_company) nào dưới [3.7 triệu](price) không
 - có cái [Realme](product_company) nào dưới [7.2 triệu](price) không
 - có điện thoại [Vsmart](product_company) nào dưới [hai triệu tám](price) không
 - có cái [Iphone](product_company) nào dưới [3.6 triệu](price) không
-- có điện thoại [Xiaomi](product_company) nào dưới [ba triệu sáu](price) không 
+- có điện thoại [Xiaomi](product_company) nào dưới [ba triệu sáu](price) không
 - có [Oppo](product_company) nào dưới [6 m 1](price) không
 - có [Masstel](product_company) nào dưới [1.8 triệu](price) không
 - có cái [Vsmart](product_company) nào dưới [5,5 triệu](price) không
@@ -2242,8 +2303,8 @@
 
 ## intent: contact
 - họ và tên: [Nguyễn Thị Ngọc Quyên](customer_name) sdt: [0998995984](phone_num)
-- tên: [Nguyễn Phương Thảo](customer_name) điện thoại: [0925349406](phone_num) 
-- họ và tên: [Nguyễn Thảo Nguyên](customer_name) đt: [0569527097](phone_num)   
+- tên: [Nguyễn Phương Thảo](customer_name) điện thoại: [0925349406](phone_num)
+- họ và tên: [Nguyễn Thảo Nguyên](customer_name) đt: [0569527097](phone_num)
 - tên: [Phạm Hiền Thương](customer_name) số điện thoại: [0583337871](phone_num)
 - tên: [Quách Thanh Bình](customer_name) số điện thoại: [0588979599](phone_num)
 - tên: [Ân Nhuệ Giang](customer_name) sdt: [0594890758](phone_num)
@@ -2446,9 +2507,9 @@
 - [Vivo Nex 3](product_name) ạ
 - [Vivo Nex 3](product_name)
 - của [ss a41](product_name)
-- [ss a10s](product_name)        
-- [realme 6 pro](product_name)   
-- [Vsmart Joy 3](product_name)   
+- [ss a10s](product_name)
+- [realme 6 pro](product_name)
+- [Vsmart Joy 3](product_name)
 - [Huawei P30 Lite](product_name)
 - [Realme 3](product_name)
 - [iPhone 7 Plus](product_name)
