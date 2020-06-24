@@ -111,7 +111,7 @@
   - slot{"product_name":"iphone xs max"}
 
 ## storie buy_old_product
-* buy_olf_product
+* buy_old_product
   - action_buy_old_product
   - slot{"latest_action":"action_buy_old_product"}
   - slot{"product_name":"iphone xs max"}
@@ -156,6 +156,7 @@
   - action_resolution_camrea
   - slot{"latest_action":"action_resolution_camrea"}
   - slot{"product_name":"iphone xs max"}
+  - slot{"loai_camera":"camera sau"}
 
 ## storie Guarantee 1
 * guarantee{"product_name":"iphone 8"}
@@ -193,6 +194,11 @@
   - slot{"latest_action":"action_find_product"}
   - slot{"product_name":"oppo reno 3"}
 
+## storie take photo erase background
+* take_photo_erase_background
+  - action_take_photo_erase_background
+  - slot{"latest_action":"action_take_photo_erase_background"}
+  - slot{"product_name":"oppo reno 3"}
 
 ## storie find_another_product
 * find_another_product

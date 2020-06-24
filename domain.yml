@@ -11,6 +11,8 @@ slots:
     type: text
   latest_action:
     type: text
+  loai_camera:
+    type: text
 
 entities:
   - product_company
@@ -21,6 +23,7 @@ entities:
   - installment_payment_period
   - rom
   - ram
+  - camera
   - hardware
   - option
   - customer_name
@@ -69,7 +72,7 @@ intents:
   #  thông tin màn hình
   - pin_info
   #  thông tin về pin
-  - buy_olf_product
+  - buy_old_product
   #  có thu mua lại sản phẩm cũ không
   - what_license
   #  mua trả góp cần giấy tờ gì 
@@ -107,6 +110,8 @@ intents:
   #  từ cấm
   - can_play_game
   # điện thoại có thể chơi game được không
+  - take_photo_erase_background
+  # điện thoại có chụp xóa phông được không
   - full_name
   # họ tên khách hàng
   - phone_number
@@ -252,6 +257,9 @@ actions:
 
   - action_selfie_camera
   # action thông tin camera trước
+
+  - action_take_photo_erase_background
+  # action điện thoại chụp ảnh xóa phông
 
   - action_resolution_camrea
   # action thông tin độ phân giải của cả camera trước và sau

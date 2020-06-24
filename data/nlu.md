@@ -37,7 +37,7 @@
 - em có thể làm những gì nhỉ
 - em có chức năng gì?
 - em giúp gì được anh không?
-- bạn có thể  làm gì?
+- bạn có thể làm gì?
 - em có thể giúp gì cho anh?
 - bạn biết hát không ?
 - bạn biết xem lịch học ah?
@@ -964,19 +964,35 @@
 
 ## intent:find_product_in_range_price
 <!-- tìm sản phẩm trong một khoảng giá -->
-- có [Realme](product_company) trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"} 
+- khoảng [6 m 7]{"entity":"price","role":"from_price"}  [1,8 triệu]{"entity":"price","role":"to_price"}
+- khoảng [2.6 triệu]{"entity":"price","role":"from_price"}  [ba triệu tám]{"entity":"price","role":"to_price"}
+- khoảng [9 m 2]{"entity":"price","role":"from_price"}  [bảy triệu sáu]{"entity":"price","role":"to_price"}
+- khoảng [bảy triệu sáu]{"entity":"price","role":"from_price"}  [9,7 triệu]{"entity":"price","role":"to_price"}
+- khoảng [5,1 triệu]{"entity":"price","role":"from_price"} đến [7.4 triệu]{"entity":"price","role":"to_price"}
+- khoảng [5,6 triệu]{"entity":"price","role":"from_price"} đến [6.2 triệu]{"entity":"price","role":"to_price"}
+- khoảng [năm triệu sáu]{"entity":"price","role":"from_price"} đến [7 m 2]{"entity":"price","role":"to_price"}
+- khoảng [6 triệu]{"entity":"price","role":"from_price"} đến [hâm tám triệu]{"entity":"price","role":"to_price"}
+- chừng [mười lăm triệu]{"entity":"price","role":"from_price"} đến [tám triệu mốt]{"entity":"price","role":"to_price"}
+- chừng [2 m 7]{"entity":"price","role":"from_price"} đến [tám triệu rưởi]{"entity":"price","role":"to_price"}
+- chừng [2.9 triệu]{"entity":"price","role":"from_price"} đến [ba triệu]{"entity":"price","role":"to_price"}
+- chừng [một triệu bốn]{"entity":"price","role":"from_price"} đến [bảy triệu sáu]{"entity":"price","role":"to_price"}
+- tầm [7 m 7]{"entity":"price","role":"from_price"} - [9.2 triệu]{"entity":"price","role":"to_price"} gì đó
+- tầm [một triệu sáu]{"entity":"price","role":"from_price"} - [5.4 triệu]{"entity":"price","role":"to_price"} gì đó
+- tầm [6.6 triệu]{"entity":"price","role":"from_price"} - [một triệu]{"entity":"price","role":"to_price"} gì đó
+- tầm [một triệu rưởi]{"entity":"price","role":"from_price"} - [ba triệu mốt]{"entity":"price","role":"to_price"} gì đó 
+- có [Realme](product_company) trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"}
 - có [Vsmart](product_company) trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có [Itel](product_company) trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có điện thoại [ip](product_company) trong khoảng [hai triệu tám]{"entity":"price","role":"from_price"} đến [6 m 1]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - tôi muốn một chiếc [Energizer](product_company) trong khoảng [sáu triệu rưởi]{"entity":"price","role":"from_price"} đến [sáu triệu hai]{"entity":"price","role":"to_price"} không ạ
 - có điện thoại [ip](product_company) trong khoảng [tám triệu]{"entity":"price","role":"from_price"} đến [7 m 9]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có [Itel](product_company) trong khoảng [ba triệu rưởi]{"entity":"price","role":"from_price"} đến [4 m 3]{"entity":"price","role":"to_price"}   
-- có [ss](product_company) trong khoảng [1 m 4]{"entity":"price","role":"from_price"} đến [6 m 2]{"entity":"price","role":"to_price"} không ạ     
+- có [Itel](product_company) trong khoảng [ba triệu rưởi]{"entity":"price","role":"from_price"} đến [4 m 3]{"entity":"price","role":"to_price"}
+- có [ss](product_company) trong khoảng [1 m 4]{"entity":"price","role":"from_price"} đến [6 m 2]{"entity":"price","role":"to_price"} không ạ
 - có [Vsmart](product_company) trong khoảng [năm triệu ba]{"entity":"price","role":"from_price"} đến [bảy triệu bảy]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - có [Vivo](product_company) trong khoảng [8 m 9]{"entity":"price","role":"from_price"} đến [hai triệu tám]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - có [Itel](product_company) trong khoảng [6 m 9]{"entity":"price","role":"from_price"} đến [8 m 9]{"entity":"price","role":"to_price"}
 - có [ss](product_company) trong khoảng [4 triệu]{"entity":"price","role":"from_price"} đến [sáu triệu rưởi]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có [Vivo](product_company) trong khoảng [chín triệu ba]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"}   
+- có [Vivo](product_company) trong khoảng [chín triệu ba]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"}
 - có điện thoại [Xiaomi](product_company) trong khoảng [4 m 5]{"entity":"price","role":"from_price"} đến [4,6 triệu]{"entity":"price","role":"to_price"} không ạ
 - tôi muốn một chiếc [ip](product_company) trong khoảng [9 m 5]{"entity":"price","role":"from_price"} đến [5 m 1]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có điện thoại [Realme](product_company) trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [8 triệu 8]{"entity":"price","role":"to_price"} không ạ
@@ -985,28 +1001,28 @@
 - có [Xiaomi](product_company) trong tầm giá từ [2,1 triệu]{"entity":"price","role":"from_price"} đến [9,4 triệu]{"entity":"price","role":"to_price"}
 - có [Iphone](product_company) trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [1,4 triệu]{"entity":"price","role":"to_price"} không ạ
 - có điện thoại [Sanmsung](product_company) trong khoảng [5 m 6]{"entity":"price","role":"from_price"} đến [năm triệu mốt]{"entity":"price","role":"to_price"}
-- có điện thoại nào trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"} 
+- có điện thoại nào trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"}
 - có điện thoại nào trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - tôi muốn một chiếc điện thoại trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - tôi muốn một chiếc điện thoại trong khoảng [hai triệu tám]{"entity":"price","role":"from_price"} đến [6 m 1]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - tôi muốn một chiếc điện thoại trong khoảng [sáu triệu rưởi]{"entity":"price","role":"from_price"} đến [sáu triệu hai]{"entity":"price","role":"to_price"} không ạ
 - tôi muốn một chiếc điện thoại trong khoảng [tám triệu]{"entity":"price","role":"from_price"} đến [7 m 9]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [ba triệu rưởi]{"entity":"price","role":"from_price"} đến [4 m 3]{"entity":"price","role":"to_price"} 
+- có điện thoại nào trong khoảng [ba triệu rưởi]{"entity":"price","role":"from_price"} đến [4 m 3]{"entity":"price","role":"to_price"}
 - tôi muốn một chiếc điện thoại trong khoảng [1 m 4]{"entity":"price","role":"from_price"} đến [6 m 2]{"entity":"price","role":"to_price"} không ạ
 - có điện thoại nào trong khoảng [năm triệu ba]{"entity":"price","role":"from_price"} đến [bảy triệu bảy]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - có điện thoại nào trong khoảng [8 m 9]{"entity":"price","role":"from_price"} đến [hai triệu tám]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [6 m 9]{"entity":"price","role":"from_price"} đến [8 m 9]{"entity":"price","role":"to_price"} 
+- có điện thoại nào trong khoảng [6 m 9]{"entity":"price","role":"from_price"} đến [8 m 9]{"entity":"price","role":"to_price"}
 - có điện thoại nào trong khoảng [4 triệu]{"entity":"price","role":"from_price"} đến [sáu triệu rưởi]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [chín triệu ba]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"} 
+- có điện thoại nào trong khoảng [chín triệu ba]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"}
 - tôi muốn một chiếc điện thoại trong khoảng [4 m 5]{"entity":"price","role":"from_price"} đến [4,6 triệu]{"entity":"price","role":"to_price"} không ạ
 - có điện thoại nào trong khoảng [9 m 5]{"entity":"price","role":"from_price"} đến [5 m 1]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có điện thoại nào trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [8 triệu 8]{"entity":"price","role":"to_price"} không ạ
 - có điện thoại nào trong khoảng [2,2 triệu]{"entity":"price","role":"from_price"} đến [3 m 5]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có điện thoại nào trong tầm giá từ [1 m 8]{"entity":"price","role":"from_price"} đến [chín triệu năm]{"entity":"price","role":"to_price"} không ạ
-- có điện thoại nào trong tầm giá từ [2,1 triệu]{"entity":"price","role":"from_price"} đến [9,4 triệu]{"entity":"price","role":"to_price"} 
+- có điện thoại nào trong tầm giá từ [2,1 triệu]{"entity":"price","role":"from_price"} đến [9,4 triệu]{"entity":"price","role":"to_price"}
 - tôi muốn một chiếc điện thoại trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [1,4 triệu]{"entity":"price","role":"to_price"} không ạ
-- tôi muốn một chiếc điện thoại trong khoảng [5 m 6]{"entity":"price","role":"from_price"} đến [năm triệu mốt]{"entity":"price","role":"to_price"} 
-- có sản phẩm nào trong khoảng [năm triệu hai]{"entity":"price","role":"from_price"} đến [tám triệu rưởi]{"entity":"price","role":"to_price"} 
+- tôi muốn một chiếc điện thoại trong khoảng [5 m 6]{"entity":"price","role":"from_price"} đến [năm triệu mốt]{"entity":"price","role":"to_price"}
+- có sản phẩm nào trong khoảng [năm triệu hai]{"entity":"price","role":"from_price"} đến [tám triệu rưởi]{"entity":"price","role":"to_price"}
 - có điện thoại nào trong khoảng [bốn triệu tám]{"entity":"price","role":"from_price"} đến [tám triệu mốt]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có sản phẩm nào trong khoảng [mười sáu triệu]{"entity":"price","role":"from_price"} đến [1 m 8]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - có sản phẩm nào trong khoảng [3 triệu rưởi]{"entity":"price","role":"from_price"} đến [9 m 6]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
@@ -1016,19 +1032,19 @@
 - có điện thoại nào trong tầm giá từ [2,8 triệu]{"entity":"price","role":"from_price"} đến [năm triệu chín]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có điện thoại nào trong khoảng [hai triệu chín]{"entity":"price","role":"from_price"} đến [2 m 1]{"entity":"price","role":"to_price"} tư vấn giúp em
 - tôi muốn một chiếc điện thoại trong khoảng [4,3 triệu]{"entity":"price","role":"from_price"} đến [1 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
-- tôi muốn một chiếc điện thoại trong khoảng [6,2 triệu]{"entity":"price","role":"from_price"} đến [9,7 triệu]{"entity":"price","role":"to_price"} 
+- tôi muốn một chiếc điện thoại trong khoảng [6,2 triệu]{"entity":"price","role":"from_price"} đến [9,7 triệu]{"entity":"price","role":"to_price"}
 - có điện thoại nào trong tầm giá từ [3,8 triệu]{"entity":"price","role":"from_price"} đến [sáu triệu hai]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - có điện thoại nào trong khoảng [2 m 8]{"entity":"price","role":"from_price"} đến [2,9 triệu]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - có điện thoại nào trong tầm giá từ [ba triệu bảy]{"entity":"price","role":"from_price"} đến [hai mươi tám triệu]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - tôi muốn một chiếc điện thoại trong khoảng [2 triệu]{"entity":"price","role":"from_price"} đến [hai triệu tám]{"entity":"price","role":"to_price"} không ạ
-- tôi muốn một chiếc điện thoại trong khoảng [sáu triệu rưởi]{"entity":"price","role":"from_price"} đến [ba triệu]{"entity":"price","role":"to_price"} 
+- tôi muốn một chiếc điện thoại trong khoảng [sáu triệu rưởi]{"entity":"price","role":"from_price"} đến [ba triệu]{"entity":"price","role":"to_price"}
 - có điện thoại nào trong khoảng [bốn triệu sáu]{"entity":"price","role":"from_price"} đến [1,2 triệu]{"entity":"price","role":"to_price"} không ạ
-- có sản phẩm nào trong khoảng [3 m 8]{"entity":"price","role":"from_price"} đến [7,4 triệu]{"entity":"price","role":"to_price"} 
-- có điện thoại nào trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [1,9 triệu]{"entity":"price","role":"to_price"} 
+- có sản phẩm nào trong khoảng [3 m 8]{"entity":"price","role":"from_price"} đến [7,4 triệu]{"entity":"price","role":"to_price"}
+- có điện thoại nào trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [1,9 triệu]{"entity":"price","role":"to_price"}
 - tôi muốn một chiếc điện thoại trong khoảng [8,5 triệu]{"entity":"price","role":"from_price"} đến [8 triệu rưởi]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có điện thoại nào trong khoảng [9 m 5]{"entity":"price","role":"from_price"} đến [4,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có sản phẩm nào trong khoảng [7 m 8]{"entity":"price","role":"from_price"} đến [sáu triệu năm]{"entity":"price","role":"to_price"} 
-- tôi muốn một chiếc điện thoại trong khoảng [5,3 triệu]{"entity":"price","role":"from_price"} đến [một triệu mốt]{"entity":"price","role":"to_price"} 
+- có sản phẩm nào trong khoảng [7 m 8]{"entity":"price","role":"from_price"} đến [sáu triệu năm]{"entity":"price","role":"to_price"}
+- tôi muốn một chiếc điện thoại trong khoảng [5,3 triệu]{"entity":"price","role":"from_price"} đến [một triệu mốt]{"entity":"price","role":"to_price"}
 - tôi muốn một chiếc điện thoại trong khoảng [5 triệu rưởi]{"entity":"price","role":"from_price"} đến [3,3 triệu]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - có điện thoại nào trong khoảng [sáu triệu]{"entity":"price","role":"from_price"} đến [3 m 8]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
 - có sản phẩm nào trong khoảng [7 m 5]{"entity":"price","role":"from_price"} đến [9 m 4]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
@@ -1039,29 +1055,29 @@
 - [8 m 6]{"entity": "price", "role": "from_price"} [1,7 triệu]{"entity": "price", "role": "to_price"} gì thôi
 - [2.7 triệu]{"entity": "price", "role": "from_price"} [9.6 triệu]{"entity": "price", "role": "to_price"} gì đó
 - [4,6 triệu]{"entity": "price", "role": "from_price"} [9 m 2]{"entity": "price", "role": "to_price"} gì đó
-- [năm triệu chín]{"entity": "price", "role": "from_price"} [mười ba triệu]{"entity": "price", "role": "to_price"} thôi  
-- [4 m 2]{"entity": "price", "role": "from_price"} [mười chín triệu]{"entity": "price", "role": "to_price"} gì thôi      
-- [hai mươi ba triệu]{"entity": "price", "role": "from_price"} [2.3 triệu]{"entity": "price", "role": "to_price"} gì thôi  
+- [năm triệu chín]{"entity": "price", "role": "from_price"} [mười ba triệu]{"entity": "price", "role": "to_price"} thôi
+- [4 m 2]{"entity": "price", "role": "from_price"} [mười chín triệu]{"entity": "price", "role": "to_price"} gì thôi
+- [hai mươi ba triệu]{"entity": "price", "role": "from_price"} [2.3 triệu]{"entity": "price", "role": "to_price"} gì thôi
 - [sáu triệu năm]{"entity": "price", "role": "from_price"} [2,5 triệu]{"entity": "price", "role": "to_price"} thôi
 - [5 triệu]{"entity": "price", "role": "from_price"} [2,8 triệu]{"entity": "price", "role": "to_price"} gì đó
 - [9 m 4]{"entity": "price", "role": "from_price"} [9,8 triệu]{"entity": "price", "role": "to_price"} gì đó
 - [5 m 5]{"entity": "price", "role": "from_price"} [tám triệu hai]{"entity": "price", "role": "to_price"} thôi
 - [9 m 6]{"entity": "price", "role": "from_price"} [6,7 triệu]{"entity": "price", "role": "to_price"} thôi
 - [bảy triệu rưởi]{"entity": "price", "role": "from_price"} [4 m 7]{"entity": "price", "role": "to_price"} gì thôi
-- [sáu triệu chín]{"entity": "price", "role": "from_price"} [sáu triệu năm]{"entity": "price", "role": "to_price"} gì thôi 
+- [sáu triệu chín]{"entity": "price", "role": "from_price"} [sáu triệu năm]{"entity": "price", "role": "to_price"} gì thôi
 - [3 triệu 3]{"entity": "price", "role": "from_price"} [4,9 triệu]{"entity": "price", "role": "to_price"} gì thôi
 - [1 m 3]{"entity": "price", "role": "from_price"} hay [9 m 3]{"entity": "price", "role": "to_price"} gì thôi
-- [6,3 triệu]{"entity": "price", "role": "from_price"} hay [5,8 triệu]{"entity": "price", "role": "to_price"} gì đó      
-- [3,8 triệu]{"entity": "price", "role": "from_price"} hay [sáu triệu bảy]{"entity": "price", "role": "to_price"} thôi   
-- [3,3 triệu]{"entity": "price", "role": "from_price"} hay [4.1 triệu]{"entity": "price", "role": "to_price"} gì đó      
+- [6,3 triệu]{"entity": "price", "role": "from_price"} hay [5,8 triệu]{"entity": "price", "role": "to_price"} gì đó
+- [3,8 triệu]{"entity": "price", "role": "from_price"} hay [sáu triệu bảy]{"entity": "price", "role": "to_price"} thôi
+- [3,3 triệu]{"entity": "price", "role": "from_price"} hay [4.1 triệu]{"entity": "price", "role": "to_price"} gì đó
 - [sáu triệu]{"entity": "price", "role": "from_price"} hay [sáu triệu bảy]{"entity": "price", "role": "to_price"} gì thôi
-- [5,6 triệu]{"entity": "price", "role": "from_price"} hay [hai triệu tám]{"entity": "price", "role": "to_price"} thôi     
+- [5,6 triệu]{"entity": "price", "role": "from_price"} hay [hai triệu tám]{"entity": "price", "role": "to_price"} thôi
 - [2.8 triệu]{"entity": "price", "role": "from_price"} hay [8 m 3]{"entity": "price", "role": "to_price"} gì thôi
 - [1 m 4]{"entity": "price", "role": "from_price"} hay [3 m 4]{"entity": "price", "role": "to_price"} gì đó
-- [ba triệu sáu]{"entity": "price", "role": "from_price"} hay [7.8 triệu]{"entity": "price", "role": "to_price"} gì đó     
+- [ba triệu sáu]{"entity": "price", "role": "from_price"} hay [7.8 triệu]{"entity": "price", "role": "to_price"} gì đó
 - [8.2 triệu]{"entity": "price", "role": "from_price"} hay [8,2 triệu]{"entity": "price", "role": "to_price"} thôi
-- [7,7 triệu]{"entity": "price", "role": "from_price"} hay [8.5 triệu]{"entity": "price", "role": "to_price"} gì thôi      
-- [3.9 triệu]{"entity": "price", "role": "from_price"} hay [chín triệu bảy]{"entity": "price", "role": "to_price"} gì đó   
+- [7,7 triệu]{"entity": "price", "role": "from_price"} hay [8.5 triệu]{"entity": "price", "role": "to_price"} gì thôi
+- [3.9 triệu]{"entity": "price", "role": "from_price"} hay [chín triệu bảy]{"entity": "price", "role": "to_price"} gì đó
 - [3 m 1]{"entity": "price", "role": "from_price"} hay [8.6 triệu]{"entity": "price", "role": "to_price"} thôi
 - [5 m 5]{"entity": "price", "role": "from_price"} hay [mười bảy triệu]{"entity": "price", "role": "to_price"} thôi
 
@@ -1192,15 +1208,55 @@
 - có điện thoại nào có giá khoảng [9.8 triệu](price) trở lại không
 - có sản phẩm nào có giá từ [3.3 triệu](price) quay đầu không
 - có điện thoại nào có giá khoảng [7,2 triệu](price) quay đầu không
+- khoảng [3.1 triệu](price) trở lại
+- khoảng [4.1 triệu](price) trở lại
+- khoảng [4,7 triệu](price) trở lại
+- khoảng [ba triệu hai](price) trở lại
+- tầm [ba triệu bốn](price) trở lại
+- tầm [2.3 triệu](price) trở lại
+- tầm [6 m 5](price) trở lại
+- tầm [9.3 triệu](price) trở lại
+- chừng [một triệu ba](price) trở lại
+- chừng [hâm hai triệu](price) trở lại
+- chừng [4 m 2](price) trở lại
+- chừng [ba triệu năm](price) trở lại
+- chừng dưới [tám triệu bốn](price)
+- chừng dưới [7,6 triệu](price)
+- chừng dưới [hâm hai triệu](price)
+- chừng dưới [9,2 triệu](price)
+- tầm dưới [7,7 triệu](price)
+- tầm dưới [5 triệu](price)
+- tầm dưới [ba triệu tám](price)
+- tầm dưới [3.2 triệu](price)
+- dưới [3.9 triệu](price) thôi
+- dưới [7,6 triệu](price) thôi
+- dưới [3,4 triệu](price) thôi
+- dưới [4,8 triệu](price) thôi
+- khoảng dưới [7 m 4](price) thôi
+- khoảng dưới [4.4 triệu](price) thôi
+- khoảng dưới [8 m 1](price) thôi
+- khoảng dưới [bảy triệu hai](price) thôi
 
 ## intent: find_product_upper_price
 <!-- tìm sản phẩm trên một mức giá -->
+- trên [bảy triệu chín](price)
+- trên [bốn triệu sáu](price)
+- trên [1.5 triệu](price)
+- trên [7 triệu](price)
+- hơn [8 triệu](price)
+- hơn [3,4 triệu](price)
+- hơn [2,6 triệu](price)
+- hơn [năm triệu sáu](price)
+- [bảy triệu tám](price) trở lên
+- [1 m 2](price) trở lên
+- [5.9 triệu](price) trở lên
+- [4 m 7](price) trở lên
 - có [Vsmart](product_company) nào có giá khoảng [6 triệu](price) trở lên không
 - có điện thoại [ss](product_company) nào khoảng [1 triệu](price) trở lên không
 - có điện thoại [Energizer](product_company) nào có giá từ [một triệu tám](price) trở lên không
 - có [Vsmart](product_company) nào khoảng [6 triệu](price) trở lên không
 - có [ss](product_company) nào có giá khoảng [tám triệu ba](price) trở lên không
-- có điện thoại [Iphone](product_company) nào khoảng [tám triệu rưởi](price) trở lên không     
+- có điện thoại [Iphone](product_company) nào khoảng [tám triệu rưởi](price) trở lên không
 - có [Itel](product_company) nào khoảng [hâm mốt triệu](price) trở lên không
 - có điện thoại [Iphone](product_company) nào khoảng [1 m 8](price) trở lên không
 - có [Vsmart](product_company) nào có giá khoảng [5.1 triệu](price) trở lên không
@@ -1332,6 +1388,14 @@
 ## intent: find_product_around_price
 <!-- tìm sản phẩm có giá xung quanh 1 mức -->
 <!-- chênh lệch trên dưới 1 triệu đồng -->
+- chừng [2.5 triệu](price)
+- tầm [3 triệu 3](price)
+- tầm [7 m 6](price)
+- tầm [4,1 triệu](price)
+- tầm [một triệu chín](price)
+- chừng [5 triệu](price)
+- chừng [1.5 triệu](price)
+- chừng [8.1 triệu](price)
 - có cái [Nokia](product_company) nào tầm [7,7 triệu](price) không
 - có cái [Vsmart](product_company) nào trên dưới [8,9 triệu](price) không ạ
 - có [Itel](product_company) nào khoảng [3,1 triệu](price) không giới thiệu cho em với
@@ -1419,6 +1483,10 @@
 - có sản phẩm nào khoảng [7,8 triệu](price) gì đó tư vấn giúp em
 - có cái nào khoảng [bảy triệu ba](price) không giới thiệu cho em với
 - có điện thoại nào trên dưới [mười ba triệu](price) không giới thiệu cho em với
+- khoảng [bảy triệu tám](price)
+- khoảng [bảy triệu ba](price)
+- khoảng [2,7 triệu](price)
+- khoảng [9,8 triệu](price)
 
 ## intent: screen_info
 <!-- thông tin màn hình -->
@@ -1475,7 +1543,7 @@
 - pin dùng được bao lâu
 - pin dùng được lâu không
 
-## intent: buy_olf_product
+## intent: buy_old_product
 <!-- có thu mua lại sản phẩm cũ không -->
 - shop thu mua [Huawei Mate 30 Pro 5G](product_name) cũ lại với giá bao nhiêu
 - [Vivo Y50](product_name) cũ bán được bao nhiêu?
@@ -1525,6 +1593,12 @@
 - [Realme X2 Pro](product_name) cũ shop mua lại với giá bao nhiêu?
 - [ss a50s](product_name) cũ shop mua lại với giá bao nhiêu?
 - [ss a10](product_name) cũ shop mua lại với giá bao nhiêu?
+- shop có thu mua lại máy này không
+- mua lại máy này không
+- shop mua lại máy cũ không
+- mua lại máy không
+- mua cũ lại không
+- thu lại máy không
 
 ## intent: what_license
 <!-- mua trả góp cần giấy tờ gì -->
@@ -1569,7 +1643,7 @@
 - Mìng dùng sổ hộ khẩu photo công chứng đuoc k
 - Chứng minh nhân dân thôi dc k vay
 - em muốn muốn mua trả cóp em có chứng minh thư vs shk phô tô công chứng có đc ko
-- Ad ơi cho e hỏi trả trước [0 đ]{"entity":"price","role":"prepay"}  bên mình hồ sơ cần những gì vậy ạ?
+- Ad ơi cho e hỏi trả trước [0 đ]{"entity":"price","role":"prepay"} bên mình hồ sơ cần những gì vậy ạ?
 - Cho mình hỏi mình muốn mua máy này trả góp [0 đ]{"entity":"price","role":"prepay"} thì cần những giấy tờ gì ak.
 - Cho mình hỏi chỉ cần lên fpt shop chỉ cần mang theo bằmg lái và cmnn là đủ đk góp r pải k ạ. Có cần bắt buộc thêm sdt ng thân k ạ
 - Hien tai e lam c.ty e dung 20t e can mag theo gi de mua tra gop the shop
@@ -1607,6 +1681,12 @@
 
 ## intent: how_many_per_month
 <!-- cần phải trả bao nhiêu tiền / 1 tháng -->
+- trả bao nhiêu 1 tháng vậy
+- một tháng phải trả nhiêu vậy
+- trả góp thì một tháng trả bao nhiêu
+- trả góp thì tháng góp bao nhiêu
+- tháng góp bao nhiêu vậy
+- trả góp thì mỗi tháng góp bao nhiêu vậy
 - Cho minh hoi neu minh mua may tra gop ma minh tra truoc [2 tr]{"entity":"price","role":"prepay"} z moi thang minh tra gop khoang bao nhieu z shop
 - Em có [1 tr 500](price) cho em hỏi trả góp trong [9 tháng](installment_payment_period) thì phải trả trước bao nhiêu là mỗi tháng trả bao nhiu vâyj ạ
 - m trả góp [0 %](interest_rate) trong vòng [12 tháng](installment_payment_period) vậy mỗi tháng m phải trả bao nhiêu ak.
@@ -1620,12 +1700,12 @@
 - Cho mình hỏi nếu mình muốn mua trả góp [f1s 2017](product_name) mà trả trước [5 triệu]{"entity":"price","role":"prepay"} thì mình sẽ phải góp trong bao lâu với số tiền bao nhiêu?
 - Cho mình hỏi, mình trả góp gói [0 đ]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi mỗi tháng phải trả la bao nhiêu va cần những giấy tờ gi
 - Nếu mình trả trước [30 %](prepay_percent) thì góp 12t thi moi tháng bn?
-- fpt cho hỏi thế em mua trả góp mà trả trước [30 %](prepay_percent)  thì mỗi tháng trả bao nhiêu và trong vòng mấy thang
+- fpt cho hỏi thế em mua trả góp mà trả trước [30 %](prepay_percent) thì mỗi tháng trả bao nhiêu và trong vòng mấy thang
 - FPT đt [oppo f1s 2017](product_name). Tra truoc [o đ]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
-- e mua trả góp mà có bằng lái xe, CMND, hộ khẩu mà trả trước [60 %](prepay_percent)  trả trong [4 tháng](installment_payment_period) thì mỗi tháng trả khoảng bao nhiu ạ
+- e mua trả góp mà có bằng lái xe, CMND, hộ khẩu mà trả trước [60 %](prepay_percent) trả trong [4 tháng](installment_payment_period) thì mỗi tháng trả khoảng bao nhiu ạ
 - Tra gop truoc [10 %](prepay_percent) .Moi thang dong bao nhieu vay
 - E muốn mua trả góp [0 %](interest_rate) trả trước [10 %](prepay_percent) góp trong [6 t](installment_payment_period), nếu k đóng phí bảo hiểm thì 1 tháng góp bao nhiêu vậy ad
-- Trả trước [10 %](prepay_percent)  và ko mua bảo hiểm thì mỗi tháng góp bao nhiu vậy ad
+- Trả trước [10 %](prepay_percent) và ko mua bảo hiểm thì mỗi tháng góp bao nhiu vậy ad
 - Trả góp [0 đ]{"entity":"price","role":"prepay"}.ko mua bảo hiểm vay đóng [6 tháng](installment_payment_period) nhiêu vay.
 - Ad oi minh muon mua [nova 2i](product_name) tra truoc [20 %](prepay_percent) gop [12 thang](installment_payment_period) vay thang la minh gop bao nhieu
 - Trả góp [10 %](prepay_percent) .lãi suất [0 %](interest_rate).[6 thang](installment_payment_period). Vay mỗi tháng góp bao nhieu
@@ -1756,13 +1836,18 @@
 - Máy mobiistar x1 có trả góp 0đ không shop
 - Ko hỗ trợ trả góp ak shop
 - máy này có bán trả góp không bạn?
+- máy này trả góp được không
+- có cho mua trả góp không
+- trả góp được không
+- có cho trả góp không
+- mua trả góp được không
 - cho em hoi [samsung a10](product_name) CO BAN TRA GOP KO ?
 - sản phẩm này có trả góp [0 %](interest_rate) không shop?
 - Cho e hỏi [f1s](product_name) còn gói lãi suất [0 %](interest_rate) k ạ
 - ản phẩm này có trả góp ko ạ.
 - Có bán trả góp k v
 - [Oppof1s 2016](product_name) co dc tra gop ko ak
-- Minh muon mua oppo [f1s 2017](product_name) tra truoc [0 đ]{"entity":"price","role":"prepay"}  co dc ko ak
+- Minh muon mua oppo [f1s 2017](product_name) tra truoc [0 đ]{"entity":"price","role":"prepay"} co dc ko ak
 - Mình muốn mua oppo [f1s(2017)](product_name), sản phẩm có hổ trợ trả góp [0 %](interest_rate) không vậy bạn
 - may [oppo f1s](product_name) nay co tra trc [o d]{"entity":"price","role":"prepay"} khong ak
 - E mun mua dt oppo tra gop dc k ak
@@ -1785,7 +1870,7 @@
 - Oppo co tra gop [A 71](product_name) kova
 - máy này có trả góp [0 %](interest_rate) k vậy
 - Dạ cho em hỏi máy này có trả góp không ạ
-- [a71](product_name) có trả trước [0 %](prepay_percent)  ko ạ
+- [a71](product_name) có trả trước [0 %](prepay_percent) ko ạ
 - Sp này có trả góp [0 %](interest_rate) k
 - Cho em hỏi [Oppo A71](product_name) có trả góp cho sinh viên không ạ?
 - Cái này có trả góp ko ad
@@ -1812,13 +1897,13 @@
 - [OPPO A92s](product_name) xài [chip xử lý]{"entity":"hardware","role":"WHQ"} gì
 - [realme 6](product_name) dùng [card]{"entity":"hardware","role":"WHQ"} gì
 - [Samsung Galaxy A21](product_name) dùng [card đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [Samsung Galaxy J8+](product_name) xài [chip xử lý]{"entity":"hardware","role":"WHQ"} gì  
+- [Samsung Galaxy J8+](product_name) xài [chip xử lý]{"entity":"hardware","role":"WHQ"} gì 
 - [Huawei P40 Lite](product_name) có [cpu]{"entity":"hardware","role":"WHQ"} gì
-- [Xiaomi Redmi 8A](product_name) có [chip xử lý]{"entity":"hardware","role":"WHQ"} gì      
+- [Xiaomi Redmi 8A](product_name) có [chip xử lý]{"entity":"hardware","role":"WHQ"} gì
 - [ss a21s](product_name) xài [CPU]{"entity":"hardware","role":"WHQ"} gì
-- [OPPO Find X2](product_name) xài [chíp xử lý]{"entity":"hardware","role":"WHQ"} gì        
+- [OPPO Find X2](product_name) xài [chíp xử lý]{"entity":"hardware","role":"WHQ"} gì
 - [realme 5 pro](product_name) dùng [CPU]{"entity":"hardware","role":"WHQ"} gì
-- [Xiaomi Redmi 10X 4G](product_name) xài [chíp]{"entity":"hardware","role":"WHQ"} gì       
+- [Xiaomi Redmi 10X 4G](product_name) xài [chíp]{"entity":"hardware","role":"WHQ"} gì
 - [Huawei Mate Xs](product_name) xài [card]{"entity":"hardware","role":"WHQ"} gì
 - [Energizer E100](product_name) xài [card]{"entity":"hardware","role":"WHQ"} gì
 - [realme 5 pro](product_name) xài [gpu]{"entity":"hardware","role":"WHQ"} gì
@@ -1839,14 +1924,14 @@
 - [Masstel Hapi 10 Fami](product_name) có [card]{"entity":"hardware","role":"WHQ"} gì
 - [Xiaomi Mi 10 Pro](product_name) xài [chip]{"entity":"hardware","role":"WHQ"} gì
 - [ss s10 lite](product_name) xài được [edge]{"entity":"hardware","role":"YorN"} không
-- [Samsung Galaxy M10s](product_name) có [bluetooth]{"entity":"hardware","role":"YorN"} không     
+- [Samsung Galaxy M10s](product_name) có [bluetooth]{"entity":"hardware","role":"YorN"} không
 - [Nokia 1.3](product_name) có [3 g]{"entity":"hardware","role":"YorN"} không
-- [Xiaomi Redmi Note 8 Pro](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không    
+- [Xiaomi Redmi Note 8 Pro](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không  
 - [Vivo Y50](product_name) có [đèn flash]{"entity":"hardware","role":"YorN"} không
 - [ss 10 lite](product_name) xài được [bluetooth]{"entity":"hardware","role":"YorN"} không
 - [realme 5s](product_name) dùng được [nfc]{"entity":"hardware","role":"YorN"} không
 - [Xiaomi Redmi K30 5G Tracing](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không
-- [Nokia 150 DS](product_name) dùng được [đèn flash]{"entity":"hardware","role":"YorN"} không        
+- [Nokia 150 DS](product_name) dùng được [đèn flash]{"entity":"hardware","role":"YorN"} không
 - [Nokia 105 SS](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
 - [Realme XT](product_name) có [đèn flash]{"entity":"hardware","role":"YorN"} không
 - [ss s20](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
@@ -1904,7 +1989,7 @@
 - máy này có [3 g]{"entity":"hardware","role":"YorN"} không
 - máy có [đèn flash]{"entity":"hardware","role":"YorN"} không
 - máy có [bluetooth]{"entity":"hardware","role":"YorN"} không ad
-- máy này có [bluetooth]{"entity":"hardware","role":"YorN"} không ạ      
+- máy này có [bluetooth]{"entity":"hardware","role":"YorN"} không ạ
 - dùng được [đèn pin]{"entity":"hardware","role":"YorN"} không ad
 - máy có [wifi]{"entity":"hardware","role":"YorN"} không
 - dùng được [wifi]{"entity":"hardware","role":"YorN"} không ad
@@ -1925,13 +2010,54 @@
 - máy có [edge]{"entity":"hardware","role":"YorN"} không ạ
 - dùng được [nfc]{"entity":"hardware","role":"YorN"} không ạ
 
+## intent: take_photo_erase_background
+- camera sau của [Vivo S6](product_name) chụp xóa phông được không
+- camera sau của [Opo A31](product_name) chụp xóa phông được không
+- camera sau của [Samsung A10](product_name) chụp xóa phông được không
+- camera sau của [ss M31s](product_name) chụp xóa phông được không
+- camera của [Vivo S6](product_name) chụp xóa phông được không
+- camera của [Opo A31](product_name) chụp xóa phông được không
+- camera của [Samsung A10](product_name) chụp xóa phông được không
+- camera của [ss M31s](product_name) chụp xóa phông được không
+- có chụp xóa phông không
+- máy chụp xóa phông được không
+- máy có chụp xóa phông không
+- máy chụp xóa phông
+- chụp xóa phông được không
+- máy [vv Nex 3](product_name) chụp xóa phông được không
+- máy [iPhone 11 Pro Max](product_name) chụp xóa phông được không
+- máy [OPPO Find X2 Lite](product_name) chụp xóa phông được không
+- máy [Samsung M31s](product_name) chụp xóa phông được không
+- điện thoại [Samsung M01s](product_name) chụp xóa phông được không
+- điện thoại [Samsung Galaxy S20+](product_name) chụp xóa phông được không
+- điện thoại [Nokia 7.3](product_name) chụp xóa phông được không
+- điện thoại [Xiaomi Black Shark 3](product_name) chụp xóa phông được không
+- [ip 8 Plus](product_name) chụp xóa phông được không
+- [Nokia 3310](product_name) chụp xóa phông được không
+- [iPhone 8 Plus](product_name) chụp xóa phông được không
+- [Samsung Gear Fit E](product_name) chụp xóa phông được không
+
 ## intent: ask_main_camera
 <!-- hỏi về camera chính -->
-- có chụp xóa phông không
 - cam sau chụp đẹp không
+- camera sau của máy như nào
+- camera sau của máy ntn
+- camera sau của máy ra sao
+- camera sau của [Black Shark 2 Pro](product_name) như thế nào
+- camera sau của [ss A70](product_name) như thế nào
+- camera sau của [OPPO Reno 3 Vitality](product_name) như thế nào
+- camera sau của [Samsung Galaxy A21s](product_name) như thế nào
 - camera sau có tính năng gì hay
 - camera sau có những chức năng gì
+- camera sau của [Samsung Galaxy Xcover Pro](product_name) chụp có đẹp không
+- camera sau của [OPO A92](product_name) chụp có đẹp không
+- camera sau của [Samsung Z Flip](product_name) chụp có đẹp không
+- camera sau của [iPhone 11 Pro](product_name) chụp có đẹp không
 - camera sau chụp có đẹp không
+- camera sau của [Vivo S1 Pro](product_name) ra sao
+- camera sau của [Vivo X50](product_name) ra sao
+- camera sau của [Nokia 210 DS](product_name) ra sao
+- camera sau của [OPPO A5s](product_name) ra sao
 - cam sau như thế nào
 
 ## intent: ask_selfie_camera
@@ -1942,6 +2068,14 @@
 - camera trước máy này chụp xóa phông được không
 - cam trước có seifle đẹp không
 - cam trước có tính năng gì
+- camera trước của [OPPO Reno Ace 2](product_name) ra sao
+- camera trước của [Xiaomi Redmi K30i](product_name) ra sao
+- camera trước của [Vivo U10](product_name) ra sao
+- camera trước của [Realme 6 Pro](product_name) ra sao
+- camera trước của [iPhone 6s Plus](product_name) chụp đẹp không
+- camera trước của [vv V19](product_name) chụp đẹp không
+- camera trước của [Huawei Nova 5i Pro](product_name) chụp đẹp không
+- camera trước của [vv V17](product_name) chụp đẹp không
 
 ## intent: resolution_camera
 <!-- hỏi về độ phân giải của camera -->
@@ -2020,6 +2154,12 @@
 - thông tin bảo hành của [Samsung Galaxy A21s](product_name) như thế nào
 - thông tin bảo hành của [Masstel Max R1](product_name) như thế nào
 - bảo hành như thế nào
+- máy bảo hành sao vậy
+- thông tin bảo hành của máy
+- bảo hành ra sao
+- bảo hành bao lâu
+- bảo hành thì sao
+- bảo hành trong bao lâu
 - thời gian bảo hành là bao lâu
 - máy được bảo hành trong bao lâu
 - bảo hành trong bao lâu vậy
@@ -2031,7 +2171,15 @@
 - có giao hàng toàn quốc không
 - nghe nói giao hàng trong 60phút phải không
 - có giao hàng không
+- đặt mua [Huawei Enjoy 10](product_name) có được giao hàng không
+- đặt mua [Nokia 7.3](product_name) có được giao hàng không
+- đặt mua [Vivo S6 5G](product_name) có được giao hàng không
+- đặt mua [Vsmart Active 3](product_name) có được giao hàng không
 - giao hàng như thế nào ạ
+- mua [iPhone 7](product_name) có được giao hàng không
+- mua [Xiaomi Redmi 10X 4G](product_name) có được giao hàng không
+- mua [ss M40](product_name) có được giao hàng không
+- mua [Masstel Fami 9](product_name) có được giao hàng không
 - có hỗ trợ giao hàng khi mua online không
 - mua online có giao hàng tận nhà không
 
@@ -2042,7 +2190,7 @@
 - có khuyến mãi gì không
 - mua điện thoại có khuyến mãi không
 - mua [Realme C3](product_name) có được quà gì không
-- khi mua [Itel It2580](product_name) có tặng kèm gì không     
+- khi mua [Itel It2580](product_name) có tặng kèm gì không
 - mua [Nokia 5.3](product_name) có được quà gì không
 - [ss 10 lite](product_name) có tặng kèm gì không
 - mua [OPPO Reno Ace 2](product_name) có quà tặng không
@@ -2077,6 +2225,10 @@
 - mua máy [Oppo Reno3 Pro](product_name) có tặng kèm gì không
 - mua [Samsung Galaxy S20 Ultra](product_name) có tặng kèm gì không
 - mua [Masstel Play Music](product_name) có tặng kèm gì không
+- khi mua máy thì trong hộp có gì
+- trong hộp tặng kèm nhựng gì vậy
+- trong hộp có những gì
+- mua máy có tặng gì theo hộp
 
 ## intent: find_product
 <!-- tìm kiếm sản phẩm -->
@@ -2086,7 +2238,7 @@
 - ad ơi có [Xiaomi Redmi Note 9 Pro Max](product_name) không nhỉ
 - ad ơi có [OPPO A11](product_name) không nhỉ
 - ad ơi có [Vivo Y70s 5G](product_name) không nhỉ
-- ở đây có [Xiaomi Mi Note 10 Lite](product_name) không nhỉ     
+- ở đây có [Xiaomi Mi Note 10 Lite](product_name) không nhỉ
 - có [Samsung Galaxy A71](product_name) không
 - shop có [Realme Narzo 10](product_name) không nhỉ
 - ở đây có [Samsung Galaxy A60](product_name) không vậy
@@ -2560,22 +2712,46 @@
 - camera phía sau
 - cam
 
+## synonym: Băng tần 3G
+- 3g
+- mạng 3g
+- 3G
+
+## synonym: Băng tần 4G
+- 4g
+- mạng 4g
+- 4G
+
+## synonym: Băng tần 2G
+- 2g
+- mạng 2g
+- 2G
+- mạng di động
+
 ## lookup:product_name
 data/product_name.txt
+
 ## lookup:ram
 data/ram.txt
+
 ## lookup:rom
 data/rom.txt
+
 ## lookup:price
 data/price.txt
+
 ## lookup:installment_payment_period
 data/thoigian.txt
+
 ## lookup: customer_name
 data/fullname.txt
+
 ## lookup: phone_num
 data/phonenum.txt
+
 ## lookup: prepay_percent
 data/prepay_percent.txt
+
 <!-- ## regex:prepay_percent
 - [0-9]{1,2}\s?% -->
 <!-- ## regex:product_name

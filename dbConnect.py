@@ -5,7 +5,7 @@
 import mysql.connector
 import traceback
 import json
-
+import re
 
 def getData(query:str):
         """
@@ -46,6 +46,23 @@ def getData(query:str):
             return []
 
 # test the file before integrating with the bot by uncommenting the below line.
-# obj = getData("select * from dienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and gia <= 10000000")
+# data = open('data/product_name.txt','a',encoding='utf-8')
+# obj = getData("select ten from dienthoai where idhangdienthoai  = 3")
+# temp = ""
 # for item in obj:
-#     print(item)
+    # temp = item['ten'].replace('-',' ')
+    # x = re.findall(r'[0-9]{1,3}GB', temp)
+    # for i in x:
+        # temp =  temp.replace(i,"")
+    # # try:
+    # data.write(temp.replace("pp",'p').strip(' ')+'\n')
+    # data.write(temp.strip(' ').replace('Xiaomi','')+'\n')
+    #     data.write(temp.strip(' ').replace('Galaxy','')+'\n')
+    # except:
+    #     print("không ghi đc {}".format(temp))
+    # print(temp.strip(' '))
+    # print(temp.strip(' ').replace('Samsung Galaxy','ss')+'\n')
+    # print(temp.strip(' ').replace('Galaxy','')+'\n')
+# data.close()
+
+

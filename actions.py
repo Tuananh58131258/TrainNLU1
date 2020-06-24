@@ -6,7 +6,7 @@
 
 
 # This is a simple example for a custom action which utters "Hello World!"
-
+#region import
 from typing import Any, Text, Dict, List
 import time
 import requests
@@ -22,12 +22,13 @@ from InputModify import romRamModify
 from InputModify import PrepayPercentModify
 from InputModify import InstallmentPaymentPeriod
 from InputModify import RoundNum
+from InputModify import GetColName
 from dbConnect import getData
 from CreateJsonMessageTemplate import GenericTemplate
 from CreateJsonMessageTemplate import ButtonTemplate
 from CreateJsonMessageTemplate import ItemsTemplate
 from CreateJsonMessageTemplate import HardwareAnswer
-#
+#endregion
 #
 
 
@@ -98,6 +99,7 @@ class ActionProductPrice(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         Pname_temp = ""
+        #region try-cath entity
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -914,6 +916,8 @@ class ActionHarwareInfo(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         sqlQuery = ""
+        Pname_temp = ""
+        #region try-catch entity
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -924,37 +928,76 @@ class ActionHarwareInfo(Action):
             hardware_name = next(tracker.get_latest_entity_values(
                 entity_type='hardware', entity_role='WHQ'))
             role = "WHQ"
-        except StopIteration:
+        except:
             pass
         try:
             hardware_name = next(tracker.get_latest_entity_values(
                 entity_type='hardware', entity_role='YorN'))
             role = "YorN"
-        except StopIteration:
+        except:
             pass
-        sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(
-            productName)
-        data = getData(sqlQuery)
-        if data:
-            hardware_label = data[0]['label'].split('/')
-            hardware_data = data[0]['data'].split('/')
-            temp = -1
-            for item in hardware_label:
-                if item.find(hardware_name) > -1:
-                    temp = hardware_label.index(item)
-                    break
-            if hardware_data[temp] == "không" or hardware_data[temp] is None:
-                message_str = HardwareAnswer(hardware_name, role, 'no')
+        #endregion
+        if productName:
+            sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(
+                productName)
+            data = getData(sqlQuery)
+            if data:
+                if data[0]['ghi_chu']:
+                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                else:
+                    col = GetColName(hardware_name)
+                    value = data[0][col]
+                    if value is None:
+                        message_str = HardwareAnswer(value,role,'no')
+                    else:
+                        message_str = HardwareAnswer(value,role,'yes')
             else:
-                message_str = HardwareAnswer(hardware_name, role, 'yes')
+                message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
         else:
-            message_str = "Không tìm thấy sản phẩm! thông tin phần cứng"
-
+            message_str = "Bạn đang hỏi thông tin của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
-        # return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]\
-        return
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
+class ActionTakePhotoEraseBackground(Action):
+    # action thông tin về camera sau
+    def name(self) -> Text:
+        return "action_take_photo_erase_background"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        sqlQuery = ""
+        Pname_temp = ""
+        productName = ""
+        #region try-catch entity
+        try:
+            productName = productNameModify(
+                next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            tracker.get_slot('product_name')
+            pass
+        #endregion
+        if productName:
+            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
+            data = getData(sqlQuery)
+            if data:
+                Pname_temp = data[0]['ten']
+                if data[0]['ghi_chu']:
+                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                else:
+                    chup_anh = data[0]['chup_anh_nang_cao']
+                    if chup_anh.find('xóa phông') > -1:
+                        message_str = "Sản phẩm {} có hỗ trở chụp ảnh xóa phông ạ.".format(Pname_temp)
+                    else:
+                        message_str = "Sản phẩm {} chưa hỗ trở chụp ảnh xóa phông ạ.".format(Pname_temp)
+            else:
+                message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
+        else:
+            message_str = "Bạn đang hỏi thông tin chụp ảnh xóa phông của sản phẩm nào ạ?"
+        dispatcher.utter_message(message_str)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 class ActionMainCamera(Action):
     # action thông tin về camera sau
@@ -966,7 +1009,35 @@ class ActionMainCamera(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         sqlQuery = ""
         Pname_temp = ""
-        dispatcher.utter_message('thông tin camera sau')
+        productName = ""
+        #region try-catch entity
+        try:
+            productName = productNameModify(
+                next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            tracker.get_slot('product_name')
+            pass
+        #endregion
+        if productName:
+            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
+            data = getData(sqlQuery)
+            if data:
+                Pname_temp = data[0]['ten']
+                if data[0]['ghi_chu']:
+                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                else:
+                    do_phan_giai = "Đang cập nhật."
+                    chup_anh = "Đang cập nhật."
+                    if data[0]['do_phan_giai_cam_sau']:
+                        do_phan_giai = data[0]['do_phan_giai_cam_sau']
+                    if data[0]['chup_anh_nang_cao']:
+                        chup_anh = data[0]['chup_anh_nang_cao']
+                    message_str = "Sản phẩm {} có hệ thống camera sau với độ phân giải: {}\n Và các chức năng hỗ trợ chụp ảnh: {}.".format(Pname_temp,do_phan_giai,chup_anh)
+            else:
+                message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
+        else:
+            message_str = "Bạn đang hỏi thông tin camera sau của sản phẩm nào ạ?"
+        dispatcher.utter_message(message_str)
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -981,7 +1052,32 @@ class ActionSelfieCamera(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         sqlQuery = ""
         Pname_temp = ""
-        dispatcher.utter_message('thông tin camera sau')
+        productName = ""
+        #region try-catch entity
+        try:
+            productName = productNameModify(
+                next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            tracker.get_slot('product_name')
+            pass
+        #endregion
+        if productName:
+            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
+            data = getData(sqlQuery)
+            if data:
+                Pname_temp = data[0]['ten']
+                if data[0]['ghi_chu']:
+                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                else:
+                    do_phan_giai = "Đang cập nhật."
+                    if data[0]['do_phan_giai_cam_trước']:
+                        do_phan_giai = data[0]['do_phan_giai_cam_sau']
+                    message_str = "Sản phẩm {} có hệ thống camera trước với độ phân giải: {}.".format(Pname_temp,do_phan_giai)
+            else:
+                message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
+        else:
+            message_str = "Bạn đang hỏi thông tin camera trước của sản phẩm nào ạ?"
+        dispatcher.utter_message(message_str)
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -996,9 +1092,40 @@ class ActionResolutionCamera(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         sqlQuery = ""
         Pname_temp = ""
-        dispatcher.utter_message('thông tin camera sau')
+        productName = ""
+        loai_camera = ""
+        #region try-catch entity
+        try:
+            productName = productNameModify(
+                next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            tracker.get_slot('product_name')
+            pass
+        try:
+            loai_camera = next(tracker.get_latest_entity_values(entity_type='camera'))
+        except:
+            loai_camera = tracker.get_slot('loai_camera')
+            pass
+        #endregion
+        if productName:
+            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
+            data = getData(sqlQuery)
+            if data:
+                Pname_temp = data[0]['ten']
+                if data[0]['ghi_chu']:
+                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                else:
+                    if loai_camera.find('trước') > -1:
+                        message_str = "Sản phẩm {} có camera trước với độ phân giải: {}. Với các tính năng: {}".format(Pname_temp,data[0]['do_phan_giai_cam_truoc'],data[0]['thong_tin_khac'])
+                    else:
+                        message_str = "Sản phẩm {} có camera sau với độ phân giải: {}. Với các tính năng chụp ảnh nâng cao: {}. Hỗ trợ quay phim: {}".format(Pname_temp,data[0]['do_phan_giai_cam_sau'],data[0]['chup_anh_nang_cao'],data[0]['quay_phim'])
+            else:
+                message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
+        else:
+            message_str = "Bạn đang hỏi thông tin {} của sản phẩm nào ạ?".format(loai_camera)
+        dispatcher.utter_message(message_str)
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
-        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp),SlotSet('loai_camera',loai_camera)]
 
 
 class ActionGuarantee(Action):
@@ -1064,7 +1191,7 @@ class ActionPromotionsAndGift(Action):
                 elif data[0]['khuyen_mai']:
                     Pname_temp = data[0]['ten']
                     khuyen_mai = data[0]['khuyen_mai']
-                    message_str = "Thông tin khuyến mãi của sản phẩm {}:\n{}".format(
+                    message_str = "Hiện sản phẩm {} đang có các chương trình khuyến mãi như sau:\n{}".format(
                         Pname_temp, khuyen_mai)
             else:
                 message_str = "Sản phẩm {} hiện không có khuyến mãi nào. Xin cảm ơn".format(Pname_temp)
@@ -1216,7 +1343,7 @@ class ActionGreet(Action):
         return[SlotSet('first_name',first_name),SlotSet('last_name',last_name)]
 
 class ActionGetCustName(Action):
-    # action thông tin độ phân giải của cả camera trước và sau
+    # action lấy tên khách hàng
     def name(self) -> Text:
         return "action_get_customer_name"
 
@@ -1229,7 +1356,7 @@ class ActionGetCustName(Action):
         return
 
 class ActionGetPhoneNum(Action):
-    # action thông tin độ phân giải của cả camera trước và sau
+    # action lấy sđt
     def name(self) -> Text:
         return "action_get_phone_number"
 
@@ -1242,7 +1369,7 @@ class ActionGetPhoneNum(Action):
         return
 
 class ActionGetContact(Action):
-    # action thông tin độ phân giải của cả camera trước và sau
+    # action thông tin liên hệ gồm tên + sđt
     def name(self) -> Text:
         return "action_get_contact"
 
@@ -1255,7 +1382,7 @@ class ActionGetContact(Action):
         return
 
 class ActionFollow(Action):
-    # action thông tin độ phân giải của cả camera trước và sau
+    # action follow intent
     def name(self) -> Text:
         return "action_follow"
 
