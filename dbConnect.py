@@ -46,6 +46,6 @@ def getData(query:str):
             return []
 
 # test the file before integrating with the bot by uncommenting the below line.
-obj = getData("select * from dienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and gia <= 10000000")
-for item in obj:
-    print(item)
+# obj = getData("select * from dienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and gia <= 10000000")
+# for item in obj:
+#     print(item)

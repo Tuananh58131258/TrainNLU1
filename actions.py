@@ -104,6 +104,7 @@ class ActionProductPrice(Action):
         except:
             productName = tracker.get_slot('product_name')
             pass
+        #endregion
         if productName:
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
@@ -122,7 +123,7 @@ class ActionProductPrice(Action):
             sqlQuery = sqlQuery + "limit 9;"
             data = getData(sqlQuery)
             if data:
-                Pname_temp = data[0]['ten']
+                Pname_temp = productName
                 list_item = []
                 for item in data:
                     list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
@@ -145,7 +146,7 @@ class ActionProductPrice(Action):
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
-        print(sqlQuery)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -159,6 +160,7 @@ class ActionOnlinePrice(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         Pname_temp = ""
+        sqlQuery =""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -183,7 +185,7 @@ class ActionOnlinePrice(Action):
             sqlQuery = sqlQuery + "limit 9;"
             data = getData(sqlQuery)
             if data:
-                Pname_temp = data[0]['ten']
+                Pname_temp = productName
                 list_item = []
                 for item in data:
                     list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
@@ -220,6 +222,7 @@ class ActionOldProduct(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         Pname_temp = ""
+        sqlQuery =""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -244,7 +247,7 @@ class ActionOldProduct(Action):
             sqlQuery = sqlQuery + "limit 9;"
             data = getData(sqlQuery)
             if data:
-                Pname_temp = data[0]['ten']
+                Pname_temp = productName
                 list_item = []
                 for item in data:
                     list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
@@ -281,6 +284,7 @@ class ActionProductConfiguration(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         Pname_temp = ""
+        sqlQuery =""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -321,7 +325,7 @@ class ActionProductConfiguration(Action):
         else:
             message_str = "Bạn đang hỏi thông tin cấu hình của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -362,6 +366,7 @@ class ActionListProduct(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         dispatcher.utter_message("this is test")
         product_company = ""
+        sqlQuery =""
         try:
             product_company = next(tracker.get_latest_entity_values(
                 entity_type="product_company"))
@@ -407,6 +412,7 @@ class ActionCheckPrice(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         price = 0
+        sqlQuery =""
         try:
             price = priceAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='price')))
@@ -461,6 +467,8 @@ class ActionFindProductInRangePrice(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        from_price = 0
+        to_price = 0
         try:
             from_price = priceAnalysis(tracker.get_latest_entity_values(
                 entity_type='price', entity_role='from_price'))
@@ -471,6 +479,7 @@ class ActionFindProductInRangePrice(Action):
                 entity_type='price', entity_role='to_price'))
         except:
             pass
+        sqlQuery =""
         if from_price and to_price and from_price != to_price:
             if from_price > to_price:
                 text = "Danh sách sản phẩm có giá từ {} đến {}".format(
@@ -514,6 +523,7 @@ class ActionFindProductLowerPrice(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         price = 0
         product_company =""
+        sqlQuery = ""
         try:
             price = priceAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='price')))
@@ -562,6 +572,7 @@ class ActionFindProductUpperPrice(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         price = 0
         product_company = ''
+        sqlQuery = ""
         try:
             product_company = next(tracker.get_latest_entity_values(entity_type='product_company'))
         except:
@@ -609,6 +620,7 @@ class ActionFindProductAroundPrice(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         price = 0
+        sqlQuery =""
         try:
             price = priceAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='price')))
@@ -616,7 +628,7 @@ class ActionFindProductAroundPrice(Action):
             pass
         product_company = ''
         try:
-            product_company = next(tracker.get_latest_entity_values(entity_type='price'))
+            product_company = next(tracker.get_latest_entity_values(entity_type='product_company'))
         except:
             pass
         if price != 0:
@@ -660,6 +672,8 @@ class ActionScreenInfo(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
+        sqlQuery = ""
+        Pname_temp = ""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -670,12 +684,11 @@ class ActionScreenInfo(Action):
             sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(productName)
             data = getData(sqlQuery)
             if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
-                message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ."
+                message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ.".format(data[0]['ten'])
             else:
                 Pname_temp = data[0]['ten']
                 message_str = "Sản phẩm {} sử dụng màn hình: {} {} với độ phân giải {}".format(data[0]['ten'],data[0]['cong_nghe_man_hinh'],data[0]['chuan_man_hinh'],data[0]['do_phan_giai'])
         else:
-            Pname_temp = ""
             message_str = "Bạn đang hỏi thông tin màn hình của sản phẩm nào vậy ạ?"
         dispatcher.utter_message(message_str)
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
@@ -704,7 +717,7 @@ class ActionPinInfo(Action):
             data = getData(sqlQuery)
             if data:
                 if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
-                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ."
+                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ.".format(data[0]['ten'])
                 else:
                     Pname_temp = data[0]['ten']
                     loai_pin = data[0]['loai_pin']
@@ -712,7 +725,7 @@ class ActionPinInfo(Action):
                     thoi_gian_dam_thoai = data[0]['thoi_gian_dam_thoai']
                     message_str = "Sản phẩm {} sử dụng pin: {} , có dung lượng: {} cho thời gian đàm thoại lên tới {}".format(productName,loai_pin,dung_luong_pin,thoi_gian_dam_thoai)
             else:
-                return
+                message_str = "Hiên tại cửa hàng chúng tôi không có thông tin về sản phẩm {}. Mong bạn thông cảm."
         else:
             message_str = "Bạn đang hỏi thông tin về pin của sản phẩm nào ạ?"
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
@@ -729,6 +742,7 @@ class ActionBuyOldProduct(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
+        sqlQuery =""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -741,7 +755,7 @@ class ActionBuyOldProduct(Action):
             data = getData(sqlQuery)
             if data:
                 if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
-                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ."
+                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ.".format(data[0]['ten'])
                 else:
                     Pname_temp = data[0]['ten']
                     gia = int(data[0]['gia'])
@@ -773,6 +787,7 @@ class ActionHowManyPerMonth(Action):
             pass
         #endregion
         Pname_temp = ""
+        sqlQuery =""
         if productName:
             sqlQuery = "select * from dienthoai where ten like '%{}%'".format(
                 productName)
@@ -805,7 +820,7 @@ class ActionHowManyPerMonth(Action):
             data = getData(sqlQuery)
             if data:
                 if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
-                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ."
+                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ.".format(data[0]['ten'])
                 else:
                     Pname_temp = data[0]['ten']
                     gia_goc = int(data[0]['gia'])
@@ -864,13 +879,14 @@ class ActionIsProductCanBuyOnInstallment(Action):
         except:
             pass
         Pname_temp = ""
+        sqlQuery =""
         if productName:
             sqlQuery = "select * from dienthoai where ten like '%{}%'".format(
                 productName)
             data = getData(sqlQuery)
             if data:
                 if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
-                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ."
+                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ.".format(data[0]['ten'])
                 else:
                     if data[0]['url_installment']:
                         Pname_temp = data[0]['ten']
@@ -897,6 +913,7 @@ class ActionHarwareInfo(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
+        sqlQuery = ""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -998,16 +1015,23 @@ class ActionGuarantee(Action):
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
+            productName = tracker.get_slot('product_name')
             pass
         #endregion
-        sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(
-            productName)
-        data = getData(sqlQuery)
-        if data:
-            Pname_temp = data[0]['ten']
-            message_str = "Thời gian bảo hành của {} là: {}".format(productName,data[0]['thoi_gian_bao_hanh'])
+        if productName:
+            sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(
+                productName)
+            data = getData(sqlQuery)
+            if data:
+                if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
+                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ.".format(data[0]['ten'])
+                elif data[0]['thoi_gian_bao_hanh']:
+                    Pname_temp = data[0]['ten']
+                    message_str = "Thời gian bảo hành của {} là: {}".format(productName,data[0]['thoi_gian_bao_hanh'])
+            else:
+                message_str = "Hiện cửa hàng không có thông tin về sản phẩm {}. Mong bạn thông cảm!"
         else:
-            message_str = "không có bảo hành"
+            message_str = "Bạn đang hỏi thông tin bảo hành của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
@@ -1022,22 +1046,27 @@ class ActionPromotionsAndGift(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
+        sqlQuery = ""
         try:
             productName = productNameAnalysis(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
+            productName = tracker.get_slot('product_name')
             pass
         if productName:
             sqlQuery = "select * from dienthoai where ten like '%{}%'".format(
                 productName)
             data = getData(sqlQuery)
             if data:
-                Pname_temp = data[0]['ten']
-                khuyen_mai = data[0]['khuyen_mai']
-                message_str = "Các khuyến mãi của sản phẩm {} là:\n{}".format(
-                    Pname_temp, khuyen_mai.replace("Xem chi tiết", ""))
+                if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
+                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ.".format(data[0]['ten'])
+                elif data[0]['khuyen_mai']:
+                    Pname_temp = data[0]['ten']
+                    khuyen_mai = data[0]['khuyen_mai']
+                    message_str = "Thông tin khuyến mãi của sản phẩm {}:\n{}".format(
+                        Pname_temp, khuyen_mai)
             else:
-                message_str = "Sản phẩm này hiện không có khuyến mãi nào. Xin cảm ơn"
+                message_str = "Sản phẩm {} hiện không có khuyến mãi nào. Xin cảm ơn".format(Pname_temp)
         else:
             message_str = "Bản đang hỏi thông tin khuyến mãi của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)

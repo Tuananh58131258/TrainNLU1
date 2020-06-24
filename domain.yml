@@ -155,11 +155,11 @@ responses:
             Hộ khẩu có tên bạn.\n
             Bản sao chứng minh nhân dân của Bố hoặc Mẹ có công chứng trong vòng 6 tháng.\n
            Lưu ý: Đơn vị trả góp sẽ yêu cầu mang giấy tờ bản gốc để đối chiếu khi ký hợp đồng."
-  
+           
   utter_two_or_more_file:
     # trả góp 2 hồ sơ
     - text: "Bạn có thể đăng ký mua trả góp với công ty tài chính khác."
-  
+    
   utter_installment_registration_period:
     # thời gian làm hồ sơ trả góp có nhanh hay không
     - text: "Tùy vào hồ sơ của bạn mà thời gian xét duyệt có thể nhanh hay chậm. Nếu hồ sơ của bạn đạt tiêu chuẩn thì sẽ được xét duyệt ngay trong ngày và bạn có thể mang sản phẩm về."
