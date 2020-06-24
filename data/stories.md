@@ -6,6 +6,10 @@
 * goodbye
   - utter_goodbye
 
+## needhelp
+* need_help
+  - utter_need_help
+
 ## bot challenge
 * ask_ability
   - utter_ask_ability

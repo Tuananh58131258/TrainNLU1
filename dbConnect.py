@@ -46,6 +46,5 @@ def getData(query:str):
             return []
 
 # test the file before integrating with the bot by uncommenting the below line.
-# obj = getData("SELECT distinct loai_pin FROM dienthoai;")
-# for item in obj:
-#     print(item)
+# obj = getData("SELECT * FROM dienthoai where ten like '%samsung galaxy%';")
+
