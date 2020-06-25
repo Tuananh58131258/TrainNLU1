@@ -99,6 +99,7 @@ class ActionProductPrice(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         Pname_temp = ""
+        sqlQuery = ""
         #region try-cath entity
         try:
             productName = productNameModify(

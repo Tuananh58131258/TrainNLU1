@@ -16,6 +16,16 @@
 - alo alo
 - hú
 - merci
+- chao em
+- em oi cho anh hoi
+- bot oi
+- cho minh hoi chut
+- chao ban nha
+- chao bot
+- xin chao
+- hom nay ban the nao
+- chao ban
+- hu
 
 ## intent: goodbye
 <!-- tạm biệt -->
@@ -31,6 +41,10 @@
 - thôi nha
 - gặp sau
 - đi đây
+- tam biet
+- bye nhe
+- bai
+- bai bai
 
 ## intent: ask_ability
 <!-- hỏi khả năng của bot -->
@@ -44,6 +58,16 @@
 - em biết làm gì?
 - em hỗ trợ anh như thế nào?
 - cho anh xem các chức năng của em
+- em co the lam nhung gi nhi
+- em co chuc nang gi
+- em giup gi duoc anh khong
+- ban co the lam gi
+- em co the giup gi cho anh
+- ban biet hat khong
+- ban biet xem lich hoc ah
+- em biet lam gi
+- em ho tro anh nhu the nao
+- cho anh xem cac chuc nang cua em
 
 ## intent: thankyou
 <!-- cảm ơn bot -->
@@ -59,6 +83,12 @@
 - cảm ơn
 - thank you so much
 - great! Thanks
+- cam on em nha
+- cam on nha
+- cam on ban nha
+- cam on nhieu
+- cam on bot nha
+- cam on
 
 ## intent: praise
 <!-- khen bot -->
@@ -69,6 +99,13 @@
 - ui giỏi thế
 - bot thông minh
 - đẹp trai đấy
+- bot gioi qua
+- great
+- awsome
+- bot lam tot lam
+- ui gioi the
+- bot thong minh
+- dep trai day
 
 ## intent: decry
 <!-- chê bot -->
@@ -80,6 +117,14 @@
 - có thế mà cũng không biết
 - kém cỏi
 - sai rồi, chán ghê
+- qua te
+- ngu ngoc
+- cha biet gi ca
+- ngu that
+- do ghe
+- co the ma cung khong biet
+- kem coi
+- sai roi, chan ghe
 
 ## intent: positive_answer
 <!-- câu trả lời mang ý khẳng định -->
@@ -95,6 +140,18 @@
 - đúng rồi đó
 - vâng, đúng rồi
 - chuẩn luôn
+- da vang a
+- dung roi a
+- dung roi
+- phai roi
+- chuan roi
+- chuan
+- phai
+- dung
+- khong sai vao dau duoc
+- dung roi do
+- vang, dung roi
+- chuan luon
 
 ## intent: negative_answer
 <!-- câu trả lời mang tính phủ định -->
@@ -110,46 +167,58 @@
 - không phải đâu
 - sai rồi nha
 - không phải nha
+- sai roi
+- khong phai cai nay
+- khong phai
+- cai khac co
+- khong
+- khong dung
+- khong phai nhe
+- sai roi nhe
+- cai khac ma
+- khong phai dau
+- sai roi nha
+- khong phai nha
 
 ## intent: product_price
 <!-- Hỏi giá của sản phẩm -->
-- sản phẩm [Realme 5 Pro](product_name) mua mới bao nhiêu tiền
-- điện thoại [Nokia 150 DS](product_name) giá mua mới là bao nhiêu
-- [realme x50 5g](product_name) giá khi mua mới
-- sản phẩm [OPPO Reno4](product_name) có giá bao nhiêu khi mua mới
-- [Vsmart Bee 3](product_name) có giá bao nhiêu khi mua mới
-- [Xiaomi Redmi 8A](product_name) mua mới bao nhiêu tiền
-- sản phẩm [Oppo Find X2 Pro](product_name) có giá bao nhiêu khi mua mới
-- điện thoại [Huawei Nova 5](product_name) mua mới bao nhiêu tiền
-- [Xiaomi Redmi K30 Pro](product_name) mua mới bao nhiêu tiền
-- điện thoại [Huawei Mate 30 RS Porsche Design](product_name) mua mới bao nhiêu tiền
-- [Nokia 8.3 5G](product_name) giá khi mua mới
-- [Xiaomi Redmi 8](product_name) mua mới có giá bao nhiêu
-- sản phẩm [Itel It5025](product_name) mua mới hiện nay có giá bao nhiêu
-- điện thoại [OPPO F15](product_name) mua mới có giá bao nhiêu
-- sản phẩm [realme 6i](product_name) có giá bao nhiêu khi mua mới
-- [Huawei Enjoy 10](product_name) mua mới hiện nay có giá bao nhiêu
-- [Nokia 210 DS](product_name) giá khi mua mới
-- [Samsung Galaxy Note 10](product_name) mua mới bao nhiêu tiền
-- [Xiaomi Redmi Note 9 Pro](product_name) mua mới bao nhiêu tiền
-- sản phẩm [realme narzo 10](product_name) mua mới hiện nay có giá bao nhiêu
-- [Oppo A31](product_name) giá khi mua mới
-- [Huawei Y9s](product_name) mua mới có giá bao nhiêu
-- [Huawei Mate 30 RS Porsche Design](product_name) mua mới có giá bao nhiêu
-- [Itel It5092](product_name) mua mới bao nhiêu tiền
-- điện thoại [Oppo Reno](product_name) mua mới bao nhiêu tiền
-- [Huawei Y8p](product_name) mua mới bao nhiêu tiền
-- điện thoại [Vivo X50e 5G](product_name) mua mới có giá bao nhiêu
-- sản phẩm [Vivo V19](product_name) mua mới có giá bao nhiêu
-- [realme 6](product_name) giá khi mua mới
-- sản phẩm [Masstel Play Music](product_name) mua mới có giá bao nhiêu
-- điện thoại [Huawei Mate 30](product_name) mua mới bao nhiêu tiền
-- sản phẩm [Masstel Izi 280](product_name) mua mới hiện nay có giá bao nhiêu
-- [ss a70s](product_name) giá mua mới là bao nhiêu
-- [Samsung Galaxy S20+](product_name) mua mới có giá bao nhiêu
-- [Vivo iQOO Neo 3](product_name) mua mới bao nhiêu tiền
-- [Masstel Play 30](product_name) mua mới bao nhiêu tiền
-- [ss a30](product_name) có giá bao nhiêu khi mua mới
+- san pham [Realme 5 Pro](product_name) mua moi bao nhieu tien
+- dien thoai [Nokia 150 DS](product_name) gia mua moi la bao nhieu
+- [realme x50 5g](product_name) gia khi mua moi
+- san pham [OPPO Reno4](product_name) co gia bao nhieu khi mua moi
+- [Vsmart Bee 3](product_name) co gia bao nhieu khi mua moi
+- [Xiaomi Redmi 8A](product_name) mua moi bao nhieu tien
+- san pham [Oppo Find X2 Pro](product_name) co gia bao nhieu khi mua moi
+- dien thoai [Huawei Nova 5](product_name) mua moi bao nhieu tien
+- [Xiaomi Redmi K30 Pro](product_name) mua moi bao nhieu tien
+- dien thoai [Huawei Mate 30 RS Porsche Design](product_name) mua moi bao nhieu tien
+- [Nokia 8.3 5G](product_name) gia khi mua moi
+- [Xiaomi Redmi 8](product_name) mua moi co gia bao nhieu
+- san pham [Itel It5025](product_name) mua moi hien nay co gia bao nhieu
+- dien thoai [OPPO F15](product_name) mua moi co gia bao nhieu
+- san pham [realme 6i](product_name) co gia bao nhieu khi mua moi
+- [Huawei Enjoy 10](product_name) mua moi hien nay co gia bao nhieu
+- [Nokia 210 DS](product_name) gia khi mua moi
+- [Samsung Galaxy Note 10](product_name) mua moi bao nhieu tien
+- [Xiaomi Redmi Note 9 Pro](product_name) mua moi bao nhieu tien
+- san pham [realme narzo 10](product_name) mua moi hien nay co gia bao nhieu
+- [Oppo A31](product_name) gia khi mua moi
+- [Huawei Y9s](product_name) mua moi co gia bao nhieu
+- [Huawei Mate 30 RS Porsche Design](product_name) mua moi co gia bao nhieu
+- [Itel It5092](product_name) mua moi bao nhieu tien
+- dien thoai [Oppo Reno](product_name) mua moi bao nhieu tien
+- [Huawei Y8p](product_name) mua moi bao nhieu tien
+- dien thoai [Vivo X50e 5G](product_name) mua moi co gia bao nhieu
+- san pham [Vivo V19](product_name) mua moi co gia bao nhieu
+- [realme 6](product_name) gia khi mua moi
+- san pham [Masstel Play Music](product_name) mua moi co gia bao nhieu
+- dien thoai [Huawei Mate 30](product_name) mua moi bao nhieu tien
+- san pham [Masstel Izi 280](product_name) mua moi hien nay co gia bao nhieu
+- [ss a70s](product_name) gia mua moi la bao nhieu
+- [Samsung Galaxy S20+](product_name) mua moi co gia bao nhieu
+- [Vivo iQOO Neo 3](product_name) mua moi bao nhieu tien
+- [Masstel Play 30](product_name) mua moi bao nhieu tien
+- [ss a30](product_name) co gia bao nhieu khi mua moi
 - điện thoại [Xiaomi Redmi Note 9s](product_name) mua mới hiện nay có giá bao nhiêu
 - sản phẩm [ss a50s](product_name) giá khi mua mới
 - điện thoại [Samsung Galaxy M31s](product_name) mua mới hiện nay có giá bao nhiêu
@@ -193,27 +262,27 @@
 - giá điện thoại [Xiaomi Mi 9 Pro 5G](product_name) [256 gb](rom) [1 GB](ram) như thế nào
 - giá của điện thoại [Vivo iQOO Neo 3](product_name) [8GB](rom) là bao nhiêu
 - [Huawei Y5p](product_name) [12 GB](ram) [512GB](rom) là bao nhiêu
-- giá của điện thoại [Masstel Play Max](product_name) [32 mb](ram) là bao nhiêu
-- giá sản phẩm [ss 10](product_name) [8gb](rom) là bao nhiêu
-- giá của điện thoại [Huawei Y7p](product_name) [1 GB](ram) như thế nào
-- giá sản phẩm [Nokia N150](product_name) [512 gb](rom) [3 GB](ram) như thế nào
-- giá điện thoại [Energizer E12](product_name) [2 GB](ram) như thế nào
-- giá sản phẩm [Nokia 3.2](product_name) [256gb](rom) như thế nào
-- giá của điện thoại [Realme 6i](product_name) [3 gb](ram) như thế nào
-- giá của điện thoại [Xiaomi Mi 9 Pro 5G](product_name) [2 GB](ram) [16 gb](rom) như thế nào
-- giá sản phẩm [Xiaomi Mi 9 Pro 5G](product_name) [3 gb](ram) [32 gb](rom) như thế nào
-- giá điện thoại [ss a60](product_name) [3 GB](ram) như thế nào
-- giá điện thoại [Oppo Find X2 Pro](product_name) [16 GB](rom) là bao nhiêu
-- giá của sản phẩm [Vsmart Joy 3](product_name) [8 GB](ram) là bao nhiêu
-- giá của điện thoại [Samsung Galaxy A70s](product_name) [128gb](rom) [2 gb](ram) là bao nhiêu
-- giá của sản phẩm [Vivo Nex 3](product_name) [3 GB](ram) [64 GB](rom) là bao nhiêu
-- giá sản phẩm [ss a10s](product_name) [16 GB](rom) [32 mb](ram) như thế nào
-- giá của sản phẩm [Xiaomi Redmi Note 9 Pro](product_name) [64gb](rom) [4mb](ram) là bao nhiêu
-- giá điện thoại [Huawei Nova 7 SE 5G](product_name) [4MB](ram) là bao nhiêu
-- giá của điện thoại [Vivo X50e 5G](product_name) [32 GB](rom) là bao nhiêu
-- giá của sản phẩm [ss a20e](product_name) [3 gb](ram) là bao nhiêu
-- giá sản phẩm [ss a30](product_name) [256 GB](rom) [4 mb](ram) như thế nào
-- giá của sản phẩm [Masstel Izi 280](product_name) [4 mb](ram) như thế nào
+- gia cua dien thoai [Masstel Play Max](product_name) [32 mb](ram) la bao nhieu
+- gia san pham [ss 10](product_name) [8gb](rom) la bao nhieu
+- gia cua dien thoai [Huawei Y7p](product_name) [1 GB](ram) nhu the nao
+- gia san pham [Nokia N150](product_name) [512 gb](rom) [3 GB](ram) nhu the nao
+- gia dien thoai [Energizer E12](product_name) [2 GB](ram) nhu the nao
+- gia san pham [Nokia 3.2](product_name) [256gb](rom) nhu the nao
+- gia cua dien thoai [Realme 6i](product_name) [3 gb](ram) nhu the nao
+- gia cua dien thoai [Xiaomi Mi 9 Pro 5G](product_name) [2 GB](ram) [16 gb](rom) nhu the nao
+- gia san pham [Xiaomi Mi 9 Pro 5G](product_name) [3 gb](ram) [32 gb](rom) nhu the nao
+- gia dien thoai [ss a60](product_name) [3 GB](ram) nhu the nao
+- gia dien thoai [Oppo Find X2 Pro](product_name) [16 GB](rom) la bao nhieu
+- gia cua san pham [Vsmart Joy 3](product_name) [8 GB](ram) la bao nhieu
+- gia cua dien thoai [Samsung Galaxy A70s](product_name) [128gb](rom) [2 gb](ram) la bao nhieu
+- gia cua san pham [Vivo Nex 3](product_name) [3 GB](ram) [64 GB](rom) la bao nhieu
+- gia san pham [ss a10s](product_name) [16 GB](rom) [32 mb](ram) nhu the nao
+- gia cua san pham [Xiaomi Redmi Note 9 Pro](product_name) [64gb](rom) [4mb](ram) la bao nhieu
+- gia dien thoai [Huawei Nova 7 SE 5G](product_name) [4MB](ram) la bao nhieu
+- gia cua dien thoai [Vivo X50e 5G](product_name) [32 GB](rom) la bao nhieu
+- gia cua san pham [ss a20e](product_name) [3 gb](ram) la bao nhieu
+- gia san pham [ss a30](product_name) [256 GB](rom) [4 mb](ram) nhu the nao
+- gia cua san pham [Masstel Izi 280](product_name) [4 mb](ram) nhu the nao
 - giá điện thoại [ss a71](product_name) [16 GB](rom) là bao nhiêu
 - giá điện thoại [Samsung Galaxy S10e](product_name) [1 GB](ram) như thế nào
 - giá của điện thoại [Samsung Galaxy S20 Ultra](product_name) [64 gb](rom) [12 gb](ram) là bao nhiêu
@@ -243,49 +312,49 @@
 - giá điện thoại [Vivo X50 Lite](product_name) là bao nhiêu
 - giá của điện thoại [Samsung Galaxy S10e](product_name) là bao nhiêu
 - giá của điện thoại [Vivo X50](product_name) như thế nào
-- giá của sản phẩm [Samsung Galaxy Note 10+](product_name) như thế nào
+- giá của sp [Samsung Galaxy Note 10+](product_name) như thế nào
 - giá của điện thoại [ss a41](product_name) như thế nào
-- giá của sản phẩm [realme 5 pro](product_name) là bao nhiêu
+- giá của sp [realme 5 pro](product_name) là bao nhiêu
 - giá của điện thoại [ss a20e](product_name) là bao nhiêu
 - giá điện thoại [ss m21](product_name) là bao nhiêu
-- giá của sản phẩm [ss a20e](product_name) là bao nhiêu
-- giá của sản phẩm [Samsung Galaxy S20 Ultra](product_name) là bao nhiêu
-- giá sản phẩm [ss 20+](product_name) như thế nào
+- giá của sp [ss a20e](product_name) là bao nhiêu
+- giá của sp [Samsung Galaxy S20 Ultra](product_name) là bao nhiêu
+- giá sp [ss 20+](product_name) như thế nào
 - giá điện thoại [Vivo Y50](product_name) như thế nào
 - giá của điện thoại [Huawei Nova 5i](product_name) như thế nào
-- giá của điện thoại [realme 6i](product_name) như thế nào
-- giá điện thoại [Realme 6i](product_name) là bao nhiêu
-- giá điện thoại [Huawei Mate Xs](product_name) là bao nhiêu
-- giá điện thoại [realme 6](product_name) như thế nào
-- giá sản phẩm [Samsung Galaxy A70](product_name) như thế nào
-- giá của điện thoại [Nokia 3.2](product_name) như thế nào
-- giá sản phẩm [Vivo S1 Pro](product_name) là bao nhiêu
-- giá của sản phẩm [iPhone 6s Plus](product_name) là bao nhiêu
-- giá sản phẩm [Huawei Y6s](product_name) là bao nhiêu
-- giá của sản phẩm [Nokia 800 Tough](product_name) như thế nào
-- giá của điện thoại [Huawei Nova 5](product_name) là bao nhiêu
-- giá của điện thoại [Xiaomi Mi Note 10 Lite](product_name) như thế nào
-- giá điện thoại [Xiaomi Redmi K30 Pro](product_name) là bao nhiêu
-- giá của điện thoại [Nokia 3.2](product_name) như thế nào
-- giá của điện thoại [Vivo Y50](product_name) là bao nhiêu
-- giá của sản phẩm [Nokia 5.3](product_name) như thế nào
-- giá điện thoại [Realme 5i](product_name) như thế nào
+- giá của dt [realme 6i](product_name) như thế nào
+- giá dt [Realme 6i](product_name) là bao nhiêu
+- giá dt [Huawei Mate Xs](product_name) là bao nhiêu
+- giá dt [realme 6](product_name) như thế nào
+- giá sp [Samsung Galaxy A70](product_name) như thế nào
+- giá của dt [Nokia 3.2](product_name) như thế nào
+- giá sp [Vivo S1 Pro](product_name) là bao nhiêu
+- giá của sp [iPhone 6s Plus](product_name) là bao nhiêu
+- giá sp [Huawei Y6s](product_name) là bao nhiêu
+- giá của sp [Nokia 800 Tough](product_name) như thế nào
+- giá của dt [Huawei Nova 5](product_name) là bao nhiêu
+- giá của dt [Xiaomi Mi Note 10 Lite](product_name) như thế nào
+- giá dt [Xiaomi Redmi K30 Pro](product_name) là bao nhiêu
+- giá của dt [Nokia 3.2](product_name) như thế nào
+- giá của dt [Vivo Y50](product_name) là bao nhiêu
+- giá của sp [Nokia 5.3](product_name) như thế nào
+- giá dt [Realme 5i](product_name) như thế nào
 - giá sản phẩm [Vsmart Star](product_name) là bao nhiêu
 - giá sản phẩm [ss a60](product_name) như thế nào
-- giá điện thoại [Huawei Mate 30](product_name) như thế nào
-- giá điện thoại [Samsung Galaxy A51](product_name) là bao nhiêu
+- giá dtdd [Huawei Mate 30](product_name) như thế nào
+- giá dtdd [Samsung Galaxy A51](product_name) là bao nhiêu
 - giá sản phẩm [Realme X50 Pro Player Edition](product_name) là bao nhiêu
-- giá của điện thoại [realme 6](product_name) là bao nhiêu
-- giá của điện thoại [Vivo Y3](product_name) như thế nào
-- giá điện thoại [Huawei Y7p](product_name) là bao nhiêu
-- giá điện thoại [realme x50 5g](product_name) như thế nào
+- giá của dtdd [realme 6](product_name) là bao nhiêu
+- giá của dtdd [Vivo Y3](product_name) như thế nào
+- giá dtdd [Huawei Y7p](product_name) là bao nhiêu
+- giá dtdd [realme x50 5g](product_name) như thế nào
 - giá sản phẩm [Xiaomi Redmi K30 5G](product_name) là bao nhiêu
 - giá của sản phẩm [Samsung Galaxy Note 10](product_name) như thế nào
 - giá sản phẩm [Samsung Galaxy M40](product_name) là bao nhiêu
 - giá sản phẩm [Vivo Z5i](product_name) là bao nhiêu
 - giá của sản phẩm [Vivo X50 Lite](product_name) là bao nhiêu
 - giá của sản phẩm [Samsung Galaxy M01](product_name) là bao nhiêu
-- giá điện thoại [Samsung Galaxy A51 5G](product_name) là bao nhiêu
+- giá đt [Samsung Galaxy A51 5G](product_name) là bao nhiêu
 - giá của sản phẩm [Vivo V19](product_name) là bao nhiêu
 - [ss m11](product_name) hiện nay có giá bao nhiêu
 - [ss m10s](product_name) hiện nay có giá bao nhiêu
@@ -296,18 +365,18 @@
 - sản phẩm [Xiaomi Redmi K30](product_name) bao nhiêu tiền
 - [iPhone 11 Pro Max](product_name) hiện nay có giá bao nhiêu
 - sản phẩm [Xiaomi Redmi Note 8](product_name) bao nhiêu tiền
-- điện thoại [Nokia 2720 Flip 4G](product_name) có giá bao nhiêu
+- đt [Nokia 2720 Flip 4G](product_name) có giá bao nhiêu
 - [ss fold](product_name) có giá bao nhiêu
-- điện thoại [ss z flip 5g](product_name) hiện nay có giá bao nhiêu
-- điện thoại [realme 5i](product_name) hiện nay có giá bao nhiêu
-- điện thoại [Huawei P30 Pro](product_name) có giá bao nhiêu
+- đt [ss z flip 5g](product_name) hiện nay có giá bao nhiêu
+- đt [realme 5i](product_name) hiện nay có giá bao nhiêu
+- đt [Huawei P30 Pro](product_name) có giá bao nhiêu
 - [Xiaomi Redmi Note 8 Pro](product_name) bao nhiêu tiền
 - [Vivo Y30](product_name) bao nhiêu tiền
-- điện thoại [Xiaomi Redmi 7](product_name) hiện nay có giá bao nhiêu
+- đt [Xiaomi Redmi 7](product_name) hiện nay có giá bao nhiêu
 - sản phẩm [iPhone 11 Pro Max](product_name) hiện nay có giá bao nhiêu
-- điện thoại [Realme 6](product_name) bao nhiêu tiền
+- đt [Realme 6](product_name) bao nhiêu tiền
 - sản phẩm [Realme 5 Pro](product_name) có giá bao nhiêu
-- điện thoại [Xiaomi Mi 10 Pro](product_name) hiện nay có giá bao nhiêu
+- đt [Xiaomi Mi 10 Pro](product_name) hiện nay có giá bao nhiêu
 - sản phẩm [Realme C3](product_name) bao nhiêu tiền
 - điện thoại [Huawei nova 5z](product_name) bao nhiêu tiền
 - [Masstel Izi 112](product_name) bao nhiêu tiền
@@ -378,43 +447,43 @@
 
 ## intent: online_price
 <!-- hỏi giá sản phẩm khi mua online -->
-- điện thoại [Xiaomi Black Shark 3](product_name) [8 GB](ram) [256 GB](rom) mua online hiện nay có giá bao nhiêu
-- [realme 6](product_name) [1 GB](ram) [32 gb](rom) giá mua online là bao nhiêu
-- [Samsung Galaxy S20 Ultra](product_name) [256 GB](rom) [8 mb](ram) mua online có giá bao nhiêu
-- điện thoại [ss 10 lite](product_name) [256GB](rom) [512 MB](ram) mua online có giá bao nhiêu
-- [Masstel izi 120](product_name) [4MB](ram) [32 gb](rom) giá mua online là bao nhiêu
-- sản phẩm [ss a01](product_name) [16 GB](rom) mua online bao nhiêu tiền
-- điện thoại [Samsung Galaxy Note 10 Lite](product_name) [16GB](rom) [4 gb](ram) giá mua online là bao nhiêu
-- điện thoại [Vivo Y50](product_name) [32 MB](ram) [8gb](rom) giá mua online là bao nhiêu
-- [Oppo Find X2 Pro](product_name) [8 gb](ram) mua online hiện nay có giá bao nhiêu
-- điện thoại [Vsmart Star](product_name) [4 MB](ram) [256 GB](rom) giá khi mua online
-- sản phẩm [ss a71 5g](product_name) [512GB](rom) mua online hiện nay có giá bao nhiêu
-- sản phẩm [Xiaomi Mi 10 S](product_name) [512 mb](ram) mua online bao nhiêu tiền
-- sản phẩm [Huawei Mate 30 RS Porsche Design](product_name) [8 gb](ram) [128gb](rom) mua online có giá bao nhiêu
-- [ss a41](product_name) [1 gb](ram) mua online có giá bao nhiêu
-- sản phẩm [Oppo A12](product_name) [12 gb](ram) [8gb](rom) mua online hiện nay có giá bao nhiêu
-- điện thoại [Vivo X50 Lite](product_name) [32 mb](ram) [32GB](rom) giá mua online là bao nhiêu
-- điện thoại [Realme 5 Pro](product_name) [128 gb](rom) mua online hiện nay có giá bao nhiêu
-- điện thoại [Huawei Nova 7 5G](product_name) [64gb](rom) [8 mb](ram) mua online có giá bao nhiêu
-- [Nokia 150 DS](product_name) [16gb](rom) [32 mb](ram) mua online hiện nay có giá bao nhiêu
-- sản phẩm [Masstel Max R1](product_name) [3 gb](ram) mua online bao nhiêu tiền
-- [Samsung Galaxy Note 20+](product_name) [256gb](rom) mua online hiện nay có giá bao nhiêu
-- [Samsung Galaxy A21s](product_name) [16GB](rom) giá mua online là bao nhiêu
-- điện thoại [Samsung Galaxy M01](product_name) [4 MB](ram) giá khi mua online
-- [Huawei P40 Lite 5G](product_name) [128 gb](rom) có giá bao nhiêu khi mua online
-- [ss m40](product_name) [6 GB](ram) có giá bao nhiêu khi mua online
-- sản phẩm [realme c3](product_name) [64GB](rom) có giá bao nhiêu khi mua online
-- [Itel It2170](product_name) [32GB](rom) giá khi mua online
-- sản phẩm [Huawei P40](product_name) [128gb](rom) [8 mb](ram) mua online bao nhiêu tiền
-- sản phẩm [OPPO F15](product_name) [3 gb](ram) [128 GB](rom) mua online hiện nay có giá bao nhiêu
-- [Huawei Nova 5](product_name) [3 GB](ram) có giá bao nhiêu khi mua online
-- điện thoại [Oppo Reno](product_name) [32 GB](rom) [2 gb](ram) mua online bao nhiêu tiền
-- sản phẩm [Oppo A31](product_name) [1 GB](ram) [256gb](rom) mua online bao nhiêu tiền
-- điện thoại [Masstel Izi 250](product_name) [3 GB](ram) mua online có giá bao nhiêu
-- [Energizer E241s](product_name) [3 gb](ram) mua online hiện nay có giá bao nhiêu
-- điện thoại [ss m31](product_name) [8gb](rom) giá mua online là bao nhiêu
-- [Vsmart Star](product_name) [16 GB](rom) [3 GB](ram) giá khi mua online
-- điện thoại [OPPO A92s](product_name) [512gb](rom) giá khi mua online
+- dien thoai [Xiaomi Black Shark 3](product_name) [8 GB](ram) [256 GB](rom) mua online hien nay co gia bao nhieu
+- [realme 6](product_name) [1 GB](ram) [32 gb](rom) gia mua online la bao nhieu
+- [Samsung Galaxy S20 Ultra](product_name) [256 GB](rom) [8 mb](ram) mua online co gia bao nhieu
+- dien thoai [ss 10 lite](product_name) [256GB](rom) [512 MB](ram) mua online co gia bao nhieu
+- [Masstel izi 120](product_name) [4MB](ram) [32 gb](rom) gia mua online la bao nhieu
+- san pham [ss a01](product_name) [16 GB](rom) mua online bao nhieu tien
+- dien thoai [Samsung Galaxy Note 10 Lite](product_name) [16GB](rom) [4 gb](ram) gia mua online la bao nhieu
+- dien thoai [Vivo Y50](product_name) [32 MB](ram) [8gb](rom) gia mua online la bao nhieu
+- [Oppo Find X2 Pro](product_name) [8 gb](ram) mua online hien nay co gia bao nhieu
+- dien thoai [Vsmart Star](product_name) [4 MB](ram) [256 GB](rom) gia khi mua online
+- san pham [ss a71 5g](product_name) [512GB](rom) mua online hien nay co gia bao nhieu
+- san pham [Xiaomi Mi 10 S](product_name) [512 mb](ram) mua online bao nhieu tien
+- san pham [Huawei Mate 30 RS Porsche Design](product_name) [8 gb](ram) [128gb](rom) mua online co gia bao nhieu
+- [ss a41](product_name) [1 gb](ram) mua online co gia bao nhieu
+- san pham [Oppo A12](product_name) [12 gb](ram) [8gb](rom) mua online hien nay co gia bao nhieu
+- dien thoai [Vivo X50 Lite](product_name) [32 mb](ram) [32GB](rom) gia mua online la bao nhieu
+- dien thoai [Realme 5 Pro](product_name) [128 gb](rom) mua online hien nay co gia bao nhieu
+- dien thoai [Huawei Nova 7 5G](product_name) [64gb](rom) [8 mb](ram) mua online co gia bao nhieu
+- [Nokia 150 DS](product_name) [16gb](rom) [32 mb](ram) mua online hien nay co gia bao nhieu
+- san pham [Masstel Max R1](product_name) [3 gb](ram) mua online bao nhieu tien
+- [Samsung Galaxy Note 20+](product_name) [256gb](rom) mua online hien nay co gia bao nhieu
+- [Samsung Galaxy A21s](product_name) [16GB](rom) gia mua online la bao nhieu
+- dien thoai [Samsung Galaxy M01](product_name) [4 MB](ram) gia khi mua online
+- [Huawei P40 Lite 5G](product_name) [128 gb](rom) co gia bao nhieu khi mua online
+- [ss m40](product_name) [6 GB](ram) co gia bao nhieu khi mua online
+- san pham [realme c3](product_name) [64GB](rom) co gia bao nhieu khi mua online
+- [Itel It2170](product_name) [32GB](rom) gia khi mua online
+- san pham [Huawei P40](product_name) [128gb](rom) [8 mb](ram) mua online bao nhieu tien
+- san pham [OPPO F15](product_name) [3 gb](ram) [128 GB](rom) mua online hien nay co gia bao nhieu
+- [Huawei Nova 5](product_name) [3 GB](ram) co gia bao nhieu khi mua online
+- dien thoai [Oppo Reno](product_name) [32 GB](rom) [2 gb](ram) mua online bao nhieu tien
+- san pham [Oppo A31](product_name) [1 GB](ram) [256gb](rom) mua online bao nhieu tien
+- dien thoai [Masstel Izi 250](product_name) [3 GB](ram) mua online co gia bao nhieu
+- [Energizer E241s](product_name) [3 gb](ram) mua online hien nay co gia bao nhieu
+- dien thoai [ss m31](product_name) [8gb](rom) gia mua online la bao nhieu
+- [Vsmart Star](product_name) [16 GB](rom) [3 GB](ram) gia khi mua online
+- dien thoai [OPPO A92s](product_name) [512gb](rom) gia khi mua online
 - điện thoại [Vivo V19 Pro](product_name) [64 gb](rom) mua online hiện nay có giá bao nhiêu
 - [Huawei Y6s](product_name) [256gb](rom) [6 GB](ram) mua online hiện nay có giá bao nhiêu
 - sản phẩm [ss s10e](product_name) [3 GB](ram) [16GB](rom) mua online bao nhiêu tiền
@@ -433,37 +502,37 @@
 - [ss a71](product_name) giá mua online là bao nhiêu
 - điện thoại [Nokia 150](product_name) giá mua online là bao nhiêu
 - sản phẩm [ss a20s](product_name) giá mua online là bao nhiêu
-- [Samsung Galaxy Xcover Pro](product_name) mua online có giá bao nhiêu
-- [ss a70](product_name) mua online hiện nay có giá bao nhiêu
-- sản phẩm [Xiaomi Redmi 9](product_name) mua online có giá bao nhiêu
-- [Nokia 105 Single Sim (2017)](product_name) giá mua online là bao nhiêu
-- [Nokia 1.3](product_name) mua online có giá bao nhiêu
-- điện thoại [Xiaomi Redmi Note 9 Pro](product_name) có giá bao nhiêu khi mua online
-- điện thoại [Huawei Nova 6](product_name) giá khi mua online
-- [realme c3](product_name) có giá bao nhiêu khi mua online
-- sản phẩm [Realme 6i](product_name) có giá bao nhiêu khi mua online
-- điện thoại [ss a20s](product_name) mua online bao nhiêu tiền
-- sản phẩm [Vivo X30 Pro](product_name) mua online có giá bao nhiêu
-- sản phẩm [Samsung Galaxy Z Flip](product_name) mua online bao nhiêu tiền
-- [iPhone XR](product_name) mua online bao nhiêu tiền
-- [Vivo Y19](product_name) giá mua online là bao nhiêu
-- [realme narzo 10](product_name) giá khi mua online
-- sản phẩm [Huawei Nova 7 SE 5G](product_name) giá mua online là bao nhiêu
-- [ss m21](product_name) giá mua online là bao nhiêu
-- điện thoại [Samsung Galaxy S20 Ultra](product_name) giá mua online là bao nhiêu
-- [Vsmart Joy 3](product_name) giá khi mua online
-- điện thoại [realme u1](product_name) giá khi mua online
-- sản phẩm [Realme X2](product_name) có giá bao nhiêu khi mua online
-- điện thoại [Samsung Galaxy A11](product_name) mua online bao nhiêu tiền
-- [Huawei P30 Lite New Edition](product_name) có giá bao nhiêu khi mua online
-- sản phẩm [ss s20+](product_name) có giá bao nhiêu khi mua online
-- [Xiaomi Redmi Note 9 Pro Max](product_name) mua online bao nhiêu tiền
-- điện thoại [Vivo X30 Pro](product_name) mua online hiện nay có giá bao nhiêu
-- [Realme 6](product_name) có giá bao nhiêu khi mua online
-- điện thoại [Xiaomi Black Shark 3](product_name) mua online có giá bao nhiêu
-- sản phẩm [Xiaomi Black Shark 2 Pro](product_name) giá mua online là bao nhiêu
-- [Xiaomi Redmi K30i](product_name) mua online có giá bao nhiêu
-- [Nokia 150 DS](product_name) giá khi mua online
+- [Samsung Galaxy Xcover Pro](product_name) mua online co gia bao nhieu
+- [ss a70](product_name) mua online hien nay co gia bao nhieu
+- san pham [Xiaomi Redmi 9](product_name) mua online co gia bao nhieu
+- [Nokia 105 Single Sim (2017)](product_name) gia mua online la bao nhieu
+- [Nokia 1.3](product_name) mua online co gia bao nhieu
+- dien thoai [Xiaomi Redmi Note 9 Pro](product_name) co gia bao nhieu khi mua online
+- dien thoai [Huawei Nova 6](product_name) gia khi mua online
+- [realme c3](product_name) co gia bao nhieu khi mua online
+- san pham [Realme 6i](product_name) co gia bao nhieu khi mua online
+- dien thoai [ss a20s](product_name) mua online bao nhieu tien
+- san pham [Vivo X30 Pro](product_name) mua online co gia bao nhieu
+- san pham [Samsung Galaxy Z Flip](product_name) mua online bao nhieu tien
+- [iPhone XR](product_name) mua online bao nhieu tien
+- [Vivo Y19](product_name) gia mua online la bao nhieu
+- [realme narzo 10](product_name) gia khi mua online
+- san pham [Huawei Nova 7 SE 5G](product_name) gia mua online la bao nhieu
+- [ss m21](product_name) gia mua online la bao nhieu
+- dien thoai [Samsung Galaxy S20 Ultra](product_name) gia mua online la bao nhieu
+- [Vsmart Joy 3](product_name) gia khi mua online
+- dien thoai [realme u1](product_name) gia khi mua online
+- san pham [Realme X2](product_name) co gia bao nhieu khi mua online
+- dien thoai [Samsung Galaxy A11](product_name) mua online bao nhieu tien
+- [Huawei P30 Lite New Edition](product_name) co gia bao nhieu khi mua online
+- san pham [ss s20+](product_name) co gia bao nhieu khi mua online
+- [Xiaomi Redmi Note 9 Pro Max](product_name) mua online bao nhieu tien
+- dien thoai [Vivo X30 Pro](product_name) mua online hien nay co gia bao nhieu
+- [Realme 6](product_name) co gia bao nhieu khi mua online
+- dien thoai [Xiaomi Black Shark 3](product_name) mua online co gia bao nhieu
+- san pham [Xiaomi Black Shark 2 Pro](product_name) gia mua online la bao nhieu
+- [Xiaomi Redmi K30i](product_name) mua online co gia bao nhieu
+- [Nokia 150 DS](product_name) gia khi mua online
 - điện thoại [ss z flip](product_name) giá khi mua online
 - sản phẩm [Xiaomi Redmi Note 7](product_name) giá online như thế nào
 - [Masstel Fami S2](product_name) giá online là bao nhiêu
@@ -517,36 +586,36 @@
 
 ## intent: old_product_price
 <!-- hỏi giá sản phẩm cũ -->
-- [Huawei Y8p](product_name) giá cũ là bao nhiêu
-- [ss m01](product_name) giá cũ là bao nhiêu
-- điện thoại [ss a20s](product_name) giá cũ như thế nào
-- [Huawei Nova 5i Pro](product_name) giá cũ như thế nào
-- [realme x2 pro](product_name) giá cũ như thế nào
-- sản phẩm [realme x50 5g](product_name) giá cũ là bao nhiêu
-- điện thoại [Masstel Fami 9](product_name) giá cũ là bao nhiêu
-- điện thoại [realme xt](product_name) giá cũ là bao nhiêu
-- điện thoại [OPPO Reno Ace 2](product_name) giá cũ là bao nhiêu
-- sản phẩm [Vivo X50e 5G](product_name) giá cũ là bao nhiêu
-- [OPPO Reno 3A](product_name) giá cũ như thế nào
-- [Huawei Nova 5 Pro](product_name) giá cũ là bao nhiêu
-- sản phẩm [Xiaomi Redmi Note 8T](product_name) giá cũ là bao nhiêu
-- điện thoại [Huawei P Smart S](product_name) giá cũ là bao nhiêu
-- sản phẩm [Huawei P Smart Pro 2019](product_name) giá cũ như thế nào
-- [Oppo A31](product_name) giá cũ là bao nhiêu
-- sản phẩm [ss a01](product_name) giá cũ là bao nhiêu
-- điện thoại [realme 5 pro](product_name) giá cũ là bao nhiêu
-- điện thoại [Huawei Mate 30 Pro 5G](product_name) giá cũ là bao nhiêu
-- [Masstel Fami 12](product_name) giá cũ như thế nào
-- [Xiaomi Black Shark 2](product_name) giá cũ là bao nhiêu
-- sản phẩm [realme 6](product_name) giá cũ như thế nào
-- sản phẩm [realme c2](product_name) giá cũ là bao nhiêu
-- điện thoại [Masstel Hapi 10 Fami](product_name) giá cũ như thế nào
-- điện thoại [Nokia 1.3](product_name) giá cũ là bao nhiêu
-- sản phẩm [ss a10s](product_name) giá cũ như thế nào
-- sản phẩm [ss 10](product_name) giá cũ như thế nào
-- điện thoại [ss a20e](product_name) giá cũ là bao nhiêu
-- sản phẩm [Masstel Izi 112](product_name) giá cũ là bao nhiêu
-- [Vivo Y19](product_name) giá cũ như thế nào
+- [Huawei Y8p](product_name) gia cu la bao nhieu
+- [ss m01](product_name) gia cu la bao nhieu
+- dien thoai [ss a20s](product_name) gia cu nhu the nao
+- [Huawei Nova 5i Pro](product_name) gia cu nhu the nao
+- [realme x2 pro](product_name) gia cu nhu the nao
+- san pham [realme x50 5g](product_name) gia cu la bao nhieu
+- dien thoai [Masstel Fami 9](product_name) gia cu la bao nhieu
+- dien thoai [realme xt](product_name) gia cu la bao nhieu
+- dien thoai [OPPO Reno Ace 2](product_name) gia cu la bao nhieu
+- san pham [Vivo X50e 5G](product_name) gia cu la bao nhieu
+- [OPPO Reno 3A](product_name) gia cu nhu the nao
+- [Huawei Nova 5 Pro](product_name) gia cu la bao nhieu
+- san pham [Xiaomi Redmi Note 8T](product_name) gia cu la bao nhieu
+- dien thoai [Huawei P Smart S](product_name) gia cu la bao nhieu
+- san pham [Huawei P Smart Pro 2019](product_name) gia cu nhu the nao
+- [Oppo A31](product_name) gia cu la bao nhieu
+- san pham [ss a01](product_name) gia cu la bao nhieu
+- dien thoai [realme 5 pro](product_name) gia cu la bao nhieu
+- dien thoai [Huawei Mate 30 Pro 5G](product_name) gia cu la bao nhieu
+- [Masstel Fami 12](product_name) gia cu nhu the nao
+- [Xiaomi Black Shark 2](product_name) gia cu la bao nhieu
+- san pham [realme 6](product_name) gia cu nhu the nao
+- san pham [realme c2](product_name) gia cu la bao nhieu
+- dien thoai [Masstel Hapi 10 Fami](product_name) gia cu nhu the nao
+- dien thoai [Nokia 1.3](product_name) gia cu la bao nhieu
+- san pham [ss a10s](product_name) gia cu nhu the nao
+- san pham [ss 10](product_name) gia cu nhu the nao
+- dien thoai [ss a20e](product_name) gia cu la bao nhieu
+- san pham [Masstel Izi 112](product_name) gia cu la bao nhieu
+- [Vivo Y19](product_name) gia cu nhu the nao
 - điện thoại [OPPO Reno 3A](product_name) giá cũ là bao nhiêu
 - [Vivo Y91C](product_name) giá cũ là bao nhiêu
 - sản phẩm [Samsung Galaxy A21s](product_name) [8 gb](ram) giá cũ như thế nào
@@ -619,38 +688,38 @@
 - giá sản phẩm [Samsung Galaxy Note 20+](product_name) cũ là bao nhiêu
 - giá của điện thoại [Nokia 3310](product_name) khi mua cũ như thế nào
 - giá của sản phẩm [Xiaomi Redmi Note 7](product_name) khi mua cũ như thế nào
-- giá sản phẩm [ss 10 lite](product_name) cũ là bao nhiêu
-- giá điện thoại [Itel It5092](product_name) khi mua cũ như thế nào
-- giá sản phẩm [Huawei nova 5z](product_name) khi mua cũ như thế nào
-- giá của sản phẩm [Huawei Nova 7 5G](product_name) khi mua cũ như thế nào
-- giá của sản phẩm [realme x2](product_name) cũ là bao nhiêu
-- giá của điện thoại [Realme 5s](product_name) cũ là bao nhiêu
-- giá của sản phẩm [ss a90 5g](product_name) khi mua cũ như thế nào
-- giá của sản phẩm [Xiaomi Mi CC9 Pro](product_name) khi mua cũ như thế nào
-- giá sản phẩm [ss m11](product_name) cũ là bao nhiêu
-- giá điện thoại [Huawei P Smart S](product_name) cũ là bao nhiêu
-- giá sản phẩm [Xiaomi Mi 10 Pro](product_name) khi mua cũ như thế nào
-- giá điện thoại [Xiaomi Redmi K30 Pro Zoom Edition](product_name) khi mua cũ như thế nào
-- giá của điện thoại [Xiaomi Redmi 8](product_name) cũ là bao nhiêu
-- giá của điện thoại [Samsung Galaxy A30](product_name) cũ là bao nhiêu
-- giá điện thoại [Huawei Mate 30 RS Porsche Design](product_name) khi mua cũ như thế nào
-- giá của điện thoại [ss a51](product_name) cũ là bao nhiêu
-- giá của điện thoại [Masstel Fami 9](product_name) cũ là bao nhiêu
-- giá điện thoại [ss a60](product_name) cũ là bao nhiêu
-- giá của sản phẩm [Samsung Galaxy A10e](product_name) khi mua cũ như thế nào
-- giá điện thoại [ss a70](product_name) khi mua cũ như thế nào
-- giá của sản phẩm [Masstel Izi 280](product_name) khi mua cũ như thế nào
-- giá của sản phẩm [Vivo X50 Pro](product_name) cũ là bao nhiêu
-- giá của sản phẩm [ss m21](product_name) cũ là bao nhiêu
-- giá điện thoại [Samsung Galaxy A10e](product_name) khi mua cũ như thế nào
-- [Xiaomi Redmi 7](product_name) giá mua cũ là bao nhiêu
-- [Masstel Fami 9](product_name) có giá bao nhiêu khi mua cũ
-- điện thoại [Energizer E100](product_name) mua cũ có giá bao nhiêu
-- [ss a11](product_name) mua cũ bao nhiêu tiền
-- sản phẩm [realme 6](product_name) giá khi mua cũ
-- điện thoại [Vivo Y91C](product_name) mua cũ bao nhiêu tiền
-- điện thoại [Vivo V19](product_name) mua cũ có giá bao nhiêu
-- [Realme X50 Pro Player Edition](product_name) mua cũ hiện nay có giá bao nhiêu
+- gia san pham [ss 10 lite](product_name) cu la bao nhieu
+- gia dien thoai [Itel It5092](product_name) khi mua cu nhu the nao
+- gia san pham [Huawei nova 5z](product_name) khi mua cu nhu the nao
+- gia cua san pham [Huawei Nova 7 5G](product_name) khi mua cu nhu the nao
+- gia cua san pham [realme x2](product_name) cu la bao nhieu
+- gia cua dien thoai [Realme 5s](product_name) cu la bao nhieu
+- gia cua san pham [ss a90 5g](product_name) khi mua cu nhu the nao
+- gia cua san pham [Xiaomi Mi CC9 Pro](product_name) khi mua cu nhu the nao
+- gia san pham [ss m11](product_name) cu la bao nhieu
+- gia dien thoai [Huawei P Smart S](product_name) cu la bao nhieu
+- gia san pham [Xiaomi Mi 10 Pro](product_name) khi mua cu nhu the nao
+- gia dien thoai [Xiaomi Redmi K30 Pro Zoom Edition](product_name) khi mua cu nhu the nao
+- gia cua dien thoai [Xiaomi Redmi 8](product_name) cu la bao nhieu
+- gia cua dien thoai [Samsung Galaxy A30](product_name) cu la bao nhieu
+- gia dien thoai [Huawei Mate 30 RS Porsche Design](product_name) khi mua cu nhu the nao
+- gia cua dien thoai [ss a51](product_name) cu la bao nhieu
+- gia cua dien thoai [Masstel Fami 9](product_name) cu la bao nhieu
+- gia dien thoai [ss a60](product_name) cu la bao nhieu
+- gia cua san pham [Samsung Galaxy A10e](product_name) khi mua cu nhu the nao
+- gia dien thoai [ss a70](product_name) khi mua cu nhu the nao
+- gia cua san pham [Masstel Izi 280](product_name) khi mua cu nhu the nao
+- gia cua san pham [Vivo X50 Pro](product_name) cu la bao nhieu
+- gia cua san pham [ss m21](product_name) cu la bao nhieu
+- gia dien thoai [Samsung Galaxy A10e](product_name) khi mua cu nhu the nao
+- [Xiaomi Redmi 7](product_name) gia mua cu la bao nhieu
+- [Masstel Fami 9](product_name) co gia bao nhieu khi mua cu
+- dien thoai [Energizer E100](product_name) mua cu co gia bao nhieu
+- [ss a11](product_name) mua cu bao nhieu tien
+- san pham [realme 6](product_name) gia khi mua cu
+- dien thoai [Vivo Y91C](product_name) mua cu bao nhieu tien
+- dien thoai [Vivo V19](product_name) mua cu co gia bao nhieu
+- [Realme X50 Pro Player Edition](product_name) mua cu hien nay co gia bao nhieu
 - [Energizer E241s](product_name) có giá bao nhiêu khi mua cũ
 - [Vsmart Star 3](product_name) giá khi mua cũ
 - [Nokia 3.2](product_name) mua cũ có giá bao nhiêu
@@ -692,27 +761,27 @@
 
 ## intent: product_configuration
 <!-- hỏi cấu hình sản phẩm -->
-- Cấu hình của [Realme Narzo 10](product_name) [8GB](ram) [8GB](rom) như thế nào
-- Cấu hình của [OPPO A92](product_name) [64GB](rom) như thế nào
-- Cấu hình của [realme narzo 10](product_name) [2GB](ram) [256gb](rom) như thế nào
-- Cấu hình của [OPPO A52](product_name) [32 mb](ram) như thế nào
-- Cấu hình của [Xiaomi Black Shark 3](product_name) [8 mb](ram) [16gb](rom) như thế nào
-- Cấu hình của [Nokia 110 DS](product_name) [4gb](ram) [128gb](rom) như thế nào
-- Cấu hình của [Masstel Max R1](product_name) [3gb](ram) như thế nào
-- Cấu hình của [OPPO Find X2 Neo](product_name) [2GB](ram) như thế nào
-- Cấu hình của [Realme XT](product_name) [512 GB](rom) như thế nào
-- Cấu hình của [Huawei P40 Lite 5G](product_name) [4GB](ram) như thế nào
-- Cấu hình của [ss a51](product_name) [32GB](rom) như thế nào
-- Cấu hình của [Nokia 230](product_name) [16GB](rom) như thế nào
-- Cấu hình của [Xiaomi Black Shark 3](product_name) [6gb](ram) [64 GB](rom) như thế nào
-- Cấu hình của [realme x2 pro](product_name) [512gb](rom) như thế nào
-- Cấu hình của [Masstel Fami P25](product_name) [1 GB](ram) như thế nào
-- Cấu hình của [Nokia 5.3](product_name) [8mb](ram) [128 GB](rom) như thế nào
-- Cấu hình của [Realme 6 Pro](product_name) [512 GB](rom) như thế nào
-- Cấu hình của [Oppo Reno3 Pro](product_name) [8 mb](ram) [16GB](rom) như thế nào
-- Cấu hình của [Xiaomi Redmi 8A](product_name) [512mb](ram) như thế nào
-- Cấu hình của [Oppo A31](product_name) [1gb](ram) [64GB](rom) như thế nào
-- Cấu hình của [ss 10 plus](product_name) [6GB](ram) [64GB](rom) như thế nào
+- Cau hinh cua [Realme Narzo 10](product_name) [8GB](ram) [8GB](rom) nhu the nao
+- Cau hinh cua [OPPO A92](product_name) [64GB](rom) nhu the nao
+- Cau hinh cua [realme narzo 10](product_name) [2GB](ram) [256gb](rom) nhu the nao
+- Cau hinh cua [OPPO A52](product_name) [32 mb](ram) nhu the nao
+- Cau hinh cua [Xiaomi Black Shark 3](product_name) [8 mb](ram) [16gb](rom) nhu the nao
+- Cau hinh cua [Nokia 110 DS](product_name) [4gb](ram) [128gb](rom) nhu the nao
+- Cau hinh cua [Masstel Max R1](product_name) [3gb](ram) nhu the nao
+- Cau hinh cua [OPPO Find X2 Neo](product_name) [2GB](ram) nhu the nao
+- Cau hinh cua [Realme XT](product_name) [512 GB](rom) nhu the nao
+- Cau hinh cua [Huawei P40 Lite 5G](product_name) [4GB](ram) nhu the nao
+- Cau hinh cua [ss a51](product_name) [32GB](rom) nhu the nao
+- Cau hinh cua [Nokia 230](product_name) [16GB](rom) nhu the nao
+- Cau hinh cua [Xiaomi Black Shark 3](product_name) [6gb](ram) [64 GB](rom) nhu the nao
+- Cau hinh cua [realme x2 pro](product_name) [512gb](rom) nhu the nao
+- Cau hinh cua [Masstel Fami P25](product_name) [1 GB](ram) nhu the nao
+- Cau hinh cua [Nokia 5.3](product_name) [8mb](ram) [128 GB](rom) nhu the nao
+- Cau hinh cua [Realme 6 Pro](product_name) [512 GB](rom) nhu the nao
+- Cau hinh cua [Oppo Reno3 Pro](product_name) [8 mb](ram) [16GB](rom) nhu the nao
+- Cau hinh cua [Xiaomi Redmi 8A](product_name) [512mb](ram) nhu the nao
+- Cau hinh cua [Oppo A31](product_name) [1gb](ram) [64GB](rom) nhu the nao
+- Cau hinh cua [ss 10 plus](product_name) [6GB](ram) [64GB](rom) nhu the nao
 - Cấu hình của [Masstel iZi 206](product_name) [2GB](ram) như thế nào
 - Cấu hình của [Xiaomi Mi CC9 Pro](product_name) [16 GB](rom) như thế nào
 - Cấu hình của [Xiaomi Redmi K30 5G Tracing](product_name) [4MB](ram) [512gb](rom) như thế nào
@@ -741,6 +810,20 @@
 - cho hỏi cấu hình của [OPPO A91](product_name) có ổn không
 - cấu hình của [Realme 6](product_name) có ổn không
 - Cấu hình của [iPhone 7](product_name) [32GB](rom) như thế nào
+- cấu hình của máy này như thế nào
+- cấu hình ntn
+- cấu hình ra sao
+- cấu hình của máy
+- cấu hình máy ra sao
+- cấu hình sản phẩm
+- cấu hình đt
+- cau hinh cua may nay nhu the nao
+- cau hinh ntn
+- cau hinh ra sao
+- cau hinh cua may
+- cau hinh may ra sao
+- cau hinh san pham
+- cau hinh dt
 - Cấu hình của [iPhone 6s Plus](product_name) [32GB](rom) như thế nào
 
 ## intent: type_of_product
@@ -750,6 +833,11 @@
 - shop có điện thoại của những hãng nào
 - có bao nhiêu hãng điện thoại
 - ad ơi có điện thoại của những hãng nào vậy
+- shop co nhung san pham nao
+- co bao nhieu loai san pham
+- shop co dien thoai cua nhung hang nao
+- co bao nhieu hang dien thoai
+- ad oi co dien thoai cua nhung hang nao vay
 
 ## intent: need_help
 <!-- cần tư vấn -->
@@ -760,6 +848,13 @@
 - em muốn mua một chiếc điện thoại mà không biết chọn cái nào
 - em muốn mua điện thoại
 - ad giới thiệu cho em một vài chiếc điện thoại được không
+- toi muon mua dien thoai
+- co the tu van cho toi duoc khong
+- toi can mot chiec dien thoai
+- ad co the giup em chon mot chiec dien thoai duoc khong
+- em muon mua mot chiec dien thoai ma khong biet chon cai nao
+- em muon mua dien thoai
+- ad gioi thieu cho em mot vai chiec dien thoai duoc khong
 
 ## intent: list_product
 <!-- danh sách sản phẩm của 1 hãng -->
@@ -770,6 +865,13 @@
 - Danh sách sản phẩm của [Oppo](product_company)
 - Danh sách sản phẩm của [Huawei](product_company)
 - Danh sách sản phẩm của [Samsung](product_company)
+- Danh sach san pham cua [Iphone](product_company)
+- Danh sach san pham cua [Realme](product_company)
+- Danh sach san pham cua [Huawei](product_company)
+- Danh sach san pham cua [Realmi](product_company)
+- Danh sach san pham cua [Oppo](product_company)
+- Danh sach san pham cua [Huawei](product_company)
+- Danh sach san pham cua [Samsung](product_company)
 
 ## intent: order
 <!-- đặt mua sản phẩm -->
@@ -781,27 +883,27 @@
 - đặt mua [Samsung Galaxy S20 plus](product_name) [4 mb](ram)
 - đặt mua [Samsung Galaxy A70](product_name) [12gb](ram) [16 gb](rom)
 - đặt mua [OPPO F15](product_name) [12GB](ram)
-- đặt mua [OPPO A1k](product_name) [6 GB](ram)
-- đặt mua [Realme C3](product_name) [256 gb](rom)
-- đặt mua [Huawei P40 Lite 5G](product_name) [256GB](rom)
-- đặt mua [Masstel Fami P25](product_name) [8MB](ram) [8gb](rom)
-- đặt mua [Vsmart Active 3](product_name) [2gb](ram)
-- đặt mua [Xiaomi Mi Note 10](product_name) [8 gb](ram)
-- đặt mua [Nokia 125](product_name) [64gb](rom)
-- đặt mua [Realme XT](product_name) [1 gb](ram)
-- đặt mua [ss a20s](product_name) [32MB](ram)
-- đặt mua [Huawei Mate 30](product_name) [3gb](ram)
-- đặt mua [Nokia 9.3 PureView](product_name) [1 gb](ram)
-- đặt mua [OPPO Reno 3 Vitality](product_name) [512 gb](rom)
-- đặt mua [Samsung Galaxy A31](product_name) [3GB](ram)
-- đặt mua [ss m31](product_name) [16 GB](rom)
-- đặt mua [ss a21s](product_name) [512 MB](ram) [512 gb](rom)
-- đặt mua [Realme 6i](product_name) [1 gb](ram) [8GB](rom)
-- đặt mua [Samsung Galaxy A60](product_name) [64GB](rom)
-- đặt mua [Samsung Galaxy M51](product_name) [6 GB](ram) [8GB](rom)
-- đặt mua [ss 10 lite](product_name) [2gb](ram)
-- đặt mua [Huawei Mate 30 Pro 5G](product_name) [32MB](ram)
-- đặt mua [iPhone XR](product_name) [32 gb](rom)
+- dat mua [OPPO A1k](product_name) [6 GB](ram)
+- dat mua [Realme C3](product_name) [256 gb](rom)
+- dat mua [Huawei P40 Lite 5G](product_name) [256GB](rom)
+- dat mua [Masstel Fami P25](product_name) [8MB](ram) [8gb](rom)
+- dat mua [Vsmart Active 3](product_name) [2gb](ram)
+- dat mua [Xiaomi Mi Note 10](product_name) [8 gb](ram)
+- dat mua [Nokia 125](product_name) [64gb](rom)
+- dat mua [Realme XT](product_name) [1 gb](ram)
+- dat mua [ss a20s](product_name) [32MB](ram)
+- dat mua [Huawei Mate 30](product_name) [3gb](ram)
+- dat mua [Nokia 9.3 PureView](product_name) [1 gb](ram)
+- dat mua [OPPO Reno 3 Vitality](product_name) [512 gb](rom)
+- dat mua [Samsung Galaxy A31](product_name) [3GB](ram)
+- dat mua [ss m31](product_name) [16 GB](rom)
+- dat mua [ss a21s](product_name) [512 MB](ram) [512 gb](rom)
+- dat mua [Realme 6i](product_name) [1 gb](ram) [8GB](rom)
+- dat mua [Samsung Galaxy A60](product_name) [64GB](rom)
+- dat mua [Samsung Galaxy M51](product_name) [6 GB](ram) [8GB](rom)
+- dat mua [ss 10 lite](product_name) [2gb](ram)
+- dat mua [Huawei Mate 30 Pro 5G](product_name) [32MB](ram)
+- dat mua [iPhone XR](product_name) [32 gb](rom)
 - đặt mua [Vivo X50 Lite](product_name) [512mb](ram)
 - Đặt mua [Huawei P30 Lite New Edition](product_name)
 - Đặt mua [OPPO F15](product_name)
@@ -825,34 +927,34 @@
 
 ## intent:check_price
 <!-- kiểm tra giá của sản phẩm -->
-- giá của [ss m01](product_name) [4,2 triệu](price) phải không ạ
-- gia điện thoại [Huawei Nova 7 5G](product_name) là [1,4 triệu](price) đúng không
-- gia điện thoại [Masstel Fami P25](product_name) [hâm chín triệu](price) đúng không
-- giá sản phẩm [OPPO Find X2 Neo](product_name) là [7,3 triệu](price) phải không ạ
-- gia điện thoại [iPhone XR](product_name) [7 triệu 7](price) phải không ạ
-- gia điện thoại [Samsung Galaxy M01](product_name) [ba triệu bảy](price) phải không
-- giá sản phẩm [realme 5s](product_name) [mười ba triệu](price) phải không ạ
-- giá sản phẩm [Huawei P40](product_name) là [mười sáu triệu](price) phải không
-- giá của [Energizer P20](product_name) [chín triệu](price) phải không ạ
-- giá của [Samsung Galaxy J8 plus](product_name) là [ba triệu mốt](price) phải không
-- gia điện thoại [Itel It6120](product_name) là [6,3 triệu](price) phải không ạ
-- giá của [Vivo X30](product_name) là [9,6 triệu](price) phải không
-- giá sản phẩm [ss m40](product_name) là [sáu triệu mốt](price) phải không ạ
-- giá của [Vsmart Active 3](product_name) [hai triệu hai](price) phải không ạ
-- giá của [iPhone 11 Pro](product_name) [8 triệu 8](price) phải không ạ
-- giá của [Samsung Galaxy M31](product_name) [hai triệu năm](price) đúng không
-- giá sản phẩm [Samsung Galaxy A30s](product_name) là [bốn triệu mốt](price) phải không
-- gia điện thoại [ss m11](product_name) là [5 triệu](price) đúng không
-- giá của [Masstel Play 30](product_name) [6,1 triệu](price) phải không ạ
-- gia điện thoại [ss 10](product_name) là [6,3 triệu](price) phải không
-- giá của [Masstel Max R1](product_name) là [7 triệu 7](price) phải không ạ
-- giá của [Samsung Galaxy Note 10+](product_name) là [chín triệu rưởi](price) đúng không
-- giá sản phẩm [ss a01](product_name) [chín triệu năm](price) đúng không
-- giá sản phẩm [Xiaomi Redmi K30 5G](product_name) [năm triệu chín](price) đúng không
-- gia điện thoại [Samsung Galaxy J8+](product_name) [3,4 triệu](price) phải không
-- giá của [Oppo A5](product_name) [3,1 triệu](price) phải không
-- gia điện thoại [Oppo A31](product_name) là [năm triệu chín](price) đúng không
-- gia điện thoại [iPhone 11 Pro Max](product_name) là [năm triệu bảy](price) đúng không
+- gia cua [ss m01](product_name) [4,2 trieu](price) phai khong a
+- gia dien thoai [Huawei Nova 7 5G](product_name) la [1,4 trieu](price) dung khong
+- gia dien thoai [Masstel Fami P25](product_name) [ham chin trieu](price) dung khong
+- gia san pham [OPPO Find X2 Neo](product_name) la [7,3 trieu](price) phai khong a
+- gia dien thoai [iPhone XR](product_name) [7 trieu 7](price) phai khong a
+- gia dien thoai [Samsung Galaxy M01](product_name) [ba trieu bay](price) phai khong
+- gia san pham [realme 5s](product_name) [muoi ba trieu](price) phai khong a
+- gia san pham [Huawei P40](product_name) la [muoi sau trieu](price) phai khong
+- gia cua [Energizer P20](product_name) [chin trieu](price) phai khong a
+- gia cua [Samsung Galaxy J8 plus](product_name) la [ba trieu mot](price) phai khong
+- gia dien thoai [Itel It6120](product_name) la [6,3 trieu](price) phai khong a
+- gia cua [Vivo X30](product_name) la [9,6 trieu](price) phai khong
+- gia san pham [ss m40](product_name) la [sau trieu mot](price) phai khong a
+- gia cua [Vsmart Active 3](product_name) [hai trieu hai](price) phai khong a
+- gia cua [iPhone 11 Pro](product_name) [8 trieu 8](price) phai khong a
+- gia cua [Samsung Galaxy M31](product_name) [hai trieu nam](price) dung khong
+- gia san pham [Samsung Galaxy A30s](product_name) la [bon trieu mot](price) phai khong
+- gia dien thoai [ss m11](product_name) la [5 trieu](price) dung khong
+- gia cua [Masstel Play 30](product_name) [6,1 trieu](price) phai khong a
+- gia dien thoai [ss 10](product_name) la [6,3 trieu](price) phai khong
+- gia cua [Masstel Max R1](product_name) la [7 trieu 7](price) phai khong a
+- gia cua [Samsung Galaxy Note 10+](product_name) la [chin trieu ruoi](price) dung khong
+- gia san pham [ss a01](product_name) [chin trieu nam](price) dung khong
+- gia san pham [Xiaomi Redmi K30 5G](product_name) [nam trieu chin](price) dung khong
+- gia dien thoai [Samsung Galaxy J8+](product_name) [3,4 trieu](price) phai khong
+- gia cua [Oppo A5](product_name) [3,1 trieu](price) phai khong
+- gia dien thoai [Oppo A31](product_name) la [nam trieu chin](price) dung khong
+- gia dien thoai [iPhone 11 Pro Max](product_name) la [nam trieu bay](price) dung khong
 - giá sản phẩm [ss j8+](product_name) [ba triệu ba](price) phải không
 - gia điện thoại [Huawei Y6p](product_name) là [3,4 triệu](price) phải không
 - giá sản phẩm [Vivo S1 Pro](product_name) là [9 triệu](price) phải không
@@ -904,30 +1006,40 @@
 - điện thoại [Itel It6120](product_name) giá [9,1 triệu](price) phải không ạ
 - sản phẩm [realme narzo 10a](product_name) giá [bảy triệu hai](price) đúng không
 - điện thoại [Vivo Z5i](product_name) có giá [7,1 triệu](price) phải không ạ
-- sản phẩm [Vsmart Active 3](product_name) giá [4,8 triệu](price) đúng không
-- [Energizer E241s](product_name) giá là [hai mươi chín triệu](price) phải không
-- [ss a60](product_name) giá [hai mươi chín triệu](price) phải không ạ
-- sản phẩm [Nokia N150](product_name) giá [5,1 triệu](price) phải không ạ
-- điện thoại [Xiaomi Redmi Note 8](product_name) có giá [bốn triệu tám](price) đúng không
-- sản phẩm [Nokia 8.3 5G](product_name) có giá [chín triệu bảy](price) phải không ạ
-- [Huawei Nova 7 Pro 5G](product_name) có giá [2 triệu 2](price) đúng không
-- sản phẩm [ss watch active](product_name) giá [hâm sáu triệu](price) phải không
-- điện thoại [Samsung Galaxy Fold](product_name) giá là [bốn triệu bốn](price) phải không ạ
-- sản phẩm [Samsung Galaxy A31](product_name) giá [hai triệu mốt](price) đúng không
-- [Vivo Y5s](product_name) giá là [một triệu hai](price) đúng không
-- sản phẩm [Huawei Nova 6](product_name) có giá [bảy triệu rưởi](price) phải không
-- điện thoại [realme 3](product_name) có giá [7,9 triệu](price) phải không
-- [Masstel iZi 206](product_name) có giá [sáu triệu](price) phải không
-- sản phẩm [OPPO A1k](product_name) có giá [4,6 triệu](price) đúng không
-- sản phẩm [realme 6](product_name) có giá [3,7 triệu](price) phải không
-- [Samsung Galaxy J8+](product_name) giá [2 m 7](price) phải không
-- sản phẩm [Nokia 2720 Flip 4G](product_name) giá là [hai triệu rưởi](price) phải không
-- sản phẩm [Huawei P40 Pro](product_name) có giá [8,4 triệu](price) đúng không
-- sản phẩm [Samsung Galaxy M10s](product_name) có giá [4 m 2](price) phải không ạ
-- sản phẩm [Nokia 2.3](product_name) giá là [9,1 triệu](price) đúng không
-- điện thoại [Vivo V17](product_name) giá là [4 m 6](price) đúng không
-- [Huawei Nova 7 5G](product_name) giá là [6 triệu rưởi](price) phải không
-- sản phẩm [Samsung Galaxy A70s](product_name) giá [một triệu rưởi](price) phải không
+- san pham [Vsmart Active 3](product_name) gia [4,8 trieu](price) dung khong
+- [Energizer E241s](product_name) gia la [hai muoi chin trieu](price) phai khong
+- [ss a60](product_name) gia [hai muoi chin trieu](price) phai khong a
+- san pham [Nokia N150](product_name) gia [5,1 trieu](price) phai khong a
+- dien thoai [Xiaomi Redmi Note 8](product_name) co gia [bon trieu tam](price) dung khong
+- san pham [Nokia 8.3 5G](product_name) co gia [chin trieu bay](price) phai khong a
+- [Huawei Nova 7 Pro 5G](product_name) co gia [2 trieu 2](price) dung khong
+- san pham [ss watch active](product_name) gia [ham sau trieu](price) phai khong
+- dien thoai [Samsung Galaxy Fold](product_name) gia la [bon trieu bon](price) phai khong a
+- san pham [Samsung Galaxy A31](product_name) gia [hai trieu mot](price) dung khong
+- [Vivo Y5s](product_name) gia la [mot trieu hai](price) dung khong
+- san pham [Huawei Nova 6](product_name) co gia [bay trieu ruoi](price) phai khong
+- dien thoai [realme 3](product_name) co gia [7,9 trieu](price) phai khong
+- [Masstel iZi 206](product_name) co gia [sau trieu](price) phai khong
+- san pham [OPPO A1k](product_name) co gia [4,6 trieu](price) dung khong
+- san pham [realme 6](product_name) co gia [3,7 trieu](price) phai khong
+- [Samsung Galaxy J8+](product_name) gia [2 m 7](price) phai khong
+- san pham [Nokia 2720 Flip 4G](product_name) gia la [hai trieu ruoi](price) phai khong
+- san pham [Huawei P40 Pro](product_name) co gia [8,4 trieu](price) dung khong
+- san pham [Samsung Galaxy M10s](product_name) co gia [4 m 2](price) phai khong a
+- san pham [Nokia 2.3](product_name) gia la [9,1 trieu](price) dung khong
+- dien thoai [Vivo V17](product_name) gia la [4 m 6](price) dung khong
+- [Huawei Nova 7 5G](product_name) gia la [6 trieu ruoi](price) phai khong
+- san pham [Samsung Galaxy A70s](product_name) gia [mot trieu ruoi](price) phai khong
+- san pham [Samsung Galaxy S10 Lite](product_name) co gia [5 trieu ruoi](price) phai khong a
+- [realme 5i](product_name) co gia [2 m 2](price) dung khong
+- [Realme U1](product_name) gia la [6 m 8](price) phai khong a
+- [Huawei Nova 7 Pro 5G](product_name) gia la [9,7 trieu](price) phai khong
+- [Samsung Galaxy Z Flip 5G](product_name) gia [9 m 4](price) phai khong
+- dien thoai [ss s10 lite](product_name) gia la [3 m 4](price) dung khong
+- dien thoai [Vivo X30](product_name) gia la [1 m 1](price) dung khong
+- san pham [realme 3](product_name) gia [hai trieu ruoi](price) dung khong
+- dien thoai [Huawei Nova 7](product_name) gia [3 m 5](price) dung khong
+- [OPPO A12e](product_name) gia [7 m 7](price) phai khong
 - sản phẩm [Samsung Galaxy S10 Lite](product_name) có giá [5 triệu rưởi](price) phải không ạ
 - [realme 5i](product_name) có giá [2 m 2](price) đúng không
 - [Realme U1](product_name) giá là [6 m 8](price) phải không ạ
@@ -964,22 +1076,22 @@
 
 ## intent:find_product_in_range_price
 <!-- tìm sản phẩm trong một khoảng giá -->
-- khoảng [6 m 7]{"entity":"price","role":"from_price"}  [1,8 triệu]{"entity":"price","role":"to_price"}
-- khoảng [2.6 triệu]{"entity":"price","role":"from_price"}  [ba triệu tám]{"entity":"price","role":"to_price"}
-- khoảng [9 m 2]{"entity":"price","role":"from_price"}  [bảy triệu sáu]{"entity":"price","role":"to_price"}
-- khoảng [bảy triệu sáu]{"entity":"price","role":"from_price"}  [9,7 triệu]{"entity":"price","role":"to_price"}
-- khoảng [5,1 triệu]{"entity":"price","role":"from_price"} đến [7.4 triệu]{"entity":"price","role":"to_price"}
-- khoảng [5,6 triệu]{"entity":"price","role":"from_price"} đến [6.2 triệu]{"entity":"price","role":"to_price"}
-- khoảng [năm triệu sáu]{"entity":"price","role":"from_price"} đến [7 m 2]{"entity":"price","role":"to_price"}
-- khoảng [6 triệu]{"entity":"price","role":"from_price"} đến [hâm tám triệu]{"entity":"price","role":"to_price"}
-- chừng [mười lăm triệu]{"entity":"price","role":"from_price"} đến [tám triệu mốt]{"entity":"price","role":"to_price"}
-- chừng [2 m 7]{"entity":"price","role":"from_price"} đến [tám triệu rưởi]{"entity":"price","role":"to_price"}
-- chừng [2.9 triệu]{"entity":"price","role":"from_price"} đến [ba triệu]{"entity":"price","role":"to_price"}
-- chừng [một triệu bốn]{"entity":"price","role":"from_price"} đến [bảy triệu sáu]{"entity":"price","role":"to_price"}
-- tầm [7 m 7]{"entity":"price","role":"from_price"} - [9.2 triệu]{"entity":"price","role":"to_price"} gì đó
-- tầm [một triệu sáu]{"entity":"price","role":"from_price"} - [5.4 triệu]{"entity":"price","role":"to_price"} gì đó
-- tầm [6.6 triệu]{"entity":"price","role":"from_price"} - [một triệu]{"entity":"price","role":"to_price"} gì đó
-- tầm [một triệu rưởi]{"entity":"price","role":"from_price"} - [ba triệu mốt]{"entity":"price","role":"to_price"} gì đó 
+- khoang [6 m 7]{"entity":"price","role":"from_price"}  [1,8 trieu]{"entity":"price","role":"to_price"}
+- khoang [2.6 trieu]{"entity":"price","role":"from_price"}  [ba trieu tam]{"entity":"price","role":"to_price"}
+- khoang [9 m 2]{"entity":"price","role":"from_price"}  [bay trieu sau]{"entity":"price","role":"to_price"}
+- khoang [bay trieu sau]{"entity":"price","role":"from_price"}  [9,7 trieu]{"entity":"price","role":"to_price"}
+- khoang [5,1 trieu]{"entity":"price","role":"from_price"} den [7.4 trieu]{"entity":"price","role":"to_price"}
+- khoang [5,6 trieu]{"entity":"price","role":"from_price"} den [6.2 trieu]{"entity":"price","role":"to_price"}
+- khoang [nam trieu sau]{"entity":"price","role":"from_price"} den [7 m 2]{"entity":"price","role":"to_price"}
+- khoang [6 trieu]{"entity":"price","role":"from_price"} den [ham tam trieu]{"entity":"price","role":"to_price"}
+- chung [muoi lam trieu]{"entity":"price","role":"from_price"} den [tam trieu mot]{"entity":"price","role":"to_price"}
+- chung [2 m 7]{"entity":"price","role":"from_price"} den [tam trieu ruoi]{"entity":"price","role":"to_price"}
+- chung [2.9 trieu]{"entity":"price","role":"from_price"} den [ba trieu]{"entity":"price","role":"to_price"}
+- chung [mot trieu bon]{"entity":"price","role":"from_price"} den [bay trieu sau]{"entity":"price","role":"to_price"}
+- tam [7 m 7]{"entity":"price","role":"from_price"} - [9.2 trieu]{"entity":"price","role":"to_price"} gi do
+- tam [mot trieu sau]{"entity":"price","role":"from_price"} - [5.4 trieu]{"entity":"price","role":"to_price"} gi do
+- tam [6.6 trieu]{"entity":"price","role":"from_price"} - [mot trieu]{"entity":"price","role":"to_price"} gi do
+- tam [mot trieu ruoi]{"entity":"price","role":"from_price"} - [ba trieu mot]{"entity":"price","role":"to_price"} gì đó 
 - có [Realme](product_company) trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"}
 - có [Vsmart](product_company) trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có [Itel](product_company) trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
@@ -1020,6 +1132,19 @@
 - có điện thoại nào trong khoảng [2,2 triệu]{"entity":"price","role":"from_price"} đến [3 m 5]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có điện thoại nào trong tầm giá từ [1 m 8]{"entity":"price","role":"from_price"} đến [chín triệu năm]{"entity":"price","role":"to_price"} không ạ
 - có điện thoại nào trong tầm giá từ [2,1 triệu]{"entity":"price","role":"from_price"} đến [9,4 triệu]{"entity":"price","role":"to_price"}
+- co dien thoai nao trong khoang [ba trieu ruoi]{"entity":"price","role":"from_price"} den [4 m 3]{"entity":"price","role":"to_price"}
+- toi muon mot chiec dien thoai trong khoang [1 m 4]{"entity":"price","role":"from_price"} den [6 m 2]{"entity":"price","role":"to_price"} khong a
+- co dien thoai nao trong khoang [nam trieu ba]{"entity":"price","role":"from_price"} den [bay trieu bay]{"entity":"price","role":"to_price"} khong gio thieu cho em voi
+- co dien thoai nao trong khoang [8 m 9]{"entity":"price","role":"from_price"} den [hai trieu tam]{"entity":"price","role":"to_price"} khong gio thieu cho em voi
+- co dien thoai nao trong khoang [6 m 9]{"entity":"price","role":"from_price"} den [8 m 9]{"entity":"price","role":"to_price"}
+- co dien thoai nao trong khoang [4 trieu]{"entity":"price","role":"from_price"} den [sau trieu ruoi]{"entity":"price","role":"to_price"} khong gio thieu cho em voi
+- co dien thoai nao trong khoang [chin trieu ba]{"entity":"price","role":"from_price"} den [6 m 5]{"entity":"price","role":"to_price"}
+- toi muon mot chiec dien thoai trong khoang [4 m 5]{"entity":"price","role":"from_price"} den [4,6 trieu]{"entity":"price","role":"to_price"} khong a
+- co dien thoai nao trong khoang [9 m 5]{"entity":"price","role":"from_price"} den [5 m 1]{"entity":"price","role":"to_price"} tu van giup em
+- co dien thoai nao trong khoang [7 m 9]{"entity":"price","role":"from_price"} den [8 trieu 8]{"entity":"price","role":"to_price"} khong a
+- co dien thoai nao trong khoang [2,2 trieu]{"entity":"price","role":"from_price"} den [3 m 5]{"entity":"price","role":"to_price"} tu van giup em
+- co dien thoai nao trong tam gia tu [1 m 8]{"entity":"price","role":"from_price"} den [chin trieu nam]{"entity":"price","role":"to_price"} khong a
+- co dien thoai nao trong tam gia tu [2,1 trieu]{"entity":"price","role":"from_price"} den [9,4 trieu]{"entity":"price","role":"to_price"}
 - tôi muốn một chiếc điện thoại trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [1,4 triệu]{"entity":"price","role":"to_price"} không ạ
 - tôi muốn một chiếc điện thoại trong khoảng [5 m 6]{"entity":"price","role":"from_price"} đến [năm triệu mốt]{"entity":"price","role":"to_price"}
 - có sản phẩm nào trong khoảng [năm triệu hai]{"entity":"price","role":"from_price"} đến [tám triệu rưởi]{"entity":"price","role":"to_price"}
@@ -1051,27 +1176,27 @@
 - có sản phẩm nào trong khoảng [5,7 triệu]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"} tư vấn giúp em
 - tôi muốn một chiếc điện thoại trong khoảng [bảy triệu tám]{"entity":"price","role":"from_price"} đến [hâm lăm triệu]{"entity":"price","role":"to_price"}
 - khoảng [bảy triệu tám]{"entity":"price","role":"from_price"} hay [hâm lăm triệu]{"entity":"price","role":"to_price"}
-- [3]{"entity":"price","role":"from_price"} [4 triệu]{"entity":"price","role":"to_price"} gì đó
-- [8 m 6]{"entity": "price", "role": "from_price"} [1,7 triệu]{"entity": "price", "role": "to_price"} gì thôi
-- [2.7 triệu]{"entity": "price", "role": "from_price"} [9.6 triệu]{"entity": "price", "role": "to_price"} gì đó
-- [4,6 triệu]{"entity": "price", "role": "from_price"} [9 m 2]{"entity": "price", "role": "to_price"} gì đó
-- [năm triệu chín]{"entity": "price", "role": "from_price"} [mười ba triệu]{"entity": "price", "role": "to_price"} thôi
-- [4 m 2]{"entity": "price", "role": "from_price"} [mười chín triệu]{"entity": "price", "role": "to_price"} gì thôi
-- [hai mươi ba triệu]{"entity": "price", "role": "from_price"} [2.3 triệu]{"entity": "price", "role": "to_price"} gì thôi
-- [sáu triệu năm]{"entity": "price", "role": "from_price"} [2,5 triệu]{"entity": "price", "role": "to_price"} thôi
-- [5 triệu]{"entity": "price", "role": "from_price"} [2,8 triệu]{"entity": "price", "role": "to_price"} gì đó
-- [9 m 4]{"entity": "price", "role": "from_price"} [9,8 triệu]{"entity": "price", "role": "to_price"} gì đó
-- [5 m 5]{"entity": "price", "role": "from_price"} [tám triệu hai]{"entity": "price", "role": "to_price"} thôi
-- [9 m 6]{"entity": "price", "role": "from_price"} [6,7 triệu]{"entity": "price", "role": "to_price"} thôi
-- [bảy triệu rưởi]{"entity": "price", "role": "from_price"} [4 m 7]{"entity": "price", "role": "to_price"} gì thôi
-- [sáu triệu chín]{"entity": "price", "role": "from_price"} [sáu triệu năm]{"entity": "price", "role": "to_price"} gì thôi
-- [3 triệu 3]{"entity": "price", "role": "from_price"} [4,9 triệu]{"entity": "price", "role": "to_price"} gì thôi
-- [1 m 3]{"entity": "price", "role": "from_price"} hay [9 m 3]{"entity": "price", "role": "to_price"} gì thôi
-- [6,3 triệu]{"entity": "price", "role": "from_price"} hay [5,8 triệu]{"entity": "price", "role": "to_price"} gì đó
-- [3,8 triệu]{"entity": "price", "role": "from_price"} hay [sáu triệu bảy]{"entity": "price", "role": "to_price"} thôi
-- [3,3 triệu]{"entity": "price", "role": "from_price"} hay [4.1 triệu]{"entity": "price", "role": "to_price"} gì đó
-- [sáu triệu]{"entity": "price", "role": "from_price"} hay [sáu triệu bảy]{"entity": "price", "role": "to_price"} gì thôi
-- [5,6 triệu]{"entity": "price", "role": "from_price"} hay [hai triệu tám]{"entity": "price", "role": "to_price"} thôi
+- [3]{"entity":"price","role":"from_price"} [4 trieu]{"entity":"price","role":"to_price"} gi do
+- [8 m 6]{"entity": "price", "role": "from_price"} [1,7 trieu]{"entity": "price", "role": "to_price"} gi thoi
+- [2.7 trieu]{"entity": "price", "role": "from_price"} [9.6 trieu]{"entity": "price", "role": "to_price"} gi do
+- [4,6 trieu]{"entity": "price", "role": "from_price"} [9 m 2]{"entity": "price", "role": "to_price"} gi do
+- [nam trieu chin]{"entity": "price", "role": "from_price"} [muoi ba trieu]{"entity": "price", "role": "to_price"} thoi
+- [4 m 2]{"entity": "price", "role": "from_price"} [muoi chin trieu]{"entity": "price", "role": "to_price"} gi thoi
+- [hai muoi ba trieu]{"entity": "price", "role": "from_price"} [2.3 trieu]{"entity": "price", "role": "to_price"} gi thoi
+- [sau trieu nam]{"entity": "price", "role": "from_price"} [2,5 trieu]{"entity": "price", "role": "to_price"} thoi
+- [5 trieu]{"entity": "price", "role": "from_price"} [2,8 trieu]{"entity": "price", "role": "to_price"} gi do
+- [9 m 4]{"entity": "price", "role": "from_price"} [9,8 trieu]{"entity": "price", "role": "to_price"} gi do
+- [5 m 5]{"entity": "price", "role": "from_price"} [tam trieu hai]{"entity": "price", "role": "to_price"} thoi
+- [9 m 6]{"entity": "price", "role": "from_price"} [6,7 trieu]{"entity": "price", "role": "to_price"} thoi
+- [bay trieu ruoi]{"entity": "price", "role": "from_price"} [4 m 7]{"entity": "price", "role": "to_price"} gi thoi
+- [sau trieu chin]{"entity": "price", "role": "from_price"} [sau trieu nam]{"entity": "price", "role": "to_price"} gi thoi
+- [3 trieu 3]{"entity": "price", "role": "from_price"} [4,9 trieu]{"entity": "price", "role": "to_price"} gi thoi
+- [1 m 3]{"entity": "price", "role": "from_price"} hay [9 m 3]{"entity": "price", "role": "to_price"} gi thoi
+- [6,3 trieu]{"entity": "price", "role": "from_price"} hay [5,8 trieu]{"entity": "price", "role": "to_price"} gi do
+- [3,8 trieu]{"entity": "price", "role": "from_price"} hay [sau trieu bay]{"entity": "price", "role": "to_price"} thoi
+- [3,3 trieu]{"entity": "price", "role": "from_price"} hay [4.1 trieu]{"entity": "price", "role": "to_price"} gi do
+- [sau trieu]{"entity": "price", "role": "from_price"} hay [sau trieu bay]{"entity": "price", "role": "to_price"} gi thoi
+- [5,6 trieu]{"entity": "price", "role": "from_price"} hay [hai trieu tam]{"entity": "price", "role": "to_price"} thoi
 - [2.8 triệu]{"entity": "price", "role": "from_price"} hay [8 m 3]{"entity": "price", "role": "to_price"} gì thôi
 - [1 m 4]{"entity": "price", "role": "from_price"} hay [3 m 4]{"entity": "price", "role": "to_price"} gì đó
 - [ba triệu sáu]{"entity": "price", "role": "from_price"} hay [7.8 triệu]{"entity": "price", "role": "to_price"} gì đó
@@ -1086,29 +1211,29 @@
 - có [Vsmart](product_company) nào dưới [9,1 triệu](price) không
 - có điện thoại [ip](product_company) nào giá dưới [6.5 triệu](price) không
 - có [Iphone](product_company) nào dưới [8 m 7](price) không
-- có [ip](product_company) nào giá dưới [bảy triệu tám](price) không
-- có điện thoại [Nokia](product_company) nào giá dưới [7,2 triệu](price) không
-- có [Realme](product_company) nào dưới [3.7 triệu](price) không
-- có cái [Realme](product_company) nào dưới [7.2 triệu](price) không
-- có điện thoại [Vsmart](product_company) nào dưới [hai triệu tám](price) không
-- có cái [Iphone](product_company) nào dưới [3.6 triệu](price) không
-- có điện thoại [Xiaomi](product_company) nào dưới [ba triệu sáu](price) không
-- có [Oppo](product_company) nào dưới [6 m 1](price) không
-- có [Masstel](product_company) nào dưới [1.8 triệu](price) không
-- có cái [Vsmart](product_company) nào dưới [5,5 triệu](price) không
-- có [Itel](product_company) nào dưới [5 m 6](price) không
-- có cái [Energizer](product_company) nào giá dưới [2 m 5](price) không
-- có cái [Energizer](product_company) nào giá dưới [1,1 triệu](price) không
-- có điện thoại [Realme](product_company) nào dưới [6 m 9](price) không
-- có [Oppo](product_company) nào giá dưới [một triệu rưởi](price) không
-- có cái [Vivo](product_company) nào dưới [tám triệu sáu](price) không
-- có [Sanmsung](product_company) nào giá dưới [2.4 triệu](price) không
-- có cái [Energizer](product_company) nào giá dưới [4.3 triệu](price) không
-- có điện thoại [Iphone](product_company) nào giá dưới [3,1 triệu](price) không
-- có điện thoại [Vsmart](product_company) nào dưới [4.8 triệu](price) không
-- có điện thoại [Xiaomi](product_company) nào dưới [4 m 5](price) không
-- có [Itel](product_company) nào giá dưới [bốn triệu ba](price) không
-- có cái [Oppo](product_company) nào giá dưới [chín triệu sáu](price) không
+- co [ip](product_company) nao gia duoi [bay trieu tam](price) khong
+- co dien thoai [Nokia](product_company) nao gia duoi [7,2 trieu](price) khong
+- co [Realme](product_company) nao duoi [3.7 trieu](price) khong
+- co cai [Realme](product_company) nao duoi [7.2 trieu](price) khong
+- co dien thoai [Vsmart](product_company) nao duoi [hai trieu tam](price) khong
+- co cai [Iphone](product_company) nao duoi [3.6 trieu](price) khong
+- co dien thoai [Xiaomi](product_company) nao duoi [ba trieu sau](price) khong
+- co [Oppo](product_company) nao duoi [6 m 1](price) khong
+- co [Masstel](product_company) nao duoi [1.8 trieu](price) khong
+- co cai [Vsmart](product_company) nao duoi [5,5 trieu](price) khong
+- co [Itel](product_company) nao duoi [5 m 6](price) khong
+- co cai [Energizer](product_company) nao gia duoi [2 m 5](price) khong
+- co cai [Energizer](product_company) nao gia duoi [1,1 trieu](price) khong
+- co dien thoai [Realme](product_company) nao duoi [6 m 9](price) khong
+- co [Oppo](product_company) nao gia duoi [mot trieu ruoi](price) khong
+- co cai [Vivo](product_company) nao duoi [tam trieu sau](price) khong
+- co [Sanmsung](product_company) nao gia duoi [2.4 trieu](price) khong
+- co cai [Energizer](product_company) nao gia duoi [4.3 trieu](price) khong
+- co dien thoai [Iphone](product_company) nao gia duoi [3,1 trieu](price) khong
+- co dien thoai [Vsmart](product_company) nao duoi [4.8 trieu](price) khong
+- co dien thoai [Xiaomi](product_company) nao duoi [4 m 5](price) khong
+- co [Itel](product_company) nao gia duoi [bon trieu ba](price) khong
+- co cai [Oppo](product_company) nao gia duoi [chin trieu sau](price) khong
 - có điện thoại [Realme](product_company) nào dưới [3 m 6](price) không
 - có sản phẩm nào dưới [9,1 triệu](price) không
 - có điện thoại nào giá dưới [6.5 triệu](price) không
@@ -1120,33 +1245,33 @@
 - có cái nào dưới [hai triệu tám](price) không
 - có cái nào dưới [3.6 triệu](price) không
 - có cái nào dưới [ba triệu sáu](price) không
-- có sản phẩm nào dưới [6 m 1](price) không
-- có sản phẩm nào dưới [1.8 triệu](price) không
-- có sản phẩm nào dưới [5,5 triệu](price) không
-- có cái nào dưới [5 m 6](price) không
-- có điện thoại nào giá dưới [2 m 5](price) không
-- có điện thoại nào giá dưới [1,1 triệu](price) không
-- có cái nào dưới [6 m 9](price) không
-- có điện thoại nào giá dưới [một triệu rưởi](price) không
-- có sản phẩm nào dưới [tám triệu sáu](price) không
-- có điện thoại nào giá dưới [2.4 triệu](price) không
-- có điện thoại nào giá dưới [4.3 triệu](price) không
-- có điện thoại nào giá dưới [3,1 triệu](price) không
-- có sản phẩm nào dưới [4.8 triệu](price) không
-- có cái nào dưới [4 m 5](price) không
-- có điện thoại nào giá dưới [bốn triệu ba](price) không
-- có điện thoại nào giá dưới [chín triệu sáu](price) không
-- có sản phẩm nào dưới [3 m 6](price) không
-- có cái nào dưới [3,8 triệu](price) không
-- có điện thoại nào giá dưới [hai mươi hai triệu](price) không
-- có sản phẩm nào dưới [6,4 triệu](price) không
-- có cái nào dưới [5 m 6](price) không
-- có sản phẩm nào dưới [bốn triệu mốt](price) không
-- có điện thoại nào giá dưới [hai triệu](price) không
-- có cái nào dưới [3,8 triệu](price) không
-- có cái nào dưới [2,7 triệu](price) không
-- có sản phẩm nào dưới [một triệu rưởi](price) không
-- có sản phẩm nào dưới [hâm lăm triệu](price) không
+- co san pham nao duoi [6 m 1](price) khong
+- co san pham nao duoi [1.8 trieu](price) khong
+- co san pham nao duoi [5,5 trieu](price) khong
+- co cai nao duoi [5 m 6](price) khong
+- co dien thoai nao gia duoi [2 m 5](price) khong
+- co dien thoai nao gia duoi [1,1 trieu](price) khong
+- co cai nao duoi [6 m 9](price) khong
+- co dien thoai nao gia duoi [mot trieu ruoi](price) khong
+- co san pham nao duoi [tam trieu sau](price) khong
+- co dien thoai nao gia duoi [2.4 trieu](price) khong
+- co dien thoai nao gia duoi [4.3 trieu](price) khong
+- co dien thoai nao gia duoi [3,1 trieu](price) khong
+- co san pham nao duoi [4.8 trieu](price) khong
+- co cai nao duoi [4 m 5](price) khong
+- co dien thoai nao gia duoi [bon trieu ba](price) khong
+- co dien thoai nao gia duoi [chin trieu sau](price) khong
+- co san pham nao duoi [3 m 6](price) khong
+- co cai nao duoi [3,8 trieu](price) khong
+- co dien thoai nao gia duoi [hai muoi hai trieu](price) khong
+- co san pham nao duoi [6,4 trieu](price) khong
+- co cai nao duoi [5 m 6](price) khong
+- co san pham nao duoi [bon trieu mot](price) khong
+- co dien thoai nao gia duoi [hai trieu](price) khong
+- co cai nao duoi [3,8 trieu](price) khong
+- co cai nao duoi [2,7 trieu](price) khong
+- co san pham nao duoi [mot trieu ruoi](price) khong
+- co san pham nao duoi [ham lam trieu](price) khong
 - có sản phẩm nào dưới [bảy triệu bảy](price) không
 - có sản phẩm nào dưới [bốn triệu tám](price) không
 - có cái nào dưới [bảy triệu ba](price) không
@@ -1229,6 +1354,26 @@
 - tầm dưới [ba triệu tám](price)
 - tầm dưới [3.2 triệu](price)
 - dưới [3.9 triệu](price) thôi
+- khoang [4,7 trieu](price) tro lai
+- khoang [ba trieu hai](price) tro lai
+- tam [ba trieu bon](price) tro lai
+- tam [2.3 trieu](price) tro lai
+- tam [6 m 5](price) tro lai
+- tam [9.3 trieu](price) tro lai
+- chung [mot trieu ba](price) tro lai
+- chung [ham hai trieu](price) tro lai
+- chung [4 m 2](price) tro lai
+- chung [ba trieu nam](price) tro lai
+- chung duoi [tam trieu bon](price)
+- chung duoi [7,6 trieu](price)
+- chung duoi [ham hai trieu](price)
+- chung duoi [9,2 trieu](price)
+- tam duoi [7,7 trieu](price)
+- tam duoi [5 trieu](price)
+- tam duoi [ba trieu tam](price)
+- tam duoi [3.2 trieu](price)
+- duoi [3.9 trieu](price) thoi
+- duoi [7,6 trieu](price) thoi
 - dưới [7,6 triệu](price) thôi
 - dưới [3,4 triệu](price) thôi
 - dưới [4,8 triệu](price) thôi
@@ -1249,6 +1394,28 @@
 - hơn [năm triệu sáu](price)
 - [bảy triệu tám](price) trở lên
 - [1 m 2](price) trở lên
+- tren [bay trieu chin](price)
+- tren [bon trieu sau](price)
+- tren [1.5 trieu](price)
+- tren [7 trieu](price)
+- hon [8 trieu](price)
+- hon [3,4 trieu](price)
+- hon [2,6 trieu](price)
+- hon [nam trieu sau](price)
+- [bay trieu tam](price) tro len
+- [1 m 2](price) tro len
+- [5.9 trieu](price) tro len
+- [4 m 7](price) tro len
+- co [Vsmart](product_company) nao co gia khoang [6 trieu](price) tro len khong
+- co dien thoai [ss](product_company) nao khoang [1 trieu](price) tro len khong
+- co dien thoai [Energizer](product_company) nao co gia tu [mot trieu tam](price) tro len khong
+- co [Vsmart](product_company) nao khoang [6 trieu](price) tro len khong
+- co [ss](product_company) nao co gia khoang [tam trieu ba](price) tro len khong
+- co dien thoai [Iphone](product_company) nao khoang [tam trieu ruoi](price) tro len khong
+- co [Itel](product_company) nao khoang [ham mot trieu](price) tro len khong
+- co dien thoai [Iphone](product_company) nao khoang [1 m 8](price) tro len khong
+- co [Vsmart](product_company) nao co gia khoang [5.1 trieu](price) tro len khong
+- co dien thoai [Realme](product_company) nao co gia tu [1 trieu](price) tro len khong
 - [5.9 triệu](price) trở lên
 - [4 m 7](price) trở lên
 - có [Vsmart](product_company) nào có giá khoảng [6 triệu](price) trở lên không
@@ -1281,38 +1448,38 @@
 - có [ip](product_company) nào có giá hơn [ba triệu bốn](price) không
 - có [Itel](product_company) nào có giá trên [hai triệu tư](price) không
 - có điện thoại [Oppo](product_company) nào có giá hơn [3.3 triệu](price) không
-- có cái [Realme](product_company) nào giá trên [mười sáu triệu](price) không
-- có điện thoại [Realme](product_company) nào có giá hơn [3.2 triệu](price) không
-- có [Itel](product_company) nào giá trên [9,2 triệu](price) không
-- có cái [Sanmsung](product_company) nào có giá hơn [4 m 9](price) không
-- có điện thoại [Vivo](product_company) nào có giá hơn [6 m 8](price) không
-- có điện thoại nào có giá khoảng [6 triệu](price) trở lên không
-- có điện thoại nào có giá khoảng [bốn triệu mốt](price) trở lên không
-- có điện thoại nào có giá khoảng [5,4 triệu](price) trở lên không
-- có cái nào khoảng [1 triệu](price) trở lên không
-- có sản phẩm nào có giá từ [một triệu tám](price) trở lên không
-- có cái nào khoảng [6 triệu](price) trở lên không
-- có điện thoại nào có giá khoảng [tám triệu ba](price) trở lên không
-- có cái nào khoảng [tám triệu rưởi](price) trở lên không
-- có cái nào khoảng [hâm mốt triệu](price) trở lên không
-- có cái nào khoảng [1 m 8](price) trở lên không
-- có điện thoại nào có giá khoảng [5.1 triệu](price) trở lên không
-- có sản phẩm nào có giá từ [1 triệu](price) trở lên không
-- có sản phẩm nào có giá từ [1.6 triệu](price) trở lên không
-- có sản phẩm nào có giá từ [2,9 triệu](price) trở lên không
-- có điện thoại nào có giá khoảng [4.5 triệu](price) trở lên không
-- có điện thoại nào có giá khoảng [bảy triệu bốn](price) trở lên không
-- có điện thoại nào có giá khoảng [2,1 triệu](price) trở lên không
-- có điện thoại nào có giá khoảng [sáu triệu bảy](price) trở lên không
-- có điện thoại nào có giá khoảng [4,6 triệu](price) trở lên không
-- có sản phẩm nào có giá từ [1 m 6](price) trở lên không
-- có sản phẩm nào có giá từ [bảy triệu bảy](price) trở lên không
-- có sản phẩm nào có giá từ [4 m 5](price) trở lên không
-- có sản phẩm nào có giá từ [hai triệu bốn](price) trở lên không
-- có sản phẩm nào có giá từ [hâm tám triệu](price) trở lên không
-- có sản phẩm nào có giá từ [6,4 triệu](price) trở lên không
-- có sản phẩm nào có giá từ [bốn triệu rưởi](price) trở lên không
-- có sản phẩm nào có giá từ [7.5 triệu](price) trở lên không
+- co cai [Realme](product_company) nao gia tren [muoi sau trieu](price) khong
+- co dien thoai [Realme](product_company) nao co gia hon [3.2 trieu](price) khong
+- co [Itel](product_company) nao gia tren [9,2 trieu](price) khong
+- co cai [Sanmsung](product_company) nao co gia hon [4 m 9](price) khong
+- co dien thoai [Vivo](product_company) nao co gia hon [6 m 8](price) khong
+- co dien thoai nao co gia khoang [6 trieu](price) tro len khong
+- co dien thoai nao co gia khoang [bon trieu mot](price) tro len khong
+- co dien thoai nao co gia khoang [5,4 trieu](price) tro len khong
+- co cai nao khoang [1 trieu](price) tro len khong
+- co san pham nao co gia tu [mot trieu tam](price) tro len khong
+- co cai nao khoang [6 trieu](price) tro len khong
+- co dien thoai nao co gia khoang [tam trieu ba](price) tro len khong
+- co cai nao khoang [tam trieu ruoi](price) tro len khong
+- co cai nao khoang [ham mot trieu](price) tro len khong
+- co cai nao khoang [1 m 8](price) tro len khong
+- co dien thoai nao co gia khoang [5.1 trieu](price) tro len khong
+- co san pham nao co gia tu [1 trieu](price) tro len khong
+- co san pham nao co gia tu [1.6 trieu](price) tro len khong
+- co san pham nao co gia tu [2,9 trieu](price) tro len khong
+- co dien thoai nao co gia khoang [4.5 trieu](price) tro len khong
+- co dien thoai nao co gia khoang [bay trieu bon](price) tro len khong
+- co dien thoai nao co gia khoang [2,1 trieu](price) tro len khong
+- co dien thoai nao co gia khoang [sau trieu bay](price) tro len khong
+- co dien thoai nao co gia khoang [4,6 trieu](price) tro len khong
+- co san pham nao co gia tu [1 m 6](price) tro len khong
+- co san pham nao co gia tu [bay trieu bay](price) tro len khong
+- co san pham nao co gia tu [4 m 5](price) tro len khong
+- co san pham nao co gia tu [hai trieu bon](price) tro len khong
+- co san pham nao co gia tu [ham tam trieu](price) tro len khong
+- co san pham nao co gia tu [6,4 trieu](price) tro len khong
+- co san pham nao co gia tu [bon trieu ruoi](price) tro len khong
+- co san pham nao co gia tu [7.5 trieu](price) tro len khong
 - có điện thoại nào có giá khoảng [9,6 triệu](price) trở lên không
 - có sản phẩm nào có giá từ [6,1 triệu](price) trở lên không
 - có cái nào khoảng [8,8 triệu](price) trở lên không
@@ -1404,6 +1571,22 @@
 - có cái [Vsmart](product_company) nào khoảng [7,6 triệu](price) gì đó không
 - có [ss](product_company) nào khoảng [4,8 triệu](price) gì đó không
 - có [Oppo](product_company) nào khoảng [8 m 5](price) không ạ
+- chung [2.5 trieu](price)
+- tam [3 trieu 3](price)
+- tam [7 m 6](price)
+- tam [4,1 trieu](price)
+- tam [mot trieu chin](price)
+- chung [5 trieu](price)
+- chung [1.5 trieu](price)
+- chung [8.1 trieu](price)
+- co cai [Nokia](product_company) nao tam [7,7 trieu](price) khong
+- co cai [Vsmart](product_company) nao tren duoi [8,9 trieu](price) khong a
+- co [Itel](product_company) nao khoang [3,1 trieu](price) khong gioi thieu cho em voi
+- co cai [ss](product_company) nao khoang [bon trieu chin](price) gi do tu van giup em
+- co [ip](product_company) nao tren duoi [ba trieu tam](price) gi do khong
+- co cai [Vsmart](product_company) nao khoang [7,6 trieu](price) gi do khong
+- co [ss](product_company) nao khoang [4,8 trieu](price) gi do khong
+- co [Oppo](product_company) nao khoang [8 m 5](price) khong a
 - có [Iphone](product_company) nào tầm [5,6 triệu](price) không
 - có điện thoại [Masstel](product_company) nào tầm [6,6 triệu](price) không
 - có điện thoại [Energizer](product_company) nào trên dưới [một triệu rưởi](price) không
@@ -1435,36 +1618,36 @@
 - có cài nào tầm [hâm chín triệu](price) 
 - có điện thoại nào khoảng [8 m 7](price) không
 - có sản phẩm nào khoảng [một triệu năm](price) gì đó tư vấn giúp em
-- có điện thoại nào khoảng [5 triệu](price) không giới thiệu cho em với
-- có điện thoại nào tầm [bốn triệu năm](price) gì đó không
-- có điện thoại nào tầm [3 m 9](price) gì đó tư vấn giúp em
-- có điện thoại nào khoảng [6 triệu 6](price) gì đó tư vấn giúp em
-- có cái nào khoảng [5 triệu rưởi](price) không ạ
-- có điện thoại nào tầm [1,9 triệu](price) gì đó không
-- có điện thoại nào tầm [hai mươi bốn triệu](price) gì đó không
-- có cái nào khoảng [sáu triệu mốt](price) không
-- có cài nào trên dưới [7,8 triệu](price) không giới thiệu cho em với
-- có điện thoại nào tầm [bảy triệu bốn](price) gì đó tư vấn giúp em
-- có cài nào tầm [7 m 1](price) gì đó tư vấn giúp em
-- có điện thoại nào trên dưới [9,5 triệu](price) 
-- có điện thoại nào tầm [hai mươi tám triệu](price) không ạ
-- có điện thoại nào khoảng [1 triệu 1](price) gì đó tư vấn giúp em
-- có điện thoại nào trên dưới [hâm hai triệu](price) 
-- có cài nào trên dưới [ba triệu mốt](price) gì đó không
-- có điện thoại nào khoảng [8,7 triệu](price) gì đó không
-- có điện thoại nào tầm [mười bảy triệu](price) 
-- có cài nào tầm [hai mươi bốn triệu](price) không
-- có cài nào tầm [chín triệu mốt](price) gì đó không
-- có cái nào khoảng [4,4 triệu](price) không
-- có cái nào khoảng [ba triệu sáu](price) 
-- có cái nào khoảng [sáu triệu bảy](price) gì đó không
-- có sản phẩm nào khoảng [9 m 7](price) không ạ
-- có điện thoại nào trên dưới [5 m 6](price) gì đó không
-- có điện thoại nào trên dưới [7 triệu 7](price) không ạ
-- có điện thoại nào tầm [5 m 7](price) không
-- có cài nào tầm [5,7 triệu](price) 
-- có điện thoại nào khoảng [sáu triệu tám](price) không ạ
-- có sản phẩm nào khoảng [năm triệu chín](price) không giới thiệu cho em với
+- co dien thoai nao khoang [5 trieu](price) khong gioi thieu cho em voi
+- co dien thoai nao tam [bon trieu nam](price) gi do khong
+- co dien thoai nao tam [3 m 9](price) gi do tu van giup em
+- co dien thoai nao khoang [6 trieu 6](price) gi do tu van giup em
+- co cai nao khoang [5 trieu ruoi](price) khong a
+- co dien thoai nao tam [1,9 trieu](price) gi do khong
+- co dien thoai nao tam [hai muoi bon trieu](price) gi do khong
+- co cai nao khoang [sau trieu mot](price) khong
+- co cai nao tren duoi [7,8 trieu](price) khong gioi thieu cho em voi
+- co dien thoai nao tam [bay trieu bon](price) gi do tu van giup em
+- co cai nao tam [7 m 1](price) gi do tu van giup em
+- co dien thoai nao tren duoi [9,5 trieu](price) 
+- co dien thoai nao tam [hai muoi tam trieu](price) khong a
+- co dien thoai nao khoang [1 trieu 1](price) gi do tu van giup em
+- co dien thoai nao tren duoi [ham hai trieu](price) 
+- co cai nao tren duoi [ba trieu mot](price) gi do khong
+- co dien thoai nao khoang [8,7 trieu](price) gi do khong
+- co dien thoai nao tam [muoi bay trieu](price) 
+- co cai nao tam [hai muoi bon trieu](price) khong
+- co cai nao tam [chin trieu mot](price) gi do khong
+- co cai nao khoang [4,4 trieu](price) khong
+- co cai nao khoang [ba trieu sau](price) 
+- co cai nao khoang [sau trieu bay](price) gi do khong
+- co san pham nao khoang [9 m 7](price) khong a
+- co dien thoai nao tren duoi [5 m 6](price) gi do khong
+- co dien thoai nao tren duoi [7 trieu 7](price) khong a
+- co dien thoai nao tam [5 m 7](price) khong
+- co cai nao tam [5,7 trieu](price) 
+- co dien thoai nao khoang [sau trieu tam](price) khong a
+- co san pham nao khoang [nam trieu chin](price) khong gioi thieu cho em voi
 - có điện thoại nào tầm [4,1 triệu](price) 
 - có sản phẩm nào khoảng [2,5 triệu](price) không giới thiệu cho em với
 - có cài nào trên dưới [1 m 7](price) không
@@ -1505,6 +1688,21 @@
 - Màn hình của [Itel It2580](product_name) là màn hình loại nào
 - Màn hình của [Nokia 105 Single Sim (2017)](product_name) là màn hình loại nào
 - Màn hình của [Itel It2123V](product_name) là màn hình loại nào
+- may nay dung man hinh gi vay
+- dung man hinh gi vay a
+- man hinh cua may nay loai gi vay
+- may nay xai man hinh gi vay
+- thong tin man hinh cua may nay
+- man hinh cua [Masstel Play 30](product_name) la man hinh gi?
+- man hinh cua [Nokia 105 Single Sim (2017)](product_name) la man hinh gi?
+- [Masstel Fami P25](product_name) su dung man hinh gi?
+- [Samsung Galaxy A80](product_name) su dung man hinh gi?
+- Man hinh cua [ss 10](product_name) la man hinh loai nao
+- [ss a10s](product_name) su dung cong nghe man hinh gi?
+- [ss a20s](product_name) su dung man hinh gi?
+- Man hinh cua [Itel It2580](product_name) la man hinh loai nao
+- Man hinh cua [Nokia 105 Single Sim (2017)](product_name) la man hinh loai nao
+- Man hinh cua [Itel It2123V](product_name) la man hinh loai nao
 - Màn hình của [Samsung Galaxy A60](product_name) là màn hình loại nào
 - [OPPO A72](product_name) sử dụng màn hình loại gì?
 - màn hình của [ss s20+](product_name) là màn hình gì?
@@ -1540,28 +1738,45 @@
 - sản phầm này dùng pin nào
 - pin của điện thoại này là pin gì
 - pin được lâu không
+- [ss a51 5g](product_name) su dung pin gi?
+- pin cua [Samsung Galaxy A11](product_name) dung duoc bao lau
+- thoi gian su dung pin cua [Samsung Galaxy A21](product_name) la bao lau?
+- [iPhone 8 Plus](product_name) su dung pin duoc lau khong?
+- [iPhone 8 Plus](product_name) su dung pin gi?
+- pin cua [Nokia 5.3](product_name) dung duoc lau khong?
+- pin cua [realme x3](product_name) dung duoc lau khong?
+- thoi gian su dung pin cua [iPhone 11 Pro](product_name) la bao lau?
+- [Realme C3i](product_name) su dung pin gi?
+- pin cua [ss m40](product_name) dung duoc lau khong?
+- pin cua [Realme X3](product_name) co dung luong bao nhieu?
+- dien thoai nay su dung pin nao
+- san pham nay dung pin nao
+- pin cua dien thoai nay la pin gi
+- pin duoc lau khong
+- pin dung duoc bao lau
+- pin dung duoc lau khong
 - pin dùng được bao lâu
 - pin dùng được lâu không
 
 ## intent: buy_old_product
 <!-- có thu mua lại sản phẩm cũ không -->
-- shop thu mua [Huawei Mate 30 Pro 5G](product_name) cũ lại với giá bao nhiêu
-- [Vivo Y50](product_name) cũ bán được bao nhiêu?
-- shop thu mua [Xiaomi Mi Note 10 Pro](product_name) cũ lại với giá bao nhiêu
-- [OPPO A91](product_name) cũ shop mua lại với giá bao nhiêu?
-- [Xiaomi Mi Note 10 Pro](product_name) cũ bán được bao nhiêu?
-- shop thu mua [iPhone 11](product_name) cũ lại với giá bao nhiêu
-- [ss a01](product_name) cũ bán được bao nhiêu?
-- [Huawei Y7p](product_name) cũ bán được bao nhiêu?
-- shop thu mua [realme c3](product_name) cũ lại với giá bao nhiêu
-- shop thu mua [ss a21](product_name) cũ lại với giá bao nhiêu
-- [Masstel Hapi 10 Fami](product_name) cũ bán được bao nhiêu?
-- điện thoại [realme x50 youth edition](product_name) cũ shop thu lại bao nhiêu tiền vậy?
-- [Realme Narzo 10A](product_name) cũ bán được bao nhiêu?
-- điện thoại [Vsmart Joy 3](product_name) cũ shop thu lại bao nhiêu tiền vậy?
-- điện thoại [Nokia 5310](product_name) cũ shop thu lại bao nhiêu tiền vậy?
-- [ss a90 5g](product_name) cũ shop mua lại với giá bao nhiêu?
-- [Nokia 8.3 5G](product_name) cũ shop mua lại với giá bao nhiêu?
+- shop thu mua [Huawei Mate 30 Pro 5G](product_name) cu lai voi gia bao nhieu
+- [Vivo Y50](product_name) cu ban duoc bao nhieu?
+- shop thu mua [Xiaomi Mi Note 10 Pro](product_name) cu lai voi gia bao nhieu
+- [OPPO A91](product_name) cu shop mua lai voi gia bao nhieu?
+- [Xiaomi Mi Note 10 Pro](product_name) cu ban duoc bao nhieu?
+- shop thu mua [iPhone 11](product_name) cu lai voi gia bao nhieu
+- [ss a01](product_name) cu ban duoc bao nhieu?
+- [Huawei Y7p](product_name) cu ban duoc bao nhieu?
+- shop thu mua [realme c3](product_name) cu lai voi gia bao nhieu
+- shop thu mua [ss a21](product_name) cu lai voi gia bao nhieu
+- [Masstel Hapi 10 Fami](product_name) cu ban duoc bao nhieu?
+- dien thoai [realme x50 youth edition](product_name) cu shop thu lai bao nhieu tien vay?
+- [Realme Narzo 10A](product_name) cu ban duoc bao nhieu?
+- dien thoai [Vsmart Joy 3](product_name) cu shop thu lai bao nhieu tien vay?
+- dien thoai [Nokia 5310](product_name) cu shop thu lai bao nhieu tien vay?
+- [ss a90 5g](product_name) cu shop mua lai voi gia bao nhieu?
+- [Nokia 8.3 5G](product_name) cu shop mua lai voi gia bao nhieu?
 - [Huawei Y9s](product_name) cũ shop mua lại với giá bao nhiêu?
 - [Masstel Fami S2](product_name) cũ bán được bao nhiêu?
 - shop thu mua [Itel It6120](product_name) cũ lại với giá bao nhiêu
@@ -1598,6 +1813,21 @@
 - shop mua lại máy cũ không
 - mua lại máy không
 - mua cũ lại không
+- [Masstel Fami P25](product_name) cu shop mua lai voi gia bao nhieu?
+- [iPhone 11 Pro](product_name) cu ban duoc bao nhieu?
+- dien thoai [Huawei P30 Pro New Edition](product_name) cu shop thu lai bao nhieu tien vay?
+- shop thu mua [Xiaomi Redmi K30i](product_name) cu lai voi gia bao nhieu
+- shop thu mua [Nokia 5310](product_name) cu lai voi gia bao nhieu
+- dien thoai [Samsung Galaxy M31s](product_name) cu shop thu lai bao nhieu tien vay?
+- [Realme X2 Pro](product_name) cu shop mua lai voi gia bao nhieu?
+- [ss a50s](product_name) cu shop mua lai voi gia bao nhieu?
+- [ss a10](product_name) cu shop mua lai voi gia bao nhieu?
+- shop co thu mua lai may nay khong
+- mua lai may nay khong
+- shop mua lai may cu khong
+- mua lai may khong
+- mua cu lai khong
+- thu lai may khong
 - thu lại máy không
 
 ## intent: what_license
@@ -1667,6 +1897,26 @@
 - Mình có bằng lái xe + cmtnd có tham gia đk gói trả góp [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
 - chào ad. e có CMND, bằng lái xe có trả góp đc k ạ. trả trước [0 %](prepay_percent)
+- Dung Ban photo duoc khong a (co can cong chung khong)
+- Minh mat bang lai xe. Ho khau lai o bac ninh minh dung so tam tru o bac giang de mua tra gop o bac giang dk k shop
+- ad oi cho e hoi , thu tuc tra gop [0 %](interest_rate) la cmnd+ho khau duoc k a?
+- Tra truoc 0d ma minh chi co cmnd va gplx dc kh vay ad
+- May nay ho tro goi [0 %](interest_rate) minh co cmnd va gplxe
+- Anh oi em co giay CMND voi ho khau thoi co mua tra gop dc khong
+- chi oi cho e hoi la bay gio e mua dt nay tra truoc [10 %](prepay_percent) e co HK photo cong chung soi y ban chinh + cmnd thi co the mua dc k a??
+- K co bang lai mua duoc k
+- em muon mua tra gop ma chi co chung minh thu co duoc khong ad
+- Shop oi cho e hoi e muon mua [oppo f1s](product_name) tra gop goi [0 dong]{"entity":"price","role":"prepay"} ,nhung e lai khong co so ho khau o day vay e co the dung bang lai xe thay cho so ho khau duoc khong a
+- Shop oi cho e hoi e muon mua [oppo f1s](product_name) tra gop goi [0 dong]{"entity":"price","role":"prepay"} ,nhung e lai khong co bang lai o day vay e co the dung so ho khau thay cho bang lai duoc khong a
+- ad oi em dung GPLX thay SHK dc khong
+- so ho khau thay bang lai duoc khong a
+- Da em la sv ma tam thoi chua co the sv vay mua tra gop dc ko ak
+- sinh vien mua tra gop dc ko ak
+- chung minh thu quan doi co duoc mua tra gop [0 %](interest_rate) k b ?
+- Cmnd vs bang lai tham gia tra gop [0 d]{"entity":"price","role":"prepay"} dc k
+- Minh co bang lai xe + cmtnd co tham gia dk goi tra gop [0 %](interest_rate) k qtv?
+- Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
+- chao ad. e co CMND, bang lai xe co tra gop dc k a. tra truoc [0 %](prepay_percent)
 
 ## intent: two_or_more_file
 <!-- 2 hay nhiều hồ sơ -->
@@ -1678,6 +1928,14 @@
 - Em đang vay trả góp của home edit. Vậy có thể mua trả góp được tiếp không ad?
 - Mua góp 2 cái một lần. Có dk ko ad oi
 - em vừa hoàn thành hồ sơ trả góp thì có cần làm lại hồ sơ mới không
+- QTV cho neu e dung 1so ho khau + CMND mua tra gop 2 sp chung dc k a
+- minh dang tra gop ben ngan hang fe ky han la 4 thang nhung minh tra dc hai thang roi vay co dc mua tra gop 0% san pham nay ko vay.
+- Chao ban..hien tai minh dang co ho so vay ben FE thi co duoc mua tra gop nua khong vay
+- Cho e hoi e muon mua tra gop tra trc 0d dc k a. hien tai e dang tra gop ben fe credit.
+- E muon tra gop djen thoai nay dk k?tai vj e dag gop dt [oppo A39](product_name) dk 2 thang ui o fptshop ak
+- Em dang vay tra gop cua home edit. Vay co the mua tra gop duoc tiep khong ad?
+- Mua gop 2 cai mot lan. Co dk ko ad oi
+- em vua hoan thanh ho so tra gop thi co can lam lai ho so moi khong
 
 ## intent: how_many_per_month
 <!-- cần phải trả bao nhiêu tiền / 1 tháng -->
@@ -1707,6 +1965,32 @@
 - E muốn mua trả góp [0 %](interest_rate) trả trước [10 %](prepay_percent) góp trong [6 t](installment_payment_period), nếu k đóng phí bảo hiểm thì 1 tháng góp bao nhiêu vậy ad
 - Trả trước [10 %](prepay_percent) và ko mua bảo hiểm thì mỗi tháng góp bao nhiu vậy ad
 - Trả góp [0 đ]{"entity":"price","role":"prepay"}.ko mua bảo hiểm vay đóng [6 tháng](installment_payment_period) nhiêu vay.
+- tra bao nhieu 1 thang vay
+- mot thang phai tra nhieu vay
+- tra gop thi mot thang tra bao nhieu
+- tra gop thi thang gop bao nhieu
+- thang gop bao nhieu vay
+- tra gop thi moi thang gop bao nhieu vay
+- Cho minh hoi neu minh mua may tra gop ma minh tra truoc [2 tr]{"entity":"price","role":"prepay"} z moi thang minh tra gop khoang bao nhieu z shop
+- Em co [1 tr 500](price) cho em hoi tra gop trong [9 thang](installment_payment_period) thi phai tra truoc bao nhieu la moi thang tra bao nhiu vayj a
+- m tra gop [0 %](interest_rate) trong vong [12 thang](installment_payment_period) vay moi thang m phai tra bao nhieu ak.
+- Tra gop [6 thang](installment_payment_period) thi bao nhieu 1 thang a
+- E tra truoc may nay [1500000]{"entity":"price","role":"prepay"} thi moi thang e gop bao nhieu voi lai xuat [0 %](interest_rate)
+- Khong can tra truoc thi moi thang e gop bao nhiu a
+- Em muon mua tra gop , nhung em k tra truoc vay moi thang em phai gop gia thap nhat bao nhieu vay
+- Cha chuoc [20 %](prepay_percent) cha [15 thag](installment_payment_period) la thag dog nhiu z shop
+- Cho em hoi goi tra truoc [0 d]{"entity":"price","role":"prepay"} lai suat bao nhieu? Gop moi thang bao nhieu vay?
+- Neu mua tra gop [OPPO F1S](product_name) ma tra truoc [2.000.000]{"entity":"price","role":"prepay"} va gop trong [9 thang](installment_payment_period) thi lai suat va so tien phai tra moi thang la bao nhieu a
+- Cho minh hoi neu minh muon mua tra gop [f1s 2017](product_name) ma tra truoc [5 trieu]{"entity":"price","role":"prepay"} thi minh se phai gop trong bao lau voi so tien bao nhieu?
+- Cho minh hoi, minh tra gop goi [0 d]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi moi thang phai tra la bao nhieu va can nhung giay to gi
+- Neu minh tra truoc [30 %](prepay_percent) thi gop 12t thi moi thang bn?
+- fpt cho hoi the em mua tra gop ma tra truoc [30 %](prepay_percent) thi moi thang tra bao nhieu va trong vong may thang
+- FPT dt [oppo f1s 2017](product_name). Tra truoc [o d]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
+- e mua tra gop ma co bang lai xe, CMND, ho khau ma tra truoc [60 %](prepay_percent) tra trong [4 thang](installment_payment_period) thi moi thang tra khoang bao nhiu a
+- Tra gop truoc [10 %](prepay_percent) .Moi thang dong bao nhieu vay
+- E muon mua tra gop [0 %](interest_rate) tra truoc [10 %](prepay_percent) gop trong [6 t](installment_payment_period), neu k dong phi bao hiem thi 1 thang gop bao nhieu vay ad
+- Tra truoc [10 %](prepay_percent) va ko mua bao hiem thi moi thang gop bao nhiu vay ad
+- Tra gop [0 d]{"entity":"price","role":"prepay"}.ko mua bao hiem vay dong [6 thang](installment_payment_period) nhieu vay.
 - Ad oi minh muon mua [nova 2i](product_name) tra truoc [20 %](prepay_percent) gop [12 thang](installment_payment_period) vay thang la minh gop bao nhieu
 - Trả góp [10 %](prepay_percent) .lãi suất [0 %](interest_rate).[6 thang](installment_payment_period). Vay mỗi tháng góp bao nhieu
 - Trả góp [10 %](prepay_percent) trong vòng [6 tháng](installment_payment_period) của FE k mua phí bảo hiểm thì mỗi tháng góp bao nhiêu tiền?
@@ -1738,17 +2022,17 @@
 - trả góp trong [3 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [7 t]{"entity":"installment_payment_period","role":"case2"} tháng đóng nhiêu
 - mua trả góp trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [10 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
 - trả góp trong [11 t]{"entity":"installment_payment_period","role":"case1"} hoặc [6 t]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
-- mua trả góp trong [12 t]{"entity":"installment_payment_period","role":"case1"} hoặc [6 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
-- muốn mua trả góp trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hoặc [7 t]{"entity":"installment_payment_period","role":"case2"} tháng đóng nhiêu
-- mua trả góp trong [2 t]{"entity":"installment_payment_period","role":"case1"} hay [9 t]{"entity":"installment_payment_period","role":"case2"} tháng phải trả nhiêu
-- muốn trả góp trong [8 tháng]{"entity":"installment_payment_period","role":"case1"} hay [12 thang]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
-- muốn trả góp trong [5 tháng]{"entity":"installment_payment_period","role":"case1"} hay [12 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
-- muốn trả góp trong [2 thang]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
-- muốn trả góp trong [9 tháng]{"entity":"installment_payment_period","role":"case1"} hay [3 tháng]{"entity":"installment_payment_period","role":"case2"} tháng phải trả nhiêu
-- muốn trả góp trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hay [10 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
-- mua trả góp trong [3 t]{"entity":"installment_payment_period","role":"case1"} hay [8 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
-- trả góp trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [5 tháng]{"entity":"installment_payment_period","role":"case2"} thì mỗi tháng trả bao nhiêu
-- trả góp trong [6 thang]{"entity":"installment_payment_period","role":"case1"} hay [1 thang]{"entity":"installment_payment_period","role":"case2"} tháng đóng nhiêu
+- mua tra gop trong [12 t]{"entity":"installment_payment_period","role":"case1"} hoac [6 t]{"entity":"installment_payment_period","role":"case2"} moi thang phai tra bao nhieu
+- muon mua tra gop trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hoac [7 t]{"entity":"installment_payment_period","role":"case2"} thang dong nhieu
+- mua tra gop trong [2 t]{"entity":"installment_payment_period","role":"case1"} hay [9 t]{"entity":"installment_payment_period","role":"case2"} thang phai tra nhieu
+- muon tra gop trong [8 thang]{"entity":"installment_payment_period","role":"case1"} hay [12 thang]{"entity":"installment_payment_period","role":"case2"} thi mot thang phai tra bao nhieu
+- muon tra gop trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hay [12 thang]{"entity":"installment_payment_period","role":"case2"} moi thang phai dong bao nhieu
+- muon tra gop trong [2 thang]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} thi mot thang phai tra bao nhieu
+- muon tra gop trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [3 thang]{"entity":"installment_payment_period","role":"case2"} thang phai tra nhieu
+- muon tra gop trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hay [10 t]{"entity":"installment_payment_period","role":"case2"} moi thang phai tra bao nhieu
+- mua tra gop trong [3 t]{"entity":"installment_payment_period","role":"case1"} hay [8 thang]{"entity":"installment_payment_period","role":"case2"} moi thang phai dong bao nhieu
+- tra gop trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [5 thang]{"entity":"installment_payment_period","role":"case2"} thi moi thang tra bao nhieu
+- tra gop trong [6 thang]{"entity":"installment_payment_period","role":"case1"} hay [1 thang]{"entity":"installment_payment_period","role":"case2"} thang dong nhieu
 - mua trả góp trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
 - mua trả góp trong [3 tháng]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
 - muốn mua trả góp trong [2 thang]{"entity":"installment_payment_period","role":"case1"} hay [11 thang]{"entity":"installment_payment_period","role":"case2"} thì tháng đóng bao nhiêu
@@ -1795,6 +2079,29 @@
 - E 18t mua tra gop dc ko ak
 - E 19t thì có thể mua trả góp ngân hàng nào được ạ
 - E sinh Viên mà chưa có thẻ sinh Viên mua trả góp dc ko ak
+- sinh vien bn tuoi tra gop dc qtv voi thu tuc ntn
+- chi la sinh vien du 20 tuoi lam thu tuc xet duyet nhanh hk a
+- 19tuoi co the mua tra gop k a
+- Em 16 tuoi co cmnn vs ho khau gop 0% lai suat co dc ko ak
+- 19t co tra gop dc k fpt
+- E 18t mua tra gop dc ko ak
+- E 19t thi co the mua tra gop ngan hang nao duoc a
+- E sinh Vien ma chua co the sinh Vien mua tra gop dc ko ak
+- Bao nhieu tuoi moi tra gop duoc admin
+- Em sinh ngay 29/10/1998 va cung dang la sinh vien thi em co the tra gop duoc khong a?
+- 19 tuoi tu mua tra gop khong can nguoi bao lanh duoc khong
+- Voi may moi thi 18 tuoi co tra gop duoc khong Quan Tri Vien
+- Em sinh 9/8/1998 hien la sinh vien em da co CMND va bang lai xe roi. Em muon tra gop duoc khong ?
+- Shop cho em hoi em con sinh vien chua du 20t mua tra gop dc k a
+- Ad cho e hoi e sn 98 co the mua tra gop dx kg vay
+- em la sinh vien nam nhat du 18 tuoi co mua tra gop tai fpt shop duoc khong a
+- E sinh 7 7 1998 co tra gop duoc k a
+- may con hang khong a? em sinh vien mua tra gop duoc khong?
+- Em sinh nam 99 la sv nam nhat mun mua tra gop thi can co nhung giay to ntn a
+- E 19t co duoc tra gop ko ak?
+- bao nhieu tuoi thi moi dc tra gop vay ad
+- hien tai e du 18 tuoi . E co the tra gop dt zenfone 4 max pro nay duoc khong a ?
+- 19t tra gop duoc ko nhi
 - Bao nhiêu tuỗi mởi trả góp được admin
 - Em sinh ngày 29/10/1998 và cũng đang là sinh viên thì em có thể trả góp được không ạ?
 - 19 tuổi tự mua trả góp không cần người bảo lãnh được không
@@ -1827,6 +2134,39 @@
 - cho hỏi [iPhone 11 Pro Max](product_name) được trả góp không
 - cho hỏi [Nokia 9.3 PureView](product_name) có được mua trả góp hay không
 - cho hỏi [Nokia 6.2](product_name) có được trả góp không
+- cho hoi [Nokia 110 DS](product_name) duoc tra gop khong
+- dien thoai [Samsung Galaxy A51](product_name) co duoc mua tra gop hay khong
+- cho hoi [ss xcover pro](product_name) co duoc tra gop khong
+- [Huawei Y8s](product_name) co duoc mua tra gop hay khong
+- [Vsmart Star 3](product_name) co duoc tra gop khong
+- cho hoi [Realme U1](product_name) tra gop duoc khong
+- cho hoi [iPhone 11 Pro Max](product_name) duoc tra gop khong
+- cho hoi [Nokia 9.3 PureView](product_name) co duoc mua tra gop hay khong
+- cho hoi [Nokia 6.2](product_name) co duoc tra gop khong
+- cho hoi [Huawei Enjoy 10e](product_name) co duoc mua tra gop hay khong
+- cho hoi [Samsung Galaxy A10s](product_name) tra gop duoc khong
+- [Samsung Galaxy A20e](product_name) tra gop duoc khong
+- [ss xcover pro](product_name) co duoc mua tra gop hay khong
+- dien thoai [realme 5 pro](product_name) tra gop duoc khong
+- [Nokia 3](product_name) co tra gop qua the tin dung ko shop
+- May mobiistar x1 co tra gop 0d khong shop
+- Ko ho tro tra gop ak shop
+- may nay co ban tra gop khong ban?
+- may nay tra gop duoc khong
+- co cho mua tra gop khong
+- tra gop duoc khong
+- co cho tra gop khong
+- mua tra gop duoc khong
+- cho em hoi [samsung a10](product_name) CO BAN TRA GOP KO ?
+- san pham nay co tra gop [0 %](interest_rate) khong shop?
+- Cho e hoi [f1s](product_name) con goi lai suat [0 %](interest_rate) k a
+- an pham nay co tra gop ko a.
+- Co ban tra gop k v
+- [Oppof1s 2016](product_name) co dc tra gop ko ak
+- Minh muon mua oppo [f1s 2017](product_name) tra truoc [0 d]{"entity":"price","role":"prepay"} co dc ko ak
+- Minh muon mua oppo [f1s(2017)](product_name), san pham co ho tro tra gop [0 %](interest_rate) khong vay ban
+- may [oppo f1s](product_name) nay co tra trc [o d]{"entity":"price","role":"prepay"} khong ak
+- E mun mua dt oppo tra gop dc k ak
 - cho hỏi [Huawei Enjoy 10e](product_name) có được mua trả góp hay không
 - cho hỏi [Samsung Galaxy A10s](product_name) trả góp được không
 - [Samsung Galaxy A20e](product_name) trả góp được không
@@ -1891,6 +2231,13 @@
 - việc trả góp mất nhiều thời gian không
 - trả góp mất bao lâu để làm hồ sơ
 - xét duyệt hồ sơ trả góp lâu không
+- cho hoi dang ky tra gop co lau khong
+- mua tra gop lam ho so co nhanh khong
+- dang ky tra gop mat nhieu thoi gian khong
+- tra gop lam ho so lau khong
+- viec tra gop mat nhieu thoi gian khong
+- tra gop mat bao lau de lam ho so
+- xet duyet ho so tra gop lau khong
 
 ## intent: ask_hardware_info
 <!-- hỏi thông tin các bộ phận của máy -->
@@ -1908,38 +2255,38 @@
 - [Energizer E100](product_name) xài [card]{"entity":"hardware","role":"WHQ"} gì
 - [realme 5 pro](product_name) xài [gpu]{"entity":"hardware","role":"WHQ"} gì
 - [Oppo A9](product_name) có [GPU]{"entity":"hardware","role":"WHQ"} gì
-- [ss j8+](product_name) dùng [card đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [OPPO Reno4](product_name) xài [CPU]{"entity":"hardware","role":"WHQ"} gì
-- [Samsung Galaxy J8+](product_name) dùng [card đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [Xiaomi Redmi K30 Pro Zoom Edition](product_name) dùng [chíp]{"entity":"hardware","role":"WHQ"} gì
-- [Huawei Y7 Pro](product_name) xài [card đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [Realme C2](product_name) có [gpu]{"entity":"hardware","role":"WHQ"} gì
-- [Samsung Galaxy M20](product_name) xài [chip]{"entity":"hardware","role":"WHQ"} gì
-- [Itel It5092](product_name) dùng [chíp đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [Realme XT](product_name) có [GPU]{"entity":"hardware","role":"WHQ"} gì
-- [Samsung Galaxy A70](product_name) xài [chíp đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [Huawei Y7s](product_name) xài [chíp đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [Huawei Nova 5i](product_name) xài [cpu]{"entity":"hardware","role":"WHQ"} gì
-- [Huawei P Smart Pro 2019](product_name) dùng [chíp đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [Masstel Hapi 10 Fami](product_name) có [card]{"entity":"hardware","role":"WHQ"} gì
-- [Xiaomi Mi 10 Pro](product_name) xài [chip]{"entity":"hardware","role":"WHQ"} gì
-- [ss s10 lite](product_name) xài được [edge]{"entity":"hardware","role":"YorN"} không
-- [Samsung Galaxy M10s](product_name) có [bluetooth]{"entity":"hardware","role":"YorN"} không
-- [Nokia 1.3](product_name) có [3 g]{"entity":"hardware","role":"YorN"} không
-- [Xiaomi Redmi Note 8 Pro](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không  
-- [Vivo Y50](product_name) có [đèn flash]{"entity":"hardware","role":"YorN"} không
-- [ss 10 lite](product_name) xài được [bluetooth]{"entity":"hardware","role":"YorN"} không
-- [realme 5s](product_name) dùng được [nfc]{"entity":"hardware","role":"YorN"} không
-- [Xiaomi Redmi K30 5G Tracing](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không
-- [Nokia 150 DS](product_name) dùng được [đèn flash]{"entity":"hardware","role":"YorN"} không
-- [Nokia 105 SS](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
-- [Realme XT](product_name) có [đèn flash]{"entity":"hardware","role":"YorN"} không
-- [ss s20](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
-- [realme 6 pro](product_name) có [3 g]{"entity":"hardware","role":"YorN"} không
-- [Vivo Y3](product_name) xài được [bluetooth]{"entity":"hardware","role":"YorN"} không
-- [Huawei Y7 Pro](product_name) có [đèn flash]{"entity":"hardware","role":"YorN"} không
-- [Huawei P40](product_name) dùng được [đèn pin]{"entity":"hardware","role":"YorN"} không
-- [Masstel Fami 9](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
+- [ss j8+](product_name) dung [card do hoa]{"entity":"hardware","role":"WHQ"} gi
+- [OPPO Reno4](product_name) xai [CPU]{"entity":"hardware","role":"WHQ"} gi
+- [Samsung Galaxy J8+](product_name) dung [card do hoa]{"entity":"hardware","role":"WHQ"} gi
+- [Xiaomi Redmi K30 Pro Zoom Edition](product_name) dung [chip]{"entity":"hardware","role":"WHQ"} gi
+- [Huawei Y7 Pro](product_name) xai [card do hoa]{"entity":"hardware","role":"WHQ"} gi
+- [Realme C2](product_name) co [gpu]{"entity":"hardware","role":"WHQ"} gi
+- [Samsung Galaxy M20](product_name) xai [chip]{"entity":"hardware","role":"WHQ"} gi
+- [Itel It5092](product_name) dung [chip do hoa]{"entity":"hardware","role":"WHQ"} gi
+- [Realme XT](product_name) co [GPU]{"entity":"hardware","role":"WHQ"} gi
+- [Samsung Galaxy A70](product_name) xai [chip do hoa]{"entity":"hardware","role":"WHQ"} gi
+- [Huawei Y7s](product_name) xai [chip do hoa]{"entity":"hardware","role":"WHQ"} gi
+- [Huawei Nova 5i](product_name) xai [cpu]{"entity":"hardware","role":"WHQ"} gi
+- [Huawei P Smart Pro 2019](product_name) dung [chip do hoa]{"entity":"hardware","role":"WHQ"} gi
+- [Masstel Hapi 10 Fami](product_name) co [card]{"entity":"hardware","role":"WHQ"} gi
+- [Xiaomi Mi 10 Pro](product_name) xai [chip]{"entity":"hardware","role":"WHQ"} gi
+- [ss s10 lite](product_name) xai duoc [edge]{"entity":"hardware","role":"YorN"} khong
+- [Samsung Galaxy M10s](product_name) co [bluetooth]{"entity":"hardware","role":"YorN"} khong
+- [Nokia 1.3](product_name) co [3 g]{"entity":"hardware","role":"YorN"} khong
+- [Xiaomi Redmi Note 8 Pro](product_name) dung duoc [3 g]{"entity":"hardware","role":"YorN"} khong  
+- [Vivo Y50](product_name) co [den flash]{"entity":"hardware","role":"YorN"} khong
+- [ss 10 lite](product_name) xai duoc [bluetooth]{"entity":"hardware","role":"YorN"} khong
+- [realme 5s](product_name) dung duoc [nfc]{"entity":"hardware","role":"YorN"} khong
+- [Xiaomi Redmi K30 5G Tracing](product_name) dung duoc [3 g]{"entity":"hardware","role":"YorN"} khong
+- [Nokia 150 DS](product_name) dung duoc [den flash]{"entity":"hardware","role":"YorN"} khong
+- [Nokia 105 SS](product_name) co [den pin]{"entity":"hardware","role":"YorN"} khong
+- [Realme XT](product_name) co [den flash]{"entity":"hardware","role":"YorN"} khong
+- [ss s20](product_name) xai duoc [gprs]{"entity":"hardware","role":"YorN"} khong
+- [realme 6 pro](product_name) co [3 g]{"entity":"hardware","role":"YorN"} khong
+- [Vivo Y3](product_name) xai duoc [bluetooth]{"entity":"hardware","role":"YorN"} khong
+- [Huawei Y7 Pro](product_name) co [den flash]{"entity":"hardware","role":"YorN"} khong
+- [Huawei P40](product_name) dung duoc [den pin]{"entity":"hardware","role":"YorN"} khong
+- [Masstel Fami 9](product_name) xai duoc [gprs]{"entity":"hardware","role":"YorN"} khong
 - [Realme C2](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
 - [Itel It2163](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không
 - [Samsung Galaxy Note 10+](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
@@ -1962,45 +2309,45 @@
 - dùng [chip xử lý]{"entity":"hardware","role":"WHQ"} gì vậy
 - dùng [gpu]{"entity":"hardware","role":"WHQ"} gì á
 - dùng [CPU]{"entity":"hardware","role":"WHQ"} gì á
-- điện thoại này xài [chíp đồ họa]{"entity":"hardware","role":"WHQ"} j v ad
-- máy này sử dụng [chíp đồ họa]{"entity":"hardware","role":"WHQ"} j v ad
-- điện thoại này xài [card]{"entity":"hardware","role":"WHQ"} gì vậy
-- máy dùng [chip]{"entity":"hardware","role":"WHQ"} gì vậy
-- máy này sử dụng [GPU]{"entity":"hardware","role":"WHQ"} nào vậy
-- máy dùng [GPU]{"entity":"hardware","role":"WHQ"} nào vậy
-- máy này sử dụng [chip xử lý]{"entity":"hardware","role":"WHQ"} gì vậy
-- máy dùng [chíp đồ họa]{"entity":"hardware","role":"WHQ"} gì vậy
-- máy này sử dụng [chíp xử lý]{"entity":"hardware","role":"WHQ"} nào vậy
-- máy có [chip xử lý]{"entity":"hardware","role":"WHQ"} nào vậy
-- máy này sử dụng [gpu]{"entity":"hardware","role":"WHQ"} gì vậy
-- điện thoại này xài [GPU]{"entity":"hardware","role":"WHQ"} gì vậy
-- máy dùng [cpu]{"entity":"hardware","role":"WHQ"} gì á
-- máy này sử dụng [card]{"entity":"hardware","role":"WHQ"} j v ad
-- máy dùng [chíp đồ họa]{"entity":"hardware","role":"WHQ"} nào vậy
-- máy này sử dụng [card]{"entity":"hardware","role":"WHQ"} j v ad
-- dùng [chíp đồ họa]{"entity":"hardware","role":"WHQ"} gì á
-- máy dùng [GPU]{"entity":"hardware","role":"WHQ"} nào vậy
-- điện thoại này có [bluetooth]{"entity":"hardware","role":"YorN"} không ad
-- máy này có [gps]{"entity":"hardware","role":"YorN"} không ạ
-- sản phẩm này có [4 g]{"entity":"hardware","role":"YorN"} không
-- sản phẩm này có [bluetooth]{"entity":"hardware","role":"YorN"} không ad
-- có [đèn flash]{"entity":"hardware","role":"YorN"} không
-- máy này có [4 g]{"entity":"hardware","role":"YorN"} không vậy
-- máy này có [3 g]{"entity":"hardware","role":"YorN"} không
-- máy có [đèn flash]{"entity":"hardware","role":"YorN"} không
-- máy có [bluetooth]{"entity":"hardware","role":"YorN"} không ad
-- máy này có [bluetooth]{"entity":"hardware","role":"YorN"} không ạ
-- dùng được [đèn pin]{"entity":"hardware","role":"YorN"} không ad
-- máy có [wifi]{"entity":"hardware","role":"YorN"} không
-- dùng được [wifi]{"entity":"hardware","role":"YorN"} không ad
-- dùng được [đèn flash]{"entity":"hardware","role":"YorN"} không ạ
-- sản phẩm này có [wifi]{"entity":"hardware","role":"YorN"} không ạ
-- máy này có [gprs]{"entity":"hardware","role":"YorN"} không ạ
-- dùng được [wifi]{"entity":"hardware","role":"YorN"} không ad
-- dùng được [gps]{"entity":"hardware","role":"YorN"} không vậy
-- có [3 g]{"entity":"hardware","role":"YorN"} không ad
-- máy có [đèn flash]{"entity":"hardware","role":"YorN"} không ad
-- dùng được [wifi]{"entity":"hardware","role":"YorN"} không ad
+- dien thoai nay xai [chip do hoa]{"entity":"hardware","role":"WHQ"} j v ad
+- may nay su dung [chip do hoa]{"entity":"hardware","role":"WHQ"} j v ad
+- dien thoai nay xai [card]{"entity":"hardware","role":"WHQ"} gi vay
+- may dung [chip]{"entity":"hardware","role":"WHQ"} gi vay
+- may nay su dung [GPU]{"entity":"hardware","role":"WHQ"} nao vay
+- may dung [GPU]{"entity":"hardware","role":"WHQ"} nao vay
+- may nay su dung [chip xu ly]{"entity":"hardware","role":"WHQ"} gi vay
+- may dung [chip do hoa]{"entity":"hardware","role":"WHQ"} gi vay
+- may nay su dung [chip xu ly]{"entity":"hardware","role":"WHQ"} nao vay
+- may co [chip xu ly]{"entity":"hardware","role":"WHQ"} nao vay
+- may nay su dung [gpu]{"entity":"hardware","role":"WHQ"} gi vay
+- dien thoai nay xai [GPU]{"entity":"hardware","role":"WHQ"} gi vay
+- may dung [cpu]{"entity":"hardware","role":"WHQ"} gi a
+- may nay su dung [card]{"entity":"hardware","role":"WHQ"} j v ad
+- may dung [chip do hoa]{"entity":"hardware","role":"WHQ"} nao vay
+- may nay su dung [card]{"entity":"hardware","role":"WHQ"} j v ad
+- dung [chip do hoa]{"entity":"hardware","role":"WHQ"} gi a
+- may dung [GPU]{"entity":"hardware","role":"WHQ"} nao vay
+- dien thoai nay co [bluetooth]{"entity":"hardware","role":"YorN"} khong ad
+- may nay co [gps]{"entity":"hardware","role":"YorN"} khong a
+- san pham nay co [4 g]{"entity":"hardware","role":"YorN"} khong
+- san pham nay co [bluetooth]{"entity":"hardware","role":"YorN"} khong ad
+- co [den flash]{"entity":"hardware","role":"YorN"} khong
+- may nay co [4 g]{"entity":"hardware","role":"YorN"} khong vay
+- may nay co [3 g]{"entity":"hardware","role":"YorN"} khong
+- may co [den flash]{"entity":"hardware","role":"YorN"} khong
+- may co [bluetooth]{"entity":"hardware","role":"YorN"} khong ad
+- may nay co [bluetooth]{"entity":"hardware","role":"YorN"} khong a
+- dung duoc [den pin]{"entity":"hardware","role":"YorN"} khong ad
+- may co [wifi]{"entity":"hardware","role":"YorN"} khong
+- dung duoc [wifi]{"entity":"hardware","role":"YorN"} khong ad
+- dung duoc [den flash]{"entity":"hardware","role":"YorN"} khong a
+- san pham nay co [wifi]{"entity":"hardware","role":"YorN"} khong a
+- may nay co [gprs]{"entity":"hardware","role":"YorN"} khong a
+- dung duoc [wifi]{"entity":"hardware","role":"YorN"} khong ad
+- dung duoc [gps]{"entity":"hardware","role":"YorN"} khong vay
+- co [3 g]{"entity":"hardware","role":"YorN"} khong ad
+- may co [den flash]{"entity":"hardware","role":"YorN"} khong ad
+- dung duoc [wifi]{"entity":"hardware","role":"YorN"} khong ad
 - điện thoại này có [bluetooth]{"entity":"hardware","role":"YorN"} không ad
 - máy này có [3 g]{"entity":"hardware","role":"YorN"} không ad
 - có [đèn flash]{"entity":"hardware","role":"YorN"} không ạ
@@ -2031,6 +2378,24 @@
 - điện thoại [Samsung M01s](product_name) chụp xóa phông được không
 - điện thoại [Samsung Galaxy S20+](product_name) chụp xóa phông được không
 - điện thoại [Nokia 7.3](product_name) chụp xóa phông được không
+- camera sau cua [Samsung A10](product_name) chup xoa phong duoc khong
+- camera sau cua [ss M31s](product_name) chup xoa phong duoc khong
+- camera cua [Vivo S6](product_name) chup xoa phong duoc khong
+- camera cua [Opo A31](product_name) chup xoa phong duoc khong
+- camera cua [Samsung A10](product_name) chup xoa phong duoc khong
+- camera cua [ss M31s](product_name) chup xoa phong duoc khong
+- co chup xoa phong khong
+- may chup xoa phong duoc khong
+- may co chup xoa phong khong
+- may chup xoa phong
+- chup xoa phong duoc khong
+- may [vv Nex 3](product_name) chup xoa phong duoc khong
+- may [iPhone 11 Pro Max](product_name) chup xoa phong duoc khong
+- may [OPPO Find X2 Lite](product_name) chup xoa phong duoc khong
+- may [Samsung M31s](product_name) chup xoa phong duoc khong
+- dien thoai [Samsung M01s](product_name) chup xoa phong duoc khong
+- dien thoai [Samsung Galaxy S20+](product_name) chup xoa phong duoc khong
+- dien thoai [Nokia 7.3](product_name) chup xoa phong duoc khong
 - điện thoại [Xiaomi Black Shark 3](product_name) chụp xóa phông được không
 - [ip 8 Plus](product_name) chụp xóa phông được không
 - [Nokia 3310](product_name) chụp xóa phông được không
@@ -2053,6 +2418,19 @@
 - camera sau của [OPO A92](product_name) chụp có đẹp không
 - camera sau của [Samsung Z Flip](product_name) chụp có đẹp không
 - camera sau của [iPhone 11 Pro](product_name) chụp có đẹp không
+- cam sau chup dep khong
+- camera sau cua may nhu nao
+- camera sau cua may ntn
+- camera sau cua may ra sao
+- camera sau cua [Black Shark 2 Pro](product_name) nhu the nao
+- camera sau cua [ss A70](product_name) nhu the nao
+- camera sau cua [OPPO Reno 3 Vitality](product_name) nhu the nao
+- camera sau cua [Samsung Galaxy A21s](product_name) nhu the nao
+- camera sau co tinh nang gi hay
+- camera sau co nhung chuc nang gi
+- camera sau cua [Samsung Galaxy Xcover Pro](product_name) chup co dep khong
+- camera sau cua [OPO A92](product_name) chup co dep khong
+- camera sau cua [Samsung Z Flip](product_name) chup co dep khong
 - camera sau chụp có đẹp không
 - camera sau của [Vivo S1 Pro](product_name) ra sao
 - camera sau của [Vivo X50](product_name) ra sao
@@ -2073,6 +2451,17 @@
 - camera trước của [Vivo U10](product_name) ra sao
 - camera trước của [Realme 6 Pro](product_name) ra sao
 - camera trước của [iPhone 6s Plus](product_name) chụp đẹp không
+- cam truoc chup dep khong
+- camera truoc chup dep khong
+- selfie dep khong
+- camera truoc may nay chup xoa phong duoc khong
+- cam truoc co seifle dep khong
+- cam truoc co tinh nang gi
+- camera truoc cua [OPPO Reno Ace 2](product_name) ra sao
+- camera truoc cua [Xiaomi Redmi K30i](product_name) ra sao
+- camera truoc cua [Vivo U10](product_name) ra sao
+- camera truoc cua [Realme 6 Pro](product_name) ra sao
+- camera truoc cua [iPhone 6s Plus](product_name) chup dep khong
 - camera trước của [vv V19](product_name) chụp đẹp không
 - camera trước của [Huawei Nova 5i Pro](product_name) chụp đẹp không
 - camera trước của [vv V17](product_name) chụp đẹp không
@@ -2111,6 +2500,26 @@
 - cam sau có độ phân giải bao nhiêu vậy
 - độ phân giải của cam sau là bao nhiêu vậy
 - camera sau bao nhiêu mp vậy
+- [camera sau](camera) cua dien thoai [ss z flip](product_name) co do phan giai bao nhieu
+- [camera sau](camera) cua dien thoai [iPhone 11 Pro Max](product_name) bao nhieu MP
+- [camera truoc](camera) cua dien thoai [Itel It2580](product_name) bao nhieu MP
+- [camera truoc](camera) [Samsung Galaxy M10s](product_name) co do phan giai bao nhieu
+- [cam truoc](camera) cua dien thoai [Huawei Y5p](product_name) co do phan giai bao nhieu
+- [camera truoc](camera) [Samsung Galaxy A50s](product_name) co do phan giai bao nhieu
+- [cam sau](camera) cua san pham [ss fold](product_name) co do phan giai bao nhieu
+- [cam sau](camera) cua may [ss a90 5g](product_name) co do phan giai nhu the nao
+- [cam sau](camera) cua may [Realme 5 Pro](product_name) co do phan giai nhu the nao
+- [camera sau](camera) cua dien thoai [Vsmart Bee 3](product_name) co do phan giai bao nhieu
+- [cam sau](camera) cua may [Huawei Mate 30 5G](product_name) bao nhieu MP
+- [cam truoc](camera) cua may [Vivo Y3](product_name) bao nhieu MP
+- [camera sau](camera) cua dien thoai [Samsung Galaxy A30s](product_name) may MP
+- [camera truoc](camera) cua dien thoai [Xiaomi Redmi K30 Pro Zoom Edition](product_name) co do phan giai bao nhieu
+- [camera sau](camera) cua may [Xiaomi Redmi K30](product_name) co do phan giai nhu the nao
+- [camera truoc](camera) cua may [Xiaomi Redmi K30](product_name) co do phan giai nhu the nao
+- cam sau co do phan giai bao nhieu vay
+- do phan giai cua cam sau la bao nhieu vay
+- camera sau bao nhieu mp vay
+- camera sau may mp
 - camera sau mấy mp
 
 ## intent:guarantee
@@ -2157,6 +2566,34 @@
 - máy bảo hành sao vậy
 - thông tin bảo hành của máy
 - bảo hành ra sao
+- che do bao hanh cua [Samsung Galaxy A21s](product_name) ra sao
+- thoi gian bao hanh cua [Huawei P Smart Pro 2019](product_name) ra sao
+- thoi gian bao hanh cua [OPPO Reno2 F](product_name) nhu the nao
+- che do bao hanh cua [iPhone 8 Plus](product_name) nhu the nao
+- thoi gian bao hanh cua [Huawei Mate 30 Pro 5G](product_name) ra sao
+- thoi gian bao hanh cua [Huawei Enjoy 10 Plus](product_name) ra sao
+- thong tin bao hanh cua [Vivo Y70s 5G](product_name) nhu the nao
+- thong tin bao hanh cua [ss m40](product_name) ra sao
+- che do bao hanh cua [ss s10](product_name) nhu the nao
+- che do bao hanh cua [Huawei Mate 30 RS Porsche Design](product_name) nhu the nao
+- thong tin bao hanh cua [Huawei Nova 7i](product_name) ra sao
+- thoi gian bao hanh cua [ss j8+](product_name) ra sao
+- che do bao hanh cua [OPPO Reno4](product_name) ra sao
+- thong tin bao hanh cua [Vsmart Bee 3](product_name) nhu the nao
+- che do bao hanh cua [Samsung Galaxy S20](product_name) ra sao
+- thong tin bao hanh cua [Samsung Galaxy A21s](product_name) nhu the nao
+- thong tin bao hanh cua [Masstel Max R1](product_name) nhu the nao
+- bao hanh nhu the nao
+- may bao hanh sao vay
+- thong tin bao hanh cua may
+- bao hanh ra sao
+- bao hanh bao lau
+- bao hanh thi sao
+- bao hanh trong bao lau
+- thoi gian bao hanh la bao lau
+- may duoc bao hanh trong bao lau
+- bao hanh trong bao lau vay
+- bao hanh thi nhu nao
 - bảo hành bao lâu
 - bảo hành thì sao
 - bảo hành trong bao lâu
@@ -2182,6 +2619,21 @@
 - mua [Masstel Fami 9](product_name) có được giao hàng không
 - có hỗ trợ giao hàng khi mua online không
 - mua online có giao hàng tận nhà không
+- giao hang nhu nao
+- co giao hang toan quoc khong
+- nghe noi giao hang trong 60phut phai khong
+- co giao hang khong
+- dat mua [Huawei Enjoy 10](product_name) co duoc giao hang khong
+- dat mua [Nokia 7.3](product_name) co duoc giao hang khong
+- dat mua [Vivo S6 5G](product_name) co duoc giao hang khong
+- dat mua [Vsmart Active 3](product_name) co duoc giao hang khong
+- giao hang nhu the nao a
+- mua [iPhone 7](product_name) co duoc giao hang khong
+- mua [Xiaomi Redmi 10X 4G](product_name) co duoc giao hang khong
+- mua [ss M40](product_name) co duoc giao hang khong
+- mua [Masstel Fami 9](product_name) co duoc giao hang khong
+- co ho tro giao hang khi mua online khong
+- mua online co giao hang tan nha khong
 
 ## intent: promotions_and_gifts
 <!-- khuyến mãi -->
@@ -2204,6 +2656,26 @@
 - mua [OPPO A12e](product_name) có tặng kèm gì không
 - khi mua [OPPO Find X2 Neo](product_name) có tặng kèm gì không
 - [ss 10 lite](product_name) có khuyến mãi gì không
+- mua online co qua gi khong
+- mua tra gop co qua gi khong
+- co khuyen mai gi khong
+- mua dien thoai co khuyen mai khong
+- mua [Realme C3](product_name) co duoc qua gi khong
+- khi mua [Itel It2580](product_name) co tang kem gi khong
+- mua [Nokia 5.3](product_name) co duoc qua gi khong
+- [ss 10 lite](product_name) co tang kem gi khong
+- mua [OPPO Reno Ace 2](product_name) co qua tang khong
+- khi mua [iPhone 6s Plus](product_name) co khuyen mai gi khong
+- mua [Vivo V15 Pro](product_name) co tang kem gi khong
+- mua [Xiaomi Redmi Note 8 Pro](product_name) co qua tang khong
+- [OPPO A5s](product_name) co tang kem gi khong
+- mua [realme x50 pro 5g](product_name) co khuyen mai gi khong
+- mua [realme x50m 5g](product_name) co duoc qua gi khong
+- mua [Masstel Hapi 10 Fami](product_name) co duoc qua gi khong
+- mua [OPPO A12e](product_name) co tang kem gi khong
+- khi mua [OPPO Find X2 Neo](product_name) co tang kem gi khong
+- [ss 10 lite](product_name) co khuyen mai gi khong
+- mua [Vivo S6](product_name) co khuyen mai gi khong
 - mua [Vivo S6](product_name) có khuyến mãi gì không
 - mua [Samsung Galaxy M31s](product_name) có quà tặng không
 - mua [realme 6 pro](product_name) có tặng kèm gì không
@@ -2229,6 +2701,24 @@
 - trong hộp tặng kèm nhựng gì vậy
 - trong hộp có những gì
 - mua máy có tặng gì theo hộp
+- mua may co duoc tang [tai nghe](option) khong
+- trong hop co nhung gi
+- khi mua may thi trong hop co nhung gi
+- mua may thi co duoc tang kem [the nho](option) khong
+- co duoc tang kem [tai nghe](option) khi mua may khong
+- mua may [realme xt](product_name) co tang kem gi khong
+- khi mua [Huawei Mate 30 5G](product_name) trong hop co nhung gi
+- mua may [Samsung Galaxy A11](product_name) co tang kem khong
+- mua may [ss a51 5g](product_name) co tang kem gi khong
+- mua may [realme x3](product_name) trong hop co nhung gi
+- mua [Vsmart BEE](product_name) trong hop co nhung gi
+- mua may [Oppo Reno3 Pro](product_name) co tang kem gi khong
+- mua [Samsung Galaxy S20 Ultra](product_name) co tang kem gi khong
+- mua [Masstel Play Music](product_name) co tang kem gi khong
+- khi mua may thi trong hop co gi
+- trong hop tang kem nhung gi vay
+- trong hop co nhung gi
+- mua may co tang gi theo hop
 
 ## intent: find_product
 <!-- tìm kiếm sản phẩm -->
@@ -2242,22 +2732,22 @@
 - có [Samsung Galaxy A71](product_name) không
 - shop có [Realme Narzo 10](product_name) không nhỉ
 - ở đây có [Samsung Galaxy A60](product_name) không vậy
-- shop có [Realme C2](product_name) không
-- shop có [Huawei P40 Lite](product_name) không nhỉ
-- có [Realme 6 Pro](product_name) không vậy
-- ad ơi có [Samsung Galaxy A80](product_name) không
-- ở đây có [Realme 3](product_name) không vậy
-- ad ơi có [Samsung Galaxy J8+](product_name) không vậy
-- có [Nokia 9.3 PureView](product_name) không vậy
-- shop có [iPhone 11 Pro Max](product_name) không nhỉ
-- có [Realme C3i](product_name) không nhỉ
-- ở đây có [ss a20s](product_name) không vậy
-- ad ơi có [OPPO A91](product_name) không vậy
-- ở đây có [OPPO F15](product_name) không nhỉ
-- shop có [ss m40](product_name) không
-- có [Samsung Galaxy M10s](product_name) không vậy
-- shop có [Samsung Galaxy M40](product_name) không vậy
-- ad ơi có [ss a51](product_name) không
+- shop co [Realme C2](product_name) khong
+- shop co [Huawei P40 Lite](product_name) khong nhi
+- co [Realme 6 Pro](product_name) khong vay
+- ad oi co [Samsung Galaxy A80](product_name) khong
+- o day co [Realme 3](product_name) khong vay
+- ad oi co [Samsung Galaxy J8+](product_name) khong vay
+- co [Nokia 9.3 PureView](product_name) khong vay
+- shop co [iPhone 11 Pro Max](product_name) khong nhi
+- co [Realme C3i](product_name) khong nhi
+- o day co [ss a20s](product_name) khong vay
+- ad oi co [OPPO A91](product_name) khong vay
+- o day co [OPPO F15](product_name) khong nhi
+- shop co [ss m40](product_name) khong
+- co [Samsung Galaxy M10s](product_name) khong vay
+- shop co [Samsung Galaxy M40](product_name) khong vay
+- ad oi co [ss a51](product_name) khong
 - shop có [Huawei P40 Lite](product_name) không vậy
 - ad ơi có [Huawei P40 Lite](product_name) không
 - ở đây có [Huawei Mate 30 RS Porsche Design](product_name) không nhỉ
@@ -2269,16 +2759,20 @@
 - có [Huawei Mate 40](product_name) bản ram [4mb](ram) không không vậy
 - ở đây có [Realme 6](product_name) bản rom [16gb](rom) ram [3 gb](ram) không vậy không nhỉ
 - ở đây có [ss s10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không nhỉ
-- ở đây có [Realme C3](product_name) bản [8 mb](ram) - [32 gb](rom) không nhỉ không vậy
-- ở đây có [Nokia 150](product_name) bản [12 gb](ram) - [128 gb](rom) không nhỉ không vậy
-- ở đây có [realme 6](product_name) bản rom [64 GB](rom) ram [8 MB](ram) không nhỉ không vậy
-- ad ơi có [ss a71 5g](product_name) bản rom [64gb](rom) không vậy không vậy
-- có bản [Nokia 3.2](product_name) bản ram [2 GB](ram) không vậy không nhỉ
-- ở đây có [Xiaomi Black Shark 2 Pro](product_name) bản rom [512gb](rom) không nhỉ không
-- ở đây có [Nokia 110 DS](product_name) bản ram [2 GB](ram) không không vậy
-- ở đây có [OPPO Reno Ace 2](product_name) bản ram [4 GB](ram) không nhỉ không vậy
-- ở đây có [Huawei Nova 7](product_name) bản [3 gb](ram) - [8gb](rom) không vậy không
-- ad ơi có [Vsmart Joy 3](product_name) bản ram [3 GB](ram) rom [256gb](rom) không không
+- co ban [Samsung Galaxy A51 5G](product_name) ban ram [4 GB](ram) khong nhi khong
+- co [Huawei Mate 40](product_name) ban ram [4mb](ram) khong khong vay
+- o day co [Realme 6](product_name) ban rom [16gb](rom) ram [3 gb](ram) khong vay khong nhi
+- o day co [ss s10](product_name) ban rom [16 gb](rom) ram [3 gb](ram) khong vay khong nhi
+- o day co [Realme C3](product_name) ban [8 mb](ram) - [32 gb](rom) khong nhi khong vay
+- o day co [Nokia 150](product_name) ban [12 gb](ram) - [128 gb](rom) khong nhi khong vay
+- o day co [realme 6](product_name) ban rom [64 GB](rom) ram [8 MB](ram) khong nhi khong vay
+- ad oi co [ss a71 5g](product_name) ban rom [64gb](rom) khong vay khong vay
+- co ban [Nokia 3.2](product_name) ban ram [2 GB](ram) khong vay khong nhi
+- o day co [Xiaomi Black Shark 2 Pro](product_name) ban rom [512gb](rom) khong nhi khong
+- o day co [Nokia 110 DS](product_name) ban ram [2 GB](ram) khong khong vay
+- o day co [OPPO Reno Ace 2](product_name) ban ram [4 GB](ram) khong nhi khong vay
+- o day co [Huawei Nova 7](product_name) ban [3 gb](ram) - [8gb](rom) khong vay khong
+- ad oi co [Vsmart Joy 3](product_name) ban ram [3 GB](ram) rom [256gb](rom) khong khong
 - có bản [ss watch active](product_name) bản rom [16GB](rom) ram [2 gb](ram) không vậy không
 - có bản [Huawei Enjoy 10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không vậy
 
@@ -2293,27 +2787,27 @@
 - có bản ram [2 GB](ram) không vậy
 - có bản ram [8 MB](ram) không vậy
 - có bản ram [4 gb](ram) không vậy
-- có bản rom [128 GB](rom) không nhỉ
-- có bản rom [64gb](rom) không vậy
-- có bản rom [512 gb](rom) không
-- có bản rom [512gb](rom) không nhỉ
-- có bản rom [16GB](rom) không
-- có bản rom [32gb](rom) không nhỉ
-- có bản rom [8gb](rom) không vậy
-- có bản rom [256GB](rom) không
-- có bản rom [64 gb](rom) không vậy
-- có bản [12 GB](ram)-[128gb](rom) không nhỉ
-- có bản [4 gb](ram)-[256 GB](rom) không vậy
-- có bản [32 MB](ram)-[64 GB](rom) không vậy
-- có bản [2 GB](ram)-[32 gb](rom) không vậy
-- có bản [2 GB](ram)-[64 GB](rom) không nhỉ
-- có bản [8 GB](ram)-[16 gb](rom) không vậy
-- có bản [8 mb](ram)-[32 gb](rom) không nhỉ
-- có bản [12 gb](ram)-[128 gb](rom) không nhỉ
-- có bản [3 gb](ram)-[8gb](rom) không vậy
-- có bản ram [512 MB](ram) rom [32GB](rom) không
-- có bản ram [4MB](ram) rom [16gb](rom) không vậy
-- có bản ram [32 mb](ram) rom [8gb](rom) không nhỉ
+- co ban rom [128 GB](rom) khong nhi
+- co ban rom [64gb](rom) khong vay
+- co ban rom [512 gb](rom) khong
+- co ban rom [512gb](rom) khong nhi
+- co ban rom [16GB](rom) khong
+- co ban rom [32gb](rom) khong nhi
+- co ban rom [8gb](rom) khong vay
+- co ban rom [256GB](rom) khong
+- co ban rom [64 gb](rom) khong vay
+- co ban [12 GB](ram)-[128gb](rom) khong nhi
+- co ban [4 gb](ram)-[256 GB](rom) khong vay
+- co ban [32 MB](ram)-[64 GB](rom) khong vay
+- co ban [2 GB](ram)-[32 gb](rom) khong vay
+- co ban [2 GB](ram)-[64 GB](rom) khong nhi
+- co ban [8 GB](ram)-[16 gb](rom) khong vay
+- co ban [8 mb](ram)-[32 gb](rom) khong nhi
+- co ban [12 gb](ram)-[128 gb](rom) khong nhi
+- co ban [3 gb](ram)-[8gb](rom) khong vay
+- co ban ram [512 MB](ram) rom [32GB](rom) khong
+- co ban ram [4MB](ram) rom [16gb](rom) khong vay
+- co ban ram [32 mb](ram) rom [8gb](rom) khong nhi
 - có bản ram [3 GB](ram) rom [256gb](rom) không
 - có bản ram [3 gb](ram) rom [8GB](rom) không nhỉ
 - có bản ram [3 gb](ram) rom [512GB](rom) không nhỉ
@@ -2342,6 +2836,19 @@
 - mua máy [Samsung Galaxy A11](product_name) có tặng kèm không
 - mua máy [ss a51 5g](product_name) có tặng kèm gì không
 - mua máy [realme x3](product_name) trong hộp có những gì
+- may nay choi duoc lien quan khong
+- may choi lien quan muot khong
+- may choi pubg on khong
+- may choi duoc pubg mobile khong
+- may choi lien quan muot khong
+- may choi duoc lien quan hay pubg mobile khong
+- mua may [realme xt](product_name) co tang kem gi khong
+- khi mua [Huawei Mate 30 5G](product_name) trong hop co nhung gi
+- mua may [Samsung Galaxy A11](product_name) co tang kem khong
+- mua may [ss a51 5g](product_name) co tang kem gi khong
+- mua may [realme x3](product_name) trong hop co nhung gi
+- mua [Vsmart BEE](product_name) trong hop co nhung gi
+- mua may [Oppo Reno3 Pro](product_name) co tang kem gi khong
 - mua [Vsmart BEE](product_name) trong hộp có những gì
 - mua máy [Oppo Reno3 Pro](product_name) có tặng kèm gì không
 - mua [Samsung Galaxy S20 Ultra](product_name) có tặng kèm gì không
@@ -2679,12 +3186,17 @@
 - chíp xử lý
 - chip xử lý
 - CPU
+- chip xu ly
+- chip xu ly
 
 ## synonym: GPU
 - chíp đồ họa
 - card đồ họa
 - chíp đồ họa
 - card
+- chip do hoa
+- card do hoa
+- chip do hoa
 - gpu
 - GPU
 
@@ -2705,6 +3217,9 @@
 - cam trước
 - camera trước
 - camera phía trước
+- cam truoc
+- camera truoc
+- camera phia truoc
 
 ## synonym: camera sau
 - cam sau
@@ -2715,16 +3230,19 @@
 ## synonym: Băng tần 3G
 - 3g
 - mạng 3g
+- mang 3g
 - 3G
 
 ## synonym: Băng tần 4G
 - 4g
 - mạng 4g
+- mang 4g
 - 4G
 
 ## synonym: Băng tần 2G
 - 2g
 - mạng 2g
+- mang 2g
 - 2G
 - mạng di động
 
@@ -2771,4 +3289,17 @@ data/prepay_percent.txt
 - óc chó
 - occho
 - thứ ngu lồn
+- ngu vcc
+- lon
+- lon me may
+- con cac
+- co cc
+- dit me may
+- sua cai gi v
+- cuc cut
+- dit con me may
+- tra loi nhu lon v
+- oc cho
+- occho
+- thu ngu lon
 - ngu vcc
