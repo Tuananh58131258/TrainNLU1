@@ -4,15 +4,17 @@ language: vi
 pipeline:
   - name: VietnameseTokenizer
   - name: RegexFeaturizer
+  - name: CRFEntityExtractor
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
     analyzer: "char_wb"
     min_ngram: 1
     max_ngram: 4
-  - name: CRFEntityExtractor
+  - name: DIETClassifier
     epochs: 200
   - name: EntitySynonymMapper
+  - name: EmbeddingIntentClassifier
   - name: ResponseSelector
     epochs: 200
 
