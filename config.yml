@@ -4,7 +4,6 @@ language: vi
 pipeline:
   - name: VietnameseTokenizer
   - name: RegexFeaturizer
-  - name: CRFEntityExtractor
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
@@ -14,7 +13,6 @@ pipeline:
   - name: DIETClassifier
     epochs: 200
   - name: EntitySynonymMapper
-  - name: EmbeddingIntentClassifier
   - name: ResponseSelector
     epochs: 200
 
