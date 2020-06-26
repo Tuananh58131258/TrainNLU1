@@ -10,7 +10,7 @@ pipeline:
     analyzer: "char_wb"
     min_ngram: 1
     max_ngram: 4
-  - name: DIETClassifier
+  - name: CRFEntityExtractor
     epochs: 200
   - name: EntitySynonymMapper
   - name: ResponseSelector
