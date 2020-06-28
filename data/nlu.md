@@ -60,7 +60,6 @@
 - bạn có thể làm gì?
 - em có thể giúp gì cho anh?
 - bạn biết hát không ?
-- bạn biết xem lịch học ah?
 - em biết làm gì?
 - em hỗ trợ anh như thế nào?
 - cho anh xem các chức năng của em
@@ -70,7 +69,6 @@
 - ban co the lam gi
 - em co the giup gi cho anh
 - ban biet hat khong
-- ban biet xem lich hoc ah
 - em biet lam gi
 - em ho tro anh nhu the nao
 - cho anh xem cac chuc nang cua em
@@ -199,7 +197,16 @@
 ## intent: product_price
 
 <!-- Hỏi giá của sản phẩm -->
-
+- giá
+- giá bao nhiêu
+- gia
+- gia la bao nhieu
+- gia the nao
+- gia bn
+- giá bn
+- gia the nao
+- giá thế nào
+- gia ra sao
 - san pham [Realme 5 Pro](product_name) mua moi bao nhieu tien
 - dien thoai [Nokia 150 DS](product_name) gia mua moi la bao nhieu
 - [realme x50 5g](product_name) gia khi mua moi
@@ -465,7 +472,13 @@
 ## intent: online_price
 
 <!-- hỏi giá sản phẩm khi mua online -->
-
+- giá online thì sao
+- gia online bao nhieu
+- gia online ra sao
+- gia online như nào
+- giá online như nào
+- giá online thế nào
+- gia online the nao
 - dien thoai [Xiaomi Black Shark 3](product_name) [8 GB](ram) [256 GB](rom) mua online hien nay co gia bao nhieu
 - [realme 6](product_name) [1 GB](ram) [32 gb](rom) gia mua online la bao nhieu
 - [Samsung Galaxy S20 Ultra](product_name) [256 GB](rom) [8 mb](ram) mua online co gia bao nhieu
@@ -606,7 +619,16 @@
 ## intent: old_product_price
 
 <!-- hỏi giá sản phẩm cũ -->
-
+- giá máy cũ thì sao
+- gia may cu thi sao
+- gia mua may cu
+- mua máy cũ thì sao
+- giá mua cũ là bao nhiêu
+- gia mua may cu
+- gia mua cu
+- gia may cu the nao
+- gia may cu nhu nao
+- gia may cu bn
 - [Huawei Y8p](product_name) gia cu la bao nhieu
 - [ss m01](product_name) gia cu la bao nhieu
 - dien thoai [ss a20s](product_name) gia cu nhu the nao
@@ -783,7 +805,7 @@
 ## intent: product_configuration
 
 <!-- hỏi cấu hình sản phẩm -->
-
+- Cấu hình của [iPhone XR](product_name) [64GB](rom) như thế nào
 - Cau hinh cua [Realme Narzo 10](product_name) [8GB](ram) [8GB](rom) nhu the nao
 - Cau hinh cua [OPPO A92](product_name) [64GB](rom) nhu the nao
 - Cau hinh cua [realme narzo 10](product_name) [2GB](ram) [256gb](rom) nhu the nao
@@ -834,6 +856,11 @@
 - cấu hình của [Realme 6](product_name) có ổn không
 - Cấu hình của [iPhone 7](product_name) [32GB](rom) như thế nào
 - cấu hình của máy này như thế nào
+- cau hinh của [iphone xr](product_name) [64gb](rom) như thế nào
+- cau hinh cua [iphone xr](product_name) như thế nào
+- cau hinh [iphone xr](product_name) như thế nào
+- cau hình của [iphone xr](product_name) như nào
+- cau hinh [iphone xr](product_name) như thế nào
 - cấu hình ntn
 - cấu hình ra sao
 - cấu hình của máy
@@ -886,7 +913,24 @@
 ## intent: list_product
 
 <!-- danh sách sản phẩm của 1 hãng -->
-
+- dien thoai [Iphone](product_company)
+- dien thoai [Realme](product_company)
+- dien thoai [Huawei](product_company)
+- dien thoai [Realmi](product_company)
+- dien thoai cua [Oppo](product_company)
+- dien thoai cua [Huawei](product_company)
+- dien thoai cua [Samsung](product_company)
+- điện thoại [Iphone](product_company)
+- điện thoại [Realme](product_company)
+- điện thoại [Huawei](product_company)
+- điện thoại [Realmi](product_company)
+- điện thoại [Oppo](product_company)
+- điện thoại của [Realme](product_company)
+- điện thoại của [Huawei](product_company)
+- điện thoại của [Realmi](product_company)
+- điện thoại của [Oppo](product_company)
+- Danh sach san pham cua [Huawei](product_company)
+- Danh sach san pham cua [Samsung](product_company)
 - Danh sách sản phẩm của [Iphone](product_company)
 - Danh sách sản phẩm của [Realme](product_company)
 - Danh sách sản phẩm của [Huawei](product_company)
@@ -901,6 +945,7 @@
 - Danh sach san pham cua [Oppo](product_company)
 - Danh sach san pham cua [Huawei](product_company)
 - Danh sach san pham cua [Samsung](product_company)
+
 
 ## intent: order
 
@@ -927,13 +972,13 @@
 - dat mua [Nokia 9.3 PureView](product_name) [1 gb](ram)
 - dat mua [OPPO Reno 3 Vitality](product_name) [512 gb](rom)
 - dat mua [Samsung Galaxy A31](product_name) [3GB](ram)
-- dat mua [ss m31](product_name) [16 GB](rom)
-- dat mua [ss a21s](product_name) [512 MB](ram) [512 gb](rom)
-- dat mua [Realme 6i](product_name) [1 gb](ram) [8GB](rom)
-- dat mua [Samsung Galaxy A60](product_name) [64GB](rom)
-- dat mua [Samsung Galaxy M51](product_name) [6 GB](ram) [8GB](rom)
-- dat mua [ss 10 lite](product_name) [2gb](ram)
-- dat mua [Huawei Mate 30 Pro 5G](product_name) [32MB](ram)
+- mua [ss m31](product_name) [16 GB](rom)
+- mua [ss a21s](product_name) [512 MB](ram) [512 gb](rom)
+- mua [Realme 6i](product_name) [1 gb](ram) [8GB](rom)
+- mua [Samsung Galaxy A60](product_name) [64GB](rom)
+- mua [Samsung Galaxy M51](product_name) [6 GB](ram) [8GB](rom)
+- mua [ss 10 lite](product_name) [2gb](ram)
+- mua [Huawei Mate 30 Pro 5G](product_name) [32MB](ram)
 - dat mua [iPhone XR](product_name) [32 gb](rom)
 - đặt mua [Vivo X50 Lite](product_name) [512mb](ram)
 - Đặt mua [Huawei P30 Lite New Edition](product_name)
@@ -2184,6 +2229,26 @@
 
 <!-- sản phẩm có được trả góp hay không -->
 
+- có trả góp không
+- trả góp được không
+- trả góp thì sao
+- trả góp
+- trả góp nhé
+- mua góp
+- mua góp được không
+- em muốn mua góp
+- mua góp được không nhỉ
+- cho mua góp không
+- co tra gop khong
+- tra gop duoc khong
+- tra gop thi sao
+- tra gop
+- tra gop nhe
+- mua gop
+- mua gop duoc khong
+- em muon mua gop
+- mua gop duoc khong nhi
+- cho mua gop khong
 - cho hỏi [Nokia 110 DS](product_name) được trả góp không
 - điện thoại [Samsung Galaxy A51](product_name) có được mua trả góp hay không
 - cho hỏi [ss xcover pro](product_name) có được trả góp không
@@ -2285,6 +2350,18 @@
 
 <!-- thời gian đăng ký làm hồ sơ trả góp -->
 
+- làm hồ sơ trả góp lâu không
+- làm hồ sơ lâu không
+- làm hồ sơ mất bao lâu
+- làm hs lâu không
+- làm hs mất nhiều tgian không
+- làm hs hết bn thời gian
+- làm hồ sơ trả góp lâu không
+- làm hồ sơ lâu không
+- làm hồ sơ mất bao lâu
+- làm hs lâu không
+- làm hs mất nhiều tgian không
+- làm hs hết bn thời gian
 - cho hỏi đăng ký trả góp có lâu không
 - mua trả góp làm hồ sơ có nhanh không
 - đăng ký trả góp mất nhiều thời gian không
@@ -2638,6 +2715,10 @@
 - máy bảo hành sao vậy
 - thông tin bảo hành của máy
 - bảo hành ra sao
+- thông tin bảo hành [Masstel Max R1](product_name)
+- thong ti bao hanh [Masstel Max R1](product_name)
+- bao hanh cua [Masstel Max R1](product_name)
+- bao hanh [Masstel Max R1](product_name)
 - che do bao hanh cua [Samsung Galaxy A21s](product_name) ra sao
 - thoi gian bao hanh cua [Huawei P Smart Pro 2019](product_name) ra sao
 - thoi gian bao hanh cua [OPPO Reno2 F](product_name) nhu the nao
@@ -2682,6 +2763,10 @@
 - có giao hàng toàn quốc không
 - nghe nói giao hàng trong 60phút phải không
 - có giao hàng không
+- giao hang nhu nao
+- co giao hang toan quoc khong
+- nghe noi giao hang trong 60phut phai khong
+- co giao hang khong
 - đặt mua [Huawei Enjoy 10](product_name) có được giao hàng không
 - đặt mua [Nokia 7.3](product_name) có được giao hàng không
 - đặt mua [Vivo S6 5G](product_name) có được giao hàng không

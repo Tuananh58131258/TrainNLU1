@@ -12,12 +12,12 @@ gpu
 GPU
 Công nghệ màn hình
 Màu màn hình
-Chuẩn màn hình       
+Chuẩn màn hình
 Độ phân giải màn hình
 Màn hình
-Mặt kính màn hình    
+Mặt kính màn hình
 Độ phân giải
-Thông tin khác       
+Thông tin khác
 Độ phân giải
 Quay phim
 Đèn Flash
@@ -36,12 +36,12 @@ Hỗ trợ thẻ nhớ tối đa
 Kiểu dáng
 Chất liệu
 Kích thước
-Trọng lượng 
+Trọng lượng
 Khả năng chống nước
 Loại pin
 Dung lượng pin
 Pin có thể tháo rời
-Chế độ sạc nhanh 
+Chế độ sạc nhanh
 Loại SIM
 Khe cắm sim
 Wifi

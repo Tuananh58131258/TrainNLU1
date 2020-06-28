@@ -394,3 +394,258 @@ chín triệu rưởi
 9 m 7
 9 m 8
 9 m 9
+nam trieu
+sau trieu
+bay trieu
+tam trieu
+chin trieu
+muoi mot trieu
+muoi hai trieu
+muoi ba trieu
+muoi bon trieu
+muoi tam trieu
+muoi chin trieu
+hai muoi mot trieu
+hai muoi hai trieu
+hai muoi ba trieu
+hai muoi bon trieu
+hai muoi bay trieu
+hai muoi tam trieu
+hai muoi chin trieu
+ham mot trieu
+ham hai trieu
+ham ba trieu
+ham bon trieu
+ham lam trieu
+ham sau trieu
+ham bay trieu
+mot trieu bon
+mot trieu nam
+mot trieu sau
+mot trieu bay
+mot trieu tam
+mot trieu chin
+hai trieu mot
+hai trieu hai
+hai trieu ba
+hai trieu bon
+hai trieu tam
+hai trieu chin
+ba trieu mot
+ba trieu hai
+ba trieu ba
+ba trieu bon
+ba trieu nam
+ba trieu sau
+ba trieu bay
+bon trieu nam
+bon trieu sau
+bon trieu bay
+bon trieu tam
+bon trieu chin
+nam trieu mot
+nam trieu hai
+nam trieu ba
+nam trieu bon
+nam trieu nam
+nam trieu sau
+sau trieu ba
+sau trieu bon
+sau trieu nam
+sau trieu sau
+sau trieu bay
+sau trieu tam
+sau trieu chin
+bay trieu mot
+bay trieu hai
+bay trieu ba
+bay trieu bon
+tam trieu nam
+tam trieu sau
+tam trieu bay
+tam trieu tam
+tam trieu chin
+chin trieu mot
+chin trieu hai
+chin trieu ba
+chin trieu bon
+chin trieu nam
+1,4 trieu
+1,5 trieu
+1,6 trieu
+1,7 trieu
+1,8 trieu
+1,9 trieu
+2,1 trieu
+2,2 trieu
+2,3 trieu
+2,4 trieu
+4,9 trieu
+5,1 trieu
+5,2 trieu
+5,3 trieu
+5,4 trieu
+5,5 trieu
+5,6 trieu
+5,7 trieu
+5,8 trieu
+9,3 trieu
+9,4 trieu
+9,5 trieu
+9,6 trieu
+9,7 trieu
+9,8 trieu
+9,9 trieu
+1 trieu ruoi
+2 trieu ruoi
+3 trieu ruoi
+4 trieu ruoi
+5 trieu ruoi
+6 trieu ruoi
+7 trieu ruoi
+8 trieu ruoi
+9 trieu ruoi
+mot trieu ruoi
+hai trieu ruoi
+ba trieu ruoi
+bon trieu ruoi
+nam trieu ruoi
+sau trieu ruoi
+bay trieu ruoi
+tam trieu ruoi
+chin trieu ruoi
+1.1 trieu
+1.2 trieu
+1.3 trieu
+1.4 trieu
+1.5 trieu
+1.6 trieu
+1.7 trieu
+1.8 trieu
+1.9 trieu
+2.1 trieu
+2.2 trieu
+2.3 trieu
+2.4 trieu
+2.5 trieu
+2.6 trieu
+2.7 trieu
+2.8 trieu
+2.9 trieu
+3.1 trieu
+3.2 trieu
+3.3 trieu
+3.4 trieu
+3.5 trieu
+3.6 trieu
+3.7 trieu
+3.8 trieu
+3.9 trieu
+4.1 trieu
+4.2 trieu
+4.3 trieu
+4.4 trieu
+4.5 trieu
+4.6 trieu
+4.7 trieu
+4.8 trieu
+4.9 trieu
+5.1 trieu
+5.2 trieu
+5.3 trieu
+5.4 trieu
+5.5 trieu
+5.6 trieu
+5.7 trieu
+5.8 trieu
+5.9 trieu
+6.1 trieu
+6.2 trieu
+6.3 trieu
+6.4 trieu
+6.5 trieu
+6.6 trieu
+6.7 trieu
+6.8 trieu
+6.9 trieu
+7.1 trieu
+7.2 trieu
+7.3 trieu
+7.4 trieu
+7.5 trieu
+7.6 trieu
+7.7 trieu
+7.8 trieu
+7.9 trieu
+8.1 trieu
+8.2 trieu
+8.3 trieu
+8.4 trieu
+8.5 trieu
+8.6 trieu
+8.7 trieu
+8.8 trieu
+8.9 trieu
+9.1 trieu
+9.2 trieu
+9.3 trieu
+9.4 trieu
+9.5 trieu
+9.6 trieu
+9.7 trieu
+9.8 trieu
+9.9 trieu
+1 m 1
+1 m 2
+1 m 3
+1 m 4
+1 m 5
+1 m 6
+1000
+1000000
+1990
+1000990
+1500
+1390
+2000
+2000000
+2990
+2000990
+2500
+2390
+3000
+3000000
+3990
+3000990
+3500
+3390
+4000
+4000000
+4990
+4000990
+4500
+4390
+5000
+5000000
+5990
+5000990
+5500
+5390
+6000
+6000000
+6990
+6000990
+6500
+6390
+7000
+7000000
+7990
+7000990
+7500
+7390
+8000
+8000000
+8990
+8000990
+8500
+8390
