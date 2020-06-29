@@ -126,10 +126,9 @@ class ActionProductPrice(Action):
             sqlQuery = sqlQuery + "limit 9;"
             data = getData(sqlQuery)
             if data:
-                Pname_temp = productName
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
@@ -146,6 +145,7 @@ class ActionProductPrice(Action):
             else:
                 dispatcher.utter_message(
                     "Hiện tại của hàng không có thông tin về sản phẩm {} hay các sản phẩm có tên tương tự. Mong bạn thông cảm và thử tìm kiếm sản phẩm khác.".format(productName))
+                Pname_temp = productName
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
@@ -188,10 +188,9 @@ class ActionOnlinePrice(Action):
             sqlQuery = sqlQuery + "limit 9;"
             data = getData(sqlQuery)
             if data:
-                Pname_temp = productName
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia_online']:
@@ -208,6 +207,7 @@ class ActionOnlinePrice(Action):
             else:
                 dispatcher.utter_message(
                     "Hiện tại của hàng không có thông tin về sản phẩm {} hay các sản phẩm có tên tương tự. Mong bạn thông cảm và thử tìm kiếm sản phẩm khác.".format(productName))
+                Pname_temp = productName
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá bán online của sản phẩm nào ạ?")
@@ -250,16 +250,15 @@ class ActionOldProduct(Action):
             sqlQuery = sqlQuery + "limit 9;"
             data = getData(sqlQuery)
             if data:
-                Pname_temp = productName
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
-                    if item['gia_cu']:
-                        gia = "Giá cũ: {:,} vnđ".format(item['gia_cu'])
+                    if item['ghi_chu'].find('tin đồn') > -1:
+                        gia = "Sản phẩm tin đồn"
                     else:
-                        gia = "Giá cũ: Đang cập nhật"
+                        gia = "Giá cũ: {:,} vnđ".format(item['gia_cu'])
                     mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
@@ -270,6 +269,7 @@ class ActionOldProduct(Action):
             else:
                 dispatcher.utter_message(
                     "Hiện tại của hàng không có thông tin về sản phẩm {} hay các sản phẩm có tên tương tự. Mong bạn thông cảm và thử tìm kiếm sản phẩm khác.".format(productName))
+                Pname_temp = productName
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
@@ -325,6 +325,7 @@ class ActionProductConfiguration(Action):
                     message_str = "Thông tin của sản phẩm: {}.\nMàn hình :{}\nCamera trước:{}\nCamera sau:{}\nRam:{}\nBộ nhớ trong:{} \nCPU: {}\nGPU:{} \nDung lượng pin:{}".format(Pname_temp,man_hinh,camera_truoc,camera_sau,ram,rom,cpu,gpu,pin)
             else:
                 message_str = "Hiện tại cửa hàng không có thông tin của sản phẩm {} mong bạn thông cảm!".format(productName)
+                Pname_temp = productName
         else:
             message_str = "Bạn đang hỏi thông tin cấu hình của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
@@ -376,17 +377,17 @@ class ActionListProduct(Action):
         except:
             pass
         if product_company:
-            sqlQuery = "Select dienthoai.ten,dienthoai.gia from dienthoai,hangdienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and  hangdienthoai.ten like '%{}%' limit 9;".format(
+            sqlQuery = "Select dienthoai.ten,dienthoai.gia,dienthoai.url_img from dienthoai,hangdienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and  hangdienthoai.ten like '%{}%' ORDER by dienthoai.gia DESC limit 9;".format(
                 product_company)
             data = getData(sqlQuery)
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem cấu hình", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem cấu hình", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
-                        gia = "Giá: {}".format(item['gia'])
+                        gia = "Giá: {:,} vnđ".format(item['gia'])
                     else:
                         gia = "Đang cập nhật"
                     mess_item = ItemsTemplate(
@@ -454,6 +455,7 @@ class ActionCheckPrice(Action):
                         else:
                             message_str = "Dạ không phải ạ. Giá của sản phẩm {} là {:,} vnđ ạ.".format(item['ten'], item['gia'])
                 else:
+                    Pname_temp = productName
                     message_str = "Hiện tại cửa hàng không còn hỗ trợ cho sản phẩm {} nữa ạ. Mong bạn thông cảm.".format(productName)
             else:
                 message_str = "Bạn đang hỏi hỏi giá của sản phẩm nào ạ?"
@@ -498,7 +500,7 @@ class ActionFindProductInRangePrice(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
@@ -542,12 +544,12 @@ class ActionFindProductLowerPrice(Action):
             if product_company:
                 sqlQuery = sqlQuery + " and hangdienthoai.ten like '%{}%'".format(product_company)
 
-            sqlQuery = sqlQuery + " order by gia asc limit 9"
+            sqlQuery = sqlQuery + " order by gia desc limit 9"
             data = getData(sqlQuery)
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = "Giá: {:,} vnđ".format(item['gia'])
                     mess_item = ItemsTemplate(
@@ -591,12 +593,12 @@ class ActionFindProductUpperPrice(Action):
             if product_company:
                 sqlQuery = sqlQuery + "and hangdienthoai.ten like '%{}%' ".format(product_company)
 
-            sqlQuery = sqlQuery + " order by gia asc limit 9"
+            sqlQuery = sqlQuery + " order by gia desc limit 9"
             data = getData(sqlQuery)
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = "Giá: {:,} vnđ".format(item['gia'])
                     mess_item = ItemsTemplate(
@@ -642,12 +644,12 @@ class ActionFindProductAroundPrice(Action):
             if product_company:
                 sqlQuery = sqlQuery + " and hangdienthoai.ten like '%{}%'".format(product_company)
 
-            sqlQuery = sqlQuery + " order by gia asc limit 9"
+            sqlQuery = sqlQuery + " order by gia desc limit 9"
             data = getData(sqlQuery)
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
@@ -728,6 +730,7 @@ class ActionPinInfo(Action):
                     thoi_gian_dam_thoai = data[0]['thoi_gian_dam_thoai']
                     message_str = "Sản phẩm {} sử dụng pin: {} , có dung lượng: {} cho thời gian đàm thoại lên tới {}".format(productName,loai_pin,dung_luong_pin,thoi_gian_dam_thoai)
             else:
+                Pname_temp = productName
                 message_str = "Hiên tại cửa hàng chúng tôi không có thông tin về sản phẩm {}. Mong bạn thông cảm."
         else:
             message_str = "Bạn đang hỏi thông tin về pin của sản phẩm nào ạ?"
@@ -765,7 +768,8 @@ class ActionBuyOldProduct(Action):
                     temp = gia*75/100
                     message_str = "Đối với sản phẩm {} còn trong thời gian bảo hành, không bị rơi vỡ, cấn móp do va đập hay ngấm các dung dịch chất lỏng như nước v.v thì bên cửa hàng sẽ mua lại sản phẩm với giá khoảng 75% giá bán ra tứ là khoảng {:,} vnđ ạ.".format(data[0]['ten'],temp)
             else:
-                message_str = "Hiện cửa hàng không cung cấp dịch vụ cho sản phẩm {} nữa ạ. Mong bạn thông cảm.".format(productName)    
+                Pname_temp = productName
+                message_str = "Hiện cửa hàng không cung cấp dịch vụ cho sản phẩm {} nữa ạ. Mong bạn thông cảm.".format(productName)
         else:
             message_str = "Bạn đang hỏi thông tin thu mua cũ cho sản phẩm nào ạ?"
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
@@ -824,7 +828,7 @@ class ActionHowManyPerMonth(Action):
             if data:
                 if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
                     message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ.".format(data[0]['ten'])
-                else:
+                elif data[0]['url_installment'].fin('tra-gop') >-1:
                     Pname_temp = data[0]['ten']
                     gia_goc = int(data[0]['gia'])
                     tienno = 0
@@ -846,6 +850,9 @@ class ActionHowManyPerMonth(Action):
                     tienthang = RoundNum(int(tienthang))
                     message_str = "Đối với sản phẩm {}:\nTrả góp trả trước {}\nTrả trong {} tháng\nThì mỗi tháng phải trả {:,} vnđ".format(Pname_temp,
                         prepay, tgian_tragop, tienthang)
+                else:
+                    message_str = "Sản phẩm {} hiện đang không hỗ trợ trả góp. Mong bạn thông cảm!".format(productName)
+                    Pname_temp = productName
         else:
             message_str = 'Bạn đang hỏi thông tin số tiền góp hàng tháng cho sản phẩm nào ạ!'
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
@@ -900,6 +907,8 @@ class ActionIsProductCanBuyOnInstallment(Action):
                             data[0]['ten'], tienthang, data[0]['ten'], data[0]['url_installment'])
                     else:
                         message_str = "Sản phẩm {} hiện tại chưa hỗ trợ trả góp. Mong bạn thông cảm.".format(productName)
+            else:
+                Pname_temp = productName
         else:
             message_str ='Bạn đang hỏi thông tin trả góp của sản phẩm nào ạ?'
         dispatcher.utter_message(message_str)
@@ -944,7 +953,7 @@ class ActionHarwareInfo(Action):
             data = getData(sqlQuery)
             if data:
                 if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
                 else:
                     col = GetColName(hardware_name)
                     value = data[0][col]
@@ -953,6 +962,7 @@ class ActionHarwareInfo(Action):
                     else:
                         message_str = HardwareAnswer(value,role,'yes')
             else:
+                Pname_temp = productName
                 message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
         else:
             message_str = "Bạn đang hỏi thông tin của sản phẩm nào ạ?"
@@ -985,7 +995,7 @@ class ActionTakePhotoEraseBackground(Action):
             if data:
                 Pname_temp = data[0]['ten']
                 if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
                 else:
                     chup_anh = data[0]['chup_anh_nang_cao']
                     if chup_anh.find('xóa phông') > -1:
@@ -993,6 +1003,7 @@ class ActionTakePhotoEraseBackground(Action):
                     else:
                         message_str = "Sản phẩm {} chưa hỗ trở chụp ảnh xóa phông ạ.".format(Pname_temp)
             else:
+                Pname_temp = productName
                 message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
         else:
             message_str = "Bạn đang hỏi thông tin chụp ảnh xóa phông của sản phẩm nào ạ?"
@@ -1025,7 +1036,7 @@ class ActionMainCamera(Action):
             if data:
                 Pname_temp = data[0]['ten']
                 if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
                 else:
                     do_phan_giai = "Đang cập nhật."
                     chup_anh = "Đang cập nhật."
@@ -1035,6 +1046,7 @@ class ActionMainCamera(Action):
                         chup_anh = data[0]['chup_anh_nang_cao']
                     message_str = "Sản phẩm {} có hệ thống camera sau với độ phân giải: {}\n Và các chức năng hỗ trợ chụp ảnh: {}.".format(Pname_temp,do_phan_giai,chup_anh)
             else:
+                Pname_temp = productName
                 message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
         else:
             message_str = "Bạn đang hỏi thông tin camera sau của sản phẩm nào ạ?"
@@ -1068,13 +1080,14 @@ class ActionSelfieCamera(Action):
             if data:
                 Pname_temp = data[0]['ten']
                 if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
                 else:
                     do_phan_giai = "Đang cập nhật."
                     if data[0]['do_phan_giai_cam_trước']:
                         do_phan_giai = data[0]['do_phan_giai_cam_sau']
                     message_str = "Sản phẩm {} có hệ thống camera trước với độ phân giải: {}.".format(Pname_temp,do_phan_giai)
             else:
+                Pname_temp = productName
                 message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
         else:
             message_str = "Bạn đang hỏi thông tin camera trước của sản phẩm nào ạ?"
@@ -1114,13 +1127,14 @@ class ActionResolutionCamera(Action):
             if data:
                 Pname_temp = data[0]['ten']
                 if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {ten} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {ten} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
                 else:
                     if loai_camera.find('trước') > -1:
                         message_str = "Sản phẩm {} có camera trước với độ phân giải: {}. Với các tính năng: {}".format(Pname_temp,data[0]['do_phan_giai_cam_truoc'],data[0]['thong_tin_khac'])
                     else:
                         message_str = "Sản phẩm {} có camera sau với độ phân giải: {}. Với các tính năng chụp ảnh nâng cao: {}. Hỗ trợ quay phim: {}".format(Pname_temp,data[0]['do_phan_giai_cam_sau'],data[0]['chup_anh_nang_cao'],data[0]['quay_phim'])
             else:
+                Pname_temp = productName
                 message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
         else:
             message_str = "Bạn đang hỏi thông tin {} của sản phẩm nào ạ?".format(loai_camera)
@@ -1157,6 +1171,7 @@ class ActionGuarantee(Action):
                     Pname_temp = data[0]['ten']
                     message_str = "Thời gian bảo hành của {} là: {}".format(productName,data[0]['thoi_gian_bao_hanh'])
             else:
+                Pname_temp = productName
                 message_str = "Hiện cửa hàng không có thông tin về sản phẩm {}. Mong bạn thông cảm!"
         else:
             message_str = "Bạn đang hỏi thông tin bảo hành của sản phẩm nào ạ?"
@@ -1195,6 +1210,7 @@ class ActionPromotionsAndGift(Action):
                     message_str = "Hiện sản phẩm {} đang có các chương trình khuyến mãi như sau:\n{}".format(
                         Pname_temp, khuyen_mai)
             else:
+                Pname_temp = productName
                 message_str = "Sản phẩm {} hiện không có khuyến mãi nào. Xin cảm ơn".format(Pname_temp)
         else:
             message_str = "Bản đang hỏi thông tin khuyến mãi của sản phẩm nào ạ?"
@@ -1212,6 +1228,7 @@ class ActionFindProduct(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
+        sqlQuery = ""
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -1239,7 +1256,7 @@ class ActionFindProduct(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem cấu hình", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem cấu hình", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
@@ -1299,7 +1316,7 @@ class ActionFindAnotherProduct(Action):
             if result:
                 list_item = []
                 for item in result:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {} như thế nào".format(
+                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
                         item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
@@ -1315,11 +1332,11 @@ class ActionFindAnotherProduct(Action):
                     text="Giá nè", json_message=message_str)
             else:
                 dispatcher.utter_message(
-                    "Không tìm thấy sản phẩm. Vui lòng thử lại")
+                    "Không tìm thấy sản phẩm. Vui lòng thử lại!")
             print(sqlQuery)
         else:
             dispatcher.utter_message(
-                "Không tìm thấy sản phẩm vui lòng thử lại sau")
+                "Không tìm thấy sản phẩm vui lòng thử lại sau!")
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',productName)]
 
