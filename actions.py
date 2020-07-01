@@ -742,7 +742,7 @@ class ActionPinInfo(Action):
 class ActionBuyOldProduct(Action):
     # action thu mua lại sản phẩm cũ
     def name(self) -> Text:
-        return "action_buy_old_product"
+        return "action_acquisition_old_product"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -780,7 +780,7 @@ class ActionBuyOldProduct(Action):
 class ActionHowManyPerMonth(Action):
     # action cần trả bao nhiêu tiền 1 tháng
     def name(self) -> Text:
-        return "action_how_many_per_month"
+        return "action_pay_per_month"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -863,7 +863,7 @@ class ActionHowManyPerMonth(Action):
 class ActionCaseHowManyPerMonth(Action):
     # action cần trả bao nhiêu tiền 1 tháng trong 2 trường hợp
     def name(self) -> Text:
-        return "action_case_how_many_per_month"
+        return "action_case_pay_per_month"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -952,10 +952,10 @@ class ActionHarwareInfo(Action):
                 productName)
             data = getData(sqlQuery)
             if data:
-                if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
+                if data[0]['ghi_chu'].find('tin đồn')>-1:
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
                 else:
-                    col = GetColName(hardware_name)
+                    col = GetColName(hardware_name.lower())
                     value = data[0][col]
                     if value is None:
                         message_str = HardwareAnswer(value,role,'no')
@@ -986,7 +986,7 @@ class ActionTakePhotoEraseBackground(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            tracker.get_slot('product_name')
+            productName = tracker.get_slot('product_name')
             pass
         #endregion
         if productName:
@@ -994,8 +994,8 @@ class ActionTakePhotoEraseBackground(Action):
             data = getData(sqlQuery)
             if data:
                 Pname_temp = data[0]['ten']
-                if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
+                if data[0]['ghi_chu'].find('tin đồn') > -1:
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
                 else:
                     chup_anh = data[0]['chup_anh_nang_cao']
                     if chup_anh.find('xóa phông') > -1:
@@ -1027,7 +1027,7 @@ class ActionMainCamera(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            tracker.get_slot('product_name')
+            productName = tracker.get_slot('product_name')
             pass
         #endregion
         if productName:
@@ -1035,8 +1035,8 @@ class ActionMainCamera(Action):
             data = getData(sqlQuery)
             if data:
                 Pname_temp = data[0]['ten']
-                if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
+                if data[0]['ghi_chu'].find('tin đồn') > -1:
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
                 else:
                     do_phan_giai = "Đang cập nhật."
                     chup_anh = "Đang cập nhật."
@@ -1071,7 +1071,7 @@ class ActionSelfieCamera(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            tracker.get_slot('product_name')
+            productName = tracker.get_slot('product_name')
             pass
         #endregion
         if productName:
@@ -1079,12 +1079,12 @@ class ActionSelfieCamera(Action):
             data = getData(sqlQuery)
             if data:
                 Pname_temp = data[0]['ten']
-                if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
+                if data[0]['ghi_chu'].find('tin đồn')>-1:
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
                 else:
                     do_phan_giai = "Đang cập nhật."
-                    if data[0]['do_phan_giai_cam_trước']:
-                        do_phan_giai = data[0]['do_phan_giai_cam_sau']
+                    if data[0]['do_phan_giai_cam_truoc']:
+                        do_phan_giai = data[0]['do_phan_giai_cam_truoc']
                     message_str = "Sản phẩm {} có hệ thống camera trước với độ phân giải: {}.".format(Pname_temp,do_phan_giai)
             else:
                 Pname_temp = productName
@@ -1113,7 +1113,7 @@ class ActionResolutionCamera(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            tracker.get_slot('product_name')
+            productName = tracker.get_slot('product_name')
             pass
         try:
             loai_camera = next(tracker.get_latest_entity_values(entity_type='camera'))
@@ -1126,8 +1126,8 @@ class ActionResolutionCamera(Action):
             data = getData(sqlQuery)
             if data:
                 Pname_temp = data[0]['ten']
-                if data[0]['ghi_chu']:
-                    message_str = "Sản phẩm {productName} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {productName} khi được cập nhật.".format(productName)
+                if data[0]['ghi_chu'].find('tin đồn')>-1:
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
                 else:
                     if loai_camera.find('trước') > -1:
                         message_str = "Sản phẩm {} có camera trước với độ phân giải: {}. Với các tính năng: {}".format(Pname_temp,data[0]['do_phan_giai_cam_truoc'],data[0]['thong_tin_khac'])
@@ -1429,3 +1429,29 @@ class ActionFollow(Action):
         else:
             dispatcher.utter_message('Vui lòng nhập tên sản phẩm bạn muốn tìm hiểu thông tin!')
             return
+
+class ActionOptionInBox(Action):
+    # action thông tin khuyến mãi và quà tặng
+    def name(self) -> Text:
+        return "action_option_in_box"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # productName = ""
+        # sqlQuery = ""
+        # Pname_temp =""
+        return
+
+class ActionCanPlayGame(Action):
+    # action thông tin khuyến mãi và quà tặng
+    def name(self) -> Text:
+        return "action_can_play_game"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # productName = ""
+        # sqlQuery = ""
+        # Pname_temp =""
+        return

@@ -72,15 +72,15 @@ intents:
   #  thông tin màn hình
   - pin_info
   #  thông tin về pin
-  - buy_old_product
+  - acquisition_old_product
   #  có thu mua lại sản phẩm cũ không
   - what_license
   #  mua trả góp cần giấy tờ gì 
-  - two_or_more_file
+  - many_profile
   #  2 hay nhiều hồ sơ
-  - how_many_per_month
+  - pay_per_month
   #  cần phải trả bao nhiêu tiền / 1 tháng
-  - case_how_many_per_month
+  - case_pay_per_month
   #  cần phải trả bao nhiêu tiền trên 1 tháng trong 2 trường hợp
   - age_installment
   #  độ tuổi được trả góp 
@@ -161,7 +161,7 @@ responses:
             Bản sao chứng minh nhân dân của Bố hoặc Mẹ có công chứng trong vòng 6 tháng.\n
            Lưu ý: Đơn vị trả góp sẽ yêu cầu mang giấy tờ bản gốc để đối chiếu khi ký hợp đồng."
            
-  utter_two_or_more_file:
+  utter_many_profile:
     # trả góp 2 hồ sơ
     - text: "Bạn có thể đăng ký mua trả góp với công ty tài chính khác."
     
@@ -237,13 +237,13 @@ actions:
   - action_pin_info
   # action thông tin về pin
 
-  - action_buy_old_product
+  - action_acquisition_old_product
   # action thu mua lại sản phẩm cũ
 
-  - action_how_many_per_month
+  - action_pay_per_month
   # action cần trả bao nhiêu tiền 1 tháng
 
-  - action_case_how_many_per_month
+  - action_case_pay_per_month
   # action cần trả bao nhiêu tiền 1 tháng trong 2 trường hợp
 
   - action_is_product_can_buy_on_installment
@@ -288,4 +288,10 @@ actions:
   - action_get_contact
   # action lưu thông tin
 
+  - action_option_in_box
+  # action phụ kiện trong hộp
+
+  - action_can_play_game
+  # action trả lời sản phẩm có chơi game được không
+  
   - action_follow

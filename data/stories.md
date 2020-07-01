@@ -12,6 +12,10 @@
 * need_help
   - utter_need_help
 
+## thankyou
+* thankyou
+  - utter_thankyou
+
 ## bot challenge
 * ask_ability
   - utter_ask_ability
@@ -23,6 +27,10 @@
 ## storie 12
 * decry
   - utter_decry
+
+## nhieu ho so cung 1 luc
+* many_profile
+  - utter_many_profile
 
 ## storie 12
 * praise
@@ -77,6 +85,10 @@
 * list_product
   - action_list_product
 
+## order
+* order
+  - utter_order
+
 ## storie check_price
 * check_price{"product_name":"oppo reno 3"}
   - action_check_price
@@ -111,21 +123,21 @@
   - slot{"latest_action":"action_pin_info"}
   - slot{"product_name":"iphone xs max"}
 
-## storie buy_old_product
-* buy_old_product{"product_name":"iphone xs max"}
-  - action_buy_old_product
-  - slot{"latest_action":"action_buy_old_product"}
+## storie acquisition_old_product
+* acquisition_old_product{"product_name":"iphone xs max"}
+  - action_acquisition_old_product
+  - slot{"latest_action":"action_acquisition_old_product"}
   - slot{"product_name":"iphone xs max"}
 
-## storie how_many_per_month
-* how_many_per_month{"product_name":"iphone xs max"}
-  - action_how_many_per_month
-  - slot{"latest_action":"action_how_many_per_month"}
+## storie pay_per_month
+* pay_per_month{"product_name":"iphone xs max"}
+  - action_pay_per_month
+  - slot{"latest_action":"action_pay_per_month"}
   - slot{"product_name":"iphone xs max"}
 
-## storie case_how_many_per_month
-* case_how_many_per_month{"product_name":"iphone xs max"}
-  - action_case_how_many_per_month
+## storie case_pay_per_month
+* case_pay_per_month{"product_name":"iphone xs max"}
+  - action_case_pay_per_month
   - slot{"product_name":"iphone xs max"}
 
 ## storie is_product_can_buy_on_installment
@@ -183,6 +195,10 @@
   - slot{"product_name":"Samsung Galaxy A10e"}
   - slot{"latest_action":"action_guarantee"}
 
+## phu kien khi mua may
+* option_in_box
+  - action_option_in_box
+
 ## storie promotions_and_gifts
 * promotions_and_gifts{"product_name":"iphone xs max"}
   - action_promotions_and_gift
@@ -205,6 +221,13 @@
 * find_another_product
   - action_find_another_product
 
+## choi game dc khong
+* can_play_game
+  - action_can_play_game
+
+## phone_number
+* phone_number
+  - action_get_phone_number
 ## storie 01
 * greet
   - action_greet
@@ -219,6 +242,9 @@
   - slot{"latest_action":"action_find_product"}
   - slot{"product_name":"oppo reno 3"}
 
+## giao hang
+* delivery
+  - utter_delivery
 
 ## strie 02
 * greet
@@ -274,3 +300,14 @@
 * productName
   - action_follow
 
+## age to buy on install ment
+* age_installment
+  - utter_age_installment
+
+## thoi gian lam ho so tra gop
+* installment_registration_period
+  - utter_installment_registration_period
+
+## out of scope
+* out_of_scope
+  - utter_out_of_scope

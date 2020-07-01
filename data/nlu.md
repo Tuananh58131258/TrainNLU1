@@ -943,7 +943,7 @@
 - Đặt mua [Realme 6](product_name)
 - Đặt mua [OPPO A92](product_name)
 
-## intent:check_price
+## intent: check_price
 
 <!-- kiểm tra giá của sản phẩm -->
 
@@ -1094,7 +1094,7 @@
 - [Vsmart Joy 3](product_name) có giá [2 m 7](price) đúng không
 - [Xiaomi Redmi 7](product_name) giá [9 m 8](price) phải không ạ
 
-## intent:find_product_in_range_price
+## intent: find_product_in_range_price
 
 <!-- tìm sản phẩm trong một khoảng giá -->
 
@@ -1743,7 +1743,7 @@
 - [iPhone XR](product_name) sử dụng màn hình loại gì?
 - [Xiaomi Mi 9T](product_name) sử dụng màn hình gì?
 
-## intent:pin_info
+## intent: pin_info
 
 <!-- thông tin về pin -->
 
@@ -1790,7 +1790,7 @@
 - pin dùng được bao lâu
 - pin dùng được lâu không
 
-## intent: buy_old_product
+## intent: acquisition_old_product
 
 <!-- có thu mua lại sản phẩm cũ không -->
 
@@ -1900,7 +1900,7 @@
 - Em là sinh viên muốn mua trả góp đt [oppo f1s](product_name) . do học xa nhà nên không có sẳn giấy CMND có công chứng của cha hoặc mẹ thì có mua được kh?
 - Minh muon mua tra gop [0 %](interest_rate) co can ho khau khong vay?
 - Cmnd voi bang lai kon co ho khau duọc ko shop
-- Nếu e có cmnd.+bằng lái xe có thê mua trả góp 0đ hai không
+- Nếu e có cmnd +bằng lái xe có thê mua trả góp 0đ hai không
 - Em là sinh viên đủ 20 tuổi có thể áp dụng trả góp cho sinh viên được không ạ? Và cần giấy tờ như thế nào? Thủ tục nhanh ko ạ
 - E 19t chỉ có chứng minh và hộ khẩu photo đc ko admin
 - Có cmnd và blx có trả góp [0 lãi suất](interest_rate) có duoc ko fpt sop
@@ -1932,7 +1932,7 @@
 - Cmnd vs bằng lái tham gia trả góp [0 đ]{"entity":"price","role":"prepay"} đc k
 - Mình có bằng lái xe + cmtnd có tham gia đk gói trả góp [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
-- chào ad. e có CMND, bằng lái xe có trả góp đc k ạ. trả trước [0 %](prepay_percent)
+- chào ad e có CMND, bằng lái xe có trả góp đc k ạ. trả trước [0 %](prepay_percent)
 - Dung Ban photo duoc khong a (co can cong chung khong)
 - Minh mat bang lai xe. Ho khau lai o bac ninh minh dung so tam tru o bac giang de mua tra gop o bac giang dk k shop
 - ad oi cho e hoi , thu tuc tra gop [0 %](interest_rate) la cmnd+ho khau duoc k a?
@@ -1954,7 +1954,7 @@
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
 - chao ad. e co CMND, bang lai xe co tra gop dc k a. tra truoc [0 %](prepay_percent)
 
-## intent: two_or_more_file
+## intent: many_profile
 
 <!-- 2 hay nhiều hồ sơ -->
 
@@ -1975,7 +1975,7 @@
 - Mua gop 2 cai mot lan. Co dk ko ad oi
 - em vua hoan thanh ho so tra gop thi co can lam lai ho so moi khong
 
-## intent: how_many_per_month
+## intent: pay_per_month
 
 <!-- cần phải trả bao nhiêu tiền / 1 tháng -->
 
@@ -2004,7 +2004,7 @@
 - Tra gop truoc [10 %](prepay_percent) .Moi thang dong bao nhieu vay
 - E muốn mua trả góp [0 %](interest_rate) trả trước [10 %](prepay_percent) góp trong [6 t](installment_payment_period), nếu k đóng phí bảo hiểm thì 1 tháng góp bao nhiêu vậy ad
 - Trả trước [10 %](prepay_percent) và ko mua bảo hiểm thì mỗi tháng góp bao nhiu vậy ad
-- Trả góp [0 đ]{"entity":"price","role":"prepay"}.ko mua bảo hiểm vay đóng [6 tháng](installment_payment_period) nhiêu vay.
+- Trả góp [0 đ]{"entity":"price","role":"prepay"} ko mua bảo hiểm vay đóng [6 tháng](installment_payment_period) nhiêu vay.
 - tra bao nhieu 1 thang vay
 - mot thang phai tra nhieu vay
 - tra gop thi mot thang tra bao nhieu
@@ -2043,7 +2043,7 @@
 - Trả trước [10 %](prepay_percent) trả [12 tháng](installment_payment_period) 1 tháng trả bao nhiêu
 - tra trc [20 %](prepay_percent) trong [12 thang](installment_payment_period) jz can tra bao nhju va moi thang nhju jz
 
-## intent: case_how_many_per_month
+## intent: case_pay_per_month
 
 <!-- cần phải trả bao nhiêu tiền trên 1 tháng trong 2 trường hợp -->
 
@@ -2611,7 +2611,7 @@
 - camera sau may mp
 - camera sau mấy mp
 
-## intent:guarantee
+## intent: guarantee
 
 <!-- chính sách bảo hành -->
 

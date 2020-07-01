@@ -1,3 +1,4 @@
+# _*_ encoding=utf-8 _*_
 import re
 
 
@@ -11,6 +12,9 @@ def productNameModify(productName: str):
         return temp
     elif data.find("samsung") > -1 and data.find("galaxy") == -1:
         temp = data.replace("samsung", "samsung galaxy")
+        return temp
+    elif data.find("samsung") == -1 and data.find("sung") >-1 and data.find("galaxy") == -1:
+        temp = data.replace("sung", "samsung galaxy")
         return temp
     elif data.find("ss") > -1 and data.find("galaxy") > -1:
         temp = data.replace("ss", "samsung")
@@ -38,24 +42,36 @@ def romRamModify(rom: str):
 
 
 def priceModify(price: str):
-    data = price.lower().strip(" ").replace("lăm", "5").replace("mốt", "1").replace("tư", "4").replace(" ", "").replace(".", ",").replace("rưởi","5")
+    if price.isnumeric():
+        data = int(price)
+        if data/1000<100 and data/1000>0:
+            return data*1000
+        else:
+            return data
+    else:
+        data = price.lower().strip(" ").replace('mốt','1').replace(" ","").replace(".",",")
+    so5 = ['lăm',"rưởi",'lam',"ruoi"]
+    so4 = ['tu','tư','tứ']
+    data = data.replace('trieu','triệu')
+    for item in so5:
+        data = data.replace(item,'5')
+    for item in so4:
+        data = data.replace(item,'4')
     word = ['một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
+    word2 = ['mot', 'hai', 'ba', 'bon', 'nam', 'sau', 'bay', 'tam', 'chin']
     result = 0
     for i in range(0, 9):
         data = data.replace(word[i], str(i+1))
-    # specialword = ["m","tr","trịu","trieu"]
-    # for item in specialword:
-        # data = data.replace(item,"triệu")
-    if re.match("[0-9]mươi[0-9].", data):
-        data = data.replace('mươi','')
-    if re.match("[0-9]mươi[^0-9]",data):
-        data = data.replace('mươi','0')
+    for i in range(0, 9):
+        data = data.replace(word2[i], str(i+1))
+    if re.match("[0-9]mươi[0-9].", data) or re.match("[0-9]muoi[0-9].", data):
+        data = data.replace('mươi','').replace('muoi','')
+    if re.match("[0-9]mươi[^0-9]",data) or re.match("[0-9]muoi[^0-9].", data):
+        data = data.replace('mươi','0').replace('muoi','0')
 
     if re.match("[0-9]+triệu[0-9]+", data) or re.match("[0-9]+m[0-9]+", data) or re.match("[0-9]+tr[0-9]+", data):
         temp = data.replace("triệu", ".").replace("tr",".").replace("m",".")
-        # print(temp)
         num = temp.split(".")
-        # print(num)
         if len(num[1]) == 1:
             result = int(num[0])*1000000+int(num[1])*100000
         if len(num[1]) == 2:
@@ -66,7 +82,6 @@ def priceModify(price: str):
     elif re.match("[0-9]+,[0-9]+triệu", data) or re.match("[0-9]+,[0-9]+m", data) or re.match("[0-9]+,[0-9]+tr", data):
         temp = data.replace("triệu", "").replace("tr",".").replace("m",".")
         num = temp.split(".")
-        # print(len(num[1]))
         if len(num[1]) == 1:
             result = int(num[0])*1000000+int(num[1])*100000
         if len(num[1]) == 2:
@@ -76,16 +91,8 @@ def priceModify(price: str):
         return result
     elif re.match("[0-9]+triệu", data) or re.match("[0-9]+m", data) or re.match("[0-9]+tr", data):
         temp = data.replace("triệu", "").replace("tr","").replace("m","")
-        # num = temp.split(".")
-        # # print(len(num[1]))
-        # if len(num[1])==1:
-        #     result = num[0]+"."+num[1]+"00.000"
-        # if len(num[1])==2:
-        #     result = num[0]+"."+num[1]+"0.000"
-        # if len(num[1])==3:
         result = int(temp)*1000000
         return result
-
     return data
 
 def PrepayPercentModify(temp:str):
@@ -102,8 +109,8 @@ def RoundNum(temp:int):
     return res
 
 def GetColName(temp:str):
-    data = {"Công nghệ màn hình":"cong_nghe_man_hinh","Độ phân giải màn hình":"do_phan_giai","Màu màn hình":"mau_man_hinh","Chuẩn màn hình":"chuan_man_hinh","Công nghệ cảm ứng":"cong_nghe_cam_ung","Màn hình":"man_hinh","Mặt kính màn hình":"mat_kinh_man_hinh","RAM":"ram","Tốc độ CPU":"toc_do_cpu","Số nhân":"so_nhan","Chipset":"chipset","Chip đồ họa (GPU)":"gpu","Cảm biến":"cam_bien","Thẻ nhớ ngoài":"the_nho_ngoai","Hỗ trợ thẻ nhớ tối đa":"dung_luong_the_nho_toi_da","Danh bạ lưu trữ":"dung_luong_danh_ba","ROM":"rom","Bộ nhớ còn lại":"bo_nho_con_lai","Kích thước":"kich_thuoc","Trọng lượng":"trong_luong","Kiểu dáng":"kieu_dang","Chất liệu":"chat_lieu","Khả năng chống nước":"chong_nuoc","Loại pin":"loai_pin","Dung lượng pin":"dung_luong_pin","Pin có thể tháo rời":"thao_roi_pin","Thời gian chờ":"thoi_gian_cho","Thời gian đàm thoại":"thoi_gian_dam_thoai","Thời gian sạc đầy":"thoi_gian_sac","Chế độ sạc nhanh":"sac_nhanh","Kết nối USB":"ket_noi_usb","Cổng kết nối khác":"cong_ket_noi_khac","Cổng sạc":"cong_sac","Jack (Input & Output)":"jack_in_out","Wifi":"wifi","GPS":"gps","Bluetooth":"bluetooth","GPRS":"gprs","EDGE":"edge","Loại SIM":"loai_sim","Băng tần 2G":"mang_2g","Băng tần 3G":"mang_3g","Băng tần 4G":"mang_4g","Khe cắm sim":"khe_cam_sim","NFC":"nfc","Model Series":"model_series","Hệ điều hành":"he_dieu_hanh","Xem phim":"xem_phim","Nghe nhạc":"nghe_nhac","Ghi âm":"ghi_am","FM radio":"fm_radio","Đèn pin":"den_pin","Chức năng khác":"chuc_nang_khac","Thời gian bảo hành":"thoi_gian_bao_hanh","Xuất xứ":"xuat_xu","Năm sản xuất":"nam_san_xuat","Độ phân giải cam sau":"do_phan_giai_cam_sau","Độ phân giải cam trước":"do_phan_giai_cam_truoc","Thông tin khác":"thong_tin_khac","Quay phim":"quay_phim","Đèn Flash":"den_flash","Chụp ảnh nâng cao":"chup_anh_nang_cao","Video Call":"video_call","GPRS/EDGE":"gprs","Công nghệ pin":"cong_nghe_pin","Mạng di động":"mang_2g"}
+    data = {"công nghệ màn hình":"cong_nghe_man_hinh","độ phân giải màn hình":"do_phan_giai","màu màn hình":"mau_man_hinh","chuẩn màn hình":"chuan_man_hinh","công nghệ cảm ứng":"cong_nghe_cam_ung","màn hình":"man_hinh","mặt kính màn hình":"mat_kinh_man_hinh","ram":"ram","tốc độ cpu":"toc_do_cpu","số nhân":"so_nhan","chipset":"chipset","chip đồ họa (gpu)":"gpu","cảm biến":"cam_bien","thẻ nhớ ngoài":"the_nho_ngoai","hỗ trợ thẻ nhớ tối đa":"dung_luong_the_nho_toi_da","danh bạ lưu trữ":"dung_luong_danh_ba","rom":"rom","bộ nhớ còn lại":"bo_nho_con_lai","kích thước":"kich_thuoc","trọng lượng":"trong_luong","kiểu dáng":"kieu_dang","chất liệu":"chat_lieu","khả năng chống nước":"chong_nuoc","loại pin":"loai_pin","dung lượng pin":"dung_luong_pin","pin có thể tháo rời":"thao_roi_pin","thời gian chờ":"thoi_gian_cho","thời gian đàm thoại":"thoi_gian_dam_thoai","thời gian sạc đầy":"thoi_gian_sac","chế độ sạc nhanh":"sac_nhanh","kết nối usb":"ket_noi_usb","cổng kết nối khác":"cong_ket_noi_khac","cổng sạc":"cong_sac","jack (input & output)":"jack_in_out","wifi":"wifi","gps":"gps","bluetooth":"bluetooth","gprs":"gprs","edge":"edge","loại sim":"loai_sim","băng tần 2g":"mang_2g","băng tần 3g":"mang_3g","băng tần 4g":"mang_4g","khe cắm sim":"khe_cam_sim","nfc":"nfc","model series":"model_series","hệ điều hành":"he_dieu_hanh","xem phim":"xem_phim","nghe nhạc":"nghe_nhac","ghi âm":"ghi_am","fm radio":"fm_radio","đèn pin":"den_pin","chức năng khác":"chuc_nang_khac","thời gian bảo hành":"thoi_gian_bao_hanh","xuất xứ":"xuat_xu","năm sản xuất":"nam_san_xuat","độ phân giải cam sau":"do_phan_giai_cam_sau","độ phân giải cam trước":"do_phan_giai_cam_truoc","thông tin khác":"thong_tin_khac","quay phim":"quay_phim","đèn flash":"den_flash","chụp ảnh nâng cao":"chup_anh_nang_cao","video call":"video_call","gprs/edge":"gprs","công nghệ pin":"cong_nghe_pin","mạng di động":"mang_2g"}
     result = data[temp]
     return result
-# print("{:,}".format(priceAnalysis("2 củ")))
-# print(RoundNum(809216))
+
+print(priceModify('8500000'))
