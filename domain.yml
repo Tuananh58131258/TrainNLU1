@@ -119,6 +119,7 @@ intents:
   - contact
   # họ tên + sdt
   - productName
+  - option_in_box
 
 responses:
   utter_goodbye:
