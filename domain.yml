@@ -192,9 +192,7 @@ responses:
   utter_order:
     # đặt mua
     - text: "Cảm ơn bạn đã đặt mua sản phấm!"
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+
 
 actions:
   - action_custom_fallback
@@ -296,3 +294,7 @@ actions:
   # action trả lời sản phẩm có chơi game được không
   
   - action_follow
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

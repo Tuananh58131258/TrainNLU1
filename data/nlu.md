@@ -1098,10 +1098,10 @@
 
 <!-- tìm sản phẩm trong một khoảng giá -->
 
-- khoang [6 m 7]{"entity":"price","role":"from_price"} [1,8 trieu]{"entity":"price","role":"to_price"}
-- khoang [2.6 trieu]{"entity":"price","role":"from_price"} [ba trieu tam]{"entity":"price","role":"to_price"}
-- khoang [9 m 2]{"entity":"price","role":"from_price"} [bay trieu sau]{"entity":"price","role":"to_price"}
-- khoang [bay trieu sau]{"entity":"price","role":"from_price"} [9,7 trieu]{"entity":"price","role":"to_price"}
+- khoang [6 m 7]{"entity":"price","role":"from_price"}-[1,8 trieu]{"entity":"price","role":"to_price"}
+- khoang [2.6 trieu]{"entity":"price","role":"from_price"}-[ba trieu tam]{"entity":"price","role":"to_price"}
+- khoang [9 m 2]{"entity":"price","role":"from_price"}-[bay trieu sau]{"entity":"price","role":"to_price"}
+- khoang [bay trieu sau]{"entity":"price","role":"from_price"}-[9,7 trieu]{"entity":"price","role":"to_price"}
 - khoang [5,1 trieu]{"entity":"price","role":"from_price"} den [7.4 trieu]{"entity":"price","role":"to_price"}
 - khoang [5,6 trieu]{"entity":"price","role":"from_price"} den [6.2 trieu]{"entity":"price","role":"to_price"}
 - khoang [nam trieu sau]{"entity":"price","role":"from_price"} den [7 m 2]{"entity":"price","role":"to_price"}
@@ -1110,10 +1110,10 @@
 - chung [2 m 7]{"entity":"price","role":"from_price"} den [tam trieu ruoi]{"entity":"price","role":"to_price"}
 - chung [2.9 trieu]{"entity":"price","role":"from_price"} den [ba trieu]{"entity":"price","role":"to_price"}
 - chung [mot trieu bon]{"entity":"price","role":"from_price"} den [bay trieu sau]{"entity":"price","role":"to_price"}
-- tam [7 m 7]{"entity":"price","role":"from_price"} - [9.2 trieu]{"entity":"price","role":"to_price"} gi do
-- tam [mot trieu sau]{"entity":"price","role":"from_price"} - [5.4 trieu]{"entity":"price","role":"to_price"} gi do
-- tam [6.6 trieu]{"entity":"price","role":"from_price"} - [mot trieu]{"entity":"price","role":"to_price"} gi do
-- tam [mot trieu ruoi]{"entity":"price","role":"from_price"} - [ba trieu mot]{"entity":"price","role":"to_price"} gì đó
+- tam [7 m 7]{"entity":"price","role":"from_price"}-[9.2 trieu]{"entity":"price","role":"to_price"} gi do
+- tam [mot trieu sau]{"entity":"price","role":"from_price"}-[5.4 trieu]{"entity":"price","role":"to_price"} gi do
+- tam [6.6 trieu]{"entity":"price","role":"from_price"}-[mot trieu]{"entity":"price","role":"to_price"} gi do
+- tam [mot trieu ruoi]{"entity":"price","role":"from_price"}-[ba trieu mot]{"entity":"price","role":"to_price"} gì đó
 - có [Realme](product_company) trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"}
 - có [Vsmart](product_company) trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có [Itel](product_company) trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
@@ -2824,6 +2824,22 @@
 - trong hop tang kem nhung gi vay
 - trong hop co nhung gi
 - mua may co tang gi theo hop
+- mua máy [realme xt](product_name) có tặng kèm gì không
+- khi mua [Huawei Mate 30 5G](product_name) trong hộp có những gì
+- mua máy [Samsung Galaxy A11](product_name) có tặng kèm không
+- mua máy [ss a51 5g](product_name) có tặng kèm gì không
+- mua máy [realme x3](product_name) trong hộp có những gì
+- mua may [realme xt](product_name) co tang kem gi khong
+- khi mua [Huawei Mate 30 5G](product_name) trong hop co nhung gi
+- mua may [Samsung Galaxy A11](product_name) co tang kem khong
+- mua may [ss a51 5g](product_name) co tang kem gi khong
+- mua may [realme x3](product_name) trong hop co nhung gi
+- mua [Vsmart BEE](product_name) trong hop co nhung gi
+- mua may [Oppo Reno3 Pro](product_name) co tang kem gi khong
+- mua [Vsmart BEE](product_name) trong hộp có những gì
+- mua máy [Oppo Reno3 Pro](product_name) có tặng kèm gì không
+- mua [Samsung Galaxy S20 Ultra](product_name) có tặng kèm gì không
+- mua [Masstel Play Music](product_name) có tặng kèm gì không
 
 ## intent: find_product
 
@@ -2941,28 +2957,12 @@
 - máy chơi được pubg mobile không
 - máy chơi liên quân mượt không
 - máy chơi được liên quân hay pubg mobile không
-- mua máy [realme xt](product_name) có tặng kèm gì không
-- khi mua [Huawei Mate 30 5G](product_name) trong hộp có những gì
-- mua máy [Samsung Galaxy A11](product_name) có tặng kèm không
-- mua máy [ss a51 5g](product_name) có tặng kèm gì không
-- mua máy [realme x3](product_name) trong hộp có những gì
 - may nay choi duoc lien quan khong
 - may choi lien quan muot khong
 - may choi pubg on khong
 - may choi duoc pubg mobile khong
 - may choi lien quan muot khong
 - may choi duoc lien quan hay pubg mobile khong
-- mua may [realme xt](product_name) co tang kem gi khong
-- khi mua [Huawei Mate 30 5G](product_name) trong hop co nhung gi
-- mua may [Samsung Galaxy A11](product_name) co tang kem khong
-- mua may [ss a51 5g](product_name) co tang kem gi khong
-- mua may [realme x3](product_name) trong hop co nhung gi
-- mua [Vsmart BEE](product_name) trong hop co nhung gi
-- mua may [Oppo Reno3 Pro](product_name) co tang kem gi khong
-- mua [Vsmart BEE](product_name) trong hộp có những gì
-- mua máy [Oppo Reno3 Pro](product_name) có tặng kèm gì không
-- mua [Samsung Galaxy S20 Ultra](product_name) có tặng kèm gì không
-- mua [Masstel Play Music](product_name) có tặng kèm gì không
 - máy [ss xcover pro](product_name) chơi được liên quân không
 - máy [OPPO A11](product_name) chơi liên quân mượt không
 - máy [Realme 5i](product_name) chơi được pubg mobile không
