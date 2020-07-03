@@ -1905,7 +1905,7 @@ data/prepay_percent.txt
 - Có giấy chứng minh với bằng lái xe đăng kí được không ạ
 - cho m hỏi trả góp [0 %](interest_rate) cần những giấy tờ gì và thủ tục làm như thế nào ak
 - [oppo f1s](product_name) lấy trả góp giấy tờ hộ khẩu chứng minh nhân dân có được không ạ
-- Hóa đơn điện nước có thể lấy chỗ mk đang tạm trú đc k ạ, hay phải lấy hóa đơn gia đình?
+- Hóa đơn điện nước có thể lấy chỗ mk đang tạm trú đc k ạ hay phải lấy hóa đơn gia đình?
 - ChAo ban minh muon mua tr gop nhung minh chi co ho khau Voi cmt thoi nhung minh can cmt de di lam vay co the trs gop dc ko
 - cho hỏi giờ mình mua trả góp là cần giấy tờ gì ạ
 - Mình có cmnd bản gốc và hộ khẩu phổi công chứng có đc mua trả góp [0 %](interest_rate) k ad?
@@ -1917,13 +1917,13 @@ data/prepay_percent.txt
 - mình muốn mua trả góp thì cần thủ tục thế nào cmnd + bằng lái xe thôi có đc ko
 - E đang đi bộ đội hiện giờ e có giấy phép lái xe chứng minh nhân dân và thẻ bảo hiểm y tế của quân đội cấp thì có đủ điều kiện để trả góp không vậy
 - gói trả góp [0 %](interest_rate) lãi suất cần những gì bn
-- chào ad, mình là sinh viên muốn mua trả góp máy thì cần những lưu ý gì ạ?
+- chào ad mình là sinh viên muốn mua trả góp máy thì cần những lưu ý gì ạ?
 - Trả góp lãi suất [0 %](interest_rate) cần giấy tờ gì vậy
 - Cho mình hỏi trả góp 0% cần bằng lái xe và cmtnd có phải cung cấp thêm bao nhiu số điện thoại người thân nữa để làm thủ tục ạ
 - Mua tra gop ko co ho khau co duoc khong ạ
 - có trả góp được không mà không thấy sohop trả lời vậy.
 - Mua tra góp co cong so HK Con can j nua ko
-- Giấy cmnd đang trong thời gian làm lại, chỉ có giấy hẹn thôi vậy có mua trả góp được k?
+- Giấy cmnd đang trong thời gian làm lại chỉ có giấy hẹn thôi vậy có mua trả góp được k?
 - Mình muốn mua trả góp mà ko cần hộ khẩu có cách nào được ko qtv.
 - Shop ơi em hiện tại chỉ có giấy CMND không có bằng lái xe thì có mua được không ạ
 - E muon mua tra gop ma CMND cua e het han mua duoc ko
@@ -1937,7 +1937,7 @@ data/prepay_percent.txt
 - E 19t chỉ có chứng minh và hộ khẩu photo đc ko admin
 - Có cmnd và blx có trả góp [0 lãi suất](interest_rate) có duoc ko fpt sop
 - Trả góp [10 %](prepay_percent) cần giấy tờ j z ad  Tây ninh có hàng chưa z
-- Mình muốn mua trả góp lãi suất [0 %](interest_rate) , trả trước [10 %](prepay_percent) .giấy tờ cần là bằng lái và cmnd đc k shop
+- Mình muốn mua trả góp lãi suất [0 %](interest_rate)  trả trước [10 %](prepay_percent) .giấy tờ cần là bằng lái và cmnd đc k shop
 - Mìng dùng sổ hộ khẩu photo công chứng đuoc k
 - Chứng minh nhân dân thôi dc k vay
 - em muốn muốn mua trả cóp em có chứng minh thư vs shk phô tô công chứng có đc ko
@@ -1947,7 +1947,7 @@ data/prepay_percent.txt
 - Hien tai e lam c.ty e dung 20t e can mag theo gi de mua tra gop the shop
 - Dùng Bản photo được không ạ (có cần công chứng không)
 - Mình mất bằng lái xe Hộ khẩu lại ở bắc ninh mình dùng sổ tạm trú ở bắc giang để mua trả góp ở bắc giang dk k shop
-- ad ơi cho e hỏi , thủ tục trả góp [0 %](interest_rate) là cmnd+hộ khẩu được k ạ?
+- ad ơi cho e hỏi  thủ tục trả góp [0 %](interest_rate) là cmnd+hộ khẩu được k ạ?
 - Trả trước 0đ mà mình chỉ có cmnd và gplx đc kh vậy ad
 - Máy này hỗ trợ gói [0 %](interest_rate) mình có cmnd và gplxe
 - Anh ơi em có giấy CMND với họ khẩu thôi có mưa trả góp đc khong
@@ -1964,10 +1964,10 @@ data/prepay_percent.txt
 - Cmnd vs bằng lái tham gia trả góp [0 đ]{"entity":"price","role":"prepay"} đc k
 - Mình có bằng lái xe + cmtnd có tham gia đk gói trả góp [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
-- chào ad e có CMND, bằng lái xe có trả góp đc k ạ trả trước [0 %](prepay_percent)
+- chào ad e có CMND bằng lái xe có trả góp đc k ạ trả trước [0 %](prepay_percent)
 - Dung Ban photo duoc khong a (co can cong chung khong)
 - Minh mat bang lai xe Ho khau lai o bac ninh minh dung so tam tru o bac giang de mua tra gop o bac giang dk k shop
-- ad oi cho e hoi , thu tuc tra gop [0 %](interest_rate) la cmnd+ho khau duoc k a?
+- ad oi cho e hoi  thu tuc tra gop [0 %](interest_rate) la cmnd+ho khau duoc k a?
 - Tra truoc 0d ma minh chi co cmnd va gplx dc kh vay ad
 - May nay ho tro goi [0 %](interest_rate) minh co cmnd va gplxe
 - Anh oi em co giay CMND voi ho khau thoi co mua tra gop dc khong
@@ -1984,7 +1984,7 @@ data/prepay_percent.txt
 - Cmnd vs bang lai tham gia tra gop [0 d]{"entity":"price","role":"prepay"} dc k
 - Minh co bang lai xe + cmtnd co tham gia dk goi tra gop [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
-- chao ad e co CMND, bang lai xe co tra gop dc k a tra truoc [0 %](prepay_percent)
+- chao ad e co CMND bang lai xe co tra gop dc k a tra truoc [0 %](prepay_percent)
 
 ## intent: many_profile
 
@@ -1993,18 +1993,18 @@ data/prepay_percent.txt
 - QTV cho nếu e dùng 1sổ hộ khẩu + CMND mua trả góp 2 sp chung đc k ạ
 - mình đang trả góp bên ngân hàng fe kỳ hạn là 4 tháng nhưng mình trả dc hai tháng rồi vậy có dc mua trả góp 0% sản phẩm này ko vậy.
 - Chào bạn..hiện tai mình đang có hồ sơ vay bên FE thì có được mua trả góp nữa không vậy
-- Cho e hỏi e muốn mua trả góp trả trc 0đ đc k ạ. hiện tại e đang trả góp bên fe credit.
+- Cho e hỏi e muốn mua trả góp trả trc 0đ đc k ạ hiện tại e đang trả góp bên fe credit.
 - E muon tra gop djen thoai nay dk k?tai vj e dag gop dt [oppo A39](product_name) dk 2 thang ui o fptshop ak
-- Em đang vay trả góp của home edit. Vậy có thể mua trả góp được tiếp không ad?
-- Mua góp 2 cái một lần. Có dk ko ad oi
+- Em đang vay trả góp của home edit Vậy có thể mua trả góp được tiếp không ad?
+- Mua góp 2 cái một lần Có dk ko ad oi
 - em vừa hoàn thành hồ sơ trả góp thì có cần làm lại hồ sơ mới không
 - QTV cho neu e dung 1so ho khau + CMND mua tra gop 2 sp chung dc k a
 - minh dang tra gop ben ngan hang fe ky han la 4 thang nhung minh tra dc hai thang roi vay co dc mua tra gop 0% san pham nay ko vay.
 - Chao ban..hien tai minh dang co ho so vay ben FE thi co duoc mua tra gop nua khong vay
-- Cho e hoi e muon mua tra gop tra trc 0d dc k a. hien tai e dang tra gop ben fe credit.
+- Cho e hoi e muon mua tra gop tra trc 0d dc k a hien tai e dang tra gop ben fe credit.
 - E muon tra gop djen thoai nay dk k?tai vj e dag gop dt [oppo A39](product_name) dk 2 thang ui o fptshop ak
-- Em dang vay tra gop cua home edit. Vay co the mua tra gop duoc tiep khong ad?
-- Mua gop 2 cai mot lan. Co dk ko ad oi
+- Em dang vay tra gop cua home edit Vay co the mua tra gop duoc tiep khong ad?
+- Mua gop 2 cai mot lan Co dk ko ad oi
 - em vua hoan thanh ho so tra gop thi co can lam lai ho so moi khong
 
 ## intent: pay_per_month
@@ -2031,7 +2031,7 @@ data/prepay_percent.txt
 - Cho mình hỏi mình trả góp gói [0 đ]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi mỗi tháng phải trả la bao nhiêu va cần những giấy tờ gi
 - Nếu mình trả trước [30 %](prepay_percent) thì góp 12t thi moi tháng bn?
 - fpt cho hỏi thế em mua trả góp mà trả trước [30 %](prepay_percent) thì mỗi tháng trả bao nhiêu và trong vòng mấy thang
-- FPT đt [oppo f1s 2017](product_name). Tra truoc [o đ]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
+- FPT đt [oppo f1s 2017](product_name) Tra truoc [o đ]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
 - e mua trả góp mà có bằng lái xe CMND hộ khẩu mà trả trước [60 %](prepay_percent) trả trong [4 tháng](installment_payment_period) thì mỗi tháng trả khoảng bao nhiu ạ
 - Tra gop truoc [10 %](prepay_percent) .Moi thang dong bao nhieu vay
 - E muốn mua trả góp [0 %](interest_rate) trả trước [10 %](prepay_percent) góp trong [6 t](installment_payment_period) nếu k đóng phí bảo hiểm thì 1 tháng góp bao nhiêu vậy ad
@@ -2057,18 +2057,18 @@ data/prepay_percent.txt
 - Cho minh hoi minh tra gop goi [0 d]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi moi thang phai tra la bao nhieu va can nhung giay to gi
 - Neu minh tra truoc [30 %](prepay_percent) thi gop 12t thi moi thang bn?
 - fpt cho hoi the em mua tra gop ma tra truoc [30 %](prepay_percent) thi moi thang tra bao nhieu va trong vong may thang
-- FPT dt [oppo f1s 2017](product_name). Tra truoc [o d]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
+- FPT dt [oppo f1s 2017](product_name) Tra truoc [o d]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
 - e mua tra gop ma co bang lai xe CMND ho khau ma tra truoc [60 %](prepay_percent) tra trong [4 thang](installment_payment_period) thi moi thang tra khoang bao nhiu a
 - Tra gop truoc [10 %](prepay_percent) .Moi thang dong bao nhieu vay
 - E muon mua tra gop [0 %](interest_rate) tra truoc [10 %](prepay_percent) gop trong [6 t](installment_payment_period) neu k dong phi bao hiem thi 1 thang gop bao nhieu vay ad
 - Tra truoc [10 %](prepay_percent) va ko mua bao hiem thi moi thang gop bao nhiu vay ad
 - Tra gop [0 d]{"entity":"price","role":"prepay"} ko mua bao hiem vay dong [6 thang](installment_payment_period) nhieu vay.
 - Ad oi minh muon mua [nova 2i](product_name) tra truoc [20 %](prepay_percent) gop [12 thang](installment_payment_period) vay thang la minh gop bao nhieu
-- Trả góp [10 %](prepay_percent) .lãi suất [0 %](interest_rate).[6 thang](installment_payment_period). Vay mỗi tháng góp bao nhieu
+- Trả góp [10 %](prepay_percent) .lãi suất [0 %](interest_rate).[6 thang](installment_payment_period) Vay mỗi tháng góp bao nhieu
 - Trả góp [10 %](prepay_percent) trong vòng [6 tháng](installment_payment_period) của FE k mua phí bảo hiểm thì mỗi tháng góp bao nhiêu tiền?
 - trả góp [0 %](interest_rate) vậy mỗi tháng góp bao nhiêu?
-- QTV cho hỏi là mua trả góp trả trước [10 %](prepay_percent) góp [12 tháng](installment_payment_period). thì mỗi tháng góp bao nhiêu tiền vậy.thank!
-- [Mi A1](product_name) trả góp. mình trả trước [50 %](prepay_percent) thì còn bao nhiêu
+- QTV cho hỏi là mua trả góp trả trước [10 %](prepay_percent) góp [12 tháng](installment_payment_period) thì mỗi tháng góp bao nhiêu tiền vậy.thank!
+- [Mi A1](product_name) trả góp mình trả trước [50 %](prepay_percent) thì còn bao nhiêu
 - [Oppo a71](product_name) trả trước [3000]{"entity":"price","role":"prepay"} còn lại trả trong [4 tháng](installment_payment_period) thì moi tháng trả bn vậy
 - mua tra gop oppo a71 co CMND + HK + hdon dien nuoc tra truoc 10% tra 12thag moi thag tra bao nhieu fpt
 - trả góp [0 %](interest_rate) thì trong mấy tháng và trả trước bao nhiêu % mỗi tháng góp bao nhiêu
@@ -2142,7 +2142,7 @@ data/prepay_percent.txt
 - P cho mk hỏi bn tuổi vs đk mua trả góp ag
 - Đủ 20 tuổi nhưng chủa đủ tháng có mua được không ạ !!
 - FPT lạng sơn có bán trả góp Huawei Nova 2i k ạ ?
-- Hiện giờ em mới 19t có CMND với bằng lái. Không biết bên Fptshop có hỗ trợ cho em góp sản phẩm này được không ạ ?
+- Hiện giờ em mới 19t có CMND với bằng lái Không biết bên Fptshop có hỗ trợ cho em góp sản phẩm này được không ạ ?
 - Mua trả góp cần giấy chứng minh thư bao nhiêu tuổi mới đủ yêu cầu vậy
 - Cho em hoi la sinh nam 98 co tra gop duoc k
 - Cho minh hoi ngay mai 23/11 minh du tuoi v minh ra mua tra gop dc chua
@@ -2166,7 +2166,7 @@ data/prepay_percent.txt
 - Em sinh ngay 29/10/1998 va cung dang la sinh vien thi em co the tra gop duoc khong a?
 - 19 tuoi tu mua tra gop khong can nguoi bao lanh duoc khong
 - Voi may moi thi 18 tuoi co tra gop duoc khong Quan Tri Vien
-- Em sinh 9/8/1998 hien la sinh vien em da co CMND va bang lai xe roi. Em muon tra gop duoc khong ?
+- Em sinh 9/8/1998 hien la sinh vien em da co CMND va bang lai xe roi Em muon tra gop duoc khong ?
 - Shop cho em hoi em con sinh vien chua du 20t mua tra gop dc k a
 - Ad cho e hoi e sn 98 co the mua tra gop dx kg vay
 - em la sinh vien nam nhat du 18 tuoi co mua tra gop tai fpt shop duoc khong a
@@ -2175,13 +2175,13 @@ data/prepay_percent.txt
 - Em sinh nam 99 la sv nam nhat mun mua tra gop thi can co nhung giay to ntn a
 - E 19t co duoc tra gop ko ak?
 - bao nhieu tuoi thi moi dc tra gop vay ad
-- hien tai e du 18 tuoi . E co the tra gop dt zenfone 4 max pro nay duoc khong a ?
+- hien tai e du 18 tuoi  E co the tra gop dt zenfone 4 max pro nay duoc khong a ?
 - 19t tra gop duoc ko nhi
 - Bao nhiêu tuỗi mởi trả góp được admin
 - Em sinh ngày 29/10/1998 và cũng đang là sinh viên thì em có thể trả góp được không ạ?
 - 19 tuổi tự mua trả góp không cần người bảo lãnh được không
 - Với máy mới thì 18 tuổi có trả góp được không Quản Trị Viên
-- Em sinh 9/8/1998 hiện là sinh viên em đã có CMND và bằng lái xe rồi. Em muốn trả góp được không ?
+- Em sinh 9/8/1998 hiện là sinh viên em đã có CMND và bằng lái xe rồi Em muốn trả góp được không ?
 - Shop cho em hỏi em còn sinh viên chưa đủ 20t mua trả gop đc k ạ
 - Ad cho e hoi e sn 98 co the mua tra gop dx kg vay
 - em là sinh viên năm nhất đủ 18 tuổi có mua trả góp tại fpt shop được không ạ
@@ -2190,7 +2190,7 @@ data/prepay_percent.txt
 - Em sinh năm 99 là sv năm nhất mún mua trả góp thì cần có những giấy tờ ntn ạ
 - E 19t có đuoc trả góp ko ạk?
 - bao nhiêu tuổi thì mới dc trả góp vạy ad
-- hiện tại e đủ 18 tuổi . E có thể trả góp đt zenfone 4 max pro này được không ạ ?
+- hiện tại e đủ 18 tuổi  E có thể trả góp đt zenfone 4 max pro này được không ạ ?
 - 19t trả góp được ko nhỉ
 - Cho e hoi em moi co 16 tui tu minh dung ten mua tra gop duoc khong z
 - cho em hỏi sinh viên năm nhất 18 tuổi có thẻ sv giấy CMND và sổ hộ khẩu vậy có thể mua trả góp đc k ạ
