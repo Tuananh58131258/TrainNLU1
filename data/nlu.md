@@ -3359,6 +3359,10 @@ data/prepay_percent.txt
 - 0 dong
 - o dong
 - o đồng
+- o đ
+- o d
+- o đồng
+- o dong
 - không đồng
 
 ## synonym: camera trước
