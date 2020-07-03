@@ -136,6 +136,38 @@
 - kem coi
 - sai roi, chan ghe
 
+## lookup:product_name
+
+data/product_name.txt
+
+## lookup:ram
+
+data/ram.txt
+
+## lookup:rom
+
+data/rom.txt
+
+## lookup:price
+
+data/price.txt
+
+## lookup:installment_payment_period
+
+data/thoigian.txt
+
+## lookup: customer_name
+
+data/fullname.txt
+
+## lookup: phone_num
+
+data/phonenum.txt
+
+## lookup: prepay_percent
+
+data/prepay_percent.txt
+
 ## intent: product_price
 
 <!-- Hỏi giá của sản phẩm -->
@@ -3366,38 +3398,6 @@
 - mang 2g
 - 2G
 - mạng di động
-
-## lookup:product_name
-
-data/product_name.txt
-
-## lookup:ram
-
-data/ram.txt
-
-## lookup:rom
-
-data/rom.txt
-
-## lookup:price
-
-data/price.txt
-
-## lookup:installment_payment_period
-
-data/thoigian.txt
-
-## lookup: customer_name
-
-data/fullname.txt
-
-## lookup: phone_num
-
-data/phonenum.txt
-
-## lookup: prepay_percent
-
-data/prepay_percent.txt
 
 <!-- ## regex:prepay_percent
 - [0-9]{1,2}\s?% -->
