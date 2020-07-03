@@ -3335,7 +3335,7 @@ data/prepay_percent.txt
 - chip xu ly
 - chip xu ly
 
-## synonym: GPU
+## synonym:GPU
 
 - chíp đồ họa
 - card đồ họa
@@ -3347,7 +3347,7 @@ data/prepay_percent.txt
 - gpu
 - GPU
 
-## synonym: 0 đ
+## synonym:0 đ
 
 - 0d
 - 0đ
@@ -3365,7 +3365,7 @@ data/prepay_percent.txt
 - o dong
 - không đồng
 
-## synonym: camera trước
+## synonym:camera trước
 
 - cam trước
 - camera trước
@@ -3374,28 +3374,28 @@ data/prepay_percent.txt
 - camera truoc
 - camera phia truoc
 
-## synonym: camera sau
+## synonym:camera sau
 
 - cam sau
 - camera sau
 - camera phía sau
 - cam
 
-## synonym: Băng tần 3G
+## synonym:Băng tần 3G
 
 - 3g
 - mạng 3g
 - mang 3g
 - 3G
 
-## synonym: Băng tần 4G
+## synonym:Băng tần 4G
 
 - 4g
 - mạng 4g
 - mang 4g
 - 4G
 
-## synonym: Băng tần 2G
+## synonym:Băng tần 2G
 
 - 2g
 - mạng 2g
