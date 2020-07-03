@@ -1098,10 +1098,10 @@
 
 <!-- tìm sản phẩm trong một khoảng giá -->
 
-- khoang [6 m 7]{"entity":"price","role":"from_price"}-[1,8 trieu]{"entity":"price","role":"to_price"}
-- khoang [2.6 trieu]{"entity":"price","role":"from_price"}-[ba trieu tam]{"entity":"price","role":"to_price"}
-- khoang [9 m 2]{"entity":"price","role":"from_price"}-[bay trieu sau]{"entity":"price","role":"to_price"}
-- khoang [bay trieu sau]{"entity":"price","role":"from_price"}-[9,7 trieu]{"entity":"price","role":"to_price"}
+- khoang [6 m 7]{"entity":"price","role":"from_price"} [1,8 trieu]{"entity":"price","role":"to_price"}
+- khoang [2.6 trieu]{"entity":"price","role":"from_price"} [ba trieu tam]{"entity":"price","role":"to_price"}
+- khoang [9 m 2]{"entity":"price","role":"from_price"} [bay trieu sau]{"entity":"price","role":"to_price"}
+- khoang [bay trieu sau]{"entity":"price","role":"from_price"} [9,7 trieu]{"entity":"price","role":"to_price"}
 - khoang [5,1 trieu]{"entity":"price","role":"from_price"} den [7.4 trieu]{"entity":"price","role":"to_price"}
 - khoang [5,6 trieu]{"entity":"price","role":"from_price"} den [6.2 trieu]{"entity":"price","role":"to_price"}
 - khoang [nam trieu sau]{"entity":"price","role":"from_price"} den [7 m 2]{"entity":"price","role":"to_price"}
@@ -1110,10 +1110,10 @@
 - chung [2 m 7]{"entity":"price","role":"from_price"} den [tam trieu ruoi]{"entity":"price","role":"to_price"}
 - chung [2.9 trieu]{"entity":"price","role":"from_price"} den [ba trieu]{"entity":"price","role":"to_price"}
 - chung [mot trieu bon]{"entity":"price","role":"from_price"} den [bay trieu sau]{"entity":"price","role":"to_price"}
-- tam [7 m 7]{"entity":"price","role":"from_price"}-[9.2 trieu]{"entity":"price","role":"to_price"} gi do
-- tam [mot trieu sau]{"entity":"price","role":"from_price"}-[5.4 trieu]{"entity":"price","role":"to_price"} gi do
-- tam [6.6 trieu]{"entity":"price","role":"from_price"}-[mot trieu]{"entity":"price","role":"to_price"} gi do
-- tam [mot trieu ruoi]{"entity":"price","role":"from_price"}-[ba trieu mot]{"entity":"price","role":"to_price"} gì đó
+- tam [7 m 7]{"entity":"price","role":"from_price"} [9.2 trieu]{"entity":"price","role":"to_price"} gi do
+- tam [mot trieu sau]{"entity":"price","role":"from_price"} [5.4 trieu]{"entity":"price","role":"to_price"} gi do
+- tam [6.6 trieu]{"entity":"price","role":"from_price"} [mot trieu]{"entity":"price","role":"to_price"} gi do
+- tam [mot trieu ruoi]{"entity":"price","role":"from_price"} [ba trieu mot]{"entity":"price","role":"to_price"} gì đó
 - có [Realme](product_company) trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"}
 - có [Vsmart](product_company) trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có [Itel](product_company) trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
@@ -1867,7 +1867,7 @@
 ## intent: what_license
 
 <!-- mua trả góp cần giấy tờ gì -->
-
+- AD cho mình hỏi là có chứng minh nhân dân vs bằng lái xe có thể mua trả góp đc k ạ
 - cho em hỏi là hộ khẩu để làm thủ tục trả góp là bản chính hay là bản sao có công chứng ạ ?
 - [oppo f1s](product_name) 2017 .mình muốn mua trả góp [0 %](interest_rate) .cần giấy tờ gì QTV
 - Có giấy chứng minh với bằng lái xe đăng kí được không ạ
@@ -2112,7 +2112,6 @@
 - FPT lạng sơn có bán trả góp Huawei Nova 2i k ạ ?
 - Hiện giờ, em mới 19t, có CMND với bằng lái. Không biết bên Fptshop có hỗ trợ cho em góp sản phẩm này được không ạ ?
 - Mua trả góp cần giấy chứng minh thư bao nhiêu tuổi mới đủ yêu cầu vậy
-- AD cho mình hỏi là có chứng minh nhân dân vs bằng lái xe có thể mua trả góp đc k ạ
 - Cho em hoi la sinh nam 98 co tra gop duoc k
 - Cho minh hoi ngay mai 23/11 minh du tuoi v minh ra mua tra gop dc chua
 - sinh viên bn tuổi trả góp đc qtv với thủ tục ntn
@@ -2876,8 +2875,8 @@
 - ở đây có [Huawei Mate 30 RS Porsche Design](product_name) không nhỉ
 - có bản [ss a21s](product_name) bản rom [256gb](rom) ram [3 gb](ram) không nhỉ không nhỉ
 - có [realme 6i](product_name) bản rom [32gb](rom) không nhỉ không nhỉ
-- có [Xiaomi Redmi Note 8](product_name) bản [12 gb](ram) - [128 gb](rom) không nhỉ không nhỉ
-- ở đây có [Huawei Nova 5T](product_name) bản [12 GB](ram) - [128gb](rom) không nhỉ không nhỉ
+- có [Xiaomi Redmi Note 8](product_name) bản [12 gb](ram) [128 gb](rom) không nhỉ không nhỉ
+- ở đây có [Huawei Nova 5T](product_name) bản [12 GB](ram) [128gb](rom) không nhỉ không nhỉ
 - có bản [Samsung Galaxy A51 5G](product_name) bản ram [4 GB](ram) không nhỉ không
 - có [Huawei Mate 40](product_name) bản ram [4mb](ram) không không vậy
 - ở đây có [Realme 6](product_name) bản rom [16gb](rom) ram [3 gb](ram) không vậy không nhỉ
@@ -2886,15 +2885,15 @@
 - co [Huawei Mate 40](product_name) ban ram [4mb](ram) khong khong vay
 - o day co [Realme 6](product_name) ban rom [16gb](rom) ram [3 gb](ram) khong vay khong nhi
 - o day co [ss s10](product_name) ban rom [16 gb](rom) ram [3 gb](ram) khong vay khong nhi
-- o day co [Realme C3](product_name) ban [8 mb](ram) - [32 gb](rom) khong nhi khong vay
-- o day co [Nokia 150](product_name) ban [12 gb](ram) - [128 gb](rom) khong nhi khong vay
+- o day co [Realme C3](product_name) ban [8 mb](ram) [32 gb](rom) khong nhi khong vay
+- o day co [Nokia 150](product_name) ban [12 gb](ram) [128 gb](rom) khong nhi khong vay
 - o day co [realme 6](product_name) ban rom [64 GB](rom) ram [8 MB](ram) khong nhi khong vay
 - ad oi co [ss a71 5g](product_name) ban rom [64gb](rom) khong vay khong vay
 - co ban [Nokia 3.2](product_name) ban ram [2 GB](ram) khong vay khong nhi
 - o day co [Xiaomi Black Shark 2 Pro](product_name) ban rom [512gb](rom) khong nhi khong
 - o day co [Nokia 110 DS](product_name) ban ram [2 GB](ram) khong khong vay
 - o day co [OPPO Reno Ace 2](product_name) ban ram [4 GB](ram) khong nhi khong vay
-- o day co [Huawei Nova 7](product_name) ban [3 gb](ram) - [8gb](rom) khong vay khong
+- o day co [Huawei Nova 7](product_name) ban [3 gb](ram) [8gb](rom) khong vay khong
 - ad oi co [Vsmart Joy 3](product_name) ban ram [3 GB](ram) rom [256gb](rom) khong khong
 - có bản [ss watch active](product_name) bản rom [16GB](rom) ram [2 gb](ram) không vậy không
 - có bản [Huawei Enjoy 10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không vậy
