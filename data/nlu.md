@@ -511,7 +511,7 @@ data/prepay_percent.txt
 - [Samsung Galaxy Xcover Pro](product_name) mua online co gia bao nhieu
 - [ss a70](product_name) mua online hien nay co gia bao nhieu
 - san pham [Xiaomi Redmi 9](product_name) mua online co gia bao nhieu
-- [Nokia 105 Single Sim (2017)](product_name) gia mua online la bao nhieu
+- [Nokia 105 Single Sim  2017](product_name) gia mua online la bao nhieu
 - [Nokia 1.3](product_name) mua online co gia bao nhieu
 - dien thoai [Xiaomi Redmi Note 9 Pro](product_name) co gia bao nhieu khi mua online
 - dien thoai [Huawei Nova 6](product_name) gia khi mua online
@@ -698,7 +698,7 @@ data/prepay_percent.txt
 - giá sản phẩm [ss z flip 5g](product_name) khi mua cũ như thế nào
 - giá của sản phẩm [Samsung Galaxy A60](product_name) cũ là bao nhiêu
 - giá của điện thoại [Vivo Y70s 5G](product_name) cũ là bao nhiêu
-- giá của điện thoại [Nokia 105 Single Sim (2017)](product_name) cũ là bao nhiêu
+- giá của điện thoại [Nokia 105 Single Sim  2017](product_name) cũ là bao nhiêu
 - giá của điện thoại [Realme 6](product_name) khi mua cũ như thế nào
 - giá của điện thoại [Huawei Mate 30](product_name) khi mua cũ như thế nào
 - giá sản phẩm [Xiaomi Redmi 8](product_name) cũ là bao nhiêu
@@ -1741,14 +1741,14 @@ data/prepay_percent.txt
 - máy này xài màn hình gì vậy
 - thông tin màn hình của máy này
 - màn hình của [Masstel Play 30](product_name) là màn hình gì?
-- màn hình của [Nokia 105 Single Sim (2017)](product_name) là màn hình gì?
+- màn hình của [Nokia 105 Single Sim  2017](product_name) là màn hình gì?
 - [Masstel Fami P25](product_name) sử dụng màn hình gì?
 - [Samsung Galaxy A80](product_name) sử dụng màn hình gì?
 - Màn hình của [ss 10](product_name) là màn hình loại nào
 - [ss a10s](product_name) sử dụng công nghệ màn hình gì?
 - [ss a20s](product_name) sử dụng màn hình gì?
 - Màn hình của [Itel It2580](product_name) là màn hình loại nào
-- Màn hình của [Nokia 105 Single Sim (2017)](product_name) là màn hình loại nào
+- Màn hình của [Nokia 105 Single Sim  2017](product_name) là màn hình loại nào
 - Màn hình của [Itel It2123V](product_name) là màn hình loại nào
 - may nay dung man hinh gi vay
 - dung man hinh gi vay a
@@ -1756,14 +1756,14 @@ data/prepay_percent.txt
 - may nay xai man hinh gi vay
 - thong tin man hinh cua may nay
 - man hinh cua [Masstel Play 30](product_name) la man hinh gi?
-- man hinh cua [Nokia 105 Single Sim (2017)](product_name) la man hinh gi?
+- man hinh cua [Nokia 105 Single Sim  2017](product_name) la man hinh gi?
 - [Masstel Fami P25](product_name) su dung man hinh gi?
 - [Samsung Galaxy A80](product_name) su dung man hinh gi?
 - Man hinh cua [ss 10](product_name) la man hinh loai nao
 - [ss a10s](product_name) su dung cong nghe man hinh gi?
 - [ss a20s](product_name) su dung man hinh gi?
 - Man hinh cua [Itel It2580](product_name) la man hinh loai nao
-- Man hinh cua [Nokia 105 Single Sim (2017)](product_name) la man hinh loai nao
+- Man hinh cua [Nokia 105 Single Sim  2017](product_name) la man hinh loai nao
 - Man hinh cua [Itel It2123V](product_name) la man hinh loai nao
 - Màn hình của [Samsung Galaxy A60](product_name) là màn hình loại nào
 - [OPPO A72](product_name) sử dụng màn hình loại gì?
@@ -2261,7 +2261,7 @@ data/prepay_percent.txt
 - Co ban tra gop k v
 - [Oppof1s 2016](product_name) co dc tra gop ko ak
 - Minh muon mua oppo [f1s 2017](product_name) tra truoc [0 d]{"entity":"price","role":"prepay"} co dc ko ak
-- Minh muon mua oppo [f1s(2017)](product_name) san pham co ho tro tra gop [0 %](interest_rate) khong vay ban
+- Minh muon mua oppo [f1s 2017](product_name) san pham co ho tro tra gop [0 %](interest_rate) khong vay ban
 - may [oppo f1s](product_name) nay co tra trc [o d]{"entity":"price","role":"prepay"} khong ak
 - E mun mua dt oppo tra gop dc k ak
 - cho hỏi [Huawei Enjoy 10e](product_name) có được mua trả góp hay không
@@ -2285,7 +2285,7 @@ data/prepay_percent.txt
 - Có bán trả góp k v
 - [Oppof1s 2016](product_name) co dc tra gop ko ak
 - Minh muon mua oppo [f1s 2017](product_name) tra truoc [0 đ]{"entity":"price","role":"prepay"} co dc ko ak
-- Mình muốn mua oppo [f1s(2017)](product_name) sản phẩm có hổ trợ trả góp [0 %](interest_rate) không vậy bạn
+- Mình muốn mua oppo [f1s 2017](product_name) sản phẩm có hổ trợ trả góp [0 %](interest_rate) không vậy bạn
 - may [oppo f1s](product_name) nay co tra trc [o d]{"entity":"price","role":"prepay"} khong ak
 - E mun mua dt oppo tra gop dc k ak
 - e muon mua mot cai dt [samsung j2](product_name) tra truoc [o d]{"entity":"price","role":"prepay"} co dc ko z
