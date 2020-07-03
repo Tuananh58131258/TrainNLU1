@@ -5,7 +5,7 @@
 - chào em
 - hello em
 - hi em
-- em ơi, cho anh hỏi
+- em ơi cho anh hỏi
 - bot ơi
 - cho mình hỏi chút
 - chào bạn nha
@@ -126,7 +126,7 @@
 - dở ghê
 - có thế mà cũng không biết
 - kém cỏi
-- sai rồi, chán ghê
+- sai rồi chán ghê
 - qua te
 - ngu ngoc
 - cha biet gi ca
@@ -134,7 +134,7 @@
 - do ghe
 - co the ma cung khong biet
 - kem coi
-- sai roi, chan ghe
+- sai roi chan ghe
 
 ## lookup:product_name
 
@@ -1231,34 +1231,34 @@ data/prepay_percent.txt
 - tôi muốn một chiếc điện thoại trong khoảng [bảy triệu tám]{"entity":"price","role":"from_price"} đến [hâm lăm triệu]{"entity":"price","role":"to_price"}
 - khoảng [bảy triệu tám]{"entity":"price","role":"from_price"} hay [hâm lăm triệu]{"entity":"price","role":"to_price"}
 - [3]{"entity":"price","role":"from_price"} [4 trieu]{"entity":"price","role":"to_price"} gi do
-- [8 m 6]{"entity": "price", "role": "from_price"} [1,7 trieu]{"entity": "price", "role": "to_price"} gi thoi
-- [2.7 trieu]{"entity": "price", "role": "from_price"} [9.6 trieu]{"entity": "price", "role": "to_price"} gi do
-- [4,6 trieu]{"entity": "price", "role": "from_price"} [9 m 2]{"entity": "price", "role": "to_price"} gi do
-- [nam trieu chin]{"entity": "price", "role": "from_price"} [muoi ba trieu]{"entity": "price", "role": "to_price"} thoi
-- [4 m 2]{"entity": "price", "role": "from_price"} [muoi chin trieu]{"entity": "price", "role": "to_price"} gi thoi
-- [hai muoi ba trieu]{"entity": "price", "role": "from_price"} [2.3 trieu]{"entity": "price", "role": "to_price"} gi thoi
-- [sau trieu nam]{"entity": "price", "role": "from_price"} [2,5 trieu]{"entity": "price", "role": "to_price"} thoi
-- [5 trieu]{"entity": "price", "role": "from_price"} [2,8 trieu]{"entity": "price", "role": "to_price"} gi do
-- [9 m 4]{"entity": "price", "role": "from_price"} [9,8 trieu]{"entity": "price", "role": "to_price"} gi do
-- [5 m 5]{"entity": "price", "role": "from_price"} [tam trieu hai]{"entity": "price", "role": "to_price"} thoi
-- [9 m 6]{"entity": "price", "role": "from_price"} [6,7 trieu]{"entity": "price", "role": "to_price"} thoi
-- [bay trieu ruoi]{"entity": "price", "role": "from_price"} [4 m 7]{"entity": "price", "role": "to_price"} gi thoi
-- [sau trieu chin]{"entity": "price", "role": "from_price"} [sau trieu nam]{"entity": "price", "role": "to_price"} gi thoi
-- [3 trieu 3]{"entity": "price", "role": "from_price"} [4,9 trieu]{"entity": "price", "role": "to_price"} gi thoi
-- [1 m 3]{"entity": "price", "role": "from_price"} hay [9 m 3]{"entity": "price", "role": "to_price"} gi thoi
-- [6,3 trieu]{"entity": "price", "role": "from_price"} hay [5,8 trieu]{"entity": "price", "role": "to_price"} gi do
-- [3,8 trieu]{"entity": "price", "role": "from_price"} hay [sau trieu bay]{"entity": "price", "role": "to_price"} thoi
-- [3,3 trieu]{"entity": "price", "role": "from_price"} hay [4.1 trieu]{"entity": "price", "role": "to_price"} gi do
-- [sau trieu]{"entity": "price", "role": "from_price"} hay [sau trieu bay]{"entity": "price", "role": "to_price"} gi thoi
-- [5,6 trieu]{"entity": "price", "role": "from_price"} hay [hai trieu tam]{"entity": "price", "role": "to_price"} thoi
-- [2.8 triệu]{"entity": "price", "role": "from_price"} hay [8 m 3]{"entity": "price", "role": "to_price"} gì thôi
-- [1 m 4]{"entity": "price", "role": "from_price"} hay [3 m 4]{"entity": "price", "role": "to_price"} gì đó
-- [ba triệu sáu]{"entity": "price", "role": "from_price"} hay [7.8 triệu]{"entity": "price", "role": "to_price"} gì đó
-- [8.2 triệu]{"entity": "price", "role": "from_price"} hay [8,2 triệu]{"entity": "price", "role": "to_price"} thôi
-- [7,7 triệu]{"entity": "price", "role": "from_price"} hay [8.5 triệu]{"entity": "price", "role": "to_price"} gì thôi
-- [3.9 triệu]{"entity": "price", "role": "from_price"} hay [chín triệu bảy]{"entity": "price", "role": "to_price"} gì đó
-- [3 m 1]{"entity": "price", "role": "from_price"} hay [8.6 triệu]{"entity": "price", "role": "to_price"} thôi
-- [5 m 5]{"entity": "price", "role": "from_price"} hay [mười bảy triệu]{"entity": "price", "role": "to_price"} thôi
+- [8 m 6]{"entity": "price","role": "from_price"} [1,7 trieu]{"entity": "price","role": "to_price"} gi thoi
+- [2.7 trieu]{"entity": "price","role": "from_price"} [9.6 trieu]{"entity": "price","role": "to_price"} gi do
+- [4,6 trieu]{"entity": "price","role": "from_price"} [9 m 2]{"entity": "price","role": "to_price"} gi do
+- [nam trieu chin]{"entity": "price","role": "from_price"} [muoi ba trieu]{"entity": "price","role": "to_price"} thoi
+- [4 m 2]{"entity": "price","role": "from_price"} [muoi chin trieu]{"entity": "price","role": "to_price"} gi thoi
+- [hai muoi ba trieu]{"entity": "price","role": "from_price"} [2.3 trieu]{"entity": "price","role": "to_price"} gi thoi
+- [sau trieu nam]{"entity": "price","role": "from_price"} [2,5 trieu]{"entity": "price","role": "to_price"} thoi
+- [5 trieu]{"entity": "price","role": "from_price"} [2,8 trieu]{"entity": "price","role": "to_price"} gi do
+- [9 m 4]{"entity": "price","role": "from_price"} [9,8 trieu]{"entity": "price","role": "to_price"} gi do
+- [5 m 5]{"entity": "price","role": "from_price"} [tam trieu hai]{"entity": "price","role": "to_price"} thoi
+- [9 m 6]{"entity": "price","role": "from_price"} [6,7 trieu]{"entity": "price","role": "to_price"} thoi
+- [bay trieu ruoi]{"entity": "price","role": "from_price"} [4 m 7]{"entity": "price","role": "to_price"} gi thoi
+- [sau trieu chin]{"entity": "price","role": "from_price"} [sau trieu nam]{"entity": "price","role": "to_price"} gi thoi
+- [3 trieu 3]{"entity": "price","role": "from_price"} [4,9 trieu]{"entity": "price","role": "to_price"} gi thoi
+- [1 m 3]{"entity": "price","role": "from_price"} hay [9 m 3]{"entity": "price","role": "to_price"} gi thoi
+- [6,3 trieu]{"entity": "price","role": "from_price"} hay [5,8 trieu]{"entity": "price","role": "to_price"} gi do
+- [3,8 trieu]{"entity": "price","role": "from_price"} hay [sau trieu bay]{"entity": "price","role": "to_price"} thoi
+- [3,3 trieu]{"entity": "price","role": "from_price"} hay [4.1 trieu]{"entity": "price","role": "to_price"} gi do
+- [sau trieu]{"entity": "price","role": "from_price"} hay [sau trieu bay]{"entity": "price","role": "to_price"} gi thoi
+- [5,6 trieu]{"entity": "price","role": "from_price"} hay [hai trieu tam]{"entity": "price","role": "to_price"} thoi
+- [2.8 triệu]{"entity": "price","role": "from_price"} hay [8 m 3]{"entity": "price","role": "to_price"} gì thôi
+- [1 m 4]{"entity": "price","role": "from_price"} hay [3 m 4]{"entity": "price","role": "to_price"} gì đó
+- [ba triệu sáu]{"entity": "price","role": "from_price"} hay [7.8 triệu]{"entity": "price","role": "to_price"} gì đó
+- [8.2 triệu]{"entity": "price","role": "from_price"} hay [8,2 triệu]{"entity": "price","role": "to_price"} thôi
+- [7,7 triệu]{"entity": "price","role": "from_price"} hay [8.5 triệu]{"entity": "price","role": "to_price"} gì thôi
+- [3.9 triệu]{"entity": "price","role": "from_price"} hay [chín triệu bảy]{"entity": "price","role": "to_price"} gì đó
+- [3 m 1]{"entity": "price","role": "from_price"} hay [8.6 triệu]{"entity": "price","role": "to_price"} thôi
+- [5 m 5]{"entity": "price","role": "from_price"} hay [mười bảy triệu]{"entity": "price","role": "to_price"} thôi
 
 ## intent: find_product_lower_price
 
@@ -1904,17 +1904,17 @@ data/prepay_percent.txt
 - [oppo f1s](product_name) 2017 .mình muốn mua trả góp [0 %](interest_rate) .cần giấy tờ gì QTV
 - Có giấy chứng minh với bằng lái xe đăng kí được không ạ
 - cho m hỏi trả góp [0 %](interest_rate) cần những giấy tờ gì và thủ tục làm như thế nào ak
-- [oppo f1s](product_name) lấy trả góp giấy tờ . hộ khẩu chứng minh nhân dân có được không ạ
+- [oppo f1s](product_name) lấy trả góp giấy tờ hộ khẩu chứng minh nhân dân có được không ạ
 - Hóa đơn điện nước có thể lấy chỗ mk đang tạm trú đc k ạ, hay phải lấy hóa đơn gia đình?
 - ChAo ban minh muon mua tr gop nhung minh chi co ho khau Voi cmt thoi nhung minh can cmt de di lam vay co the trs gop dc ko
 - cho hỏi giờ mình mua trả góp là cần giấy tờ gì ạ
 - Mình có cmnd bản gốc và hộ khẩu phổi công chứng có đc mua trả góp [0 %](interest_rate) k ad?
 - Fpt cho em hỏi là sinh viên muốn mua sản phẩm đt trả góp cần những giấy tờ gì ah.em có chứng minh thư vs thẻ sinh viên có đc ko
 - trả góp chỉ cần chứng minh thư và bằng lái xe là đc hả bạn.mình ở nội thành hải phòng
-- Em là sv nam nay 20 tuoi muốn mua trả góp trả trc [30 %](prepay_percent) trả trong [10 thang](installment_payment_period). Khi đi mua cần đem theo gì ạ
+- Em là sv nam nay 20 tuoi muốn mua trả góp trả trc [30 %](prepay_percent) trả trong [10 thang](installment_payment_period) Khi đi mua cần đem theo gì ạ
 - giay to gi de tra gop
 - Cho em hỏi em muốn mua trả góp trả trước khoảng [30](prepay_percent) hoặc [40 %](prepay_percent) trả trong vòng [8](installment_payment_period) đến [9 tháng](installment_payment_period) e cần những loại giấy tờ nào
-- mình muốn mua trả góp thì cần thủ tục thế nào. cmnd + bằng lái xe thôi có đc ko
+- mình muốn mua trả góp thì cần thủ tục thế nào cmnd + bằng lái xe thôi có đc ko
 - E đang đi bộ đội hiện giờ e có giấy phép lái xe chứng minh nhân dân và thẻ bảo hiểm y tế của quân đội cấp thì có đủ điều kiện để trả góp không vậy
 - gói trả góp [0 %](interest_rate) lãi suất cần những gì bn
 - chào ad, mình là sinh viên muốn mua trả góp máy thì cần những lưu ý gì ạ?
@@ -1922,31 +1922,31 @@ data/prepay_percent.txt
 - Cho mình hỏi trả góp 0% cần bằng lái xe và cmtnd có phải cung cấp thêm bao nhiu số điện thoại người thân nữa để làm thủ tục ạ
 - Mua tra gop ko co ho khau co duoc khong ạ
 - có trả góp được không mà không thấy sohop trả lời vậy.
-- Mua tra góp co cong so HK. Con can j nua ko
+- Mua tra góp co cong so HK Con can j nua ko
 - Giấy cmnd đang trong thời gian làm lại, chỉ có giấy hẹn thôi vậy có mua trả góp được k?
 - Mình muốn mua trả góp mà ko cần hộ khẩu có cách nào được ko qtv.
 - Shop ơi em hiện tại chỉ có giấy CMND không có bằng lái xe thì có mua được không ạ
 - E muon mua tra gop ma CMND cua e het han mua duoc ko
 - [oppo A71](product_name) góp giấy chung minh góc ho khau ban sao duoc không a
 - sổ hộ khẩu photo thì có dc k hả shop
-- Em là sinh viên muốn mua trả góp đt [oppo f1s](product_name) . do học xa nhà nên không có sẳn giấy CMND có công chứng của cha hoặc mẹ thì có mua được kh?
+- Em là sinh viên muốn mua trả góp đt [oppo f1s](product_name)  do học xa nhà nên không có sẳn giấy CMND có công chứng của cha hoặc mẹ thì có mua được kh?
 - Minh muon mua tra gop [0 %](interest_rate) co can ho khau khong vay?
 - Cmnd voi bang lai kon co ho khau duọc ko shop
 - Nếu e có cmnd +bằng lái xe có thê mua trả góp 0đ hai không
 - Em là sinh viên đủ 20 tuổi có thể áp dụng trả góp cho sinh viên được không ạ? Và cần giấy tờ như thế nào? Thủ tục nhanh ko ạ
 - E 19t chỉ có chứng minh và hộ khẩu photo đc ko admin
 - Có cmnd và blx có trả góp [0 lãi suất](interest_rate) có duoc ko fpt sop
-- Trả góp [10 %](prepay_percent) cần giấy tờ j z ad . Tây ninh có hàng chưa z
+- Trả góp [10 %](prepay_percent) cần giấy tờ j z ad  Tây ninh có hàng chưa z
 - Mình muốn mua trả góp lãi suất [0 %](interest_rate) , trả trước [10 %](prepay_percent) .giấy tờ cần là bằng lái và cmnd đc k shop
 - Mìng dùng sổ hộ khẩu photo công chứng đuoc k
 - Chứng minh nhân dân thôi dc k vay
 - em muốn muốn mua trả cóp em có chứng minh thư vs shk phô tô công chứng có đc ko
 - Ad ơi cho e hỏi trả trước [0 đ]{"entity":"price","role":"prepay"} bên mình hồ sơ cần những gì vậy ạ?
 - Cho mình hỏi mình muốn mua máy này trả góp [0 đ]{"entity":"price","role":"prepay"} thì cần những giấy tờ gì ak.
-- Cho mình hỏi chỉ cần lên fpt shop chỉ cần mang theo bằmg lái và cmnn là đủ đk góp r pải k ạ. Có cần bắt buộc thêm sdt ng thân k ạ
+- Cho mình hỏi chỉ cần lên fpt shop chỉ cần mang theo bằmg lái và cmnn là đủ đk góp r pải k ạ Có cần bắt buộc thêm sdt ng thân k ạ
 - Hien tai e lam c.ty e dung 20t e can mag theo gi de mua tra gop the shop
 - Dùng Bản photo được không ạ (có cần công chứng không)
-- Mình mất bằng lái xe. Hộ khẩu lại ở bắc ninh mình dùng sổ tạm trú ở bắc giang để mua trả góp ở bắc giang dk k shop
+- Mình mất bằng lái xe Hộ khẩu lại ở bắc ninh mình dùng sổ tạm trú ở bắc giang để mua trả góp ở bắc giang dk k shop
 - ad ơi cho e hỏi , thủ tục trả góp [0 %](interest_rate) là cmnd+hộ khẩu được k ạ?
 - Trả trước 0đ mà mình chỉ có cmnd và gplx đc kh vậy ad
 - Máy này hỗ trợ gói [0 %](interest_rate) mình có cmnd và gplxe
@@ -1964,9 +1964,9 @@ data/prepay_percent.txt
 - Cmnd vs bằng lái tham gia trả góp [0 đ]{"entity":"price","role":"prepay"} đc k
 - Mình có bằng lái xe + cmtnd có tham gia đk gói trả góp [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
-- chào ad e có CMND, bằng lái xe có trả góp đc k ạ. trả trước [0 %](prepay_percent)
+- chào ad e có CMND, bằng lái xe có trả góp đc k ạ trả trước [0 %](prepay_percent)
 - Dung Ban photo duoc khong a (co can cong chung khong)
-- Minh mat bang lai xe. Ho khau lai o bac ninh minh dung so tam tru o bac giang de mua tra gop o bac giang dk k shop
+- Minh mat bang lai xe Ho khau lai o bac ninh minh dung so tam tru o bac giang de mua tra gop o bac giang dk k shop
 - ad oi cho e hoi , thu tuc tra gop [0 %](interest_rate) la cmnd+ho khau duoc k a?
 - Tra truoc 0d ma minh chi co cmnd va gplx dc kh vay ad
 - May nay ho tro goi [0 %](interest_rate) minh co cmnd va gplxe
@@ -1984,7 +1984,7 @@ data/prepay_percent.txt
 - Cmnd vs bang lai tham gia tra gop [0 d]{"entity":"price","role":"prepay"} dc k
 - Minh co bang lai xe + cmtnd co tham gia dk goi tra gop [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
-- chao ad. e co CMND, bang lai xe co tra gop dc k a. tra truoc [0 %](prepay_percent)
+- chao ad e co CMND, bang lai xe co tra gop dc k a tra truoc [0 %](prepay_percent)
 
 ## intent: many_profile
 
@@ -2023,18 +2023,18 @@ data/prepay_percent.txt
 - Trả góp [6 tháng](installment_payment_period) thì bao nhiêu 1 tháng ạ
 - E trả trước máy này [1500000]{"entity":"price","role":"prepay"} thì mỗi tháng e góp bao nhiêu với lãi xuất [0 %](interest_rate)
 - Không cần trả trước thì mỗi tháng e góp bao nhiu ạ
-- Em muốn mua trả góp , nhung em k trả trước vậy mỗi tháng em phải góp giá thấp nhất bao nhieu vay
+- Em muốn mua trả góp  nhung em k trả trước vậy mỗi tháng em phải góp giá thấp nhất bao nhieu vay
 - Cha chuoc [20 %](prepay_percent) cha [15 thag](installment_payment_period) la thag dog nhiu z shop
 - Cho em hoi goi tra truoc [0 d]{"entity":"price","role":"prepay"} lai suat bao nhieu? Gop moi thang bao nhieu vay?
 - Nếu mua trả góp [OPPO F1S](product_name) mà trả trước [2.000.000]{"entity":"price","role":"prepay"} và góp trong [9 tháng](installment_payment_period) thì lãi suất và số tiền phải trả mỗi tháng là bao nhiêu ạ
 - Cho mình hỏi nếu mình muốn mua trả góp [f1s 2017](product_name) mà trả trước [5 triệu]{"entity":"price","role":"prepay"} thì mình sẽ phải góp trong bao lâu với số tiền bao nhiêu?
-- Cho mình hỏi, mình trả góp gói [0 đ]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi mỗi tháng phải trả la bao nhiêu va cần những giấy tờ gi
+- Cho mình hỏi mình trả góp gói [0 đ]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi mỗi tháng phải trả la bao nhiêu va cần những giấy tờ gi
 - Nếu mình trả trước [30 %](prepay_percent) thì góp 12t thi moi tháng bn?
 - fpt cho hỏi thế em mua trả góp mà trả trước [30 %](prepay_percent) thì mỗi tháng trả bao nhiêu và trong vòng mấy thang
 - FPT đt [oppo f1s 2017](product_name). Tra truoc [o đ]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
-- e mua trả góp mà có bằng lái xe, CMND, hộ khẩu mà trả trước [60 %](prepay_percent) trả trong [4 tháng](installment_payment_period) thì mỗi tháng trả khoảng bao nhiu ạ
+- e mua trả góp mà có bằng lái xe CMND hộ khẩu mà trả trước [60 %](prepay_percent) trả trong [4 tháng](installment_payment_period) thì mỗi tháng trả khoảng bao nhiu ạ
 - Tra gop truoc [10 %](prepay_percent) .Moi thang dong bao nhieu vay
-- E muốn mua trả góp [0 %](interest_rate) trả trước [10 %](prepay_percent) góp trong [6 t](installment_payment_period), nếu k đóng phí bảo hiểm thì 1 tháng góp bao nhiêu vậy ad
+- E muốn mua trả góp [0 %](interest_rate) trả trước [10 %](prepay_percent) góp trong [6 t](installment_payment_period) nếu k đóng phí bảo hiểm thì 1 tháng góp bao nhiêu vậy ad
 - Trả trước [10 %](prepay_percent) và ko mua bảo hiểm thì mỗi tháng góp bao nhiu vậy ad
 - Trả góp [0 đ]{"entity":"price","role":"prepay"} ko mua bảo hiểm vay đóng [6 tháng](installment_payment_period) nhiêu vay.
 - tra bao nhieu 1 thang vay
@@ -2049,18 +2049,18 @@ data/prepay_percent.txt
 - Tra gop [6 thang](installment_payment_period) thi bao nhieu 1 thang a
 - E tra truoc may nay [1500000]{"entity":"price","role":"prepay"} thi moi thang e gop bao nhieu voi lai xuat [0 %](interest_rate)
 - Khong can tra truoc thi moi thang e gop bao nhiu a
-- Em muon mua tra gop , nhung em k tra truoc vay moi thang em phai gop gia thap nhat bao nhieu vay
+- Em muon mua tra gop  nhung em k tra truoc vay moi thang em phai gop gia thap nhat bao nhieu vay
 - Cha chuoc [20 %](prepay_percent) cha [15 thag](installment_payment_period) la thag dog nhiu z shop
 - Cho em hoi goi tra truoc [0 d]{"entity":"price","role":"prepay"} lai suat bao nhieu? Gop moi thang bao nhieu vay?
 - Neu mua tra gop [OPPO F1S](product_name) ma tra truoc [2.000.000]{"entity":"price","role":"prepay"} va gop trong [9 thang](installment_payment_period) thi lai suat va so tien phai tra moi thang la bao nhieu a
 - Cho minh hoi neu minh muon mua tra gop [f1s 2017](product_name) ma tra truoc [5 trieu]{"entity":"price","role":"prepay"} thi minh se phai gop trong bao lau voi so tien bao nhieu?
-- Cho minh hoi, minh tra gop goi [0 d]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi moi thang phai tra la bao nhieu va can nhung giay to gi
+- Cho minh hoi minh tra gop goi [0 d]{"entity":"price","role":"prepay"} trong [8 thang](installment_payment_period) thi moi thang phai tra la bao nhieu va can nhung giay to gi
 - Neu minh tra truoc [30 %](prepay_percent) thi gop 12t thi moi thang bn?
 - fpt cho hoi the em mua tra gop ma tra truoc [30 %](prepay_percent) thi moi thang tra bao nhieu va trong vong may thang
 - FPT dt [oppo f1s 2017](product_name). Tra truoc [o d]{"entity":"price","role":"prepay"} gop thang bao nhieu vay
-- e mua tra gop ma co bang lai xe, CMND, ho khau ma tra truoc [60 %](prepay_percent) tra trong [4 thang](installment_payment_period) thi moi thang tra khoang bao nhiu a
+- e mua tra gop ma co bang lai xe CMND ho khau ma tra truoc [60 %](prepay_percent) tra trong [4 thang](installment_payment_period) thi moi thang tra khoang bao nhiu a
 - Tra gop truoc [10 %](prepay_percent) .Moi thang dong bao nhieu vay
-- E muon mua tra gop [0 %](interest_rate) tra truoc [10 %](prepay_percent) gop trong [6 t](installment_payment_period), neu k dong phi bao hiem thi 1 thang gop bao nhieu vay ad
+- E muon mua tra gop [0 %](interest_rate) tra truoc [10 %](prepay_percent) gop trong [6 t](installment_payment_period) neu k dong phi bao hiem thi 1 thang gop bao nhieu vay ad
 - Tra truoc [10 %](prepay_percent) va ko mua bao hiem thi moi thang gop bao nhiu vay ad
 - Tra gop [0 d]{"entity":"price","role":"prepay"} ko mua bao hiem vay dong [6 thang](installment_payment_period) nhieu vay.
 - Ad oi minh muon mua [nova 2i](product_name) tra truoc [20 %](prepay_percent) gop [12 thang](installment_payment_period) vay thang la minh gop bao nhieu
@@ -2117,12 +2117,12 @@ data/prepay_percent.txt
 - mua trả góp trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hay [5 t]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải trả bao nhiêu
 - mua trả góp trong [1 tháng]{"entity":"installment_payment_period","role":"case1"} hay [2 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng đóng bao nhiêu
 - mua trả góp trong [7 t]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
-- cho mình hỏi mình muốn mua trả góp trong [12 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [6 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
-- cho mình hỏi mình muốn mua trả góp trong [4 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [6 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
-- cho mình hỏi mình muốn mua trả góp trong [8 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [8 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
-- cho mình hỏi mình muốn mua trả góp trong [12 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [4 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
-- cho mình hỏi mình muốn mua trả góp trong [12 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [8 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
-- cho mình hỏi mình muốn mua trả góp trong [6 tháng]{"entity":"installment_payment_period","role":"case1"}, hoặc [9 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
+- cho mình hỏi mình muốn mua trả góp trong [12 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [6 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
+- cho mình hỏi mình muốn mua trả góp trong [4 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [6 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
+- cho mình hỏi mình muốn mua trả góp trong [8 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [8 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
+- cho mình hỏi mình muốn mua trả góp trong [12 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [4 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
+- cho mình hỏi mình muốn mua trả góp trong [12 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [8 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
+- cho mình hỏi mình muốn mua trả góp trong [6 tháng]{"entity":"installment_payment_period","role":"case1"} hoặc [9 tháng]{"entity":"installment_payment_period","role":"case2"} thì mức trả hàng tháng là bao nhiu z
 
 ## intent: age_installment
 
@@ -2132,17 +2132,17 @@ data/prepay_percent.txt
 - Cho em hỏi 16 tuổi có được mua trả góp không ạ
 - Cho e hỏi là e sinh 1/5/1997 e có giấy chứng minh và bằng lái xe e mua trả trước 20% vậy có đc k ạ
 - em sn 98 có cho trả góp k z
-- E có cmnd + hk, trên 20t, muốn mua trả góp trả trước 0đ đc ko ạ
+- E có cmnd + hk trên 20t muốn mua trả góp trả trước 0đ đc ko ạ
 - em sinh 18.11.1997 thì góp được chưa ạ
-- Em 20 tuổi, có cmnd có vay trả góp được không QTV ?
+- Em 20 tuổi có cmnd có vay trả góp được không QTV ?
 - Em sinh năm 98 đã đủ tuổi mua trả góp chưa ạ
 - E 19 tuổi liệu co mua trã gop bằng cmnd vơi bang lai xe đc ko ạ
-- 1 ngày nữa mình đủ 20 tuổi, bh mình qua shop làm trả góp luôn đc k, hóng quá :v
+- 1 ngày nữa mình đủ 20 tuổi bh mình qua shop làm trả góp luôn đc k hóng quá :v
 - Mình năm nay 19 tuổi thì đã đăng kí trả góp được gói trả trước 30% của oppo f1s 2017 chưa ạ?
 - P cho mk hỏi bn tuổi vs đk mua trả góp ag
 - Đủ 20 tuổi nhưng chủa đủ tháng có mua được không ạ !!
 - FPT lạng sơn có bán trả góp Huawei Nova 2i k ạ ?
-- Hiện giờ, em mới 19t, có CMND với bằng lái. Không biết bên Fptshop có hỗ trợ cho em góp sản phẩm này được không ạ ?
+- Hiện giờ em mới 19t có CMND với bằng lái. Không biết bên Fptshop có hỗ trợ cho em góp sản phẩm này được không ạ ?
 - Mua trả góp cần giấy chứng minh thư bao nhiêu tuổi mới đủ yêu cầu vậy
 - Cho em hoi la sinh nam 98 co tra gop duoc k
 - Cho minh hoi ngay mai 23/11 minh du tuoi v minh ra mua tra gop dc chua
@@ -2261,7 +2261,7 @@ data/prepay_percent.txt
 - Co ban tra gop k v
 - [Oppof1s 2016](product_name) co dc tra gop ko ak
 - Minh muon mua oppo [f1s 2017](product_name) tra truoc [0 d]{"entity":"price","role":"prepay"} co dc ko ak
-- Minh muon mua oppo [f1s(2017)](product_name), san pham co ho tro tra gop [0 %](interest_rate) khong vay ban
+- Minh muon mua oppo [f1s(2017)](product_name) san pham co ho tro tra gop [0 %](interest_rate) khong vay ban
 - may [oppo f1s](product_name) nay co tra trc [o d]{"entity":"price","role":"prepay"} khong ak
 - E mun mua dt oppo tra gop dc k ak
 - cho hỏi [Huawei Enjoy 10e](product_name) có được mua trả góp hay không
@@ -2285,7 +2285,7 @@ data/prepay_percent.txt
 - Có bán trả góp k v
 - [Oppof1s 2016](product_name) co dc tra gop ko ak
 - Minh muon mua oppo [f1s 2017](product_name) tra truoc [0 đ]{"entity":"price","role":"prepay"} co dc ko ak
-- Mình muốn mua oppo [f1s(2017)](product_name), sản phẩm có hổ trợ trả góp [0 %](interest_rate) không vậy bạn
+- Mình muốn mua oppo [f1s(2017)](product_name) sản phẩm có hổ trợ trả góp [0 %](interest_rate) không vậy bạn
 - may [oppo f1s](product_name) nay co tra trc [o d]{"entity":"price","role":"prepay"} khong ak
 - E mun mua dt oppo tra gop dc k ak
 - e muon mua mot cai dt [samsung j2](product_name) tra truoc [o d]{"entity":"price","role":"prepay"} co dc ko z
