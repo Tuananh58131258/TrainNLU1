@@ -1030,7 +1030,7 @@
 - [Energizer E241s](product_name) gia la [hai muoi chin trieu](price) phai khong
 - [ss a60](product_name) gia [hai muoi chin trieu](price) phai khong a
 - san pham [Nokia N150](product_name) gia [5,1 trieu](price) phai khong a
-- dien thoai [Xiaomi Redmi Note 8](product_name) co gia [bon trieu tam](price) dung khong
+- dien thoai [Xiaomi Redmi Note 8](product_name) co gia [bon trieu chin](price) dung khong
 - san pham [Nokia 8.3 5G](product_name) co gia [chin trieu bay](price) phai khong a
 - [Huawei Nova 7 Pro 5G](product_name) co gia [2 trieu 2](price) dung khong
 - san pham [ss watch active](product_name) gia [ham sau trieu](price) phai khong
@@ -2030,7 +2030,7 @@
 - Tra gop truoc [10 %](prepay_percent) .Moi thang dong bao nhieu vay
 - E muon mua tra gop [0 %](interest_rate) tra truoc [10 %](prepay_percent) gop trong [6 t](installment_payment_period), neu k dong phi bao hiem thi 1 thang gop bao nhieu vay ad
 - Tra truoc [10 %](prepay_percent) va ko mua bao hiem thi moi thang gop bao nhiu vay ad
-- Tra gop [0 d]{"entity":"price","role":"prepay"}.ko mua bao hiem vay dong [6 thang](installment_payment_period) nhieu vay.
+- Tra gop [0 d]{"entity":"price","role":"prepay"} ko mua bao hiem vay dong [6 thang](installment_payment_period) nhieu vay.
 - Ad oi minh muon mua [nova 2i](product_name) tra truoc [20 %](prepay_percent) gop [12 thang](installment_payment_period) vay thang la minh gop bao nhieu
 - Trả góp [10 %](prepay_percent) .lãi suất [0 %](interest_rate).[6 thang](installment_payment_period). Vay mỗi tháng góp bao nhieu
 - Trả góp [10 %](prepay_percent) trong vòng [6 tháng](installment_payment_period) của FE k mua phí bảo hiểm thì mỗi tháng góp bao nhiêu tiền?
@@ -2070,7 +2070,7 @@
 - muon tra gop trong [8 thang]{"entity":"installment_payment_period","role":"case1"} hay [12 thang]{"entity":"installment_payment_period","role":"case2"} thi mot thang phai tra bao nhieu
 - muon tra gop trong [5 thang]{"entity":"installment_payment_period","role":"case1"} hay [12 thang]{"entity":"installment_payment_period","role":"case2"} moi thang phai dong bao nhieu
 - muon tra gop trong [2 thang]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} thi mot thang phai tra bao nhieu
-- muon tra gop trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [3 thang]{"entity":"installment_payment_period","role":"case2"} thang phai tra nhieu
+- muon tra gop trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [3 thang]{"entity":"installment_payment_period","role":"case2"} moi thang phai tra nhieu
 - muon tra gop trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hay [10 t]{"entity":"installment_payment_period","role":"case2"} moi thang phai tra bao nhieu
 - mua tra gop trong [3 t]{"entity":"installment_payment_period","role":"case1"} hay [8 thang]{"entity":"installment_payment_period","role":"case2"} moi thang phai dong bao nhieu
 - tra gop trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [5 thang]{"entity":"installment_payment_period","role":"case2"} thi moi thang tra bao nhieu
