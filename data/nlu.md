@@ -2074,7 +2074,7 @@
 - muon tra gop trong [4 thang]{"entity":"installment_payment_period","role":"case1"} hay [10 t]{"entity":"installment_payment_period","role":"case2"} moi thang phai tra bao nhieu
 - mua tra gop trong [3 t]{"entity":"installment_payment_period","role":"case1"} hay [8 thang]{"entity":"installment_payment_period","role":"case2"} moi thang phai dong bao nhieu
 - tra gop trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [5 thang]{"entity":"installment_payment_period","role":"case2"} thi moi thang tra bao nhieu
-- tra gop trong [6 thang]{"entity":"installment_payment_period","role":"case1"} hay [1 thang]{"entity":"installment_payment_period","role":"case2"} thang dong nhieu
+- tra gop trong [6 thang]{"entity":"installment_payment_period","role":"case1"} hay [1 thang]{"entity":"installment_payment_period","role":"case2"} moi thang dong nhieu
 - mua trả góp trong [9 thang]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} thì một tháng phải trả bao nhiêu
 - mua trả góp trong [3 tháng]{"entity":"installment_payment_period","role":"case1"} hay [6 thang]{"entity":"installment_payment_period","role":"case2"} mỗi tháng phải đóng bao nhiêu
 - muốn mua trả góp trong [2 thang]{"entity":"installment_payment_period","role":"case1"} hay [11 thang]{"entity":"installment_payment_period","role":"case2"} thì tháng đóng bao nhiêu
@@ -2920,15 +2920,15 @@
 - co ban rom [8gb](rom) khong vay
 - co ban rom [256GB](rom) khong
 - co ban rom [64 gb](rom) khong vay
-- co ban [12 GB](ram)-[128gb](rom) khong nhi
-- co ban [4 gb](ram)-[256 GB](rom) khong vay
-- co ban [32 MB](ram)-[64 GB](rom) khong vay
-- co ban [2 GB](ram)-[32 gb](rom) khong vay
-- co ban [2 GB](ram)-[64 GB](rom) khong nhi
-- co ban [8 GB](ram)-[16 gb](rom) khong vay
-- co ban [8 mb](ram)-[32 gb](rom) khong nhi
-- co ban [12 gb](ram)-[128 gb](rom) khong nhi
-- co ban [3 gb](ram)-[8gb](rom) khong vay
+- co ban [12 GB](ram) [128gb](rom) khong nhi
+- co ban [4 gb](ram) [256 GB](rom) khong vay
+- co ban [32 MB](ram) [64 GB](rom) khong vay
+- co ban [2 GB](ram) [32 gb](rom) khong vay
+- co ban [2 GB](ram) [64 GB](rom) khong nhi
+- co ban [8 GB](ram) [16 gb](rom) khong vay
+- co ban [8 mb](ram) [32 gb](rom) khong nhi
+- co ban [12 gb](ram) [128 gb](rom) khong nhi
+- co ban [3 gb](ram) [8gb](rom) khong vay
 - co ban ram [512 MB](ram) rom [32GB](rom) khong
 - co ban ram [4MB](ram) rom [16gb](rom) khong vay
 - co ban ram [32 mb](ram) rom [8gb](rom) khong nhi
