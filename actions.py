@@ -932,7 +932,7 @@ class ActionHarwareInfo(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            tracker.get_slot('product_name')
+            productName = tracker.get_slot('product_name')
             pass
         try:
             hardware_name = next(tracker.get_latest_entity_values(

@@ -4,10 +4,8 @@ import re
 
 def productNameModify(productName: str):
     data = productName.lower()
-    if data.find("ip") > -1 and data.find("iphone") == -1:
-        temp = data.replace("ip", "iphone")
-        return temp
-    elif data.find("ss") > -1 and data.find("galaxy") == -1:
+    data = re.sub(r"^ip+(?=[\s])","iphone",data)
+    if data.find("ss") > -1 and data.find("galaxy") == -1:
         temp = data.replace("ss", "samsung galaxy")
         return temp
     elif data.find("samsung") > -1 and data.find("galaxy") == -1:
