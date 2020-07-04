@@ -779,8 +779,8 @@ data/prepay_percent.txt
 ## intent: product_configuration
 
 <!-- hỏi cấu hình sản phẩm -->
-- Cấu hình của [iPhone XR](product_name) [64GB](rom) như thế nào
-- Cau hinh cua [Realme Narzo 10](product_name) [8GB](ram) [8GB](rom) nhu the nao
+- Cấu hình của [iPhone XR](product_name) [256GB](rom) như thế nào
+- Cau hinh cua [Realme Narzo 10](product_name) [8GB](ram) [256GB](rom) nhu the nao
 - Cau hinh cua [OPPO A92](product_name) [64GB](rom) nhu the nao
 - Cau hinh cua [realme narzo 10](product_name) [2GB](ram) [256gb](rom) nhu the nao
 - Cau hinh cua [OPPO A52](product_name) [32 mb](ram) nhu the nao
@@ -806,7 +806,7 @@ data/prepay_percent.txt
 - Cấu hình của [Xiaomi Redmi K30 5G Tracing](product_name) [4MB](ram) [512gb](rom) như thế nào
 - Cấu hình của [iPhone 7](product_name) [3GB](ram) như thế nào
 - Cấu hình của [Huawei P30 Lite](product_name) [512gb](rom) như thế nào
-- Cấu hình của [OPPO A52](product_name) [32MB](ram) [64gb](rom) như thế nào
+- Cấu hình của [OPPO A52](product_name) [32MB](ram) [256gb](rom) như thế nào
 - Cấu hình của [ss fold](product_name) [8gb](ram) [512GB](rom) như thế nào
 - Cấu hình của [Samsung Galaxy A30](product_name) [8 MB](ram) như thế nào
 - Cấu hình của [Huawei Y6p](product_name) [16gb](rom) như thế nào
@@ -830,7 +830,7 @@ data/prepay_percent.txt
 - cấu hình của [Realme 6](product_name) có ổn không
 - Cấu hình của [iPhone 7](product_name) [32GB](rom) như thế nào
 - cấu hình của máy này như thế nào
-- cau hinh của [iphone xr](product_name) [64gb](rom) như thế nào
+- cau hinh của [iphone xr](product_name) [256gb](rom) như thế nào
 - cau hinh cua [iphone xr](product_name) như thế nào
 - cau hinh [iphone xr](product_name) như thế nào
 - cau hình của [iphone xr](product_name) như nào
