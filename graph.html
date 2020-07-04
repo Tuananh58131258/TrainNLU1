@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style>
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.styleSheets[0].cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=action_product_price];
+2 [class="", fontsize=12, label=action_online_price];
+3 [class="", fontsize=12, label=action_old_product];
+4 [class="", fontsize=12, label=action_product_configuration];
+5 [class="", fontsize=12, label=action_type_of_product];
+6 [class="", fontsize=12, label=action_list_product];
+7 [class="", fontsize=12, label=action_check_price];
+8 [class="", fontsize=12, label=action_find_product_in_range_price];
+9 [class="", fontsize=12, label=action_find_product_lower_price];
+10 [class="", fontsize=12, label=action_greet];
+11 [class="", fontsize=12, label=action_find_product_upper_price];
+12 [class="", fontsize=12, label=action_find_product_around_price];
+13 [class="", fontsize=12, label=action_scree_info];
+14 [class="", fontsize=12, label=action_pin_info];
+15 [class="", fontsize=12, label=action_buy_old_product];
+16 [class="", fontsize=12, label=action_how_many_per_month];
+17 [class="", fontsize=12, label=action_case_how_many_per_month];
+18 [class="", fontsize=12, label=action_is_product_can_buy_on_installment];
+19 [class="", fontsize=12, label=action_hardware_info];
+20 [class="", fontsize=12, label=action_main_camera];
+21 [class="", fontsize=12, label=utter_goodbye];
+22 [class="", fontsize=12, label=action_selfie_camera];
+23 [class="", fontsize=12, label=action_resolution_camrea];
+24 [class="", fontsize=12, label=action_guarantee];
+25 [class="", fontsize=12, label=action_promotions_and_gift];
+26 [class="", fontsize=12, label=action_find_product];
+27 [class="", fontsize=12, label=action_take_photo_erase_background];
+28 [class="", fontsize=12, label=action_find_another_product];
+29 [class="", fontsize=12, label=utter_need_help];
+31 [class="", fontsize=12, label=action_find_product];
+35 [class="", fontsize=12, label=action_get_customer_name];
+36 [class="", fontsize=12, label=action_get_phone_number];
+37 [class="", fontsize=12, label=action_get_phone_number];
+38 [class="", fontsize=12, label=action_get_customer_name];
+39 [class="", fontsize=12, label=action_get_contact];
+40 [class="", fontsize=12, label=action_follow];
+41 [class="", fontsize=12, label=utter_ask_ability];
+42 [class="", fontsize=12, label=utter_what_license];
+43 [class="", fontsize=12, label=utter_decry];
+44 [class="", fontsize=12, label=utter_praise];
+45 [class=intent, fillcolor=lightblue, label="/product_price{\\"product_name\\":\\"oppo reno x\\"}", shape=rect, style=filled];
+46 [class=intent, fillcolor=lightblue, label="san pham Samsung Galaxy Z Flip mua online bao nhieu tien", shape=rect, style=filled];
+47 [class=intent, fillcolor=lightblue, label="/old_product_price{\\"product_name\\": \\"iphone 8\\"}", shape=rect, style=filled];
+48 [class=intent, fillcolor=lightblue, label="/product_configuration{\\"product_name\\": \\"iphone 8\\"}", shape=rect, style=filled];
+49 [class=intent, fillcolor=lightblue, label="co bao nhieu loai san pham", shape=rect, style=filled];
+50 [class=intent, fillcolor=lightblue, label="điện thoại Realmi", shape=rect, style=filled];
+51 [class=intent, fillcolor=lightblue, label="/check_price{\\"product_name\\":\\"oppo reno 3\\"}", shape=rect, style=filled];
+52 [class=intent, fillcolor=lightblue, label="4 m 2 muoi chin trieu gi thoi", shape=rect, style=filled];
+53 [class=intent, fillcolor=lightblue, label="/find_product_lower_price{\\"price\\":\\"mười triệu\\"}", shape=rect, style=filled];
+54 [class=intent, fillcolor=lightblue, label="chao ban nha", shape=rect, style=filled];
+55 [class=intent, fillcolor=lightblue, label="/find_product_upper_price{\\"price\\":\\"12 triệu\\"}", shape=rect, style=filled];
+56 [class=intent, fillcolor=lightblue, label="/find_product_around_price{\\"price\\":\\"7000000\\"}", shape=rect, style=filled];
+57 [class=intent, fillcolor=lightblue, label="/screen_info{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+58 [class=intent, fillcolor=lightblue, label="/pin_info{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+59 [class=intent, fillcolor=lightblue, label="/buy_old_product{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+60 [class=intent, fillcolor=lightblue, label="/how_many_per_month{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+61 [class=intent, fillcolor=lightblue, label="/case_how_many_per_month{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+62 [class=intent, fillcolor=lightblue, label="/is_product_can_buy_on_installment{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+63 [class=intent, fillcolor=lightblue, label="/ask_hardware_info{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+64 [class=intent, fillcolor=lightblue, label="/ask_main_camera{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+65 [class=intent, fillcolor=lightblue, label="tạm biệt bot nhá", shape=rect, style=filled];
+66 [class=intent, fillcolor=lightblue, label="/ask_selfie_camera{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+67 [class=intent, fillcolor=lightblue, label="/resolution_camera{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+68 [class=intent, fillcolor=lightblue, label="/guarantee{\\"product_name\\":\\"iphone 8\\"}", shape=rect, style=filled];
+69 [class=intent, fillcolor=lightblue, label="/promotions_and_gifts{\\"product_name\\":\\"iphone xs max\\"}", shape=rect, style=filled];
+70 [class=intent, fillcolor=lightblue, label="/find_product{\\"product_name\\":\\"oppo reno 3\\"}", shape=rect, style=filled];
+71 [class=intent, fillcolor=lightblue, label="/take_photo_erase_background{\\"product_name\\":\\"oppo reno 3\\"}", shape=rect, style=filled];
+72 [class=intent, fillcolor=lightblue, label="có bản ram 512 MB rom 128 gb không", shape=rect, style=filled];
+73 [class=intent, fillcolor=lightblue, label="co the tu van cho toi duoc khong", shape=rect, style=filled];
+74 [class=intent, fillcolor=lightblue, label="Lê Bảo", shape=rect, style=filled];
+75 [class=intent, fillcolor=lightblue, label=0594556893, shape=rect, style=filled];
+76 [class=intent, fillcolor=lightblue, label="Đoàn Thế Sơn dt: 0597505596", shape=rect, style=filled];
+77 [class=intent, fillcolor=lightblue, label="ss a11", shape=rect, style=filled];
+78 [class=intent, fillcolor=lightblue, label="bạn biết hát không ?", shape=rect, style=filled];
+79 [class=intent, fillcolor=lightblue, label="Cmnd vs bằng lái tham gia trả góp 0 đ đc k", shape=rect, style=filled];
+80 [class=intent, fillcolor=lightblue, label="ngu ngốc", shape=rect, style=filled];
+81 [class=intent, fillcolor=lightblue, label="bot thông minh", shape=rect, style=filled];
+82 [class=intent, fillcolor=lightblue, label="shop co Realme C2 khong", shape=rect, style=filled];
+83 [class=intent, fillcolor=lightblue, label="Oppo A31 gia khi mua moi", shape=rect, style=filled];
+84 [class=intent, fillcolor=lightblue, label="có bản rom 128gb ram 6 GB không vậy", shape=rect, style=filled];
+85 [class=intent, fillcolor=lightblue, label=0586597161, shape=rect, style=filled];
+86 [class=intent, fillcolor=lightblue, label="Nguyễn Xuân Phú", shape=rect, style=filled];
+0 -> 45  [class="", key=0];
+0 -> 46  [class="", key=0];
+0 -> 47  [class="", key=0];
+0 -> 48  [class="", key=0];
+0 -> 49  [class="", key=0];
+0 -> 50  [class="", key=0];
+0 -> 51  [class="", key=0];
+0 -> 52  [class="", key=0];
+0 -> 53  [class="", key=0];
+0 -> 54  [class="", key=0];
+0 -> 55  [class="", key=0];
+0 -> 56  [class="", key=0];
+0 -> 57  [class="", key=0];
+0 -> 58  [class="", key=0];
+0 -> 59  [class="", key=0];
+0 -> 60  [class="", key=0];
+0 -> 61  [class="", key=0];
+0 -> 62  [class="", key=0];
+0 -> 63  [class="", key=0];
+0 -> 64  [class="", key=0];
+0 -> 65  [class="", key=0];
+0 -> 66  [class="", key=0];
+0 -> 67  [class="", key=0];
+0 -> 68  [class="", key=0];
+0 -> 69  [class="", key=0];
+0 -> 70  [class="", key=0];
+0 -> 71  [class="", key=0];
+0 -> 72  [class="", key=0];
+0 -> 73  [class="", key=0];
+0 -> 74  [class="", key=0];
+0 -> 75  [class="", key=0];
+0 -> 76  [class="", key=0];
+0 -> 77  [class="", key=0];
+0 -> 78  [class="", key=0];
+0 -> 79  [class="", key=0];
+0 -> 80  [class="", key=0];
+0 -> 81  [class="", key=0];
+1 -> "-1"  [class="", key=NONE, label=""];
+2 -> "-1"  [class="", key=NONE, label=""];
+3 -> "-1"  [class="", key=NONE, label=""];
+4 -> "-1"  [class="", key=NONE, label=""];
+5 -> "-1"  [class="", key=NONE, label=""];
+6 -> "-1"  [class="", key=NONE, label=""];
+7 -> "-1"  [class="", key=NONE, label=""];
+8 -> "-1"  [class="", key=NONE, label=""];
+9 -> "-1"  [class="", key=NONE, label=""];
+10 -> "-1"  [class="", key=NONE, label=""];
+10 -> 82  [class="", key=0];
+10 -> 83  [class="", key=0];
+11 -> "-1"  [class="", key=NONE, label=""];
+12 -> "-1"  [class="", key=NONE, label=""];
+13 -> "-1"  [class="", key=NONE, label=""];
+14 -> "-1"  [class="", key=NONE, label=""];
+15 -> "-1"  [class="", key=NONE, label=""];
+16 -> "-1"  [class="", key=NONE, label=""];
+17 -> "-1"  [class="", key=NONE, label=""];
+18 -> "-1"  [class="", key=NONE, label=""];
+19 -> "-1"  [class="", key=NONE, label=""];
+20 -> "-1"  [class="", key=NONE, label=""];
+21 -> "-1"  [class="", key=NONE, label=""];
+22 -> "-1"  [class="", key=NONE, label=""];
+23 -> "-1"  [class="", key=NONE, label=""];
+24 -> "-1"  [class="", key=NONE, label=""];
+25 -> "-1"  [class="", key=NONE, label=""];
+26 -> "-1"  [class="", key=NONE, label=""];
+27 -> "-1"  [class="", key=NONE, label=""];
+28 -> "-1"  [class="", key=NONE, label=""];
+29 -> "-1"  [class="", key=NONE, label=""];
+31 -> 84  [class="", key=0];
+35 -> 85  [class="", key=0];
+36 -> "-1"  [class="", key=NONE, label=""];
+37 -> 86  [class="", key=0];
+38 -> "-1"  [class="", key=NONE, label=""];
+39 -> "-1"  [class="", key=NONE, label=""];
+40 -> "-1"  [class="", key=NONE, label=""];
+41 -> "-1"  [class="", key=NONE, label=""];
+42 -> "-1"  [class="", key=NONE, label=""];
+43 -> "-1"  [class="", key=NONE, label=""];
+44 -> "-1"  [class="", key=NONE, label=""];
+45 -> 1  [class="", key=0];
+46 -> 2  [class="", key=0];
+47 -> 3  [class="", key=0];
+48 -> 4  [class="", key=0];
+49 -> 5  [class="", key=0];
+50 -> 6  [class="", key=0];
+51 -> 7  [class="", key=0];
+52 -> 8  [class="", key=0];
+53 -> 9  [class="", key=0];
+54 -> 10  [class="", key=0];
+55 -> 11  [class="", key=0];
+56 -> 12  [class="", key=0];
+57 -> 13  [class="", key=0];
+58 -> 14  [class="", key=0];
+59 -> 15  [class="", key=0];
+60 -> 16  [class="", key=0];
+61 -> 17  [class="", key=0];
+62 -> 18  [class="", key=0];
+63 -> 19  [class="", key=0];
+64 -> 20  [class="", key=0];
+65 -> 21  [class="", key=0];
+66 -> 22  [class="", key=0];
+67 -> 23  [class="", key=0];
+68 -> 24  [class="", key=0];
+69 -> 25  [class="", key=0];
+70 -> 26  [class="", key=0];
+71 -> 27  [class="", key=0];
+72 -> 28  [class="", key=0];
+73 -> 29  [class="", key=0];
+74 -> 35  [class="", key=0];
+75 -> 37  [class="", key=0];
+76 -> 39  [class="", key=0];
+77 -> 40  [class="", key=0];
+78 -> 41  [class="", key=0];
+79 -> 42  [class="", key=0];
+80 -> 43  [class="", key=0];
+81 -> 44  [class="", key=0];
+82 -> 31  [class="", key=0];
+83 -> 1  [class="", key=0];
+84 -> 28  [class="", key=0];
+85 -> 36  [class="", key=0];
+86 -> 38  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>

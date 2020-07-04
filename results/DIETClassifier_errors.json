@@ -1,0 +1,48 @@
+[
+  {
+    "text": "Trả góp 10 % .lãi suất 0 %.6 thang Vay mỗi tháng góp bao nhieu",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "10 %",
+        "entity": "prepay_percent"
+      },
+      {
+        "start": 23,
+        "end": 26,
+        "value": "0 %",
+        "entity": "interest_rate"
+      },
+      {
+        "start": 27,
+        "end": 34,
+        "value": "6 thang",
+        "entity": "installment_payment_period"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "prepay_percent",
+        "start": 8,
+        "end": 12,
+        "value": "10 %",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "interest_rate",
+        "start": 23,
+        "end": 28,
+        "value": "0 %.6",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "installment_payment_period",
+        "start": 25,
+        "end": 34,
+        "value": "%.6 thang",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

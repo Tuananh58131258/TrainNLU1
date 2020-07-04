@@ -252,7 +252,7 @@ data/prepay_percent.txt
 - giá của điện thoại [ss 20+](product_name) [2 gb](ram) như thế nào
 - [ss a30](product_name) [4 gb](ram) là bao nhiêu
 - giá sản phẩm [vivo z5i](product_name) [8 mb](ram) là bao nhiêu
-- giá sản phẩm [realme c3](product_name) [3 gb](ram) - [8gb](rom) là bao nhiêu
+- giá sản phẩm [realme c3](product_name) [3 gb](ram) [8gb](rom) là bao nhiêu
 - giá điện thoại [samsung galaxy a01](product_name) [256 gb](rom) như thế nào
 - giá sản phẩm [ss s20+](product_name) [512 mb](ram) là bao nhiêu
 - giá điện thoại [nokia 800 tough](product_name) [32 gb](rom) [32 mb](ram) là bao nhiêu
@@ -260,7 +260,7 @@ data/prepay_percent.txt
 - giá điện thoại [masstel izi 112](product_name) [16 gb](rom) là bao nhiêu
 - giá điện thoại [xiaomi mi 9 pro 5g](product_name) [256 gb](rom) [1 gb](ram) như thế nào
 - giá của điện thoại [vivo iqoo neo 3](product_name) [8gb](rom) là bao nhiêu
-- [huawei y5p](product_name) [12 gb](ram) - [512gb](rom) là bao nhiêu
+- [huawei y5p](product_name) [12 gb](ram) [512gb](rom) là bao nhiêu
 - gia cua dien thoai [masstel play max](product_name) [32 mb](ram) la bao nhieu
 - gia san pham [ss 10](product_name) [8gb](rom) la bao nhieu
 - gia cua dien thoai [huawei y7p](product_name) [1 gb](ram) nhu the nao
@@ -268,13 +268,13 @@ data/prepay_percent.txt
 - gia dien thoai [energizer e12](product_name) [2 gb](ram) nhu the nao
 - gia san pham [nokia 3.2](product_name) [256gb](rom) nhu the nao
 - gia cua dien thoai [realme 6i](product_name) [3 gb](ram) nhu the nao
-- gia cua dien thoai [xiaomi mi 9 pro 5g](product_name) [2 gb](ram) - [16 gb](rom) nhu the nao
-- gia san pham [xiaomi mi 9 pro 5g](product_name) [3 gb](ram) - [32 gb](rom) nhu the nao
+- gia cua dien thoai [xiaomi mi 9 pro 5g](product_name) [2 gb](ram) [16 gb](rom) nhu the nao
+- gia san pham [xiaomi mi 9 pro 5g](product_name) [3 gb](ram) [32 gb](rom) nhu the nao
 - gia dien thoai [ss a60](product_name) [3 gb](ram) nhu the nao
 - gia dien thoai [oppo find x2 pro](product_name) [16 gb](rom) la bao nhieu
 - gia cua san pham [vsmart joy 3](product_name) [8 gb](ram) la bao nhieu
 - gia cua dien thoai [samsung galaxy a70s](product_name) [128gb](rom) [2 gb](ram) la bao nhieu
-- gia cua san pham [vivo nex 3](product_name) [3 gb](ram) - [64 gb](rom) la bao nhieu
+- gia cua san pham [vivo nex 3](product_name) [3 gb](ram) [64 gb](rom) la bao nhieu
 - gia san pham [ss a10s](product_name) [16 gb](rom) [32 mb](ram) nhu the nao
 - gia cua san pham [xiaomi redmi note 9 pro](product_name) [64gb](rom) [4mb](ram) la bao nhieu
 - gia dien thoai [huawei nova 7 se 5g](product_name) [4mb](ram) la bao nhieu
@@ -285,26 +285,26 @@ data/prepay_percent.txt
 - giá điện thoại [ss a71](product_name) [16 gb](rom) là bao nhiêu
 - giá điện thoại [samsung galaxy s10e](product_name) [1 gb](ram) như thế nào
 - giá của điện thoại [samsung galaxy s20 ultra](product_name) [64 gb](rom) [12 gb](ram) là bao nhiêu
-- giá điện thoại [realme 6](product_name) [3 gb](ram) - [64 gb](rom) là bao nhiêu
+- giá điện thoại [realme 6](product_name) [3 gb](ram) [64 gb](rom) là bao nhiêu
 - giá sản phẩm [samsung galaxy s10e](product_name) [12 gb](ram) là bao nhiêu
 - giá của điện thoại [vivo apex](product_name) [32gb](rom) [6 gb](ram) như thế nào
 - giá điện thoại [itel it2171](product_name) [32gb](rom) như thế nào
 - giá của sản phẩm [ss m01](product_name) [4mb](ram) là bao nhiêu
-- giá điện thoại [ss 10+](product_name) [2 gb](ram) - [8gb](rom) là bao nhiêu
+- giá điện thoại [ss 10+](product_name) [2 gb](ram) [8gb](rom) là bao nhiêu
 - giá sản phẩm [oppo a92s](product_name) [32gb](rom) [8 gb](ram) như thế nào
-- giá sản phẩm [huawei y5p](product_name) [4 gb](ram) - [16gb](rom) như thế nào
+- giá sản phẩm [huawei y5p](product_name) [4 gb](ram) [16gb](rom) như thế nào
 - giá của sản phẩm [masstel izi 206](product_name) [32 gb](rom) [512 mb](ram) là bao nhiêu
 - giá sản phẩm [masstel fami 9](product_name) [32 gb](rom) [12 gb](ram) là bao nhiêu
 - giá điện thoại [nokia 9.2](product_name) [512 gb](rom) là bao nhiêu
 - giá điện thoại [samsung galaxy m21](product_name) [512 gb](rom) [4 gb](ram) như thế nào
 - giá điện thoại [xiaomi mi 10 se](product_name) [256 gb](rom) như thế nào
 - giá của sản phẩm [vivo x50](product_name) [128 gb](rom) là bao nhiêu
-- giá điện thoại [oppo a1k](product_name) [4 mb](ram) - [64 gb](rom) như thế nào
-- giá của sản phẩm [oppo f15](product_name) [3 gb](ram) - [256gb](rom) là bao nhiêu
-- giá của điện thoại [vivo nex 3s 5g](product_name) [2 gb](ram) - [128 gb](rom) là bao nhiêu
+- giá điện thoại [oppo a1k](product_name) [4 mb](ram) [64 gb](rom) như thế nào
+- giá của sản phẩm [oppo f15](product_name) [3 gb](ram) [256gb](rom) là bao nhiêu
+- giá của điện thoại [vivo nex 3s 5g](product_name) [2 gb](ram) [128 gb](rom) là bao nhiêu
 - giá của điện thoại [xiaomi black shark 2](product_name) [64 gb](rom) là bao nhiêu
-- giá của sản phẩm [ss a20](product_name) [12 gb](ram) - [8gb](rom) là bao nhiêu
-- giá điện thoại [oppo a31](product_name) [4 mb](ram) - [16 gb](rom) là bao nhiêu
+- giá của sản phẩm [ss a20](product_name) [12 gb](ram) [8gb](rom) là bao nhiêu
+- giá điện thoại [oppo a31](product_name) [4 mb](ram) [16 gb](rom) là bao nhiêu
 - giá của điện thoại [huawei mate 30 pro 5g](product_name) [3 gb](ram) là bao nhiêu
 - giá của sản phẩm [ss a60](product_name) là bao nhiêu
 - giá sản phẩm [samsung galaxy m11](product_name) như thế nào
@@ -411,12 +411,12 @@ data/prepay_percent.txt
 - điện thoại [realme 6](product_name) [8gb](rom) [8 gb](ram) có giá bao nhiêu
 - điện thoại [ss 10 lite](product_name) [256 gb](rom) có giá bao nhiêu
 - điện thoại [ss a50s](product_name) [512 gb](rom) bao nhiêu tiền
-- điện thoại [huawei p smart pro 2019](product_name) [4mb](ram) - [32 gb](rom) có giá bao nhiêu
-- [xiaomi redmi k30i](product_name) [8 gb](ram) - [128gb](rom) bao nhiêu tiền
+- điện thoại [huawei p smart pro 2019](product_name) [4mb](ram) [32 gb](rom) có giá bao nhiêu
+- [xiaomi redmi k30i](product_name) [8 gb](ram) [128gb](rom) bao nhiêu tiền
 - sản phẩm [huawei p30 pro](product_name) [128 gb](rom) [2 gb](ram) hiện nay có giá bao nhiêu
-- sản phẩm [vivo y19](product_name) [8 mb](ram) - [64 gb](rom) bao nhiêu tiền
-- sản phẩm [ss 10 lite](product_name) [8 gb](ram) - [32 gb](rom) bao nhiêu tiền
-- sản phẩm [realme 5](product_name) [512 mb](ram) - [8gb](rom) bao nhiêu tiền
+- sản phẩm [vivo y19](product_name) [8 mb](ram) [64 gb](rom) bao nhiêu tiền
+- sản phẩm [ss 10 lite](product_name) [8 gb](ram) [32 gb](rom) bao nhiêu tiền
+- sản phẩm [realme 5](product_name) [512 mb](ram) [8gb](rom) bao nhiêu tiền
 - sản phẩm [vivo x30 pro](product_name) [3 gb](ram) có giá bao nhiêu
 - điện thoại [realme narzo 10a](product_name) [4 gb](ram) [256 gb](rom) bao nhiêu tiền
 - điện thoại [huawei nova 5 pro](product_name) [16 gb](rom) hiện nay có giá bao nhiêu
@@ -1130,10 +1130,10 @@ data/prepay_percent.txt
 
 <!-- tìm sản phẩm trong một khoảng giá -->
 
-- khoang [6 m 7]{"entity":"price","role":"from_price"} - [1,8 trieu]{"entity":"price","role":"to_price"}
-- khoang [2.6 trieu]{"entity":"price","role":"from_price"} - [ba trieu tam]{"entity":"price","role":"to_price"}
-- khoang [9 m 2]{"entity":"price","role":"from_price"} - [bay trieu sau]{"entity":"price","role":"to_price"}
-- khoang [bay trieu sau]{"entity":"price","role":"from_price"} - [9,7 trieu]{"entity":"price","role":"to_price"}
+- khoang [6 m 7]{"entity":"price","role":"from_price"} [1,8 trieu]{"entity":"price","role":"to_price"}
+- khoang [2.6 trieu]{"entity":"price","role":"from_price"} [ba trieu tam]{"entity":"price","role":"to_price"}
+- khoang [9 m 2]{"entity":"price","role":"from_price"} [bay trieu sau]{"entity":"price","role":"to_price"}
+- khoang [bay trieu sau]{"entity":"price","role":"from_price"} [9,7 trieu]{"entity":"price","role":"to_price"}
 - khoang [5,1 trieu]{"entity":"price","role":"from_price"} den [7.4 trieu]{"entity":"price","role":"to_price"}
 - khoang [5,6 trieu]{"entity":"price","role":"from_price"} den [6.2 trieu]{"entity":"price","role":"to_price"}
 - khoang [nam trieu sau]{"entity":"price","role":"from_price"} den [7 m 2]{"entity":"price","role":"to_price"}
@@ -1142,10 +1142,10 @@ data/prepay_percent.txt
 - chung [2 m 7]{"entity":"price","role":"from_price"} den [tam trieu ruoi]{"entity":"price","role":"to_price"}
 - chung [2.9 trieu]{"entity":"price","role":"from_price"} den [ba trieu]{"entity":"price","role":"to_price"}
 - chung [mot trieu bon]{"entity":"price","role":"from_price"} den [bay trieu sau]{"entity":"price","role":"to_price"}
-- tam [7 m 7]{"entity":"price","role":"from_price"} - [9.2 trieu]{"entity":"price","role":"to_price"} gi do
-- tam [mot trieu sau]{"entity":"price","role":"from_price"} - [5.4 trieu]{"entity":"price","role":"to_price"} gi do
-- tam [6.6 trieu]{"entity":"price","role":"from_price"} - [mot trieu]{"entity":"price","role":"to_price"} gi do
-- tam [mot trieu ruoi]{"entity":"price","role":"from_price"} - [ba trieu mot]{"entity":"price","role":"to_price"} gì đó
+- tam [7 m 7]{"entity":"price","role":"from_price"} [9.2 trieu]{"entity":"price","role":"to_price"} gi do
+- tam [mot trieu sau]{"entity":"price","role":"from_price"} [5.4 trieu]{"entity":"price","role":"to_price"} gi do
+- tam [6.6 trieu]{"entity":"price","role":"from_price"} [mot trieu]{"entity":"price","role":"to_price"} gi do
+- tam [mot trieu ruoi]{"entity":"price","role":"from_price"} [ba trieu mot]{"entity":"price","role":"to_price"} gì đó
 - có [realme](product_company) trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"}
 - có [vsmart](product_company) trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
 - có [itel](product_company) trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
@@ -1230,9 +1230,9 @@ data/prepay_percent.txt
 - có sản phẩm nào trong khoảng [5,7 triệu]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"} tư vấn giúp em
 - tôi muốn một chiếc điện thoại trong khoảng [bảy triệu tám]{"entity":"price","role":"from_price"} đến [hâm lăm triệu]{"entity":"price","role":"to_price"}
 - khoảng [bảy triệu tám]{"entity":"price","role":"from_price"} hay [hâm lăm triệu]{"entity":"price","role":"to_price"}
-- [3]{"entity":"price","role":"from_price"} - [4 trieu]{"entity":"price","role":"to_price"} gi do
-- [8 m 6]{"entity": "price","role": "from_price"} - [1,7 trieu]{"entity": "price","role": "to_price"} gi thoi
-- [2.7 trieu]{"entity": "price","role": "from_price"} - [9.6 trieu]{"entity": "price","role": "to_price"} gi do
+- [3]{"entity":"price","role":"from_price"} [4 trieu]{"entity":"price","role":"to_price"} gi do
+- [8 m 6]{"entity": "price","role": "from_price"} [1,7 trieu]{"entity": "price","role": "to_price"} gi thoi
+- [2.7 trieu]{"entity": "price","role": "from_price"} [9.6 trieu]{"entity": "price","role": "to_price"} gi do
 - [4,6 trieu]{"entity": "price","role": "from_price"} [9 m 2]{"entity": "price","role": "to_price"} gi do
 - [nam trieu chin]{"entity": "price","role": "from_price"} [muoi ba trieu]{"entity": "price","role": "to_price"} thoi
 - [4 m 2]{"entity": "price","role": "from_price"} [muoi chin trieu]{"entity": "price","role": "to_price"} gi thoi
@@ -2907,8 +2907,8 @@ data/prepay_percent.txt
 - ở đây có [huawei mate 30 rs porsche design](product_name) không nhỉ
 - có bản [ss a21s](product_name) bản rom [256gb](rom) ram [3 gb](ram) không nhỉ không nhỉ
 - có [realme 6i](product_name) bản rom [32gb](rom) không nhỉ không nhỉ
-- có [xiaomi redmi note 8](product_name) bản [12 gb](ram) - [128 gb](rom) không nhỉ không nhỉ
-- ở đây có [huawei nova 5t](product_name) bản [12 gb](ram) - [128gb](rom) không nhỉ không nhỉ
+- có [xiaomi redmi note 8](product_name) bản [12 gb](ram) [128 gb](rom) không nhỉ không nhỉ
+- ở đây có [huawei nova 5t](product_name) bản [12 gb](ram) [128gb](rom) không nhỉ không nhỉ
 - có bản [samsung galaxy a51 5g](product_name) bản ram [4 gb](ram) không nhỉ không
 - có [huawei mate 40](product_name) bản ram [4mb](ram) không không vậy
 - ở đây có [realme 6](product_name) bản rom [16gb](rom) ram [3 gb](ram) không vậy không nhỉ
@@ -2917,15 +2917,15 @@ data/prepay_percent.txt
 - co [huawei mate 40](product_name) ban ram [4mb](ram) khong khong vay
 - o day co [realme 6](product_name) ban rom [16gb](rom) ram [3 gb](ram) khong vay khong nhi
 - o day co [ss s10](product_name) ban rom [16 gb](rom) ram [3 gb](ram) khong vay khong nhi
-- o day co [realme c3](product_name) ban [8 mb](ram) - [32 gb](rom) khong nhi khong vay
-- o day co [nokia 150](product_name) ban [12 gb](ram) - [128 gb](rom) khong nhi khong vay
+- o day co [realme c3](product_name) ban [8 mb](ram) [32 gb](rom) khong nhi khong vay
+- o day co [nokia 150](product_name) ban [12 gb](ram) [128 gb](rom) khong nhi khong vay
 - o day co [realme 6](product_name) ban rom [64 gb](rom) ram [8 mb](ram) khong nhi khong vay
 - ad oi co [ss a71 5g](product_name) ban rom [64gb](rom) khong vay khong vay
 - co ban [nokia 3.2](product_name) ban ram [2 gb](ram) khong vay khong nhi
 - o day co [xiaomi black shark 2 pro](product_name) ban rom [512gb](rom) khong nhi khong
 - o day co [nokia 110 ds](product_name) ban ram [2 gb](ram) khong khong vay
 - o day co [oppo reno ace 2](product_name) ban ram [4 gb](ram) khong nhi khong vay
-- o day co [huawei nova 7](product_name) ban [3 gb](ram) - [8gb](rom) khong vay khong
+- o day co [huawei nova 7](product_name) ban [3 gb](ram) [8gb](rom) khong vay khong
 - ad oi co [vsmart joy 3](product_name) ban ram [3 gb](ram) rom [256gb](rom) khong khong
 - có bản [ss watch active](product_name) bản rom [16gb](rom) ram [2 gb](ram) không vậy không
 - có bản [huawei enjoy 10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không vậy
@@ -2952,18 +2952,18 @@ data/prepay_percent.txt
 - co ban rom [8gb](rom) khong vay
 - co ban rom [256gb](rom) khong
 - co ban rom [64 gb](rom) khong vay
-- co ban [12 gb](ram) - [128gb](rom) khong nhi
-- co ban [4 gb](ram) - [256 gb](rom) khong vay
-- co ban [32 mb](ram) - [64 gb](rom) khong vay
-- co ban [2 gb](ram) - [32 gb](rom) khong vay
-- co ban [2 gb](ram) - [64 gb](rom) khong nhi
-- co ban [8 gb](ram) - [16 gb](rom) khong vay
-- co ban [12 gb](ram) - [128gb](rom) khong nhi
-- co ban [4 gb](ram) - [256 gb](rom) khong vay
+- co ban [12 gb](ram) [128gb](rom) khong nhi
+- co ban [4 gb](ram) [256 gb](rom) khong vay
 - co ban [32 mb](ram) [64 gb](rom) khong vay
 - co ban [2 gb](ram) [32 gb](rom) khong vay
 - co ban [2 gb](ram) [64 gb](rom) khong nhi
-- co ban [8 mb](ram) - [32 gb](rom) khong nhi
+- co ban [8 gb](ram) [16 gb](rom) khong vay
+- co ban [12 gb](ram) [128gb](rom) khong nhi
+- co ban [4 gb](ram) [256 gb](rom) khong vay
+- co ban [32 mb](ram) [64 gb](rom) khong vay
+- co ban [2 gb](ram) [32 gb](rom) khong vay
+- co ban [2 gb](ram) [64 gb](rom) khong nhi
+- co ban [8 mb](ram) [32 gb](rom) khong nhi
 - co ban [12 gb](ram) [128 gb](rom) khong nhi
 - co ban [3 gb](ram) [8gb](rom) khong vay
 - co ban ram [512 mb](ram) rom [32gb](rom) khong
@@ -3352,7 +3352,7 @@ data/prepay_percent.txt
 - gpu
 - gpu
 
-## synonym:0 đ
+## synonym: 0 đ
 
 - 0d
 - 0đ
@@ -3370,7 +3370,7 @@ data/prepay_percent.txt
 - o dong
 - không đồng
 
-## synonym:camera trước
+## synonym: camera trước
 
 - cam trước
 - camera trước
@@ -3379,7 +3379,7 @@ data/prepay_percent.txt
 - camera truoc
 - camera phia truoc
 
-## synonym:camera sau
+## synonym: camera sau
 
 - cam sau
 - camera sau
