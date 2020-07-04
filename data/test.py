@@ -1,29 +1,19 @@
-import keyboard
-import os
-answer = open('data/temp.txt',encoding='utf-8').readlines()
-question = open('data/data2.txt',encoding='utf-8').readlines()
-# for item in data:
-#     if item.find("return \"") >-1:
-#         dat = item.strip(' ').split(" ")
-#         res = dat[1].replace("\"","").strip('\n')
-#         print("- {}\n{}".format(res,data[data.index(item)-2]))
+import re
+from typing import Any, Dict, List, Text
+from rasa.nlu.tokenizers.tokenizer import Token, Tokenizer
+from rasa.nlu.training_data import Message
 
-# if 1 != 2:
-#     print("dúng")
-result = open("storie.txt",'a',encoding='utf-8')
-temp = -1
-index = 0
-for item in answer:
-    # strtemp = item.replace("action_","")
-    index = temp
-    for i in range(index + 1 ,len(question)-1):
-        print(item)
-        print(question[i])
-        if keyboard.read_key() == 'y':
-            result.write("## storie {0} * {0}  - {1}".format(question[i],item))
-            temp = i
-            os.system('cls')
-            break       
+from rasa.nlu.constants import TOKENS_NAMES, MESSAGE_ATTRIBUTES
+from underthesea import word_tokenize
+text = "Cấu hình của Xiaomi Mi Note 10 Pro 8GB-256GB??????"
+text = text.lower()
+text = re.sub(r"(?<=[^\s])\-+(?<=[^\s])"," - ",text)
+text = re.sub("\++","+",text)
+text = re.sub(r"(?<=[^0-9])[\.|\,]+(?=[^0-9\s])|\.\s|\,\s|\s\,|\s\.|[^\,\+\.\-\s\%\w]"," ",text,)
+text = text.strip('\n')
 
-result.close()
-print(len("Cấu hình của iphone 11 pro max 64 GB"))
+# print(text)
+words = word_tokenize(text)
+print(word_tokenize(text,format="text"))
+print
+

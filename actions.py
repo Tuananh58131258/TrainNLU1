@@ -927,6 +927,7 @@ class ActionHarwareInfo(Action):
         productName = ""
         sqlQuery = ""
         Pname_temp = ""
+        hardware_name = ""
         #region try-catch entity
         try:
             productName = productNameModify(

@@ -23,3 +23,10 @@ for i in range(1,5):
     # res = '- khoảng [{}]{}  [{}]{}'.format(temp1,e1,temp2,e2)
     res = '- đặt mua [{}](product_name) có được giao hàng không'.format(temp1)
     print(res)
+for i in range(1,9):
+    print(i*1000)
+    print(i*1000000)
+    print(i*1000+990)
+    print(i*1000000+990)
+    print(i*1000+500)
+    print(i*1000+390)
