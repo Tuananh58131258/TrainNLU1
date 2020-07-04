@@ -47,7 +47,7 @@ def getData(query:str):
 
 # test the file before integrating with the bot by uncommenting the below line.
 # data = open('data/product_name.txt','a',encoding='utf-8')
-# obj = getData("select * from dienthoai where idDienThoai  = 19")
+# obj = getData("select ten from dienthoai where idhangdienthoai  = 3")
 # temp = ""
 # for item in obj:
     # temp = item['ten'].replace('-',' ')
