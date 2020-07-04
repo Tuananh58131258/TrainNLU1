@@ -23,7 +23,7 @@ for item in answer:
             result.write("## storie {0} * {0}  - {1}".format(question[i],item))
             temp = i
             os.system('cls')
-            break
+            break       
 
 result.close()
 print(len("Cấu hình của iphone 11 pro max 64 GB"))
