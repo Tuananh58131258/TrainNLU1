@@ -28,20 +28,15 @@ from CreateJsonMessageTemplate import GenericTemplate
 from CreateJsonMessageTemplate import ButtonPostbackTemplate
 from CreateJsonMessageTemplate import ItemsTemplate
 from CreateJsonMessageTemplate import HardwareAnswer
+from CreateJsonMessageTemplate import QuickReply
 #endregion
 #
+
 class ActionSessionStarted(Action):
     def name(self):
         return "action_session_start"
     async def run(self, dispatcher, tracker, domain):
         events = [SessionStarted()]
-        # message = {"greeting":[
-        #             {
-        #                 "locale":"default",
-        #                 "text":"Hello {{user_first_name}}!"
-        #             }
-        #             ]}
-        # dispatcher.utter_message(json_message = message)
         message = "test session start"
         dispatcher.utter_message(message)
         events.append(ActionExecuted("action_listen"))
@@ -164,7 +159,7 @@ class ActionProductPrice(Action):
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -226,7 +221,7 @@ class ActionOnlinePrice(Action):
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá bán online của sản phẩm nào ạ?")
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -288,7 +283,7 @@ class ActionOldProduct(Action):
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -343,7 +338,10 @@ class ActionProductConfiguration(Action):
                 Pname_temp = productName
         else:
             message_str = "Bạn đang hỏi thông tin cấu hình của sản phẩm nào ạ?"
-        dispatcher.utter_message(message_str)
+        # dispatcher.utter_message(message_str)
+        message = QuickReply(self.name(),'abc')
+        dispatcher.utter_message(text = message_str,json_message = message)
+        # dispatcher.utter_message(text=message_str,json_message=message)
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -475,7 +473,7 @@ class ActionCheckPrice(Action):
             else:
                 message_str = "Bạn đang hỏi hỏi giá của sản phẩm nào ạ?"
             dispatcher.utter_message(message_str)
-            print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+            print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
             return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -542,22 +540,23 @@ class ActionFindProductLowerPrice(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         price = 0
-        product_company =""
+        product_company = ''
         sqlQuery = ""
+        try:
+            product_company = next(tracker.get_latest_entity_values(entity_type='product_company'))
+        except:
+            pass
         try:
             price = priceModify(
                 next(tracker.get_latest_entity_values(entity_type='price')))
         except:
             pass
-        try:
-            product_company = next(tracker.get_latest_entity_values(entity_type='product_company'))
-        except:
-            pass
+        print(price)
         if price != 0:
-            sqlQuery = "select dienthoai.ten,dienthoai.gia,dienthoai.url_img from dienthoai,hangdienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and gia <= {}".format(
+            sqlQuery = "select dienthoai.ten,dienthoai.gia,dienthoai.url_img from dienthoai,hangdienthoai where dienthoai.idhangdienthoai = hangdienthoai.idHangDienThoai and gia <= {} ".format(
                 price)
             if product_company:
-                sqlQuery = sqlQuery + " and hangdienthoai.ten like '%{}%'".format(product_company)
+                sqlQuery = sqlQuery + "and hangdienthoai.ten like '%{}%' ".format(product_company)
 
             sqlQuery = sqlQuery + " order by gia desc limit 9"
             data = getData(sqlQuery)
@@ -577,7 +576,7 @@ class ActionFindProductLowerPrice(Action):
             else:
                 dispatcher.utter_message("Hiện tại cửa hàng không có sản phẩm nào dưới {:,} vnđ bạn vui lòng thử lại với mức giá khác. Xin cảm ơn".format(price))
         else:
-            dispatcher.utter_message("Mức giá bạn đưa ra không có, vui lòng thử lại!")
+            dispatcher.utter_message("Mức giá bạn đưa ra không chính xác, vui lòng thử lại.")
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         return
 
@@ -711,7 +710,7 @@ class ActionScreenInfo(Action):
         else:
             message_str = "Bạn đang hỏi thông tin màn hình của sản phẩm nào vậy ạ?"
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -749,7 +748,7 @@ class ActionPinInfo(Action):
                 message_str = "Hiên tại cửa hàng chúng tôi không có thông tin về sản phẩm {}. Mong bạn thông cảm."
         else:
             message_str = "Bạn đang hỏi thông tin về pin của sản phẩm nào ạ?"
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         dispatcher.utter_message(message_str)
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -788,7 +787,7 @@ class ActionAcquisitionOldProduct(Action):
                 message_str = "Hiện cửa hàng không cung cấp dịch vụ cho sản phẩm {} nữa ạ. Mong bạn thông cảm.".format(productName)
         else:
             message_str = "Bạn đang hỏi thông tin thu mua cũ cho sản phẩm nào ạ?"
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         dispatcher.utter_message(message_str)
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -871,7 +870,7 @@ class ActionHowManyPerMonth(Action):
                     Pname_temp = productName
         else:
             message_str = 'Bạn đang hỏi thông tin số tiền góp hàng tháng cho sản phẩm nào ạ!'
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         dispatcher.utter_message(message_str)
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -929,7 +928,7 @@ class ActionIsProductCanBuyOnInstallment(Action):
         else:
             message_str ='Bạn đang hỏi thông tin trả góp của sản phẩm nào ạ?'
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -986,7 +985,7 @@ class ActionHarwareInfo(Action):
         else:
             message_str = "Bạn đang hỏi thông tin của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 class ActionTakePhotoEraseBackground(Action):
@@ -1027,7 +1026,7 @@ class ActionTakePhotoEraseBackground(Action):
         else:
             message_str = "Bạn đang hỏi thông tin chụp ảnh xóa phông của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 class ActionMainCamera(Action):
@@ -1070,7 +1069,7 @@ class ActionMainCamera(Action):
         else:
             message_str = "Bạn đang hỏi thông tin camera sau của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -1111,7 +1110,7 @@ class ActionSelfieCamera(Action):
         else:
             message_str = "Bạn đang hỏi thông tin camera trước của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -1158,7 +1157,7 @@ class ActionResolutionCamera(Action):
         else:
             message_str = "Bạn đang hỏi thông tin {} của sản phẩm nào ạ?".format(loai_camera)
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp),SlotSet('loai_camera',loai_camera)]
 
 
@@ -1194,8 +1193,10 @@ class ActionGuarantee(Action):
                 message_str = "Hiện cửa hàng không có thông tin về sản phẩm {}. Mong bạn thông cảm!"
         else:
             message_str = "Bạn đang hỏi thông tin bảo hành của sản phẩm nào ạ?"
-        dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        # dispatcher.utter_message(message_str)
+        message = QuickReply(self.name(),'abc')
+        dispatcher.utter_message(text = message_str,json_message = message)
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -1233,8 +1234,10 @@ class ActionPromotionsAndGift(Action):
                 message_str = "Sản phẩm {} hiện không có khuyến mãi nào. Xin cảm ơn".format(Pname_temp)
         else:
             message_str = "Bản đang hỏi thông tin khuyến mãi của sản phẩm nào ạ?"
-        dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        # dispatcher.utter_message(message_str)
+        message = QuickReply(self.name(),'abc')
+        dispatcher.utter_message(text = message_str,json_message = message)
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
@@ -1295,7 +1298,7 @@ class ActionFindProduct(Action):
         else:
             dispatcher.utter_message(
                 "Bạn đang tìm kiếm sản phẩm nào ạ?")
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),productName))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',productName)]
 
 
@@ -1356,7 +1359,7 @@ class ActionFindAnotherProduct(Action):
         else:
             dispatcher.utter_message(
                 "Không tìm thấy sản phẩm vui lòng thử lại sau!")
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),productName))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',productName)]
 
 
@@ -1368,7 +1371,7 @@ class ActionGreet(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        page_acess_token = 'EAAXU2UZANCBcBAGnKBsT6ETH2nWZCjDEDqNa7OFqKEiO1KalIoeTc70TKdqhbq1pE5ZCMwIAnZCvVy4K8RgmL6BZAlBRuyyvWCQ35HeuZAN1kAt5XgghErQRL1FpipDQ0TMFOSNspIXPLJ5CoZAyg7Wu0ZBFPDMe5dBsbMi0B3sA3gZDZD'
+        page_acess_token = 'EAAXU2UZANCBcBAKmDcbCa6lvVIWg5R7vTXwbh0zGwNZAEi2AetBCRGDbCZByyELwjlbx4lFSWcJEyDGdFIHlTvJ9tEODG7hujeZAA3BXWobPP6E7RWK3KGdO29ZA1Fku7E0NDIKWZBK5iZAIvsks7JFzI2hyrDZAhfvzr6mqXUsrZCWgs6oRi5K56'
         current_state = tracker.current_state()
         sender_id = current_state['sender_id']
         r = requests.get('https://graph.facebook.com/{}?fields=first_name,last_name,profile_pic&access_token={}'.format(sender_id,page_acess_token)).json()
@@ -1434,7 +1437,7 @@ class ActionFollow(Action):
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             pass
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),productName))
         if productName:
             sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
             data = getData(sqlQuery)
@@ -1481,14 +1484,16 @@ class ActionOptionInBox(Action):
                         Pname_temp, box)
                 else:
                     message_str = "Không có thông tin cho sản phẩm {}.".format(
-                        Pname_temp)
+                        productName)
             else:
                 Pname_temp = productName
                 message_str = "Sản phẩm {} hiện không có thông tin về các phụ kiện trong hộp. Xin cảm ơn".format(Pname_temp)
         else:
             message_str = "Bản đang hỏi thông tin của sản phẩm nào ạ?"
-        dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        # dispatcher.utter_message(message_str)
+        message = QuickReply(self.name(),'abc')
+        dispatcher.utter_message(text = message_str,json_message = message)
+        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 class ActionCanPlayGame(Action):

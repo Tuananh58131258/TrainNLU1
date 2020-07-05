@@ -111,4 +111,4 @@ def GetColName(temp:str):
     result = data[temp]
     return result
 
-# print(priceModify('12m'))
+# print(priceModify('20tr'))

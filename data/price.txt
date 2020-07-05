@@ -422,23 +422,23 @@ ham bay trieu
 mot trieu bon
 mot trieu nam
 mot trieu sau
-mot trieu bay
+mot tr bay
 mot trieu tam
 mot trieu chin
 hai trieu mot
 hai trieu hai
-hai trieu ba
+hai tr ba
 hai trieu bon
 hai trieu tam
 hai trieu chin
 ba trieu mot
 ba trieu hai
-ba trieu ba
+ba tr ba
 ba trieu bon
 ba trieu nam
 ba trieu sau
 ba trieu bay
-bon trieu nam
+bon tr nam
 bon trieu sau
 bon trieu bay
 bon trieu tam
@@ -449,7 +449,7 @@ nam trieu ba
 nam trieu bon
 nam trieu nam
 nam trieu sau
-sau trieu ba
+sau tr ba
 sau trieu bon
 sau trieu nam
 sau trieu sau
@@ -460,128 +460,128 @@ bay trieu mot
 bay trieu hai
 bay trieu ba
 bay trieu bon
-tam trieu nam
+tam tr nam
 tam trieu sau
 tam trieu bay
 tam trieu tam
 tam trieu chin
 chin trieu mot
-chin trieu hai
+chin tr hai
 chin trieu ba
 chin trieu bon
 chin trieu nam
-1,4 trieu
-1,5 trieu
-1,6 trieu
-1,7 trieu
-1,8 trieu
-1,9 trieu
-2,1 trieu
-2,2 trieu
-2,3 trieu
-2,4 trieu
-4,9 trieu
-5,1 trieu
-5,2 trieu
-5,3 trieu
-5,4 trieu
-5,5 trieu
-5,6 trieu
-5,7 trieu
-5,8 trieu
-9,3 trieu
-9,4 trieu
-9,5 trieu
-9,6 trieu
-9,7 trieu
-9,8 trieu
-9,9 trieu
-1 trieu ruoi
-2 trieu ruoi
-3 trieu ruoi
-4 trieu ruoi
-5 trieu ruoi
-6 trieu ruoi
-7 trieu ruoi
-8 trieu ruoi
-9 trieu ruoi
-mot trieu ruoi
-hai trieu ruoi
-ba trieu ruoi
-bon trieu ruoi
-nam trieu ruoi
-sau trieu ruoi
-bay trieu ruoi
-tam trieu ruoi
-chin trieu ruoi
-1.1 trieu
-1.2 trieu
-1.3 trieu
-1.4 trieu
-1.5 trieu
-1.6 trieu
-1.7 trieu
-1.8 trieu
-1.9 trieu
-2.1 trieu
-2.2 trieu
-2.3 trieu
-2.4 trieu
-2.5 trieu
-2.6 trieu
-2.7 trieu
-2.8 trieu
-2.9 trieu
-3.1 trieu
-3.2 trieu
-3.3 trieu
-3.4 trieu
-3.5 trieu
-3.6 trieu
-3.7 trieu
-3.8 trieu
-3.9 trieu
-4.1 trieu
-4.2 trieu
-4.3 trieu
-4.4 trieu
-4.5 trieu
-4.6 trieu
-4.7 trieu
-4.8 trieu
-4.9 trieu
-5.1 trieu
-5.2 trieu
-5.3 trieu
-5.4 trieu
-5.5 trieu
-5.6 trieu
-5.7 trieu
-5.8 trieu
-5.9 trieu
-6.1 trieu
-6.2 trieu
-6.3 trieu
-6.4 trieu
-6.5 trieu
-6.6 trieu
-6.7 trieu
-6.8 trieu
-6.9 trieu
-7.1 trieu
-7.2 trieu
-7.3 trieu
-7.4 trieu
-7.5 trieu
-7.6 trieu
-7.7 trieu
-7.8 trieu
-7.9 trieu
-8.1 trieu
-8.2 trieu
-8.3 trieu
-8.4 trieu
-8.5 trieu
+1,4 tr
+1,5 tr
+1,6 tr
+1,7 tr
+1,8 tr
+1,9 tr
+2,1 tr
+2,2 tr
+2,3 tr
+2,4 tr
+4,9 tr
+5,1 tr
+5,2 tr
+5,3 tr
+5,4 tr
+5,5 tr
+5,6 tr
+5,7 tr
+5,8 tr
+9,3 tr
+9,4 tr
+9,5 tr
+9,6 tr
+9,7 tr
+9,8 tr
+9,9 tr
+1 tr ruoi
+2 tr ruoi
+3 tr ruoi
+4 tr ruoi
+5 tr ruoi
+6 tr ruoi
+7 tr ruoi
+8 tr ruoi
+9 tr ruoi
+mot tr ruoi
+hai tr ruoi
+ba tr ruoi
+bon tr ruoi
+nam tr ruoi
+sau tr ruoi
+bay tr ruoi
+tam tr ruoi
+chin tr ruoi
+1.1 tr
+1.2 tr
+1.3 tr
+1.4 tr
+1.5 tr
+1.6 tr
+1.7 tr
+1.8 tr
+1.9 tr
+2.1 tr
+2.2 tr
+2.3 tr
+2.4 m
+2.5 m
+2.6 m
+2.7 m
+2.8 m
+2.9 m
+3.1 m
+3.2 m
+3.3 m
+3.4 m
+3.5 m
+3.6 m
+3.7 m
+3.8 m
+3.9 m
+4.1 m
+4.2 m
+4.3 m
+4.4 m
+4.5 m
+4.6 m
+4.7 m
+4.8 m
+4.9 m
+5.1 m
+5.2 m
+5.3 m
+5.4 m
+5.5 củ
+5.6 củ
+5.7 củ
+5.8 củ
+5.9 củ
+6.1 củ
+6.2 củ
+6.3 củ
+6.4 củ
+6.5 củ
+6.6 củ
+6.7 củ
+6.8 củ
+6.9 củ
+7.1 củ
+7.2 củ
+7.3 củ
+7.4 củ
+7.5 củ
+7.6 củ
+7.7 củ
+7.8 củ
+7.9 củ
+8.1 củ
+8.2 củ
+8.3 củ
+8.4 củ
+8.5 củ
 8.6 trieu
 8.7 trieu
 8.8 trieu
@@ -608,13 +608,15 @@ chin trieu ruoi
 1500
 1390
 2000
-2000000
+20000000
 2990
 2000990
+20009900
 2500
 2390
 3000
 3000000
+30000000
 3990
 3000990
 3500

@@ -783,22 +783,22 @@ data/prepay_percent.txt
 - Cau hinh cua [Realme Narzo 10](product_name) [8GB](ram) [256GB](rom) nhu the nao
 - Cau hinh cua [OPPO A92](product_name) [64GB](rom) nhu the nao
 - Cau hinh cua [realme narzo 10](product_name) [2GB](ram) [256gb](rom) nhu the nao
-- Cau hinh cua [OPPO A52](product_name) [32 mb](ram) nhu the nao
+- thong so [OPPO A52](product_name) [32 mb](ram) nhu the nao
 - Cau hinh cua [Xiaomi Black Shark 3](product_name) [8 mb](ram) [16gb](rom) nhu the nao
-- Cau hinh cua [Nokia 110 DS](product_name) [4gb](ram) [128gb](rom) nhu the nao
+- Thông số của [Nokia 110 DS](product_name) [4gb](ram) [128gb](rom) nhu the nao
 - Cau hinh cua [Masstel Max R1](product_name) [3gb](ram) nhu the nao
 - Cau hinh cua [OPPO Find X2 Neo](product_name) [2GB](ram) nhu the nao
-- Cau hinh cua [Realme XT](product_name) [512 GB](rom) nhu the nao
+- thong tin [Realme XT](product_name) [512 GB](rom) nhu the nao
 - Cau hinh cua [Huawei P40 Lite 5G](product_name) [4GB](ram) nhu the nao
 - Cau hinh cua [ss a51](product_name) [32GB](rom) nhu the nao
 - Cau hinh cua [Nokia 230](product_name) [16GB](rom) nhu the nao
 - Cau hinh cua [Xiaomi Black Shark 3](product_name) [6gb](ram) [64 GB](rom) nhu the nao
 - Cau hinh cua [realme x2 pro](product_name) [512gb](rom) nhu the nao
 - Cau hinh cua [Masstel Fami P25](product_name) [1 GB](ram) nhu the nao
-- Cau hinh cua [Nokia 5.3](product_name) [8mb](ram) [128 GB](rom) nhu the nao
-- Cau hinh cua [Realme 6 Pro](product_name) [512 GB](rom) nhu the nao
+- thong tin cua [Nokia 5.3](product_name) [8mb](ram) [128 GB](rom) nhu the nao
+- Thông tin của [Realme 6 Pro](product_name) [512 GB](rom) nhu the nao
 - Cau hinh cua [Oppo Reno3 Pro](product_name) [8 mb](ram) [16GB](rom) nhu the nao
-- Cau hinh cua [Xiaomi Redmi 8A](product_name) [512mb](ram) nhu the nao
+- thông tin của [Xiaomi Redmi 8A](product_name) [512mb](ram) nhu the nao
 - Cau hinh cua [Oppo A31](product_name) [1gb](ram) [64GB](rom) nhu the nao
 - Cau hinh cua [ss 10 plus](product_name) [6GB](ram) [64GB](rom) nhu the nao
 - Cấu hình của [Masstel iZi 206](product_name) [2GB](ram) như thế nào
@@ -3328,6 +3328,50 @@ data/prepay_percent.txt
 - [Nokia 8.3 5G](product_name) ạ
 - [Vivo Y11](product_name)
 - [Vivo Y70s 5G](product_name)
+
+## intent: next
+- tiếp theo
+- danh sách tiếp theo
+- các sản phẩm khác
+- tiếp
+- next
+- danh sách khác
+- tiep theo
+- danh sach tiep theo
+- cac san pham khac
+- tiep
+- next
+- danh sach khac
+
+## intent: previous
+- danh sách cũ
+- quay lại
+- trước
+- danh sách trước
+- danh sách lúc trước
+- quay lại danh sách trước
+- mấy cái hồi nãy
+- quay lại
+- danh sach cu
+- quay lai
+- truoc
+- danh sach truoc
+- danh sach luc truoc
+- quay lai danh sach truoc
+- may cai hoi nay
+- quay lai
+
+## intent:back_to_list
+- quay lại danh sách sản phẩm
+- xem lại danh sách điện thoại
+- xem lại ds
+- quay lại chỗ ds
+- xem lại danh sách lúc nãy
+- quay lai danh sach san pham
+- xem lai danh sach dien thoai
+- xem lai ds
+- quay lai cho ds
+- xem lai danh sach luc nay
 
 ## synonym:cpu
 

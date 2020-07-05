@@ -48,6 +48,25 @@ def PersistentMenu(list_button:list):
                         }
                     ]}
     return message_str
+
+def QuickReply(temp:str,danhsach:str):
+    data = {'action_product_configuration':'Cấu hình','action_promotions_and_gift':'Khuyến mãi','action_guarantee':'Bảo hành','action_option_in_box':'Phụ kiện trong hộp'}
+    listitem = []
+    data.pop(temp)
+    for item in data:
+        btn = {"content_type": "text",
+                    "title": data.__getitem__(item),
+                    "payload": data.__getitem__(item)}
+        listitem.append(btn)
+    if not danhsach:
+        tmp = {"content_type": "text",
+                    "title": "Quay lại danh sách",
+                    "payload": "Quay lại danh sách"}
+        listitem.append(tmp)
+    message = {
+            "text": "Thông tin khác",
+            "quick_replies": listitem}
+    return message
 # list_btn = [ButtonTemplate("button1","this is test"),ButtonTemplate("button2","this is test too")]
 # res = TemplateItems("this is test","url ne","subtitle chăng",list_btn)
 # print(json_message=res)
