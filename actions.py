@@ -32,10 +32,17 @@ from CreateJsonMessageTemplate import HardwareAnswer
 #
 class ActionSessionStarted(Action):
     def name(self):
-        return "action_custom_session_start"
+        return "action_session_start"
     async def run(self, dispatcher, tracker, domain):
         events = [SessionStarted()]
-        message = 'Hello, I am a ChatBot'
+        # message = {"greeting":[
+        #             {
+        #                 "locale":"default",
+        #                 "text":"Hello {{user_first_name}}!"
+        #             }
+        #             ]}
+        # dispatcher.utter_message(json_message = message)
+        message = "test session start"
         dispatcher.utter_message(message)
         events.append(ActionExecuted("action_listen"))
         return events
