@@ -3329,18 +3329,19 @@ data/prepay_percent.txt
 - [Vivo Y11](product_name)
 - [Vivo Y70s 5G](product_name)
 
-## synonym:CPU
+## synonym:cpu
 
 - chíp
 - chip
 - cpu
+- chipset
 - chíp xử lý
 - chip xử lý
 - CPU
 - chip xu ly
 - chip xu ly
 
-## synonym:GPU
+## synonym:gpu
 
 - chíp đồ họa
 - card đồ họa

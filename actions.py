@@ -11,7 +11,7 @@ from typing import Any, Text, Dict, List
 import time
 import requests
 from rasa_sdk import Action, Tracker
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import SlotSet, SessionStarted, ActionExecuted, EventType
 from rasa_sdk.events import FollowupAction
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted
@@ -25,12 +25,20 @@ from InputModify import RoundNum
 from InputModify import GetColName
 from dbConnect import getData
 from CreateJsonMessageTemplate import GenericTemplate
-from CreateJsonMessageTemplate import ButtonTemplate
+from CreateJsonMessageTemplate import ButtonPostbackTemplate
 from CreateJsonMessageTemplate import ItemsTemplate
 from CreateJsonMessageTemplate import HardwareAnswer
 #endregion
 #
-
+class ActionSessionStarted(Action):
+    def name(self):
+        return "action_custom_session_start"
+    async def run(self, dispatcher, tracker, domain):
+        events = [SessionStarted()]
+        message = 'Hello, I am a ChatBot'
+        dispatcher.utter_message(message)
+        events.append(ActionExecuted("action_listen"))
+        return events
 
 class ActionCustomFallback(Action):
 
@@ -105,7 +113,7 @@ class ActionProductPrice(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         #endregion
         if productName:
@@ -128,8 +136,8 @@ class ActionProductPrice(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
                         gia = "Giá: {:,} vnđ".format(item['gia'])
@@ -168,7 +176,7 @@ class ActionOnlinePrice(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         if productName:
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
@@ -190,8 +198,8 @@ class ActionOnlinePrice(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia_online']:
                         gia = "Giá online: {:,} vnđ".format(item['gia_online'])
@@ -230,7 +238,7 @@ class ActionOldProduct(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         if productName:
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
@@ -252,8 +260,8 @@ class ActionOldProduct(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['ghi_chu'].find('tin đồn') > -1:
                         gia = "Sản phẩm tin đồn"
@@ -292,7 +300,7 @@ class ActionProductConfiguration(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         if productName:
             sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(productName)
@@ -346,7 +354,7 @@ class ActionTypeOfProduct(Action):
         if data:
             list_item = []
             for item in data:
-                list_btn = [ButtonTemplate("Danh sách điện thoại của {}".format(
+                list_btn = [ButtonPostbackTemplate("Danh sách điện thoại của {}".format(
                     item['ten']), "Danh sách điện thoại của {}".format(item['ten']))]
                 template_item = ItemsTemplate(
                     item['ten'], item['url_logo'], item['ten'], list_btn)
@@ -383,8 +391,8 @@ class ActionListProduct(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem cấu hình", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem cấu hình", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
                         gia = "Giá: {:,} vnđ".format(item['gia'])
@@ -428,7 +436,7 @@ class ActionCheckPrice(Action):
                 productName = productNameModify(
                     next(tracker.get_latest_entity_values(entity_type='product_name')))
             except:
-                productName = tracker.get_slot('product_name')
+                productName = productNameModify(tracker.get_slot('product_name'))
                 pass
             if productName:
                 sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
@@ -500,8 +508,8 @@ class ActionFindProductInRangePrice(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
                         gia = "Giá: {}".format(item['gia'])
@@ -549,8 +557,8 @@ class ActionFindProductLowerPrice(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = "Giá: {:,} vnđ".format(item['gia'])
                     mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
@@ -598,8 +606,8 @@ class ActionFindProductUpperPrice(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = "Giá: {:,} vnđ".format(item['gia'])
                     mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
@@ -649,8 +657,8 @@ class ActionFindProductAroundPrice(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
                         gia = "Giá: {:,} vnđ".format(item['gia'])
@@ -683,7 +691,7 @@ class ActionScreenInfo(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         if productName:
             sqlQuery = 'select * from dienthoai where ten like "%{}%"'.format(productName)
@@ -713,7 +721,7 @@ class ActionPinInfo(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         Pname_temp = ""
         if productName:
@@ -739,7 +747,7 @@ class ActionPinInfo(Action):
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
-class ActionBuyOldProduct(Action):
+class ActionAcquisitionOldProduct(Action):
     # action thu mua lại sản phẩm cũ
     def name(self) -> Text:
         return "action_acquisition_old_product"
@@ -753,7 +761,7 @@ class ActionBuyOldProduct(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         Pname_temp = ""
         if productName:
@@ -765,8 +773,9 @@ class ActionBuyOldProduct(Action):
                 else:
                     Pname_temp = data[0]['ten']
                     gia = int(data[0]['gia'])
-                    temp = gia*75/100
-                    message_str = "Đối với sản phẩm {} còn trong thời gian bảo hành, không bị rơi vỡ, cấn móp do va đập hay ngấm các dung dịch chất lỏng như nước v.v thì bên cửa hàng sẽ mua lại sản phẩm với giá khoảng 75% giá bán ra tứ là khoảng {:,} vnđ ạ.".format(data[0]['ten'],temp)
+                    temp = int(gia*75/100)
+                    gia_mua_lai = RoundNum(temp)
+                    message_str = "Đối với sản phẩm {} còn trong thời gian bảo hành, không bị rơi vỡ, cấn móp do va đập hay ngấm các dung dịch chất lỏng như nước v.v thì bên cửa hàng sẽ mua lại sản phẩm với giá khoảng 75% giá bán ra tức là khoảng {:,} vnđ ạ.".format(data[0]['ten'],gia_mua_lai)
             else:
                 Pname_temp = productName
                 message_str = "Hiện cửa hàng không cung cấp dịch vụ cho sản phẩm {} nữa ạ. Mong bạn thông cảm.".format(productName)
@@ -902,7 +911,8 @@ class ActionIsProductCanBuyOnInstallment(Action):
                         Pname_temp = data[0]['ten']
                         gia = int(data[0]['gia'])
                         tienno = gia*70/100
-                        tienthang = tienno/4 + tienno*1.66/100
+                        tmp = tienno/4 + tienno*1.66/100
+                        tienthang = RoundNum(int(tmp))
                         message_str = "Sản phẩm {} có hỗ trợ trả góp. Bạn có thể tham khảo gói trả góp sau:  \n  Trả trước 30%.  \nTrả góp trong 4 tháng.  \nMỗi tháng trả {:,} vnđ.  \n*Lưu ý: Số liệu trên đây chỉ mang tính chất tham khảo.  \nĐể biết thêm chi tiết về các gói trả góp của {} bạn có thể truy cập trang web sau. {}".format(
                             data[0]['ten'], tienthang, data[0]['ten'], data[0]['url_installment'])
                     else:
@@ -927,12 +937,13 @@ class ActionHarwareInfo(Action):
         productName = ""
         sqlQuery = ""
         Pname_temp = ""
+        hardware_name= ""
         #region try-catch entity
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         try:
             hardware_name = next(tracker.get_latest_entity_values(
@@ -956,6 +967,7 @@ class ActionHarwareInfo(Action):
                     message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
                 else:
                     col = GetColName(hardware_name.lower())
+                    Pname_temp = data[0]['ten']
                     value = data[0][col]
                     if value is None:
                         message_str = HardwareAnswer(value,role,'no')
@@ -986,7 +998,7 @@ class ActionTakePhotoEraseBackground(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         #endregion
         if productName:
@@ -1001,7 +1013,7 @@ class ActionTakePhotoEraseBackground(Action):
                     if chup_anh.find('xóa phông') > -1:
                         message_str = "Sản phẩm {} có hỗ trở chụp ảnh xóa phông ạ.".format(Pname_temp)
                     else:
-                        message_str = "Sản phẩm {} chưa hỗ trở chụp ảnh xóa phông ạ.".format(Pname_temp)
+                        message_str = "Sản phẩm {} không hỗ trở chụp ảnh xóa phông ạ.".format(Pname_temp)
             else:
                 Pname_temp = productName
                 message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
@@ -1027,7 +1039,7 @@ class ActionMainCamera(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         #endregion
         if productName:
@@ -1071,7 +1083,7 @@ class ActionSelfieCamera(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         #endregion
         if productName:
@@ -1113,7 +1125,7 @@ class ActionResolutionCamera(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         try:
             loai_camera = next(tracker.get_latest_entity_values(entity_type='camera'))
@@ -1157,7 +1169,7 @@ class ActionGuarantee(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         #endregion
         if productName:
@@ -1195,7 +1207,7 @@ class ActionPromotionsAndGift(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = tracker.get_slot('product_name')
+            productName = productNameModify(tracker.get_slot('product_name'))
             pass
         if productName:
             sqlQuery = "select * from dienthoai where ten like '%{}%'".format(
@@ -1256,8 +1268,8 @@ class ActionFindProduct(Action):
             if data:
                 list_item = []
                 for item in data:
-                    list_btn = [ButtonTemplate("Xem cấu hình", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem cấu hình", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
                         gia = "Giá: {:,} vnđ".format(item['gia'])
@@ -1316,8 +1328,8 @@ class ActionFindAnotherProduct(Action):
             if result:
                 list_item = []
                 for item in result:
-                    list_btn = [ButtonTemplate("Xem chi tiết", "Cấu hình của {}".format(
-                        item['ten'])), ButtonTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                    list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
                         gia = "Giá: {}".format(item['gia'])
@@ -1414,21 +1426,22 @@ class ActionFollow(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            pass 
+            pass
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
         if productName:
             sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
             data = getData(sqlQuery)
             print("--------------\n{}\n{}\n-----------".format(self.name(),previus_action))
             if data:
-                SlotSet('product_name',data[0]['ten'])
+                Pname_temp = data[0]['ten']
                 if previus_action:
                     return[FollowupAction(name=previus_action)]
                 else:
                     return[FollowupAction("action_find_product")]
         else:
+            Pname_temp = productName
             dispatcher.utter_message('Vui lòng nhập tên sản phẩm bạn muốn tìm hiểu thông tin!')
-            return
+            return[SlotSet('product_name',Pname_temp)]
 
 class ActionOptionInBox(Action):
     # action thông tin khuyến mãi và quà tặng
@@ -1438,10 +1451,38 @@ class ActionOptionInBox(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # productName = ""
-        # sqlQuery = ""
-        # Pname_temp =""
-        return
+        productName = ""
+        sqlQuery = ""
+        Pname_temp =""
+        try:
+            productName = productNameModify(
+                next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            productName = productNameModify(tracker.get_slot('product_name'))
+            pass
+        if productName:
+            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(
+                productName)
+            data = getData(sqlQuery)
+            if data:
+                if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
+                    message_str = "Sản phẩm {} mới chỉ là tin đồn. Bên cửa hàng sẽ thông báo cho bạn khi có thông tin mới về sản phẩm này ạ.".format(data[0]['ten'])
+                elif data[0]['box']:
+                    Pname_temp = data[0]['ten']
+                    box = data[0]['box']
+                    message_str = "Khi mua sản phẩm {} trong hộp có:\n{}".format(
+                        Pname_temp, box)
+                else:
+                    message_str = "Không có thông tin cho sản phẩm {}.".format(
+                        Pname_temp)
+            else:
+                Pname_temp = productName
+                message_str = "Sản phẩm {} hiện không có thông tin về các phụ kiện trong hộp. Xin cảm ơn".format(Pname_temp)
+        else:
+            message_str = "Bản đang hỏi thông tin của sản phẩm nào ạ?"
+        dispatcher.utter_message(message_str)
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 class ActionCanPlayGame(Action):
     # action thông tin khuyến mãi và quà tặng

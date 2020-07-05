@@ -195,6 +195,7 @@ responses:
 
 
 actions:
+  - action_custom_session_start
   - action_custom_fallback
   - action_test_st
   - action_product_price

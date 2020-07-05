@@ -198,6 +198,8 @@
 ## phu kien khi mua may
 * option_in_box
   - action_option_in_box
+  - slot{"latest_action": "action_option_in_box"}
+  - slot{"product_name": "iPhone 11 Pro"}
 
 ## storie promotions_and_gifts
 * promotions_and_gifts{"product_name":"iphone xs max"}

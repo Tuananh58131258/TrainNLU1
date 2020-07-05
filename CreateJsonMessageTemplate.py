@@ -11,7 +11,7 @@ def GenericTemplate(template_items:list):
                 }
             }
     return message_str
-def ButtonTemplate(btn_tittle:str,btn_payload:str):
+def ButtonPostbackTemplate(btn_tittle:str,btn_payload:str):
     button = {
         "type":"postback",
         "title":btn_tittle,
@@ -38,6 +38,16 @@ def HardwareAnswer(name:str,TypeQ:str,answer:str):
                 'WHQ':{"yes":"Máy sử dụng {} ạ.".format(name),"no":"Sản phẩm không có {} ạ".format(name)}}
     result = template[TypeQ][answer]
     return result
+
+def PersistentMenu(list_button:list):
+    message_str = {"persistent_menu": [
+                        {
+                            "locale": "default",
+                            "composer_input_disabled": "false",
+                            "call_to_actions": list_button
+                        }
+                    ]}
+    return message_str
 # list_btn = [ButtonTemplate("button1","this is test"),ButtonTemplate("button2","this is test too")]
 # res = TemplateItems("this is test","url ne","subtitle chăng",list_btn)
 # print(json_message=res)
