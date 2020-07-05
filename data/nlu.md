@@ -214,7 +214,7 @@ data/prepay_percent.txt
 - dien thoai [Huawei Mate 30](product_name) mua moi bao nhieu tien
 - san pham [Masstel Izi 280](product_name) mua moi hien nay co gia bao nhieu
 - [ss a70s](product_name) gia mua moi la bao nhieu
-- [Samsung Galaxy S20+](product_name) mua moi co gia bao nhieu
+- [Samsung Galaxy S20](product_name) mua moi co gia bao nhieu
 - [Vivo iQOO Neo 3](product_name) mua moi bao nhieu tien
 - [Masstel Play 30](product_name) mua moi bao nhieu tien
 - [ss a30](product_name) co gia bao nhieu khi mua moi
@@ -249,12 +249,12 @@ data/prepay_percent.txt
 - giá của điện thoại [ss watch active](product_name) [256 gb](rom) là bao nhiêu
 - giá của sản phẩm [Vivo Y9s](product_name) [4 mb](ram) [64 GB](rom) là bao nhiêu
 - giá của điện thoại [ss a21](product_name) [16 gb](rom) [1 gb](ram) là bao nhiêu
-- giá của điện thoại [ss 20+](product_name) [2 GB](ram) như thế nào
+- giá của điện thoại [ss 20](product_name) [2 GB](ram) như thế nào
 - [ss a30](product_name) [4 gb](ram) là bao nhiêu
 - giá sản phẩm [Vivo Z5i](product_name) [8 mb](ram) là bao nhiêu
 - giá sản phẩm [Realme C3](product_name) [3 GB](ram) [64 gb](rom) là bao nhiêu
 - giá điện thoại [Samsung Galaxy A01](product_name) [256 GB](rom) như thế nào
-- giá sản phẩm [ss s20+](product_name) [512 mb](ram) là bao nhiêu
+- giá sản phẩm [ss s20](product_name) [512 mb](ram) là bao nhiêu
 - giá điện thoại [Nokia 800 Tough](product_name) [32 GB](rom) [32 mb](ram) là bao nhiêu
 - giá của sản phẩm [Samsung Galaxy A20](product_name) [3 GB](ram) như thế nào
 - giá điện thoại [Masstel Izi 112](product_name) [16 gb](rom) là bao nhiêu
@@ -290,7 +290,7 @@ data/prepay_percent.txt
 - giá của điện thoại [Vivo Apex](product_name) [32gb](rom) [6 GB](ram) như thế nào
 - giá điện thoại [Itel it2171](product_name) [32gb](rom) như thế nào
 - giá của sản phẩm [ss m01](product_name) [4MB](ram) là bao nhiêu
-- giá điện thoại [ss 10+](product_name) [2 gb](ram) [64 gb](rom) là bao nhiêu
+- giá điện thoại [ss 10](product_name) [2 gb](ram) [64 gb](rom) là bao nhiêu
 - giá sản phẩm [OPPO A92s](product_name) [32gb](rom) [8 gb](ram) như thế nào
 - giá sản phẩm [Huawei Y5p](product_name) [4 GB](ram) [16gb](rom) như thế nào
 - giá của sản phẩm [Masstel iZi 206](product_name) [32 gb](rom) [512 MB](ram) là bao nhiêu
@@ -311,14 +311,14 @@ data/prepay_percent.txt
 - giá điện thoại [Vivo X50 Lite](product_name) là bao nhiêu
 - giá của điện thoại [Samsung Galaxy S10e](product_name) là bao nhiêu
 - giá của điện thoại [Vivo X50](product_name) như thế nào
-- giá của sp [Samsung Galaxy Note 10+](product_name) như thế nào
+- giá của sp [Samsung Galaxy Note 10](product_name) như thế nào
 - giá của điện thoại [ss a41](product_name) như thế nào
 - giá của sp [realme 5 pro](product_name) là bao nhiêu
 - giá của điện thoại [ss a20e](product_name) là bao nhiêu
 - giá điện thoại [ss m21](product_name) là bao nhiêu
 - giá của sp [ss a20e](product_name) là bao nhiêu
 - giá của sp [Samsung Galaxy S20 Ultra](product_name) là bao nhiêu
-- giá sp [ss 20+](product_name) như thế nào
+- giá sp [ss 20](product_name) như thế nào
 - giá điện thoại [Vivo Y50](product_name) như thế nào
 - giá của điện thoại [Huawei Nova 5i](product_name) như thế nào
 - giá của dt [realme 6i](product_name) như thế nào
@@ -381,7 +381,7 @@ data/prepay_percent.txt
 - [Masstel Izi 112](product_name) bao nhiêu tiền
 - điện thoại [Nokia 5.3](product_name) có giá bao nhiêu
 - điện thoại [Xiaomi Mi 10 S](product_name) bao nhiêu tiền
-- sản phẩm [Samsung Galaxy J8+](product_name) bao nhiêu tiền
+- sản phẩm [Samsung Galaxy J8](product_name) bao nhiêu tiền
 - sản phẩm [OPPO Find X2](product_name) có giá bao nhiêu
 - sản phẩm [ss a51](product_name) hiện nay có giá bao nhiêu
 - sản phẩm [ss m31](product_name) có giá bao nhiêu
@@ -473,7 +473,7 @@ data/prepay_percent.txt
 - dien thoai [Huawei Nova 7 5G](product_name) [64gb](rom) [8 mb](ram) mua online co gia bao nhieu
 - [Nokia 150 DS](product_name) [16gb](rom) [32 mb](ram) mua online hien nay co gia bao nhieu
 - san pham [Masstel Max R1](product_name) [3 gb](ram) mua online bao nhieu tien
-- [Samsung Galaxy Note 20+](product_name) [256gb](rom) mua online hien nay co gia bao nhieu
+- [Samsung Galaxy Note 20](product_name) [256gb](rom) mua online hien nay co gia bao nhieu
 - [Samsung Galaxy A21s](product_name) [16GB](rom) gia mua online la bao nhieu
 - dien thoai [Samsung Galaxy M01](product_name) [4 MB](ram) gia khi mua online
 - [Huawei P40 Lite 5G](product_name) [128 gb](rom) co gia bao nhieu khi mua online
@@ -531,7 +531,7 @@ data/prepay_percent.txt
 - san pham [Realme X2](product_name) co gia bao nhieu khi mua online
 - dien thoai [Samsung Galaxy A11](product_name) mua online bao nhieu tien
 - [Huawei P30 Lite New Edition](product_name) co gia bao nhieu khi mua online
-- san pham [ss s20+](product_name) co gia bao nhieu khi mua online
+- san pham [ss s20](product_name) co gia bao nhieu khi mua online
 - [Xiaomi Redmi Note 9 Pro Max](product_name) mua online bao nhieu tien
 - dien thoai [Vivo X30 Pro](product_name) mua online hien nay co gia bao nhieu
 - [Realme 6](product_name) co gia bao nhieu khi mua online
@@ -702,7 +702,7 @@ data/prepay_percent.txt
 - giá của điện thoại [Realme 6](product_name) khi mua cũ như thế nào
 - giá của điện thoại [Huawei Mate 30](product_name) khi mua cũ như thế nào
 - giá sản phẩm [Xiaomi Redmi 8](product_name) cũ là bao nhiêu
-- giá sản phẩm [Samsung Galaxy Note 20+](product_name) cũ là bao nhiêu
+- giá sản phẩm [Samsung Galaxy Note 20](product_name) cũ là bao nhiêu
 - giá của điện thoại [Nokia 3310](product_name) khi mua cũ như thế nào
 - giá của sản phẩm [Xiaomi Redmi Note 7](product_name) khi mua cũ như thế nào
 - gia san pham [ss 10 lite](product_name) cu la bao nhieu
@@ -979,8 +979,8 @@ data/prepay_percent.txt
 
 <!-- kiểm tra giá của sản phẩm -->
 
-- gia cua [ss m01](product_name) [4,2 trieu](price) phai khong a
-- gia dien thoai [Huawei Nova 7 5G](product_name) la [1,4 trieu](price) dung khong
+- gia cua [ss m01](product_name) [4,2trieu](price) phai khong a
+- gia dien thoai [Huawei Nova 7 5G](product_name) la [1,4trieu](price) dung khong
 - gia dien thoai [Masstel Fami P25](product_name) [ham chin trieu](price) dung khong
 - gia san pham [OPPO Find X2 Neo](product_name) la [7,3 trieu](price) phai khong a
 - gia dien thoai [iPhone XR](product_name) [7 trieu 7](price) phai khong a
@@ -990,7 +990,7 @@ data/prepay_percent.txt
 - gia cua [Energizer P20](product_name) [chin trieu](price) phai khong a
 - gia cua [Samsung Galaxy J8 plus](product_name) la [ba trieu mot](price) phai khong
 - gia dien thoai [Itel It6120](product_name) la [6,3 trieu](price) phai khong a
-- gia cua [Vivo X30](product_name) la [9,6 trieu](price) phai khong
+- gia cua [Vivo X30](product_name) la [9,6trieu](price) phai khong
 - gia san pham [ss m40](product_name) la [sau trieu mot](price) phai khong a
 - gia cua [Vsmart Active 3](product_name) [hai trieu hai](price) phai khong a
 - gia cua [iPhone 11 Pro](product_name) [8 trieu 8](price) phai khong a
@@ -999,15 +999,15 @@ data/prepay_percent.txt
 - gia dien thoai [ss m11](product_name) la [5 trieu](price) dung khong
 - gia cua [Masstel Play 30](product_name) [6,1 trieu](price) phai khong a
 - gia dien thoai [ss 10](product_name) la [6,3 trieu](price) phai khong
-- gia cua [Masstel Max R1](product_name) la [7 trieu 7](price) phai khong a
-- gia cua [Samsung Galaxy Note 10+](product_name) la [chin trieu ruoi](price) dung khong
+- gia cua [Masstel Max R1](product_name) la [7trieu7](price) phai khong a
+- gia cua [Samsung Galaxy Note 10](product_name) la [chin trieu ruoi](price) dung khong
 - gia san pham [ss a01](product_name) [chin trieu nam](price) dung khong
 - gia san pham [Xiaomi Redmi K30 5G](product_name) [nam trieu chin](price) dung khong
-- gia dien thoai [Samsung Galaxy J8+](product_name) [3,4 trieu](price) phai khong
+- gia dien thoai [Samsung Galaxy J8](product_name) [3,4trieu](price) phai khong
 - gia cua [Oppo A5](product_name) [3,1 trieu](price) phai khong
 - gia dien thoai [Oppo A31](product_name) la [nam trieu chin](price) dung khong
 - gia dien thoai [iPhone 11 Pro Max](product_name) la [nam trieu bay](price) dung khong
-- giá sản phẩm [ss j8+](product_name) [ba triệu ba](price) phải không
+- giá sản phẩm [ss j8](product_name) [ba triệu ba](price) phải không
 - gia điện thoại [Huawei Y6p](product_name) là [3,4 triệu](price) phải không
 - giá sản phẩm [Vivo S1 Pro](product_name) là [9 triệu](price) phải không
 - giá của [realme 6i](product_name) là [1 triệu rưởi](price) phải không ạ
@@ -1022,7 +1022,7 @@ data/prepay_percent.txt
 - giá của [Vivo iQOO Neo 3](product_name) là [bảy triệu tám](price) phải không
 - giá sản phẩm [Xiaomi Redmi Note 7](product_name) là [9,6 triệu](price) đúng không
 - giá sản phẩm [OPPO Find X2 Neo](product_name) [hai mươi bảy triệu](price) đúng không
-- giá sản phẩm [ss a71 5g](product_name) [7,4 triệu](price) đúng không
+- giá sản phẩm [ss a71 5g](product_name) [7,4triệu](price) đúng không
 - gia điện thoại [realme x50 pro player edition](product_name) là [hai mươi một triệu](price) phải không
 - giá của [ss s10 lite](product_name) [4,1 triệu](price) đúng không
 - giá của [Samsung Galaxy A10e](product_name) [sáu triệu năm](price) phải không ạ
@@ -1036,10 +1036,10 @@ data/prepay_percent.txt
 - [Samsung Galaxy M31](product_name) giá là [chín triệu ba](price) phải không
 - điện thoại [Masstel Fami S2](product_name) giá là [tám triệu tám](price) đúng không
 - [ss a51 5g](product_name) giá [9,6 triệu](price) đúng không
-- sản phẩm [Xiaomi Redmi Note 8](product_name) giá [9,2 triệu](price) phải không ạ
+- sản phẩm [Xiaomi Redmi Note 8](product_name) giá [9,2triệu](price) phải không ạ
 - điện thoại [Xiaomi Redmi K30 5G](product_name) giá là [6,5 triệu](price) đúng không
 - [realme x2](product_name) có giá [hai mươi lăm triệu](price) phải không ạ
-- [Samsung Galaxy J8+](product_name) giá là [sáu triệu tám](price) phải không ạ
+- [Samsung Galaxy J8](product_name) giá là [sáu triệu tám](price) phải không ạ
 - [realme 3](product_name) có giá [7,3 triệu](price) đúng không
 - điện thoại [OPPO Find X2](product_name) giá [sáu triệu bảy](price) đúng không
 - [ss fold](product_name) giá [ba triệu bảy](price) đúng không
@@ -1061,7 +1061,7 @@ data/prepay_percent.txt
 - san pham [Vsmart Active 3](product_name) gia [4,8 trieu](price) dung khong
 - [Energizer E241s](product_name) gia la [hai muoi chin trieu](price) phai khong
 - [ss a60](product_name) gia [hai muoi chin trieu](price) phai khong a
-- san pham [Nokia N150](product_name) gia [5,1 trieu](price) phai khong a
+- san pham [Nokia N150](product_name) gia [5,1trieu](price) phai khong a
 - dien thoai [Xiaomi Redmi Note 8](product_name) co gia [bon trieu chin](price) dung khong
 - san pham [Nokia 8.3 5G](product_name) co gia [chin trieu bay](price) phai khong a
 - [Huawei Nova 7 Pro 5G](product_name) co gia [2 trieu 2](price) dung khong
@@ -1074,7 +1074,7 @@ data/prepay_percent.txt
 - [Masstel iZi 206](product_name) co gia [sau trieu](price) phai khong
 - san pham [OPPO A1k](product_name) co gia [4,6 trieu](price) dung khong
 - san pham [realme 6](product_name) co gia [3,7 trieu](price) phai khong
-- [Samsung Galaxy J8+](product_name) gia [2 m 7](price) phai khong
+- [Samsung Galaxy J8](product_name) gia [2m7](price) phai khong
 - san pham [Nokia 2720 Flip 4G](product_name) gia la [hai trieu ruoi](price) phai khong
 - san pham [Huawei P40 Pro](product_name) co gia [8,4 trieu](price) dung khong
 - san pham [Samsung Galaxy M10s](product_name) co gia [4 m 2](price) phai khong a
@@ -1112,8 +1112,8 @@ data/prepay_percent.txt
 - điện thoại [Xiaomi Mi 10 Pro](product_name) có giá [1 m 1](price) đúng không
 - điện thoại [ss m01](product_name) có giá [9,1 triệu](price) phải không ạ
 - sản phẩm [OPPO Reno A](product_name) có giá [8,3 triệu](price) đúng không
-- điện thoại [ss 10+](product_name) giá [4 m 3](price) đúng không
-- [Samsung Galaxy Note 20+](product_name) có giá [3 m 2](price) phải không
+- điện thoại [ss 10](product_name) giá [4 m 3](price) đúng không
+- [Samsung Galaxy Note 20](product_name) có giá [3 m 2](price) phải không
 - [Nokia 5310](product_name) giá là [3 m 4](price) phải không ạ
 - sản phẩm [realme 5](product_name) giá là [7 m 1](price) phải không
 - điện thoại [ss a30](product_name) giá [8,4 triệu](price) đúng không
@@ -1767,7 +1767,7 @@ data/prepay_percent.txt
 - Man hinh cua [Itel It2123V](product_name) la man hinh loai nao
 - Màn hình của [Samsung Galaxy A60](product_name) là màn hình loại nào
 - [OPPO A72](product_name) sử dụng màn hình loại gì?
-- màn hình của [ss s20+](product_name) là màn hình gì?
+- màn hình của [ss s20](product_name) là màn hình gì?
 - [Realme 5i](product_name) sử dụng màn hình loại gì?
 - [Nokia 2.2](product_name) sử dụng màn hình loại gì?
 - [realme x2 pro](product_name) sử dụng màn hình loại gì?
@@ -1864,7 +1864,7 @@ data/prepay_percent.txt
 - điện thoại [Samsung Galaxy Note 10](product_name) cũ shop thu lại bao nhiêu tiền vậy?
 - shop thu mua [Samsung Galaxy M21](product_name) cũ lại với giá bao nhiêu
 - shop thu mua [Xiaomi Mi 10 Youth Edition](product_name) cũ lại với giá bao nhiêu
-- shop thu mua [Samsung Galaxy Note 10+](product_name) cũ lại với giá bao nhiêu
+- shop thu mua [Samsung Galaxy Note 10](product_name) cũ lại với giá bao nhiêu
 - [Masstel Fami P25](product_name) cũ shop mua lại với giá bao nhiêu?
 - [iPhone 11 Pro](product_name) cũ bán được bao nhiêu?
 - điện thoại [Huawei P30 Pro New Edition](product_name) cũ shop thu lại bao nhiêu tiền vậy?
@@ -1914,7 +1914,7 @@ data/prepay_percent.txt
 - Em là sv nam nay 20 tuoi muốn mua trả góp trả trc [30 %](prepay_percent) trả trong [10 thang](installment_payment_period) Khi đi mua cần đem theo gì ạ
 - giay to gi de tra gop
 - Cho em hỏi em muốn mua trả góp trả trước khoảng [30](prepay_percent) hoặc [40 %](prepay_percent) trả trong vòng [8](installment_payment_period) đến [9 tháng](installment_payment_period) e cần những loại giấy tờ nào
-- mình muốn mua trả góp thì cần thủ tục thế nào cmnd + bằng lái xe thôi có đc ko
+- mình muốn mua trả góp thì cần thủ tục thế nào cmnd  bằng lái xe thôi có đc ko
 - E đang đi bộ đội hiện giờ e có giấy phép lái xe chứng minh nhân dân và thẻ bảo hiểm y tế của quân đội cấp thì có đủ điều kiện để trả góp không vậy
 - gói trả góp [0 %](interest_rate) lãi suất cần những gì bn
 - chào ad mình là sinh viên muốn mua trả góp máy thì cần những lưu ý gì ạ?
@@ -1932,7 +1932,7 @@ data/prepay_percent.txt
 - Em là sinh viên muốn mua trả góp đt [oppo f1s](product_name)  do học xa nhà nên không có sẳn giấy CMND có công chứng của cha hoặc mẹ thì có mua được kh?
 - Minh muon mua tra gop [0 %](interest_rate) co can ho khau khong vay?
 - Cmnd voi bang lai kon co ho khau duọc ko shop
-- Nếu e có cmnd +bằng lái xe có thê mua trả góp 0đ hai không
+- Nếu e có cmnd bằng lái xe có thê mua trả góp 0đ hai không
 - Em là sinh viên đủ 20 tuổi có thể áp dụng trả góp cho sinh viên được không ạ? Và cần giấy tờ như thế nào? Thủ tục nhanh ko ạ
 - E 19t chỉ có chứng minh và hộ khẩu photo đc ko admin
 - Có cmnd và blx có trả góp [0 lãi suất](interest_rate) có duoc ko fpt sop
@@ -1947,11 +1947,11 @@ data/prepay_percent.txt
 - Hien tai e lam c.ty e dung 20t e can mag theo gi de mua tra gop the shop
 - Dùng Bản photo được không ạ (có cần công chứng không)
 - Mình mất bằng lái xe Hộ khẩu lại ở bắc ninh mình dùng sổ tạm trú ở bắc giang để mua trả góp ở bắc giang dk k shop
-- ad ơi cho e hỏi  thủ tục trả góp [0 %](interest_rate) là cmnd+hộ khẩu được k ạ?
+- ad ơi cho e hỏi  thủ tục trả góp [0 %](interest_rate) là cmndhộ khẩu được k ạ?
 - Trả trước 0đ mà mình chỉ có cmnd và gplx đc kh vậy ad
 - Máy này hỗ trợ gói [0 %](interest_rate) mình có cmnd và gplxe
 - Anh ơi em có giấy CMND với họ khẩu thôi có mưa trả góp đc khong
-- chị ơi cho e hỏi là bây giờ e mua dt này trả trước [10 %](prepay_percent) e có HK photo công chứng soi y bản chính + cmnd thì có thể mua đc k ạ??
+- chị ơi cho e hỏi là bây giờ e mua dt này trả trước [10 %](prepay_percent) e có HK photo công chứng soi y bản chính  cmnd thì có thể mua đc k ạ??
 - K co bang lai mua duoc k
 - em muon mua tra gop ma chi co chung minh thu co duoc khong ad
 - Shop ơi cho e hỏi e muốn mua [oppo f1s](product_name) trả góp gói [0 đồng]{"entity":"price","role":"prepay"} ,nhưng e lại không có sổ hộ khẩu ở đây vậy e có thể dùng bằng lái xe thay cho sổ hộ khẩu được không ạ
@@ -1962,16 +1962,16 @@ data/prepay_percent.txt
 - sinh viên mua trả góp dc ko ak
 - chung minh thu quân đội có duoc mua tra gop [0 %](interest_rate) k b ?
 - Cmnd vs bằng lái tham gia trả góp [0 đ]{"entity":"price","role":"prepay"} đc k
-- Mình có bằng lái xe + cmtnd có tham gia đk gói trả góp [0 %](interest_rate) k qtv?
+- Mình có bằng lái xe  cmtnd có tham gia đk gói trả góp [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
 - chào ad e có CMND bằng lái xe có trả góp đc k ạ trả trước [0 %](prepay_percent)
 - Dung Ban photo duoc khong a (co can cong chung khong)
 - Minh mat bang lai xe Ho khau lai o bac ninh minh dung so tam tru o bac giang de mua tra gop o bac giang dk k shop
-- ad oi cho e hoi  thu tuc tra gop [0 %](interest_rate) la cmnd+ho khau duoc k a?
+- ad oi cho e hoi  thu tuc tra gop [0 %](interest_rate) la cmndho khau duoc k a?
 - Tra truoc 0d ma minh chi co cmnd va gplx dc kh vay ad
 - May nay ho tro goi [0 %](interest_rate) minh co cmnd va gplxe
 - Anh oi em co giay CMND voi ho khau thoi co mua tra gop dc khong
-- chi oi cho e hoi la bay gio e mua dt nay tra truoc [10 %](prepay_percent) e co HK photo cong chung soi y ban chinh + cmnd thi co the mua dc k a??
+- chi oi cho e hoi la bay gio e mua dt nay tra truoc [10 %](prepay_percent) e co HK photo cong chung soi y ban chinh  cmnd thi co the mua dc k a??
 - K co bang lai mua duoc k
 - em muon mua tra gop ma chi co chung minh thu co duoc khong ad
 - Shop oi cho e hoi e muon mua [oppo f1s](product_name) tra gop goi [0 dong]{"entity":"price","role":"prepay"} ,nhung e lai khong co so ho khau o day vay e co the dung bang lai xe thay cho so ho khau duoc khong a
@@ -1982,7 +1982,7 @@ data/prepay_percent.txt
 - sinh vien mua tra gop dc ko ak
 - chung minh thu quan doi co duoc mua tra gop [0 %](interest_rate) k b ?
 - Cmnd vs bang lai tham gia tra gop [0 d]{"entity":"price","role":"prepay"} dc k
-- Minh co bang lai xe + cmtnd co tham gia dk goi tra gop [0 %](interest_rate) k qtv?
+- Minh co bang lai xe  cmtnd co tham gia dk goi tra gop [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
 - chao ad e co CMND bang lai xe co tra gop dc k a tra truoc [0 %](prepay_percent)
 
@@ -1990,7 +1990,7 @@ data/prepay_percent.txt
 
 <!-- 2 hay nhiều hồ sơ -->
 
-- QTV cho nếu e dùng 1sổ hộ khẩu + CMND mua trả góp 2 sp chung đc k ạ
+- QTV cho nếu e dùng 1sổ hộ khẩu  CMND mua trả góp 2 sp chung đc k ạ
 - mình đang trả góp bên ngân hàng fe kỳ hạn là 4 tháng nhưng mình trả dc hai tháng rồi vậy có dc mua trả góp 0% sản phẩm này ko vậy.
 - Chào bạn..hiện tai mình đang có hồ sơ vay bên FE thì có được mua trả góp nữa không vậy
 - Cho e hỏi e muốn mua trả góp trả trc 0đ đc k ạ hiện tại e đang trả góp bên fe credit.
@@ -1998,7 +1998,7 @@ data/prepay_percent.txt
 - Em đang vay trả góp của home edit Vậy có thể mua trả góp được tiếp không ad?
 - Mua góp 2 cái một lần Có dk ko ad oi
 - em vừa hoàn thành hồ sơ trả góp thì có cần làm lại hồ sơ mới không
-- QTV cho neu e dung 1so ho khau + CMND mua tra gop 2 sp chung dc k a
+- QTV cho neu e dung 1so ho khau  CMND mua tra gop 2 sp chung dc k a
 - minh dang tra gop ben ngan hang fe ky han la 4 thang nhung minh tra dc hai thang roi vay co dc mua tra gop 0% san pham nay ko vay.
 - Chao ban..hien tai minh dang co ho so vay ben FE thi co duoc mua tra gop nua khong vay
 - Cho e hoi e muon mua tra gop tra trc 0d dc k a hien tai e dang tra gop ben fe credit.
@@ -2070,7 +2070,7 @@ data/prepay_percent.txt
 - QTV cho hỏi là mua trả góp trả trước [10 %](prepay_percent) góp [12 tháng](installment_payment_period) thì mỗi tháng góp bao nhiêu tiền vậy.thank!
 - [Mi A1](product_name) trả góp mình trả trước [50 %](prepay_percent) thì còn bao nhiêu
 - [Oppo a71](product_name) trả trước [3000]{"entity":"price","role":"prepay"} còn lại trả trong [4 tháng](installment_payment_period) thì moi tháng trả bn vậy
-- mua tra gop oppo a71 co CMND + HK + hdon dien nuoc tra truoc 10% tra 12thag moi thag tra bao nhieu fpt
+- mua tra gop oppo a71 co CMND  HK  hdon dien nuoc tra truoc 10% tra 12thag moi thag tra bao nhieu fpt
 - trả góp [0 %](interest_rate) thì trong mấy tháng và trả trước bao nhiêu % mỗi tháng góp bao nhiêu
 - Trả trước [10 %](prepay_percent) trả [12 tháng](installment_payment_period) 1 tháng trả bao nhiêu
 - tra trc [20 %](prepay_percent) trong [12 thang](installment_payment_period) jz can tra bao nhju va moi thang nhju jz
@@ -2132,7 +2132,7 @@ data/prepay_percent.txt
 - Cho em hỏi 16 tuổi có được mua trả góp không ạ
 - Cho e hỏi là e sinh 1/5/1997 e có giấy chứng minh và bằng lái xe e mua trả trước 20% vậy có đc k ạ
 - em sn 98 có cho trả góp k z
-- E có cmnd + hk trên 20t muốn mua trả góp trả trước 0đ đc ko ạ
+- E có cmnd  hk trên 20t muốn mua trả góp trả trước 0đ đc ko ạ
 - em sinh 18.11.1997 thì góp được chưa ạ
 - Em 20 tuổi có cmnd có vay trả góp được không QTV ?
 - Em sinh năm 98 đã đủ tuổi mua trả góp chưa ạ
@@ -2357,7 +2357,7 @@ data/prepay_percent.txt
 - [OPPO A92s](product_name) xài [chip xử lý]{"entity":"hardware","role":"WHQ"} gì
 - [realme 6](product_name) dùng [card]{"entity":"hardware","role":"WHQ"} gì
 - [Samsung Galaxy A21](product_name) dùng [card đồ họa]{"entity":"hardware","role":"WHQ"} gì
-- [Samsung Galaxy J8+](product_name) xài [chip xử lý]{"entity":"hardware","role":"WHQ"} gì
+- [Samsung Galaxy J8](product_name) xài [chip xử lý]{"entity":"hardware","role":"WHQ"} gì
 - [Huawei P40 Lite](product_name) có [cpu]{"entity":"hardware","role":"WHQ"} gì
 - [Xiaomi Redmi 8A](product_name) có [chip xử lý]{"entity":"hardware","role":"WHQ"} gì
 - [ss a21s](product_name) xài [CPU]{"entity":"hardware","role":"WHQ"} gì
@@ -2368,9 +2368,9 @@ data/prepay_percent.txt
 - [Energizer E100](product_name) xài [card]{"entity":"hardware","role":"WHQ"} gì
 - [realme 5 pro](product_name) xài [gpu]{"entity":"hardware","role":"WHQ"} gì
 - [Oppo A9](product_name) có [GPU]{"entity":"hardware","role":"WHQ"} gì
-- [ss j8+](product_name) dung [card do hoa]{"entity":"hardware","role":"WHQ"} gi
+- [ss j8](product_name) dung [card do hoa]{"entity":"hardware","role":"WHQ"} gi
 - [OPPO Reno4](product_name) xai [CPU]{"entity":"hardware","role":"WHQ"} gi
-- [Samsung Galaxy J8+](product_name) dung [card do hoa]{"entity":"hardware","role":"WHQ"} gi
+- [Samsung Galaxy J8](product_name) dung [card do hoa]{"entity":"hardware","role":"WHQ"} gi
 - [Xiaomi Redmi K30 Pro Zoom Edition](product_name) dung [chip]{"entity":"hardware","role":"WHQ"} gi
 - [Huawei Y7 Pro](product_name) xai [card do hoa]{"entity":"hardware","role":"WHQ"} gi
 - [Realme C2](product_name) co [gpu]{"entity":"hardware","role":"WHQ"} gi
@@ -2402,7 +2402,7 @@ data/prepay_percent.txt
 - [Masstel Fami 9](product_name) xai duoc [gprs]{"entity":"hardware","role":"YorN"} khong
 - [Realme C2](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
 - [Itel It2163](product_name) dùng được [3 g]{"entity":"hardware","role":"YorN"} không
-- [Samsung Galaxy Note 10+](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
+- [Samsung Galaxy Note 10](product_name) xài được [gprs]{"entity":"hardware","role":"YorN"} không
 - [Itel It2170](product_name) có [edge]{"entity":"hardware","role":"YorN"} không
 - [OPPO A1k](product_name) có [đèn pin]{"entity":"hardware","role":"YorN"} không
 - [Huawei Nova 5](product_name) dùng được [đèn flash]{"entity":"hardware","role":"YorN"} không
@@ -2490,7 +2490,7 @@ data/prepay_percent.txt
 - máy [OPPO Find X2 Lite](product_name) chụp xóa phông được không
 - máy [Samsung M31s](product_name) chụp xóa phông được không
 - điện thoại [Samsung M01s](product_name) chụp xóa phông được không
-- điện thoại [Samsung Galaxy S20+](product_name) chụp xóa phông được không
+- điện thoại [Samsung Galaxy S20](product_name) chụp xóa phông được không
 - điện thoại [Nokia 7.3](product_name) chụp xóa phông được không
 - camera sau cua [Samsung A10](product_name) chup xoa phong duoc khong
 - camera sau cua [ss M31s](product_name) chup xoa phong duoc khong
@@ -2508,7 +2508,7 @@ data/prepay_percent.txt
 - may [OPPO Find X2 Lite](product_name) chup xoa phong duoc khong
 - may [Samsung M31s](product_name) chup xoa phong duoc khong
 - dien thoai [Samsung M01s](product_name) chup xoa phong duoc khong
-- dien thoai [Samsung Galaxy S20+](product_name) chup xoa phong duoc khong
+- dien thoai [Samsung Galaxy S20](product_name) chup xoa phong duoc khong
 - dien thoai [Nokia 7.3](product_name) chup xoa phong duoc khong
 - điện thoại [Xiaomi Black Shark 3](product_name) chụp xóa phông được không
 - [ip 8 Plus](product_name) chụp xóa phông được không
@@ -2598,7 +2598,7 @@ data/prepay_percent.txt
 - [camera trước](camera) của điện thoại [Itel It2170](product_name) bao nhiêu MP
 - [cam trước](camera) [ss m11](product_name) bao nhiêu MP
 - [camera trước](camera) của điện thoại [Huawei Nova 6](product_name) mấy MP
-- [camera sau](camera) [Vsmart Joy 2+](product_name) có độ phân giải bao nhiêu
+- [camera sau](camera) [Vsmart Joy 2](product_name) có độ phân giải bao nhiêu
 - [camera trước](camera) của sản phẩm [Vivo X50e 5G](product_name) mấy MP
 - [camera trước](camera) [Itel It2123V](product_name) bao nhiêu MP
 - [camera sau](camera) của điện thoại [ss z flip](product_name) có độ phân giải bao nhiêu
@@ -2678,7 +2678,7 @@ data/prepay_percent.txt
 - chế độ bảo hành của [ss s10](product_name) như thế nào
 - chế độ bảo hành của [Huawei Mate 30 RS Porsche Design](product_name) như thế nào
 - thông tin bảo hành của [Huawei Nova 7i](product_name) ra sao
-- thời gian bảo hành của [ss j8+](product_name) ra sao
+- thời gian bảo hành của [ss j8](product_name) ra sao
 - chế độ bảo hành của [OPPO Reno4](product_name) ra sao
 - thông tin bảo hành của [Vsmart Bee 3](product_name) như thế nào
 - chế độ bảo hành của [Samsung Galaxy S20](product_name) ra sao
@@ -2703,7 +2703,7 @@ data/prepay_percent.txt
 - che do bao hanh cua [ss s10](product_name) nhu the nao
 - che do bao hanh cua [Huawei Mate 30 RS Porsche Design](product_name) nhu the nao
 - thong tin bao hanh cua [Huawei Nova 7i](product_name) ra sao
-- thoi gian bao hanh cua [ss j8+](product_name) ra sao
+- thoi gian bao hanh cua [ss j8](product_name) ra sao
 - che do bao hanh cua [OPPO Reno4](product_name) ra sao
 - thong tin bao hanh cua [Vsmart Bee 3](product_name) nhu the nao
 - che do bao hanh cua [Samsung Galaxy S20](product_name) ra sao
@@ -2891,7 +2891,7 @@ data/prepay_percent.txt
 - co [Realme 6 Pro](product_name) khong vay
 - ad oi co [Samsung Galaxy A80](product_name) khong
 - o day co [Realme 3](product_name) khong vay
-- ad oi co [Samsung Galaxy J8+](product_name) khong vay
+- ad oi co [Samsung Galaxy J8](product_name) khong vay
 - co [Nokia 9.3 PureView](product_name) khong vay
 - shop co [iPhone 11 Pro Max](product_name) khong nhi
 - co [Realme C3i](product_name) khong nhi
@@ -3456,8 +3456,8 @@ data/prepay_percent.txt
 <!-- ## regex:prepay_percent
 - [0-9]{1,2}\s?% -->
 <!-- ## regex:product_name
-- .+\(+\w+\)
-- .+[+] -->
+- .\(\w\)
+- .[] -->
 
 ## intent: out_of_scope
 

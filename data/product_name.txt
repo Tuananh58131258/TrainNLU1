@@ -66,9 +66,9 @@ Samsung M40
 Samsung Galaxy M31s
 ss M31s
 Samsung M31s
-Samsung Galaxy Note 20+
-ss Note 20+
-Samsung Note 20+
+Samsung Galaxy Note 20
+ss Note 20
+Samsung Note 20
 Samsung Galaxy A10e
 ss A10e
 Samsung A10e
@@ -99,9 +99,9 @@ Samsung Note 10 Lite
 Samsung Galaxy A71
 ss A71
 Samsung A71
-Samsung Galaxy S10+
-ss S10+
-Samsung S10+
+Samsung Galaxy S10
+ss S10
+Samsung S10
 Samsung Galaxy S20 Ultra
 ss S20 Ultra
 Samsung S20 Ultra
@@ -111,18 +111,18 @@ Samsung A51
 Samsung Galaxy Note 10
 ss Note 10
 Samsung Note 10
-Samsung Galaxy Note 10+
-ss Note 10+
-Samsung Note 10+
+Samsung Galaxy Note 10
+ss Note 10
+Samsung Note 10
 Samsung Galaxy S20
 ss S20
 Samsung S20
-Samsung Galaxy S20+
-ss S20+
-Samsung S20+
-Samsung Galaxy J8+
-ss J8+
-Samsung J8+
+Samsung Galaxy S20
+ss S20
+Samsung S20
+Samsung Galaxy J8
+ss J8
+Samsung J8
 Samsung Galaxy A21s
 ss A21s
 Samsung A21s
@@ -393,9 +393,9 @@ Nokia 3.2
 Vsmart Active 3
 Vsmart Joy 3
 Vsmart BEE
-Vsmart Joy 2+
+Vsmart Joy 2
 Vsmart Star 3
-Vsmart Joy 2+
+Vsmart Joy 2
 Vsmart Star
 Vsmart Bee 3
 Vsmart Joy 3
@@ -409,7 +409,7 @@ Vivo S6 5G
 Vivo X50 Lite
 Vivo V15 Pro
 Vivo Y9s
-Vivo X50 Pro+
+Vivo X50 Pro
 Vivo Z5x (2020)
 Vivo V19 Pro
 Vivo NEX 3S 5G
@@ -471,7 +471,7 @@ vv S6 5G
 vv X50 Lite
 vv V15 Pro
 vv Y9s
-vv X50 Pro+
+vv X50 Pro
 vv Z5x (2020)
 vv V19 Pro
 vv NEX 3S 5G

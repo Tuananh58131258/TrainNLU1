@@ -970,7 +970,7 @@ class ActionHarwareInfo(Action):
             data = getData(sqlQuery)
             if data:
                 if data[0]['ghi_chu'].find('tin đồn')>-1:
-                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(data[0]['ten'])
                 else:
                     col = GetColName(hardware_name.lower())
                     Pname_temp = data[0]['ten']
@@ -1013,7 +1013,7 @@ class ActionTakePhotoEraseBackground(Action):
             if data:
                 Pname_temp = data[0]['ten']
                 if data[0]['ghi_chu'].find('tin đồn') > -1:
-                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(data[0]['ten'])
                 else:
                     chup_anh = data[0]['chup_anh_nang_cao']
                     if chup_anh.find('xóa phông') > -1:
@@ -1054,7 +1054,7 @@ class ActionMainCamera(Action):
             if data:
                 Pname_temp = data[0]['ten']
                 if data[0]['ghi_chu'].find('tin đồn') > -1:
-                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(data[0]['ten'])
                 else:
                     do_phan_giai = "Đang cập nhật."
                     chup_anh = "Đang cập nhật."
@@ -1098,7 +1098,7 @@ class ActionSelfieCamera(Action):
             if data:
                 Pname_temp = data[0]['ten']
                 if data[0]['ghi_chu'].find('tin đồn')>-1:
-                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(data[0]['ten'])
                 else:
                     do_phan_giai = "Đang cập nhật."
                     if data[0]['do_phan_giai_cam_truoc']:
@@ -1145,7 +1145,7 @@ class ActionResolutionCamera(Action):
             if data:
                 Pname_temp = data[0]['ten']
                 if data[0]['ghi_chu'].find('tin đồn')>-1:
-                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(productName)
+                    message_str = "Sản phẩm {0} chỉ là tin đồn. Cửa hàng sẽ thông báo cho bạn thông tin mới nhất về sản phẩm {0} khi được cập nhật.".format(data[0]['ten'])
                 else:
                     if loai_camera.find('trước') > -1:
                         message_str = "Sản phẩm {} có camera trước với độ phân giải: {}. Với các tính năng: {}".format(Pname_temp,data[0]['do_phan_giai_cam_truoc'],data[0]['thong_tin_khac'])

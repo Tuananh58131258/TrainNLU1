@@ -470,15 +470,15 @@ chin tr hai
 chin trieu ba
 chin trieu bon
 chin trieu nam
-1,4 tr
-1,5 tr
-1,6 tr
-1,7 tr
-1,8 tr
-1,9 tr
-2,1 tr
+1,4tr
+1,5tr
+1,6tr
+1,7tr
+1,8tr
+1,9tr
+2,1tr
 2,2 tr
-2,3 tr
+2,3tr
 2,4 tr
 4,9 tr
 5,1 tr
@@ -491,18 +491,18 @@ chin trieu nam
 5,8 tr
 9,3 tr
 9,4 tr
-9,5 tr
-9,6 tr
-9,7 tr
-9,8 tr
+9,5tr
+9,6tr
+9,7tr
+9,8tr
 9,9 tr
 1 tr ruoi
 2 tr ruoi
-3 tr ruoi
-4 tr ruoi
-5 tr ruoi
+3tr ruoi
+4tr ruoi
+5tr ruoi
 6 tr ruoi
-7 tr ruoi
+7tr ruoi
 8 tr ruoi
 9 tr ruoi
 mot tr ruoi
@@ -516,28 +516,28 @@ tam tr ruoi
 chin tr ruoi
 1.1 tr
 1.2 tr
-1.3 tr
+1.3tr
 1.4 tr
 1.5 tr
 1.6 tr
-1.7 tr
+1.7tr
 1.8 tr
-1.9 tr
+1.9tr
 2.1 tr
 2.2 tr
 2.3 tr
 2.4 m
 2.5 m
 2.6 m
-2.7 m
-2.8 m
-2.9 m
+2.7m
+2.8m
+2.9m
 3.1 m
 3.2 m
 3.3 m
 3.4 m
-3.5 m
-3.6 m
+3.5m
+3.6m
 3.7 m
 3.8 m
 3.9 m
@@ -545,22 +545,22 @@ chin tr ruoi
 4.2 m
 4.3 m
 4.4 m
-4.5 m
-4.6 m
+4.5m
+4.6m
 4.7 m
 4.8 m
 4.9 m
 5.1 m
-5.2 m
+5.2m
 5.3 m
 5.4 m
 5.5 củ
 5.6 củ
 5.7 củ
 5.8 củ
-5.9 củ
-6.1 củ
-6.2 củ
+5.9củ
+6.1củ
+6.2củ
 6.3 củ
 6.4 củ
 6.5 củ
@@ -574,7 +574,7 @@ chin tr ruoi
 7.4 củ
 7.5 củ
 7.6 củ
-7.7 củ
+7.7củ
 7.8 củ
 7.9 củ
 8.1 củ
@@ -585,19 +585,19 @@ chin tr ruoi
 8.6 trieu
 8.7 trieu
 8.8 trieu
-8.9 trieu
-9.1 trieu
-9.2 trieu
-9.3 trieu
+8.9trieu
+9.1trieu
+9.2trieu
+9.3trieu
 9.4 trieu
 9.5 trieu
 9.6 trieu
 9.7 trieu
-9.8 trieu
+9.8trieu
 9.9 trieu
-1 m 1
-1 m 2
-1 m 3
+1m1
+1m2
+1m3
 1 m 4
 1 m 5
 1 m 6
