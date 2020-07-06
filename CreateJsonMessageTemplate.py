@@ -61,7 +61,7 @@ def QuickReply(temp:str,danhsach:str):
     if not danhsach:
         tmp = {"content_type": "text",
                     "title": "Quay lại danh sách",
-                    "payload": "Quay lại danh sách"}
+                    "payload": danhsach}
         listitem.append(tmp)
     message = {
             "text": "Thông tin khác",

@@ -11,6 +11,8 @@ slots:
     type: text
   latest_action:
     type: text
+  get_list:
+    type: text
   loai_camera:
     type: text
 
@@ -31,15 +33,15 @@ entities:
 
 intents:
   - greet
-  #  chào hỏi 
+  #  chào hỏi
   - goodbye
-  #  tạm biệt 
+  #  tạm biệt
   - ask_ability
-  #  hỏi khả năng của bot 
+  #  hỏi khả năng của bot
   - thankyou
-  #  cảm ơn bot 
+  #  cảm ơn bot
   - praise
-  #  khen bot 
+  #  khen bot
   - decry
   #  chê bot
   - product_price

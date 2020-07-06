@@ -121,6 +121,7 @@ class ActionProductPrice(Action):
         if productName:
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
+            #region try-catch ram/rom
             try:
                 ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
@@ -133,9 +134,11 @@ class ActionProductPrice(Action):
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
                 pass
+            #endregion
             sqlQuery = sqlQuery + "limit 9;"
             data = getData(sqlQuery)
             if data:
+                getMess = tracker.latest_message.get('text')
                 list_item = []
                 for item in data:
                     list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
@@ -160,7 +163,7 @@ class ActionProductPrice(Action):
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
-        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp),SlotSet('get_list',getMess)]
 
 
 class ActionOnlinePrice(Action):
@@ -174,15 +177,18 @@ class ActionOnlinePrice(Action):
         productName = ""
         Pname_temp = ""
         sqlQuery =""
+        #region try-catch pname
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = productNameModify(tracker.get_slot('product_name'))
             pass
+        #endregion
         if productName:
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
+            #region try-catch ram/rom
             try:
                 ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
@@ -195,9 +201,11 @@ class ActionOnlinePrice(Action):
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
                 pass
+            #endregion
             sqlQuery = sqlQuery + "limit 9;"
             data = getData(sqlQuery)
             if data:
+                getMess = tracker.latest_message.get('text')
                 list_item = []
                 for item in data:
                     list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
@@ -222,7 +230,7 @@ class ActionOnlinePrice(Action):
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá bán online của sản phẩm nào ạ?")
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
-        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp),SlotSet('get_list',getMess)]
 
 
 class ActionOldProduct(Action):
@@ -236,15 +244,18 @@ class ActionOldProduct(Action):
         productName = ""
         Pname_temp = ""
         sqlQuery =""
+        #region try-catch pname
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
             productName = productNameModify(tracker.get_slot('product_name'))
             pass
+        #endregion
         if productName:
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
                 productName)
+            #region try-catch ram/rom
             try:
                 ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
@@ -257,9 +268,11 @@ class ActionOldProduct(Action):
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
                 pass
+            #endregion
             sqlQuery = sqlQuery + "limit 9;"
             data = getData(sqlQuery)
             if data:
+                getMess = tracker.latest_message.get('text')
                 list_item = []
                 for item in data:
                     list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
@@ -284,7 +297,7 @@ class ActionOldProduct(Action):
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
-        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp),SlotSet('get_list',getMess)]
 
 
 class ActionProductConfiguration(Action):
@@ -333,15 +346,16 @@ class ActionProductConfiguration(Action):
                     gpu = data[0]['gpu']
                     pin = data[0]['dung_luong_pin']
                     message_str = "Thông tin của sản phẩm: {}.\nMàn hình :{}\nCamera trước:{}\nCamera sau:{}\nRam:{}\nBộ nhớ trong:{} \nCPU: {}\nGPU:{} \nDung lượng pin:{}".format(Pname_temp,man_hinh,camera_truoc,camera_sau,ram,rom,cpu,gpu,pin)
+                    temp_mess = tracker.get_slot('get_list')
+                    message = QuickReply(self.name(),temp_mess)
+                    # dispatcher.utter_message(text = message_str,json_message = message)
             else:
                 message_str = "Hiện tại cửa hàng không có thông tin của sản phẩm {} mong bạn thông cảm!".format(productName)
                 Pname_temp = productName
         else:
             message_str = "Bạn đang hỏi thông tin cấu hình của sản phẩm nào ạ?"
         # dispatcher.utter_message(message_str)
-        message = QuickReply(self.name(),'abc')
-        dispatcher.utter_message(text = message_str,json_message = message)
-        # dispatcher.utter_message(text=message_str,json_message=message)
+        dispatcher.utter_message(text=message_str,json_message=message)
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
@@ -1188,13 +1202,15 @@ class ActionGuarantee(Action):
                 elif data[0]['thoi_gian_bao_hanh']:
                     Pname_temp = data[0]['ten']
                     message_str = "Thời gian bảo hành của {} là: {}".format(productName,data[0]['thoi_gian_bao_hanh'])
+                    temp_mess = tracker.get_slot('get_list')
+                    message = QuickReply(self.name(),temp_mess)
+                    # dispatcher.utter_message(text = message_str,json_message = message)
             else:
                 Pname_temp = productName
                 message_str = "Hiện cửa hàng không có thông tin về sản phẩm {}. Mong bạn thông cảm!"
         else:
             message_str = "Bạn đang hỏi thông tin bảo hành của sản phẩm nào ạ?"
         # dispatcher.utter_message(message_str)
-        message = QuickReply(self.name(),'abc')
         dispatcher.utter_message(text = message_str,json_message = message)
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
@@ -1229,13 +1245,15 @@ class ActionPromotionsAndGift(Action):
                     khuyen_mai = data[0]['khuyen_mai']
                     message_str = "Hiện sản phẩm {} đang có các chương trình khuyến mãi như sau:\n{}".format(
                         Pname_temp, khuyen_mai)
+                    temp_mess = tracker.get_slot('get_list')
+                    message = QuickReply(self.name(),temp_mess)
+                    # dispatcher.utter_message(text = message_str,json_message = message)
             else:
                 Pname_temp = productName
                 message_str = "Sản phẩm {} hiện không có khuyến mãi nào. Xin cảm ơn".format(Pname_temp)
         else:
             message_str = "Bản đang hỏi thông tin khuyến mãi của sản phẩm nào ạ?"
         # dispatcher.utter_message(message_str)
-        message = QuickReply(self.name(),'abc')
         dispatcher.utter_message(text = message_str,json_message = message)
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
@@ -1482,6 +1500,9 @@ class ActionOptionInBox(Action):
                     box = data[0]['box']
                     message_str = "Khi mua sản phẩm {} trong hộp có:\n{}".format(
                         Pname_temp, box)
+                    temp_mess = tracker.get_slot('get_list')
+                    message = QuickReply(self.name(),temp_mess)
+                    # dispatcher.utter_message(text = message_str,json_message = message)
                 else:
                     message_str = "Không có thông tin cho sản phẩm {}.".format(
                         productName)
@@ -1491,7 +1512,6 @@ class ActionOptionInBox(Action):
         else:
             message_str = "Bản đang hỏi thông tin của sản phẩm nào ạ?"
         # dispatcher.utter_message(message_str)
-        message = QuickReply(self.name(),'abc')
         dispatcher.utter_message(text = message_str,json_message = message)
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
