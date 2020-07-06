@@ -919,23 +919,18 @@ data/prepay_percent.txt
 - Danh sach san pham cua [Oppo](product_company)
 - Danh sach san pham cua [Huawei](product_company)
 - Danh sach san pham cua [Samsung](product_company)
-- [Huawei](product_company)
-- [Samsung](product_company)
 - [Iphone](product_company)
-- [Realme](product_company)
-- [Huawei](product_company)
-- [Realmi](product_company)
+- [Samsung](product_company)
 - [Oppo](product_company)
 - [Huawei](product_company)
-- [Samsung](product_company)
-- [Iphone](product_company)
+- [Xiaomi](product_company)
 - [Realme](product_company)
-- [Huawei](product_company)
-- [Realmi](product_company)
-- [Oppo](product_company)
-- [Huawei](product_company)
-- [Samsung](product_company)
-
+- [Nokia](product_company)
+- [Vsmart](product_company)
+- [Vivo](product_company)
+- [Masstel](product_company)
+- [Itel](product_company)
+- [Energizer](product_company)
 
 ## intent: order
 
@@ -3542,6 +3537,19 @@ data/prepay_percent.txt
 - Aple
 - táo
 - apple
+
+## synonym:realme
+- realmi
+- reami
+- riami
+
+## synonym:xiaomi
+- xiaome
+- mì xào
+
+## synonym:huawei
+- huwei
+- huway
 
 ## synonym:samsung
 - xamxung
