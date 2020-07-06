@@ -88,7 +88,7 @@
 ## storie list_product
 * list_product
   - action_list_product
-  - slot{'get_list':'Danh sách điện thoại samsung'}
+  - slot{"get_list":"Danh sách điện thoại samsung"}
 
 ## order
 * order
