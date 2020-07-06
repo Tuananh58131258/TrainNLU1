@@ -135,13 +135,32 @@
   - slot{"product_name":"iphone xs max"}
 
 ## storie pay_per_month
-* pay_per_month{"product_name":"iphone xs max"}
+* pay_per_month{"product_name":"iphone xs max","installment_payment_period":"6 tháng"}
   - action_pay_per_month
   - slot{"latest_action":"action_pay_per_month"}
   - slot{"product_name":"iphone xs max"}
 
+## storie pay_per_month
+* pay_per_month{"product_name":"oppo find x2","installment_payment_period":"4 tháng"}
+  - action_pay_per_month
+  - slot{"latest_action":"action_pay_per_month"}
+  - slot{"product_name":"oppo find x2"}
+
+## storie pay_per_month
+* pay_per_month{"product_name":"oppo find x2","installment_payment_period":"4 tháng"}
+  - action_pay_per_month
+  - slot{"latest_action":"action_pay_per_month"}
+  - slot{"product_name":"oppo find x2"}
+
+
+## storie pay_per_month
+* pay_per_month{"product_name":"oppo find x2","installment_payment_period":"4 tháng","prepay_percent":"30%"}
+  - action_pay_per_month
+  - slot{"latest_action":"action_pay_per_month"}
+  - slot{"product_name":"oppo find x2"}
+
 ## storie case_pay_per_month
-* case_pay_per_month{"product_name":"iphone xs max"}
+* case_pay_per_month{"product_name":"iphone xs max",}
   - action_case_pay_per_month
   - slot{"product_name":"iphone xs max"}
 

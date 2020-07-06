@@ -110,6 +110,10 @@ class ActionProductPrice(Action):
         productName = ""
         Pname_temp = ""
         sqlQuery = ""
+        getMess=''
+        ram=''
+        rom=''
+        message=''
         #region try-cath entity
         try:
             productName = productNameModify(
@@ -135,7 +139,7 @@ class ActionProductPrice(Action):
             except:
                 pass
             #endregion
-            sqlQuery = sqlQuery + "limit 9;"
+            sqlQuery = sqlQuery + "order by ten limit 9;"
             data = getData(sqlQuery)
             if data:
                 getMess = tracker.latest_message.get('text')
@@ -151,18 +155,20 @@ class ActionProductPrice(Action):
                     mess_item = ItemsTemplate(
                         item['ten'], item['url_img'], gia, list_btn)
                     list_item.append(mess_item)
-
-                message_str = GenericTemplate(list_item)
-                dispatcher.utter_message(
-                    text="Danh sách sản phẩm có tên là  {} hoặc tương tự".format(productName), json_message=message_str)
+                message = GenericTemplate(list_item)
+                message_str = "Danh sách sản phẩm có tên là {} hoặc tương tự".format(productName)
             else:
-                dispatcher.utter_message(
-                    "Hiện tại của hàng không có thông tin về sản phẩm {} hay các sản phẩm có tên tương tự. Mong bạn thông cảm và thử tìm kiếm sản phẩm khác.".format(productName))
+                message_str = "Hiện tại của hàng không có thông tin về sản phẩm {} ".format(productName)
+                if ram:
+                    message_str = message_str + "ram {} ".format(ram)
+                if rom:
+                    message_str = message_str + 'rom {} '.format(rom)
+                message_str = message_str + "hay các sản phẩm có tên tương tự. Mong bạn thông cảm và thử tìm kiếm sản phẩm khác."
                 Pname_temp = productName
         else:
-            dispatcher.utter_message(
-                "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
-        print(getMess)
+            message_str = "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?"
+        dispatcher.utter_message(text = message_str,json_message=message)
+        # print(getMess)
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp),SlotSet('get_list',getMess)]
 
@@ -203,7 +209,7 @@ class ActionOnlinePrice(Action):
             except:
                 pass
             #endregion
-            sqlQuery = sqlQuery + "limit 9;"
+            sqlQuery = sqlQuery + "order by ten limit 9 ;"
             data = getData(sqlQuery)
             if data:
                 getMess = tracker.latest_message.get('text')
@@ -245,6 +251,7 @@ class ActionOldProduct(Action):
         productName = ""
         Pname_temp = ""
         sqlQuery =""
+        getMess=''
         #region try-catch pname
         try:
             productName = productNameModify(
@@ -270,7 +277,7 @@ class ActionOldProduct(Action):
             except:
                 pass
             #endregion
-            sqlQuery = sqlQuery + "limit 9;"
+            sqlQuery = sqlQuery + "order by ten limit 9;"
             data = getData(sqlQuery)
             if data:
                 getMess = tracker.latest_message.get('text')
@@ -312,6 +319,7 @@ class ActionProductConfiguration(Action):
         productName = ""
         Pname_temp = ""
         sqlQuery =""
+        message = ""
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -332,6 +340,7 @@ class ActionProductConfiguration(Action):
                 sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
             except:
                 pass
+            sqlQuery = sqlQuery + 'ORDER by ten'
             data = getData(sqlQuery)
             if data:
                 Pname_temp = data[0]['ten']
@@ -475,7 +484,7 @@ class ActionCheckPrice(Action):
                     sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
                 except:
                     pass
-                sqlQuery = sqlQuery + "limit 9;"
+                sqlQuery = sqlQuery + "order by ten limit 9;"
                 data = getData(sqlQuery)
                 if data:
                     Pname_temp = data[0]['ten']
@@ -519,12 +528,12 @@ class ActionFindProductInRangePrice(Action):
             if from_price > to_price:
                 text = "Danh sách sản phẩm có giá từ {} đến {}".format(
                     to_price, from_price)
-                sqlQuery = "select * from dienthoai where gia between {} and {} limit 9".format(
+                sqlQuery = "select * from dienthoai where gia between {} and {} order by gia limit 9".format(
                     to_price, from_price)
             else:
                 text = "Danh sách sản phẩm có giá từ {} đến {}".format(
                     from_price, to_price)
-                sqlQuery = "select * from dienthoai where gia between {} and {} limit 9".format(
+                sqlQuery = "select * from dienthoai where gia between {} and {} order by gia limit 9".format(
                     from_price, to_price)
             data = getData(sqlQuery)
             if data:
@@ -1188,6 +1197,7 @@ class ActionGuarantee(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         #region try-catch entity
         productName = ""
+        message = ""
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
@@ -1229,6 +1239,7 @@ class ActionPromotionsAndGift(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         sqlQuery = ""
+        message= ''
         Pname_temp =""
         try:
             productName = productNameModify(
@@ -1252,7 +1263,7 @@ class ActionPromotionsAndGift(Action):
                     message = QuickReply(self.name(),temp_mess)
                     # dispatcher.utter_message(text = message_str,json_message = message)
             else:
-                Pname_temp = productName
+                # Pname_temp = productName
                 message_str = "Sản phẩm {} hiện không có khuyến mãi nào. Xin cảm ơn".format(Pname_temp)
         else:
             message_str = "Bản đang hỏi thông tin khuyến mãi của sản phẩm nào ạ?"
@@ -1294,7 +1305,7 @@ class ActionFindProduct(Action):
             except:
                 pass
             #endregion
-            sqlQuery = sqlQuery + "limit 9;"
+            sqlQuery = sqlQuery + "order by ten limit 9;"
             data = getData(sqlQuery)
             if data:
                 list_item = []
@@ -1354,7 +1365,7 @@ class ActionFindAnotherProduct(Action):
             except:
                 pass
             #endregion
-            sqlQuery = sqlQuery + "limit 9;"
+            sqlQuery = sqlQuery + "order by ten limit 9;"
             result = getData(sqlQuery)
             if result:
                 list_item = []
@@ -1495,6 +1506,20 @@ class ActionOptionInBox(Action):
         if productName:
             sqlQuery = "select * from dienthoai where ten like '%{}%'".format(
                 productName)
+            #region try-catch ram/rom
+            try:
+                ram = romRamModify(
+                    next(tracker.get_latest_entity_values(entity_type='ram')))
+                sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
+            except:
+                pass
+            try:
+                rom = romRamModify(
+                    next(tracker.get_latest_entity_values(entity_type='rom')))
+                sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
+            except:
+                pass
+            #endregion
             data = getData(sqlQuery)
             if data:
                 if data[0]['ghi_chu'] == "Sản phẩm tin đồn":
@@ -1508,7 +1533,7 @@ class ActionOptionInBox(Action):
                     message = QuickReply(self.name(),temp_mess)
                     # dispatcher.utter_message(text = message_str,json_message = message)
                 else:
-                    message_str = "Không có thông tin cho sản phẩm {}.".format(
+                    message_str = "Không có thông tin về phụ kiện kèm theo hộp của sản phẩm {}.".format(
                         productName)
             else:
                 Pname_temp = productName

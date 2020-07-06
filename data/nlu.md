@@ -3041,7 +3041,45 @@ data/prepay_percent.txt
 ## intent: find_product
 
 <!-- tìm kiếm sản phẩm -->
-
+- điện thoại bộ nhớ [128 gb](rom)
+- điện thoại [128 gb](rom)
+- điện thoại bộ nhớ [64gb](rom)
+- điện thoại [64gb](rom)
+- điện thoại bộ nhớ [256gb](rom)
+- điện thoại ram [6 gb](ram)
+- dien thoai ram [6 gb](ram)
+- điện thoại có ram [6 gb](ram)
+- điện thoại ram [8 mb](ram)
+- dien thoai ram [8 mb](ram)
+- điện thoại có ram [8 mb](ram)
+- điện thoại ram [4gb](ram)
+- dien thoai ram [4gb](ram)
+- điện thoại có ram [4gb](ram)
+- điện thoại ram [4mb](ram)
+- dien thoai ram [4mb](ram)
+- điện thoại có ram [4mb](ram)
+- điện thoại rom [256gb](rom)
+- điện thoại bộ nhớ [512 gb](rom)
+- điện thoại rom [512 gb](rom)
+- điện thoại bộ nhớ [32 gb](rom)
+- điện thoại [32 gb](rom)
+- điện thoại bộ nhớ [128 gb](rom)
+- điện thoại [128 gb](rom)
+- điện thoại bộ nhớ [512 gb](rom)
+- điện thoại rom [512 gb](rom)
+- điện thoại bộ nhớ [128 gb](rom)
+- điện thoại [128 gb](rom)
+- điện thoại bộ nhớ [64 gb](rom)
+- điện thoại [64 gb](rom)
+- dien thoai [32 gb](rom)
+- dien thoai bo nho [128 gb](rom)
+- dien thoai [128 gb](rom)
+- dien thoai bo nho [512 gb](rom)
+- dien thoai rom [512 gb](rom)
+- dien thoai bo nho [128 gb](rom)
+- dien thoai [128 gb](rom)
+- dien thoai bo nho [64 gb](rom)
+- dien thoai [64 gb](rom)
 - ở đây có [Samsung Galaxy A21s](product_name) không nhỉ
 - ad ơi có [Nokia 210 DS](product_name) không nhỉ
 - shop có [Huawei P40 Lite 5G](product_name) không
@@ -3094,7 +3132,8 @@ data/prepay_percent.txt
 - o day co [Huawei Nova 7](product_name) ban [3 gb](ram) [64 gb](rom) khong vay khong
 - ad oi co [Vsmart Joy 3](product_name) ban ram [3 GB](ram) rom [256gb](rom) khong khong
 - có bản [ss watch active](product_name) bản rom [16GB](rom) ram [2 gb](ram) không vậy không
-- có bản [Huawei Enjoy 10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không vậy
+- có bản [Huawei Enjoy 10](product_name) bản rom [16 gb](rom) ram [3 gb](ram) không vậy không vậy\
+
 
 ## intent: find_another_product
 
@@ -3674,3 +3713,6 @@ data/prepay_percent.txt
 - occho
 - thu ngu lon
 - ngu vcc
+- im re
+- c c
+

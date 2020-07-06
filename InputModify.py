@@ -3,36 +3,33 @@ import re
 
 
 def productNameModify(productName: str):
+    # productName = re.sub(r"[^\w\s]"," ",productName)
     data = productName.lower()
-    data = re.sub(r"^ip+(?=[\s])","iphone",data)
+    temp = data
+    if data.find('ip')>-1 and data.find('iphone')==-1:
+        temp = data.replace('ip','iphone ')
     if data.find("ss") > -1 and data.find("galaxy") == -1:
         temp = data.replace("ss", "samsung galaxy")
-        return temp
     elif data.find("samsung") > -1 and data.find("galaxy") == -1:
         temp = data.replace("samsung", "samsung galaxy")
-        return temp
     elif data.find("samsung") == -1 and data.find("sung") >-1 and data.find("galaxy") == -1:
         temp = data.replace("sung", "samsung galaxy")
-        return temp
     elif data.find("ss") > -1 and data.find("galaxy") > -1:
         temp = data.replace("ss", "samsung")
-        return temp
     elif data.find("opo")>-1:
         temp = data.replace("opo", "oppo")
-        return temp
     elif data.find("vv") > -1:
         temp = data.replace("vv", "vivo")
-        return temp
 
-    return data
+    return re.sub(r'\s\s+',' ',temp)
 
 
 def romRamModify(rom: str):
     data = rom.lower()
+    data = re.sub(r"[^\w\s]","",data)
     if data.find("gb") > -1 and data.find(" ") == -1:
         temp = data.replace("gb", " gb")
         return temp
-
     if data.find("gb") == -1 and data.find(" ") == -1 and data.find("g") > -1:
         temp = data.replace("g", " gb")
         return temp
@@ -40,6 +37,7 @@ def romRamModify(rom: str):
 
 
 def priceModify(price: str):
+    price = re.sub(r"[^\w\s]","",price)
     if price.isnumeric():
         data = int(price)
         if data/1000<100 and data/1000>0:
@@ -50,7 +48,7 @@ def priceModify(price: str):
         data = price.lower().strip(" ").replace('mốt','1').replace(" ","").replace(".",",").replace('chục','mươi').replace('chuc','muoi')
     so5 = ['lăm',"rưởi",'lam',"ruoi"]
     so4 = ['tu','tư','tứ']
-    data = data.replace('trieu','triệu')
+    data = re.sub(r'củ|trieu|cu','triệu',data)
     for item in so5:
         data = data.replace(item,'5')
     for item in so4:
@@ -95,9 +93,10 @@ def priceModify(price: str):
     return data
 
 def PrepayPercentModify(temp:str):
-    res_tmp = temp.replace(" ","").replace("%","").strip('\n')
-    res = int(res_tmp)
-    return res
+    temp = re.sub(r"[^\w]","",temp)
+    # res_tmp = temp.replace(" ","").replace("%","").strip('\n')
+    # res = int(res_tmp)
+    return temp
 
 def InstallmentPaymentPeriod(temp:str):
     res = int(temp.isdigit())
@@ -108,8 +107,9 @@ def RoundNum(temp:int):
     return res
 
 def GetColName(temp:str):
+    temp = re.sub(r'[^\w\s]',"",temp)
     data = {"công nghệ màn hình":"cong_nghe_man_hinh","độ phân giải màn hình":"do_phan_giai","màu màn hình":"mau_man_hinh","chuẩn màn hình":"chuan_man_hinh","công nghệ cảm ứng":"cong_nghe_cam_ung","màn hình":"man_hinh","mặt kính màn hình":"mat_kinh_man_hinh","ram":"ram","tốc độ cpu":"toc_do_cpu","số nhân":"so_nhan","cpu":"chipset","gpu":"gpu","cảm biến":"cam_bien","thẻ nhớ ngoài":"the_nho_ngoai","hỗ trợ thẻ nhớ tối đa":"dung_luong_the_nho_toi_da","danh bạ lưu trữ":"dung_luong_danh_ba","rom":"rom","bộ nhớ còn lại":"bo_nho_con_lai","kích thước":"kich_thuoc","trọng lượng":"trong_luong","kiểu dáng":"kieu_dang","chất liệu":"chat_lieu","khả năng chống nước":"chong_nuoc","loại pin":"loai_pin","dung lượng pin":"dung_luong_pin","pin có thể tháo rời":"thao_roi_pin","thời gian chờ":"thoi_gian_cho","thời gian đàm thoại":"thoi_gian_dam_thoai","thời gian sạc đầy":"thoi_gian_sac","chế độ sạc nhanh":"sac_nhanh","kết nối usb":"ket_noi_usb","cổng kết nối khác":"cong_ket_noi_khac","cổng sạc":"cong_sac","jack (input & output)":"jack_in_out","wifi":"wifi","gps":"gps","bluetooth":"bluetooth","gprs":"gprs","edge":"edge","loại sim":"loai_sim","băng tần 2g":"mang_2g","băng tần 3g":"mang_3g","băng tần 4g":"mang_4g","khe cắm sim":"khe_cam_sim","nfc":"nfc","model series":"model_series","hệ điều hành":"he_dieu_hanh","xem phim":"xem_phim","nghe nhạc":"nghe_nhac","ghi âm":"ghi_am","fm radio":"fm_radio","đèn pin":"den_pin","chức năng khác":"chuc_nang_khac","thời gian bảo hành":"thoi_gian_bao_hanh","xuất xứ":"xuat_xu","năm sản xuất":"nam_san_xuat","độ phân giải cam sau":"do_phan_giai_cam_sau","độ phân giải cam trước":"do_phan_giai_cam_truoc","thông tin khác":"thong_tin_khac","quay phim":"quay_phim","đèn flash":"den_flash","chụp ảnh nâng cao":"chup_anh_nang_cao","video call":"video_call","gprs/edge":"gprs","công nghệ pin":"cong_nghe_pin","mạng di động":"mang_2g"}
     result = data[temp]
     return result
 
-print(priceModify('chục triệu'))
+print(productNameModify('ip X'))

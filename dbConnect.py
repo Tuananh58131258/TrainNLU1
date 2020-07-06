@@ -15,21 +15,12 @@ def getData(query:str):
 
         try:
 
-            # Setup the connection.
-            # Pass your database details here
-            # mydb = mysql.connector.connect(
-            #     host="localhost",
-            #     user="root",
-            #     passwd="1649",
-            #     database="FPTShop",
-            #     auth_plugin='caching_sha2_password'
-            #     )
             mydb = mysql.connector.connect(
                 host="localhost",
                 user="root",
                 passwd="",
                 database="fptshop",
-                auth_plugin='caching_sha2_password'
+                # auth_plugin='caching_sha2_password'
                 )
             # set up the cursor to execute the query
             cursor = mydb.cursor()
@@ -47,22 +38,7 @@ def getData(query:str):
 
 # test the file before integrating with the bot by uncommenting the below line.
 # data = open('data/product_name.txt','a',encoding='utf-8')
-# obj = getData("select ten from dienthoai where idhangdienthoai  = 3")
-# temp = ""
-# for item in obj:
-    # temp = item['ten'].replace('-',' ')
-    # x = re.findall(r'[0-9]{1,3}GB', temp)
-    # for i in x:
-        # temp =  temp.replace(i,"")
-    # # try:
-    # data.write(temp.replace("pp",'p').strip(' ')+'\n')
-    # data.write(temp.strip(' ').replace('Xiaomi','')+'\n')
-    #     data.write(temp.strip(' ').replace('Galaxy','')+'\n')
-    # except:
-    #     print("không ghi đc {}".format(temp))
-    # print(temp.strip(' '))
-    # print(temp.strip(' ').replace('Samsung Galaxy','ss')+'\n')
-    # print(temp.strip(' ').replace('Galaxy','')+'\n')
-# data.close()
-
+obj = getData("select ten from hangdienthoai")
+for item in obj:
+    print('- [{}](product_company)'.format(item['ten']))
 
