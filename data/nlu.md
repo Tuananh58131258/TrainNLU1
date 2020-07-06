@@ -919,6 +919,22 @@ data/prepay_percent.txt
 - Danh sach san pham cua [Oppo](product_company)
 - Danh sach san pham cua [Huawei](product_company)
 - Danh sach san pham cua [Samsung](product_company)
+- [Huawei](product_company)
+- [Samsung](product_company)
+- [Iphone](product_company)
+- [Realme](product_company)
+- [Huawei](product_company)
+- [Realmi](product_company)
+- [Oppo](product_company)
+- [Huawei](product_company)
+- [Samsung](product_company)
+- [Iphone](product_company)
+- [Realme](product_company)
+- [Huawei](product_company)
+- [Realmi](product_company)
+- [Oppo](product_company)
+- [Huawei](product_company)
+- [Samsung](product_company)
 
 
 ## intent: order
@@ -3521,6 +3537,18 @@ data/prepay_percent.txt
 - xem lai ds
 - quay lai cho ds
 - xem lai danh sach luc nay
+
+## synonym:iphone
+- Aple
+- táo
+- apple
+
+## synonym:samsung
+- xamxung
+- xamsung
+- xamsum
+- samsum
+- xamxum
 
 ## synonym:cpu
 
