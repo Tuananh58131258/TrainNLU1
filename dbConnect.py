@@ -38,7 +38,10 @@ def getData(query:str):
 
 # test the file before integrating with the bot by uncommenting the below line.
 # data = open('data/product_name.txt','a',encoding='utf-8')
-obj = getData("select ten from hangdienthoai")
-for item in obj:
-    print('- [{}](product_company)'.format(item['ten']))
+# obj = getData("select * from dienthoai where ten like '%Samsung Galaxy Fold%' order by ten")
+# if obj:
+#     for item in obj:
+#         print('- [{}](product_company)'.format(item['ten']))
+# else:
+#     print('không có dữ liệu')
 

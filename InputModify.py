@@ -6,8 +6,9 @@ def productNameModify(productName: str):
     # productName = re.sub(r"[^\w\s]"," ",productName)
     data = productName.lower()
     temp = data
-    if data.find('ip')>-1 and data.find('iphone')==-1:
-        temp = data.replace('ip','iphone ')
+    temp = re.sub("\bip+[^h]","iphone ",temp)
+    # if data.find('ip')>-1 and data.find('iphone')==-1:
+        # temp = data.replace('ip','iphone ')
     if data.find("ss") > -1 and data.find("galaxy") == -1:
         temp = data.replace("ss", "samsung galaxy")
     elif data.find("samsung") > -1 and data.find("galaxy") == -1:
@@ -96,11 +97,11 @@ def PrepayPercentModify(temp:str):
     temp = re.sub(r"[^\w]","",temp)
     # res_tmp = temp.replace(" ","").replace("%","").strip('\n')
     # res = int(res_tmp)
-    return temp
+    return int(temp)
 
 def InstallmentPaymentPeriod(temp:str):
-    res = int(temp.isdigit())
-    return res
+    res = re.sub(r'tháng|thang|t','',temp)
+    return int(res)
 
 def RoundNum(temp:int):
     res = round(temp/10000)*10000
@@ -112,4 +113,4 @@ def GetColName(temp:str):
     result = data[temp]
     return result
 
-print(productNameModify('ip X'))
+print(InstallmentPaymentPeriod('4 tháng'))

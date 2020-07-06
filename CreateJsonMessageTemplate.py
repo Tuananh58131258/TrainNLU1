@@ -67,6 +67,14 @@ def QuickReply(temp:str,danhsach:str):
             "text": "Thông tin khác",
             "quick_replies": listitem}
     return message
+
+def BackToList(temp:str):
+    message = {"text": "Thông tin khác",
+                "quick_replies":[{"content_type": "text",
+                                    "title": "Quay lại danh sách",
+                                    "payload": temp}]
+                                }
+    return message
 # list_btn = [ButtonTemplate("button1","this is test"),ButtonTemplate("button2","this is test too")]
 # res = TemplateItems("this is test","url ne","subtitle chăng",list_btn)
 # print(json_message=res)

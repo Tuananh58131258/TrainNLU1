@@ -101,20 +101,24 @@
   - slot{"product_name":"oppo reno 3"}
 
 ## storie find_product_in_range_price
-* find_product_in_range_price
+* find_product_in_range_price{"price":"4 tr","price":"7tr"}
   - action_find_product_in_range_price
+  - slot{"get_list":"điện thoại từ 4tr đến 7tr"}
 
 ## storie find_product_lower_price
 * find_product_lower_price{"price":"mười triệu"}
   - action_find_product_lower_price
+  - slot{"get_list":"điện thoại dưới mười triệu"}
 
 ## storie find_product_upper_price
 * find_product_upper_price{"price":"12 triệu"}
   - action_find_product_upper_price
+  - slot{"get_list":"điện thoại trên 12 triệu"}
 
 ## storie find_product_around_price
 * find_product_around_price{"price":"7000000"}
   - action_find_product_around_price
+  - slot{"get_list":"điện thoại khoảng 7000000"}
 
 ## storie screen_info
 * screen_info{"product_name":"iphone xs max"}
