@@ -511,7 +511,7 @@ data/prepay_percent.txt
 - [Samsung Galaxy Xcover Pro](product_name) mua online co gia bao nhieu
 - [ss a70](product_name) mua online hien nay co gia bao nhieu
 - san pham [Xiaomi Redmi 9](product_name) mua online co gia bao nhieu
-- [Nokia 105 Single Sim  2017](product_name) gia mua online la bao nhieu
+- [Nokia 105 Single Sim 2017](product_name) gia mua online la bao nhieu
 - [Nokia 1.3](product_name) mua online co gia bao nhieu
 - dien thoai [Xiaomi Redmi Note 9 Pro](product_name) co gia bao nhieu khi mua online
 - dien thoai [Huawei Nova 6](product_name) gia khi mua online
@@ -698,7 +698,7 @@ data/prepay_percent.txt
 - giá sản phẩm [ss z flip 5g](product_name) khi mua cũ như thế nào
 - giá của sản phẩm [Samsung Galaxy A60](product_name) cũ là bao nhiêu
 - giá của điện thoại [Vivo Y70s 5G](product_name) cũ là bao nhiêu
-- giá của điện thoại [Nokia 105 Single Sim  2017](product_name) cũ là bao nhiêu
+- giá của điện thoại [Nokia 105 Single Sim 2017](product_name) cũ là bao nhiêu
 - giá của điện thoại [Realme 6](product_name) khi mua cũ như thế nào
 - giá của điện thoại [Huawei Mate 30](product_name) khi mua cũ như thế nào
 - giá sản phẩm [Xiaomi Redmi 8](product_name) cũ là bao nhiêu
@@ -1326,69 +1326,69 @@ data/prepay_percent.txt
 - co dien thoai nao gia duoi [hai trieu](price) khong
 - co cai nao duoi [3,8 trieu](price) khong
 - co cai nao duoi [2,7 trieu](price) khong
-- co san pham nao duoi [mot trieu ruoi](price) khong
-- co san pham nao duoi [ham lam trieu](price) khong
-- có sản phẩm nào dưới [bảy triệu bảy](price) không
-- có sản phẩm nào dưới [bốn triệu tám](price) không
-- có cái nào dưới [bảy triệu ba](price) không
-- có cái nào dưới [bảy triệu rưởi](price) không
-- có sản phẩm nào dưới [một triệu ba](price) không
-- có cái nào dưới [một triệu tư](price) không
-- có sản phẩm nào dưới [5 m 4](price) không
-- có sản phẩm nào dưới [bốn triệu bảy](price) không
-- có sản phẩm nào dưới [9,8 triệu](price) không
-- có điện thoại nào giá dưới [8 triệu](price) không
-- có sản phẩm nào dưới [sáu triệu tám](price) không
-- có điện thoại nào giá dưới [năm triệu bốn](price) không
-- có cái nào khoảng [6,2 triệu](price) quay đầu không
-- có cái nào khoảng [bảy triệu ba](price) trở lại không
-- có cái nào khoảng [5,4 triệu](price) quay đầu không
-- có điện thoại nào có giá khoảng [9 m 3](price) trở lại không
-- có sản phẩm nào có giá từ [5 m 3](price) trở lại không
-- có điện thoại nào có giá khoảng [mười sáu triệu](price) trở lại không
-- có điện thoại nào có giá khoảng [2,8 triệu](price) quay đầu không
-- có cái nào khoảng [1 m 7](price) trở lại không
-- có cái nào khoảng [6.7 triệu](price) quay đầu không
-- có sản phẩm nào có giá từ [6,5 triệu](price) trở lại không
-- có cái nào khoảng [7.1 triệu](price) quay đầu không
-- có điện thoại nào có giá khoảng [mười ba triệu](price) trở lại không
-- có sản phẩm nào có giá từ [4.7 triệu](price) trở lại không
-- có cái nào khoảng [4 m 3](price) trở lại không
-- có sản phẩm nào có giá từ [hai mươi tám triệu](price) trở lại không
-- có sản phẩm nào có giá từ [1,6 triệu](price) quay đầu không
-- có sản phẩm nào có giá từ [9,4 triệu](price) quay đầu không
-- có sản phẩm nào có giá từ [3,5 triệu](price) quay đầu không
-- có điện thoại nào có giá khoảng [3.1 triệu](price) quay đầu không
-- có cái nào khoảng [8.9 triệu](price) quay đầu không
-- có sản phẩm nào có giá từ [6,1 triệu](price) trở lại không
-- có sản phẩm nào có giá từ [tám triệu bốn](price) trở lại không
-- có sản phẩm nào có giá từ [hai mươi sáu triệu](price) trở lại không
-- có sản phẩm nào có giá từ [một triệu chín](price) trở lại không
-- có điện thoại nào có giá khoảng [ba triệu hai](price) quay đầu không
-- có cái nào khoảng [1,6 triệu](price) quay đầu không
-- có sản phẩm nào có giá từ [tám triệu mốt](price) trở lại không
-- có cái nào khoảng [hai mươi bốn triệu](price) trở lại không
-- có điện thoại nào có giá khoảng [4,8 triệu](price) trở lại không
-- có cái nào khoảng [1.6 triệu](price) trở lại không
-- có sản phẩm nào có giá từ [2 m 4](price) trở lại không
-- có điện thoại nào có giá khoảng [sáu triệu rưởi](price) quay đầu không
-- có điện thoại nào có giá khoảng [9.8 triệu](price) quay đầu không
-- có sản phẩm nào có giá từ [9 m 8](price) quay đầu không
-- có cái nào khoảng [một triệu ba](price) quay đầu không
-- có sản phẩm nào có giá từ [một triệu mốt](price) trở lại không
-- có điện thoại nào có giá khoảng [sáu triệu ba](price) trở lại không
-- có sản phẩm nào có giá từ [2 m 6](price) quay đầu không
-- có sản phẩm nào có giá từ [sáu triệu](price) quay đầu không
-- có sản phẩm nào có giá từ [4 m 7](price) quay đầu không
-- có điện thoại nào có giá khoảng [mười sáu triệu](price) trở lại không
-- có sản phẩm nào có giá từ [tám triệu chín](price) trở lại không
-- có sản phẩm nào có giá từ [sáu triệu ba](price) quay đầu không
-- có sản phẩm nào có giá từ [5.7 triệu](price) quay đầu không
-- có sản phẩm nào có giá từ [9 m 6](price) trở lại không
-- có sản phẩm nào có giá từ [chín triệu mốt](price) quay đầu không
-- có điện thoại nào có giá khoảng [9.8 triệu](price) trở lại không
-- có sản phẩm nào có giá từ [3.3 triệu](price) quay đầu không
-- có điện thoại nào có giá khoảng [7,2 triệu](price) quay đầu không
+- dưới [3390](price)
+- từ [3390](price) trở lại
+- khoảng [3390](price) trở xuống
+- khoảng dưới [3390](price)
+- [3390](price) trở xuống
+- ít hơn [3390](price)
+- từ [3390](price) quay đầu
+- dưới [ba mươi hai triệu](price)
+- từ [ba mươi hai triệu](price) trở lại
+- khoảng [ba mươi hai triệu](price) trở xuống
+- khoảng dưới [ba mươi hai triệu](price)
+- [ba mươi hai triệu](price) trở xuống
+- ít hơn [ba mươi hai triệu](price)
+- từ [ba mươi hai triệu](price) quay đầu
+- dưới [5 trieu 9](price)
+- từ [5 trieu 9](price) trở lại
+- khoảng [5 trieu 9](price) trở xuống
+- khoảng dưới [5 trieu 9](price)
+- [5 trieu 9](price) trở xuống
+- ít hơn [5 trieu 9](price)
+- từ [5 trieu 9](price) quay đầu
+- dưới [4490](price)
+- từ [4490](price) trở lại
+- khoảng [4490](price) trở xuống
+- khoảng dưới [4490](price)
+- [4490](price) trở xuống
+- ít hơn [4490](price)
+- từ [4490](price) quay đầu
+- dưới [hâm lăm triệu](price)
+- từ [hâm lăm triệu](price) trở lại
+- khoảng [hâm lăm triệu](price) trở xuống
+- khoảng dưới [hâm lăm triệu](price)
+- [hâm lăm triệu](price) trở xuống
+- ít hơn [hâm lăm triệu](price)
+- từ [hâm lăm triệu](price) quay đầu
+- dưới [ba mươi mốt triệu](price)
+- từ [ba mươi mốt triệu](price) trở lại
+- khoảng [ba mươi mốt triệu](price) trở xuống
+- khoảng dưới [ba mươi mốt triệu](price)
+- [ba mươi mốt triệu](price) trở xuống
+- ít hơn [ba mươi mốt triệu](price)
+- từ [ba mươi mốt triệu](price) quay đầu
+- dưới [15900000](price)
+- từ [15900000](price) trở lại
+- khoảng [15900000](price) trở xuống
+- khoảng dưới [15900000](price)
+- [15900000](price) trở xuống
+- ít hơn [15900000](price)
+- từ [15900000](price) quay đầu
+- dưới [8 tr 9](price)
+- từ [8 tr 9](price) trở lại
+- khoảng [8 tr 9](price) trở xuống
+- khoảng dưới [8 tr 9](price)
+- [8 tr 9](price) trở xuống
+- ít hơn [8 tr 9](price)
+- từ [8 tr 9](price) quay đầu
+- dưới [8,4 củ](price)
+- từ [8,4 củ](price) trở lại
+- khoảng [8,4 củ](price) trở xuống
+- khoảng dưới [8,4 củ](price)
+- [8,4 củ](price) trở xuống
+- ít hơn [8,4 củ](price)
+- từ [8,4 củ](price) quay đầu
 - khoảng [3.1 triệu](price) trở lại
 - khoảng [4.1 triệu](price) trở lại
 - khoảng [4,7 triệu](price) trở lại
@@ -1396,6 +1396,67 @@ data/prepay_percent.txt
 - tầm [ba triệu bốn](price) trở lại
 - tầm [2.3 triệu](price) trở lại
 - tầm [6 m 5](price) trở lại
+- khoang [ba muoi hai trieu](price) tro xuong
+- khoang duoi [ba muoi hai trieu](price)
+- [ba muoi hai trieu](price) tro xuong
+- it hon [ba muoi hai trieu](price)
+- tu [ba muoi hai trieu](price) quay dau
+- duoi [5 trieu 9](price)
+- tu [5 trieu 9](price) tro lai
+- khoang [5 trieu 9](price) tro xuong
+- khoang duoi [5 trieu 9](price)
+- [5 trieu 9](price) tro xuong
+- it hon [5 trieu 9](price)
+- tu [5 trieu 9](price) quay dau
+- duoi [4490](price)
+- tu [4490](price) tro lai
+- khoang [4490](price) tro xuong
+- khoang duoi [4490](price)
+- [4490](price) tro xuong
+- it hon [4490](price)
+- tu [4490](price) quay dau
+- duoi [ham lam trieu](price)
+- tu [ham lam trieu](price) tro lai
+- khoang [ham lam trieu](price) tro xuong
+- khoang duoi [ham lam trieu](price)
+- [ham lam trieu](price) tro xuong
+- it hon [ham lam trieu](price)
+- tu [ham lam trieu](price) quay dau
+- duoi [ba muoi mot trieu](price)
+- tu [ba muoi mot trieu](price) tro lai
+- khoang [ba muoi mot trieu](price) tro xuong
+- khoang duoi [ba muoi mot trieu](price)
+- [ba muoi mot trieu](price) tro xuong
+- it hon [ba muoi mot trieu](price)
+- tu [ba muoi mot trieu](price) quay dau
+- duoi [15900000](price)
+- tu [15900000](price) tro lai
+- khoang [15900000](price) tro xuong
+- khoang duoi [15900000](price)
+- [15900000](price) tro xuong
+- it hon [15900000](price)
+- tu [15900000](price) quay dau
+- duoi [8 tr 9](price)
+- tu [8 tr 9](price) tro lai
+- khoang [8 tr 9](price) tro xuong
+- khoang duoi [8 tr 9](price)
+- [8 tr 9](price) tro xuong
+- it hon [8 tr 9](price)
+- tu [8 tr 9](price) quay dau
+- duoi [8,4 cu](price)
+- tu [8,4 cu](price) tro lai
+- khoang [8,4 cu](price) tro xuong
+- khoang duoi [8,4 cu](price)
+- [8,4 cu](price) tro xuong
+- it hon [8,4 cu](price)
+- tu [8,4 cu](price) quay dau
+- khoang [3.1 trieu](price) tro lai
+- khoang [4.1 trieu](price) tro lai
+- khoang [4,7 trieu](price) tro lai
+- khoang [ba trieu hai](price) tro lai
+- tam [ba trieu bon](price) tro lai
+- tam [2.3 trieu](price) tro lai
+- tam [6 m 5](price) tro lai
 - tầm [9.3 triệu](price) trở lại
 - chừng [một triệu ba](price) trở lại
 - chừng [hâm hai triệu](price) trở lại
@@ -1835,14 +1896,14 @@ data/prepay_percent.txt
 - máy này xài màn hình gì vậy
 - thông tin màn hình của máy này
 - màn hình của [Masstel Play 30](product_name) là màn hình gì?
-- màn hình của [Nokia 105 Single Sim  2017](product_name) là màn hình gì?
+- màn hình của [Nokia 105 Single Sim 2017](product_name) là màn hình gì?
 - [Masstel Fami P25](product_name) sử dụng màn hình gì?
 - [Samsung Galaxy A80](product_name) sử dụng màn hình gì?
 - Màn hình của [ss 10](product_name) là màn hình loại nào
 - [ss a10s](product_name) sử dụng công nghệ màn hình gì?
 - [ss a20s](product_name) sử dụng màn hình gì?
 - Màn hình của [Itel It2580](product_name) là màn hình loại nào
-- Màn hình của [Nokia 105 Single Sim  2017](product_name) là màn hình loại nào
+- Màn hình của [Nokia 105 Single Sim 2017](product_name) là màn hình loại nào
 - Màn hình của [Itel It2123V](product_name) là màn hình loại nào
 - may nay dung man hinh gi vay
 - dung man hinh gi vay a
@@ -1850,14 +1911,14 @@ data/prepay_percent.txt
 - may nay xai man hinh gi vay
 - thong tin man hinh cua may nay
 - man hinh cua [Masstel Play 30](product_name) la man hinh gi?
-- man hinh cua [Nokia 105 Single Sim  2017](product_name) la man hinh gi?
+- man hinh cua [Nokia 105 Single Sim 2017](product_name) la man hinh gi?
 - [Masstel Fami P25](product_name) su dung man hinh gi?
 - [Samsung Galaxy A80](product_name) su dung man hinh gi?
 - Man hinh cua [ss 10](product_name) la man hinh loai nao
 - [ss a10s](product_name) su dung cong nghe man hinh gi?
 - [ss a20s](product_name) su dung man hinh gi?
 - Man hinh cua [Itel It2580](product_name) la man hinh loai nao
-- Man hinh cua [Nokia 105 Single Sim  2017](product_name) la man hinh loai nao
+- Man hinh cua [Nokia 105 Single Sim 2017](product_name) la man hinh loai nao
 - Man hinh cua [Itel It2123V](product_name) la man hinh loai nao
 - Màn hình của [Samsung Galaxy A60](product_name) là màn hình loại nào
 - [OPPO A72](product_name) sử dụng màn hình loại gì?
@@ -2008,7 +2069,7 @@ data/prepay_percent.txt
 - Em là sv nam nay 20 tuoi muốn mua trả góp trả trc [30 %](prepay_percent) trả trong [10 thang](installment_payment_period) Khi đi mua cần đem theo gì ạ
 - giay to gi de tra gop
 - Cho em hỏi em muốn mua trả góp trả trước khoảng [30](prepay_percent) hoặc [40 %](prepay_percent) trả trong vòng [8](installment_payment_period) đến [9 tháng](installment_payment_period) e cần những loại giấy tờ nào
-- mình muốn mua trả góp thì cần thủ tục thế nào cmnd  bằng lái xe thôi có đc ko
+- mình muốn mua trả góp thì cần thủ tục thế nào cmnd bằng lái xe thôi có đc ko
 - E đang đi bộ đội hiện giờ e có giấy phép lái xe chứng minh nhân dân và thẻ bảo hiểm y tế của quân đội cấp thì có đủ điều kiện để trả góp không vậy
 - gói trả góp [0 %](interest_rate) lãi suất cần những gì bn
 - chào ad mình là sinh viên muốn mua trả góp máy thì cần những lưu ý gì ạ?
@@ -2023,15 +2084,15 @@ data/prepay_percent.txt
 - E muon mua tra gop ma CMND cua e het han mua duoc ko
 - [oppo A71](product_name) góp giấy chung minh góc ho khau ban sao duoc không a
 - sổ hộ khẩu photo thì có dc k hả shop
-- Em là sinh viên muốn mua trả góp đt [oppo f1s](product_name)  do học xa nhà nên không có sẳn giấy CMND có công chứng của cha hoặc mẹ thì có mua được kh?
+- Em là sinh viên muốn mua trả góp đt [oppo f1s](product_name) do học xa nhà nên không có sẳn giấy CMND có công chứng của cha hoặc mẹ thì có mua được kh?
 - Minh muon mua tra gop [0 %](interest_rate) co can ho khau khong vay?
 - Cmnd voi bang lai kon co ho khau duọc ko shop
 - Nếu e có cmnd bằng lái xe có thê mua trả góp 0đ hai không
 - Em là sinh viên đủ 20 tuổi có thể áp dụng trả góp cho sinh viên được không ạ? Và cần giấy tờ như thế nào? Thủ tục nhanh ko ạ
 - E 19t chỉ có chứng minh và hộ khẩu photo đc ko admin
 - Có cmnd và blx có trả góp [0 lãi suất](interest_rate) có duoc ko fpt sop
-- Trả góp [10 %](prepay_percent) cần giấy tờ j z ad  Tây ninh có hàng chưa z
-- Mình muốn mua trả góp lãi suất [0 %](interest_rate)  trả trước [10 %](prepay_percent) .giấy tờ cần là bằng lái và cmnd đc k shop
+- Trả góp [10 %](prepay_percent) cần giấy tờ j z ad Tây ninh có hàng chưa z
+- Mình muốn mua trả góp lãi suất [0 %](interest_rate) trả trước [10 %](prepay_percent) .giấy tờ cần là bằng lái và cmnd đc k shop
 - Mìng dùng sổ hộ khẩu photo công chứng đuoc k
 - Chứng minh nhân dân thôi dc k vay
 - em muốn muốn mua trả cóp em có chứng minh thư vs shk phô tô công chứng có đc ko
@@ -2041,11 +2102,11 @@ data/prepay_percent.txt
 - Hien tai e lam c.ty e dung 20t e can mag theo gi de mua tra gop the shop
 - Dùng Bản photo được không ạ (có cần công chứng không)
 - Mình mất bằng lái xe Hộ khẩu lại ở bắc ninh mình dùng sổ tạm trú ở bắc giang để mua trả góp ở bắc giang dk k shop
-- ad ơi cho e hỏi  thủ tục trả góp [0 %](interest_rate) là cmndhộ khẩu được k ạ?
+- ad ơi cho e hỏi thủ tục trả góp [0 %](interest_rate) là cmndhộ khẩu được k ạ?
 - Trả trước 0đ mà mình chỉ có cmnd và gplx đc kh vậy ad
 - Máy này hỗ trợ gói [0 %](interest_rate) mình có cmnd và gplxe
 - Anh ơi em có giấy CMND với họ khẩu thôi có mưa trả góp đc khong
-- chị ơi cho e hỏi là bây giờ e mua dt này trả trước [10 %](prepay_percent) e có HK photo công chứng soi y bản chính  cmnd thì có thể mua đc k ạ??
+- chị ơi cho e hỏi là bây giờ e mua dt này trả trước [10 %](prepay_percent) e có HK photo công chứng soi y bản chính cmnd thì có thể mua đc k ạ??
 - K co bang lai mua duoc k
 - em muon mua tra gop ma chi co chung minh thu co duoc khong ad
 - Shop ơi cho e hỏi e muốn mua [oppo f1s](product_name) trả góp gói [0 đồng]{"entity":"price","role":"prepay"} ,nhưng e lại không có sổ hộ khẩu ở đây vậy e có thể dùng bằng lái xe thay cho sổ hộ khẩu được không ạ
@@ -2056,16 +2117,16 @@ data/prepay_percent.txt
 - sinh viên mua trả góp dc ko ak
 - chung minh thu quân đội có duoc mua tra gop [0 %](interest_rate) k b ?
 - Cmnd vs bằng lái tham gia trả góp [0 đ]{"entity":"price","role":"prepay"} đc k
-- Mình có bằng lái xe  cmtnd có tham gia đk gói trả góp [0 %](interest_rate) k qtv?
+- Mình có bằng lái xe cmtnd có tham gia đk gói trả góp [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
 - chào ad e có CMND bằng lái xe có trả góp đc k ạ trả trước [0 %](prepay_percent)
 - Dung Ban photo duoc khong a (co can cong chung khong)
 - Minh mat bang lai xe Ho khau lai o bac ninh minh dung so tam tru o bac giang de mua tra gop o bac giang dk k shop
-- ad oi cho e hoi  thu tuc tra gop [0 %](interest_rate) la cmndho khau duoc k a?
+- ad oi cho e hoi thu tuc tra gop [0 %](interest_rate) la cmndho khau duoc k a?
 - Tra truoc 0d ma minh chi co cmnd va gplx dc kh vay ad
 - May nay ho tro goi [0 %](interest_rate) minh co cmnd va gplxe
 - Anh oi em co giay CMND voi ho khau thoi co mua tra gop dc khong
-- chi oi cho e hoi la bay gio e mua dt nay tra truoc [10 %](prepay_percent) e co HK photo cong chung soi y ban chinh  cmnd thi co the mua dc k a??
+- chi oi cho e hoi la bay gio e mua dt nay tra truoc [10 %](prepay_percent) e co HK photo cong chung soi y ban chinh cmnd thi co the mua dc k a??
 - K co bang lai mua duoc k
 - em muon mua tra gop ma chi co chung minh thu co duoc khong ad
 - Shop oi cho e hoi e muon mua [oppo f1s](product_name) tra gop goi [0 dong]{"entity":"price","role":"prepay"} ,nhung e lai khong co so ho khau o day vay e co the dung bang lai xe thay cho so ho khau duoc khong a
@@ -2076,7 +2137,7 @@ data/prepay_percent.txt
 - sinh vien mua tra gop dc ko ak
 - chung minh thu quan doi co duoc mua tra gop [0 %](interest_rate) k b ?
 - Cmnd vs bang lai tham gia tra gop [0 d]{"entity":"price","role":"prepay"} dc k
-- Minh co bang lai xe  cmtnd co tham gia dk goi tra gop [0 %](interest_rate) k qtv?
+- Minh co bang lai xe cmtnd co tham gia dk goi tra gop [0 %](interest_rate) k qtv?
 - Toi co chung minh voi bang lai xe co duoc tra gop [0 %](interest_rate) khong
 - chao ad e co CMND bang lai xe co tra gop dc k a tra truoc [0 %](prepay_percent)
 
@@ -2084,7 +2145,7 @@ data/prepay_percent.txt
 
 <!-- 2 hay nhiều hồ sơ -->
 
-- QTV cho nếu e dùng 1sổ hộ khẩu  CMND mua trả góp 2 sp chung đc k ạ
+- QTV cho nếu e dùng 1sổ hộ khẩu CMND mua trả góp 2 sp chung đc k ạ
 - mình đang trả góp bên ngân hàng fe kỳ hạn là 4 tháng nhưng mình trả dc hai tháng rồi vậy có dc mua trả góp 0% sản phẩm này ko vậy.
 - Chào bạn..hiện tai mình đang có hồ sơ vay bên FE thì có được mua trả góp nữa không vậy
 - Cho e hỏi e muốn mua trả góp trả trc 0đ đc k ạ hiện tại e đang trả góp bên fe credit.
@@ -2092,7 +2153,7 @@ data/prepay_percent.txt
 - Em đang vay trả góp của home edit Vậy có thể mua trả góp được tiếp không ad?
 - Mua góp 2 cái một lần Có dk ko ad oi
 - em vừa hoàn thành hồ sơ trả góp thì có cần làm lại hồ sơ mới không
-- QTV cho neu e dung 1so ho khau  CMND mua tra gop 2 sp chung dc k a
+- QTV cho neu e dung 1so ho khau CMND mua tra gop 2 sp chung dc k a
 - minh dang tra gop ben ngan hang fe ky han la 4 thang nhung minh tra dc hai thang roi vay co dc mua tra gop 0% san pham nay ko vay.
 - Chao ban..hien tai minh dang co ho so vay ben FE thi co duoc mua tra gop nua khong vay
 - Cho e hoi e muon mua tra gop tra trc 0d dc k a hien tai e dang tra gop ben fe credit.
@@ -2117,7 +2178,7 @@ data/prepay_percent.txt
 - Trả góp [6 tháng](installment_payment_period) thì bao nhiêu 1 tháng ạ
 - E trả trước máy này [1500000]{"entity":"price","role":"prepay"} thì mỗi tháng e góp bao nhiêu với lãi xuất [0 %](interest_rate)
 - Không cần trả trước thì mỗi tháng e góp bao nhiu ạ
-- Em muốn mua trả góp  nhung em k trả trước vậy mỗi tháng em phải góp giá thấp nhất bao nhieu vay
+- Em muốn mua trả góp nhung em k trả trước vậy mỗi tháng em phải góp giá thấp nhất bao nhieu vay
 - Cha chuoc [20 %](prepay_percent) cha [15 thag](installment_payment_period) la thag dog nhiu z shop
 - Cho em hoi goi tra truoc [0 d]{"entity":"price","role":"prepay"} lai suat bao nhieu? Gop moi thang bao nhieu vay?
 - Nếu mua trả góp [OPPO F1S](product_name) mà trả trước [2.000.000]{"entity":"price","role":"prepay"} và góp trong [9 tháng](installment_payment_period) thì lãi suất và số tiền phải trả mỗi tháng là bao nhiêu ạ
@@ -2143,7 +2204,7 @@ data/prepay_percent.txt
 - Tra gop [6 thang](installment_payment_period) thi bao nhieu 1 thang a
 - E tra truoc may nay [1500000]{"entity":"price","role":"prepay"} thi moi thang e gop bao nhieu voi lai xuat [0 %](interest_rate)
 - Khong can tra truoc thi moi thang e gop bao nhiu a
-- Em muon mua tra gop  nhung em k tra truoc vay moi thang em phai gop gia thap nhat bao nhieu vay
+- Em muon mua tra gop nhung em k tra truoc vay moi thang em phai gop gia thap nhat bao nhieu vay
 - Cha chuoc [20 %](prepay_percent) cha [15 thag](installment_payment_period) la thag dog nhiu z shop
 - Cho em hoi goi tra truoc [0 d]{"entity":"price","role":"prepay"} lai suat bao nhieu? Gop moi thang bao nhieu vay?
 - Neu mua tra gop [OPPO F1S](product_name) ma tra truoc [2.000.000]{"entity":"price","role":"prepay"} va gop trong [9 thang](installment_payment_period) thi lai suat va so tien phai tra moi thang la bao nhieu a
@@ -2164,7 +2225,7 @@ data/prepay_percent.txt
 - QTV cho hỏi là mua trả góp trả trước [10 %](prepay_percent) góp [12 tháng](installment_payment_period) thì mỗi tháng góp bao nhiêu tiền vậy.thank!
 - [Mi A1](product_name) trả góp mình trả trước [50 %](prepay_percent) thì còn bao nhiêu
 - [Oppo a71](product_name) trả trước [3000]{"entity":"price","role":"prepay"} còn lại trả trong [4 tháng](installment_payment_period) thì moi tháng trả bn vậy
-- mua tra gop oppo a71 co CMND  HK  hdon dien nuoc tra truoc 10% tra 12thag moi thag tra bao nhieu fpt
+- mua tra gop oppo a71 co CMND HK hdon dien nuoc tra truoc 10% tra 12thag moi thag tra bao nhieu fpt
 - trả góp [0 %](interest_rate) thì trong mấy tháng và trả trước bao nhiêu % mỗi tháng góp bao nhiêu
 - Trả trước [10 %](prepay_percent) trả [12 tháng](installment_payment_period) 1 tháng trả bao nhiêu
 - tra trc [20 %](prepay_percent) trong [12 thang](installment_payment_period) jz can tra bao nhju va moi thang nhju jz
@@ -2226,7 +2287,7 @@ data/prepay_percent.txt
 - Cho em hỏi 16 tuổi có được mua trả góp không ạ
 - Cho e hỏi là e sinh 1/5/1997 e có giấy chứng minh và bằng lái xe e mua trả trước 20% vậy có đc k ạ
 - em sn 98 có cho trả góp k z
-- E có cmnd  hk trên 20t muốn mua trả góp trả trước 0đ đc ko ạ
+- E có cmnd hk trên 20t muốn mua trả góp trả trước 0đ đc ko ạ
 - em sinh 18.11.1997 thì góp được chưa ạ
 - Em 20 tuổi có cmnd có vay trả góp được không QTV ?
 - Em sinh năm 98 đã đủ tuổi mua trả góp chưa ạ
@@ -2269,7 +2330,7 @@ data/prepay_percent.txt
 - Em sinh nam 99 la sv nam nhat mun mua tra gop thi can co nhung giay to ntn a
 - E 19t co duoc tra gop ko ak?
 - bao nhieu tuoi thi moi dc tra gop vay ad
-- hien tai e du 18 tuoi  E co the tra gop dt zenfone 4 max pro nay duoc khong a ?
+- hien tai e du 18 tuoi E co the tra gop dt zenfone 4 max pro nay duoc khong a ?
 - 19t tra gop duoc ko nhi
 - Bao nhiêu tuỗi mởi trả góp được admin
 - Em sinh ngày 29/10/1998 và cũng đang là sinh viên thì em có thể trả góp được không ạ?
@@ -2284,7 +2345,7 @@ data/prepay_percent.txt
 - Em sinh năm 99 là sv năm nhất mún mua trả góp thì cần có những giấy tờ ntn ạ
 - E 19t có đuoc trả góp ko ạk?
 - bao nhiêu tuổi thì mới dc trả góp vạy ad
-- hiện tại e đủ 18 tuổi  E có thể trả góp đt zenfone 4 max pro này được không ạ ?
+- hiện tại e đủ 18 tuổi E có thể trả góp đt zenfone 4 max pro này được không ạ ?
 - 19t trả góp được ko nhỉ
 - Cho e hoi em moi co 16 tui tu minh dung ten mua tra gop duoc khong z
 - cho em hỏi sinh viên năm nhất 18 tuổi có thẻ sv giấy CMND và sổ hộ khẩu vậy có thể mua trả góp đc k ạ
@@ -3207,7 +3268,6 @@ data/prepay_percent.txt
 - họ và tên: [Nguyễn Thị Ngọc Quyên](customer_name) sdt: [0998995984](phone_num)
 - tên: [Nguyễn Phương Thảo](customer_name) điện thoại: [0925349406](phone_num)
 - họ và tên: [Nguyễn Thảo Nguyên](customer_name) đt: [0569527097](phone_num)
-- tên: [Phạm Hiền Thương](customer_name) số điện thoại: [0583337871](phone_num)
 - tên: [Quách Thanh Bình](customer_name) số điện thoại: [0588979599](phone_num)
 - tên: [Ân Nhuệ Giang](customer_name) sdt: [0594890758](phone_num)
 - [Phan Việt Anh](customer_name) đt: [0582158191](phone_num)
@@ -3242,7 +3302,6 @@ data/prepay_percent.txt
 - họ tên: [Hoàng Khắc Quân](customer_name) đt: [0564642483](phone_num)
 - [Phan Duy Đạt](customer_name) điện thoại: [0569225047](phone_num)
 - họ tên: [Thái Khánh Chi](customer_name) dt: [0926457495](phone_num)
-- tên: [Nguyễn Thái Thủy](customer_name) đt: [0592237097](phone_num)
 - họ và tên: [Phạm Hồng Thái](customer_name) điện thoại: [0566657672](phone_num)
 - tên: [Trần Thị Khánh Chi](customer_name) điện thoại: [0596651050](phone_num)
 - họ tên: [Trần Nhật Minh](customer_name) sđt: [0926457495](phone_num)
@@ -3259,7 +3318,6 @@ data/prepay_percent.txt
 - [Võ Thùy Dương](customer_name) dt: [0995939634](phone_num)
 - họ tên: [Võ Quốc Quân](customer_name) dt: [0586632665](phone_num)
 - tên: [Lương Thị Hồng Hạnh](customer_name) điện thoại: [0563076317](phone_num)
-- họ tên: [Nguyễn Anh Quân](customer_name) số điện thoại: [0584255643](phone_num)
 - họ và tên: [Phạm Hiền Thương](customer_name) sđt: [0929194629](phone_num)
 - tên: [Nguyễn Lê Uyển Nhi](customer_name) sdt: [0997237063](phone_num)
 - tên: [Nguyễn Ngọc Minh](customer_name) [0999985707](phone_num)
@@ -3311,7 +3369,6 @@ data/prepay_percent.txt
 - [Trần Thị Khánh Chi](customer_name) đt: [0569985051](phone_num)
 - họ tên: [Phan Duy Đạt](customer_name) sđt: [0598831150](phone_num)
 - họ tên: [Nguyễn Linh Thuần](customer_name) sdt: [0564519540](phone_num)
-- [Võ Song Sang](customer_name) số điện thoại: [0926318589](phone_num)
 - họ và tên: [Nguyễn Quốc Thành](customer_name) đt: [0926457495](phone_num)
 - họ và tên: [Nguyễn Xuân Đức](customer_name) điện thoại: [0589454324](phone_num)
 - họ và tên: [Nghiêm Huyền Trang](customer_name) sdt: [0593596715](phone_num)
@@ -3373,8 +3430,6 @@ data/prepay_percent.txt
 - [Nguyễn Xuân Đức](customer_name) [0921407058](phone_num)
 - họ tên: [Thái Khánh Chi](customer_name) [0568799692](phone_num)
 - tên: [Lê Duy Khánh](customer_name) số điện thoại: [0586377268](phone_num)
-- [Quán Đoàn Thảo Ngân](customer_name) sdt: [0567636023](phone_num)
-- tên: [Nguyễn Anh Quân](customer_name) số điện thoại: [0588916319](phone_num)
 - họ và tên: [Nguyễn Xuân Đức](customer_name) số điện thoại: [0588916319](phone_num)
 - [Hoàng Thị Diễm Quỳnh](customer_name) sdt: [0562452691](phone_num)
 - [Bạch Thế Sơn](customer_name) số điện thoại: [0928742175](phone_num)
