@@ -162,6 +162,7 @@ class ActionProductPrice(Action):
         else:
             dispatcher.utter_message(
                 "Bạn đang hỏi thông tin về giá của sản phẩm nào ạ?")
+        print(getMess)
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp),SlotSet('get_list',getMess)]
 
@@ -355,6 +356,7 @@ class ActionProductConfiguration(Action):
         else:
             message_str = "Bạn đang hỏi thông tin cấu hình của sản phẩm nào ạ?"
         # dispatcher.utter_message(message_str)
+        # print('mess list' + temp_mess)
         dispatcher.utter_message(text=message_str,json_message=message)
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
@@ -408,6 +410,7 @@ class ActionListProduct(Action):
                 product_company)
             data = getData(sqlQuery)
             if data:
+                getMess = tracker.latest_message.get('text')
                 list_item = []
                 for item in data:
                     list_btn = [ButtonPostbackTemplate("Xem cấu hình", "Cấu hình của {}".format(
@@ -431,7 +434,7 @@ class ActionListProduct(Action):
             dispatcher.utter_message(
                 "Không tìm thấy hãng điện thoại bạn vừa nhập, vui lòng thử lại")
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
-        return
+        return[SlotSet('get_list',getMess)]
 
 
 class ActionCheckPrice(Action):
@@ -1482,6 +1485,7 @@ class ActionOptionInBox(Action):
         productName = ""
         sqlQuery = ""
         Pname_temp =""
+        message = ''
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))

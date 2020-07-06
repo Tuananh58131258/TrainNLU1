@@ -58,7 +58,7 @@ def QuickReply(temp:str,danhsach:str):
                     "title": data.__getitem__(item),
                     "payload": data.__getitem__(item)}
         listitem.append(btn)
-    if not danhsach:
+    if danhsach:
         tmp = {"content_type": "text",
                     "title": "Quay lại danh sách",
                     "payload": danhsach}
