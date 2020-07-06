@@ -160,7 +160,7 @@
   - slot{"product_name":"oppo find x2"}
 
 ## storie case_pay_per_month
-* case_pay_per_month{"product_name":"iphone xs max",}
+* case_pay_per_month{"product_name":"iphone xs max"}
   - action_case_pay_per_month
   - slot{"product_name":"iphone xs max"}
 
