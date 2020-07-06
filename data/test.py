@@ -1,8 +1,14 @@
 import re
-# data = "samsung galaxy z flip"
-
-# data = re.sub(r"^ip+(?=[\s])","iphone",data)
-# print(data)
-data = {"a1":"abc1","a2":"abc2","a3":"abc3","a4":"abc4","a5":"abc5"}
-for item in data:
-    print(data.__getitem__(item))
+import random
+price = open('data/price.txt',encoding='utf-8').readlines()
+f_p = '{"entity":"price","role":"from_price"}'
+t_p = '{"entity":"price","role":"to_price"}'
+for i in range(1,10):
+    gia = price[random.randint(0,len(price)-1)].strip('\n')
+    print("- hơn [{}](price)".format(gia))
+    print("- trên [{}](price)".format(gia))
+    print("- cao hơn [{}](price)".format(gia))
+    print("- [{}](price) hơn".format(gia))
+    print("- [{}](price) trở lên".format(gia))
+    print("- nhiều hơn [{}](price)".format(gia))
+    print("- từ [{}](price) trở lên".format(gia))

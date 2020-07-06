@@ -47,7 +47,7 @@ def priceModify(price: str):
         else:
             return data
     else:
-        data = price.lower().strip(" ").replace('mốt','1').replace(" ","").replace(".",",")
+        data = price.lower().strip(" ").replace('mốt','1').replace(" ","").replace(".",",").replace('chục','mươi').replace('chuc','muoi')
     so5 = ['lăm',"rưởi",'lam',"ruoi"]
     so4 = ['tu','tư','tứ']
     data = data.replace('trieu','triệu')
@@ -66,9 +66,10 @@ def priceModify(price: str):
         data = data.replace('mươi','').replace('muoi','')
     if re.match("[0-9]mươi[^0-9]",data) or re.match("[0-9]muoi[^0-9].", data):
         data = data.replace('mươi','0').replace('muoi','0')
-
+    if re.match(r"\bmươi.",data) or re.match(r"\bmuoi.", data):
+        data = data.replace('mươi','10').replace('muoi','10')
     if re.match("[0-9]+triệu[0-9]+", data) or re.match("[0-9]+m[0-9]+", data) or re.match("[0-9]+tr[0-9]+", data):
-        temp = data.replace("triệu", ".").replace("tr",".").replace("m",".")
+        temp = re.sub(r"triệu|tr|m",".",data)
         num = temp.split(".")
         if len(num[1]) == 1:
             result = int(num[0])*1000000+int(num[1])*100000
@@ -78,7 +79,7 @@ def priceModify(price: str):
             result = int(num[0])*1000000+int(num[1])*1000
         return result
     elif re.match("[0-9]+,[0-9]+triệu", data) or re.match("[0-9]+,[0-9]+m", data) or re.match("[0-9]+,[0-9]+tr", data):
-        temp = data.replace("triệu", "").replace("tr",".").replace("m",".")
+        temp = re.sub(r"triệu|tr|m",".",data)
         num = temp.split(".")
         if len(num[1]) == 1:
             result = int(num[0])*1000000+int(num[1])*100000
@@ -88,7 +89,7 @@ def priceModify(price: str):
             result = int(num[0])*1000000+int(num[1])*1000
         return result
     elif re.match("[0-9]+triệu", data) or re.match("[0-9]+m", data) or re.match("[0-9]+tr", data):
-        temp = data.replace("triệu", "").replace("tr","").replace("m","")
+        temp = re.sub(r"triệu|tr|m","",data)
         result = int(temp)*1000000
         return result
     return data
@@ -111,4 +112,4 @@ def GetColName(temp:str):
     result = data[temp]
     return result
 
-# print(priceModify('20tr'))
+print(priceModify('chục triệu'))

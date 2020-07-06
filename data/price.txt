@@ -1,653 +1,221 @@
+1 tr
+1tr
 1 triệu
-2 triệu
-3 triệu
-4 triệu
-5 triệu
+1 trieu
+1 m
+1m
+1 củ
+1củ
+6 tr
+6tr
 6 triệu
-7 triệu
-8 triệu
-9 triệu
-một triệu
-hai triệu
-ba triệu
-bốn triệu
-năm triệu
-sáu triệu
-bảy triệu
-tám triệu
-chín triệu
+6 trieu
+6 m
+6m
+6 củ
+6củ
+11 tr
+11tr
+11 triệu
+11 trieu
+11 m
+11m
+11 củ
+11củ
+16 tr
+16tr
+16 triệu
+16 trieu
+16 m
+16m
+16 củ
+16củ
+21 tr
+21tr
+21 triệu
+21 trieu
+21 m
+21m
+21 củ
+21củ
+26 tr
+26tr
+26 triệu
+26 trieu
+26 m
+26m
+26 củ
+26củ
+1,9 tr
+1.9tr
+1,9 triệu
+1.9 trieu
+1,9 m
+1.9m
+1,9 củ
+1.9củ
+8,8 tr
+8.8tr
+8,8 triệu
+8.8 trieu
+8,8 m
+8.8m
+8,8 củ
+8.8củ
+1,4 tr
+1.4tr
+1,4 triệu
+1.4 trieu
+1,4 m
+1.4m
+1,4 củ
+1.4củ
+1,8 tr
+1.8tr
+1,8 triệu
+1.8 trieu
+1,8 m
+1.8m
+1,8 củ
+1.8củ
+8,4 tr
+8.4tr
+8,4 triệu
+8.4 trieu
+8,4 m
+8.4m
+8,4 củ
+8.4củ
+7,3 tr
+7.3tr
+7,3 triệu
+7.3 trieu
+7,3 m
+7.3m
+7,3 củ
+7.3củ
+7 tr 4
+7tr4
+7triệu4
+7 trieu 4
+7m4
+7 m 4
+1 tr 3
+1tr3
+1triệu3
+1 trieu 3
+1m3
+1 m 3
+5 tr 9
+5tr9
+5triệu9
+5 trieu 9
+5m9
+5 m 9
+5 tr 9
+5tr9
+5triệu9
+5 trieu 9
+5m9
+5 m 9
+5 tr 5
+5tr5
+5triệu5
+5 trieu 5
+5m5
+5 m 5
+8 tr 9
+8tr9
+8triệu9
+8 trieu 9
+8m9
+8 m 9
+chín tr ba
+chín trieu ba
+một tr ba
+một trieu ba
+bảy tr sáu
+bảy trieu sáu
+một tr sáu
+một trieu sáu
+một tr bốn
+một trieu bốn
+ba tr một
+ba trieu một
+chín triệu ba
+một triệu ba
+bảy triệu sáu
+một triệu sáu
+một triệu bốn
+ba triệu một
 mười một triệu
-mười hai triệu
-mười ba triệu
-mười bốn triệu
+hai chục triệu
 mười lăm triệu
-mười sáu triệu
-mười bảy triệu
-mười tám triệu
-mười chín triệu
-hai mươi một triệu
-hai mươi hai triệu
-hai mươi ba triệu
-hai mươi bốn triệu
-hai mươi lăm triệu
-hai mươi sáu triệu
-hai mươi bảy triệu
-hai mươi tám triệu
-hai mươi chín triệu
-hâm mốt triệu
-hâm hai triệu
-hâm ba triệu
-hâm bốn triệu
 hâm lăm triệu
 hâm sáu triệu
-hâm bảy triệu
-hâm tám triệu
-hâm chín triệu
-một triệu mốt
-một triệu hai
-một triệu ba
-một triệu bốn
-một triệu năm
-một triệu sáu
-một triệu bảy
-một triệu tám
-một triệu chín
-hai triệu mốt
-hai triệu hai
-hai triệu ba
-hai triệu bốn
-hai triệu năm
-hai triệu sáu
-hai triệu bảy
-hai triệu tám
-hai triệu chín
-ba triệu mốt
-ba triệu hai
-ba triệu ba
-ba triệu bốn
-ba triệu năm
-ba triệu sáu
-ba triệu bảy
-ba triệu tám
-ba triệu chín
-bốn triệu mốt
-bốn triệu hai
-bốn triệu ba
-bốn triệu bốn
-bốn triệu năm
-bốn triệu sáu
-bốn triệu bảy
-bốn triệu tám
-bốn triệu chín
-năm triệu mốt
-năm triệu hai
-năm triệu ba
-năm triệu bốn
-năm triệu năm
-năm triệu sáu
-năm triệu bảy
-năm triệu tám
-năm triệu chín
-sáu triệu mốt
-sáu triệu hai
-sáu triệu ba
-sáu triệu bốn
-sáu triệu năm
-sáu triệu sáu
-sáu triệu bảy
-sáu triệu tám
-sáu triệu chín
-bảy triệu mốt
-bảy triệu hai
-bảy triệu ba
-bảy triệu bốn
-bảy triệu năm
-bảy triệu sáu
-bảy triệu bảy
-bảy triệu tám
-bảy triệu chín
-tám triệu mốt
-tám triệu hai
-tám triệu ba
-tám triệu bốn
-tám triệu năm
-tám triệu sáu
-tám triệu bảy
-tám triệu tám
-tám triệu chín
-chín triệu mốt
-chín triệu hai
-chín triệu ba
-chín triệu bốn
-chín triệu năm
-chín triệu sáu
-chín triệu bảy
-chín triệu tám
-chín triệu chín
-1 triệu 1
-2 triệu 2
-3 triệu 3
-4 triệu 4
-5 triệu 5
-6 triệu 6
-7 triệu 7
-8 triệu 8
-9 triệu 9
-1,1 triệu
-1,2 triệu
-1,3 triệu
-1,4 triệu
-1,5 triệu
-1,6 triệu
-1,7 triệu
-1,8 triệu
-1,9 triệu
-2,1 triệu
-2,2 triệu
-2,3 triệu
-2,4 triệu
-2,5 triệu
-2,6 triệu
-2,7 triệu
-2,8 triệu
-2,9 triệu
-3,1 triệu
-3,2 triệu
-3,3 triệu
-3,4 triệu
-3,5 triệu
-3,6 triệu
-3,7 triệu
-3,8 triệu
-3,9 triệu
-4,1 triệu
-4,2 triệu
-4,3 triệu
-4,4 triệu
-4,5 triệu
-4,6 triệu
-4,7 triệu
-4,8 triệu
-4,9 triệu
-5,1 triệu
-5,2 triệu
-5,3 triệu
-5,4 triệu
-5,5 triệu
-5,6 triệu
-5,7 triệu
-5,8 triệu
-5,9 triệu
-6,1 triệu
-6,2 triệu
-6,3 triệu
-6,4 triệu
-6,5 triệu
-6,6 triệu
-6,7 triệu
-6,8 triệu
-6,9 triệu
-7,1 triệu
-7,2 triệu
-7,3 triệu
-7,4 triệu
-7,5 triệu
-7,6 triệu
-7,7 triệu
-7,8 triệu
-7,9 triệu
-8,1 triệu
-8,2 triệu
-8,3 triệu
-8,4 triệu
-8,5 triệu
-8,6 triệu
-8,7 triệu
-8,8 triệu
-8,9 triệu
-9,1 triệu
-9,2 triệu
-9,3 triệu
-9,4 triệu
-9,5 triệu
-9,6 triệu
-9,7 triệu
-9,8 triệu
-9,9 triệu
-1 triệu rưởi
-2 triệu rưởi
-3 triệu rưởi
-4 triệu rưởi
-5 triệu rưởi
-6 triệu rưởi
-7 triệu rưởi
-8 triệu rưởi
-9 triệu rưởi
-một triệu rưởi
-hai triệu rưởi
-ba triệu rưởi
-bốn triệu rưởi
-năm triệu rưởi
-sáu triệu rưởi
-bảy triệu rưởi
+ba mươi hai triệu
+ba mươi mốt triệu
+mười bảy triệu
+mười sáu triệu
+ba mươi mốt triệu
+ba mươi tư triệu
+hâm tư triệu
+hai mươi lăm triệu
+hai chục triệu
+ba chục triệu
+bốn chục triệu
 tám triệu rưởi
-chín triệu rưởi
-1.1 triệu
-1.2 triệu
-1.3 triệu
-1.4 triệu
-1.5 triệu
-1.6 triệu
-1.7 triệu
-1.8 triệu
-1.9 triệu
-2.1 triệu
-2.2 triệu
-2.3 triệu
-2.4 triệu
-2.5 triệu
-2.6 triệu
-2.7 triệu
-2.8 triệu
-2.9 triệu
-3.1 triệu
-3.2 triệu
-3.3 triệu
-3.4 triệu
-3.5 triệu
-3.6 triệu
-3.7 triệu
-3.8 triệu
-3.9 triệu
-4.1 triệu
-4.2 triệu
-4.3 triệu
-4.4 triệu
-4.5 triệu
-4.6 triệu
-4.7 triệu
-4.8 triệu
-4.9 triệu
-5.1 triệu
-5.2 triệu
-5.3 triệu
-5.4 triệu
-5.5 triệu
-5.6 triệu
-5.7 triệu
-5.8 triệu
-5.9 triệu
-6.1 triệu
-6.2 triệu
-6.3 triệu
-6.4 triệu
-6.5 triệu
-6.6 triệu
-6.7 triệu
-6.8 triệu
-6.9 triệu
-7.1 triệu
-7.2 triệu
-7.3 triệu
-7.4 triệu
-7.5 triệu
-7.6 triệu
-7.7 triệu
-7.8 triệu
-7.9 triệu
-8.1 triệu
-8.2 triệu
-8.3 triệu
-8.4 triệu
-8.5 triệu
-8.6 triệu
-8.7 triệu
-8.8 triệu
-8.9 triệu
-9.1 triệu
-9.2 triệu
-9.3 triệu
-9.4 triệu
-9.5 triệu
-9.6 triệu
-9.7 triệu
-9.8 triệu
-9.9 triệu
-1 m 1
-1 m 2
-1 m 3
-1 m 4
-1 m 5
-1 m 6
-1 m 7
-1 m 8
-1 m 9
-2 m 1
-2 m 2
-2 m 3
-2 m 4
-2 m 5
-2 m 6
-2 m 7
-2 m 8
-2 m 9
-3 m 1
-3 m 2
-3 m 3
-3 m 4
-3 m 5
-3 m 6
-3 m 7
-3 m 8
-3 m 9
-4 m 1
-4 m 2
-4 m 3
-4 m 4
-4 m 5
-4 m 6
-4 m 7
-4 m 8
-4 m 9
-5 m 1
-5 m 2
-5 m 3
-5 m 4
-5 m 5
-5 m 6
-5 m 7
-5 m 8
-5 m 9
-6 m 1
-6 m 2
-6 m 3
-6 m 4
-6 m 5
-6 m 6
-6 m 7
-6 m 8
-6 m 9
-7 m 1
-7 m 2
-7 m 3
-7 m 4
-7 m 5
-7 m 6
-7 m 7
-7 m 8
-7 m 9
-8 m 1
-8 m 2
-8 m 3
-8 m 4
-8 m 5
-8 m 6
-8 m 7
-8 m 8
-8 m 9
-9 m 1
-9 m 2
-9 m 3
-9 m 4
-9 m 5
-9 m 6
-9 m 7
-9 m 8
-9 m 9
-nam trieu
-sau trieu
-bay trieu
-tam trieu
-chin trieu
+mười sáu triệu rưởi
+hâm lăm triệu rưởi
+mười triệu rưởi
+hai mươi mốt triệu
+ba mươi tư triệu rưởi
 muoi mot trieu
-muoi hai trieu
-muoi ba trieu
-muoi bon trieu
-muoi tam trieu
-muoi chin trieu
-hai muoi mot trieu
-hai muoi hai trieu
-hai muoi ba trieu
-hai muoi bon trieu
-hai muoi bay trieu
-hai muoi tam trieu
-hai muoi chin trieu
-ham mot trieu
-ham hai trieu
-ham ba trieu
-ham bon trieu
+hai chuc trieu
+muoi lam trieu
 ham lam trieu
 ham sau trieu
-ham bay trieu
-mot trieu bon
-mot trieu nam
-mot trieu sau
-mot tr bay
-mot trieu tam
-mot trieu chin
-hai trieu mot
-hai trieu hai
-hai tr ba
-hai trieu bon
-hai trieu tam
-hai trieu chin
-ba trieu mot
-ba trieu hai
-ba tr ba
-ba trieu bon
-ba trieu nam
-ba trieu sau
-ba trieu bay
-bon tr nam
-bon trieu sau
-bon trieu bay
-bon trieu tam
-bon trieu chin
-nam trieu mot
-nam trieu hai
-nam trieu ba
-nam trieu bon
-nam trieu nam
-nam trieu sau
-sau tr ba
-sau trieu bon
-sau trieu nam
-sau trieu sau
-sau trieu bay
-sau trieu tam
-sau trieu chin
-bay trieu mot
-bay trieu hai
-bay trieu ba
-bay trieu bon
-tam tr nam
-tam trieu sau
-tam trieu bay
-tam trieu tam
-tam trieu chin
-chin trieu mot
-chin tr hai
-chin trieu ba
-chin trieu bon
-chin trieu nam
-1,4tr
-1,5tr
-1,6tr
-1,7tr
-1,8tr
-1,9tr
-2,1tr
-2,2 tr
-2,3tr
-2,4 tr
-4,9 tr
-5,1 tr
-5,2 tr
-5,3 tr
-5,4 tr
-5,5 tr
-5,6 tr
-5,7 tr
-5,8 tr
-9,3 tr
-9,4 tr
-9,5tr
-9,6tr
-9,7tr
-9,8tr
-9,9 tr
-1 tr ruoi
-2 tr ruoi
-3tr ruoi
-4tr ruoi
-5tr ruoi
-6 tr ruoi
-7tr ruoi
-8 tr ruoi
-9 tr ruoi
-mot tr ruoi
-hai tr ruoi
-ba tr ruoi
-bon tr ruoi
-nam tr ruoi
-sau tr ruoi
-bay tr ruoi
-tam tr ruoi
-chin tr ruoi
-1.1 tr
-1.2 tr
-1.3tr
-1.4 tr
-1.5 tr
-1.6 tr
-1.7tr
-1.8 tr
-1.9tr
-2.1 tr
-2.2 tr
-2.3 tr
-2.4 m
-2.5 m
-2.6 m
-2.7m
-2.8m
-2.9m
-3.1 m
-3.2 m
-3.3 m
-3.4 m
-3.5m
-3.6m
-3.7 m
-3.8 m
-3.9 m
-4.1 m
-4.2 m
-4.3 m
-4.4 m
-4.5m
-4.6m
-4.7 m
-4.8 m
-4.9 m
-5.1 m
-5.2m
-5.3 m
-5.4 m
-5.5 củ
-5.6 củ
-5.7 củ
-5.8 củ
-5.9củ
-6.1củ
-6.2củ
-6.3 củ
-6.4 củ
-6.5 củ
-6.6 củ
-6.7 củ
-6.8 củ
-6.9 củ
-7.1 củ
-7.2 củ
-7.3 củ
-7.4 củ
-7.5 củ
-7.6 củ
-7.7củ
-7.8 củ
-7.9 củ
-8.1 củ
-8.2 củ
-8.3 củ
-8.4 củ
-8.5 củ
-8.6 trieu
-8.7 trieu
-8.8 trieu
-8.9trieu
-9.1trieu
-9.2trieu
-9.3trieu
-9.4 trieu
-9.5 trieu
-9.6 trieu
-9.7 trieu
-9.8trieu
-9.9 trieu
-1m1
-1m2
-1m3
-1 m 4
-1 m 5
-1 m 6
-1000
-1000000
+ba muoi hai trieu
+ba muoi mot trieu
+muoi bay trieu
+muoi sau trieu
+ba muoi mot trieu
+ba muoi tu trieu
+ham tu trieu
+hai muoi lam trieu
+hai chuc trieu
+ba chuc trieu
+bon chuc trieu
+tam trieu ruoi
+muoi sau trieu ruoi
+ham lam trieu ruoi
+muoi trieu ruoi
+hai muoi mot trieu
+ba muoi tu trieu ruoi
 1990
-1000990
-1500
-1390
-2000
-20000000
-2990
-2000990
-20009900
-2500
-2390
-3000
-3000000
-30000000
-3990
-3000990
-3500
+2290
 3390
-4000
-4000000
-4990
-4000990
-4500
-4390
-5000
-5000000
-5990
-5000990
-5500
-5390
-6000
-6000000
-6990
-6000990
-6500
-6390
-7000
-7000000
-7990
-7000990
-7500
-7390
-8000
-8000000
-8990
-8000990
-8500
-8390
+4490
+5590
+6690
+7790
+8890
+9990
+19900000
+12900000
+13900000
+14900000
+15900000
+16900000
+17900000
+18900000
+19900000
+19900000
+11290000
+12390000
+13490000
+14590000
+15690000
+16790000
+17890000
+18990000

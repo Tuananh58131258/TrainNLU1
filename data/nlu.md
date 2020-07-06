@@ -1442,28 +1442,132 @@ data/prepay_percent.txt
 
 <!-- tìm sản phẩm trên một mức giá -->
 
-- trên [bảy triệu chín](price)
-- trên [bốn triệu sáu](price)
-- trên [1.5 triệu](price)
-- trên [7 triệu](price)
-- hơn [8 triệu](price)
-- hơn [3,4 triệu](price)
-- hơn [2,6 triệu](price)
-- hơn [năm triệu sáu](price)
-- [bảy triệu tám](price) trở lên
-- [1 m 2](price) trở lên
-- tren [bay trieu chin](price)
-- tren [bon trieu sau](price)
-- tren [1.5 trieu](price)
-- tren [7 trieu](price)
-- hon [8 trieu](price)
-- hon [3,4 trieu](price)
-- hon [2,6 trieu](price)
-- hon [nam trieu sau](price)
-- [bay trieu tam](price) tro len
-- [1 m 2](price) tro len
-- [5.9 trieu](price) tro len
-- [4 m 7](price) tro len
+- hơn [16 trieu](price)
+- trên [16 trieu](price)
+- cao hơn [16 trieu](price)
+- [16 trieu](price) hơn
+- [16 trieu](price) trở lên
+- nhiều hơn [16 trieu](price)
+- từ [16 trieu](price) trở lên
+- hơn [1tr3](price)
+- trên [1tr3](price)
+- cao hơn [1tr3](price)
+- [1tr3](price) hơn
+- [1tr3](price) trở lên
+- nhiều hơn [1tr3](price)
+- từ [1tr3](price) trở lên
+- hơn [8.4tr](price)
+- trên [8.4tr](price)
+- cao hơn [8.4tr](price)
+- [8.4tr](price) hơn
+- [8.4tr](price) trở lên
+- nhiều hơn [8.4tr](price)
+- từ [8.4tr](price) trở lên
+- hơn [hai muoi lam trieu](price)
+- trên [hai muoi lam trieu](price)
+- cao hơn [hai muoi lam trieu](price)
+- [hai muoi lam trieu](price) hơn
+- [hai muoi lam trieu](price) trở lên
+- nhiều hơn [hai muoi lam trieu](price)
+- từ [hai muoi lam trieu](price) trở lên
+- hơn [mười sáu triệu](price)
+- trên [mười sáu triệu](price)
+- cao hơn [mười sáu triệu](price)
+- [mười sáu triệu](price) hơn
+- [mười sáu triệu](price) trở lên
+- nhiều hơn [mười sáu triệu](price)
+- từ [mười sáu triệu](price) trở lên
+- hơn [một trieu ba](price)
+- trên [một trieu ba](price)
+- cao hơn [một trieu ba](price)
+- [một trieu ba](price) hơn
+- [một trieu ba](price) trở lên
+- nhiều hơn [một trieu ba](price)
+- từ [một trieu ba](price) trở lên
+- hơn [17890000](price)
+- trên [17890000](price)
+- cao hơn [17890000](price)
+- [17890000](price) hơn
+- [17890000](price) trở lên
+- nhiều hơn [17890000](price)
+- từ [17890000](price) trở lên
+- hơn [8m9](price)
+- trên [8m9](price)
+- cao hơn [8m9](price)
+- [8m9](price) hơn
+- [8m9](price) trở lên
+- nhiều hơn [8m9](price)
+- từ [8m9](price) trở lên
+- hơn [mười sáu triệu rưởi](price)
+- trên [mười sáu triệu rưởi](price)
+- cao hơn [mười sáu triệu rưởi](price)
+- [mười sáu triệu rưởi](price) hơn
+- [mười sáu triệu rưởi](price) trở lên
+- nhiều hơn [mười sáu triệu rưởi](price)
+- từ [mười sáu triệu rưởi](price) trở lên
+- hon [16 trieu](price)
+- tren [16 trieu](price)
+- cao hon [16 trieu](price)
+- [16 trieu](price) hon
+- [16 trieu](price) tro len
+- nhieu hon [16 trieu](price)
+- tu [16 trieu](price) tro len
+- hon [1tr3](price)
+- tren [1tr3](price)
+- cao hon [1tr3](price)
+- [1tr3](price) hon
+- [1tr3](price) tro len
+- nhieu hon [1tr3](price)
+- tu [1tr3](price) tro len
+- hon [8.4tr](price)
+- tren [8.4tr](price)
+- cao hon [8.4tr](price)
+- [8.4tr](price) hon
+- [8.4tr](price) tro len
+- nhieu hon [8.4tr](price)
+- tu [8.4tr](price) tro len
+- hon [hai muoi lam trieu](price)
+- tren [hai muoi lam trieu](price)
+- cao hon [hai muoi lam trieu](price)
+- [hai muoi lam trieu](price) hon
+- [hai muoi lam trieu](price) tro len
+- nhieu hon [hai muoi lam trieu](price)
+- tu [hai muoi lam trieu](price) tro len
+- hon [muoi sau trieu](price)
+- tren [muoi sau trieu](price)
+- cao hon [muoi sau trieu](price)
+- [muoi sau trieu](price) hon
+- [muoi sau trieu](price) tro len
+- nhieu hon [muoi sau trieu](price)
+- tu [muoi sau trieu](price) tro len
+- hon [mot trieu ba](price)
+- tren [mot trieu ba](price)
+- cao hon [mot trieu ba](price)
+- [mot trieu ba](price) hon
+- [mot trieu ba](price) tro len
+- nhieu hon [mot trieu ba](price)
+- tu [mot trieu ba](price) tro len
+- hon [17890000](price)
+- tren [17890000](price)
+- cao hon [17890000](price)
+- [17890000](price) hon
+- [17890000](price) tro len
+- nhieu hon [17890000](price)
+- tu [17890000](price) tro len
+- hon [8m9](price)
+- tren [8m9](price)
+- cao hon [8m9](price)
+- [8m9](price) hon
+- [8m9](price) tro len
+- nhieu hon [8m9](price)
+- tu [8m9](price) tro len
+- hon [muoi sau trieu ruoi](price)
+- tren [muoi sau trieu ruoi](price)
+- cao hon [muoi sau trieu ruoi](price)
+- [muoi sau trieu ruoi](price) hon
+- [muoi sau trieu ruoi](price) tro len
+- nhieu hon [muoi sau trieu ruoi](price)
+- tu [muoi sau trieu ruoi](price) tro len
 - co [Vsmart](product_company) nao co gia khoang [6 trieu](price) tro len khong
 - co dien thoai [ss](product_company) nao khoang [1 trieu](price) tro len khong
 - co dien thoai [Energizer](product_company) nao co gia tu [mot trieu tam](price) tro len khong
@@ -1657,79 +1761,69 @@ data/prepay_percent.txt
 - có [Vsmart](product_company) nào trên dưới [5 m 9](price) không giới thiệu cho em với
 - có điện thoại [Vivo](product_company) nào khoảng [7 m 8](price) không giới thiệu cho em với
 - có [Realme](product_company) nào tầm [4 triệu 4](price) không giới thiệu cho em với
-- có điện thoại nào tầm [7,7 triệu](price) không
-- có điện thoại nào trên dưới [8,9 triệu](price) không ạ
-- có điện thoại nào khoảng [3,1 triệu](price) không giới thiệu cho em với
-- có cái nào khoảng [bốn triệu chín](price) gì đó tư vấn giúp em
-- có điện thoại nào trên dưới [ba triệu tám](price) gì đó không
-- có điện thoại nào khoảng [7,6 triệu](price) gì đó không
-- có cái nào khoảng [4,8 triệu](price) gì đó không
-- có sản phẩm nào khoảng [8 m 5](price) không ạ
-- có cái nào tầm [5,6 triệu](price) không
-- có điện thoại nào tầm [6,6 triệu](price) không
-- có cái nào trên dưới [một triệu rưởi](price) không
-- có cái nào trên dưới [6 m 6](price) gì đó tư vấn giúp em
-- có điện thoại nào tầm [5 triệu](price) không giới thiệu cho em với
-- có cái nào khoảng [sáu triệu ba](price) không giới thiệu cho em với
-- có sản phẩm nào khoảng [9,3 triệu](price) không
-- có điện thoại nào trên dưới [5 m 9](price) không giới thiệu cho em với
-- có cái nào khoảng [7 m 8](price) không giới thiệu cho em với
-- có cái nào tầm [4 triệu 4](price) không giới thiệu cho em với
-- có cái nào tầm [hâm chín triệu](price)
-- có điện thoại nào khoảng [8 m 7](price) không
-- có sản phẩm nào khoảng [một triệu năm](price) gì đó tư vấn giúp em
-- co dien thoai nao khoang [5 trieu](price) khong gioi thieu cho em voi
-- co dien thoai nao tam [bon trieu nam](price) gi do khong
-- co dien thoai nao tam [3 m 9](price) gi do tu van giup em
-- co dien thoai nao khoang [6 trieu 6](price) gi do tu van giup em
-- co cai nao khoang [5 trieu ruoi](price) khong a
-- co dien thoai nao tam [1,9 trieu](price) gi do khong
-- co dien thoai nao tam [hai muoi bon trieu](price) gi do khong
-- co cai nao khoang [sau trieu mot](price) khong
-- co cai nao tren duoi [7,8 trieu](price) khong gioi thieu cho em voi
-- co dien thoai nao tam [bay trieu bon](price) gi do tu van giup em
-- co cai nao tam [7 m 1](price) gi do tu van giup em
-- co dien thoai nao tren duoi [9,5 trieu](price)
-- co dien thoai nao tam [hai muoi tam trieu](price) khong a
-- co dien thoai nao khoang [1 trieu 1](price) gi do tu van giup em
-- co dien thoai nao tren duoi [ham hai trieu](price)
-- co cai nao tren duoi [ba trieu mot](price) gi do khong
-- co dien thoai nao khoang [8,7 trieu](price) gi do khong
-- co dien thoai nao tam [muoi bay trieu](price)
-- co cai nao tam [hai muoi bon trieu](price) khong
-- co cai nao tam [chin trieu mot](price) gi do khong
-- co cai nao khoang [4,4 trieu](price) khong
-- co cai nao khoang [ba trieu sau](price)
-- co cai nao khoang [sau trieu bay](price) gi do khong
-- co san pham nao khoang [9 m 7](price) khong a
-- co dien thoai nao tren duoi [5 m 6](price) gi do khong
-- co dien thoai nao tren duoi [7 trieu 7](price) khong a
-- co dien thoai nao tam [5 m 7](price) khong
-- co cai nao tam [5,7 trieu](price)
-- co dien thoai nao khoang [sau trieu tam](price) khong a
-- co san pham nao khoang [nam trieu chin](price) khong gioi thieu cho em voi
-- có điện thoại nào tầm [4,1 triệu](price)
-- có sản phẩm nào khoảng [2,5 triệu](price) không giới thiệu cho em với
-- có cái nào trên dưới [1 m 7](price) không
-- có điện thoại nào trên dưới [5,1 triệu](price) gì đó không
-- có sản phẩm nào khoảng [7 m 2](price) gì đó không
-- có điện thoại nào khoảng [4,7 triệu](price) không giới thiệu cho em với
-- có cái nào khoảng [hâm lăm triệu](price) không
-- có điện thoại nào tầm [7 m 4](price) không giới thiệu cho em với
-- có cái nào tầm [2,4 triệu](price)
-- có sản phẩm nào khoảng [6,3 triệu](price) gì đó tư vấn giúp em
-- có cái nào khoảng [3,2 triệu](price) gì đó không
-- có cái nào trên dưới [năm triệu sáu](price) gì đó không
-- có điện thoại nào khoảng [7 m 9](price) gì đó không
-- có điện thoại nào tầm [2 triệu 2](price) gì đó không
-- có cái nào tầm [6,9 triệu](price) gì đó không
-- có sản phẩm nào khoảng [7,8 triệu](price) gì đó tư vấn giúp em
-- có cái nào khoảng [bảy triệu ba](price) không giới thiệu cho em với
-- có điện thoại nào trên dưới [mười ba triệu](price) không giới thiệu cho em với
-- khoảng [bảy triệu tám](price)
-- khoảng [bảy triệu ba](price)
-- khoảng [2,7 triệu](price)
-- khoảng [9,8 triệu](price)
+- khoảng [5 tr 9](price)
+- trên dưới [5 tr 9](price)
+- tầm [5 tr 9](price)
+- chừng [5 tr 9](price)
+- [5 tr 9](price)
+- chừng chừng [5 tr 9](price)
+- loanh quanh [5 tr 9](price)
+- khoảng [7,3 tr](price)
+- trên dưới [7,3 tr](price)
+- tầm [7,3 tr](price)
+- chừng [7,3 tr](price)
+- [7,3 tr](price)
+- chừng chừng [7,3 tr](price)
+- loanh quanh [7,3 tr](price)
+- khoảng [5 trieu 9](price)
+- trên dưới [5 trieu 9](price)
+- tầm [5 trieu 9](price)
+- chừng [5 trieu 9](price)
+- [5 trieu 9](price)
+- chừng chừng [5 trieu 9](price)
+- loanh quanh [5 trieu 9](price)
+- khoảng [19900000](price)
+- trên dưới [19900000](price)
+- tầm [19900000](price)
+- chừng [19900000](price)
+- [19900000](price)
+- chừng chừng [19900000](price)
+- loanh quanh [19900000](price)
+- khoảng [hai mươi lăm triệu](price)
+- trên dưới [hai mươi lăm triệu](price)
+- tầm [hai mươi lăm triệu](price)
+- chừng [hai mươi lăm triệu](price)
+- [hai mươi lăm triệu](price)
+- chừng chừng [hai mươi lăm triệu](price)
+- loanh quanh [hai mươi lăm triệu](price)
+- khoảng [1.4củ](price)
+- trên dưới [1.4củ](price)
+- tầm [1.4củ](price)
+- chừng [1.4củ](price)
+- [1.4củ](price)
+- chừng chừng [1.4củ](price)
+- loanh quanh [1.4củ](price)
+- khoảng [6 trieu](price)
+- trên dưới [6 trieu](price)
+- tầm [6 trieu](price)
+- chừng [6 trieu](price)
+- [6 trieu](price)
+- chừng chừng [6 trieu](price)
+- loanh quanh [6 trieu](price)
+- khoảng [21m](price)
+- trên dưới [21m](price)
+- tầm [21m](price)
+- chừng [21m](price)
+- [21m](price)
+- chừng chừng [21m](price)
+- loanh quanh [21m](price)
+- khoảng [7.3m](price)
+- trên dưới [7.3m](price)
+- tầm [7.3m](price)
+- chừng [7.3m](price)
+- [7.3m](price)
+- chừng chừng [7.3m](price)
+- loanh quanh [7.3m](price)
 
 ## intent: screen_info
 
