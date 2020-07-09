@@ -641,7 +641,7 @@ class ActionFindProductUpperPrice(Action):
             if product_company:
                 sqlQuery = sqlQuery + "and hangdienthoai.ten like '%{}%' ".format(product_company)
 
-            sqlQuery = sqlQuery + " order by gia desc limit 9"
+            sqlQuery = sqlQuery + " order by gia asc limit 9"
             data = getData(sqlQuery)
             if data:
                 list_item = []
@@ -1219,7 +1219,7 @@ class ActionGuarantee(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = productNameModify(tracker.get_slot('product_name'))
+            productName = tracker.get_slot('product_name')
             pass
         #endregion
         if productName:
@@ -1301,6 +1301,8 @@ class ActionFindProduct(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
         message_str=""
+        ram =''
+        rom =''
         sqlQuery = "Select * from dienthoai where 1=1 "
         message_text = "Danh sách sản phẩm có "
         #region try-catch entity
@@ -1327,6 +1329,8 @@ class ActionFindProduct(Action):
             pass
         #endregion
         sqlQuery = sqlQuery + "order by ten limit 9;"
+        if not productName and not ram and not rom:
+            sqlQuery = ''
         data = getData(sqlQuery)
         if data:
             list_item = []
@@ -1359,10 +1363,12 @@ class ActionFindAnotherProduct(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         productName = ""
+        sqlQuery=''
         try:
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
+            productName = tracker.get_slot('product_name')
             pass
         if productName:
             sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
@@ -1569,7 +1575,30 @@ class ActionCanPlayGame(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # productName = ""
-        # sqlQuery = ""
+        productName = ""
+        sqlQuery = ""
         # Pname_temp =""
+        #region try-catch
+        try:
+            productName = productNameModify(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            productName = tracker.get_slot('product_name')
+        if productName:
+            sqlQuery ='select * from dienthoai where ten like "%{}%" order by ten'.format(productName)
+            data = getData(sqlQuery)
+            if data:
+                if data[0]['ghi_chu'].find('tin đồn') >-1:
+                    message_str = "Sản phẩm {} hiện mới chỉ là tin đồn. Mình sẽ cập nhật thêm khi có thông tin mới. Xin vui lòng thử sản phẩm khác."
+                else:
+                    if data[0]['choi_game']:
+                        message_str = 'Sản phẩm {} có hỗ trợ chơi các game như Liên quân mobile hay PUBG mobile ạ.'.format(data[0]['ten'])
+                    else:
+                        message_str = 'Sản phẩm {} không hỗ trợ chơi các game ạ.'.format(data[0]['ten'])
+            else:
+                message_str = 'Không tìm thấy thông tin của sản phẩm {}, vui lòng kiểm tra lại.'.format(productName)
+        else:
+            message_str ='Bạn đang tìm kiếm thông tin của sản phẩm nào ạ?'
+
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'))) 
+        dispatcher.utter_message(message_str) 
         return

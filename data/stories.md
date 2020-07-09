@@ -66,14 +66,14 @@
   - action_online_price
   - slot{"latest_action":"action_online_price"}
   - slot{"product_name":"oppo reno 3"}
-  - slot{"product_name":"giá online của oppo reno 3"}
+  - slot{"get_list":"giá online của oppo reno 3"}
 
 ## storie old_product_price
 * old_product_price{"product_name": "iphone 8"}
   - action_old_product
   - slot{"latest_action":"action_old_product"}
   - slot{"product_name": "iphone 8"}
-  - slot{"product_name":"giá của iphone 8"}
+  - slot{"get_list":"giá của iphone 8"}
 
 ## storie product_configuration
 * product_configuration{"product_name": "iphone 8"}
