@@ -1800,6 +1800,33 @@ data/prepay_percent.txt
 <!-- tìm sản phẩm có giá xung quanh 1 mức -->
 <!-- chênh lệch trên dưới 1 triệu đồng -->
 
+- khoảng [33](price)tr
+- khoảng [50](price)tr
+- khoảng [2](price)tr
+- khoảng [26](price)tr
+- khoảng [5](price)tr
+- khoảng [7](price)tr
+- khoảng [20](price)tr
+- khoảng [24](price)tr
+- khoảng [24](price)tr
+- khoang [33](price)tr
+- khoang [50](price)tr
+- khoang [2](price)tr
+- khoang [26](price)tr
+- khoang [5](price)tr
+- khoang [7](price)tr
+- khoang [20](price)tr
+- khoang [24](price)tr
+- khoang [24](price)tr
+- khoang [33](price)tr
+- khoang [50](price)tr
+- khoang [2](price)tr
+- khoang [26](price) tr
+- khoang [5](price) tr
+- khoang [7](price) tr
+- khoang [20](price) tr
+- khoang [24](price) tr
+- khoang [24](price) tr
 - chừng [2.5 triệu](price)
 - tầm [3 triệu 3](price)
 - tầm [7 m 6](price)
