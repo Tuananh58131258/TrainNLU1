@@ -1800,24 +1800,25 @@ data/prepay_percent.txt
 <!-- tìm sản phẩm có giá xung quanh 1 mức -->
 <!-- chênh lệch trên dưới 1 triệu đồng -->
 
-- khoảng [26](price)tr
-- khoảng [8](price)tr
-- khoảng [16](price)tr
-- khoảng [26](price)tr
-- khoảng [5](price)tr
-- khoảng [8](price)tr
-- khoảng [8](price) tr
-- khoảng [26](price) tr
-- khoảng [16](price) tr
-- khoảng [8](price) tr
-- khoang [26](price)tr
-- khoang [5](price)tr
-- khoang [8](price)tr
-- khoang [8](price) tr
-- khoang [26](price) tr
-- khoang [16](price) tr
-- khoảng [11](price) tr
-- khoảng [1](price) tr
+- khoảng [26 tr](price)
+- khoảng [38 tr](price)
+- khoảng [37 tr](price)
+- khoảng [17 tr](price)
+- khoảng [33 tr](price)
+- khoảng [2 tr](price)
+- khoảng [38tr](price)
+- khoảng [38tr](price)
+- khoảng [47tr](price)
+- khoang [37 tr](price)
+- khoang [17 tr](price)
+- khoang [33 tr](price)
+- khoang [2 tr](price)
+- khoang [38tr](price)
+- khoang [38tr](price)
+- khoang [47tr](price)
+- khoảng [28tr](price)
+- khoảng [25tr](price)
+- khoảng [36tr](price)
 - chừng [2.5 triệu](price)
 - tầm [3 triệu 3](price)
 - tầm [7 m 6](price)
@@ -3563,7 +3564,7 @@ data/prepay_percent.txt
 - của [OPPO A11](product_name)
 - [vv X30](product_name) thì sao
 - của [Black Shark 2](product_name) thì sao
-- của [Nokia 110 DS (2019)](product_name)
+- của [Nokia 110 DS 2019](product_name)
 - [Samsung S10](product_name) thì sao
 - cua [ss M31](product_name) thi sao
 - cua [Energizer P20](product_name)
@@ -3590,7 +3591,7 @@ data/prepay_percent.txt
 - cua [OPPO A11](product_name)
 - [vv X30](product_name) thi sao
 - cua [Black Shark 2](product_name) thi sao
-- cua [Nokia 110 DS (2019)](product_name)
+- cua [Nokia 110 DS 2019](product_name)
 - [Samsung S10](product_name) thi sao
 - của [Vivo Nex 3](product_name)
 - [Vivo Nex 3](product_name) ạ
