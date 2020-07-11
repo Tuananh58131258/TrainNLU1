@@ -335,13 +335,13 @@ class ActionProductConfiguration(Action):
             try:
                 ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
-                sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
+                sqlQuery = sqlQuery + " and ram like '%{}%'".format(ram)
             except:
                 pass
             try:
                 rom = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='rom')))
-                sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
+                sqlQuery = sqlQuery + " and rom like '%{}%'".format(rom)
             except:
                 pass
             #endregion
@@ -990,7 +990,7 @@ class ActionHarwareInfo(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = productNameModify(tracker.get_slot('product_name'))
+            productName = tracker.get_slot('product_name')
             pass
         try:
             hardware_name = next(tracker.get_latest_entity_values(
@@ -1015,18 +1015,22 @@ class ActionHarwareInfo(Action):
                 else:
                     col = GetColName(hardware_name.lower())
                     Pname_temp = data[0]['ten']
-                    value = data[0][col]
-                    if value is None:
-                        message_str = HardwareAnswer(value,role,'no')
-                    else:
-                        message_str = HardwareAnswer(value,role,'yes')
+                    temp = data[0][col]
+                    YNQ = 'yes'
+                    value = temp
+                    if temp.lower() == 'không' or temp is None or temp.lower()=='đang cập nhật':
+                        YNQ = 'no'
+                    if role == 'YorN':
+                        value = hardware_name
+
+                    message_str = HardwareAnswer(value,role,YNQ)
             else:
                 Pname_temp = productName
                 message_str = "Hiện tại cửa hàng của chúng tôi không có thông tin về sản phẩm {}. Vui lòng thử tìm kiếm sản phẩm khác.".format(productName)
         else:
             message_str = "Bạn đang hỏi thông tin của sản phẩm nào ạ?"
         dispatcher.utter_message(message_str)
-        print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
+        print("--------------\n{}\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp,hardware_name))
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 class ActionTakePhotoEraseBackground(Action):
@@ -1425,7 +1429,7 @@ class ActionGreet(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        page_acess_token = 'EAAXU2UZANCBcBAKmDcbCa6lvVIWg5R7vTXwbh0zGwNZAEi2AetBCRGDbCZByyELwjlbx4lFSWcJEyDGdFIHlTvJ9tEODG7hujeZAA3BXWobPP6E7RWK3KGdO29ZA1Fku7E0NDIKWZBK5iZAIvsks7JFzI2hyrDZAhfvzr6mqXUsrZCWgs6oRi5K56'
+        page_acess_token = 'EAAXU2UZANCBcBANnYJDZC5vT9kCKoZCYd0NWV9fdF6aK7vHiunQWn2VxDxBE91FVS2QOfF1YDXQcXsCNTGXsVUGqfs5MYFqW0jh8Qp7EmoTaQmJCOyYjDnO1472eJqybz88nJLwlbZAwJo7ZCvkRiRxvfa27LmCdIHspJ1byrAfF7ZCZBxUCoPi'
         current_state = tracker.current_state()
         sender_id = current_state['sender_id']
         r = requests.get('https://graph.facebook.com/{}?fields=first_name,last_name,profile_pic&access_token={}'.format(sender_id,page_acess_token)).json()
@@ -1493,7 +1497,7 @@ class ActionFollow(Action):
             pass
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),productName))
         if productName:
-            sqlQuery = "select * from dienthoai where ten like '%{}%'".format(productName)
+            sqlQuery = "select * from dienthoai where ten like '%{}%' order by ten".format(productName)
             data = getData(sqlQuery)
             print("--------------\n{}\n{}\n-----------".format(self.name(),previus_action))
             if data:
@@ -1549,7 +1553,7 @@ class ActionOptionInBox(Action):
                 elif data[0]['box']:
                     Pname_temp = data[0]['ten']
                     box = data[0]['box']
-                    message_str = "Khi mua sản phẩm {} trong hộp có:\n{}".format(
+                    message_str = "Khi mua sản phẩm {} đi kèm có có:\n{}".format(
                         Pname_temp, box)
                     temp_mess = tracker.get_slot('get_list')
                     message = QuickReply(self.name(),temp_mess)
@@ -1602,3 +1606,17 @@ class ActionCanPlayGame(Action):
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'))) 
         dispatcher.utter_message(message_str) 
         return
+
+class ActionWaterproof(Action):
+    # action chống nước
+    def name(self) -> Text:
+        return "action_waterproof"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: DialogueStateTracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        Pname_temp = ""
+        sqlQuery = ''
+        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
+        dispatcher.utter_message('chống nước')
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]

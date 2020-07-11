@@ -2099,7 +2099,7 @@ data/prepay_percent.txt
 - Minh muon mua tra gop [0 %](interest_rate) co can ho khau khong vay?
 - Cmnd voi bang lai kon co ho khau duọc ko shop
 - Nếu e có cmnd bằng lái xe có thê mua trả góp 0đ hai không
-- Em là sinh viên đủ 20 tuổi có thể áp dụng trả góp cho sinh viên được không ạ? Và cần giấy tờ như thế nào? Thủ tục nhanh ko ạ
+- Em là sinh viên đủ 20 tuổi có thể áp dụng trả góp cho sinh viên được không ạ? Và cần giấy tờ như thế nào? Thủ tục nhanh ko ��
 - E 19t chỉ có chứng minh và hộ khẩu photo đc ko admin
 - Có cmnd và blx có trả góp [0 lãi suất](interest_rate) có duoc ko fpt sop
 - Trả góp [10 %](prepay_percent) cần giấy tờ j z ad Tây ninh có hàng chưa z
@@ -3511,6 +3511,60 @@ data/prepay_percent.txt
 
 ## intent: productName
 
+- của [ss M31](product_name) thì sao
+- của [Energizer P20](product_name)
+- [Itel It2163](product_name) thì sao
+- của [Realme 6](product_name) thì sao
+- của [vv Y50](product_name)
+- [Vivo NEX 3S 5G](product_name) thì sao
+- của [Redmi Note 9s](product_name) thì sao
+- của [OPPO A72](product_name)
+- [Opo A31](product_name) thì sao
+- của [Redmi 10X 5G](product_name) thì sao
+- của [ss Note 10](product_name)
+- [Samsung Galaxy Xcover Pro](product_name) thì sao
+- của [ss S10](product_name) thì sao
+- của [Xiaomi Redmi 10X 5G](product_name)
+- [Samsung M40](product_name) thì sao
+- của [vv Y70s 5G](product_name) thì sao
+- của [Black Shark 3](product_name)
+- [ip 8 Plus](product_name) thì sao
+- của [Samsung Galaxy M40](product_name) thì sao
+- của [Samsung S10e](product_name)
+- [Realme 6 Pro](product_name) thì sao
+- của [Samsung A70](product_name) thì sao
+- của [OPPO A11](product_name)
+- [vv X30](product_name) thì sao
+- của [Black Shark 2](product_name) thì sao
+- của [Nokia 110 DS (2019)](product_name)
+- [Samsung S10](product_name) thì sao
+- cua [ss M31](product_name) thi sao
+- cua [Energizer P20](product_name)
+- [Itel It2163](product_name) thi sao
+- cua [Realme 6](product_name) thi sao
+- cua [vv Y50](product_name)
+- [Vivo NEX 3S 5G](product_name) thi sao
+- cua [Redmi Note 9s](product_name) thi sao
+- cua [OPPO A72](product_name)
+- [Opo A31](product_name) thi sao
+- cua [Redmi 10X 5G](product_name) thi sao
+- cua [ss Note 10](product_name)
+- [Samsung Galaxy Xcover Pro](product_name) thi sao
+- cua [ss S10](product_name) thi sao
+- cua [Xiaomi Redmi 10X 5G](product_name)
+- [Samsung M40](product_name) thi sao
+- cua [vv Y70s 5G](product_name) thi sao
+- cua [Black Shark 3](product_name)
+- [ip 8 Plus](product_name) thi sao
+- cua [Samsung Galaxy M40](product_name) thi sao
+- cua [Samsung S10e](product_name)
+- [Realme 6 Pro](product_name) thi sao
+- cua [Samsung A70](product_name) thi sao
+- cua [OPPO A11](product_name)
+- [vv X30](product_name) thi sao
+- cua [Black Shark 2](product_name) thi sao
+- cua [Nokia 110 DS (2019)](product_name)
+- [Samsung S10](product_name) thi sao
 - của [Vivo Nex 3](product_name)
 - [Vivo Nex 3](product_name) ạ
 - [Vivo Nex 3](product_name)
@@ -3527,6 +3581,70 @@ data/prepay_percent.txt
 - [Nokia 8.3 5G](product_name) ạ
 - [Vivo Y11](product_name)
 - [Vivo Y70s 5G](product_name)
+
+## intent: waterproof
+- co chong nuoc khong
+- roi xuong nuoc co sao khong
+- bi do nuoc len co sao khong
+- mang di tam bien dc khong
+- bi do xang len co sao khong
+- lo roi xuong nuoc co van de gi khong
+- khong may bi roi vao nuoc thi co hong khong
+- may co chong nuoc khong
+- may chong nuoc duoc khong
+- dien thoai [vv S6](product_name) rot nuoc co bi sao khong
+- may [OPPO A12e](product_name) roi xuong nuoc co sao khong
+- [ss M10s](product_name) co chong nuoc khong
+- dien thoai [Xiaomi Mi 10 Lite 5G](product_name) rot nuoc co bi sao khong
+- may [Opo A31](product_name) roi xuong nuoc co sao khong
+- [vv NEX 3S 5G](product_name) co chong nuoc khong
+- dien thoai [Itel It2123V](product_name) rot nuoc co bi sao khong
+- may [Vivo X50](product_name) roi xuong nuoc co sao khong
+- [OPPO A92s](product_name) co chong nuoc khong
+- dien thoai [Huawei P30 Pro New Edition](product_name) rot nuoc co bi sao khong
+- may [Redmi 8A](product_name) roi xuong nuoc co sao khong
+- [Opo Reno3 Pro](product_name) co chong nuoc khong
+- dien thoai [Huawei P30 Lite New Edition](product_name) rot nuoc co bi sao khong
+- may [Opo A9 2020](product_name) roi xuong nuoc co sao khong
+- [Samsung S10](product_name) co chong nuoc khong
+- dien thoai [Vivo X30](product_name) rot nuoc co bi sao khong
+- may [Realme 5 Pro](product_name) roi xuong nuoc co sao khong
+- có chống nước không
+- rơi xuống nước có sao không
+- bị đổ nước lên có sao không
+- mang đi tắm biển đc không
+- bị đổ xăng lên có sao không
+- lỡ rơi xuống nước có vấn đề gì không
+- không may bị rơi vào nước thì có hỏng không
+- máy có chống nước không
+- máy chống nước được không
+- điện thoại [vv S6](product_name) rớt nước có bị sao không
+- máy [OPPO A12e](product_name) rơi xuống nước có sao không
+- [ss M10s](product_name) có chống nước không
+- điện thoại [Xiaomi Mi 10 Lite 5G](product_name) rớt nước có bị sao không
+- máy [Opo A31](product_name) rơi xuống nước có sao không
+- [vv NEX 3S 5G](product_name) có chống nước không
+- điện thoại [Itel It2123V](product_name) rớt nước có bị sao không
+- máy [Vivo X50](product_name) rơi xuống nước có sao không
+- [OPPO A92s](product_name) có chống nước không
+- điện thoại [Huawei P30 Pro New Edition](product_name) rớt nước có bị sao không
+- máy [Redmi 8A](product_name) rơi xuống nước có sao không
+- [Opo Reno3 Pro](product_name) có chống nước không
+- điện thoại [Huawei P30 Lite New Edition](product_name) rớt nước có bị sao không
+- máy [Opo A9 2020](product_name) rơi xuống nước có sao không
+- [Samsung S10](product_name) có chống nước không
+- điện thoại [Vivo X30](product_name) rớt nước có bị sao không
+- máy [Realme 5 Pro](product_name) rơi xuống nước có sao không
+- [Nokia 2720 Flip 4G](product_name) có chống nước không
+- điện thoại [Masstel Play Max](product_name) rớt nước có bị sao không
+- máy [Samsung Galaxy A71 5G](product_name) rơi xuống nước có sao không
+- [Vivo X50 Lite](product_name) có chống nước không
+- điện thoại [ip 7 Plus](product_name) rớt nước có bị sao không
+- máy [Nokia 6.2](product_name) rơi xuống nước có sao không
+- [Huawei Nova 5i Pro](product_name) có chống nước không
+- điện thoại [OPPO Find X2 Neo](product_name) rớt nước có bị sao không
+- máy [Vsmart Star](product_name) rơi xuống nước có sao không
+- [Vivo NEX 3S 5G](product_name) có chống nước không
 
 ## synonym:iphone
 - Aple

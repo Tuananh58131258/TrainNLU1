@@ -24,6 +24,7 @@ def productNameModify(productName: str):
 
 def romRamModify(data: str):
     # data = re.sub(r"[^\w\s]","",data)
+    data = data.lower()
     if data.find("gb") > -1 and data.find(" ") == -1:
         temp = data.replace("gb", " gb")
         return temp

@@ -330,6 +330,7 @@
 ## follow action
 * productName
   - action_follow
+  - slot{"product_name": "iPhone Xs Max 256GB"}
 
 ## age to buy on install ment
 * age_installment
@@ -342,3 +343,9 @@
 ## out of scope
 * out_of_scope
   - utter_out_of_scope
+
+## storie chống nước
+* waterproof{"product_name": "iphone xs max"}
+  - action_waterproof
+  - slot{"latest_action":"action_waterproof"}
+  - slot{"product_name": "iphone xs max"}

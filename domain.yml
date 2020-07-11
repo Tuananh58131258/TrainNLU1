@@ -121,7 +121,11 @@ intents:
   - contact
   # họ tên + sdt
   - productName
+  # tên sản phẩm cho follow intent
   - option_in_box
+  # phụ kiện đi kèm máy
+  - waterproof
+  # điện thoại có chống nước không
 
 responses:
   utter_goodbye:
@@ -296,6 +300,9 @@ actions:
   - action_can_play_game
   # action trả lời sản phẩm có chơi game được không
   
+  - action_waterproof
+  # action trả lời chống nước
+
   - action_follow
 
 session_config:
