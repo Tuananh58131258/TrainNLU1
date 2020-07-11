@@ -91,9 +91,15 @@
   - slot{"get_list":"Danh sách điện thoại samsung"}
 
 ## order
-* order
+* order {"product_name":"oppo reno 3","rom":"64GB"}
   - utter_order
 
+## order
+* order {"product_name":"iphone xs max","rom":"64GB"}
+  - utter_order
+## order
+* order {"product_name":"iphone 11","rom":"128GB"}
+  - utter_order
 ## storie check_price
 * check_price{"product_name":"oppo reno 3"}
   - action_check_price
