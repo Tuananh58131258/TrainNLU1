@@ -9,6 +9,7 @@
 #region import
 from typing import Any, Text, Dict, List
 import time
+import re
 import requests
 from rasa_sdk import Action, Tracker
 from rasa_sdk.events import SlotSet, SessionStarted, ActionExecuted, EventType
@@ -147,7 +148,7 @@ class ActionProductPrice(Action):
                 list_item = []
                 for item in data:
                     list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
-                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'Đặt mua {}'.format(item['ten']))]
+                        item['ten'])), ButtonPostbackTemplate("Đặt mua", 'đặt mua {}'.format(item['ten']))]
                     gia = ""
                     if item['gia']:
                         gia = "Giá: {:,} vnđ".format(item['gia'])
@@ -1617,6 +1618,28 @@ class ActionWaterproof(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         Pname_temp = ""
         sqlQuery = ''
+        productName =''
+        try:
+            productName = productNameModify(next(tracker.get_latest_entity_values(entity_type='product_name')))
+        except:
+            productName = tracker.get_slot('product_name')
+        if productName:
+            sqlQuery = 'select * from dienthoai where ten like "%{}%" order by ten'.format(productName)
+            data = getData(sqlQuery)
+            if data:
+                Pname_temp = data[0]['ten']
+                if data[0]['ghi_chu'].find('tin đồn') >-1:
+                    message_str = "Sản phẩm {} mới chỉ là tin đồn, mình sẽ cập nhật khi có thông tin mới.".format(Pname_temp)
+                else:
+                    if re.search(r"có|chuẩn",data[0]['chong_nuoc']) or re.search(r"chống nước",data[0]['chuc_nang_khac']):
+                        message_str = "Sản phẩm {} có khả năng chống nước, tuy nhiên bạn không nên để sản phẩm ngâm trong nước quá lâu. Nên lau sạch và làm khô sản phẩm nếu có dính nước.".format(Pname_temp)
+                    else:
+                        message_str = "Sản phẩm {} không có khả năng chống nước. Bạn không nên để sản phẩm rơi xuống nước hay đổ nước lên sản phẩm. Nên lau sạch và làm khô sản phẩm nếu có dính nước.".format(Pname_temp)
+            else:
+                message_str = 'Hiện tại mình không có thông tin sản phẩm bạn đang tìm. Vui lòng thử tìm kiếm sản phẩm khác. Xin cảm ơn!'
+                Pname_temp = productName
+        else:
+            message_str = "Bạn đang hỏi thông tin của sản phẩm nào ạ?"
         print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
-        dispatcher.utter_message('chống nước')
+        dispatcher.utter_message(message_str)
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
