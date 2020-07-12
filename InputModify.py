@@ -37,27 +37,32 @@ def romRamModify(data: str):
 def priceModify(price: str):
     # price = re.sub(r"(?<=[0-9])[\.|\,](?=[0-9])|[^\w\s]","",price)
     #
-    price = re.sub(r"\s+","",price)
-    if price.isnumeric():
-        data = int(price)
+    temp = price.replace('a','v')
+    temp = re.sub(r"(?<=[0-9])\.(?=[0-9])|(?<=[0-9])\,(?=[0-9])",'a',temp)
+    temp = re.sub(r"[^\w\s]","",temp)
+    temp = temp.replace('a','.')
+    if not re.search('[a-zA-Z]',temp):
+        data = float(temp)
+        if data < 100:
+            return int(data*1000000)
         if data/1000<100 and data/1000>0:
-            return data*1000
+            return int(data*1000)
         else:
-            return data
+            return int(data)
     else:
-        data = price.strip(" ").replace('mốt','1').replace(".",",").replace('chục','mươi').replace('chuc','muoi')
+        data = price.replace(" ","").replace('mốt','1').replace(",",".").replace('chục','mươi').replace('chuc','muoi')
     so5 = ['lăm',"rưởi",'lam',"ruoi"]
     so4 = ['tu','tư','tứ']
-    data = re.sub(r'củ|trieu|cu','triệu',data)
+    data = re.sub(r'củ|trieu|cu|tr','triệu',data)
     for item in so5:
         data = data.replace(item,'5')
     for item in so4:
         data = data.replace(item,'4')
-    word = ['một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
+    word1 = ['một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
     word2 = ['mot', 'hai', 'ba', 'bon', 'nam', 'sau', 'bay', 'tam', 'chin']
     result = 0
-    for i in range(0, 9):
-        data = data.replace(word2[i], str(i+1)).replace(word[i], str(i+1))
+    for i in range(0,9):
+        data = data.replace(word2[i], str(i+1)).replace(word1[i],str(i+1))
     if re.match("[0-9]mươi[0-9].", data) or re.match("[0-9]muoi[0-9].", data):
         data = data.replace('mươi','').replace('muoi','')
     if re.match("[0-9]mươi[^0-9]",data) or re.match("[0-9]muoi[^0-9].", data):
@@ -65,23 +70,23 @@ def priceModify(price: str):
     if re.match(r"\bmươi.",data) or re.match(r"\bmuoi.", data):
         data = data.replace('mươi','10').replace('muoi','10')
     if re.match("[0-9]+triệu[0-9]+", data) or re.match("[0-9]+m[0-9]+", data) or re.match("[0-9]+tr[0-9]+", data):
-        temp = re.sub(r"triệu|tr|m",".",data)
-        num = temp.split(".")
+        temp = re.sub(r"triệu|tr|m","/",data)
+        num = temp.split("/")
         if len(num[1]) == 0:
-            result = int(num[0].replace(',','.'))*1000000
+            result = int(num[0])*1000000
         if len(num[1]) == 1:
-            result = int(num[0].replace(',','.'))*1000000+int(num[1])*10000
+            result = int(num[0])*1000000+int(num[1])*10000
         if len(num[1]) == 2:
-            result = int(num[0].replace(',','.'))*1000000+int(num[1])*1000
-    elif re.match("[0-9]+,[0-9]+triệu", data) or re.match("[0-9]+,[0-9]+m", data) or re.match("[0-9]+,[0-9]+tr", data):
-        temp = re.sub(r"triệu|tr|m",".",data)
-        num = temp.split(".")
+            result = int(num[0])*1000000+int(num[1])*1000
+    elif re.match(r"[0-9]+\.[0-9]+triệu", data) or re.match(r"[0-9]+\.[0-9]+m", data) or re.match(r"[0-9]+\.[0-9]+tr", data):
+        temp = re.sub(r"triệu|tr|m","/",data)
+        num = temp.split("/")
         if len(num[1]) == 0:
-            result = float(num[0].replace(',','.'))*1000000
+            result = float(num[0])*1000000
         if len(num[1]) == 1:
-            result = float(num[0].replace(',','.'))*1000000+int(num[1])*10000
+            result = float(num[0])*1000000+int(num[1])*10000
         if len(num[1]) == 2:
-            result = float(num[0].replace(',','.'))*1000000+int(num[1])*1000
+            result = float(num[0])*1000000+int(num[1])*1000
     elif re.match("[0-9]+triệu", data) or re.match("[0-9]+m", data) or re.match("[0-9]+tr", data):
         temp = re.sub(r"triệu|tr|m","",data)
         result = int(temp)*1000000
@@ -105,5 +110,5 @@ def GetColName(temp:str):
     result = data[temp]
     return result
 
-print(priceModify('14,5 củ'))
+# print("{:,}".format(priceModify('22 - 25tr')))
 # print(re.sub(r"\s+","","4,5     cu"))

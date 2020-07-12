@@ -1150,135 +1150,72 @@ data/prepay_percent.txt
 
 <!-- tìm sản phẩm trong một khoảng giá -->
 
-- khoang [6 m 7]{"entity":"price","role":"from_price"} [1,8 trieu]{"entity":"price","role":"to_price"}
-- khoang [2.6 trieu]{"entity":"price","role":"from_price"} [ba trieu tam]{"entity":"price","role":"to_price"}
-- khoang [9 m 2]{"entity":"price","role":"from_price"} [bay trieu sau]{"entity":"price","role":"to_price"}
-- khoang [bay trieu sau]{"entity":"price","role":"from_price"} [9,7 trieu]{"entity":"price","role":"to_price"}
-- khoang [5,1 trieu]{"entity":"price","role":"from_price"} den [7.4 trieu]{"entity":"price","role":"to_price"}
-- khoang [5,6 trieu]{"entity":"price","role":"from_price"} den [6.2 trieu]{"entity":"price","role":"to_price"}
-- khoang [nam trieu sau]{"entity":"price","role":"from_price"} den [7 m 2]{"entity":"price","role":"to_price"}
-- khoang [6 trieu]{"entity":"price","role":"from_price"} den [ham tam trieu]{"entity":"price","role":"to_price"}
-- chung [muoi lam trieu]{"entity":"price","role":"from_price"} den [tam trieu mot]{"entity":"price","role":"to_price"}
-- chung [2 m 7]{"entity":"price","role":"from_price"} den [tam trieu ruoi]{"entity":"price","role":"to_price"}
-- chung [2.9 trieu]{"entity":"price","role":"from_price"} den [ba trieu]{"entity":"price","role":"to_price"}
-- chung [mot trieu bon]{"entity":"price","role":"from_price"} den [bay trieu sau]{"entity":"price","role":"to_price"}
-- tam [7 m 7]{"entity":"price","role":"from_price"} [9.2 trieu]{"entity":"price","role":"to_price"} gi do
-- tam [mot trieu sau]{"entity":"price","role":"from_price"} [5.4 trieu]{"entity":"price","role":"to_price"} gi do
-- tam [6.6 trieu]{"entity":"price","role":"from_price"} [mot trieu]{"entity":"price","role":"to_price"} gi do
-- tam [mot trieu ruoi]{"entity":"price","role":"from_price"} [ba trieu mot]{"entity":"price","role":"to_price"} gì đó
-- có [Realme](product_company) trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"}
-- có [Vsmart](product_company) trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có [Itel](product_company) trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có điện thoại [ip](product_company) trong khoảng [hai triệu tám]{"entity":"price","role":"from_price"} đến [6 m 1]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- tôi muốn một chiếc [Energizer](product_company) trong khoảng [sáu triệu rưởi]{"entity":"price","role":"from_price"} đến [sáu triệu hai]{"entity":"price","role":"to_price"} không ạ
-- có điện thoại [ip](product_company) trong khoảng [tám triệu]{"entity":"price","role":"from_price"} đến [7 m 9]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có [Itel](product_company) trong khoảng [ba triệu rưởi]{"entity":"price","role":"from_price"} đến [4 m 3]{"entity":"price","role":"to_price"}
-- có [ss](product_company) trong khoảng [1 m 4]{"entity":"price","role":"from_price"} đến [6 m 2]{"entity":"price","role":"to_price"} không ạ
-- có [Vsmart](product_company) trong khoảng [năm triệu ba]{"entity":"price","role":"from_price"} đến [bảy triệu bảy]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có [Vivo](product_company) trong khoảng [8 m 9]{"entity":"price","role":"from_price"} đến [hai triệu tám]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có [Itel](product_company) trong khoảng [6 m 9]{"entity":"price","role":"from_price"} đến [8 m 9]{"entity":"price","role":"to_price"}
-- có [ss](product_company) trong khoảng [4 triệu]{"entity":"price","role":"from_price"} đến [sáu triệu rưởi]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có [Vivo](product_company) trong khoảng [chín triệu ba]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"}
-- có điện thoại [Xiaomi](product_company) trong khoảng [4 m 5]{"entity":"price","role":"from_price"} đến [4,6 triệu]{"entity":"price","role":"to_price"} không ạ
-- tôi muốn một chiếc [ip](product_company) trong khoảng [9 m 5]{"entity":"price","role":"from_price"} đến [5 m 1]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có điện thoại [Realme](product_company) trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [8 triệu 8]{"entity":"price","role":"to_price"} không ạ
-- có điện thoại [Vsmart](product_company) trong khoảng [2,2 triệu]{"entity":"price","role":"from_price"} đến [3 m 5]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có điện thoại [Iphone](product_company) trong tầm giá từ [1 m 8]{"entity":"price","role":"from_price"} đến [chín triệu năm]{"entity":"price","role":"to_price"} không ạ
-- có [Xiaomi](product_company) trong tầm giá từ [2,1 triệu]{"entity":"price","role":"from_price"} đến [9,4 triệu]{"entity":"price","role":"to_price"}
-- có [Iphone](product_company) trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [1,4 triệu]{"entity":"price","role":"to_price"} không ạ
-- có điện thoại [Sanmsung](product_company) trong khoảng [5 m 6]{"entity":"price","role":"from_price"} đến [năm triệu mốt]{"entity":"price","role":"to_price"}
-- có điện thoại nào trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [2,3 triệu]{"entity":"price","role":"to_price"}
-- có điện thoại nào trong khoảng [3 m 1]{"entity":"price","role":"from_price"} đến [5,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
-- tôi muốn một chiếc điện thoại trong khoảng [1 m 8]{"entity":"price","role":"from_price"} đến [mười tám triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
-- tôi muốn một chiếc điện thoại trong khoảng [hai triệu tám]{"entity":"price","role":"from_price"} đến [6 m 1]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- tôi muốn một chiếc điện thoại trong khoảng [sáu triệu rưởi]{"entity":"price","role":"from_price"} đến [sáu triệu hai]{"entity":"price","role":"to_price"} không ạ
-- tôi muốn một chiếc điện thoại trong khoảng [tám triệu]{"entity":"price","role":"from_price"} đến [7 m 9]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [ba triệu rưởi]{"entity":"price","role":"from_price"} đến [4 m 3]{"entity":"price","role":"to_price"}
-- tôi muốn một chiếc điện thoại trong khoảng [1 m 4]{"entity":"price","role":"from_price"} đến [6 m 2]{"entity":"price","role":"to_price"} không ạ
-- có điện thoại nào trong khoảng [năm triệu ba]{"entity":"price","role":"from_price"} đến [bảy triệu bảy]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [8 m 9]{"entity":"price","role":"from_price"} đến [hai triệu tám]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [6 m 9]{"entity":"price","role":"from_price"} đến [8 m 9]{"entity":"price","role":"to_price"}
-- có điện thoại nào trong khoảng [4 triệu]{"entity":"price","role":"from_price"} đến [sáu triệu rưởi]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [chín triệu ba]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"}
-- tôi muốn một chiếc điện thoại trong khoảng [4 m 5]{"entity":"price","role":"from_price"} đến [4,6 triệu]{"entity":"price","role":"to_price"} không ạ
-- có điện thoại nào trong khoảng [9 m 5]{"entity":"price","role":"from_price"} đến [5 m 1]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có điện thoại nào trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [8 triệu 8]{"entity":"price","role":"to_price"} không ạ
-- có điện thoại nào trong khoảng [2,2 triệu]{"entity":"price","role":"from_price"} đến [3 m 5]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có điện thoại nào trong tầm giá từ [1 m 8]{"entity":"price","role":"from_price"} đến [chín triệu năm]{"entity":"price","role":"to_price"} không ạ
-- có điện thoại nào trong tầm giá từ [2,1 triệu]{"entity":"price","role":"from_price"} đến [9,4 triệu]{"entity":"price","role":"to_price"}
-- co dien thoai nao trong khoang [ba trieu ruoi]{"entity":"price","role":"from_price"} den [4 m 3]{"entity":"price","role":"to_price"}
-- toi muon mot chiec dien thoai trong khoang [1 m 4]{"entity":"price","role":"from_price"} den [6 m 2]{"entity":"price","role":"to_price"} khong a
-- co dien thoai nao trong khoang [nam trieu ba]{"entity":"price","role":"from_price"} den [bay trieu bay]{"entity":"price","role":"to_price"} khong gio thieu cho em voi
-- co dien thoai nao trong khoang [8 m 9]{"entity":"price","role":"from_price"} den [hai trieu tam]{"entity":"price","role":"to_price"} khong gio thieu cho em voi
-- co dien thoai nao trong khoang [6 m 9]{"entity":"price","role":"from_price"} den [8 m 9]{"entity":"price","role":"to_price"}
-- co dien thoai nao trong khoang [4 trieu]{"entity":"price","role":"from_price"} den [sau trieu ruoi]{"entity":"price","role":"to_price"} khong gio thieu cho em voi
-- co dien thoai nao trong khoang [chin trieu ba]{"entity":"price","role":"from_price"} den [6 m 5]{"entity":"price","role":"to_price"}
-- toi muon mot chiec dien thoai trong khoang [4 m 5]{"entity":"price","role":"from_price"} den [4,6 trieu]{"entity":"price","role":"to_price"} khong a
-- co dien thoai nao trong khoang [9 m 5]{"entity":"price","role":"from_price"} den [5 m 1]{"entity":"price","role":"to_price"} tu van giup em
-- co dien thoai nao trong khoang [7 m 9]{"entity":"price","role":"from_price"} den [8 trieu 8]{"entity":"price","role":"to_price"} khong a
-- co dien thoai nao trong khoang [2,2 trieu]{"entity":"price","role":"from_price"} den [3 m 5]{"entity":"price","role":"to_price"} tu van giup em
-- co dien thoai nao trong tam gia tu [1 m 8]{"entity":"price","role":"from_price"} den [chin trieu nam]{"entity":"price","role":"to_price"} khong a
-- co dien thoai nao trong tam gia tu [2,1 trieu]{"entity":"price","role":"from_price"} den [9,4 trieu]{"entity":"price","role":"to_price"}
-- tôi muốn một chiếc điện thoại trong khoảng [7 m 9]{"entity":"price","role":"from_price"} đến [1,4 triệu]{"entity":"price","role":"to_price"} không ạ
-- tôi muốn một chiếc điện thoại trong khoảng [5 m 6]{"entity":"price","role":"from_price"} đến [năm triệu mốt]{"entity":"price","role":"to_price"}
-- có sản phẩm nào trong khoảng [năm triệu hai]{"entity":"price","role":"from_price"} đến [tám triệu rưởi]{"entity":"price","role":"to_price"}
-- có điện thoại nào trong khoảng [bốn triệu tám]{"entity":"price","role":"from_price"} đến [tám triệu mốt]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có sản phẩm nào trong khoảng [mười sáu triệu]{"entity":"price","role":"from_price"} đến [1 m 8]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có sản phẩm nào trong khoảng [3 triệu rưởi]{"entity":"price","role":"from_price"} đến [9 m 6]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [5 m 2]{"entity":"price","role":"from_price"} đến [2,2 triệu]{"entity":"price","role":"to_price"} không ạ
-- có điện thoại nào trong khoảng [tám triệu]{"entity":"price","role":"from_price"} đến [6,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có sản phẩm nào trong khoảng [6,2 triệu]{"entity":"price","role":"from_price"} đến [hai mươi hai triệu]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong tầm giá từ [2,8 triệu]{"entity":"price","role":"from_price"} đến [năm triệu chín]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có điện thoại nào trong khoảng [hai triệu chín]{"entity":"price","role":"from_price"} đến [2 m 1]{"entity":"price","role":"to_price"} tư vấn giúp em
-- tôi muốn một chiếc điện thoại trong khoảng [4,3 triệu]{"entity":"price","role":"from_price"} đến [1 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
-- tôi muốn một chiếc điện thoại trong khoảng [6,2 triệu]{"entity":"price","role":"from_price"} đến [9,7 triệu]{"entity":"price","role":"to_price"}
-- có điện thoại nào trong tầm giá từ [3,8 triệu]{"entity":"price","role":"from_price"} đến [sáu triệu hai]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [2 m 8]{"entity":"price","role":"from_price"} đến [2,9 triệu]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong tầm giá từ [ba triệu bảy]{"entity":"price","role":"from_price"} đến [hai mươi tám triệu]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- tôi muốn một chiếc điện thoại trong khoảng [2 triệu]{"entity":"price","role":"from_price"} đến [hai triệu tám]{"entity":"price","role":"to_price"} không ạ
-- tôi muốn một chiếc điện thoại trong khoảng [sáu triệu rưởi]{"entity":"price","role":"from_price"} đến [ba triệu]{"entity":"price","role":"to_price"}
-- có điện thoại nào trong khoảng [bốn triệu sáu]{"entity":"price","role":"from_price"} đến [1,2 triệu]{"entity":"price","role":"to_price"} không ạ
-- có sản phẩm nào trong khoảng [3 m 8]{"entity":"price","role":"from_price"} đến [7,4 triệu]{"entity":"price","role":"to_price"}
-- có điện thoại nào trong khoảng [5 m 9]{"entity":"price","role":"from_price"} đến [1,9 triệu]{"entity":"price","role":"to_price"}
-- tôi muốn một chiếc điện thoại trong khoảng [8,5 triệu]{"entity":"price","role":"from_price"} đến [8 triệu rưởi]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có điện thoại nào trong khoảng [9 m 5]{"entity":"price","role":"from_price"} đến [4,4 triệu]{"entity":"price","role":"to_price"} tư vấn giúp em
-- có sản phẩm nào trong khoảng [7 m 8]{"entity":"price","role":"from_price"} đến [sáu triệu năm]{"entity":"price","role":"to_price"}
-- tôi muốn một chiếc điện thoại trong khoảng [5,3 triệu]{"entity":"price","role":"from_price"} đến [một triệu mốt]{"entity":"price","role":"to_price"}
-- tôi muốn một chiếc điện thoại trong khoảng [5 triệu rưởi]{"entity":"price","role":"from_price"} đến [3,3 triệu]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có điện thoại nào trong khoảng [sáu triệu]{"entity":"price","role":"from_price"} đến [3 m 8]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có sản phẩm nào trong khoảng [7 m 5]{"entity":"price","role":"from_price"} đến [9 m 4]{"entity":"price","role":"to_price"} không giờ thiệu cho em với
-- có sản phẩm nào trong khoảng [5,7 triệu]{"entity":"price","role":"from_price"} đến [6 m 5]{"entity":"price","role":"to_price"} tư vấn giúp em
-- tôi muốn một chiếc điện thoại trong khoảng [bảy triệu tám]{"entity":"price","role":"from_price"} đến [hâm lăm triệu]{"entity":"price","role":"to_price"}
-- khoảng [bảy triệu tám]{"entity":"price","role":"from_price"} hay [hâm lăm triệu]{"entity":"price","role":"to_price"}
-- [3]{"entity":"price","role":"from_price"} [4 trieu]{"entity":"price","role":"to_price"} gi do
-- [8 m 6]{"entity": "price","role": "from_price"} [1,7 trieu]{"entity": "price","role": "to_price"} gi thoi
-- [2.7 trieu]{"entity": "price","role": "from_price"} [9.6 trieu]{"entity": "price","role": "to_price"} gi do
-- [4,6 trieu]{"entity": "price","role": "from_price"} [9 m 2]{"entity": "price","role": "to_price"} gi do
-- [nam trieu chin]{"entity": "price","role": "from_price"} [muoi ba trieu]{"entity": "price","role": "to_price"} thoi
-- [4 m 2]{"entity": "price","role": "from_price"} [muoi chin trieu]{"entity": "price","role": "to_price"} gi thoi
-- [hai muoi ba trieu]{"entity": "price","role": "from_price"} [2.3 trieu]{"entity": "price","role": "to_price"} gi thoi
-- [sau trieu nam]{"entity": "price","role": "from_price"} [2,5 trieu]{"entity": "price","role": "to_price"} thoi
-- [5 trieu]{"entity": "price","role": "from_price"} [2,8 trieu]{"entity": "price","role": "to_price"} gi do
-- [9 m 4]{"entity": "price","role": "from_price"} [9,8 trieu]{"entity": "price","role": "to_price"} gi do
-- [5 m 5]{"entity": "price","role": "from_price"} [tam trieu hai]{"entity": "price","role": "to_price"} thoi
-- [9 m 6]{"entity": "price","role": "from_price"} [6,7 trieu]{"entity": "price","role": "to_price"} thoi
-- [bay trieu ruoi]{"entity": "price","role": "from_price"} [4 m 7]{"entity": "price","role": "to_price"} gi thoi
-- [sau trieu chin]{"entity": "price","role": "from_price"} [sau trieu nam]{"entity": "price","role": "to_price"} gi thoi
-- [3 trieu 3]{"entity": "price","role": "from_price"} [4,9 trieu]{"entity": "price","role": "to_price"} gi thoi
-- [1 m 3]{"entity": "price","role": "from_price"} hay [9 m 3]{"entity": "price","role": "to_price"} gi thoi
-- [6,3 trieu]{"entity": "price","role": "from_price"} hay [5,8 trieu]{"entity": "price","role": "to_price"} gi do
-- [3,8 trieu]{"entity": "price","role": "from_price"} hay [sau trieu bay]{"entity": "price","role": "to_price"} thoi
-- [3,3 trieu]{"entity": "price","role": "from_price"} hay [4.1 trieu]{"entity": "price","role": "to_price"} gi do
-- [sau trieu]{"entity": "price","role": "from_price"} hay [sau trieu bay]{"entity": "price","role": "to_price"} gi thoi
-- [5,6 trieu]{"entity": "price","role": "from_price"} hay [hai trieu tam]{"entity": "price","role": "to_price"} thoi
-- [2.8 triệu]{"entity": "price","role": "from_price"} hay [8 m 3]{"entity": "price","role": "to_price"} gì thôi
-- [1 m 4]{"entity": "price","role": "from_price"} hay [3 m 4]{"entity": "price","role": "to_price"} gì đó
-- [ba triệu sáu]{"entity": "price","role": "from_price"} hay [7.8 triệu]{"entity": "price","role": "to_price"} gì đó
-- [8.2 triệu]{"entity": "price","role": "from_price"} hay [8,2 triệu]{"entity": "price","role": "to_price"} thôi
-- [7,7 triệu]{"entity": "price","role": "from_price"} hay [8.5 triệu]{"entity": "price","role": "to_price"} gì thôi
-- [3.9 triệu]{"entity": "price","role": "from_price"} hay [chín triệu bảy]{"entity": "price","role": "to_price"} gì đó
-- [3 m 1]{"entity": "price","role": "from_price"} hay [8.6 triệu]{"entity": "price","role": "to_price"} thôi
-- [5 m 5]{"entity": "price","role": "from_price"} hay [mười bảy triệu]{"entity": "price","role": "to_price"} thôi
+- khoảng [5 trieu 9]{"entity":"price","role":"from_price"} [26tr]{"entity":"price","role":"to_price"}
+- khoảng [11tr]{"entity":"price","role":"from_price"} [7.3 trieu]{"entity":"price","role":"to_price"}
+- khoảng [hai chục triệu]{"entity":"price","role":"from_price"} [7triệu4]{"entity":"price","role":"to_price"}
+- khoảng [26củ]{"entity":"price","role":"from_price"} [13490000]{"entity":"price","role":"to_price"}
+- khoảng [21 củ]{"entity":"price","role":"from_price"} [6 trieu]{"entity":"price","role":"to_price"}
+- khoảng [16900000]{"entity":"price","role":"from_price"} [18900000]{"entity":"price","role":"to_price"}
+- khoảng [8 m 9]{"entity":"price","role":"from_price"} [5m9]{"entity":"price","role":"to_price"}
+- khoảng [1triệu3]{"entity":"price","role":"from_price"} [1 tr 3]{"entity":"price","role":"to_price"}
+- khoảng [16m]{"entity":"price","role":"from_price"} [14590000]{"entity":"price","role":"to_price"}
+- khoảng [16790000]{"entity":"price","role":"from_price"} đến [16 tr]{"entity":"price","role":"to_price"}
+- khoảng [mười sáu triệu rưởi]{"entity":"price","role":"from_price"} đến [6 củ]{"entity":"price","role":"to_price"}
+- khoảng [21tr]{"entity":"price","role":"from_price"} đến [1 triệu]{"entity":"price","role":"to_price"}
+- khoảng [4490]{"entity":"price","role":"from_price"} đến [1,9 tr]{"entity":"price","role":"to_price"}
+- khoảng [6 triệu]{"entity":"price","role":"from_price"} đến [5 m 9]{"entity":"price","role":"to_price"}
+- khoảng [một trieu sáu]{"entity":"price","role":"from_price"} đến [1,9 củ]{"entity":"price","role":"to_price"}
+- khoảng [1.4củ]{"entity":"price","role":"from_price"} đến [8 trieu 9]{"entity":"price","role":"to_price"}
+- khoảng [12900000]{"entity":"price","role":"from_price"} đến [5tr9]{"entity":"price","role":"to_price"}
+- khoảng [11củ]{"entity":"price","role":"from_price"} đến [ba trieu một]{"entity":"price","role":"to_price"}
+- từ [1.4tr]{"entity":"price","role":"from_price"} đến [1m]{"entity":"price","role":"to_price"}
+- từ [1.4củ]{"entity":"price","role":"from_price"} đến [hâm sáu triệu]{"entity":"price","role":"to_price"}
+- từ [8triệu9]{"entity":"price","role":"from_price"} đến [8,8 củ]{"entity":"price","role":"to_price"}
+- từ [16 củ]{"entity":"price","role":"from_price"} đến [7 trieu 4]{"entity":"price","role":"to_price"}
+- từ [7790]{"entity":"price","role":"from_price"} đến [một trieu bốn]{"entity":"price","role":"to_price"}
+- từ [5 m 9]{"entity":"price","role":"from_price"} đến [5triệu9]{"entity":"price","role":"to_price"}
+- từ [1,8 m]{"entity":"price","role":"from_price"} đến [26 tr]{"entity":"price","role":"to_price"}
+- từ [8,4 tr]{"entity":"price","role":"from_price"} đến [ham sau trieu]{"entity":"price","role":"to_price"}
+- từ [7,3 m]{"entity":"price","role":"from_price"} đến [8 m 9]{"entity":"price","role":"to_price"}
+- điện thoại [huawei](product_company) khoảng [5tr9]{"entity":"price","role":"from_price"} đến [8tr9]{"entity":"price","role":"to_price"}
+- điện thoại [xiaomi](product_company) khoảng [7.3m]{"entity":"price","role":"from_price"} đến [1m3]{"entity":"price","role":"to_price"}
+- điện thoại [xamsum](product_company) khoảng [1 m 3]{"entity":"price","role":"from_price"} đến [1 trieu]{"entity":"price","role":"to_price"}
+- điện thoại [samsung](product_company) khoảng [16900000]{"entity":"price","role":"from_price"} đến [6 triệu]{"entity":"price","role":"to_price"}
+- điện thoại [huawei](product_company) khoảng [8triệu9]{"entity":"price","role":"from_price"} đến [bốn chục triệu]{"entity":"price","role":"to_price"}
+- điện thoại [oppo](product_company) khoảng [6tr]{"entity":"price","role":"from_price"} đến [6 triệu]{"entity":"price","role":"to_price"}
+- điện thoại [realme](product_company) khoảng [8890]{"entity":"price","role":"from_price"} đến [7790]{"entity":"price","role":"to_price"}
+- điện thoại [xamsum](product_company) khoảng [11 triệu]{"entity":"price","role":"from_price"} đến [5 m 9]{"entity":"price","role":"to_price"}
+- điện thoại [iphone](product_company) khoảng [8 tr 9]{"entity":"price","role":"from_price"} đến [mười sáu triệu rưởi]{"entity":"price","role":"to_price"}
+- khoang [26cu]{"entity":"price","role":"from_price"} [13490000]{"entity":"price","role":"to_price"}
+- khoang [21 cu]{"entity":"price","role":"from_price"} [6 trieu]{"entity":"price","role":"to_price"}
+- khoang [16900000]{"entity":"price","role":"from_price"} [18900000]{"entity":"price","role":"to_price"}
+- khoang [8 m 9]{"entity":"price","role":"from_price"} [5m9]{"entity":"price","role":"to_price"}
+- khoang [1trieu3]{"entity":"price","role":"from_price"} [1 tr 3]{"entity":"price","role":"to_price"}
+- khoang [16m]{"entity":"price","role":"from_price"} [14590000]{"entity":"price","role":"to_price"}
+- khoang [16790000]{"entity":"price","role":"from_price"} den [16 tr]{"entity":"price","role":"to_price"}
+- khoang [muoi sau trieu ruoi]{"entity":"price","role":"from_price"} den [6 cu]{"entity":"price","role":"to_price"}
+- khoang [21tr]{"entity":"price","role":"from_price"} den [1 trieu]{"entity":"price","role":"to_price"}
+- khoang [4490]{"entity":"price","role":"from_price"} den [1,9 tr]{"entity":"price","role":"to_price"}
+- khoang [6 trieu]{"entity":"price","role":"from_price"} den [5 m 9]{"entity":"price","role":"to_price"}
+- khoang [mot trieu sau]{"entity":"price","role":"from_price"} den [1,9 cu]{"entity":"price","role":"to_price"}
+- khoang [1.4cu]{"entity":"price","role":"from_price"} den [8 trieu 9]{"entity":"price","role":"to_price"}
+- khoang [12900000]{"entity":"price","role":"from_price"} den [5tr9]{"entity":"price","role":"to_price"}
+- khoang [11cu]{"entity":"price","role":"from_price"} den [ba trieu mot]{"entity":"price","role":"to_price"}
+- tu [1.4tr]{"entity":"price","role":"from_price"} den [1m]{"entity":"price","role":"to_price"}
+- tu [1.4cu]{"entity":"price","role":"from_price"} den [ham sau trieu]{"entity":"price","role":"to_price"}
+- tu [8trieu9]{"entity":"price","role":"from_price"} den [8,8 cu]{"entity":"price","role":"to_price"}
+- tu [16 cu]{"entity":"price","role":"from_price"} den [7 trieu 4]{"entity":"price","role":"to_price"}
+- tu [7790]{"entity":"price","role":"from_price"} den [mot trieu bon]{"entity":"price","role":"to_price"}
+- tu [5 m 9]{"entity":"price","role":"from_price"} den [5trieu9]{"entity":"price","role":"to_price"}
+- tu [1,8 m]{"entity":"price","role":"from_price"} den [26 tr]{"entity":"price","role":"to_price"}
+- tu [8,4 tr]{"entity":"price","role":"from_price"} den [ham sau trieu]{"entity":"price","role":"to_price"}
+- tu [7,3 m]{"entity":"price","role":"from_price"} den [8 m 9]{"entity":"price","role":"to_price"}
+- dien thoai [huawei](product_company) khoang [5tr9]{"entity":"price","role":"from_price"} den [8tr9]{"entity":"price","role":"to_price"}
+- dien thoai [xiaomi](product_company) khoang [7.3m]{"entity":"price","role":"from_price"} den [1m3]{"entity":"price","role":"to_price"}
+- dien thoai [xamsum](product_company) khoang [1 m 3]{"entity":"price","role":"from_price"} den [1 trieu]{"entity":"price","role":"to_price"}
+- dien thoai [samsung](product_company) khoang [16900000]{"entity":"price","role":"from_price"} den [6 trieu]{"entity":"price","role":"to_price"}
+- dien thoai [huawei](product_company) khoang [8trieu9]{"entity":"price","role":"from_price"} den [bon chuc trieu]{"entity":"price","role":"to_price"}
+- dien thoai [oppo](product_company) khoang [6tr]{"entity":"price","role":"from_price"} den [6 trieu]{"entity":"price","role":"to_price"}
 
 ## intent: find_product_lower_price
 
