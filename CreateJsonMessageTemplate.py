@@ -50,7 +50,7 @@ def PersistentMenu(list_button:list):
     return message_str
 
 def QuickReply(temp:str,danhsach:str):
-    data = {'action_product_configuration':'Cấu hình','action_promotions_and_gift':'Khuyến mãi','action_guarantee':'Bảo hành','action_option_in_box':'Phụ kiện trong hộp'}
+    data = {'action_product_configuration':'Cấu hình','action_promotions_and_gift':'Khuyến mãi','action_guarantee':'Bảo hành','action_option_in_box':'Phụ kiện trong hộp','action_is_product_can_buy_on_installment':'Trả góp được không','action_take_photo_erase_background':'Chụp ảnh xóa phông','action_waterproof':'Có chống nước không'}
     listitem = []
     data.pop(temp)
     for item in data:
@@ -133,7 +133,14 @@ def BillMessage():
     }
     }}
     return message_str
-
+def UrlButton(url:str):
+    message_str = {
+      "type": "web_url",
+      "url": url,
+      "title": "Trả góp",
+      "webview_height_ratio": "full"
+    }
+    return message_str
 # list_btn = [ButtonTemplate("button1","this is test"),ButtonTemplate("button2","this is test too")]
 # res = TemplateItems("this is test","url ne","subtitle chăng",list_btn)
 # print(json_message=res)

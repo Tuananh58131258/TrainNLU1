@@ -337,6 +337,7 @@
 * productName
   - action_follow
   - slot{"product_name": "iPhone Xs Max 256GB"}
+  - slot{"get_list": "giá online của samsung s10"}
 
 ## age to buy on install ment
 * age_installment

@@ -2631,6 +2631,14 @@ data/prepay_percent.txt
 - camera cua [ss M31s](product_name) chup xoa phong duoc khong
 - co chup xoa phong khong
 - may chup xoa phong duoc khong
+- chụp xóa phông
+- chụp ảnh xóa phông
+- chụp được ảnh xóa phông không
+- chụp ảnh xóa phông
+- chup xoa phong
+- chup anh xoa phong
+- chup duoc anh xoa phong khong
+- chup anh xoa phong
 - may co chup xoa phong khong
 - may chup xoa phong
 - chup xoa phong duoc khong
