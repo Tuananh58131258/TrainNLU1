@@ -31,7 +31,6 @@ from CreateJsonMessageTemplate import ItemsTemplate
 from CreateJsonMessageTemplate import HardwareAnswer
 from CreateJsonMessageTemplate import QuickReply
 from CreateJsonMessageTemplate import BackToList
-from CreateJsonMessageTemplate import BillMessage
 from CreateJsonMessageTemplate import UrlButton
 #endregion
 #
@@ -85,7 +84,7 @@ class ActionProductPrice(Action):
         productName = ""
         Pname_temp = ""
         sqlQuery = ""
-        getMess=''
+        getMess= ''
         ram=''
         rom=''
         message=''
@@ -94,7 +93,7 @@ class ActionProductPrice(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = productNameModify(tracker.get_slot('product_name'))
+            productName = tracker.get_slot('product_name')
             pass
         #endregion
         if productName:
@@ -120,8 +119,10 @@ class ActionProductPrice(Action):
             sqlQuery = sqlQuery + "order by ten limit 9;"
             data = getData(sqlQuery)
             if data:
-                if len(data) > 1:
+                if len(data) > 2 and tracker.latest_message.get('text').find('giá')>-1:
                     getMess = tracker.latest_message.get('text')
+                else:
+                    getMess = tracker.get_slot('get_list')
                 list_item = []
                 for item in data:
                     list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
@@ -168,31 +169,33 @@ class ActionOnlinePrice(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = productNameModify(tracker.get_slot('product_name'))
+            productName = tracker.get_slot('product_name')
             pass
         #endregion
         if productName:
-            sqlQuery = "Select * from dienthoai where ten like '%{}%'".format(
+            sqlQuery = "Select * from dienthoai where ten like '%{}%' ".format(
                 productName)
             #region try-catch ram/rom
             try:
                 ram = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='ram')))
-                sqlQuery = sqlQuery + "and ram like '%{}%'".format(ram)
+                sqlQuery = sqlQuery + "and ram like '%{}%' ".format(ram)
             except:
                 pass
             try:
                 rom = romRamModify(
                     next(tracker.get_latest_entity_values(entity_type='rom')))
-                sqlQuery = sqlQuery + "and rom like '%{}%'".format(rom)
+                sqlQuery = sqlQuery + "and rom like '%{}%' ".format(rom)
             except:
                 pass
             #endregion
             sqlQuery = sqlQuery + "order by gia_online desc limit 9 ;"
             data = getData(sqlQuery)
             if data:
-                if len(data) > 1:
+                if len(data) > 2 and tracker.latest_message.get('text').find('giá')>-1:
                     getMess = tracker.latest_message.get('text')
+                else:
+                    getMess = tracker.get_slot('get_list')
                 list_item = []
                 for item in data:
                     list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
@@ -237,7 +240,7 @@ class ActionOldProduct(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type='product_name')))
         except:
-            productName = productNameModify(tracker.get_slot('product_name'))
+            productName = tracker.get_slot('product_name')
             pass
         #endregion
         if productName:
@@ -260,8 +263,10 @@ class ActionOldProduct(Action):
             sqlQuery = sqlQuery + "order by ten limit 9;"
             data = getData(sqlQuery)
             if data:
-                if len(data) > 1:
+                if len(data) > 2 and tracker.latest_message.get('text').find('giá')>-1:
                     getMess = tracker.latest_message.get('text')
+                else:
+                    getMess = tracker.get_slot('get_list')
                 list_item = []
                 for item in data:
                     list_btn = [ButtonPostbackTemplate("Xem chi tiết", "Cấu hình của {}".format(
@@ -919,20 +924,6 @@ class ActionHowManyPerMonth(Action):
         return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
 
 
-class ActionCaseHowManyPerMonth(Action):
-    # action cần trả bao nhiêu tiền 1 tháng trong 2 trường hợp
-    def name(self) -> Text:
-        return "action_case_pay_per_month"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        sqlQuery =""
-        dispatcher.utter_message("this is test")
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
-        return
-
-
 class ActionIsProductCanBuyOnInstallment(Action):
     # action sản phẩm có được mua trả góp hay không
     def name(self) -> Text:
@@ -1443,49 +1434,10 @@ class ActionGreet(Action):
         first_name = r['first_name']
         last_name = r['last_name']
         message_str = "Xin chào bạn {} {}. Mình có thể giúp gì cho bạn?".format(last_name,first_name)
-        cus_json = BillMessage()
-        dispatcher.utter_message(text=message_str,json_message=cus_json)
+        dispatcher.utter_message(text=message_str)
         print("--------------\n{}\n{} {}\n-----------".format(self.name(),first_name,last_name))
         return[SlotSet('first_name',first_name),SlotSet('last_name',last_name)]
 
-class ActionGetCustName(Action):
-    # action lấy tên khách hàng
-    def name(self) -> Text:
-        return "action_get_customer_name"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-        sqlQuery=""
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
-        return
-
-class ActionGetPhoneNum(Action):
-    # action lấy sđt
-    def name(self) -> Text:
-        return "action_get_phone_number"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-        sqlQuery = ""
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
-        return
-
-class ActionGetContact(Action):
-    # action thông tin liên hệ gồm tên + sđt
-    def name(self) -> Text:
-        return "action_get_contact"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        dispatcher.utter_message("this is test")
-        sqlQuery = ""
-        print("--------------\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text')))
-        return
 
 class ActionFollow(Action):
     # action follow intent
@@ -1510,7 +1462,7 @@ class ActionFollow(Action):
             data = getData(sqlQuery)
             print("--------------\n{}\n{}\n-----------".format(self.name(),previus_action))
             if data:
-                Pname_temp = data[0]['ten']
+                Pname_temp = productName
                 if previus_action is not None:
                     if previus_action == "action_product_price":
                         getMess = "giá của {}".format(Pname_temp)
@@ -1518,6 +1470,7 @@ class ActionFollow(Action):
                         getMess = "giá online của {}".format(Pname_temp)
                     if previus_action == "action_old_product":
                         getMess = "giá cũ của {}".format(Pname_temp)
+                    print(getMess)
                     return[SlotSet('product_name',Pname_temp),SlotSet('get_list',getMess),FollowupAction(name=previus_action)]
             else:
                 return[FollowupAction("action_find_product")]

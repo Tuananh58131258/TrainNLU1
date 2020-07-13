@@ -27,21 +27,10 @@ def getData(query:str):
             cursor.execute(query)
             columns = cursor.description 
             results = [{columns[index][0]:column for index, column in enumerate(value)} for value in cursor.fetchall()]
-            # fetch all rows from the last executed statement using `fetchall method`.
-            # results = cursor.fetchall()
-            # row = dict(zip(cursor.column_names, cursor.fetchone()))
-            # return row
             return results
         except:
             print("Error occured while connecting to database or fetching data from database. Error Trace: {}".format(traceback.format_exc()))
             return []
 
 # test the file before integrating with the bot by uncommenting the below line.
-# data = open('data/product_name.txt','a',encoding='utf-8')
-# obj = getData("select * from dienthoai where ten like '%Samsung Galaxy Fold%' order by ten")
-# if obj:
-#     for item in obj:
-#         print('- [{}](product_company)'.format(item['ten']))
-# else:
-#     print('không có dữ liệu')
 

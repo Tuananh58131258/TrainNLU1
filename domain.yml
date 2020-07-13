@@ -5,10 +5,6 @@ slots:
     type: text
   last_name:
     type: text
-  phone_num:
-    type: text
-  customer_name:
-    type: text
   latest_action:
     type: text
   get_list:
@@ -28,8 +24,6 @@ entities:
   - camera
   - hardware
   - option
-  - customer_name
-  - phone_num
 
 intents:
   - greet
@@ -114,12 +108,6 @@ intents:
   # điện thoại có thể chơi game được không
   - take_photo_erase_background
   # điện thoại có chụp xóa phông được không
-  - full_name
-  # họ tên khách hàng
-  - phone_number
-  # số điện thoại
-  - contact
-  # họ tên + sdt
   - productName
   # tên sản phẩm cho follow intent
   - option_in_box
@@ -167,11 +155,11 @@ responses:
             Hộ khẩu có tên bạn.\n
             Bản sao chứng minh nhân dân của Bố hoặc Mẹ có công chứng trong vòng 6 tháng.\n
            Lưu ý: Đơn vị trả góp sẽ yêu cầu mang giấy tờ bản gốc để đối chiếu khi ký hợp đồng."
-           
+
   utter_many_profile:
     # trả góp 2 hồ sơ
-    - text: "Bạn có thể đăng ký mua trả góp với công ty tài chính khác."
-    
+    - text: "Nếu đang hoặc đã trả góp một sản phẩm bạn vẫn phải tiến hành tạo hồ sơ mới. Bạn cũng có thể đăng ký mua trả góp với công ty tài chính khác."
+
   utter_installment_registration_period:
     # thời gian làm hồ sơ trả góp có nhanh hay không
     - text: "Tùy vào hồ sơ của bạn mà thời gian xét duyệt có thể nhanh hay chậm. Nếu hồ sơ của bạn đạt tiêu chuẩn thì sẽ được xét duyệt ngay trong ngày và bạn có thể mang sản phẩm về."
@@ -194,16 +182,14 @@ responses:
 
   utter_need_help:
     # hỗ trợ tư vấn
-    - text: "Bạn muốn 1 chiếc điện thoại như thế nào ạ. Có thể cung cấp thêm thông tin như: giá như thế nào, của hãng nào,..."
+    - text: "Bạn muốn 1 chiếc điện thoại như thế nào ạ. Có thể cung cấp cho mình một trong số các thông tin như:\nMức giá\nTên hãng sản xuất,..."
   utter_order:
     # đặt mua
     - text: "Cảm ơn bạn đã đặt mua sản phấm!"
 
 
 actions:
-  - action_session_start
   - action_custom_fallback
-  - action_test_st
   - action_product_price
   # action trả lời giá sản phẩm
 
@@ -285,14 +271,6 @@ actions:
   - action_greet
   # action chào khách hàng bằng tên facebook
 
-  - action_get_customer_name
-  # action lưu tên khách hàng
-
-  - action_get_phone_number
-  # action lưu số điện thoại
-
-  - action_get_contact
-  # action lưu thông tin
 
   - action_option_in_box
   # action phụ kiện trong hộp
