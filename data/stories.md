@@ -261,9 +261,6 @@
 * can_play_game
   - action_can_play_game
 
-## phone_number
-* phone_number
-  - action_get_phone_number
 ## storie 01
 * greet
   - action_greet
