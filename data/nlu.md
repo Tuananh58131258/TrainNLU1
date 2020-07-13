@@ -156,13 +156,6 @@ data/price.txt
 
 data/thoigian.txt
 
-## lookup: customer_name
-
-data/fullname.txt
-
-## lookup: phone_num
-
-data/phonenum.txt
 
 ## lookup: prepay_percent
 
