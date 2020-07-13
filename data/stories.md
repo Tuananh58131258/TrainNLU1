@@ -317,21 +317,6 @@
   - slot{"latest_action":"action_product_configuration"}
   - slot{"product_name": "iphone xs max"}
 
-## storie get name then number
-* full_name
-  - action_get_customer_name
-* phone_number
-  - action_get_phone_number
-
-## storie get number then name
-* phone_number
-  - action_get_phone_number
-* full_name
-  - action_get_customer_name
-
-## get contact
-* contact
-  - action_get_contact
 
 ## follow action
 * productName
