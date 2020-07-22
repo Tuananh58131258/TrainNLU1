@@ -174,6 +174,15 @@ data/prepay_percent.txt
 - gia the nao
 - giá thế nào
 - gia ra sao
+- gia cua [ss A21s](product_name)
+- gia cua [Samsung Galaxy S10](product_name)
+- gia cua [OPPO A12e](product_name)
+- gia cua [ss A31](product_name)
+- gia cua [Samsung Galaxy A31](product_name)
+- gia cua [Oppo A5 2020](product_name)
+- gia cua [Nokia 2.2](product_name)
+- gia cua [Samsung A21s](product_name)
+- gia cua [Realme 6](product_name)
 - san pham [Realme 5 Pro](product_name) mua moi bao nhieu tien
 - dien thoai [Nokia 150 DS](product_name) gia mua moi la bao nhieu
 - [realme x50 5g](product_name) gia khi mua moi
