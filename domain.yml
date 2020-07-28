@@ -11,6 +11,8 @@ slots:
     type: text
   loai_camera:
     type: text
+  installment_payment_period:
+    type: text
 
 entities:
   - product_company

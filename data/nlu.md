@@ -921,6 +921,24 @@ data/prepay_percent.txt
 - Danh sach san pham cua [Oppo](product_company)
 - Danh sach san pham cua [Huawei](product_company)
 - Danh sach san pham cua [Samsung](product_company)
+- có điện thoại của [samsung](product_company) không
+- có điện thoại của [apple](product_company) không
+- có điện thoại của [huawei](product_company) không
+- có điện thoại của [oppo](product_company) không
+- có điện thoại của [xiaomi](product_company) không
+- có điện thoại của [vsmart](product_company) không
+- có điện thoại của [vivo](product_company) không
+- có điện thoại của [nokia](product_company) không
+- có điện thoại của [realme](product_company) không
+- co dien thoai cua [samsung](product_company) khong
+- co dien thoai cua [apple](product_company) khong
+- co dien thoai cua [huawei](product_company) khong
+- co dien thoai cua [oppo](product_company) khong
+- co dien thoai cua [xiaomi](product_company) khong
+- co dien thoai cua [vsmart](product_company) khong
+- co dien thoai cua [vivo](product_company) khong
+- co dien thoai cua [nokia](product_company) khong
+- co dien thoai cua [realme](product_company) khong
 - [Iphone](product_company)
 - [Samsung](product_company)
 - [Oppo](product_company)

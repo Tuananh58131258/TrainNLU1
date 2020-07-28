@@ -119,8 +119,9 @@ class ActionProductPrice(Action):
             sqlQuery = sqlQuery + "order by ten limit 9;"
             data = getData(sqlQuery)
             if data:
-                if len(data) > 2 and tracker.latest_message.get('text').find('giá')>-1:
-                    getMess = tracker.latest_message.get('text')
+                temp = tracker.latest_message.get('text')
+                if len(data) > 2 and (temp.find('giá')>-1 or temp.find("gia")>-1):
+                    getMess = temp
                 else:
                     getMess = tracker.get_slot('get_list')
                 list_item = []
@@ -850,6 +851,7 @@ class ActionHowManyPerMonth(Action):
             productName = productNameModify(
                 next(tracker.get_latest_entity_values(entity_type="product_name")))
         except:
+            productName = tracker.get_slot('product_name')
             pass
         #endregion
         Pname_temp = ""
@@ -867,7 +869,7 @@ class ActionHowManyPerMonth(Action):
                 tgian_tragop = InstallmentPaymentPeriod(
                     next(tracker.get_latest_entity_values(entity_type='installment_payment_period')))
             except:
-                # print(next(tracker.get_latest_entity_values(entity_type='installment_payment_period')))
+                tgian_tragop = tracker.get_slot('installment_payment_period')
                 pass
             try:
                 tratruoc = priceModify(next(tracker.get_latest_entity_values(
@@ -921,7 +923,7 @@ class ActionHowManyPerMonth(Action):
             message_str = 'Bạn đang hỏi thông tin số tiền góp hàng tháng cho sản phẩm nào ạ!'
         print("--------------\n{}\n{}\n{}\n{}".format(self.name(),sqlQuery,tracker.latest_message.get('text'),Pname_temp))
         dispatcher.utter_message(message_str)
-        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp)]
+        return[SlotSet('latest_action',self.name()),SlotSet('product_name',Pname_temp),SlotSet('installment_payment_period',tgian_tragop)]
 
 
 class ActionIsProductCanBuyOnInstallment(Action):
